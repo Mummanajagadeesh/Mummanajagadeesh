@@ -12,7 +12,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: I'm Batman
 -->
 
-  ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+  ![Alt Text]([https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif](https://giphy.com/gifs/robotics-boston-dynamics-bostondynamics-2m1WnCqNuyEJnigDAP))
 
 <!--
 **Mummanajagadeesh/Mummanajagadeesh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
