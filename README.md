@@ -1,7 +1,5 @@
 ## *こんにちは世界 !* 
 
-Here are some ideas to get you started:
-
 - 🔭 I’m currently working on ***SH1R0***
 - 🤖 Robotics Enthusiast
 - 💪 Pursuing *Electronics and Communication Engineering*
