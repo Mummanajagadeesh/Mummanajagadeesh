@@ -1,6 +1,5 @@
 ## *こんにちは世界 !* 
 
-- 🔭 I’m currently working on ***SH1R0***
 - 🤖 Robotics Enthusiast
 - 💪 Pursuing *Electronics and Communication Engineering*
 - 🎓 from *National Institute of Technology Calicut*
