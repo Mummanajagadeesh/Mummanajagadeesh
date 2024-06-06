@@ -1,4 +1,4 @@
-## こんにちは、coding の冒険者たち！
+## こんにちは世界 ! 
 
 Here are some ideas to get you started:
 
