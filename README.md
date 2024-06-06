@@ -1,4 +1,4 @@
-## Hi there 👋
+## こんにちは、coding の冒険者たち！
 
 Here are some ideas to get you started:
 
