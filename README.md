@@ -2,7 +2,7 @@
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ***MYSELF***
+- 🔭 I’m currently working on ***------***
 - 🤖 Robotics Enthusiast
 - 💪 Pursuing *Electronics and Communication Engineering*
 - 🎓 from *National Institute of Technology Calicut*
