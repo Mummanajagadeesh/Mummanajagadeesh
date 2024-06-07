@@ -1,10 +1,10 @@
-## *こんにちは世界 !* 
+# *こんにちは世界 !* 
 
 - 🤖 Robotics Enthusiast
 - 💪 Pursuing *Electronics and Communication Engineering*
 - 🎓 from *National Institute of Technology Calicut*
 - 💬 Ask me about something useless
-- 📫 How to reach me: Linkedin/Instagram
+- 📫 How to reach me: Carrier Pigeons 🪽
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: I'm Batman
   
