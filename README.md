@@ -17,9 +17,7 @@
  ![Alt Text](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2MyeDVrcjVhcDB4aHlhYTBnbmtjZ21wZGl5ZHIxM2NxdTNiZjkwOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JFz7YZA0vhiGlAYCSn/giphy.gif)
 
 
-
-
-
+ 
 
 Welcome to my GitHub profile! I'm passionate about electronics, programming, and engineering design. Here's a little bit about me:
 
@@ -53,9 +51,7 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true&theme=radical&include_all_commits=true)
-
-
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true&theme=radical&count_private=true&include_all_commits=true)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&layout=compact&theme=radical)](https://github.com/Mummanajagadeesh/github-readme-stats)
 
