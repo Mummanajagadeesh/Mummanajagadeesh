@@ -37,7 +37,6 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 ### Microcontrollers and IoT
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![ESP](https://img.shields.io/badge/ESP-CC0000?style=for-the-badge&logo=espressif&logoColor=white)
-![NodeMCU](https://img.shields.io/badge/NodeMCU-1C1E24?style=for-the-badge&logo=nodemcu&logoColor=white)
 ![ThingSpeak](https://img.shields.io/badge/ThingSpeak-0098D8?style=for-the-badge&logoColor=white)
 ![Wokwi](https://img.shields.io/badge/Wokwi-282C34?style=for-the-badge&logo=wokwi&logoColor=white)
 
