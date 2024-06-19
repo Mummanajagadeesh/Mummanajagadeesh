@@ -1,6 +1,8 @@
 # *こんにちは世界 !* 
 これがJagadeeshです。
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/jagadeeshmummana/)
+
 - 🤖 Robotics Enthusiast
 - 💪 Pursuing *Electronics and Communication Engineering*
 - 🎓 from *National Institute of Technology Calicut*
@@ -47,7 +49,7 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true&theme=radical&include_all_commits=true)
 
 
 
