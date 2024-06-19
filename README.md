@@ -51,7 +51,7 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MJagadeesh97h&layout=compact&theme=radical)](https://github.com/Mummanajagadeesh/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MJagadeesh97&layout=compact&theme=radical)](https://github.com/Mummanajagadeesh/github-readme-stats)
 
 ## 🔗 Connect with me
 
