@@ -47,7 +47,8 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true&theme=radical)
+
 
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&layout=compact&theme=radical)](https://github.com/Mummanajagadeesh/github-readme-stats)
