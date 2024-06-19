@@ -2,6 +2,9 @@
 これがJagadeeshです。
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/jagadeeshmummana/)
+[![Gmail](https://img.shields.io/badge/Gmail-Compose-red)](mailto:mummanajagadeesh97@gmail.com)
+
+
 
 - 🤖 Robotics Enthusiast
 - 💪 Pursuing *Electronics and Communication Engineering*
@@ -58,6 +61,7 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 ## 🔗 Connect with me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/jagadeeshmummana/)
+[![Gmail](https://img.shields.io/badge/Gmail-Compose-red)](mailto:mummanajagadeesh97@gmail.com)
 
 
 Feel free to reach out if you have any questions or if you'd like to collaborate on a project. I'm always open to learning and trying out new things!
