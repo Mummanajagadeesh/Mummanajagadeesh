@@ -58,11 +58,13 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true&theme=radical&count_private=true&include_all_commits=true)
+![Streak](https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&layout=compact&theme=radical)](https://github.com/Mummanajagadeesh/github-readme-stats)
 
 ## 🔗 Connect with me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jagadeeshmummana)
+
 [![Instagram](https://img.shields.io/badge/Instagram-Profile-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/jagadeesh__97__)
 [![Gmail](https://img.shields.io/badge/Gmail-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:mummanajagadeesh97@gmail.com)
 
