@@ -1,12 +1,15 @@
 # *こんにちは世界 !* 
 これがJagadeeshです。
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/jagadeeshmummana/)
-[![Gmail](https://img.shields.io/badge/Gmail-Compose-red)](mailto:mummanajagadeesh97@gmail.com)
-[![Instagram](https://img.shields.io/badge/Instagram-Profile-orange)](https://www.instagram.com/jagadeesh__97__/)
-
-
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
+
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jagadeeshmummana)
+[![Instagram](https://img.shields.io/badge/Instagram-Profile-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/jagadeesh__97__)
+[![Gmail](https://img.shields.io/badge/Gmail-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:mummanajagadeesh97@gmail.com)
+
+
+
 
 - 🤖 Robotics Enthusiast
 - 💪 Pursuing *Electronics and Communication Engineering*
@@ -59,9 +62,9 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 
 ## 🔗 Connect with me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/jagadeeshmummana/)
-[![Gmail](https://img.shields.io/badge/Gmail-Compose-red)](mailto:mummanajagadeesh97@gmail.com)
-[![Instagram](https://img.shields.io/badge/Instagram-Profile-orange)](https://www.instagram.com/jagadeesh__97__/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jagadeeshmummana)
+[![Instagram](https://img.shields.io/badge/Instagram-Profile-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/jagadeesh__97__)
+[![Gmail](https://img.shields.io/badge/Gmail-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:mummanajagadeesh97@gmail.com)
 
 Feel free to reach out if you have any questions or if you'd like to collaborate on a project. I'm always open to learning and trying out new things!
 
