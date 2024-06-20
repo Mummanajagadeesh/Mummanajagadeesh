@@ -6,6 +6,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-Profile-orange)](https://www.instagram.com/jagadeesh__97__/)
 
 
+![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
 
 - 🤖 Robotics Enthusiast
 - 💪 Pursuing *Electronics and Communication Engineering*
