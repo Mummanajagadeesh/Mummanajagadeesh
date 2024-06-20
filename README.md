@@ -30,12 +30,12 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 
 ### CAD Software
 ![Fusion 360](https://img.shields.io/badge/Fusion%20360-FFAE1A?style=for-the-badge&logo=autodesk&logoColor=black)
-![SolidWorks](https://img.shields.io/badge/SolidWorks-FB1D20?style=for-the-badge&logo=solidworks&logoColor=white)
+![SolidWorks](https://img.shields.io/badge/SolidWorks-FB1D20?style=for-the-badge&logo=dassault%20systèmes&logoColor=white)
 ![Blender](https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white)
 
 ### Simulation and Analysis
 ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
-![Simulink](https://img.shields.io/badge/Simulink-0076A8?style=for-the-badge&logo=simulink&logoColor=white)
+![Simulink](https://img.shields.io/badge/Simulink-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
 ![ANSYS](https://img.shields.io/badge/ANSYS-FF9900?style=for-the-badge&logo=ansys&logoColor=black)
 
 ### Microcontrollers and IoT
