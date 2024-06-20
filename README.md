@@ -49,10 +49,11 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 ![Linux Shell Scripting](https://img.shields.io/badge/Linux_Shell_Scripting-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
+
 ## 📊 GitHub Stats
+![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true&theme=radical&count_private=true&include_all_commits=true)
-
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&layout=compact&theme=radical)](https://github.com/Mummanajagadeesh/github-readme-stats)
 
 ## 🔗 Connect with me
