@@ -10,20 +10,15 @@
 
 
 
-
-- 🤖 Robotics Enthusiast
-- 💪 Pursuing *Electronics and Communication Engineering*
-- 🎓 from *National Institute of Technology Calicut*
-- 📫 How to reach me: Carrier Pigeons 🪽
-- 😄 Pronouns: he/him
-- ⚡ Fun fact: I'm Batman
-  
- ![Alt Text](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2MyeDVrcjVhcDB4aHlhYTBnbmtjZ21wZGl5ZHIxM2NxdTNiZjkwOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JFz7YZA0vhiGlAYCSn/giphy.gif)
+|                                                                                                             |                                                                                                  |
+|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| ![Alt Text](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2MyeDVrcjVhcDB4aHlhYTBnbmtjZ21wZGl5ZHIxM2NxdTNiZjkwOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JFz7YZA0vhiGlAYCSn/giphy.gif) | - 🤖 Robotics Enthusiast<br>- 💪 Pursuing *Electronics and Communication Engineering*<br>- 🎓 from *National Institute of Technology Calicut*<br>- 📫 How to reach me: Carrier Pigeons 🪽<br>- 😄 Pronouns: he/him<br>- ⚡ Fun fact: I'm Batman |
 
 
- 
 
 Welcome to my GitHub profile! I'm passionate about electronics, programming, and engineering design. Here's a little bit about me:
+
+
 
 ## 🔧 Skills
 
@@ -57,14 +52,21 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 ## 📊 GitHub Stats
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true&theme=radical&count_private=true&include_all_commits=true)
-![Streak](https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&layout=compact&theme=radical)](https://github.com/Mummanajagadeesh/github-readme-stats)
+<!--[![Activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Mummanajagadeesh&theme=radical)](https://github.com/Mummanajagadeesh/github-readme-activity-graph)-->
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mummanajagadeesh&theme=radical)
+<!--![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Mummanajagadeesh&theme=radical)
+![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Mummanajagadeesh&theme=radical)-->
+![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=radical)
+![Streak](https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&layout=compact&theme=radical&hide_border=true)](https://github.com/Mummanajagadeesh/github-readme-stats)
+<!--![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Mummanajagadeesh&theme=radical&utcOffset=8)-->
+
+<!--![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true&theme=radical&count_private=true&include_all_commits=true)-->
+
 
 ## 🔗 Connect with me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jagadeeshmummana)
-
 [![Instagram](https://img.shields.io/badge/Instagram-Profile-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/jagadeesh__97__)
 [![Gmail](https://img.shields.io/badge/Gmail-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:mummanajagadeesh97@gmail.com)
 
