@@ -1,8 +1,14 @@
 # *こんにちは世界 !* 
 これがJagadeeshです。
 
-![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
+<h1 align="center">
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Monaco&size=35&color=FFFF00&center=true&vCenter=true&width=500&height=70&duration=4000&lines=こんにちは世界++!;+これがJagadeeshです++:);" />
+</h1>
 
+
+
+
+![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jagadeeshmummana)
 [![Instagram](https://img.shields.io/badge/Instagram-Profile-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/jagadeesh__97__)
@@ -68,9 +74,10 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 
 ## 🔗 Connect with me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jagadeeshmummana)
-[![Instagram](https://img.shields.io/badge/Instagram-Profile-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/jagadeesh__97__)
-[![Gmail](https://img.shields.io/badge/Gmail-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:mummanajagadeesh97@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white")](https://www.linkedin.com/in/jagadeeshmummana)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/jagadeesh__97__)
+[![Gmail](https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red")](mailto:mummanajagadeesh97@gmail.com)
+
 
 Feel free to reach out if you have any questions or if you'd like to collaborate on a project. I'm always open to learning and trying out new things!
 
