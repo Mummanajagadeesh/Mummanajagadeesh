@@ -48,6 +48,8 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 ![Linux Shell Scripting](https://img.shields.io/badge/Linux_Shell_Scripting-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+
 
 ## 📊 GitHub Stats
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
