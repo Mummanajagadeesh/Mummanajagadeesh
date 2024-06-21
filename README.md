@@ -83,4 +83,5 @@ Feel free to reach out if you have any questions or if you'd like to collaborate
 
 Thanks for stopping by! :)
 
-![snake gif](https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/output/github-contribution-grid-snake.gif)
+<!--![snake gif](https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/output/github-contribution-grid-snake.gif)
+Run workflows in actions and refresh-->
