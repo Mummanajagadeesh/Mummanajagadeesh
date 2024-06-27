@@ -60,14 +60,14 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 ## 📊 GitHub Stats
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
 
-<!--[![Activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Mummanajagadeesh&theme=radical)](https://github.com/Mummanajagadeesh/github-readme-activity-graph)-->
-![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mummanajagadeesh&theme=radical)
-<!--![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Mummanajagadeesh&theme=radical)
-![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Mummanajagadeesh&theme=radical)-->
-![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=radical)
-![Streak](https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true)
+<!--[![Activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)](https://github.com/Mummanajagadeesh/github-readme-activity-graph)-->
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)
+<!--![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)
+![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)-->
+![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)
+![Streak](https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true&count_private=true&include_all_commits=true)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=radical&show_icons=true&hide_border=true&layout=compact&count_private=true&include_all_commits=true)
-<!--![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Mummanajagadeesh&theme=radical&utcOffset=8)-->
+<!--![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Mummanajagadeesh&theme=radical&utcOffset=8&count_private=true&include_all_commits=true)-->
 
 <!--![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true&theme=radical&count_private=true&include_all_commits=true)-->
 
