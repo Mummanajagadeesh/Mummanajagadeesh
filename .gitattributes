@@ -7,3 +7,4 @@
 *.yml linguist-generated=false
 *.yml linguist-documentation=false
 *.yml linguist-detectable=true
+*.yml linguist-language=YAML
