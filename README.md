@@ -66,7 +66,7 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 ![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Mummanajagadeesh&theme=radical)-->
 ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=radical)
 ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&layout=compact&theme=radical&hide_border=true)](https://github.com/Mummanajagadeesh/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&layout=compact&theme=radical&hide_border=true&Cache-Control:no-cache)](https://github.com/Mummanajagadeesh/github-readme-stats)
 <!--![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Mummanajagadeesh&theme=radical&utcOffset=8)-->
 
 <!--![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mummanajagadeesh&show_icons=true&theme=radical&count_private=true&include_all_commits=true)-->
