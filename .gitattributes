@@ -2,3 +2,6 @@
 *.md linguist-generated=false
 *.md linguist-documentation=false
 *.md linguist-detectable=true
+
+*.yml linguist-detectable=true
+*.yml linguist-language=YAML
