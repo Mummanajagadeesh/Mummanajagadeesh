@@ -3,9 +3,6 @@
 *.md linguist-documentation=false
 *.md linguist-detectable=true
 
-*.yml linguist-detectable=true
-*.yml linguist-language=YAML
-
 *.yml linguist-vendored=false
 *.yml linguist-generated=false
 *.yml linguist-documentation=false
