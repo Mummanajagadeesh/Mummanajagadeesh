@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Multiple URLs</title>
+</head>
+<body>
+    <button onclick="openMultipleURLs()">Open All Links</button>
+
+    <script>
+        function openMultipleURLs() {
+            const urls = [
+                "https://matlabacademy.mathworks.com/progress/share/report.html?id=45280f0b-9875-4a95-8e89-8f75b9f036c7&",
+                "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=45280f0b-9875-4a95-8e89-8f75b9f036c7&"
+            ];
+
+            urls.forEach(url => {
+                const a = document.createElement('a');
+                a.href = url;
+                a.target = '_blank';
+                a.click();
+            });
+        }
+    </script>
+</body>
+</html>
