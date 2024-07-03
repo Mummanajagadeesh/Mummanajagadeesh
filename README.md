@@ -12,7 +12,6 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jagadeeshmummana)
 [![Instagram](https://img.shields.io/badge/Instagram-Profile-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/jagadeesh__97__)
-[![Gmail](https://img.shields.io/badge/Gmail-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:mummanajagadeesh97@gmail.com)
 
 
 
@@ -76,6 +75,7 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white")](https://www.linkedin.com/in/jagadeeshmummana)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/jagadeesh__97__)
+[![Discord](https://img.shields.io/badge/Discord-MJ97-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/.mj97)
 [![Gmail](https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red")](mailto:mummanajagadeesh97@gmail.com)
 
 
