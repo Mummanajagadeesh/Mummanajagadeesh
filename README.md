@@ -81,7 +81,7 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 
 Feel free to reach out if you have any questions or if you'd like to collaborate on a project. I'm always open to learning and trying out new things!
 
-# [🔗ありがとう](https://www.duolingo.com/profile/JAGADEESH97)
+# [ありがとう🔗](https://www.duolingo.com/profile/JAGADEESH97)
 Thanks for stopping by! :)
 
 <!--![snake gif](https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/output/github-contribution-grid-snake.gif)
