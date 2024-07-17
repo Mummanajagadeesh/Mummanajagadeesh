@@ -83,17 +83,17 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 </p>
 
 <p align="center">
-  <a href="https://ubuntu.com/"><img src="https://seeklogo.com/images/A/autodesk-fusion-360-logo-7F72A76397-seeklogo.com.png" alt="Fusion 360" width="50"/></a>
-  <a href="https://www.solidworks.com/"><img src="https://banner2.cleanpng.com/20180425/kqw/kisspng-computer-icons-solidworks-e-5ae0fa43334702.1540505415246935712101.jpg" alt="Fusion 360" width="50"/></a>
-  <a href="https://www.blender.org/"><img src="https://cdn.iconscout.com/icon/free/png-512/free-blender-3628659-3029884.png?f=webp&w=256" alt="Blender" width="50"/></a>
+  <a href="https://ubuntu.com/"><img src="https://seeklogo.com/images/A/autodesk-fusion-360-logo-7F72A76397-seeklogo.com.png" alt="Fusion 360" width="70"/></a>
+  <a href="https://www.solidworks.com/"><img src="https://banner2.cleanpng.com/20180425/kqw/kisspng-computer-icons-solidworks-e-5ae0fa43334702.1540505415246935712101.jpg" alt="Fusion 360" width="70"/></a>
+  <a href="https://www.blender.org/"><img src="https://cdn.iconscout.com/icon/free/png-512/free-blender-3628659-3029884.png?f=webp&w=256" alt="Blender" width="70"/></a>
 </p>
 
 <p align="center">
-  <a href="https://www.linux.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/759px-Tux.svg.png?20220320193426" alt="Linux" width="30"/></a>
-  <a href="https://ubuntu.com/"><img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="Ubuntu" width="30"/></a>
-  <a href="https://numpy.org/"><img src="https://cdn.worldvectorlogo.com/logos/numpy-1.svg" alt="NumPy" width="30"/></a>
-  <a href="https://matplotlib.org/"><img src="https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/mpl-data/images/matplotlib.svg" alt="Matplotlib" width="30"/></a>
-  <a href="https://pandas.pydata.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/674px-Pandas_mark.svg.png?20200210000431" alt="Pandas" width="30"/></a>
+  <a href="https://www.linux.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/759px-Tux.svg.png?20220320193426" alt="Linux" width="60"/></a>
+  <a href="https://ubuntu.com/"><img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="Ubuntu" width="60"/></a>
+  <a href="https://numpy.org/"><img src="https://cdn.worldvectorlogo.com/logos/numpy-1.svg" alt="NumPy" width="60"/></a>
+  <a href="https://matplotlib.org/"><img src="https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/mpl-data/images/matplotlib.svg" alt="Matplotlib" width="60"/></a>
+  <a href="https://pandas.pydata.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/674px-Pandas_mark.svg.png?20200210000431" alt="Pandas" width="60"/></a>
 </p>
 
 <!--## 🔧 Skills
