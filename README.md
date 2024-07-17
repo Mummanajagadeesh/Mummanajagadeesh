@@ -52,29 +52,40 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 
 <h2 align="center">🛠️ Tools and Technologies</h2>
 
+
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/50px-Python-logo-notext.svg.png" alt="Python"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/50px-ISO_C%2B%2B_Logo.svg.png" alt="C++"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/50px-The_C_Programming_Language_logo.svg.png" alt="C"/>
-  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/40px-Java_programming_language_logo.svg.png" alt="Java"/>
+  <a href="https://www.python.org/">
+    <img src="https://www.svgrepo.com/show/376344/python.svg" alt="Python" height="70"/>
+  </a>
+  <a href="https://isocpp.org/">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/50px-ISO_C%2B%2B_Logo.svg.png" alt="C++" height="70"/>
+  </a>
+  <a href="https://www.cprogramming.com/">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/570px-C_Programming_Language.svg.png?20201031132917" alt="C" height="70"/>
+  </a>
+  <a href="https://www.java.com/">
+    <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png" alt="Java" height="70"/>
+  </a>
+</p>
+
+
+<p align="center">
+<a href="https://www.arduino.cc/"><img src="https://brandslogos.com/wp-content/uploads/images/arduino-logo-1.png" alt="Arduino" width="50"/></a>
+<a href="https://www.espressif.com/"><img src="https://seeklogo.com/images/E/espressif-systems-logo-1350B9E771-seeklogo.com.png" alt="ESP" width="50"/></a>
+<a href="https://thingspeak.com/"><img src="https://asset.brandfetch.io/idDN_HSf-s/idB53jfo-J.jpeg?updated=1718403832692" alt="Thingspeak" width="50"/></a>
+<a href="https://wokwi.com/"><img src="https://www.crowdsupply.com/img/3c52/e4021e4f-f00d-494e-ab97-2a0aa5ef3c52/wokwi-logo_png_organization-profile.png" alt="Wokwi" width="50"/></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-Arduino-00979D?style=flat-square&logo=arduino&logoColor=white" alt="Arduino"/>
-  <img src="https://img.shields.io/badge/-ESP-001F3A?style=flat-square&logo=espressif&logoColor=white" alt="ESP"/>
-  <img src="https://img.shields.io/badge/-ThingSpeak-0082FC?style=flat-square&logo=thingspeak&logoColor=white" alt="ThingSpeak"/>
-  <img src="https://img.shields.io/badge/-Wokwi-6A0DAD?style=flat-square&logo=wokwi&logoColor=white" alt="Wokwi"/>
+  <a href="https://www.ros.org/"><img src="https://ardupilot.org/dev/_images/ros2_logo.jpg" alt="ROS2" width="30"/></a>
+  <a href="https://cyberbotics.com/"><img src="https://purepng.com/public/uploads/large/purepng.com-ladybugladybuginsectsanimalcoccinellidae-1701528259839kuuvk.png" alt="Webots" width="30"/></a>
+    <a href="https://gazebosim.org/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/450px-Gazebo_logo_without_text.svg.png?20150715002113" alt="Gazebo" width="30"/></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-2-22314E?style=flat-square&logo=ros&logoColor=white" alt="ROS2"/>
-  <img src="https://cyberbotics.com/assets/images/webots.png" alt="Webots Logo" width="30" alt="Webots"/>
-</p>
-
-<p align="center">
-  <a href="https://ubuntu.com/"><img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="Ubuntu" width="30"/></a>
-  <img src="https://img.shields.io/badge/SolidWorks-FB1D20?style=flat-square&logo=dassault%20syst%C3%A8mes&logoColor=white" alt="SolidWorks"/>
-  <img src="https://img.shields.io/badge/-Blender-F5792A?style=flat-square&logo=blender&logoColor=white" alt="Blender"/>
+  <a href="https://ubuntu.com/"><img src="https://seeklogo.com/images/A/autodesk-fusion-360-logo-7F72A76397-seeklogo.com.png" alt="Fusion 360" width="50"/></a>
+  <a href="https://www.solidworks.com/"><img src="https://banner2.cleanpng.com/20180425/kqw/kisspng-computer-icons-solidworks-e-5ae0fa43334702.1540505415246935712101.jpg" alt="Fusion 360" width="50"/></a>
+  <a href="https://www.blender.org/"><img src="https://cdn.iconscout.com/icon/free/png-512/free-blender-3628659-3029884.png?f=webp&w=256" alt="Blender" width="50"/></a>
 </p>
 
 <p align="center">
@@ -84,6 +95,7 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
   <a href="https://matplotlib.org/"><img src="https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/mpl-data/images/matplotlib.svg" alt="Matplotlib" width="30"/></a>
   <a href="https://pandas.pydata.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/674px-Pandas_mark.svg.png?20200210000431" alt="Pandas" width="30"/></a>
 </p>
+
 <!--## 🔧 Skills
 
 ### Programming Languages
