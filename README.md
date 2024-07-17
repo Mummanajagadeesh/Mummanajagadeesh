@@ -77,9 +77,9 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 </p>
 
 <p align="center">
-  <a href="https://www.ros.org/"><img src="https://ardupilot.org/dev/_images/ros2_logo.jpg" alt="ROS2" width="30"/></a>
-  <a href="https://cyberbotics.com/"><img src="https://purepng.com/public/uploads/large/purepng.com-ladybugladybuginsectsanimalcoccinellidae-1701528259839kuuvk.png" alt="Webots" width="30"/></a>
-    <a href="https://gazebosim.org/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/450px-Gazebo_logo_without_text.svg.png?20150715002113" alt="Gazebo" width="30"/></a>
+  <a href="https://www.ros.org/"><img src="https://www.freshconsulting.com/wp-content/uploads/fly-images/33744/ROS-2_logo-1920x9999.png" alt="ROS2" width="60"/></a>
+  <a href="https://cyberbotics.com/"><img src="https://purepng.com/public/uploads/large/purepng.com-ladybugladybuginsectsanimalcoccinellidae-1701528259839kuuvk.png" alt="Webots" width="40"/></a>
+    <a href="https://gazebosim.org/"><img src="https://seeklogo.com/images/G/gazebo-logo-51C46471CA-seeklogo.com.png" alt="Gazebo" width="30"/></a>
 </p>
 
 <p align="center">
