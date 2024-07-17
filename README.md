@@ -67,23 +67,23 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-ROS2-22314E?style=flat-square&logo=ros&logoColor=white" alt="ROS2"/>
-  <img src="https://cyberbotics.com/assets/images/webots.png" alt="Webots Logo" width="30" />Webots
+  <img src="https://img.shields.io/badge/-2-22314E?style=flat-square&logo=ros&logoColor=white" alt="ROS2"/>
+  <img src="https://cyberbotics.com/assets/images/webots.png" alt="Webots Logo" width="30" alt="Webots"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-Fusion_360-FF6F00?style=flat-square&logo=autodesk&logoColor=white" alt="Fusion 360"/>
+  <a href="https://ubuntu.com/"><img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="Ubuntu" width="30"/></a>
   <img src="https://img.shields.io/badge/SolidWorks-FB1D20?style=flat-square&logo=dassault%20syst%C3%A8mes&logoColor=white" alt="SolidWorks"/>
   <img src="https://img.shields.io/badge/-Blender-F5792A?style=flat-square&logo=blender&logoColor=white" alt="Blender"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"/>
-  <img src="https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
-  <img src="https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white" alt="Matplotlib"/>
-  <img src="https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/>
+  <a href="https://www.linux.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/759px-Tux.svg.png?20220320193426" alt="Linux" width="30"/></a>
+  <a href="https://ubuntu.com/"><img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="Ubuntu" width="30"/></a>
+  <a href="https://numpy.org/"><img src="https://cdn.worldvectorlogo.com/logos/numpy-1.svg" alt="NumPy" width="30"/></a>
+  <a href="https://matplotlib.org/"><img src="https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/mpl-data/images/matplotlib.svg" alt="Matplotlib" width="30"/></a>
+  <a href="https://pandas.pydata.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/674px-Pandas_mark.svg.png?20200210000431" alt="Pandas" width="30"/></a>
 </p>
-
 <!--## 🔧 Skills
 
 ### Programming Languages
