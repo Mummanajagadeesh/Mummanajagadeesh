@@ -30,7 +30,7 @@
 
 <p align="center">
   <a href="https://www.duolingo.com/profile/jagadeesh97"><img src="https://img.icons8.com/color/48/000000/duolingo-logo.png" alt="Duolingo" width="30"/></a>
-  <a href="https://games.app.goo.gl/p1bNrgGSnMbK4hte9"><img src="https://img.icons8.com/color/48/000000/google-play.png" alt="Google Play" width="30"/></a>
+  <a href="https://games.app.goo.gl/p1bNrgGSnMbK4hte9"><img src="https://www.svgrepo.com/show/303545/google-play-games-logo.svg" alt="Google Play" width="30"/></a>
 </p>
 
 
@@ -84,7 +84,7 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 
 <p align="center">
   <a href="https://ubuntu.com/"><img src="https://seeklogo.com/images/A/autodesk-fusion-360-logo-7F72A76397-seeklogo.com.png" alt="Fusion 360" width="70"/></a>
-  <a href="https://www.solidworks.com/"><img src="https://banner2.cleanpng.com/20180425/kqw/kisspng-computer-icons-solidworks-e-5ae0fa43334702.1540505415246935712101.jpg" alt="Fusion 360" width="70"/></a>
+  <a href="https://www.solidworks.com/"><img src="https://banner2.cleanpng.com/20180425/kqw/kisspng-computer-icons-solidworks-e-5ae0fa43334702.1540505415246935712101.jpg" alt="Solidworks" width="70"/></a>
   <a href="https://www.blender.org/"><img src="https://cdn.iconscout.com/icon/free/png-512/free-blender-3628659-3029884.png?f=webp&w=256" alt="Blender" width="70"/></a>
 </p>
 
