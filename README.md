@@ -26,7 +26,11 @@
   <a href="mailto:mummanajagadeesh97@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
   </a>
+  <a href="https://www.youtube.com/@M_J_9_7" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube"/>
+  </a>
 </p>
+
 
 <p align="center">
   <a href="https://www.duolingo.com/profile/jagadeesh97"><img src="https://img.icons8.com/color/48/000000/duolingo-logo.png" alt="Duolingo" width="30"/></a>
