@@ -47,7 +47,7 @@
 
 |                                                                                                             |                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ![Alt Text](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2MyeDVrcjVhcDB4aHlhYTBnbmtjZ21wZGl5ZHIxM2NxdTNiZjkwOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JFz7YZA0vhiGlAYCSn/giphy.gif) | - 🤖 Robotics Enthusiast<br>- 💪 Pursuing *Electronics and Communication Engineering*<br>- 🎓 from *National Institute of Technology Calicut*<br>- 📫 How to reach me: [Carrier Pigeons](https://www.linkedin.com/in/jagadeeeshmummana/) 🪽<br>- 😄 Pronouns: he/him<br>- ⚡ Fun fact: I'm Batman |
+| ![Alt Text](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2MyeDVrcjVhcDB4aHlhYTBnbmtjZ21wZGl5ZHIxM2NxdTNiZjkwOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JFz7YZA0vhiGlAYCSn/giphy.gif) | - 🤖 Robotics and AI Enthusiast<br>- 💪 Pursuing *Electronics and Communication Engineering*<br>- 🎓 from *National Institute of Technology Calicut*<br>- 📫 How to reach me: [Carrier Pigeons](https://www.linkedin.com/in/jagadeeeshmummana/) 🪽<br>- 😄 Pronouns: he/him<br>- ⚡ Fun fact: I'm Batman |
 
 
 
