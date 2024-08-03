@@ -57,7 +57,87 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 <h2 align="center">🛠️ Tools and Technologies</h2>
 
 
-<p align="center">
+<table align="center">
+  <tr>
+    <td><img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="55" height="55"/></td>
+    <td><img src="https://github.com/devicons/devicon/blob/master/icons/c/c-original.svg" title="C" alt="C" width="55" height="55"/></td>
+    <td><img src="https://github.com/devicons/devicon/blob/master/icons/cplusplus/cplusplus-original.svg" title="C++" alt="C++" width="55" height="55"/></td>
+    <td><img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg" title="Java" alt="Java" width="55" height="55"/></td>
+  </tr>
+  <tr>
+    <td>Python</td>
+    <td>C</td>
+    <td>C++</td>
+    <td>Java</td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><a href="https://www.arduino.cc/"><img src="https://brandslogos.com/wp-content/uploads/images/arduino-logo-1.png" alt="Arduino" width="50"/></a></td>
+    <td><a href="https://www.espressif.com/"><img src="https://seeklogo.com/images/E/espressif-systems-logo-1350B9E771-seeklogo.com.png" alt="ESP" width="50"/></a></td>
+    <td><a href="https://thingspeak.com/"><img src="https://asset.brandfetch.io/idDN_HSf-s/idB53jfo-J.jpeg?updated=1718403832692" alt="Thingspeak" width="50"/></a></td>
+    <td><a href="https://wokwi.com/"><img src="https://www.crowdsupply.com/img/3c52/e4021e4f-f00d-494e-ab97-2a0aa5ef3c52/wokwi-logo_png_organization-profile.png" alt="Wokwi" width="50"/></a></td>
+  </tr>
+  <tr>
+    <td>Arduino</td>
+    <td>ESP</td>
+    <td>Thingspeak</td>
+    <td>Wokwi</td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><a href="https://www.ros.org/"><img src="https://www.freshconsulting.com/wp-content/uploads/fly-images/33744/ROS-2_logo-1920x9999.png" alt="ROS2" width="60"/></a></td>
+    <td><a href="https://cyberbotics.com/"><img src="https://purepng.com/public/uploads/large/purepng.com-ladybugladybuginsectsanimalcoccinellidae-1701528259839kuuvk.png" alt="Webots" width="40"/></a></td>
+    <td><a href="https://gazebosim.org/"><img src="https://seeklogo.com/images/G/gazebo-logo-51C46471CA-seeklogo.com.png" alt="Gazebo" width="30"/></a></td>
+  </tr>
+  <tr>
+    <td>ROS2</td>
+    <td>Webots</td>
+    <td>Gazebo</td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><a href="https://ubuntu.com/"><img src="https://seeklogo.com/images/A/autodesk-fusion-360-logo-7F72A76397-seeklogo.com.png" alt="Fusion 360" width="70"/></a></td>
+    <td><a href="https://www.solidworks.com/"><img src="https://banner2.cleanpng.com/20180425/kqw/kisspng-computer-icons-solidworks-e-5ae0fa43334702.1540505415246935712101.jpg" alt="Solidworks" width="70"/></a></td>
+    <td><a href="https://www.blender.org/"><img src="https://cdn.iconscout.com/icon/free/png-512/free-blender-3628659-3029884.png?f=webp&w=256" alt="Blender" width="70"/></a></td>
+  </tr>
+  <tr>
+    <td>Fusion 360</td>
+    <td>Solidworks</td>
+    <td>Blender</td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><a href="https://www.linux.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/759px-Tux.svg.png?20220320193426" alt="Linux" width="60"/></a></td>
+    <td><a href="https://ubuntu.com/"><img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="Ubuntu" width="60"/></a></td>
+    <td><a href="https://numpy.org/"><img src="https://cdn.worldvectorlogo.com/logos/numpy-1.svg" alt="NumPy" width="60"/></a></td>
+    <td><a href="https://matplotlib.org/"><img src="https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/mpl-data/images/matplotlib.svg" alt="Matplotlib" width="60"/></a></td>
+    <td><a href="https://pandas.pydata.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/674px-Pandas_mark.svg.png?20200210000431" alt="Pandas" width="60"/></a></td>
+  </tr>
+  <tr>
+    <td>Linux</td>
+    <td>Ubuntu</td>
+    <td>NumPy</td>
+    <td>Matplotlib</td>
+    <td>Pandas</td>
+  </tr>
+</table>
+
+
+
+
+<!--<p align="center">
   <a href="https://www.python.org/">
     <img src="https://www.svgrepo.com/show/376344/python.svg" alt="Python" height="70"/>
   </a>
@@ -98,7 +178,7 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
   <a href="https://numpy.org/"><img src="https://cdn.worldvectorlogo.com/logos/numpy-1.svg" alt="NumPy" width="60"/></a>
   <a href="https://matplotlib.org/"><img src="https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/mpl-data/images/matplotlib.svg" alt="Matplotlib" width="60"/></a>
   <a href="https://pandas.pydata.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/674px-Pandas_mark.svg.png?20200210000431" alt="Pandas" width="60"/></a>
-</p>
+</p>-->
 
 <!--## 🔧 Skills
 
