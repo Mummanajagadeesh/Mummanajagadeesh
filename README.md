@@ -77,7 +77,7 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
   <tr>
     <td><a href="https://www.arduino.cc/"><img src="https://brandslogos.com/wp-content/uploads/images/arduino-logo-1.png" alt="Arduino" width="50"/></a></td>
     <td><a href="https://www.espressif.com/"><img src="https://seeklogo.com/images/E/espressif-systems-logo-1350B9E771-seeklogo.com.png" alt="ESP" width="50"/></a></td>
-    <td><a href="https://thingspeak.com/"><img src="https://asset.brandfetch.io/idDN_HSf-s/idB53jfo-J.jpeg?updated=1718403832692" alt="Thingspeak" width="50"/></a></td>
+    <td><a href="https://thingspeak.com/"><img src="https://asset.brandfetch.io/idDN_HSf-s/idB53jfo-J.jpeg?updated=1718403832692" alt="Thingspeak" width="60"/></a></td>
     <td><a href="https://wokwi.com/"><img src="https://www.crowdsupply.com/img/3c52/e4021e4f-f00d-494e-ab97-2a0aa5ef3c52/wokwi-logo_png_organization-profile.png" alt="Wokwi" width="50"/></a></td>
   </tr>
   <tr>
@@ -91,9 +91,9 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 
 <table align="center">
   <tr>
-    <td><a href="https://www.ros.org/"><img src="https://www.freshconsulting.com/wp-content/uploads/fly-images/33744/ROS-2_logo-1920x9999.png" alt="ROS2" width="60"/></a></td>
-    <td><a href="https://cyberbotics.com/"><img src="https://purepng.com/public/uploads/large/purepng.com-ladybugladybuginsectsanimalcoccinellidae-1701528259839kuuvk.png" alt="Webots" width="40"/></a></td>
-    <td><a href="https://gazebosim.org/"><img src="https://seeklogo.com/images/G/gazebo-logo-51C46471CA-seeklogo.com.png" alt="Gazebo" width="30"/></a></td>
+    <td><a href="https://www.ros.org/"><img src="https://www.freshconsulting.com/wp-content/uploads/fly-images/33744/ROS-2_logo-1920x9999.png" alt="ROS2" width="80"/></a></td>
+    <td><a href="https://cyberbotics.com/"><img src="https://purepng.com/public/uploads/large/purepng.com-ladybugladybuginsectsanimalcoccinellidae-1701528259839kuuvk.png" alt="Webots" width="70"/></a></td>
+    <td><a href="https://gazebosim.org/"><img src="https://seeklogo.com/images/G/gazebo-logo-51C46471CA-seeklogo.com.png" alt="Gazebo" width="50"/></a></td>
   </tr>
   <tr>
     <td align="center"><b>ROS2</b></td>
