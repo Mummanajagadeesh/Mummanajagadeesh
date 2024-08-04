@@ -65,10 +65,10 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
     <td><img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg" title="Java" alt="Java" width="55" height="55"/></td>
   </tr>
   <tr>
-    <td>Python</td>
-    <td>C</td>
-    <td>C++</td>
-    <td>Java</td>
+    <td align="center"><b>Python</b></td>
+    <td align="center"><b>C</b></td>
+    <td align="center"><b>C++</b></td>
+    <td align="center"><b>Java</b></td>
   </tr>
 </table>
 
@@ -81,10 +81,10 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
     <td><a href="https://wokwi.com/"><img src="https://www.crowdsupply.com/img/3c52/e4021e4f-f00d-494e-ab97-2a0aa5ef3c52/wokwi-logo_png_organization-profile.png" alt="Wokwi" width="50"/></a></td>
   </tr>
   <tr>
-    <td>Arduino</td>
-    <td>ESP</td>
-    <td>Thingspeak</td>
-    <td>Wokwi</td>
+    <td align="center"><b>Arduino</b></td>
+    <td align="center"><b>ESP</b></td>
+    <td align="center"><b>Thingspeak</b></td>
+    <td align="center"><b>Wokwi</b></td>
   </tr>
 </table>
 
@@ -96,9 +96,9 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
     <td><a href="https://gazebosim.org/"><img src="https://seeklogo.com/images/G/gazebo-logo-51C46471CA-seeklogo.com.png" alt="Gazebo" width="30"/></a></td>
   </tr>
   <tr>
-    <td>ROS2</td>
-    <td>Webots</td>
-    <td>Gazebo</td>
+    <td align="center"><b>ROS2</b></td>
+    <td align="center"><b>Webots</b></td>
+    <td align="center"><b>Gazebo</b></td>
   </tr>
 </table>
 
@@ -110,9 +110,9 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
     <td><a href="https://www.blender.org/"><img src="https://cdn.iconscout.com/icon/free/png-512/free-blender-3628659-3029884.png?f=webp&w=256" alt="Blender" width="70"/></a></td>
   </tr>
   <tr>
-    <td>Fusion 360</td>
-    <td>Solidworks</td>
-    <td>Blender</td>
+    <td align="center"><b>Fusion 360</b></td>
+    <td align="center"><b>Solidworks</b></td>
+    <td align="center"><b>Blender</b></td>
   </tr>
 </table>
 
@@ -126,11 +126,11 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
     <td><a href="https://pandas.pydata.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/674px-Pandas_mark.svg.png?20200210000431" alt="Pandas" width="60"/></a></td>
   </tr>
   <tr>
-    <td>Linux</td>
-    <td>Ubuntu</td>
-    <td>NumPy</td>
-    <td>Matplotlib</td>
-    <td>Pandas</td>
+    <td align="center"><b>Linux</b></td>
+    <td align="center"><b>Ubuntu</b></td>
+    <td align="center"><b>NumPy</b></td>
+    <td align="center"><b>Matplotlib</b></td>
+    <td align="center"><b>Pandas</b></td>
   </tr>
 </table>
 
