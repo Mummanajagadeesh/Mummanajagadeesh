@@ -49,7 +49,7 @@
 
 # 🤖 About ME
 
-Hey <img src="https://raw.githubusercontent.com/umenzi/umenzi/main/wave.gif" width="20px">, I'm Jagadeesh——a robotics and AI enthusiast passionate about exploring in these exciting fields. I’m always excited to team up with others who share my passion for robotics and AI. I’m looking to connect with like-minded individuals who share a passion for these fields and are interested in collaborating on projects.
+Hey <img src="https://raw.githubusercontent.com/umenzi/umenzi/main/wave.gif" width="17px">, I'm Jagadeesh——a robotics and AI enthusiast passionate about exploring in these exciting fields. I’m always excited to team up with others who share my passion for robotics and AI. I’m looking to connect with like-minded individuals who share a passion for these fields and are interested in collaborating on projects.
 
 Feel free to check out my projects on GitHub, and if you’re interested in working together or just chatting about these topics, I'd love to hear from you!
 
