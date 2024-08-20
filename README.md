@@ -3,6 +3,8 @@
     これがJagadeeshです。<br>
 </p>
 
+
+
 <h1 align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Monaco&size=35&color=0000FF&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi_👋!;+I'm_Jagadeesh_ツ;" />
 </h1>
@@ -51,7 +53,7 @@
 
 
 
-Welcome to my GitHub profile! I'm passionate about electronics, programming, and engineering design. Here's a little bit about me:
+Welcome to my GitHub profile! I'm passionate about electronics and programming. Here's a little bit about me:
 
 
 <h2 align="center">🛠️ Tools and Technologies</h2>
@@ -213,6 +215,12 @@ Welcome to my GitHub profile! I'm passionate about electronics, programming, and
 
 ## 📊 GitHub Stats
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
+
+<p align="center"> 
+    <a href="https://github.com/ryo-ma/github-profile-trophy">
+        <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&column=5&row=2&theme=radical&no-frame=false" alt="mummanajagadeesh" width="300" height="200"/>
+    </a> 
+</p>
 
 <!--[![Activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)](https://github.com/Mummanajagadeesh/github-readme-activity-graph)-->
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)
