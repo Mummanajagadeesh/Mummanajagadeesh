@@ -3,9 +3,6 @@
 
 
 
-
-
-
 |                                                                                                             |                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | ![Alt Text](https://media.tenor.com/ke1anE0mW-kAAAAi/robot.gif) | - 🤖 Robotics and AI Enthusiast<br>- 🌱 I'm constantly learning<br>- 💪 Pursuing *Electronics and Communication Engineering*<br>- 🎓 from *National Institute of Technology Calicut*<br>- 📫 How to reach me: [Carrier Pigeons](https://www.linkedin.com/in/jagadeeeshmummana/) 🪽<br>- 😄 Pronouns: he/him<br>- 🙃 Hobbies: Speedcubing <img src="https://i.pinimg.com/originals/e4/4a/5f/e44a5fb5dbaa4e48a5a09f42b63ad02e.gif" width="20px">, Coding<br>-⚡Fun fact: I'm Batman <img src="https://media.tenor.com/BHH91Bu45UMAAAAC/batman-logo.gif" width="15px">|
@@ -56,7 +53,80 @@ Feel free to check out my projects on GitHub, and if you’re interested in work
 
 
 # 🛠️ Tools and Technologies
-<table align="center">
+
+<p align="left">
+  <a href="https://www.python.org" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+  </a> 
+  <a href="https://www.cprogramming.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>
+  </a> 
+  <a href="https://www.w3schools.com/cpp/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
+  </a> 
+  <a href="https://www.java.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/>
+  </a> 
+  <a href="https://git-scm.com/" target="_blank">
+    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+  </a> 
+  <a href="https://www.linux.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
+  </a>
+  <a href="https://ubuntu.com/" target="_blank">
+    <img src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="ubuntu" width="40" height="40"/>
+  </a> 
+  <a href="https://www.mathworks.com/products/matlab.html" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/>
+  </a>
+  <a href="https://www.mathworks.com/products/simulink.html" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Simulink_Logo_%28non-wordmark%29.png/900px-Simulink_Logo_%28non-wordmark%29.png?20220406131749" alt="simulink" width="40" height="40"/>
+  </a> 
+  <a href="https://thingspeak.com/" target="_blank">
+    <img src="https://avatars.githubusercontent.com/u/529052?s=200&v=4" alt="thingspeak" width="40" height="40"/>
+  </a> 
+  <a href="https://wokwi.com/" target="_blank">
+    <img src="https://yt3.googleusercontent.com/ytc/AIdro_lAMS2z_YWKi9GHoDCJwdFKeXu1N1uyiO9Qwed1PB90=s900-c-k-c0x00ffffff-no-rj" alt="wokwi" width="40" height="40"/>
+  </a>
+  <a href="https://www.arduino.cc/" target="_blank">
+    <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/>
+  </a> 
+  <a href="https://www.raspberrypi.org/" target="_blank">
+    <img src="https://www.raspberrypi.org/app/uploads/2018/03/RPi-Logo-Reg-SCREEN.png" alt="raspberry pi" width="40" height="40"/>
+  </a> 
+  <a href="https://espressif.com/" target="_blank">
+    <img src="https://seeklogo.com/images/E/espressif-systems-logo-1350B9E771-seeklogo.com.png" alt="espresiff" width="40" height="40"/>
+  </a>
+  <a href="https://index.ros.org/doc/ros2/" target="_blank">
+    <img src="https://cdn.sanity.io/images/s18ewfw4/staging/1ab1332c9e2c376c1978e59da9b3dc15eb781af0-1271x358.png?rect=502,0,269,358&w=2880&h=3840&q=80&auto=format" alt="ros2" width="40" height="40"/>
+  </a> 
+  <a href="https://cyberbotics.com/" target="_blank">
+    <img src="https://img.informer.com/icons_mac/png/128/242/242708.png" alt="webots" width="40" height="40"/>
+  </a> 
+  <a href="http://gazebosim.org/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/450px-Gazebo_logo_without_text.svg.png?20150715002113" alt="gazebo" width="40" height="40"/>
+  </a> 
+  <a href="https://numpy.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" alt="numpy" width="40" height="40"/>
+  </a> 
+  <a href="https://matplotlib.org/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Matplotlib_icon.svg/2048px-Matplotlib_icon.svg.png" alt="matplotlib" width="40" height="40"/>
+  </a> 
+  <a href="https://pandas.pydata.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/>
+  </a>
+  <a href="https://www.autodesk.com/products/fusion-360/overview" target="_blank">
+    <img src="https://seeklogo.com/images/A/autodesk-fusion-360-logo-7F72A76397-seeklogo.com.png" alt="fusion 360" width="40" height="40"/>
+  </a>
+  <a href="https://www.solidworks.com/" target="_blank">
+    <img src="https://e7.pngegg.com/pngimages/558/632/png-clipart-computer-icons-solidworks-e-miscellaneous-text-thumbnail.png" alt="solidworks" width="40" height="40"/>
+  </a>
+  <a href="https://www.blender.org/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/2048px-Blender_logo_no_text.svg.png" alt="blender" width="40" height="40"/>
+  </a>
+</p>
+
+<!--<table align="center">
   <tr>
     <td><img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="55" height="55"/></td>
     <td><img src="https://github.com/devicons/devicon/blob/master/icons/c/c-original.svg" title="‎C‎‎‎" alt="C" width="55" height="55"/></td>
@@ -100,7 +170,7 @@ Feel free to check out my projects on GitHub, and if you’re interested in work
     <td align="center"><b>Matplotlib</b></td>
     <td align="center"><b>Pandas</b></td>
   </tr>
-</table>
+</table>-->
 
 
 # 📊 GitHub Stats</h1>
