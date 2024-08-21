@@ -8,7 +8,7 @@
 
 |                                                                                                             |                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ![Alt Text](https://media.tenor.com/ke1anE0mW-kAAAAi/robot.gif) | - 🤖 Robotics and AI Enthusiast<br>- 🌱 I'm constantly learning<br>- 💪 Pursuing *Electronics and Communication Engineering*<br>- 🎓 from *National Institute of Technology Calicut*<br>- 📫 How to reach me: [Carrier Pigeons](https://www.linkedin.com/in/jagadeeeshmummana/) 🪽<br>- 😄 Pronouns: he/him<br>- 🙃 Hobbies: Speedcubing <img src="https://i.pinimg.com/originals/e4/4a/5f/e44a5fb5dbaa4e48a5a09f42b63ad02e.gif" width="20px">, Coding<br>-⚡Fun fact: I'm Batman |
+| ![Alt Text](https://media.tenor.com/ke1anE0mW-kAAAAi/robot.gif) | - 🤖 Robotics and AI Enthusiast<br>- 🌱 I'm constantly learning<br>- 💪 Pursuing *Electronics and Communication Engineering*<br>- 🎓 from *National Institute of Technology Calicut*<br>- 📫 How to reach me: [Carrier Pigeons](https://www.linkedin.com/in/jagadeeeshmummana/) 🪽<br>- 😄 Pronouns: he/him<br>- 🙃 Hobbies: Speedcubing <img src="https://i.pinimg.com/originals/e4/4a/5f/e44a5fb5dbaa4e48a5a09f42b63ad02e.gif" width="20px">, Coding<br>-⚡Fun fact: I'm Batman <img src="https://media.tenor.com/BHH91Bu45UMAAAAC/batman-logo.gif" width="15px">|
 
 <h1>こんにちは世界! これがJagadeeshです。</h1>
 <p align="left">
@@ -52,7 +52,6 @@
 Hey <img src="https://raw.githubusercontent.com/umenzi/umenzi/main/wave.gif" width="17px">, I'm Jagadeesh——a robotics and AI enthusiast passionate about exploring in these exciting fields. I’m always excited to team up with others who share my passion for robotics and AI. I’m looking to connect with like-minded individuals who share a passion for these fields and are interested in collaborating on projects.
 
 Feel free to check out my projects on GitHub, and if you’re interested in working together or just chatting about these topics, I'd love to hear from you!
-
 
 
 
