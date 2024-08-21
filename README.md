@@ -1,8 +1,6 @@
 <!--![GitHub Header Image](https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/16614fb56f8c618c56462f8b56620bca086c246a/github-header-image.png)-->
 
 
-
-
 # こんにちは世界! これがJagadeeshです
 <p align="left">
   <a href="https://www.linkedin.com/in/jagadeeeshmummana" target="_blank">
