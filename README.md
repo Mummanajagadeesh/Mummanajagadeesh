@@ -1,4 +1,4 @@
-![snake gif](https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/output/github-contribution-grid-snake.gif)
+<!--!![snake gif](https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/output/github-contribution-grid-snake.gif)
 
 <!--![GitHub Header Image](https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/16614fb56f8c618c56462f8b56620bca086c246a/github-header-image.png)-->
 
