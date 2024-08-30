@@ -24,7 +24,7 @@
     <img src="https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube"/>
   </a>
   <a href="https://www.duolingo.com/profile/jagadeesh97">
-    <img src="https://s1.ezgif.com/tmp/ezgif-1-04167686e8.gif" alt="Duolingo" width="30"/>
+    <img src="https://tenor.com/rXZnbe8CMd1.gif" alt="Duolingo" width="40"/>
   </a>
   <a href="https://games.app.goo.gl/p1bNrgGSnMbK4hte9">
     <img src="https://www.svgrepo.com/show/303545/google-play-games-logo.svg" alt="Google Play" width="24"/>
