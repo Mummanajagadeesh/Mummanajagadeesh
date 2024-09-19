@@ -23,6 +23,9 @@
   <a href="https://www.youtube.com/@M_J_9_7" target="_blank">
     <img src="https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube"/>
   </a>
+  <a href="https://events.cubelelo.com/profile/24CLMUM001">
+    <img src="https://www.cubelelo.com/cdn/shop/files/Cubelelo_Logo_260x_2x_8bad3d77-55ae-441d-a22a-e36c6daff1e2_260x@2x.png?v=1684307668" alt="CLID" width="70"/>
+  </a>
   <a href="https://www.duolingo.com/profile/jagadeesh97">
     <img src="https://media.tenor.com/z168S__FUKcAAAAi/duolingo.gif" alt="Duolingo" width="40"/>
   </a>
