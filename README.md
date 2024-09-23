@@ -20,6 +20,8 @@
   <a href="mailto:mummanajagadeesh97@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
   </a>
+</p>
+<p align="left">
   <a href="https://www.youtube.com/@M_J_9_7" target="_blank">
     <img src="https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube"/>
   </a>
@@ -33,8 +35,6 @@
     <img src="https://www.svgrepo.com/show/303545/google-play-games-logo.svg" alt="Google Play" width="24"/>
   </a>
 </p>
-
-
 
 
 
