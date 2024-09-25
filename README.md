@@ -3,6 +3,9 @@
 
 # こんにちは世界! これが [Jagadeesh](https://mummanajagadeesh.github.io/P3R50N4L-P0R7F0L10/) です
 <p align="left">
+  <a href="https://mummanajagadeesh.github.io/P3R50N4L-P0R7F0L10/" target="_blank">
+  <img src="https://img.shields.io/badge/Portfolio-2E8B57?style=flat-square&logo=github" alt="Portfolio"/>
+</a>
   <a href="https://www.linkedin.com/in/jagadeeeshmummana" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin" alt="LinkedIn"/>
   </a>
