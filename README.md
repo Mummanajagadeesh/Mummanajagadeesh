@@ -56,6 +56,7 @@
 Hey <img src="https://raw.githubusercontent.com/umenzi/umenzi/main/wave.gif" width="17px">, I'm Jagadeesh——a robotics and AI enthusiast passionate about exploring in these exciting fields. I’m always excited to team up with others who share my passion for robotics and AI. I’m looking to connect with like-minded individuals who share a passion for these fields and are interested in collaborating on projects.
 
 MY Key Interests:
+- Micro-controllers & Electronics
 - Embedded Programming
 - Sensor Fusion
 - Computer Vision
