@@ -2,7 +2,6 @@
 
 
 # こんにちは世界! これが [Jagadeesh](https://mummanajagadeesh.github.io/P3R50N4L-P0R7F0L10/) です[。](https://translate.google.com/?sl=ja&tl=en&text=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%E4%B8%96%E7%95%8C!%20%E3%81%93%E3%82%8C%E3%81%8C%20Jagadeesh%20%E3%81%A7%E3%81%99&op=translate)
-こんにちは、世界！Jagadeesh です。
 <p align="left">
   <a href="https://mummanajagadeesh.github.io/P3R50N4L-P0R7F0L10/" target="_blank">
   <img src="https://img.shields.io/badge/Portfolio-2E8B57?style=flat-square&logo=github" alt="Portfolio"/>
