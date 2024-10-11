@@ -45,7 +45,7 @@
 
 
 <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Monaco&size=35&color=FF0000&center=true&vCenter=true&width=500&height=70&repeat=false&duration=4000&lines=Hi_👋!;+I'm_Jagadeesh_ツ;" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Monaco&size=35&color=FF0000&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi_👋!;+I'm_Jagadeesh_ツ;" />
 </h1>
 
 |                                                                                                             |                                                                                                  |
