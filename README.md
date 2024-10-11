@@ -38,7 +38,9 @@
 </p>
 
 
-
+<!--<h1 align="center">
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Monaco&size=35&color=FF0000&center=true&vCenter=true&width=800&height=120&duration=4000&lines=$+git+pull+life+--verbose;Fetching+latest+life+updates...;error:+merge+conflict+in+/mental/health;error:+insufficient+memory+to+process+workload;warning:+uncommitted+stress+found;Aborting...;Output:+%22404'd%22" />
+</h1>-->
 
 
 <h1 align="center">
