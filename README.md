@@ -174,10 +174,10 @@ Feel free to check out my projects [here](https://github.com/Mummanajagadeesh?ta
 <table>
   <tr>
     <td>
-      <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=trueCache-Control=no-cache" alt="Stats" />
+      <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&Cache-Control=no-cache" alt="Stats" />
     </td>
     <td>
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=truecount_private=true&include_all_commits=true&Cache-Control=no-cache" alt="Streak" />
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true&count_private=true&include_all_commits=true&Cache-Control=no-cache" alt="Streak" />
     </td>
     <td>
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=radical&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83&include_all_commits=true&Cache-Control=no-cache" alt="Top Languages" />
