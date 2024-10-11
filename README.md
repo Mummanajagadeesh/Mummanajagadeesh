@@ -75,7 +75,7 @@ MY Key Interests:
 - Brain Computer Interfaces
 
   
-Feel free to check out my projects on GitHub, and if you’re interested in working together or just chatting about these topics, I'd love to hear from you!
+Feel free to check out my projects [here](https://github.com/Mummanajagadeesh?tab=stars), and if you’re interested in working together or just chatting about these topics, I'd love to hear from you!
 
 
 
