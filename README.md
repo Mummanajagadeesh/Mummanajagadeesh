@@ -163,7 +163,7 @@ Feel free to check out my projects [here](https://github.com/Mummanajagadeesh?ta
 
 <p align="center"> 
     <a href="https://github.com/ryo-ma/github-profile-trophy">
-        <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&column=5&row=2&theme=radical&no-frame=false" alt="mummanajagadeesh" />
+        <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=radical&no-frame=true" alt="mummanajagadeesh" />
     </a> 
 </p>
 
