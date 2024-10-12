@@ -186,6 +186,17 @@ Feel free to check out my projects [here](https://github.com/Mummanajagadeesh?ta
 </table>
 
 
+
+
+<!--![Quote](https://github-readme-quotes-bay.vercel.app/quote?theme=radical?quotesUrl=https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/414cabe06e68275172913e1e4468c60819de8972/assets/quotes.json)
+![Quote](https://github-readme-quotes-bay.vercel.app/quote?theme=radical&quotesUrl=https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/414cabe06e68275172913e1e4468c60819de8972/assets/quotes.json)-->
+
+### RndmQuoteGen()
+<p align="center"> 
+    <img src="https://github-readme-quotes-bay.vercel.app/quote?quoteCategory=motivational&theme=radical" />
+</p>
+
+
 <!--Feel free to reach out if you have any questions or if you'd like to collaborate on a project. I'm always open to learning and trying out new things!
 
 # ありがとう
