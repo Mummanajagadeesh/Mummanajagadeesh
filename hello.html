@@ -123,6 +123,34 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
         }
+        
+        
+                /* Badge Styling */
+        .badge-container {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100%);
+            opacity: 0;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .badge-visible {
+            opacity: 1;
+            transform: translateX(-50%) translateY(-10%);
+            pointer-events: auto;
+        }
+        
+        .header {
+    text-align: center;
+    margin-top: -35px; /* Adjust this value as needed */
+    position: relative;
+    z-index: 1;
+}
+
+        
+        
     </style>
 </head>
 <body>
@@ -140,7 +168,7 @@
     <div class="header container">
         <h1 id="scrambleText">Jagadeesh_Mummana</h1>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/jagadeeeshmummana" target="_blank" class="hover-effect">
+            <a href="https://www.linkedin.com/in/jagadeeeshmummana" target="_blank" class="hover-effect" data-badge-id="linkedin-badge">
                 <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
             </a>
             <a href="https://www.instagram.com/jagadeesh_97_" target="_blank" class="hover-effect">
@@ -153,11 +181,21 @@
                 <img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Email">
             </a>
         </div>
+
+        <!-- LinkedIn Badge -->
+        <div class="badge-container" id="linkedin-badge">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="jagadeeesh-mummana" data-version="v1">
+                <span class="badge-base__link LI-simple-link"></span>
+            </div>
+        </div>
     </div>
     
     <!-- Starry Background -->
     <div class="background-stars"></div>
     
+     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+     
+     
     <script>
         // Cursor-following ball
         const cursorBall = document.createElement("div");
@@ -301,6 +339,54 @@
             }
         });
     });
+    
+    
+    // Badge visibility state management
+        const badge = document.getElementById('linkedin-badge');
+        const linkedinIcon = document.querySelector('.social-icons a[data-badge-id="linkedin-badge"]');
+        let hideBadgeTimeout, hideOnBadgeTimeout;
+
+        function showBadge() {
+            clearTimeout(hideBadgeTimeout);
+            clearTimeout(hideOnBadgeTimeout);
+            badge.classList.add('badge-visible');
+        }
+
+        function hideBadge(delay) {
+            hideBadgeTimeout = setTimeout(() => {
+                badge.classList.remove('badge-visible');
+            }, delay);
+        }
+
+        linkedinIcon.addEventListener('mouseenter', () => {
+            showBadge();
+        });
+
+        linkedinIcon.addEventListener('mouseleave', () => {
+            hideBadge(1500); // Hide after 1.5 seconds if not hovering badge
+        });
+
+        badge.addEventListener('mouseenter', () => {
+            clearTimeout(hideBadgeTimeout);
+        });
+
+        badge.addEventListener('mouseleave', () => {
+            hideOnBadgeTimeout = setTimeout(() => {
+                badge.classList.remove('badge-visible');
+            }, 1000); // Hide 1 second after leaving badge
+        });
+
+        document.querySelectorAll('.social-icons a').forEach(icon => {
+            if (icon !== linkedinIcon) {
+                icon.addEventListener('mouseenter', () => {
+                    badge.classList.remove('badge-visible');
+                    clearTimeout(hideBadgeTimeout);
+                    clearTimeout(hideOnBadgeTimeout);
+                });
+            }
+        });
+        
+        
 
     </script>
 </body>
