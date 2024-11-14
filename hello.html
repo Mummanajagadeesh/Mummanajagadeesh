@@ -22,16 +22,18 @@
             justify-content: center;
         }
         /* Navigation Bar */
+        
         .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            z-index: 1001;
-        }
+    position: fixed;
+    top: -60px; /* Move it up off-screen initially */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    z-index: 1001;
+    transition: top 0.5s; /* Smooth slide */
+}
         .navbar a {
             color: #fff;
             text-decoration: none;
@@ -42,6 +44,15 @@
         .navbar a:hover {
             color: #00f;
         }
+        
+        
+
+
+.navbar.visible {
+    top: 0; /* Slide the navbar into view */
+}
+
+
         /* Header Styling */
         .header {
             text-align: center;
@@ -59,7 +70,7 @@
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 50px;
         }
         .social-icons img {
             width: 40px;
@@ -223,6 +234,47 @@
                 scrambleText(header, originalText, originalText, 100);
             });
         });
+        
+        
+        document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.querySelector(".navbar");
+    let hideNavbarTimeout;
+
+    // Function to show the navbar and reset the hide timer
+    function showNavbar() {
+        navbar.classList.add("visible");
+        clearTimeout(hideNavbarTimeout); // Reset the timeout
+        hideNavbarTimeout = setTimeout(hideNavbar, 3000); // Hide after 3 seconds
+    }
+
+    // Function to hide the navbar
+    function hideNavbar() {
+        navbar.classList.remove("visible");
+    }
+
+    // Show navbar when mouse is near the top
+    document.addEventListener("mousemove", (e) => {
+        if (e.clientY <= 50) {
+            showNavbar();
+        }
+    });
+
+    // Show navbar when scrolling
+    document.addEventListener("scroll", () => {
+        showNavbar();
+    });
+
+    // Hide the navbar when the mouse leaves the navbar area
+    navbar.addEventListener("mouseleave", () => {
+        hideNavbarTimeout = setTimeout(hideNavbar, 3000); // Start hide timer on leave
+    });
+
+    // Clear the hide timeout if the mouse re-enters the navbar area
+    navbar.addEventListener("mouseenter", () => {
+        clearTimeout(hideNavbarTimeout);
+    });
+});
+
     </script>
 </body>
 </html>
