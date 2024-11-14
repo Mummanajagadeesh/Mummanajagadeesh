@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagadeesh Mummana | Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Monaco', monospace;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            z-index: 1001;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #00f;
+        }
+        /* Header Styling */
+        .header {
+            text-align: center;
+            margin-top: 100px;
+            position: relative;
+            z-index: 1;
+        }
+        .header h1 {
+            font-size: 4em;
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        /* Social Icons Styling */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.2s, filter 0.2s;
+        }
+        /* Cursor-following ball */
+        .cursor-ball {
+            position: fixed;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #fff;
+            mix-blend-mode: difference;
+            pointer-events: none;
+            transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+            z-index: 1000;
+            transform: translate(-50%, -50%);
+        }
+        /* Starry Background */
+        .background-stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            background: #000;
+            overflow: hidden;
+        }
+        .star {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: 0.9;
+            width: 2px;
+            height: 2px;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <!-- Header Section -->
+    <div class="header container">
+        <h1 id="scrambleText">Jagadeesh Mummana</h1>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/jagadeeeshmummana" target="_blank" class="hover-effect">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/jagadeesh_97_" target="_blank" class="hover-effect">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/Mummanajagadeesh" target="_blank" class="hover-effect">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub">
+            </a>
+            <a href="mailto:mummanajagadeesh97@gmail.com" target="_blank" class="hover-effect">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Email">
+            </a>
+        </div>
+    </div>
+    
+    <!-- Starry Background -->
+    <div class="background-stars"></div>
+    
+    <script>
+        // Cursor-following ball
+        const cursorBall = document.createElement("div");
+        cursorBall.classList.add("cursor-ball");
+        document.body.appendChild(cursorBall);
+
+        document.addEventListener("mousemove", (e) => {
+            cursorBall.style.left = `${e.clientX}px`;
+            cursorBall.style.top = `${e.clientY}px`;
+        });
+
+        // Enlarge the cursor ball on hover over social media icons
+        const hoverElements = document.querySelectorAll('.hover-effect');
+        hoverElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursorBall.style.width = '40px';
+                cursorBall.style.height = '40px';
+            });
+            element.addEventListener('mouseleave', () => {
+                cursorBall.style.width = '12px';
+                cursorBall.style.height = '12px';
+            });
+        });
+
+        // Create background stars
+        const background = document.querySelector('.background-stars');
+        const numStars = 150;
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.width = `${Math.random() * 3 + 1}px`;
+            star.style.height = star.style.width;
+            star.style.animationDuration = `${Math.random() * 5 + 2}s`;
+            background.appendChild(star);
+        }
+
+        // Text scrambling effect function
+        function scrambleText(target, text, targetText, delay) {
+            const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            let iteration = 0;
+            clearInterval(target.interval);
+
+            target.interval = setInterval(() => {
+                target.innerText = targetText
+                    .split("")
+                    .map((letter, index) => {
+                        if (index < iteration) return targetText[index];
+                        return letters[Math.floor(Math.random() * letters.length)];
+                    })
+                    .join("");
+                if (iteration >= targetText.length) {
+                    clearInterval(target.interval);
+                    target.innerText = targetText;
+                }
+                iteration += 1 / 3;
+            }, delay);
+        }
+
+        // Handling h1 (Jagadeesh Mummana -> Hello World!! on hover)
+        const header1 = document.querySelector("h1");
+        const originalTextH1 = "Jagadeesh Mummana";
+        const newTextH1 = "Hello World!!";
+
+        header1.addEventListener("mouseover", () => {
+            scrambleText(header1, originalTextH1, newTextH1, 100);
+        });
+
+        header1.addEventListener("mouseout", () => {
+            scrambleText(header1, newTextH1, originalTextH1, 100);
+        });
+
+        // Handling all h2 headers (scramble effect on hover)
+        const headers = document.querySelectorAll("h2");
+
+        headers.forEach(header => {
+            const originalText = header.innerText;
+            header.addEventListener("mouseover", () => {
+                scrambleText(header, originalText, originalText, 100);
+            });
+            header.addEventListener("mouseout", () => {
+                scrambleText(header, originalText, originalText, 100);
+            });
+        });
+    </script>
+</body>
+</html>
