@@ -66,6 +66,8 @@
             margin-bottom: 20px;
             text-align: center;
         }
+
+
         /* Social Icons Styling */
         .social-icons {
             display: flex;
@@ -77,11 +79,11 @@
             height: 40px;
             transition: transform 0.2s, filter 0.2s;
         }
-
-/* Hover effect: Shrink the icons to 80% size */
-.social-icons img:hover {
-    transform: scale(0.8);
-}
+        /* Social icons scale and rotate effect on hover */
+        .social-icons img:hover {
+            transform: scale(0.8) rotate(360deg);
+            transition: transform 0.3s ease-in-out;
+        }
 
 
         /* Cursor-following ball */
@@ -219,7 +221,7 @@
         // Handling h1 (Jagadeesh Mummana -> Hello World!! on hover)
         const header1 = document.querySelector("h1");
         const originalTextH1 = "Jagadeesh_Mummana";
-        const newTextH1 = "Hello_World!!";
+        const newTextH1 = "$Hello_World!!";
 
         header1.addEventListener("mouseover", () => {
             scrambleText(header1, originalTextH1, newTextH1, 100);
