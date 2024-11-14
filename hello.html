@@ -129,7 +129,7 @@
     
     <!-- Header Section -->
     <div class="header container">
-        <h1 id="scrambleText">Jagadeesh Mummana</h1>
+        <h1 id="scrambleText">Jagadeesh_Mummana</h1>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/jagadeeeshmummana" target="_blank" class="hover-effect">
                 <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
@@ -211,8 +211,8 @@
 
         // Handling h1 (Jagadeesh Mummana -> Hello World!! on hover)
         const header1 = document.querySelector("h1");
-        const originalTextH1 = "Jagadeesh Mummana";
-        const newTextH1 = "Hello World!!";
+        const originalTextH1 = "Jagadeesh_Mummana";
+        const newTextH1 = "Hello_World!!";
 
         header1.addEventListener("mouseover", () => {
             scrambleText(header1, originalTextH1, newTextH1, 100);
@@ -274,6 +274,24 @@
         clearTimeout(hideNavbarTimeout);
     });
 });
+
+
+ // Mouse hover effect for interactive stars
+    document.body.addEventListener('mousemove', (e) => {
+        const stars = document.querySelectorAll('.star');
+        stars.forEach(star => {
+            const rect = star.getBoundingClientRect();
+            const dx = e.clientX - rect.left;
+            const dy = e.clientY - rect.top;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 100) {
+                star.style.transform = `translate(${dx * 0.1}px, ${dy * 0.1}px)`;
+            } else {
+                star.style.transform = 'translate(0, 0)';
+            }
+        });
+    });
 
     </script>
 </body>
