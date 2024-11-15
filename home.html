@@ -81,9 +81,120 @@
         }
         /* Social icons scale and rotate effect on hover */
         .social-icons img:hover {
-            transform: scale(0.8) rotate(15deg);
+            transform: scale(0.8) rotate(360deg);
             transition: transform 0.3s ease-in-out;
         }
+
+        /* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    left: -100%;  /* Start from the left */
+    animation: slideIn 1s forwards;
+}
+
+/* Individual Icon Styling */
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+    opacity: 0;  /* Start with hidden */
+    transform: translateX(-100px);  /* Start from the left */
+    animation: inertia 1.5s ease-out forwards;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    bottom: -100%;  /* Start from the bottom of the screen */
+    animation: slideUp 1s forwards;
+}
+
+/* Individual Icon Styling */
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+    opacity: 0;  /* Start with hidden */
+    transform: translateY(100px);  /* Start from the bottom */
+    animation: inertiaY 1.5s ease-out forwards;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: -100px;  /* Start from the bottom of the screen */
+    left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);  /* Adjust to truly center */
+    animation: slideUp 1s forwards;  /* Slide the whole container up */
+}
+
+/* Individual Icon Styling */
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+    opacity: 0;  /* Start hidden */
+    transform: translateY(100px);  /* Start from below the screen */
+    animation: inertiaY 1.5s ease-out forwards;  /* Add inertia effect */
+}
+
+/* Slide Up animation for container */
+@keyframes slideUp {
+    0% {
+        bottom: -100px;  /* Start off-screen from the bottom */
+    }
+    100% {
+        bottom: 300px;  /* Move to the final vertical position */
+    }
+}
+
+/* Inertia Effect for Icons (Y-axis) */
+@keyframes inertiaY {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);  /* Start from below the screen */
+    }
+    20% {
+        transform: translateY(-50px);  /* Move slightly upwards */
+    }
+    60% {
+        transform: translateY(10px);  /* Inertia-like effect */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);  /* Final position at the center */
+    }
+}
+
+/* Adjusting Delay for Each Icon */
+.social-icons a:nth-child(1) {
+    animation-delay: 0.1s;  /* Delay for LinkedIn */
+    left: 0;  /* LinkedIn starts from the far left */
+}
+
+.social-icons a:nth-child(2) {
+    animation-delay: 0.2s;  /* Delay for Instagram */
+    left: 50px;  /* Instagram starts slightly right */
+}
+
+.social-icons a:nth-child(3) {
+    animation-delay: 0.3s;  /* Delay for GitHub */
+    left: 100px;  /* GitHub starts further right */
+}
+
+
+
 
 
         /* Cursor-following ball */
@@ -117,7 +228,7 @@
             opacity: 0.9;
             width: 2px;
             height: 2px;
-            animation: twinkle 3s infinite ease-in-out;
+            animation: twinkle 0.125s infinite ease-in-out;
         }
         @keyframes twinkle {
             0%, 100% { opacity: 1; }
