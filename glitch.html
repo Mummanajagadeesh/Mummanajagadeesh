@@ -118,27 +118,7 @@
       }
     }
 
-    /* Black Circle Transition */
-    .circle-transition {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 0;
-      height: 0;
-      background-color: black;
-      border-radius: 50%;
-      opacity: 0.8;
-      z-index: 2;
-      pointer-events: none;
-      transition: all 0.3s ease-in-out;
-    }
 
-    .circle-transition.active {
-      width: 200vw;
-      height: 200vh;
-      opacity: 0;
-    }
   </style>
 </head>
 <body>
@@ -189,16 +169,11 @@
       });
     }
 
-    // Black Circle Transition
-    const circle = document.getElementById('circle');
 
-    setTimeout(() => {
-      circle.classList.add('active');
-    }, 2700); // Start transition at 4.7 seconds
 
-    setTimeout(() => {
-      window.location.href = 'portfolio.html';
-    }, 3000); // Redirect at 5 seconds
+  setTimeout(() => {
+    window.location.href = 'portfolio.html'; // Redirect after animation
+  }, 3500);
 
     // Initial call
     splitWords();
