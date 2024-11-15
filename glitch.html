@@ -20,12 +20,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
     }
 
     /* Header Styling */
     .header {
       text-align: center;
-      margin-top: -105px; /* Adjust this value as needed */
+      margin-top: -105px;
       position: relative;
       z-index: 1;
     }
@@ -116,12 +117,35 @@
         transform: translateX(0px);
       }
     }
+
+    /* Black Circle Transition */
+    .circle-transition {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      background-color: black;
+      border-radius: 50%;
+      opacity: 0.8;
+      z-index: 2;
+      pointer-events: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .circle-transition.active {
+      width: 200vw;
+      height: 200vh;
+      opacity: 0;
+    }
   </style>
 </head>
 <body>
   <div class="header">
     <p class="animated-title" aria-label="Jagadeesh_Mummana"></p>
   </div>
+  <div class="circle-transition" id="circle"></div>
 
   <script>
     // Split and Animate Text
@@ -165,10 +189,16 @@
       });
     }
 
-    // Redirect after 5 seconds
+    // Black Circle Transition
+    const circle = document.getElementById('circle');
+
+    setTimeout(() => {
+      circle.classList.add('active');
+    }, 2700); // Start transition at 4.7 seconds
+
     setTimeout(() => {
       window.location.href = 'portfolio.html';
-    }, 3000);
+    }, 3000); // Redirect at 5 seconds
 
     // Initial call
     splitWords();
