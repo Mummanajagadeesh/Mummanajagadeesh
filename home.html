@@ -110,7 +110,7 @@
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 70px;
     position: relative;
     bottom: -100%;  /* Start from the bottom of the screen */
     animation: slideUp 1s forwards;
@@ -402,12 +402,12 @@ if (performance.navigation.type == 1) {
         document.addEventListener("DOMContentLoaded", () => {
     const navbar = document.querySelector(".navbar");
     let hideNavbarTimeout;
+    let initialNavbarOpenTimeout;
 
     // Function to show the navbar and reset the hide timer
     function showNavbar() {
         navbar.classList.add("visible");
         clearTimeout(hideNavbarTimeout); // Reset the timeout
-        hideNavbarTimeout = setTimeout(hideNavbar, 3000); // Hide after 3 seconds
     }
 
     // Function to hide the navbar
@@ -436,7 +436,21 @@ if (performance.navigation.type == 1) {
     navbar.addEventListener("mouseenter", () => {
         clearTimeout(hideNavbarTimeout);
     });
+
+    // Initial open of the navbar for 2-3 seconds after page load
+    showNavbar();
+
+    // After 2-3 seconds, start the normal behavior of hiding the navbar
+    initialNavbarOpenTimeout = setTimeout(() => {
+        navbar.classList.remove("visible");
+        document.addEventListener("mousemove", () => {
+            navbar.classList.add("visible");
+            clearTimeout(hideNavbarTimeout); // Reset the timeout
+            hideNavbarTimeout = setTimeout(hideNavbar, 1500); // Hide after 3 seconds if not moving
+        });
+    }, 1000); // Wait for 3 seconds before normal behavior
 });
+
 
 
  // Mouse hover effect for interactive stars
