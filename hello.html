@@ -197,6 +197,11 @@
      
      
     <script>
+
+if (performance.navigation.type == 1) {
+            window.location.href = 'index.html';
+        }
+        
         // Cursor-following ball
         const cursorBall = document.createElement("div");
         cursorBall.classList.add("cursor-ball");
