@@ -21,6 +21,7 @@
       align-items: center;
       justify-content: center;
       position: relative;
+      font-weight: bold;
     }
 
     /* Header Styling */
@@ -63,36 +64,37 @@
     }
 
     @keyframes displayLetter {
-      0% {
-        transform: translateY(2px);
-        color: white;
-        opacity: 0;
-      }
-      10% {
-        opacity: 1;
-        color: limegreen;
-      }
-      20% {
-        opacity: 0;
-        color: white;
-        transform: translateY(0px);
-      }
-      50% {
-        opacity: 1;
-        color: darkgreen;
-        transform: translateY(1px);
-      }
-      60% {
-        opacity: 1;
-        color: white;
-        transform: translateY(1px);
-      }
-      100% {
-        transform: translateY(0);
-        color: white;
-        opacity: 1;
-      }
-    }
+  0% {
+    transform: translateY(2px);
+    color: white; /* Start with white */
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    color: red; /* Glitch to red */
+  }
+  20% {
+    opacity: 0;
+    color: black; /* Glitch to black */
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    color: blue; /* Glitch to blue */
+    transform: translateY(1px);
+  }
+  60% {
+    opacity: 1;
+    color: white; /* Frequently revert to white */
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+    color: white; /* End with white */
+    opacity: 1;
+  }
+}
+
 
     @keyframes textGlitch {
       0% {
@@ -118,7 +120,27 @@
       }
     }
 
+    /* Black Circle Transition */
+    .circle-transition {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      background-color: black;
+      border-radius: 50%;
+      opacity: 0.8;
+      z-index: 2;
+      pointer-events: none;
+      transition: all 0.3s ease-in-out;
+    }
 
+    .circle-transition.active {
+      width: 200vw;
+      height: 200vh;
+      opacity: 0;
+    }
   </style>
 </head>
 <body>
@@ -169,11 +191,17 @@
       });
     }
 
+    // Black Circle Transition
+    const circle = document.getElementById('circle');
 
+    setTimeout(() => {
+      circle.classList.add('active');
+    }, 2700); // Start transition at 4.7 seconds
 
-  setTimeout(() => {
-    window.location.href = 'portfolio.html'; // Redirect after animation
-  }, 3000);
+    setTimeout(() => {
+      window.location.href = 'home.html';
+    }, 3000); // Redirect at 5 seconds
+
 
     // Initial call
     splitWords();
