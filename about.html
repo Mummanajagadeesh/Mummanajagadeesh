@@ -53,7 +53,7 @@
             height: 80vh; /* Allow enough space to scroll */
             overflow-y: scroll; /* Enable scrolling */
             padding: 30px;
-            background: rgba(80, 80, 80, 0.4);
+            background: rgba(0, 0, 0, 0.264);
             -ms-overflow-style: none;  /* Hide scrollbar on Internet Explorer and Edge */
             scrollbar-width: none; /* Hide scrollbar on Firefox */
         }
@@ -66,6 +66,63 @@
         h2, h3, h4 {
             font-family: Monaco, monospace;
         }
+
+        /* Change header colors to #d0f0c0 */
+#about-container h1, #about-container h2, #about-container h3, #about-container h4 {
+    color: #d0f0c0;
+}
+
+/* Increase the font size of the h1 tag for About_ME */
+#about-container h1 {
+    font-size: 4em; /* Adjust the size as needed */
+}
+
+/* Increase the font size of paragraphs and other text inside About_ME */
+#about-container p, .motto, .funfact {
+    font-size: 1.4em; /* Adjust the size as needed */
+}
+
+/* If you want to increase the size of all h3 and h4 headers as well */
+#about-container h3, #about-container h4 {
+    font-size: 1.6em; /* Adjust the size as needed */
+}
+
+
+/* Flexbox layout for the Key Interests and more sections */
+.sections-container {
+    display: flex;
+    justify-content: space-between; /* Spaces the sections evenly */
+    gap: 30px; /* Space between the sections */
+}
+
+/* Style for Key Interests Section */
+.key-interests {
+    flex: 1; /* Allows this section to take up available space */
+}
+
+/* Style for more Section */
+.more {
+    flex: 1; /* Allows this section to take up available space */
+}
+
+/* Optional: If you want to make the lists in both sections more readable */
+.key-interests ul, .more ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.key-interests li, .more li {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Change the header color to #d0f0c0 */
+.key-interests h3, .more h3 {
+    color: #d0f0c0;
+    font-size: 1.6em;
+}
+
+
 
         ul {
             list-style-type: disc;
@@ -115,7 +172,7 @@
             transition: color 0.3s;
         }
         .navbar a:hover {
-            color: #00f;
+            color: #d0f0c0;
         }
         
         
@@ -125,6 +182,107 @@
     top: 0; /* Slide the navbar into view */
 }
 
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    position: relative; /* Make it possible to position the line */
+    display: inline-block; /* Ensure the underline effect is aligned */
+}
+
+/* Underline on hover */
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position the line just below the text */
+    width: 100%;
+    height: 2px; /* Line thickness */
+    background-color: #d0f0c0; /* Line color */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: bottom right; /* Set where the line should grow from */
+    transition: transform 0.3s ease-out; /* Smooth transition */
+}
+
+/* On hover, make the line visible */
+.navbar a:hover::after {
+    transform: scaleX(1); /* Show the line */
+    transform-origin: bottom left; /* Line grows from the left */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Navbar styling for the mobile menu */
+    .navbar {
+        display: none; /* Hide navbar initially */
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9); /* Mobile-friendly background */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        transition: transform 0.3s ease;
+    }
+
+    .navbar.mobile-visible {
+        display: flex; /* Show when toggled */
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+
+    /* Hamburger Menu Icon */
+    .hamburger {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    /* Position name and social icons to the left */
+    .header {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .social-icons {
+        justify-content: flex-start; /* Align to the left */
+        margin-left: 20px;
+        gap: 15px;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+}
 
     </style>
 </head>
@@ -141,16 +299,35 @@
         <a href="contact.html">Contact</a>
     </div>
 
+    <!-- Add this inside the body element -->
+<div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
 
-    <!-- Main content section -->
-    <div id="about-container">
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About_ME</h2>
-                                <h4 class="motto">Motto: "If at first you don’t succeed, call it version 1.0"</h4>
-                <p>
-                    Hey <img src="https://raw.githubusercontent.com/umenzi/umenzi/main/wave.gif" width="17px" alt="wave">, I'm Jagadeesh — a robotics and AI enthusiast passionate about exploring these exciting fields. I’m always excited to team up with others who share my passion for robotics and AI. I'm looking to connect with like-minded individuals who are interested in collaborating on projects in these areas.
-                </p>
+
+
+  <!-- Main content section -->
+<!-- Main content section -->
+<div id="about-container">
+    <section id="about" class="section">
+        <div class="container">
+            <h1>About_ME</h1>
+            <hr>
+            <h4 class="motto">Motto: "If at first you don’t succeed, call it version 1.0"</h4>
+            <p>
+                Hello World <img src="https://raw.githubusercontent.com/umenzi/umenzi/main/wave.gif" width="17px" alt="wave">, 
+                I’m <span style="color:#d0f0c0;">Jagadeesh</span> from <span style="color:#d0f0c0;">Visakhapatnam, Andhra Pradesh</span>. 
+                Currently a sophomore at <span style="color:#d0f0c0;">NIT Calicut</span>, studying Electronics and Communication Engineering.
+            </p>
+            <p>
+                I’m a robotics and AI enthusiast who loves diving into electronics, microcontrollers, and everything that makes robots tick. 
+                I’m always up for collaborating with others who are passionate about these fields, especially in robotics, AI, and embedded systems.
+            </p>
+            
+            <!-- Key Interests Section -->
+            <div class="key-interests">
                 <h3>MY Key Interests:</h3>
                 <ul>
                     <li>Micro-controllers & Electronics</li>
@@ -161,19 +338,37 @@
                     <li>AMR Path Planning and Navigation</li>
                     <li>Brain-Computer Interfaces</li>
                 </ul>
-                <!-- <h3>Hobbies:</h3>
-                <ul>
-                    <li>Coding</li>
-                    <li>Speedcubing</li>
-                    <li>Origami</li>
-                    <li>Movies</li>
-                </ul> -->
+
                 <p>
                     Feel free to check out my projects on GitHub, and if you’re interested in working together or just chatting about these topics, I'd love to hear from you!
                 </p>
+
             </div>
-        </section>
-    </div>
+            <br><br><br>
+            <hr>
+            <br><br><br><br><br><br><br><br><br>
+            <!-- <div class="more"> 
+                <h3>###</h3>
+                <ul>
+                    <li>Speedcubing – I have a HUGE collection of cubes and puzzles.<br> My MAINS RN-- 333 Main Tornado X-Man V2 | Avg. 22.3s | PB: 9.31s, 222 Main Valk 2M | Avg. 2.7s | PB: 0.59s.</li>
+                    <li>Coding – I program my circuits and robots.</li>
+                    <li>Sketching – I’m your go-to if you want a creative drawing.</li>
+                    <li>Origami – I can fold paper into art!</li>
+                    <li>Movies – I’m always up for a good film, anytime, anywhere.</li>
+                    <li>Languages – Always learning something new.</li>
+                </ul>
+            
+                <p>
+                    I don’t just find time for these – I *make* time. These aren’t mere hobbies; they’re carefully crafted life resurrections. Sure, there’s plenty more I could be doing, but these are the ones that actually make sense to others. So, for now, these are my favorites!
+                </p>
+
+            </div> -->
+            
+
+
+        </div>
+    </section>
+  </div>
 
     <!-- Animated lights background -->
     <div id="space">
@@ -246,6 +441,99 @@
 
     // Trigger the initial visibility logic
     showNavbarInitially();
+});
+
+// Hamburger menu toggle for mobile view
+const hamburger = document.getElementById('hamburger');
+const navbar = document.querySelector('.navbar');
+
+hamburger.addEventListener('click', () => {
+    navbar.classList.toggle('mobile-visible'); // Show or hide navbar
+    hamburger.classList.toggle('active');
+});
+
+// Close navbar when a link is clicked
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('mobile-visible'); // Hide navbar
+        hamburger.classList.remove('active'); // Reset hamburger menu
+    });
+});
+
+
+
+// Text scrambling effect function
+function scrambleText(target, text, targetText, delay) {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(\/)_+`-=;:<>,.?|";
+    let iteration = 0;
+    clearInterval(target.interval);
+
+    target.interval = setInterval(() => {
+        target.innerText = targetText
+            .split("")
+            .map((letter, index) => {
+                if (index < iteration) return targetText[index];
+                return letters[Math.floor(Math.random() * letters.length)];
+            })
+            .join("");
+        if (iteration >= targetText.length) {
+            clearInterval(target.interval);
+            target.innerText = targetText;
+        }
+        iteration += 1 / 3;
+    }, delay);
+}
+
+// Handling h1 (Jagadeesh Mummana -> Hello World!! on hover)
+const header1 = document.querySelector("h1");
+const originalTextH1 = "About_ME"; // Original text for About Me section
+const newTextH1 = "I'm Batman"; // New text for About Me section on hover
+
+header1.addEventListener("mouseover", () => {
+    scrambleText(header1, originalTextH1, newTextH1, 35);
+});
+
+header1.addEventListener("mouseout", () => {
+    scrambleText(header1, newTextH1, originalTextH1, 20);
+});
+
+// Handling "My Key Interests" section (scramble effect on hover)
+const keyInterestsHeader = document.querySelector(".key-interests h3"); // This targets the <h3> tag
+const originalTextKeyInterests = keyInterestsHeader.innerText;
+const newTextKeyInterests = "Projects I Work ON:"; // New text for "My Key Interests" on hover
+
+keyInterestsHeader.addEventListener("mouseover", () => {
+    scrambleText(keyInterestsHeader, originalTextKeyInterests, newTextKeyInterests, 30);
+});
+
+keyInterestsHeader.addEventListener("mouseout", () => {
+    scrambleText(keyInterestsHeader, newTextKeyInterests, originalTextKeyInterests, 20);
+});
+
+// Handling "more" section (scramble effect on hover)
+const moreHeader = document.querySelector(".more h3"); // This targets the <h3> tag for more
+const originalTextmore = moreHeader.innerText;
+const newTextmore = "MORE"; // New text for "more" on hover
+
+moreHeader.addEventListener("mouseover", () => {
+    scrambleText(moreHeader, originalTextmore, newTextmore, 30);
+});
+
+moreHeader.addEventListener("mouseout", () => {
+    scrambleText(moreHeader, newTextmore, originalTextmore, 20);
+});
+
+// Handling all h2 headers (scramble effect on hover)
+const headers = document.querySelectorAll("h2");
+
+headers.forEach(header => {
+    const originalText = header.innerText;
+    header.addEventListener("mouseover", () => {
+        scrambleText(header, originalText, originalText, 100);
+    });
+    header.addEventListener("mouseout", () => {
+        scrambleText(header, originalText, originalText, 100);
+    });
 });
 
 
