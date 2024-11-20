@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About_Me</title>
+    <title>Jagadeesh Mummana | About</title>
     <style>
         /* Basic setup for body and background */
         html, body { 
@@ -27,7 +27,7 @@
             width: 100vw;
             height: 100vh;
             transform-style: preserve-3d;
-            animation: rotate 30s linear infinite alternate;
+            animation: rotate 400s linear infinite alternate;
             z-index: 1;
             pointer-events: none;
         }
@@ -48,12 +48,12 @@
         #about-container {
             position: relative;
             z-index: 2;
-            width: 75%;
+            width: 85%;
             max-width: 100%;
             height: 80vh; /* Allow enough space to scroll */
             overflow-y: scroll; /* Enable scrolling */
             padding: 30px;
-            background: rgba(0, 0, 0, 0);
+            background: rgba(80, 80, 80, 0.4);
             -ms-overflow-style: none;  /* Hide scrollbar on Internet Explorer and Edge */
             scrollbar-width: none; /* Hide scrollbar on Firefox */
         }
@@ -92,9 +92,55 @@
             from { transform: rotateY(0deg) rotateX(0deg); }
             to { transform: rotateY(360deg) rotateX(360deg); }
         }
+
+
+         /* Navigation Bar */
+        
+         .navbar {
+    position: fixed;
+    top: -60px; /* Move it up off-screen initially */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    z-index: 1001;
+    transition: top 0.5s; /* Smooth slide */
+}
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #00f;
+        }
+        
+        
+
+
+.navbar.visible {
+    top: 0; /* Slide the navbar into view */
+}
+
+
     </style>
 </head>
 <body>
+
+
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
 
     <!-- Main content section -->
     <div id="about-container">
@@ -115,13 +161,13 @@
                     <li>AMR Path Planning and Navigation</li>
                     <li>Brain-Computer Interfaces</li>
                 </ul>
-                <h3>Hobbies:</h3>
+                <!-- <h3>Hobbies:</h3>
                 <ul>
                     <li>Coding</li>
                     <li>Speedcubing</li>
                     <li>Origami</li>
                     <li>Movies</li>
-                </ul>
+                </ul> -->
                 <p>
                     Feel free to check out my projects on GitHub, and if you’re interested in working together or just chatting about these topics, I'd love to hear from you!
                 </p>
@@ -150,6 +196,59 @@
             light.style.transform = transformValue;
             document.getElementById("space").appendChild(light);
         }
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.querySelector(".navbar");
+    let hideNavbarTimeout;
+
+    // Function to show the navbar
+    function showNavbar() {
+        navbar.classList.add("visible");
+        clearTimeout(hideNavbarTimeout); // Clear any existing timeout
+        hideNavbarTimeout = setTimeout(hideNavbar, 3000); // Set timeout to hide the navbar
+    }
+
+    // Function to hide the navbar
+    function hideNavbar() {
+        navbar.classList.remove("visible");
+    }
+
+    // Show the navbar initially for a few seconds
+    function showNavbarInitially() {
+        navbar.classList.add("visible"); // Make it visible
+        setTimeout(() => {
+            hideNavbar(); // Hide it after a delay
+        }, 3000); // Adjust the initial visibility duration (3 seconds here)
+    }
+
+    // Show navbar only when mouse is near the top area
+    document.addEventListener("mousemove", (e) => {
+        if (e.clientY <= 50) { // Adjust this range as needed
+            showNavbar();
+        }
+    });
+
+    // Show navbar when scrolling
+    document.addEventListener("scroll", () => {
+        showNavbar();
+    });
+
+    // Hide the navbar when the mouse leaves the navbar area
+    navbar.addEventListener("mouseleave", () => {
+        hideNavbarTimeout = setTimeout(hideNavbar, 800); // Start hide timer on leave
+    });
+
+    // Clear the hide timeout if the mouse re-enters the navbar area
+    navbar.addEventListener("mouseenter", () => {
+        clearTimeout(hideNavbarTimeout);
+    });
+
+    // Trigger the initial visibility logic
+    showNavbarInitially();
+});
+
+
 
     </script>
 
