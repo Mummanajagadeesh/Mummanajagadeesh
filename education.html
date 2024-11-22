@@ -328,6 +328,94 @@
             padding: 0 0 0 20px;
             line-height: 1.6;
         }
+        @media (max-width: 768px) {
+    #experience-container {
+        padding: 15px;
+        height: auto; /* Allow content to flow */
+    }
+
+    h1, h2 {
+        font-size: 2.5em; /* Scale down font sizes */
+    }
+
+    h3, h4, p {
+        font-size: 1.1em;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+
+    .sections-container {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 20px;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        max-width: 100%; /* Ensure it fits the screen */
+        padding: 15px;
+    }
+
+    .section {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align content */
+        text-align: center; /* Text alignment for readability */
+        padding: 15px;
+    }
+
+    .section img {
+        width: 100px; /* Smaller image size */
+        height: 100px;
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
+
+    .section-content {
+        text-align: center; /* Center the text */
+    }
+
+    .section h2 {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .section h3 {
+        font-size: 18px;
+    }
+
+    .section p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .subsection {
+        flex-direction: column; /* Stack subsection items vertically */
+        align-items: center;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .subsection img {
+        width: 40px; /* Smaller image size for subsections */
+        height: 40px;
+        margin-bottom: 5px; /* Space between image and text */
+    }
+
+    .subsection-content {
+        text-align: center;
+    }
+
+    .subsection ul {
+        margin-top: 10px; /* Space above lists */
+        padding: 0;
+        list-style-position: inside; /* Ensure bullets appear within bounds */
+        font-size: 14px; /* Smaller font for lists */
+    }
+}
 
     </style>
 </head>
@@ -374,7 +462,7 @@
                       <img src="RIGLOGO.png" alt="RIGNITC Logo">
                       <div class="subsection-content">
                           <b><span style="color: #ffd700;">RIGNITC - Robotics Interest Group of NITC</span></b> <br>
-                          Junior Executive, Nov'24 - Present
+                          Junior Executive, Nov'24 - Forever
                       </div>
                   </div>
                   <div class="subsection">
@@ -570,7 +658,7 @@ function scrambleText(target, text, targetText, delay) {
 // Handling h1 (Jagadeesh Mummana -> Hello World!! on hover)
 const header1 = document.querySelector("h1");
 const originalTextH1 = "Education"; // Original text for education Me section
-const newTextH1 = "Not Sure"; // New text for education Me section on hover
+const newTextH1 = "Ctrl + S"; // New text for education Me section on hover
 
 header1.addEventListener("mouseover", () => {
     scrambleText(header1, originalTextH1, newTextH1, 35);
