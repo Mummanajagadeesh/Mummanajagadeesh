@@ -12,7 +12,7 @@
   <a href="https://www.instagram.com/jagadeesh__97__" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/>
   </a>
-  <a href="https://discord.com/users/.mj97" target="_blank">
+  <a href="https://discord.gg/wBzuY8P2" target="_blank">
     <img src="https://img.shields.io/badge/Discord-7289DA?style=flat-square&logo=discord&logoColor=white" alt="Discord"/>
   </a>
   <a href="https://github.com/Mummanajagadeesh" target="_blank">
