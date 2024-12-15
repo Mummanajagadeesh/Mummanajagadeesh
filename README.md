@@ -154,6 +154,9 @@ Feel free to check out my projects [here](https://github.com/Mummanajagadeesh?ta
   <a href="https://unity.com/" target="_blank">
     <img src="https://www.svgrepo.com/show/331626/unity.svg" alt="unity" width="40" height="40"/>
   </a>
+  <a href="https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado.html" target="_blank">
+    <img src="https://external-preview.redd.it/vivado-linux-shell-install-v0-QSIupsDmM0KBpRHmAfG_VbqbiCWxKud4J52mehLoGZU.jpg?auto=webp&s=35458a7ca4bb970762b15e84e068b55e388a509c" alt="unity" width="40" height="40"/>
+  </a>
 </p>
 
 
