@@ -4,8 +4,8 @@
 # こんにちは世界! これが [Jagadeesh](https://mummanajagadeesh.github.io/) です。
 <p align="left">
   <a href="https://mummanajagadeesh.github.io/" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-2E8B57?style=flat-square&logo=github" alt="Portfolio"/>
-</a>
+    <img src="https://img.shields.io/badge/Portfolio-2E8B57?style=flat-square&logo=web&logoColor=white" alt="Portfolio"/>
+  </a>
   <a href="https://www.linkedin.com/in/jagadeeeshmummana" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin" alt="LinkedIn"/>
   </a>
@@ -21,7 +21,14 @@
   <a href="mailto:mummanajagadeesh97@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
   </a>
+  <a href="https://www.facebook.com/MJagadeesh97/" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook"/>
+  </a>
+  <a href="https://x.com/M_JAGADEESH97" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-000000?style=flat-square&logo=x&logoColor=white" alt="X"/>
+  </a>
 </p>
+
 <p align="left">
   <a href="https://www.youtube.com/@M_J_9_7" target="_blank">
     <img src="https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube"/>
