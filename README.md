@@ -21,12 +21,12 @@
   <a href="mailto:mummanajagadeesh97@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  <a href="https://www.facebook.com/MJagadeesh97/" target="_blank">
+<!--   <a href="https://www.facebook.com/MJagadeesh97/" target="_blank">
     <img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook"/>
   </a>
   <a href="https://x.com/M_JAGADEESH97" target="_blank">
     <img src="https://img.shields.io/badge/Twitter-000000?style=flat-square&logo=x&logoColor=white" alt="X"/>
-  </a>
+  </a> -->
 </p>
 
 <p align="left">
