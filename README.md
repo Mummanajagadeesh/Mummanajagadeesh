@@ -140,6 +140,9 @@ Feel free to check out my projects [here](https://github.com/Mummanajagadeesh?ta
   <a href="http://gazebosim.org/" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/450px-Gazebo_logo_without_text.svg.png?20150715002113" alt="gazebo" width="40" height="40"/>
   </a> 
+  <a href="https://opencv.org/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/OpenCV_Logo_with_text.png" alt="opencv" width="40" height="40"/>
+  </a> 
   <a href="https://numpy.org/" target="_blank">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" alt="numpy" width="40" height="40"/>
   </a> 
