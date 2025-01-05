@@ -6,6 +6,9 @@
   <a href="https://mummanajagadeesh.github.io/" target="_blank">
       <img src="https://img.shields.io/badge/Portfolio-2E8B57?style=flat-square&logo=Google-chrome&logoColor=white" alt="Portfolio"/>
   </a>
+  <a href="https://mummanajagadeesh.github.io/blog/" target="_blank">
+      <img src="https://img.shields.io/badge/BLOG-000000?style=flat-square&logo=Google-chrome&logoColor=white" alt="Portfolio"/>
+  </a>
   <a href="https://www.linkedin.com/in/jagadeeeshmummana" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin" alt="LinkedIn"/>
   </a>
