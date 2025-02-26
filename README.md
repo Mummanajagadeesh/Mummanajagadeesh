@@ -196,7 +196,7 @@ Feel free to check out my projects [here](https://github.com/Mummanajagadeesh?ta
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true&count_private=true&include_all_commits=true&Cache-Control=no-cache" alt="Streak" />
     </td>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=radical&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83&hide=powershell&include_all_commits=true&Cache-Control=no-cache" alt="Top Languages" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=radical&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83,Mummanajagadeesh.github.io,site,blog-,blog--,blogs,geeky-hugo,ORIGO2K25&hide=powershell&include_all_commits=true&Cache-Control=no-cache&t=12345" alt="Top Languages" />
     </td>
   </tr>
 </table>
