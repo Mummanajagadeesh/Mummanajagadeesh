@@ -85,7 +85,15 @@ MY Key Interests:
 - Brain Computer Interfaces
 
   
-Feel free to check out my projects [here](https://github.com/Mummanajagadeesh?tab=stars), and if you’re interested in working together or just chatting about these topics, I'd love to hear from you!
+Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), and if you’re interested in working together or just chatting about these topics, I'd love to hear from you!
+
+<!--## ✦ Featured Projects  
+
+### ⬩ [ImProVe – Image Processing in Verilog](https://mummanajagadeesh.github.io/projects/improve/)  
+Custom image processing built from scratch in Verilog. Exploring low-level pixel manipulation with pure HDL logic.  
+
+### ⬩ [RU83C – Rubik’s Cube Solving Robot](https://mummanajagadeesh.github.io/projects/rubec/)  
+A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with precision. -->
 
 
 
@@ -193,7 +201,7 @@ Feel free to check out my projects [here](https://github.com/Mummanajagadeesh?ta
       <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&Cache-Control=no-cache" alt="Stats" />
     </td>
     <td>
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true&count_private=true&include_all_commits=true&Cache-Control=no-cache" alt="Streak" />
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true&count_private=true&include_all_commits=true&Cache-Control=no-cachet=12345" alt="Streak" />
     </td>
     <td>
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=radical&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83,Mummanajagadeesh.github.io,site,blog-,blog--,blogs,geeky-hugo,ORIGO2K25,hugo-theme-dream&hide=powershell&include_all_commits=true&Cache-Control=no-cache&t=12345" alt="Top Languages" />
