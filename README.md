@@ -151,6 +151,9 @@ A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with pre
   <a href="http://gazebosim.org/" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/450px-Gazebo_logo_without_text.svg.png?20150715002113" alt="gazebo" width="40" height="40"/>
   </a> 
+  <a href="https://www.coppeliarobotics.com/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/29420733/70393939-c5821d80-19e7-11ea-8ebd-daaadd856287.png" alt="gazebo" width="40" height="40"/>
+  </a> 
   <a href="https://opencv.org/" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/OpenCV_Logo_with_text.png" alt="opencv" width="40" height="40"/>
   </a> 
@@ -177,6 +180,8 @@ A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with pre
   </a>
   <a href="https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado.html" target="_blank">
     <img src="https://external-preview.redd.it/vivado-linux-shell-install-v0-QSIupsDmM0KBpRHmAfG_VbqbiCWxKud4J52mehLoGZU.jpg?auto=webp&s=35458a7ca4bb970762b15e84e068b55e388a509c" alt="unity" width="40" height="40"/>
+      <a href="https://bleyer.org/icarus/" target="_blank">
+    <img src="https://bleyer.org/icarus/icarus-big.gif" alt="unity" width="40" height="40"/>
   </a>
 </p>
 
