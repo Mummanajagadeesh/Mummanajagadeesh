@@ -234,3 +234,8 @@ Thanks for stopping by! :)-->
 <!--![snake gif](https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/output/github-contribution-grid-snake.gif)
 Run workflows in actions and refresh-->
 <!-- GIFS: gif1.gif, gif2.gif, gif3.gif -->
+
+
+```bash
+rpicam-vid -t 0 -n --codec libav --libav-format mpegts -o - | cvlc stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/stream1}'
+```
