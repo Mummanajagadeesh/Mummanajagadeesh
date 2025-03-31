@@ -243,3 +243,7 @@ rpicam-vid -t 0 -n --codec libav --libav-format mpegts -o - | cvlc stream:///dev
 ```bash
 rtsp://172.16.33.104:8554/stream1
 ```
+
+```bash
+rpicam-vid -t 0 -n --codec libav --framerate 30 --bitrate 2000000 --inline --profile baseline --level 4.2 --libav-format mpegts -o - | cvlc --network-caching=100 --rtsp-tcp=0 stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/stream1}'
+```
