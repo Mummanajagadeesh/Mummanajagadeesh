@@ -239,3 +239,7 @@ Run workflows in actions and refresh-->
 ```bash
 rpicam-vid -t 0 -n --codec libav --libav-format mpegts -o - | cvlc stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/stream1}'
 ```
+
+```bash
+rtsp://172.16.33.104:8554/stream1
+```
