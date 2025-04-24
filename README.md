@@ -101,89 +101,92 @@ A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with pre
 
 <p align="left">
   <a href="https://www.python.org" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Python-red.svg?logo=PYTHON_MJ97" alt="Python"/>
+  </a>
   <a href="https://www.cprogramming.com/" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/C-grey.svg?logo=C_MJ97" alt="C Programming"/>
+  </a>
   <a href="https://www.w3schools.com/cpp/" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/C++-blueviolet.svg?logo=CPP_MJ97" alt="C++"/>
+  </a>
   <a href="https://www.java.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Java-white.svg?logo=JAVA_MJ97" alt="Java"/>
+  </a>
   <a href="https://git-scm.com/" target="_blank">
-    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Git-black.svg?logo=GIT_MJ97" alt="Git"/>
+  </a>
   <a href="https://www.linux.org/" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Linux-black.svg?logo=TUX_MJ97" alt="Linux"/>
   </a>
   <a href="https://ubuntu.com/" target="_blank">
-    <img src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="ubuntu" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Ubuntu-blue.svg?logo=UBUNTU_MJ97" alt="Ubuntu"/>
+  </a>
   <a href="https://www.mathworks.com/products/matlab.html" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/>
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/MATLAB-yellow.svg?logo=MATLAB_MJ97" alt="MATLAB"/>
   </a>
   <a href="https://www.mathworks.com/products/simulink.html" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Simulink_Logo_%28non-wordmark%29.png/900px-Simulink_Logo_%28non-wordmark%29.png?20220406131749" alt="simulink" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Simulink-blue.svg?logo=SIMULINK_MJ97" alt="Simulink"/>
+  </a>
   <a href="https://thingspeak.com/" target="_blank">
-    <img src="https://avatars.githubusercontent.com/u/529052?s=200&v=4" alt="thingspeak" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/ThingSpeak-blue.svg?logo=THINGSPEAK_MJ97" alt="ThingSpeak"/>
+  </a>
   <a href="https://wokwi.com/" target="_blank">
-    <img src="https://yt3.googleusercontent.com/ytc/AIdro_lAMS2z_YWKi9GHoDCJwdFKeXu1N1uyiO9Qwed1PB90=s900-c-k-c0x00ffffff-no-rj" alt="wokwi" width="40" height="40"/>
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Wokwi-green.svg?logo=WOKWI_MJ97" alt="Wokwi"/>
   </a>
   <a href="https://www.arduino.cc/" target="_blank">
-    <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Arduino-teal.svg?logo=ARDUINO_MJ97" alt="Arduino"/>
+  </a>
   <a href="https://www.raspberrypi.org/" target="_blank">
-    <img src="https://www.raspberrypi.org/app/uploads/2018/03/RPi-Logo-Reg-SCREEN.png" alt="raspberry pi" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/RaspberryPi-darkgreen.svg?logo=RASP_MJ97" alt="Raspberry Pi"/>
+  </a>
   <a href="https://espressif.com/" target="_blank">
-    <img src="https://seeklogo.com/images/E/espressif-systems-logo-1350B9E771-seeklogo.com.png" alt="espresiff" width="40" height="40"/>
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/ESP32-darkblue.svg?logo=ESP_MJ97" alt="ESP32"/>
   </a>
   <a href="https://index.ros.org/doc/ros2/" target="_blank">
-    <img src="https://cdn.sanity.io/images/s18ewfw4/staging/1ab1332c9e2c376c1978e59da9b3dc15eb781af0-1271x358.png?rect=502,0,269,358&w=2880&h=3840&q=80&auto=format" alt="ros2" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/ROS2-purple.svg?logo=ROS2_MJ97" alt="ROS2"/>
+  </a>
   <a href="https://cyberbotics.com/" target="_blank">
-    <img src="https://img.informer.com/icons_mac/png/128/242/242708.png" alt="webots" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Webots-lightblue.svg?logo=WEBOTS_MJ97" alt="Webots"/>
+  </a>
   <a href="http://gazebosim.org/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/450px-Gazebo_logo_without_text.svg.png?20150715002113" alt="gazebo" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Gazebo-grey.svg?logo=GAZEBO_MJ97" alt="Gazebo"/>
+  </a>
   <a href="https://www.coppeliarobotics.com/" target="_blank">
-    <img src="https://user-images.githubusercontent.com/29420733/70393939-c5821d80-19e7-11ea-8ebd-daaadd856287.png" alt="gazebo" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/CoppeliaSim-pink.svg?logo=VREP_MJ97" alt="CoppeliaSim"/>
+  </a>
   <a href="https://opencv.org/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/OpenCV_Logo_with_text.png" alt="opencv" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/OpenCV-green.svg?logo=OPENCV_MJ97" alt="OpenCV"/>
+  </a>
   <a href="https://numpy.org/" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" alt="numpy" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/NumPy-blue.svg?logo=NUMPY_MJ97" alt="NumPy"/>
+  </a>
   <a href="https://matplotlib.org/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Matplotlib_icon.svg/2048px-Matplotlib_icon.svg.png" alt="matplotlib" width="40" height="40"/>
-  </a> 
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Matplotlib-purple.svg?logo=MATPLOTLIB_MJ97" alt="Matplotlib"/>
+  </a>
   <a href="https://pandas.pydata.org/" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/>
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Pandas-white.svg?logo=PANDAS_MJ97" alt="Pandas"/>
   </a>
   <a href="https://www.autodesk.com/products/fusion-360/overview" target="_blank">
-    <img src="https://seeklogo.com/images/A/autodesk-fusion-360-logo-7F72A76397-seeklogo.com.png" alt="fusion 360" width="40" height="40"/>
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Fusion360-blue.svg?logo=FUSION360_MJ97" alt="Fusion 360"/>
   </a>
   <a href="https://www.solidworks.com/" target="_blank">
-    <img src="https://e7.pngegg.com/pngimages/558/632/png-clipart-computer-icons-solidworks-e-miscellaneous-text-thumbnail.png" alt="solidworks" width="40" height="40"/>
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/SolidWorks-white.svg?logo=SW_MJ97" alt="SolidWorks"/>
   </a>
   <a href="https://www.blender.org/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/2048px-Blender_logo_no_text.svg.png" alt="blender" width="40" height="40"/>
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Blender-black.svg?logo=BLENDER_MJ97" alt="Blender"/>
   </a>
   <a href="https://unity.com/" target="_blank">
-    <img src="https://www.svgrepo.com/show/331626/unity.svg" alt="unity" width="40" height="40"/>
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Unity-white.svg?logo=UNITY_MJ97" alt="Unity"/>
   </a>
   <a href="https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado.html" target="_blank">
-    <img src="https://external-preview.redd.it/vivado-linux-shell-install-v0-QSIupsDmM0KBpRHmAfG_VbqbiCWxKud4J52mehLoGZU.jpg?auto=webp&s=35458a7ca4bb970762b15e84e068b55e388a509c" alt="unity" width="40" height="40"/>
-      <a href="https://bleyer.org/icarus/" target="_blank">
-    <img src="https://bleyer.org/icarus/icarus-big.gif" alt="unity" width="40" height="40"/>
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Vivado-purple.svg?logo=VIVADO_MJ97" alt="Vivado"/>
+  </a>
+  <a href="https://bleyer.org/icarus/" target="_blank">
+    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Icarus-vermilion.svg?logo=ICARUS_MJ97" alt="Icarus Verilog"/>
   </a>
 </p>
+
+
 
 
 # <img src="https://ugokawaii.com/wp-content/uploads/2022/08/increase.gif" width="40px"> GitHub Stats</h1>
