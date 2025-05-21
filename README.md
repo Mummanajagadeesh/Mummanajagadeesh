@@ -1,4 +1,4 @@
-![snake animation](https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/output/github-contribution-grid-snake2.svg)
+
 
 # こんにちは世界! これが [Jagadeesh](https://mummanajagadeesh.github.io/) です。
 <p align="left">
