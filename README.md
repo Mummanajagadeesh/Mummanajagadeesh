@@ -1,5 +1,6 @@
 
 
+
 # こんにちは世界! これが [Jagadeesh](https://mummanajagadeesh.github.io/) です。
 <p align="left">
   <a href="https://mummanajagadeesh.github.io/" target="_blank">
@@ -57,10 +58,33 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Monaco&size=35&color=FF0000&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi_👋!;+I'm_Jagadeesh_ツ;" />
 </h1>
 
-|                                                                                                             |                                                                                                  |
-|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| <img src="https://i.pinimg.com/originals/3d/17/f4/3d17f46d3ea30dc0b94a9ff4a4d1a380.gif" width="400px"> | - <img src="https://images.emojiterra.com/google/noto-emoji/animated-emoji/1f916.gif" width="17px"> Robotics, AI & VLSI Enthusiast<br>- <img src="https://i.gifer.com/origin/4c/4c8423ace30594a2f80c07639d6885fd_w200.webp" width="20px"> I'm constantly learning<br>- <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/91e44488262645.5ddbaf2895ce1.gif" width="20px"> I'm currently working on few robotics related projects<br>- <img src="https://media.tenor.com/tkpOfRTT21UAAAAi/flexed-biceps-joypixels.gif" width="20px"> Pursuing *Electronics and Communication Engineering*<br>- <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXhoNWhlMzdiczdvYzVndjVxdjF5bTgwdHlvaGJ1bWkzMTJwZGkxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VGQh2JdmphZHUBT0Bi/giphy.webp" width="20px"> From *National Institute of Technology Calicut*<br>-<img src="https://cdn.pixabay.com/animation/2023/10/03/13/08/13-08-01-15_512.gif" width="25px"> How to reach me: [Carrier Pigeons](https://www.linkedin.com/in/jagadeeeshmummana/)  ;)<br>- <img src="https://media.tenor.com/kDZWJ62n1mEAAAAj/emoji-emojis.gif" width="20px"> Pronouns: he/him<br>- <img src="https://cdn.pixabay.com/animation/2023/03/21/10/41/10-41-09-561_512.gif" width="20px"> <!--Hobbies:<img src="https://i.pinimg.com/originals/e4/4a/5f/e44a5fb5dbaa4e48a5a09f42b63ad02e.gif" width="20px">,<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExanFhMXVoN3VoMmt0Y3F3Ymdsc2kyOWdqM3Ixa3NrMzhoZ295dXByOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/2Ygy0khwewLgMSYM0t/giphy.webp" width="15px">, <img src="https://media.tenor.com/U_xJRkSD54AAAAAi/abiera-origami.gif" width="15px"><br>-->Hobbies: SpeedCubing, Coding, Movies<br> -<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGo0bDB3azFlMTF0ZTI2ZGMyMXNja3ZnaG9pZ2Z1MXc5ZWljM2xqbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3ohc19SFUdIJ0YQcLe/giphy.webp" width="20px">Fun fact: I'm Batman 
-<!--<img src="https://media.tenor.com/BHH91Bu45UMAAAAC/batman-logo.gif" width="15px">|-->
+
+
+<table>
+  <tr>
+    <td>
+      <img src="https://i.pinimg.com/originals/3d/17/f4/3d17f46d3ea30dc0b94a9ff4a4d1a380.gif" width="400px">
+    </td>
+    <td>
+      - <img src="https://images.emojiterra.com/google/noto-emoji/animated-emoji/1f916.gif" width="17px"> Robotics, AI & VLSI Enthusiast<br>
+      - <img src="https://i.gifer.com/origin/4c/4c8423ace30594a2f80c07639d6885fd_w200.webp" width="20px"> I'm constantly learning<br>
+      - <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/91e44488262645.5ddbaf2895ce1.gif" width="20px"> I'm currently working on few robotics related projects<br>
+      - <img src="https://media.tenor.com/tkpOfRTT21UAAAAi/flexed-biceps-joypixels.gif" width="20px"> Pursuing <em>Electronics and Communication Engineering</em><br>
+      - <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXhoNWhlMzdiczdvYzVndjVxdjF5bTgwdHlvaGJ1bWkzMTJwZGkxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VGQh2JdmphZHUBT0Bi/giphy.webp" width="20px"> From <em>National Institute of Technology Calicut</em><br>
+      - <img src="https://cdn.pixabay.com/animation/2023/10/03/13/08/13-08-01-15_512.gif" width="25px"> How to reach me: <a href="https://www.linkedin.com/in/jagadeeeshmummana/">Carrier Pigeons</a> ;)<br>
+      - <img src="https://media.tenor.com/kDZWJ62n1mEAAAAj/emoji-emojis.gif" width="20px"> Pronouns: he/him<br>
+      - <img src="https://cdn.pixabay.com/animation/2023/03/21/10/41/10-41-09-561_512.gif" width="20px"> 
+        <!--Hobbies:
+        <img src="https://i.pinimg.com/originals/e4/4a/5f/e44a5fb5dbaa4e48a5a09f42b63ad02e.gif" width="20px">,
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExanFhMXVoN3VoMmt0Y3F3Ymdsc2kyOWdqM3Ixa3NrMzhoZ295dXByOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/2Ygy0khwewLgMSYM0t/giphy.webp" width="15px">,
+        <img src="https://media.tenor.com/U_xJRkSD54AAAAAi/abiera-origami.gif" width="15px"><br>-->
+        Hobbies: SpeedCubing, Coding, Movies<br>
+      - <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGo0bDB3azFlMTF0ZTI2ZGMyMXNja3ZnaG9pZ2Z1MXc5ZWljM2xqbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3ohc19SFUdIJ0YQcLe/giphy.webp" width="20px"> Fun fact: I'm Batman
+      <!--<img src="https://media.tenor.com/BHH91Bu45UMAAAAC/batman-logo.gif" width="15px">-->
+    </td>
+  </tr>
+</table>
+
 
 <!--$ git pull life --verbose
 Fetching latest life updates...
