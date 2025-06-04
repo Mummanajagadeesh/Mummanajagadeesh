@@ -72,27 +72,51 @@ Output: "Fckdup"-->
 
 # <img src="https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/abd7dbc79d91805a3c01627dea2e4537f5324a17/icons/spot.gif" width="30px"> About ME
 
-Hey <img src="https://raw.githubusercontent.com/umenzi/umenzi/main/wave.gif" width="17px">, I'm Jagadeesh——a robotics and AI enthusiast passionate about exploring in these exciting fields. I’m always excited to team up with others who share my passion for robotics and AI. I’m looking to connect with like-minded individuals who share a passion for these fields and are interested in collaborating on projects.
+Hey <img src="https://raw.githubusercontent.com/umenzi/umenzi/main/wave.gif" width="17px">, I'm Jagadeesh—a Robotics, AI & VLSI hardware enthusiast passionate about building at the intersection of digital logic and intelligent systems.  
+I enjoy bringing algorithms to silicon, exploring digital design and hardware acceleration for machine learning and image processing, and collaborating with like-minded innovators.
 
 MY Key Interests:
-- Micro-controllers & Electronics
-- Embedded Programming
-- Sensor Fusion
-- Computer Vision
-- Reinforcement Learning
-- AMR Path Planning and Nav
-- Brain Computer Interfaces
-
+- VLSI Design & Digital Logic (Verilog, RTL, Synthesis)
+- Neural Networks & Image Processing in Hardware (FPGA/ASIC)
+- Embedded Programming (C, C++, Python)
+- Microcontrollers & Electronics
+- Computer Vision, Sensor Fusion
+- Robotics, AMR Path Planning & Navigation
   
-Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), and if you’re interested in working together or just chatting about these topics, I'd love to hear from you!
+Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
 
-<!--## ✦ Featured Projects  
+## ✦ Featured Projects  
 
-### ⬩ [ImProVe – Image Processing in Verilog](https://mummanajagadeesh.github.io/projects/improve/)  
-Custom image processing built from scratch in Verilog. Exploring low-level pixel manipulation with pure HDL logic.  
+### ⬩ [Verilog HDL Toolkit for Image Processing and Pattern Recognition](https://mummanajagadeesh.github.io/projects/improve/subprojects)  
+**Duration:** Individual, Ongoing  
+**Tools:** Verilog (Icarus Verilog, Xilinx Vivado) | Python (OpenCV, NumPy, Tkinter) | Scripting (TCL. Perl)
+
+- **Designed `image processing algorithms` (e.g., edge detection, geometric & color transforms, noise reduction) in Verilog, utilizing `hardware optimized math` techniques to maximize computational efficiency. These algorithms were fine-tuned for `low-latency` preprocessing in embedded vision SoCs.**
+
+- **Implemented a `64-bit 3-layer perceptron` (`MLP 784-256-128-62`) for Extended-MNIST Character Recognition (`62 classes, ∼124k samples`) using an FSM-controlled neural network in Verilog. This implementation achieved `>90% training accuracy` (`>75% simulation accuracy`) with `~1.5s inference latency` (in simulation). A full end-to-end preprocessing and inference workflow was developed.**
+
+- **Automated model `inference` and `performance metric` evaluation via Tcl/Perl scripts (executing Python and Icarus Verilog commands). Additionally, a real-time Tkinter GUI was created for test user input.**
+
+- **Currently working on real-life applications including `label detection`, `document scanning`, `stereo depth map generation`, and neural network inference for MNIST/EMNIST datasets.**
+
+
+### ⬩ [RV32I RTL CPU Design](https://mummanajagadeesh.github.io/projects/rose)  
+**Duration:** Individual, Ongoing  
+**Tools:** Verilog (Icarus Verilog) | TL-Verilog (Makerchip) 
+
+- **Implemented a fully synthesizable RV32I RISC-V core** in TL-Verilog with a single-stage pipeline, supporting all base integer instructions and immediate formats (I, S, B, U, J).
+
+- **Developed a test program summing integers 1 to 9**, verified correct ALU operations, branching, and control flow within 50 simulation cycles, with pass/fail status stored in registers `x30` and `x31`.
+
+- **Designed a 32-register file with dual-read and single-write ports**, enforcing write-disable on register `x0`, and integrated instruction decode logic handling opcode, funct3, and funct7 fields.
+
+- **Implemented comprehensive ALU supporting arithmetic, logic, shifts, and comparisons**, with immediate extraction and flexible program counter update logic including branch and jump target calculation.
+
+- **Enabled simulation and debugging via Makerchip integration** using `m4+cpu_viz()`, with waveform visualization and automated test validation through register monitoring.
+
 
 ### ⬩ [RU83C – Rubik’s Cube Solving Robot](https://mummanajagadeesh.github.io/projects/rubec/)  
-A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with precision. -->
+A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with precision
 
 
 
