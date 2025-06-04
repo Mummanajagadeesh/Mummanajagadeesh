@@ -85,7 +85,7 @@ MY Key Interests:
   
 Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
 
-## ✦ Featured Projects  
+## ✦ Featured Projects | [All Projects](https://mummanajagadeesh.github.io/projects/)
 
 ### ⬩ [Verilog HDL Toolkit for Image Processing and Pattern Recognition](https://mummanajagadeesh.github.io/projects/improve/subprojects)  
 **Duration:** Individual, Ongoing  
