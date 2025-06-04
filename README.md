@@ -78,7 +78,7 @@
         <img src="https://i.pinimg.com/originals/e4/4a/5f/e44a5fb5dbaa4e48a5a09f42b63ad02e.gif" width="20px">,
         <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExanFhMXVoN3VoMmt0Y3F3Ymdsc2kyOWdqM3Ixa3NrMzhoZ295dXByOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/2Ygy0khwewLgMSYM0t/giphy.webp" width="15px">,
         <img src="https://media.tenor.com/U_xJRkSD54AAAAAi/abiera-origami.gif" width="15px"><br>-->
-        Hobbies: SpeedCubing, Coding, Movies<br>
+        Hobbies: Speedcubing, Coding, Movies, Blogging<br>
       - <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGo0bDB3azFlMTF0ZTI2ZGMyMXNja3ZnaG9pZ2Z1MXc5ZWljM2xqbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3ohc19SFUdIJ0YQcLe/giphy.webp" width="20px"> Fun fact: I'm Batman
       <!--<img src="https://media.tenor.com/BHH91Bu45UMAAAAC/batman-logo.gif" width="15px">-->
     </td>
@@ -100,8 +100,8 @@ Hey <img src="https://raw.githubusercontent.com/umenzi/umenzi/main/wave.gif" wid
 I enjoy bringing algorithms to silicon, exploring digital design and hardware acceleration for machine learning and image processing, and collaborating with like-minded innovators.
 
 MY Key Interests:
-- VLSI Design & Digital Logic (Verilog, RTL, Synthesis)
-- Neural Networks & Image Processing in Hardware (FPGA/ASIC)
+- VLSI Design: Analog Circuits & Digital Design
+- Neural Networks & Image Processing in Hardware
 - Embedded Programming (C, C++, Python)
 - Microcontrollers & Electronics
 - Computer Vision, Sensor Fusion
