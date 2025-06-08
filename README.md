@@ -71,7 +71,7 @@
       - <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/91e44488262645.5ddbaf2895ce1.gif" width="20px"> I'm currently working on few robotics related projects<br>
       - <img src="https://media.tenor.com/tkpOfRTT21UAAAAi/flexed-biceps-joypixels.gif" width="20px"> Pursuing <em>Electronics and Communication Engineering</em><br>
       - <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXhoNWhlMzdiczdvYzVndjVxdjF5bTgwdHlvaGJ1bWkzMTJwZGkxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VGQh2JdmphZHUBT0Bi/giphy.webp" width="20px"> From <em>National Institute of Technology Calicut</em><br>
-      - <img src="https://cdn.pixabay.com/animation/2023/10/03/13/08/13-08-01-15_512.gif" width="25px"> How to reach me: <a href="https://mummanajagadeesh.github.io/contact">Carrier Pigeons</a> ;)<br>
+      - <img src="https://cdn.pixabay.com/animation/2023/10/03/13/08/13-08-01-15_512.gif" width="25px"> How to reach me: <a href="https://mummanajagadeesh.github.io/contact">Carrier Pigeons</a> 😉<br>
       - <img src="https://media.tenor.com/kDZWJ62n1mEAAAAj/emoji-emojis.gif" width="20px"> Pronouns: he/him<br>
       - <img src="https://cdn.pixabay.com/animation/2023/03/21/10/41/10-41-09-561_512.gif" width="20px"> 
         <!--Hobbies:
