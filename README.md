@@ -110,10 +110,11 @@ MY Key Interests:
 Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
 
 ## ✦ Featured Projects | [All Projects](https://mummanajagadeesh.github.io/projects/)
+<details>
+<summary> <a href="https://mummanajagadeesh.github.io/projects/improve/subprojects"><strong>Verilog HDL Toolkit for Image Processing and Pattern Recognition</strong></a></summary>
 
-### ⬩ [Verilog HDL Toolkit for Image Processing and Pattern Recognition](https://mummanajagadeesh.github.io/projects/improve/subprojects)  
 **Duration:** Individual, Ongoing  
-**Tools:** Verilog (Icarus Verilog, Xilinx Vivado) | Python (OpenCV, NumPy, Tkinter) | Scripting (TCL. Perl)
+**Tools:** Verilog (Icarus Verilog, Xilinx Vivado) | Python (OpenCV, NumPy, Tkinter) | Scripting (TCL, Perl)
 
 - **Designed `image processing algorithms` (e.g., edge detection, geometric & color transforms, noise reduction) in Verilog, utilizing `hardware optimized math` techniques to maximize computational efficiency. These algorithms were fine-tuned for `low-latency` preprocessing in embedded vision SoCs.**
 
@@ -123,8 +124,11 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 - **Currently working on real-life applications including `label detection`, `document scanning`, `stereo depth map generation`, and neural network inference for MNIST/EMNIST datasets.**
 
+</details>
 
-### ⬩ [RV32I RTL CPU Design](https://mummanajagadeesh.github.io/projects/rose)  
+<details>
+<summary> <a href="https://mummanajagadeesh.github.io/projects/rose"><strong>RV32I RTL CPU DESIGN</strong></a></summary>
+
 **Duration:** Individual, Ongoing  
 **Tools:** Verilog (Icarus Verilog) | TL-Verilog (Makerchip) 
 
@@ -138,11 +142,14 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 - **Enabled simulation and debugging via Makerchip integration** using `m4+cpu_viz()`, with waveform visualization and automated test validation through register monitoring.
 
+</details>
 
-### ⬩ [RU83C – Rubik’s Cube Solving Robot](https://mummanajagadeesh.github.io/projects/rubec/)  
-A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with precision
+<details>
+<summary> <a href="https://mummanajagadeesh.github.io/projects/rubec/"><strong>RU83C – Rubik’S Cube Solving Robot</strong></a></summary>
 
+A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with precision using Kociemba’s two-phase algorithm for optimal move sequences
 
+</details>
 
 # <img src="https://cdn.pixabay.com/animation/2023/05/16/19/08/19-08-28-374_512.gif" width="40px"> Tools and Technologies
 
