@@ -195,7 +195,7 @@ A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with pre
   <a href="https://espressif.com/" target="_blank">
     <img height="30" src="https://custom-icon-badges.demolab.com/badge/ESP32-darkblue.svg?logo=ESP_MJ97" alt="ESP32"/>
   </a>
-  <a href="https://index.ros.org/doc/ros2/" target="_blank">
+  <a href="https://www.ros.org/" target="_blank">
     <img height="30" src="https://custom-icon-badges.demolab.com/badge/ROS2-purple.svg?logo=ROS2_MJ97" alt="ROS2"/>
   </a>
   <a href="https://cyberbotics.com/" target="_blank">
