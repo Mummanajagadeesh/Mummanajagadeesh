@@ -94,7 +94,7 @@ warning: uncommitted stress found
 Aborting...
 Output: "Fckdup"-->
 
-# <img src="https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/abd7dbc79d91805a3c01627dea2e4537f5324a17/icons/spot.gif" width="30px"> About ME
+# <img src="https://i.pinimg.com/originals/88/c0/8e/88c08e0221a17ea11b0e59341d2c0b7c.gif" width="40px"> About ME
 
 Hey <img src="https://raw.githubusercontent.com/umenzi/umenzi/main/wave.gif" width="17px">, I'm Jagadeesh—a Robotics, AI & VLSI hardware enthusiast passionate about building at the intersection of digital logic and intelligent systems.  
 I enjoy bringing algorithms to silicon, exploring digital design and hardware acceleration for machine learning and image processing, and collaborating with like-minded innovators.
