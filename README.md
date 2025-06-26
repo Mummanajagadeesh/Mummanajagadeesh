@@ -1,7 +1,7 @@
 # Bonjour le monde ! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-06-26 13:48:12 IST -->
 
 
-# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。
+<!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 <p align="left">
   <a href="https://mummanajagadeesh.github.io/" target="_blank">
       <img src="https://img.shields.io/badge/Portfolio-2E8B57?style=flat-square&logo=Google-chrome&logoColor=white" alt="Portfolio"/>
