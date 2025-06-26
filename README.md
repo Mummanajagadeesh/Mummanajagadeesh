@@ -1,4 +1,8 @@
-# Bonjour le monde ! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-06-26 13:52:19 IST -->
+# 🌍 Multilingual Greeting
+
+Olá, mundo! Este é o [Jagadeesh](https://mummanajagadeesh.github.io/).  
+<!-- updated: 2025-06-26 13:56:32 IST -->
+
 
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
