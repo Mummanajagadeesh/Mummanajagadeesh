@@ -1,4 +1,4 @@
-# Привет, мир! Это [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-06-27 22:25:26 IST -->
+# 안녕하세요, 세계! 이것은 [Jagadeesh](https://mummanajagadeesh.github.io/) 입니다. <!-- updated: 2025-06-27 22:42:26 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 <p align="left">
