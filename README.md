@@ -246,29 +246,57 @@ A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with pre
 
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
 
-<p align="center"> 
-    <a href="https://github.com/ryo-ma/github-profile-trophy">
-        <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=radical&no-frame=true" alt="mummanajagadeesh" />
-    </a> 
+<p align="center">
+  <!-- Light mode trophy -->
+  <a href="https://github.com/ryo-ma/github-profile-trophy#gh-light-mode-only">
+    <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=flat&no-frame=true#gh-light-mode-only" alt="mummanajagadeesh trophies (light)" />
+  </a>
+
+  <!-- Dark mode trophy -->
+  <a href="https://github.com/ryo-ma/github-profile-trophy#gh-dark-mode-only">
+    <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=radical&no-frame=true#gh-dark-mode-only" alt="mummanajagadeesh trophies (dark)" />
+  </a>
 </p>
+
 
 <!--[![Activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)](https://github.com/Mummanajagadeesh/github-readme-activity-graph)-->
 <!--![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)-->
 <!--![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true)-->
-<table>
-  <tr>
-    <td>
-      <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&Cache-Control=no-cache" alt="Stats" />
-    </td>
-    <td>
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true&count_private=true&include_all_commits=true&Cache-Control=no-cachet=12345" alt="Streak" />
-    </td>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=radical&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83,Mummanajagadeesh.github.io,site,blog-,blog--,blogs,geeky-hugo,ORIGO2K25,hugo-theme-dream&hide=powershell&include_all_commits=true&Cache-Control=no-cache&t=12345" alt="Top Languages" />
-    </td>
-  </tr>
-</table>
+
+<!-- Light Mode Table -->
+<a href="https://github.com/Mummanajagadeesh#gh-light-mode-only">
+  <table>
+    <tr>
+      <td>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-light-mode-only" alt="Stats (light)" />
+      </td>
+      <td>
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-light-mode-only" alt="Streak (light)" />
+      </td>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=default&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83,Mummanajagadeesh.github.io,site,blog-,blog--,blogs,geeky-hugo,ORIGO2K25,hugo-theme-dream&hide=powershell&include_all_commits=true&Cache-Control=no-cache#gh-light-mode-only" alt="Top Languages (light)" />
+      </td>
+    </tr>
+  </table>
+</a>
+
+<!-- Dark Mode Table -->
+<a href="https://github.com/Mummanajagadeesh#gh-dark-mode-only">
+  <table>
+    <tr>
+      <td>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Stats (dark)" />
+      </td>
+      <td>
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Streak (dark)" />
+      </td>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=radical&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83,Mummanajagadeesh.github.io,site,blog-,blog--,blogs,geeky-hugo,ORIGO2K25,hugo-theme-dream&hide=powershell&include_all_commits=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Top Languages (dark)" />
+      </td>
+    </tr>
+  </table>
+</a>
 
 
 
@@ -277,8 +305,19 @@ A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with pre
 ![Quote](https://github-readme-quotes-bay.vercel.app/quote?theme=radical&quotesUrl=https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/414cabe06e68275172913e1e4468c60819de8972/assets/quotes.json)-->
 
 ### RndmQuoteGen()
-<p align="center"> 
-    <img src="https://github-readme-quotes-bay.vercel.app/quote?quoteCategory=motivational&theme=radical" />
+
+<!-- Light Mode Quote -->
+<p align="center">
+  <a href="https://github.com/Mummanajagadeesh#gh-light-mode-only">
+    <img src="https://github-readme-quotes-bay.vercel.app/quote?quoteCategory=motivational&theme=light#gh-light-mode-only" alt="Motivational Quote (light)" />
+  </a>
+</p>
+
+<!-- Dark Mode Quote -->
+<p align="center">
+  <a href="https://github.com/Mummanajagadeesh#gh-dark-mode-only">
+    <img src="https://github-readme-quotes-bay.vercel.app/quote?quoteCategory=motivational&theme=radical#gh-dark-mode-only" alt="Motivational Quote (dark)" />
+  </a>
 </p>
 
 
