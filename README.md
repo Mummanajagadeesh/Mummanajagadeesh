@@ -1,4 +1,4 @@
-# Xin chào, thế giới! Đây là [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-06-27 12:23:18 IST -->
+# Witaj świecie! To jest [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-06-27 12:18:25 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 <p align="left">
@@ -126,7 +126,7 @@ MY Key Interests:
   
 Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
 
-## ✦ Featured Projects | [All Projects](https://mummanajagadeesh.github.io/projects/)
+## <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDZyazBneGIxemh6OHBtdXVxb3JtcmhubzRxY2Jyc3hxNXhwZHhuaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/qXp82ZL3eZbbTUrLyy/giphy.gif"  width="20px"> Featured Projects | [All Projects](https://mummanajagadeesh.github.io/projects/)
 
 <em>(Click sections below to expand)</em>
 
@@ -138,6 +138,8 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
     <a href="https://mummanajagadeesh.github.io/projects/improve/subprojects" target="_blank">Link</a>
   </strong>
 </summary>
+  
+<br>
 
 **Duration:** Individual, Ongoing  
 **Tools:** Verilog (Icarus Verilog, Xilinx Vivado) | Python (OpenCV, NumPy, Tkinter) | Scripting (TCL, Perl)
@@ -159,6 +161,9 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
     <a href="https://mummanajagadeesh.github.io/projects/rose" target="_blank">Link</a>
   </strong>
 </summary>
+  
+<br>
+
 
 **Duration:** Individual, Ongoing  
 **Tools:** Verilog (Icarus Verilog) | TL-Verilog (Makerchip) 
@@ -182,6 +187,9 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
     <a href="https://mummanajagadeesh.github.io/projects/rubec/" target="_blank">Link</a>
   </strong>
 </summary>
+  
+<br>
+
 
 A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with precision using Kociemba’s two-phase algorithm for optimal move sequences
 
@@ -343,7 +351,7 @@ A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with pre
 <!--![Quote](https://github-readme-quotes-bay.vercel.app/quote?theme=radical?quotesUrl=https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/414cabe06e68275172913e1e4468c60819de8972/assets/quotes.json)
 ![Quote](https://github-readme-quotes-bay.vercel.app/quote?theme=radical&quotesUrl=https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/414cabe06e68275172913e1e4468c60819de8972/assets/quotes.json)-->
 
-### RndmQuoteGen()
+### <img src="https://i.pinimg.com/originals/7d/44/8f/7d448f92a799d52054a8c261fb903a98.gif" width="30px"> RndmQuoteGen()
 
 <!-- Light Mode Quote -->
 <p align="center">
