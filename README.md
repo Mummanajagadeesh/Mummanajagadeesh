@@ -59,7 +59,7 @@
 
 
 
-<table>
+<!-- <table>
   <tr>
     <td>
       <img src="https://i.pinimg.com/originals/3d/17/f4/3d17f46d3ea30dc0b94a9ff4a4d1a380.gif" width="400px">
@@ -77,13 +77,30 @@
         <img src="https://i.pinimg.com/originals/e4/4a/5f/e44a5fb5dbaa4e48a5a09f42b63ad02e.gif" width="20px">,
         <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExanFhMXVoN3VoMmt0Y3F3Ymdsc2kyOWdqM3Ixa3NrMzhoZ295dXByOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/2Ygy0khwewLgMSYM0t/giphy.webp" width="15px">,
         <img src="https://media.tenor.com/U_xJRkSD54AAAAAi/abiera-origami.gif" width="15px"><br>-->
-        Hobbies: Speedcubing, Coding, Movies, Blogging<br>
-      - <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGo0bDB3azFlMTF0ZTI2ZGMyMXNja3ZnaG9pZ2Z1MXc5ZWljM2xqbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3ohc19SFUdIJ0YQcLe/giphy.webp" width="20px"> Fun fact: I'm Batman
-      <!--<img src="https://media.tenor.com/BHH91Bu45UMAAAAC/batman-logo.gif" width="15px">-->
+
+
+<p align="center">
+<table>
+  <tr>
+    <td>
+      <img src="https://i.pinimg.com/originals/3d/17/f4/3d17f46d3ea30dc0b94a9ff4a4d1a380.gif" width="400px">
+    </td>
+    <td>
+      <ul>
+        <li><img src="https://images.emojiterra.com/google/noto-emoji/animated-emoji/1f916.gif" width="17px"> Robotics, AI & VLSI Enthusiast</li>
+        <li><img src="https://i.gifer.com/origin/4c/4c8423ace30594a2f80c07639d6885fd_w200.webp" width="20px"> I'm constantly learning</li>
+        <li><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/91e44488262645.5ddbaf2895ce1.gif" width="20px"> I'm currently working on few robotics related projects</li>
+        <li><img src="https://media.tenor.com/tkpOfRTT21UAAAAi/flexed-biceps-joypixels.gif" width="20px"> Pursuing <em>Electronics and Communication Engineering</em></li>
+        <li><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXhoNWhlMzdiczdvYzVndjVxdjF5bTgwdHlvaGJ1bWkzMTJwZGkxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VGQh2JdmphZHUBT0Bi/giphy.webp" width="20px"> From <em>National Institute of Technology Calicut</em></li>
+        <li><img src="https://cdn.pixabay.com/animation/2023/10/03/13/08/13-08-01-15_512.gif" width="25px"> How to reach me: <a href="https://mummanajagadeesh.github.io/contact">Carrier Pigeons</a> 😉</li>
+        <li><img src="https://media.tenor.com/kDZWJ62n1mEAAAAj/emoji-emojis.gif" width="20px"> Pronouns: he/him</li>
+        <li><img src="https://cdn.pixabay.com/animation/2023/03/21/10/41/10-41-09-561_512.gif" width="20px"> Hobbies: Speedcubing, Coding, Movies, Blogging</li>
+        <li><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGo0bDB3azFlMTF0ZTI2ZGMyMXNja3ZnaG9pZ2Z1MXc5ZWljM2xqbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3ohc19SFUdIJ0YQcLe/giphy.webp" width="20px"> Fun fact: I'm Batman</li>
+      </ul>
     </td>
   </tr>
 </table>
-
+</p>
 
 <!--$ git pull life --verbose
 Fetching latest life updates...
@@ -92,6 +109,7 @@ error: insufficient memory to process workload
 warning: uncommitted stress found
 Aborting...
 Output: "Fckdup"-->
+<br><br>
 
 # <img src="https://i.pinimg.com/originals/88/c0/8e/88c08e0221a17ea11b0e59341d2c0b7c.gif" width="40px"> About ME
 
@@ -109,8 +127,17 @@ MY Key Interests:
 Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
 
 ## ✦ Featured Projects | [All Projects](https://mummanajagadeesh.github.io/projects/)
+
+<em>(Click sections below to expand)</em>
+
+
 <details>
-<summary> <a href="https://mummanajagadeesh.github.io/projects/improve/subprojects"><strong>Verilog HDL Toolkit for Image Processing and Pattern Recognition</strong></a></summary>
+<summary>
+  <strong>
+    Verilog HDL Toolkit for Image Processing and Pattern Recognition |
+    <a href="https://mummanajagadeesh.github.io/projects/improve/subprojects" target="_blank">Link</a>
+  </strong>
+</summary>
 
 **Duration:** Individual, Ongoing  
 **Tools:** Verilog (Icarus Verilog, Xilinx Vivado) | Python (OpenCV, NumPy, Tkinter) | Scripting (TCL, Perl)
@@ -126,7 +153,12 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 </details>
 
 <details>
-<summary> <a href="https://mummanajagadeesh.github.io/projects/rose"><strong>RV32I RTL CPU DESIGN</strong></a></summary>
+<summary>
+  <strong>
+    RV32I RTL CPU DESIGN |
+    <a href="https://mummanajagadeesh.github.io/projects/rose" target="_blank">Link</a>
+  </strong>
+</summary>
 
 **Duration:** Individual, Ongoing  
 **Tools:** Verilog (Icarus Verilog) | TL-Verilog (Makerchip) 
@@ -144,11 +176,18 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 </details>
 
 <details>
-<summary> <a href="https://mummanajagadeesh.github.io/projects/rubec/"><strong>RU83C – Rubik’S Cube Solving Robot</strong></a></summary>
+<summary>
+  <strong>
+    RU83C – Rubik’S Cube Solving Robot |
+    <a href="https://mummanajagadeesh.github.io/projects/rubec/" target="_blank">Link</a>
+  </strong>
+</summary>
 
 A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with precision using Kociemba’s two-phase algorithm for optimal move sequences
 
 </details>
+
+<br><br>
 
 # <img src="https://cdn.pixabay.com/animation/2023/05/16/19/08/19-08-28-374_512.gif" width="40px"> Tools and Technologies
 
