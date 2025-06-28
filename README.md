@@ -1,4 +1,4 @@
-# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。 <!-- updated: 2025-06-28 12:58:58 IST -->
+# 안녕하세요, 세계! 이것은 [Jagadeesh](https://mummanajagadeesh.github.io/) 입니다. <!-- updated: 2025-06-28 13:09:48 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 <p align="left">
