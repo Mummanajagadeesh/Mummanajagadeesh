@@ -154,6 +154,27 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 </details>
 
+<details>  
+<summary>  
+  <strong>  
+    ANAV for Martian Surface Exploration (ISRO IRoC‑U 2025) |  
+    <a href="https://mummanajagadeesh.github.io/projects/isro-anav/" target="_blank">Link</a>  
+  </strong>  
+</summary>  
+
+<br>  
+
+**Duration:** Team-based (ISRO RIG), Ongoing
+**Tools:** Jetson Nano | Pixhawk | RealSense D435i | ESP32 (ESP‑Now) | VINS‑Fusion | ROS2
+
+* **Built a `<2kg autonomous quadrotor>` for `GNSS-denied environments`, capable of `real-time mapping`, `navigation`, and `safe-zone detection` with zero manual intervention; Jetson Nano was used for onboard compute and Pixhawk handled flight control.**
+
+* **Calibrated ESCs and implemented `embedded power distribution` via BEC module to ensure stable regulation for compute/sensing; integrated barometer and external optical flow sensor with Pixhawk for redundancy in low-texture or drifting conditions.**
+
+* **Fused stereo-IMU data from `Intel RealSense D435i` using `VINS-Fusion` on `ROS2`, achieving `<5cm drift` over \~5m; transmitted real-time telemetry using ESP32 modules (`ESP‑Now`); autonomously landed on `obstacle-free 1.5×1.5m` zones with `<15° slopes`.**
+
+</details>
+
 <details>
 <summary>
   <strong>
