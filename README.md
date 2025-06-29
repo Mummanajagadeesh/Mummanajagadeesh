@@ -343,7 +343,7 @@ A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with pre
         <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-light-mode-only" alt="Streak (light)" />
       </td>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=default&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83,Mummanajagadeesh.github.io,site,blog-,blog--,blogs,geeky-hugo,ORIGO2K25,hugo-theme-dream&hide=powershell&include_all_commits=true&Cache-Control=no-cache#gh-light-mode-only" alt="Top Languages (light)" />
+        <img src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=default&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83,Mummanajagadeesh.github.io,site,blog-,blog--,blogs,geeky-hugo,ORIGO2K25,hugo-theme-dream&hide=powershell&include_all_commits=true&cache_seconds=1#gh-light-mode-only" alt="Top Languages (light)" />
       </td>
     </tr>
   </table>
@@ -360,14 +360,11 @@ A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with pre
         <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Streak (dark)" />
       </td>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=radical&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83,Mummanajagadeesh.github.io,site,blog-,blog--,blogs,geeky-hugo,ORIGO2K25,hugo-theme-dream&hide=powershell&include_all_commits=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Top Languages (dark)" />
+        <img src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=radical&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83,Mummanajagadeesh.github.io,site,blog-,blog--,blogs,geeky-hugo,ORIGO2K25,hugo-theme-dream,I2C-protocol-verilog,TrafficLightController-verilog&hide=powershell&include_all_commits=true&cache_seconds=1#gh-dark-mode-only" alt="Top Languages (dark)" />
       </td>
     </tr>
   </table>
 </a>
-
-
-
 
 <!--![Quote](https://github-readme-quotes-bay.vercel.app/quote?theme=radical?quotesUrl=https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/414cabe06e68275172913e1e4468c60819de8972/assets/quotes.json)
 ![Quote](https://github-readme-quotes-bay.vercel.app/quote?theme=radical&quotesUrl=https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/414cabe06e68275172913e1e4468c60819de8972/assets/quotes.json)-->
