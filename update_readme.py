@@ -7,28 +7,43 @@ timestamp = ist_now.strftime('%Y-%m-%d %H:%M:%S IST')
 
 # Multilingual greetings with weights
 greetings_with_weights = [
-    # High frequency
-    ("こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。", 20),  # Japanese
-    ("Hallo Welt! Das ist [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # German
-    ("¡Hola, mundo! Este es [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Spanish
-    ("Bonjour le monde ! C'est [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # French
-    ("Ciao mondo! Questo è [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Italian
+    # High frequency — visually complex, non-Latin scripts
+    ("こんにちは、世界！ This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Japanese
+    ("안녕하세요, 세계! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Korean
+    ("你好，世界！This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Chinese
+    ("مرحبا بالعالم! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Arabic
+    ("ሰላም ዓለም! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Amharic
+    ("வணக்கம் உலகம்! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Tamil
+    ("हॅलो वर्ल्ड! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Marathi
+    ("হ্যালো বিশ্ব! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Bengali
+    ("ہیلو دنیا! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Urdu
+    ("ສະບາຍດີໂລກ! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Lao
+    ("မင်္ဂလာပါ ကမ္ဘာလောက! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Burmese
+    ("สวัสดีโลก! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Thai
+    ("שלום עולם! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Hebrew
+    ("བཀྲ་ཤིས་བདེ་ལེགས། འཛམ་གླིང་! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 15),  # Tibetan
+    ("Բարեւ աշխարհ! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 15),  # Armenian
+    ("გამარჯობა მსოფლიო! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 15),  # Georgian
 
-    # Medium frequency
-    ("Привет, мир! Это [Jagadeesh](https://mummanajagadeesh.github.io/).", 5),  # Russian
-    ("안녕하세요, 세계! 이것은 [Jagadeesh](https://mummanajagadeesh.github.io/) 입니다.", 5),  # Korean
-    ("你好，世界！这是 [Jagadeesh](https://mummanajagadeesh.github.io/)。", 5),  # Chinese
-    ("Olá, mundo! Este é o [Jagadeesh](https://mummanajagadeesh.github.io/).", 5),  # Portuguese
-    ("Merhaba dünya! Bu [Jagadeesh](https://mummanajagadeesh.github.io/).", 5),  # Turkish
-    ("مرحبا بالعالم! هذا هو [Jagadeesh](https://mummanajagadeesh.github.io/).", 5),  # Arabic
-    ("Witaj świecie! To jest [Jagadeesh](https://mummanajagadeesh.github.io/).", 5),  # Polish
-    ("Kamusta, mundo! Ito si [Jagadeesh](https://mummanajagadeesh.github.io/).", 5),  # Filipino
-    ("Xin chào, thế giới! Đây là [Jagadeesh](https://mummanajagadeesh.github.io/).", 5),  # Vietnamese
+    # Medium frequency — Indian + non-English Latin languages
+    ("नमस्ते दुनिया! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # Hindi
+    ("ਹੈਲੋ ਦੁਨਿਆ! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # Punjabi
+    ("ନମସ୍କାର ବିଶ୍ୱ! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # Odia
+    ("ഹലോ ലോകം! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # Malayalam
+    ("Bonjour le monde! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # French
+    ("¡Hola, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # Spanish
+    ("Hallo Welt! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # German
+    ("Olá, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # Portuguese
+    ("Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # Italian
+    ("Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # Polish
+    ("Привет, мир! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # Russian
+    ("Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # Filipino
+    ("Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 10),  # Vietnamese
 
-    # Low frequency
+    # Low frequency — English only
     ("Hello, world! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 1),  # English
-    ("नमस्ते दुनिया! यह [Jagadeesh](https://mummanajagadeesh.github.io/) है।", 1),  # Hindi
 ]
+
 
 # Separate greetings and weights
 greetings, weights = zip(*greetings_with_weights)
