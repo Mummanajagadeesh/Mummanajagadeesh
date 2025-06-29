@@ -1,6 +1,7 @@
 # হ্যালো বিশ্ব! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-06-29 21:24:29 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
+
 <p align="left">
   <a href="https://mummanajagadeesh.github.io/" target="_blank">
       <img src="https://img.shields.io/badge/Portfolio-2E8B57?style=flat-square&logo=Google-chrome&logoColor=white" alt="Portfolio"/>
@@ -313,6 +314,8 @@ A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with pre
 # <img src="https://ugokawaii.com/wp-content/uploads/2022/08/increase.gif" width="40px"> GitHub Stats</h1>
 
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
+![Total repos](https://github-readme-stats-mummanajagadeesh.vercel.app/api/total-repos)
+
 
 <p align="center">
   <!-- Light mode trophy -->
