@@ -9,7 +9,7 @@
   <a href="https://mummanajagadeesh.github.io/blog/all" target="_blank">
       <img src="https://img.shields.io/badge/BLOG-000000?style=flat-square&logo=Google-chrome&logoColor=white" alt="Portfolio"/>
   </a>
-  <a href="https://www.linkedin.com/in/jagadeeeshmummana" target="_blank">
+  <a href="https://www.linkedin.com/in/jagadeeesh-mummana" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin" alt="LinkedIn"/>
   </a>
   <a href="https://www.instagram.com/jagadeesh__97__" target="_blank">
