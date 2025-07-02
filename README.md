@@ -381,7 +381,7 @@ A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with pre
   <p align="center">
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Stats (dark)" width="32%">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mummanajagadeesh&theme=radical&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Streak (dark)" width="32%">
-    <img src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=radical&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83,Mummanajagadeesh.github.io,site,blog-,blog--,blogs,geeky-hugo,ORIGO2K25,hugo-theme-dream,I2C-protocol-verilog,TrafficLightController-verilog&hide=powershell&include_all_commits=true&cache_seconds=1#gh-dark-mode-only" alt="Top Languages (dark)" width="32%">
+    <img src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=radical&show_icons=true&hide_border=true&layout=compact&count_private=true&exclude_repo=V-RU81K5CU83,Mummanajagadeesh.github.io,site,blog-,blog--,blogs,geeky-hugo,ORIGO2K25,hugo-theme-dream,I2C-protocol-verilog,TrafficLightController-verilog,NeVer&hide=powershell,gnuplot,c%23,html&include_all_commits=true&cache_seconds=1#gh-dark-mode-only" alt="Top Languages (dark)" width="32%">
   </p>
 </a>
 
