@@ -216,6 +216,8 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 - **Enabled simulation and debugging via Makerchip integration** using `m4+cpu_viz()`, with waveform visualization and automated test validation through register monitoring.
 
+</details>
+
 <details>
 <summary>
   <strong>
@@ -230,7 +232,7 @@ Designed and simulated semiconductor structures (N-resistor, PN diode, NMOS) usi
 
 </details>
 
-</details>
+
 
 <details>
 <summary>
