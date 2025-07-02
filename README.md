@@ -216,6 +216,20 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 - **Enabled simulation and debugging via Makerchip integration** using `m4+cpu_viz()`, with waveform visualization and automated test validation through register monitoring.
 
+<details>
+<summary>
+  <strong>
+    Device Modeling using Sentaurus TCAD | 
+        <a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS/" target="_blank">Link</a>
+  </strong>
+</summary>
+  
+<br>
+
+Designed and simulated semiconductor structures (N-resistor, PN diode, NMOS) using Sentaurus TCAD; explored effects of doping, geometry, and physical models through process setup, simulation scripting, and visual analysis of internal device behavior
+
+</details>
+
 </details>
 
 <details>
