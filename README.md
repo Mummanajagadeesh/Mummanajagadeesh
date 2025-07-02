@@ -80,7 +80,7 @@
         <img src="https://media.tenor.com/U_xJRkSD54AAAAAi/abiera-origami.gif" width="15px"><br>-->
 
 
-<p align="center">
+<!--<p align="center">
 <table>
   <tr>
     <td>
@@ -101,7 +101,23 @@
     </td>
   </tr>
 </table>
+</p>-->
+
+<p>
+  <img src="https://i.pinimg.com/originals/3d/17/f4/3d17f46d3ea30dc0b94a9ff4a4d1a380.gif" width="400px" align="right">
 </p>
+
+<ul>
+  <li><img src="https://images.emojiterra.com/google/noto-emoji/animated-emoji/1f916.gif" width="17px"> Robotics, AI & VLSI Enthusiast</li>
+  <li><img src="https://i.gifer.com/origin/4c/4c8423ace30594a2f80c07639d6885fd_w200.webp" width="20px"> I'm constantly learning</li>
+  <li><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/91e44488262645.5ddbaf2895ce1.gif" width="20px"> I'm currently working on few robotics related projects</li>
+  <li><img src="https://media.tenor.com/tkpOfRTT21UAAAAi/flexed-biceps-joypixels.gif" width="20px"> Pursuing <em>Electronics and Communication Engineering</em></li>
+  <li><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXhoNWhlMzdiczdvYzVndjVxdjF5bTgwdHlvaGJ1bWkzMTJwZGkxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VGQh2JdmphZHUBT0Bi/giphy.webp" width="20px"> From <em>National Institute of Technology Calicut</em></li>
+  <li><img src="https://cdn.pixabay.com/animation/2023/10/03/13/08/13-08-01-15_512.gif" width="25px"> How to reach me: <a href="https://mummanajagadeesh.github.io/contact">Carrier Pigeons</a> 😉</li>
+  <li><img src="https://media.tenor.com/kDZWJ62n1mEAAAAj/emoji-emojis.gif" width="20px"> Pronouns: he/him</li>
+  <li><img src="https://cdn.pixabay.com/animation/2023/03/21/10/41/10-41-09-561_512.gif" width="20px"> Hobbies: Speedcubing, Coding, Movies, Blogging</li>
+  <li><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGo0bDB3azFlMTF0ZTI2ZGMyMXNja3ZnaG9pZ2Z1MXc5ZWljM2xqbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3ohc19SFUdIJ0YQcLe/giphy.webp" width="20px"> Fun fact: I'm Batman</li>
+</ul>
 
 <!--$ git pull life --verbose
 Fetching latest life updates...
