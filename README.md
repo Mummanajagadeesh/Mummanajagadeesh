@@ -135,7 +135,7 @@ I enjoy bringing algorithms to silicon, exploring digital design and hardware ac
 
 MY Key Interests:
 - VLSI Design: Analog Circuits & Digital Design
-- Neural Networks & Image Processing in Hardware
+- Neural Networks & Image Processing in HW/SW
 - Embedded Programming (C, C++, Python)
 - Microcontrollers & Electronics
 - Computer Vision, Sensor Fusion
