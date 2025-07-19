@@ -5,22 +5,19 @@ from datetime import datetime, timedelta
 ist_now = datetime.utcnow() + timedelta(hours=5, minutes=30)
 timestamp = ist_now.strftime('%Y-%m-%d %H:%M:%S IST')
 
-# Multilingual greetings with weights
+# Multilingual greetings with weights (RTL and Latin-in-other-script removed)
 greetings_with_weights = [
     # High frequency — visually complex, non-Latin scripts
     ("こんにちは、世界！ This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Japanese
     ("안녕하세요, 세계! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Korean
     ("你好，世界！This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Chinese
-    ("مرحبا بالعالم! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Arabic
     ("ሰላም ዓለም! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Amharic
     ("வணக்கம் உலகம்! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 30),  # Tamil
     ("हॅलो वर्ल्ड! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Marathi
     ("হ্যালো বিশ্ব! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Bengali
-    ("ہیلو دنیا! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Urdu
     ("ສະບາຍດີໂລກ! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Lao
     ("မင်္ဂလာပါ ကမ္ဘာလောက! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Burmese
     ("สวัสดีโลก! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Thai
-    ("שלום עולם! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 20),  # Hebrew
     ("བཀྲ་ཤིས་བདེ་ལེགས། འཛམ་གླིང་! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 15),  # Tibetan
     ("Բարեւ աշխարհ! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 15),  # Armenian
     ("გამარჯობა მსოფლიო! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 15),  # Georgian
@@ -43,7 +40,6 @@ greetings_with_weights = [
     # Low frequency — English only
     ("Hello, world! This is [Jagadeesh](https://mummanajagadeesh.github.io/).", 1),  # English
 ]
-
 
 # Separate greetings and weights
 greetings, weights = zip(*greetings_with_weights)
