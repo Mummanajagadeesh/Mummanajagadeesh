@@ -28,8 +28,9 @@ jobs:
           curl -s -H "Authorization: Bearer $GH_TOKEN" \
             "https://api.github.com/user/repos?per_page=100&affiliation=owner" > all_repos.json
 
-
       - name: Generate repo cards
+        env:
+          GH_TOKEN: ${{ secrets.PRIVATE_GH_TOKEN }}
         run: |
           mkdir -p repos
           echo "<!--START:REPO_CARDS-->" > insert.txt
@@ -41,6 +42,8 @@ jobs:
               Roff) echo "#ecdebe" ;;
               HTML) echo "#e34c26" ;;
               V) echo "#b2b7f8" ;;
+              "TL-Verilog") echo "#33cc99" ;;
+              "SystemVerilog") echo "#DA70D6" ;;
               *) echo "#cccccc" ;;
             esac
           }
@@ -71,8 +74,8 @@ jobs:
             echo "  </a>" >> $FILE
 
             if [ "$PRIVATE" = "true" ]; then
-              echo "  <rect x=\"100\" y=\"16\" rx=\"4\" ry=\"4\" width=\"65\" height=\"18\" fill=\"$BADGE_FILL\" stroke=\"$BADGE_STROKE\" />" >> $FILE
-              echo "  <text x=\"108\" y=\"29\" class=\"badge\">Private</text>" >> $FILE
+              echo "  <rect x=\"420\" y=\"16\" rx=\"4\" ry=\"4\" width=\"65\" height=\"18\" fill=\"$BADGE_FILL\" stroke=\"$BADGE_STROKE\" />" >> $FILE
+              echo "  <text x=\"428\" y=\"29\" class=\"badge\">Private</text>" >> $FILE
             fi
 
             echo "  <text x=\"16\" y=\"55\" class=\"repo-desc\">$DESC</text>" >> $FILE
@@ -91,7 +94,7 @@ jobs:
 
           for row in $(jq -r '.[] | @base64' all_repos.json); do
             _jq() {
-              echo "${row}" | base64 --decode | jq -r "${1}"
+              echo "$row" | base64 --decode | jq -r "$1"
             }
 
             NAME=$(_jq '.name')
@@ -99,9 +102,10 @@ jobs:
             PRIVATE=$(_jq '.private')
             STARS=$(_jq '.stargazers_count')
 
-            if [ "$DESC" = "null" ]; then DESC="No description provided"; fi
+            [ "$DESC" = "null" ] && DESC="No description provided"
 
-            LANGS=$(curl -s "https://api.github.com/repos/Mummanajagadeesh/$NAME/languages" | jq -r 'keys_unsorted[]')
+            LANGS=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
+              "https://api.github.com/repos/Mummanajagadeesh/$NAME/languages" | jq -r 'keys_unsorted[]')
 
             generate_svg light "repos/${NAME,,}-light.svg" "#fff" "#1f6feb" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da"
             generate_svg dark "repos/${NAME,,}-dark.svg" "#0d1117" "#1f6feb" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd"
@@ -115,7 +119,6 @@ jobs:
             echo "</a>" >> insert.txt
             echo "" >> insert.txt
 
-            # Per-repo section
             sed -i "/<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/c\\
           <!--START-REPO-CARD:$NAME-->\n\
           <a href=\"https://github.com/Mummanajagadeesh#gh-light-mode-only\">\n\
@@ -125,7 +128,6 @@ jobs:
             <img src=\"./repos/${NAME,,}-dark.svg#gh-dark-mode-only\" alt=\"$NAME (dark mode)\" />\n\
           </a>\n\
           <!--END-REPO-CARD:$NAME-->" README.md
-
           done
 
           echo "<!--END:REPO_CARDS-->" >> insert.txt
