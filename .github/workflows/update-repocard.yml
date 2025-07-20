@@ -116,14 +116,14 @@ jobs:
 
             # Per-repo section
             sed -i "/<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/c\\
-<!--START-REPO-CARD:$NAME-->\n\
-<a href=\"https://github.com/Mummanajagadeesh#gh-light-mode-only\">\n\
-  <img src=\"./repos/${NAME,,}-light.svg#gh-light-mode-only\" alt=\"$NAME (light mode)\" />\n\
-</a>\n\
-<a href=\"https://github.com/Mummanajagadeesh#gh-dark-mode-only\">\n\
-  <img src=\"./repos/${NAME,,}-dark.svg#gh-dark-mode-only\" alt=\"$NAME (dark mode)\" />\n\
-</a>\n\
-<!--END-REPO-CARD:$NAME-->" README.md
+          <!--START-REPO-CARD:$NAME-->\n\
+          <a href=\"https://github.com/Mummanajagadeesh#gh-light-mode-only\">\n\
+            <img src=\"./repos/${NAME,,}-light.svg#gh-light-mode-only\" alt=\"$NAME (light mode)\" />\n\
+          </a>\n\
+          <a href=\"https://github.com/Mummanajagadeesh#gh-dark-mode-only\">\n\
+            <img src=\"./repos/${NAME,,}-dark.svg#gh-dark-mode-only\" alt=\"$NAME (dark mode)\" />\n\
+          </a>\n\
+          <!--END-REPO-CARD:$NAME-->" README.md
 
           done
 
