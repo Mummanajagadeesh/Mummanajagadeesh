@@ -3,7 +3,7 @@ name: Update README with Repo Cards
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 12 * * *"  # Runs daily at 12:00 UTC
+    - cron: "0 12 * * *"  # Daily at 12:00 UTC
 
 jobs:
   update-readme:
@@ -21,27 +21,18 @@ jobs:
       - name: Install jq
         run: sudo apt-get install jq -y
 
-      - name: Fetch repository metadata
+      - name: Fetch all public repositories
         env:
           GH_TOKEN: ${{ secrets.PRIVATE_GH_TOKEN }}
         run: |
-          QUERY='{"query":"query { user(login: \"Mummanajagadeesh\") { repository(name: \"ImProVe\") { name description isPrivate stargazers { totalCount } languages(first: 10, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name } } } } } }"}'
-          RESPONSE=$(curl -s -H "Authorization: bearer $GH_TOKEN" \
-            -H "Content-Type: application/json" \
-            -X POST -d "$QUERY" https://api.github.com/graphql)
-          echo "$RESPONSE" > repo.json
+          curl -s -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/users/Mummanajagadeesh/repos?per_page=100&type=public" > all_repos.json
 
-      - name: Generate light and dark SVGs + insert block
+      - name: Generate repo cards
         run: |
-          NAME=$(jq -r '.data.user.repository.name' repo.json)
-          DESC=$(jq -r '.data.user.repository.description' repo.json)
-          PRIVATE=$(jq -r '.data.user.repository.isPrivate' repo.json)
-          STARS=$(jq -r '.data.user.repository.stargazers.totalCount' repo.json)
-          LANGS=$(jq -r '.data.user.repository.languages.edges[] | "\(.node.name)"' repo.json)
+          mkdir -p repos
+          echo "<!--START:REPO_CARDS-->" > insert.txt
 
-          if [ "$DESC" = "null" ]; then DESC="No description provided"; fi
-
-          # Language color map
           get_color() {
             case "$1" in
               Verilog) echo "#f1e05a" ;;
@@ -52,8 +43,6 @@ jobs:
               *) echo "#cccccc" ;;
             esac
           }
-
-          mkdir -p repos
 
           generate_svg() {
             THEME=$1
@@ -99,19 +88,45 @@ jobs:
             echo "</svg>" >> $FILE
           }
 
-          generate_svg light repos/improve-light.svg "#fff" "#1f6feb" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da"
-          generate_svg dark repos/improve-dark.svg "#0d1117" "#1f6feb" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd"
+          for row in $(jq -r '.[] | @base64' all_repos.json); do
+            _jq() {
+              echo "${row}" | base64 --decode | jq -r "${1}"
+            }
 
-          echo "<!--START:REPO_CARDS-->" > insert.txt
-          echo "" >> insert.txt
-          echo "<a href=\"https://github.com/Mummanajagadeesh#gh-light-mode-only\">" >> insert.txt
-          echo "  <img src=\"./repos/improve-light.svg#gh-light-mode-only\" alt=\"$NAME (light mode)\" />" >> insert.txt
-          echo "</a>" >> insert.txt
-          echo "" >> insert.txt
-          echo "<a href=\"https://github.com/Mummanajagadeesh#gh-dark-mode-only\">" >> insert.txt
-          echo "  <img src=\"./repos/improve-dark.svg#gh-dark-mode-only\" alt=\"$NAME (dark mode)\" />" >> insert.txt
-          echo "</a>" >> insert.txt
-          echo "" >> insert.txt
+            NAME=$(_jq '.name')
+            DESC=$(_jq '.description')
+            PRIVATE=$(_jq '.private')
+            STARS=$(_jq '.stargazers_count')
+
+            if [ "$DESC" = "null" ]; then DESC="No description provided"; fi
+
+            LANGS=$(curl -s "https://api.github.com/repos/Mummanajagadeesh/$NAME/languages" | jq -r 'keys_unsorted[]')
+
+            generate_svg light "repos/${NAME,,}-light.svg" "#fff" "#1f6feb" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da"
+            generate_svg dark "repos/${NAME,,}-dark.svg" "#0d1117" "#1f6feb" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd"
+
+            echo "" >> insert.txt
+            echo "<a href=\"https://github.com/Mummanajagadeesh#gh-light-mode-only\">" >> insert.txt
+            echo "  <img src=\"./repos/${NAME,,}-light.svg#gh-light-mode-only\" alt=\"$NAME (light mode)\" />" >> insert.txt
+            echo "</a>" >> insert.txt
+            echo "<a href=\"https://github.com/Mummanajagadeesh#gh-dark-mode-only\">" >> insert.txt
+            echo "  <img src=\"./repos/${NAME,,}-dark.svg#gh-dark-mode-only\" alt=\"$NAME (dark mode)\" />" >> insert.txt
+            echo "</a>" >> insert.txt
+            echo "" >> insert.txt
+
+            # Per-repo section
+            sed -i "/<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/c\\
+<!--START-REPO-CARD:$NAME-->\n\
+<a href=\"https://github.com/Mummanajagadeesh#gh-light-mode-only\">\n\
+  <img src=\"./repos/${NAME,,}-light.svg#gh-light-mode-only\" alt=\"$NAME (light mode)\" />\n\
+</a>\n\
+<a href=\"https://github.com/Mummanajagadeesh#gh-dark-mode-only\">\n\
+  <img src=\"./repos/${NAME,,}-dark.svg#gh-dark-mode-only\" alt=\"$NAME (dark mode)\" />\n\
+</a>\n\
+<!--END-REPO-CARD:$NAME-->" README.md
+
+          done
+
           echo "<!--END:REPO_CARDS-->" >> insert.txt
 
       - name: Update README.md
@@ -125,6 +140,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add README.md repos/improve-light.svg repos/improve-dark.svg
-          git commit -m "Update README with light/dark repo cards" || echo "No changes to commit"
+          git add README.md repos/
+          git commit -m "Update README with dynamic repo cards" || echo "No changes to commit"
           git push
