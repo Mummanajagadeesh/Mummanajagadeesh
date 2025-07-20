@@ -7,9 +7,15 @@
     .badge { font: 11px sans-serif; fill: #8b949e; }
     .lang-dot { r: 5; }
   </style>
+  <defs>
+    <clipPath id="avatarClip">
+      <circle cx="26" cy="22" r="10" />
+    </clipPath>
+  </defs>
   <rect class="card-bg" x="0" y="0" width="500" height="162" rx="12" ry="12" />
+  <image href="https://avatars.githubusercontent.com/u/75290381?v=4" x="16" y="12" width="20" height="20" clip-path="url(#avatarClip)" />
   <a href="https://github.com/Mummanajagadeesh/ros2-docs" target="_blank">
-    <text x="16" y="30" class="repo-name">ros2-docs</text>
+    <text x="44" y="30" class="repo-name">ros2-docs</text>
   </a>
   <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#1f6feb1a" stroke="#388bfd" />
   <text x="438" y="29" class="badge">Public</text>
