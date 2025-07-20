@@ -1,6 +1,6 @@
 <svg width="500" height="140" viewBox="0 0 500 140" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .card-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; }
+    .card-bg { fill: #0d1117; stroke: #1f6feb; stroke-width: 1; }
     .repo-name { font: bold 16px sans-serif; fill: #58a6ff; cursor: pointer; }
     .repo-desc { font: 14px sans-serif; fill: #8b949e; }
     .meta { font: 12px sans-serif; fill: #8b949e; }
