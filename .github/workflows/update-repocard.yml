@@ -3,7 +3,7 @@ name: Update README with Repo Cards
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 12 * * *"  # Runs daily at 12:00 UTC
+    - cron: "0 12 * * *"
 
 jobs:
   update-readme:
@@ -13,92 +13,107 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+      - name: Install dependencies
+        run: sudo apt-get install -y jq
 
-      - name: Install jq
-        run: sudo apt-get install jq -y
+      - name: Extract repo names from README
+        id: extract
+        run: |
+          grep -oP '(?<=<!--START:REPO-CARD:).*?(?=-->)' README.md | sort -u > repos.txt
+          echo "repos=$(paste -sd ',' repos.txt)" >> "$GITHUB_OUTPUT"
 
-      - name: Fetch repository metadata
+      - name: Fetch metadata and generate SVGs
         env:
           GH_TOKEN: ${{ secrets.PRIVATE_GH_TOKEN }}
         run: |
-          QUERY='{"query":"query { user(login: \"Mummanajagadeesh\") { repository(name: \"ImProVe\") { name description stargazers { totalCount } } } }"}'
-          RESPONSE=$(curl -s -H "Authorization: bearer $GH_TOKEN" \
-            -H "Content-Type: application/json" \
-            -X POST -d "$QUERY" https://api.github.com/graphql)
-          echo "$RESPONSE" > repo.json
-
-      - name: Generate light and dark SVGs + insert block
-        run: |
-          NAME=$(jq -r '.data.user.repository.name' repo.json)
-          DESC=$(jq -r '.data.user.repository.description' repo.json)
-          STARS=$(jq -r '.data.user.repository.stargazers.totalCount' repo.json)
-
-          if [ "$DESC" = "null" ]; then DESC="No description provided"; fi
-
           mkdir -p repos
 
-          # LIGHT MODE SVG
-          printf '%s\n' \
-          '<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">' \
-          '  <style>' \
-          '    .title { font: bold 18px sans-serif; fill: #0366d6; }' \
-          '    .desc { font: 14px sans-serif; fill: #333; }' \
-          '    .stars { font: 12px sans-serif; fill: #555; }' \
-          '    .bg { fill: #f9f9f9; stroke: #e1e4e8; stroke-width: 1; }' \
-          '  </style>' \
-          '  <rect class="bg" x="0" y="0" width="400" height="120" rx="10"/>' \
-          "  <text x=\"20\" y=\"35\" class=\"title\">$NAME</text>" \
-          "  <text x=\"20\" y=\"60\" class=\"desc\">$DESC</text>" \
-          "  <text x=\"20\" y=\"85\" class=\"stars\">⭐ $STARS stars</text>" \
-          '</svg>' > repos/improve-light.svg
+          while IFS= read -r REPO_NAME; do
+            echo "Processing $REPO_NAME..."
+            QUERY=$(jq -n --arg name "$REPO_NAME" \
+              '{"query":"query { user(login: \"Mummanajagadeesh\") { repository(name: \($name)) { name description isPrivate stargazers { totalCount } languages(first: 10, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name } } } } } }"}')
 
-          # DARK MODE SVG
-          printf '%s\n' \
-          '<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">' \
-          '  <style>' \
-          '    .title { font: bold 18px sans-serif; fill: #58a6ff; }' \
-          '    .desc { font: 14px sans-serif; fill: #c9d1d9; }' \
-          '    .stars { font: 12px sans-serif; fill: #8b949e; }' \
-          '    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; }' \
-          '  </style>' \
-          '  <rect class="bg" x="0" y="0" width="400" height="120" rx="10"/>' \
-          "  <text x=\"20\" y=\"35\" class=\"title\">$NAME</text>" \
-          "  <text x=\"20\" y=\"60\" class=\"desc\">$DESC</text>" \
-          "  <text x=\"20\" y=\"85\" class=\"stars\">⭐ $STARS stars</text>" \
-          '</svg>' > repos/improve-dark.svg
+            RESP=$(curl -s -H "Authorization: bearer $GH_TOKEN" -H "Content-Type: application/json" \
+              -X POST -d "$QUERY" https://api.github.com/graphql)
 
-          # Insert markdown block with both modes
-          echo "<!--START:REPO_CARDS-->" > insert.txt
-          echo "" >> insert.txt
-          echo "<p align=\"center\">" >> insert.txt
-          echo "  <a href=\"https://github.com/Mummanajagadeesh#gh-light-mode-only\">" >> insert.txt
-          echo "    <img src=\"./repos/improve-light.svg#gh-light-mode-only\" alt=\"$NAME (light mode)\" />" >> insert.txt
-          echo "  </a>" >> insert.txt
-          echo "</p>" >> insert.txt
-          echo "" >> insert.txt
-          echo "<p align=\"center\">" >> insert.txt
-          echo "  <a href=\"https://github.com/Mummanajagadeesh#gh-dark-mode-only\">" >> insert.txt
-          echo "    <img src=\"./repos/improve-dark.svg#gh-dark-mode-only\" alt=\"$NAME (dark mode)\" />" >> insert.txt
-          echo "  </a>" >> insert.txt
-          echo "</p>" >> insert.txt
-          echo "" >> insert.txt
-          echo "<!--END:REPO_CARDS-->" >> insert.txt
+            echo "$RESP" > "$REPO_NAME.json"
+
+            NAME=$(jq -r '.data.user.repository.name' "$REPO_NAME.json")
+            DESC=$(jq -r '.data.user.repository.description // "No description provided"' "$REPO_NAME.json")
+            STARS=$(jq -r '.data.user.repository.stargazers.totalCount' "$REPO_NAME.json")
+            PRIVATE=$(jq -r '.data.user.repository.isPrivate' "$REPO_NAME.json")
+
+            PRIV_TEXT=""
+            if [ "$PRIVATE" = "true" ]; then PRIV_TEXT="🔒 Private   "; fi
+
+            LANGS=$(jq -r '
+              .data.user.repository.languages.edges |
+              map({lang: .node.name, size: .size}) as $langs |
+              ($langs | map(.size) | add) as $total |
+              ($langs | map("\(.lang) " + ((.size * 100 / $total) | floor | tostring) + "%"))[0:3] |
+              join("   ")
+            ' "$REPO_NAME.json")
+
+            for MODE in light dark; do
+              if [ "$MODE" = "light" ]; then
+                BG="#f9f9f9"; STROKE="#e1e4e8"
+                TITLE="#0366d6"; DESC_C="#333"; STARS_C="#555"; LANG_C="#444"
+              else
+                BG="#0d1117"; STROKE="#30363d"
+                TITLE="#58a6ff"; DESC_C="#c9d1d9"; STARS_C="#8b949e"; LANG_C="#999"
+              fi
+
+              cat <<EOF > "repos/${REPO_NAME}-${MODE}.svg"
+<svg width="400" height="140" viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 18px sans-serif; fill: ${TITLE}; }
+    .desc { font: 14px sans-serif; fill: ${DESC_C}; }
+    .meta { font: 12px sans-serif; fill: ${STARS_C}; }
+    .langs { font: 12px monospace; fill: ${LANG_C}; }
+    .bg { fill: ${BG}; stroke: ${STROKE}; stroke-width: 1; }
+  </style>
+  <rect class="bg" x="0" y="0" width="400" height="140" rx="10"/>
+  <text x="20" y="30" class="title">${NAME}</text>
+  <text x="20" y="55" class="desc">${DESC}</text>
+  <text x="20" y="80" class="meta">${PRIV_TEXT}⭐ ${STARS} stars</text>
+  <text x="20" y="105" class="langs">${LANGS}</text>
+</svg>
+EOF
+            done
+
+            # Build insert.txt for this block
+            {
+              echo "<!--START:REPO-CARD:$REPO_NAME-->"
+              echo "<a href=\"https://github.com/Mummanajagadeesh/$REPO_NAME#gh-light-mode-only\">"
+              echo "  <img src=\"./repos/${REPO_NAME}-light.svg#gh-light-mode-only\" alt=\"$REPO_NAME (light)\" />"
+              echo "</a>"
+              echo "<a href=\"https://github.com/Mummanajagadeesh/$REPO_NAME#gh-dark-mode-only\">"
+              echo "  <img src=\"./repos/${REPO_NAME}-dark.svg#gh-dark-mode-only\" alt=\"$REPO_NAME (dark)\" />"
+              echo "</a>"
+              echo "<!--END:REPO-CARD:$REPO_NAME-->"
+            } > "insert-$REPO_NAME.txt"
+
+          done < repos.txt
 
       - name: Update README.md
         run: |
-          awk '/<!--START:REPO_CARDS-->/ {print; system("tail -n +2 insert.txt | head -n -1"); found=1; next}
-               /<!--END:REPO_CARDS-->/ {found=0}
-               !found {print}' README.md > README.tmp
-          mv README.tmp README.md
+          cp README.md README.bak
 
-      - name: Commit and push changes
+          # Replace each block in README
+          while IFS= read -r REPO_NAME; do
+            awk -v name="$REPO_NAME" -v new="insert-$REPO_NAME.txt" '
+              BEGIN { inside=0 }
+              $0 ~ "<!--START:REPO-CARD:"name"-->"{ print; system("tail -n +2 "new" | head -n -1"); inside=1; next }
+              $0 ~ "<!--END:REPO-CARD:"name"-->"{ inside=0 }
+              !inside
+            ' README.md > README.tmp
+            mv README.tmp README.md
+          done < repos.txt
+
+      - name: Commit and push
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add README.md repos/improve-light.svg repos/improve-dark.svg
-          git commit -m "Update README with light/dark repo cards" || echo "No changes to commit"
+          git add README.md repos/*.svg
+          git commit -m "Update repo cards (multi-repo, dual mode)" || echo "No changes to commit"
           git push
