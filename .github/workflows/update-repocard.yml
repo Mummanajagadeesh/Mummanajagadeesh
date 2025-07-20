@@ -65,7 +65,7 @@ jobs:
             echo "<svg width=\"500\" height=\"$HEIGHT\" viewBox=\"0 0 500 $HEIGHT\" xmlns=\"http://www.w3.org/2000/svg\">" > $FILE
             echo "  <style>" >> $FILE
             echo "    .card-bg { fill: $BG_COLOR; stroke: $BORDER_COLOR; stroke-width: 1; }" >> $FILE
-            echo "    .repo-name { font: bold 16px sans-serif; fill: $NAME_COLOR; cursor: pointer; }" >> $FILE
+            echo "    .repo-name { font: bold 16px sans-serif; fill: $NAME_COLOR; cursor: pointer; text-decoration: underline; }" >> $FILE
             echo "    .repo-desc { font: 14px sans-serif; fill: $DESC_COLOR; }" >> $FILE
             echo "    .meta { font: 12px sans-serif; fill: $META_COLOR; }" >> $FILE
             echo "    .badge { font: 11px sans-serif; fill: $META_COLOR; }" >> $FILE
@@ -79,6 +79,9 @@ jobs:
             if [ "$PRIVATE" = "true" ]; then
               echo "  <rect x=\"420\" y=\"16\" rx=\"4\" ry=\"4\" width=\"65\" height=\"18\" fill=\"$BADGE_FILL\" stroke=\"$BADGE_STROKE\" />" >> $FILE
               echo "  <text x=\"428\" y=\"29\" class=\"badge\">Private</text>" >> $FILE
+            else
+              echo "  <rect x=\"430\" y=\"16\" rx=\"4\" ry=\"4\" width=\"55\" height=\"18\" fill=\"$BADGE_FILL\" stroke=\"$BADGE_STROKE\" />" >> $FILE
+              echo "  <text x=\"438\" y=\"29\" class=\"badge\">Public</text>" >> $FILE
             fi
 
             echo "  <text x=\"16\" y=\"55\" class=\"repo-desc\">" >> $FILE
