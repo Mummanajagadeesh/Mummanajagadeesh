@@ -2,6 +2,8 @@
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
+[![Readme Card](https://github-readme-stats-mummanajagadeesh.vercel.app/api/pin/?username=Mummanajagadeesh&repo=TCAD-PROJECTS&theme=default)](https://github.com/Mummanajagadeesh/TCAD-PROJECTS)
+[![Readme Card](https://github-readme-stats-mummanajagadeesh.vercel.app/api/pin/?username=Mummanajagadeesh&repo=ImProVe&theme=default)](https://github.com/Mummanajagadeesh/ImProVe)
 <!--START:REPO_CARDS-->
 
 - **[ImProVe](https://github.com/Mummanajagadeesh/ImProVe)** – Image processing using Verilog  ⭐ 1 stars
