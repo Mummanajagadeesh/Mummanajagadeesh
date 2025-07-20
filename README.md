@@ -2,21 +2,8 @@
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
-<!--START:REPO_CARDS-->
-
-<p align="center">
-  <a href="https://github.com/Mummanajagadeesh#gh-light-mode-only">
-    <img src="./repos/improve-light.svg#gh-light-mode-only" alt="ImProVe (light mode)" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Mummanajagadeesh#gh-dark-mode-only">
-    <img src="./repos/improve-dark.svg#gh-dark-mode-only" alt="ImProVe (dark mode)" />
-  </a>
-</p>
-
-<!--END:REPO_CARDS-->
+<!--START:REPO-CARD:ImProVe-->
+<!--END:REPO-CARD:ImProVe-->
 
 <p align="left">
   <a href="https://mummanajagadeesh.github.io/" target="_blank">
