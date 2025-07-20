@@ -28,7 +28,7 @@ jobs:
           curl -s -H "Authorization: Bearer $GH_TOKEN" \
             "https://api.github.com/users/Mummanajagadeesh/repos?per_page=100&type=public" > all_repos.json
 
-      - name: Generate repo cards for only explicitly marked repos
+      - name: Generate and insert specific repo cards
         run: |
           mkdir -p repos
 
@@ -44,15 +44,20 @@ jobs:
           }
 
           generate_svg() {
-            THEME=$1
-            FILE=$2
-            BG_COLOR=$3
-            BORDER_COLOR=$4
-            NAME_COLOR=$5
-            DESC_COLOR=$6
-            META_COLOR=$7
-            BADGE_FILL=$8
-            BADGE_STROKE=$9
+            NAME=$1
+            DESC=$2
+            PRIVATE=$3
+            STARS=$4
+            LANGS=$5
+            THEME=$6
+            FILE=$7
+            BG_COLOR=$8
+            BORDER_COLOR=$9
+            NAME_COLOR=${10}
+            DESC_COLOR=${11}
+            META_COLOR=${12}
+            BADGE_FILL=${13}
+            BADGE_STROKE=${14}
 
             echo "<svg width=\"500\" height=\"140\" viewBox=\"0 0 500 140\" xmlns=\"http://www.w3.org/2000/svg\">" > $FILE
             echo "  <style>" >> $FILE
@@ -87,41 +92,34 @@ jobs:
             echo "</svg>" >> $FILE
           }
 
-          # Extract repo names from README markers
-          REPO_NAMES=$(grep -oP '(?<=<!--START-REPO-CARD:)[^>]+(?=-->)' README.md)
-
-          for NAME in $REPO_NAMES; do
-            row=$(jq -r ".[] | select(.name==\"$NAME\") | @base64" all_repos.json)
-
-            if [ -z "$row" ]; then
-              echo "Repo $NAME not found in all_repos.json, skipping..."
-              continue
-            fi
-
+          for row in $(jq -r '.[] | @base64' all_repos.json); do
             _jq() {
               echo "${row}" | base64 --decode | jq -r "${1}"
             }
 
+            NAME=$(_jq '.name')
             DESC=$(_jq '.description')
             PRIVATE=$(_jq '.private')
             STARS=$(_jq '.stargazers_count')
+
             if [ "$DESC" = "null" ]; then DESC="No description provided"; fi
 
-            LANGS=$(curl -s "https://api.github.com/repos/Mummanajagadeesh/$NAME/languages" | jq -r 'keys_unsorted[]')
+            if [[ "$NAME" == "ImProVe" || "$NAME" == "NeVeR" ]]; then
+              LANGS=$(curl -s "https://api.github.com/repos/Mummanajagadeesh/$NAME/languages" | jq -r 'keys_unsorted[]')
 
-            generate_svg light "repos/${NAME,,}-light.svg" "#fff" "#1f6feb" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da"
-            generate_svg dark "repos/${NAME,,}-dark.svg" "#0d1117" "#1f6feb" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd"
+              generate_svg "$NAME" "$DESC" "$PRIVATE" "$STARS" "$LANGS" light "repos/${NAME,,}-light.svg" "#fff" "#1f6feb" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da"
+              generate_svg "$NAME" "$DESC" "$PRIVATE" "$STARS" "$LANGS" dark "repos/${NAME,,}-dark.svg" "#0d1117" "#1f6feb" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd"
 
-            sed -i "/<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/c\\
-          <!--START-REPO-CARD:$NAME-->\n\
-          <a href=\"https://github.com/Mummanajagadeesh#gh-light-mode-only\">\n\
-            <img src=\"./repos/${NAME,,}-light.svg#gh-light-mode-only\" alt=\"$NAME (light mode)\" />\n\
-          </a>\n\
-          <a href=\"https://github.com/Mummanajagadeesh#gh-dark-mode-only\">\n\
-            <img src=\"./repos/${NAME,,}-dark.svg#gh-dark-mode-only\" alt=\"$NAME (dark mode)\" />\n\
-          </a>\n\
-          <!--END-REPO-CARD:$NAME-->" README.md
-
+              sed -i "/<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/c\\
+              <!--START-REPO-CARD:$NAME-->\n\
+              <a href=\"https://github.com/Mummanajagadeesh#gh-light-mode-only\">\n\
+                <img src=\"./repos/${NAME,,}-light.svg#gh-light-mode-only\" alt=\"$NAME (light mode)\" />\n\
+              </a>\n\
+              <a href=\"https://github.com/Mummanajagadeesh#gh-dark-mode-only\">\n\
+                <img src=\"./repos/${NAME,,}-dark.svg#gh-dark-mode-only\" alt=\"$NAME (dark mode)\" />\n\
+              </a>\n\
+              <!--END-REPO-CARD:$NAME-->" README.md
+            fi
           done
 
       - name: Commit and push changes
@@ -129,5 +127,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add README.md repos/
-          git commit -m "Update README with dynamic repo cards" || echo "No changes to commit"
+          git commit -m "Update README with selected repo cards" || echo "No changes to commit"
           git push
