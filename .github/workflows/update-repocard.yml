@@ -1,0 +1,57 @@
+name: Update README with Repo Cards
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * *"  # Runs every day at 12:00 UTC
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install jq (for JSON parsing)
+        run: sudo apt-get install jq -y
+
+      - name: Fetch repository metadata
+        env:
+          GH_TOKEN: ${{ secrets.PVT_TOKEN }}
+        run: |
+          QUERY='{"query":"query { user(login: \"Mummanajagadeesh\") { repository(name: \"ImProVe\") { name description isPrivate stargazers { totalCount } } } }"}'
+          RESPONSE=$(curl -s -H "Authorization: bearer $GH_TOKEN" -H "Content-Type: application/json" -X POST -d "$QUERY" https://api.github.com/graphql)
+          echo "$RESPONSE" > repo.json
+
+      - name: Generate repo card markdown
+        run: |
+          NAME=$(jq -r '.data.user.repository.name' repo.json)
+          DESC=$(jq -r '.data.user.repository.description' repo.json)
+          STARS=$(jq -r '.data.user.repository.stargazers.totalCount' repo.json)
+
+          echo "<!--START:REPO_CARDS-->" > insert.txt
+          echo "" >> insert.txt
+          echo "- **[$NAME](https://github.com/Mummanajagadeesh/$NAME)** – $DESC ⭐ $STARS stars" >> insert.txt
+          echo "" >> insert.txt
+          echo "<!--END:REPO_CARDS-->" >> insert.txt
+
+      - name: Update README.md
+        run: |
+          awk '/<!--START:REPO_CARDS-->/ {print; system("tail -n +2 insert.txt | head -n -1"); found=1; next}
+               /<!--END:REPO_CARDS-->/ {found=0}
+               !found {print}' README.md > README.tmp
+          mv README.tmp README.md
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "Update README with repo cards" || echo "No changes to commit"
+          git push
