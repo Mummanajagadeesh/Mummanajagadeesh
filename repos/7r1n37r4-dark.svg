@@ -11,14 +11,8 @@
   <a href="https://github.com/Mummanajagadeesh/7R1N37R4" target="_blank">
     <text x="16" y="30" class="repo-name">7R1N37R4</text>
   </a>
-  <rect x="100" y="16" rx="4" ry="4" width="65" height="18" fill="#1f6feb1a" stroke="#388bfd" />
-  <text x="108" y="29" class="badge">Private</text>
+  <rect x="420" y="16" rx="4" ry="4" width="65" height="18" fill="#1f6feb1a" stroke="#388bfd" />
+  <text x="428" y="29" class="badge">Private</text>
   <text x="16" y="55" class="repo-desc">An assistive technology project aimed at creating a digital 'visual companion' to help blind and visually impaired individuals with basic activities, using computer vision and AI to interpret surroundings and provide real-time audio feedback</text>
-  <circle class="lang-dot" cx="16" cy="80" fill="#cccccc" />
-  <text x="26" y="84" class="meta">message</text>
-  <circle class="lang-dot" cx="91" cy="80" fill="#cccccc" />
-  <text x="101" y="84" class="meta">documentation_url</text>
-  <circle class="lang-dot" cx="166" cy="80" fill="#cccccc" />
-  <text x="176" y="84" class="meta">status</text>
   <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
 </svg>

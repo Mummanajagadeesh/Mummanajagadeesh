@@ -11,12 +11,22 @@
   <a href="https://github.com/Mummanajagadeesh/RoSe" target="_blank">
     <text x="16" y="30" class="repo-name">RoSe</text>
   </a>
-  <rect x="100" y="16" rx="4" ry="4" width="65" height="18" fill="#ddf4ff" stroke="#0969da" />
-  <text x="108" y="29" class="badge">Private</text>
+  <rect x="420" y="16" rx="4" ry="4" width="65" height="18" fill="#ddf4ff" stroke="#0969da" />
+  <text x="428" y="29" class="badge">Private</text>
   <text x="16" y="55" class="repo-desc">"RISC-V Open-Source Env" is an attempt to design a complete RISC-V core from RTL to GDSII, using only open-source EDA tools</text>
-  <circle class="lang-dot" cx="16" cy="80" fill="#cccccc" />
-  <text x="26" y="84" class="meta">message</text>
+  <circle class="lang-dot" cx="16" cy="80" fill="#33cc99" />
+  <text x="26" y="84" class="meta">TL-Verilog</text>
   <circle class="lang-dot" cx="91" cy="80" fill="#cccccc" />
-  <text x="101" y="84" class="meta">documentation_url</text>
+  <text x="101" y="84" class="meta">M4</text>
+  <circle class="lang-dot" cx="166" cy="80" fill="#cccccc" />
+  <text x="176" y="84" class="meta">Jupyter</text>
+  <circle class="lang-dot" cx="241" cy="80" fill="#cccccc" />
+  <text x="251" y="84" class="meta">Notebook</text>
+  <circle class="lang-dot" cx="316" cy="80" fill="#DA70D6" />
+  <text x="326" y="84" class="meta">SystemVerilog</text>
+  <circle class="lang-dot" cx="391" cy="80" fill="#f1e05a" />
+  <text x="401" y="84" class="meta">Verilog</text>
+  <circle class="lang-dot" cx="466" cy="80" fill="#cccccc" />
+  <text x="476" y="84" class="meta">Assembly</text>
   <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
 </svg>

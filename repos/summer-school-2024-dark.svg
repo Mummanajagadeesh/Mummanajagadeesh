@@ -13,8 +13,8 @@
   </a>
   <text x="16" y="55" class="repo-desc">This repository contains all resources used during the summer school sessions</text>
   <circle class="lang-dot" cx="16" cy="80" fill="#cccccc" />
-  <text x="26" y="84" class="meta">message</text>
+  <text x="26" y="84" class="meta">Jupyter</text>
   <circle class="lang-dot" cx="91" cy="80" fill="#cccccc" />
-  <text x="101" y="84" class="meta">documentation_url</text>
+  <text x="101" y="84" class="meta">Notebook</text>
   <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
 </svg>

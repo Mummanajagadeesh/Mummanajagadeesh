@@ -13,8 +13,10 @@
   </a>
   <text x="16" y="55" class="repo-desc">This repo contains sim files, docs, and results for small semiconductor devices modeled using TCAD tools</text>
   <circle class="lang-dot" cx="16" cy="80" fill="#cccccc" />
-  <text x="26" y="84" class="meta">message</text>
+  <text x="26" y="84" class="meta">Gnuplot</text>
   <circle class="lang-dot" cx="91" cy="80" fill="#cccccc" />
-  <text x="101" y="84" class="meta">documentation_url</text>
+  <text x="101" y="84" class="meta">Prolog</text>
+  <circle class="lang-dot" cx="166" cy="80" fill="#cccccc" />
+  <text x="176" y="84" class="meta">Batchfile</text>
   <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
 </svg>

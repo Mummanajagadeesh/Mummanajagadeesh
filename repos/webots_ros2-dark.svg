@@ -13,8 +13,22 @@
   </a>
   <text x="16" y="55" class="repo-desc">Webots ROS 2 packages</text>
   <circle class="lang-dot" cx="16" cy="80" fill="#cccccc" />
-  <text x="26" y="84" class="meta">message</text>
-  <circle class="lang-dot" cx="91" cy="80" fill="#cccccc" />
-  <text x="101" y="84" class="meta">documentation_url</text>
+  <text x="26" y="84" class="meta">C</text>
+  <circle class="lang-dot" cx="91" cy="80" fill="#3572A5" />
+  <text x="101" y="84" class="meta">Python</text>
+  <circle class="lang-dot" cx="166" cy="80" fill="#cccccc" />
+  <text x="176" y="84" class="meta">C++</text>
+  <circle class="lang-dot" cx="241" cy="80" fill="#cccccc" />
+  <text x="251" y="84" class="meta">SWIG</text>
+  <circle class="lang-dot" cx="316" cy="80" fill="#cccccc" />
+  <text x="326" y="84" class="meta">Makefile</text>
+  <circle class="lang-dot" cx="391" cy="80" fill="#cccccc" />
+  <text x="401" y="84" class="meta">CMake</text>
+  <circle class="lang-dot" cx="466" cy="80" fill="#cccccc" />
+  <text x="476" y="84" class="meta">Shell</text>
+  <circle class="lang-dot" cx="541" cy="80" fill="#cccccc" />
+  <text x="551" y="84" class="meta">Lua</text>
+  <circle class="lang-dot" cx="616" cy="80" fill="#cccccc" />
+  <text x="626" y="84" class="meta">Batchfile</text>
   <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
 </svg>
