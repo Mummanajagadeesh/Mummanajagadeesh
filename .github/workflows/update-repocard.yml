@@ -1,106 +1,106 @@
-      - name: Generate and update selected repo cards
-        run: |
-          cat <<'EOF' > update-cards.sh
-          #!/bin/bash
-          set -e
-          mkdir -p repos
+- name: Generate and update selected repo cards
+  run: |
+    cat <<'EOF' > update-cards.sh
+    #!/bin/bash
+    set -e
+    mkdir -p repos
 
-          get_color() {
-            case "$1" in
-              Verilog) echo "#f1e05a" ;;
-              Python) echo "#3572A5" ;;
-              Roff) echo "#ecdebe" ;;
-              HTML) echo "#e34c26" ;;
-              V) echo "#b2b7f8" ;;
-              *) echo "#cccccc" ;;
-            esac
-          }
+    get_color() {
+      case "$1" in
+        Verilog) echo "#f1e05a" ;;
+        Python) echo "#3572A5" ;;
+        Roff) echo "#ecdebe" ;;
+        HTML) echo "#e34c26" ;;
+        V) echo "#b2b7f8" ;;
+        *) echo "#cccccc" ;;
+      esac
+    }
 
-          generate_svg() {
-            NAME=$1
-            DESC=$2
-            PRIVATE=$3
-            STARS=$4
-            LANGS=$5
-            FILE=$6
-            BG_COLOR=$7
-            BORDER_COLOR=$8
-            NAME_COLOR=$9
-            DESC_COLOR=${10}
-            META_COLOR=${11}
-            BADGE_FILL=${12}
-            BADGE_STROKE=${13}
+    generate_svg() {
+      NAME=$1
+      DESC=$2
+      PRIVATE=$3
+      STARS=$4
+      LANGS=$5
+      FILE=$6
+      BG_COLOR=$7
+      BORDER_COLOR=$8
+      NAME_COLOR=$9
+      DESC_COLOR=${10}
+      META_COLOR=${11}
+      BADGE_FILL=${12}
+      BADGE_STROKE=${13}
 
-            echo "<svg width=\"500\" height=\"140\" viewBox=\"0 0 500 140\" xmlns=\"http://www.w3.org/2000/svg\">" > $FILE
-            echo "  <style>" >> $FILE
-            echo "    .card-bg { fill: $BG_COLOR; stroke: $BORDER_COLOR; stroke-width: 1; }" >> $FILE
-            echo "    .repo-name { font: bold 16px sans-serif; fill: $NAME_COLOR; cursor: pointer; }" >> $FILE
-            echo "    .repo-desc { font: 14px sans-serif; fill: $DESC_COLOR; }" >> $FILE
-            echo "    .meta { font: 12px sans-serif; fill: $META_COLOR; }" >> $FILE
-            echo "    .badge { font: 11px sans-serif; fill: $META_COLOR; }" >> $FILE
-            echo "    .lang-dot { r: 5; }" >> $FILE
-            echo "  </style>" >> $FILE
-            echo "  <rect class=\"card-bg\" x=\"0\" y=\"0\" width=\"500\" height=\"140\" rx=\"12\" ry=\"12\" />" >> $FILE
-            echo "  <a href=\"https://github.com/Mummanajagadeesh/$NAME\" target=\"_blank\">" >> $FILE
-            echo "    <text x=\"16\" y=\"30\" class=\"repo-name\">$NAME</text>" >> $FILE
-            echo "  </a>" >> $FILE
+      echo "<svg width=\"500\" height=\"140\" viewBox=\"0 0 500 140\" xmlns=\"http://www.w3.org/2000/svg\">" > $FILE
+      echo "  <style>" >> $FILE
+      echo "    .card-bg { fill: $BG_COLOR; stroke: $BORDER_COLOR; stroke-width: 1; }" >> $FILE
+      echo "    .repo-name { font: bold 16px sans-serif; fill: $NAME_COLOR; cursor: pointer; }" >> $FILE
+      echo "    .repo-desc { font: 14px sans-serif; fill: $DESC_COLOR; }" >> $FILE
+      echo "    .meta { font: 12px sans-serif; fill: $META_COLOR; }" >> $FILE
+      echo "    .badge { font: 11px sans-serif; fill: $META_COLOR; }" >> $FILE
+      echo "    .lang-dot { r: 5; }" >> $FILE
+      echo "  </style>" >> $FILE
+      echo "  <rect class=\"card-bg\" x=\"0\" y=\"0\" width=\"500\" height=\"140\" rx=\"12\" ry=\"12\" />" >> $FILE
+      echo "  <a href=\"https://github.com/Mummanajagadeesh/$NAME\" target=\"_blank\">" >> $FILE
+      echo "    <text x=\"16\" y=\"30\" class=\"repo-name\">$NAME</text>" >> $FILE
+      echo "  </a>" >> $FILE
 
-            if [ "$PRIVATE" = "true" ]; then
-              echo "  <rect x=\"100\" y=\"16\" rx=\"4\" ry=\"4\" width=\"65\" height=\"18\" fill=\"$BADGE_FILL\" stroke=\"$BADGE_STROKE\" />" >> $FILE
-              echo "  <text x=\"108\" y=\"29\" class=\"badge\">Private</text>" >> $FILE
-            fi
+      if [ "$PRIVATE" = "true" ]; then
+        echo "  <rect x=\"100\" y=\"16\" rx=\"4\" ry=\"4\" width=\"65\" height=\"18\" fill=\"$BADGE_FILL\" stroke=\"$BADGE_STROKE\" />" >> $FILE
+        echo "  <text x=\"108\" y=\"29\" class=\"badge\">Private</text>" >> $FILE
+      fi
 
-            echo "  <text x=\"16\" y=\"55\" class=\"repo-desc\">$DESC</text>" >> $FILE
+      echo "  <text x=\"16\" y=\"55\" class=\"repo-desc\">$DESC</text>" >> $FILE
 
-            X=16
-            for LANG in $LANGS; do
-              COLOR=$(get_color "$LANG")
-              echo "  <circle class=\"lang-dot\" cx=\"$X\" cy=\"80\" fill=\"$COLOR\" />" >> $FILE
-              echo "  <text x=\"$((X+10))\" y=\"84\" class=\"meta\">$LANG</text>" >> $FILE
-              X=$((X + 75))
-            done
+      X=16
+      for LANG in $LANGS; do
+        COLOR=$(get_color "$LANG")
+        echo "  <circle class=\"lang-dot\" cx=\"$X\" cy=\"80\" fill=\"$COLOR\" />" >> $FILE
+        echo "  <text x=\"$((X+10))\" y=\"84\" class=\"meta\">$LANG</text>" >> $FILE
+        X=$((X + 75))
+      done
 
-            echo "  <text x=\"16\" y=\"110\" class=\"meta\">⭐ $STARS star(s)</text>" >> $FILE
-            echo "</svg>" >> $FILE
-          }
+      echo "  <text x=\"16\" y=\"110\" class=\"meta\">⭐ $STARS star(s)</text>" >> $FILE
+      echo "</svg>" >> $FILE
+    }
 
-          for row in $(jq -r '.[] | @base64' all_repos.json); do
-            _jq() {
-              echo "$row" | base64 --decode | jq -r "$1"
-            }
+    for row in $(jq -r '.[] | @base64' all_repos.json); do
+      _jq() {
+        echo "$row" | base64 --decode | jq -r "$1"
+      }
 
-            NAME=$(_jq '.name')
-            DESC=$(_jq '.description')
-            PRIVATE=$(_jq '.private')
-            STARS=$(_jq '.stargazers_count')
+      NAME=$(_jq '.name')
+      DESC=$(_jq '.description')
+      PRIVATE=$(_jq '.private')
+      STARS=$(_jq '.stargazers_count')
 
-            if [ "$DESC" = "null" ]; then DESC="No description provided"; fi
+      if [ "$DESC" = "null" ]; then DESC="No description provided"; fi
 
-            if [[ "$NAME" == "ImProVe" || "$NAME" == "NeVeR" ]]; then
-              LANGS=$(curl -s "https://api.github.com/repos/Mummanajagadeesh/$NAME/languages" | jq -r 'keys_unsorted[]')
+      if [[ "$NAME" == "ImProVe" || "$NAME" == "NeVeR" ]]; then
+        LANGS=$(curl -s "https://api.github.com/repos/Mummanajagadeesh/$NAME/languages" | jq -r 'keys_unsorted[]')
 
-              generate_svg "$NAME" "$DESC" "$PRIVATE" "$STARS" "$LANGS" "repos/${NAME,,}-light.svg" "#fff" "#1f6feb" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da"
-              generate_svg "$NAME" "$DESC" "$PRIVATE" "$STARS" "$LANGS" "repos/${NAME,,}-dark.svg" "#0d1117" "#1f6feb" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd"
+        generate_svg "$NAME" "$DESC" "$PRIVATE" "$STARS" "$LANGS" "repos/${NAME,,}-light.svg" "#fff" "#1f6feb" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da"
+        generate_svg "$NAME" "$DESC" "$PRIVATE" "$STARS" "$LANGS" "repos/${NAME,,}-dark.svg" "#0d1117" "#1f6feb" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd"
 
-              cat <<MARK > __block.txt
-              <!--START-REPO-CARD:$NAME-->
-              <a href="https://github.com/Mummanajagadeesh#gh-light-mode-only">
-                <img src="./repos/${NAME,,}-light.svg#gh-light-mode-only" alt="$NAME (light mode)" />
-              </a>
-              <a href="https://github.com/Mummanajagadeesh#gh-dark-mode-only">
-                <img src="./repos/${NAME,,}-dark.svg#gh-dark-mode-only" alt="$NAME (dark mode)" />
-              </a>
-              <!--END-REPO-CARD:$NAME-->
-              MARK
+        cat <<MARK > __block.txt
+        <!--START-REPO-CARD:$NAME-->
+        <a href="https://github.com/Mummanajagadeesh#gh-light-mode-only">
+          <img src="./repos/${NAME,,}-light.svg#gh-light-mode-only" alt="$NAME (light mode)" />
+        </a>
+        <a href="https://github.com/Mummanajagadeesh#gh-dark-mode-only">
+          <img src="./repos/${NAME,,}-dark.svg#gh-dark-mode-only" alt="$NAME (dark mode)" />
+        </a>
+        <!--END-REPO-CARD:$NAME-->
+        MARK
 
-              sed -i -e "/<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/{
-                /<!--START-REPO-CARD:$NAME-->/r __block.txt
-                /<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/d
-              }" README.md
+        sed -i -e "/<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/{
+          /<!--START-REPO-CARD:$NAME-->/r __block.txt
+          /<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/d
+        }" README.md
 
-              rm -f __block.txt
-            fi
-          done
+        rm -f __block.txt
+      fi
+    done
 EOF
 
-          bash update-cards.sh
+    bash update-cards.sh
