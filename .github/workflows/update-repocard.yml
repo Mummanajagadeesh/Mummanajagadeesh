@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install jq and base64
+      - name: Install jq
         run: sudo apt-get install jq -y
 
       - name: Fetch repository metadata
@@ -26,7 +26,9 @@ jobs:
           GH_TOKEN: ${{ secrets.PRIVATE_GH_TOKEN }}
         run: |
           QUERY='{"query":"query { user(login: \"Mummanajagadeesh\") { repository(name: \"ImProVe\") { name description stargazers { totalCount } } } }"}'
-          RESPONSE=$(curl -s -H "Authorization: bearer $GH_TOKEN" -H "Content-Type: application/json" -X POST -d "$QUERY" https://api.github.com/graphql)
+          RESPONSE=$(curl -s -H "Authorization: bearer $GH_TOKEN" \
+            -H "Content-Type: application/json" \
+            -X POST -d "$QUERY" https://api.github.com/graphql)
           echo "$RESPONSE" > repo.json
 
       - name: Generate SVG repo card and markdown
@@ -35,26 +37,28 @@ jobs:
           DESC=$(jq -r '.data.user.repository.description' repo.json)
           STARS=$(jq -r '.data.user.repository.stargazers.totalCount' repo.json)
 
-          # Basic SVG
-          cat <<EOF > card.svg
-<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .title { font: bold 18px sans-serif; fill: #0366d6; }
-    .desc { font: 14px sans-serif; fill: #333; }
-    .stars { font: 12px sans-serif; fill: #555; }
-    .bg { fill: #f9f9f9; stroke: #e1e4e8; stroke-width: 1; }
-  </style>
-  <rect class="bg" x="0" y="0" width="400" height="120" rx="10"/>
-  <text x="20" y="35" class="title">$NAME</text>
-  <text x="20" y="60" class="desc">$DESC</text>
-  <text x="20" y="85" class="stars">⭐ $STARS stars</text>
-</svg>
-EOF
+          # Escape description if null
+          if [ "$DESC" = "null" ]; then DESC="No description provided"; fi
 
-          # Encode SVG to base64 for inline embedding
+          # Write SVG
+          printf '%s\n' \
+          '<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">' \
+          '  <style>' \
+          '    .title { font: bold 18px sans-serif; fill: #0366d6; }' \
+          '    .desc { font: 14px sans-serif; fill: #333; }' \
+          '    .stars { font: 12px sans-serif; fill: #555; }' \
+          '    .bg { fill: #f9f9f9; stroke: #e1e4e8; stroke-width: 1; }' \
+          '  </style>' \
+          '  <rect class="bg" x="0" y="0" width="400" height="120" rx="10"/>' \
+          "  <text x=\"20\" y=\"35\" class=\"title\">$NAME</text>" \
+          "  <text x=\"20\" y=\"60\" class=\"desc\">$DESC</text>" \
+          "  <text x=\"20\" y=\"85\" class=\"stars\">⭐ $STARS stars</text>" \
+          '</svg>' > card.svg
+
+          # Convert to base64
           ENCODED=$(base64 -w 0 card.svg)
 
-          # Write to markdown block
+          # Create insert block
           echo "<!--START:REPO_CARDS-->" > insert.txt
           echo "" >> insert.txt
           echo "<img src=\"data:image/svg+xml;base64,$ENCODED\" alt=\"$NAME repo card\" />" >> insert.txt
