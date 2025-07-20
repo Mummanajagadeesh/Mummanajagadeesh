@@ -15,9 +15,9 @@
     <tspan x="16" dy="0">:zap: Dynamically generated stats for your</tspan>
     <tspan x="16" dy="18">github readmes</tspan>
   </text>
-  <circle class="lang-dot" cx="16" cy="101" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="101" fill="#f1e05a" />
   <text x="26" y="105" class="meta">JavaScript</text>
-  <circle class="lang-dot" cx="126" cy="101" fill="#cccccc" />
+  <circle class="lang-dot" cx="126" cy="101" fill="#89e051" />
   <text x="136" y="105" class="meta">Shell</text>
-  <text x="16" y="128" class="meta">⭐ 0 star(s)</text>
+  <text x="484" y="128" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>

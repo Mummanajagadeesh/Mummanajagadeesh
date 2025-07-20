@@ -16,5 +16,5 @@
   </text>
   <circle class="lang-dot" cx="16" cy="83" fill="#3572A5" />
   <text x="26" y="87" class="meta">Python</text>
-  <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
+  <text x="484" y="110" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>

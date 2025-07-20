@@ -14,23 +14,23 @@
   <text x="16" y="55" class="repo-desc">
     <tspan x="16" dy="0">Webots ROS 2 packages</tspan>
   </text>
-  <circle class="lang-dot" cx="16" cy="83" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="83" fill="#555555" />
   <text x="26" y="87" class="meta">C</text>
   <circle class="lang-dot" cx="126" cy="83" fill="#3572A5" />
   <text x="136" y="87" class="meta">Python</text>
-  <circle class="lang-dot" cx="236" cy="83" fill="#cccccc" />
+  <circle class="lang-dot" cx="236" cy="83" fill="#f34b7d" />
   <text x="246" y="87" class="meta">C++</text>
   <circle class="lang-dot" cx="346" cy="83" fill="#cccccc" />
   <text x="356" y="87" class="meta">SWIG</text>
-  <circle class="lang-dot" cx="16" cy="105" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="105" fill="#427819" />
   <text x="26" y="109" class="meta">Makefile</text>
-  <circle class="lang-dot" cx="126" cy="105" fill="#cccccc" />
+  <circle class="lang-dot" cx="126" cy="105" fill="#DA3434" />
   <text x="136" y="109" class="meta">CMake</text>
-  <circle class="lang-dot" cx="236" cy="105" fill="#cccccc" />
+  <circle class="lang-dot" cx="236" cy="105" fill="#89e051" />
   <text x="246" y="109" class="meta">Shell</text>
-  <circle class="lang-dot" cx="346" cy="105" fill="#cccccc" />
+  <circle class="lang-dot" cx="346" cy="105" fill="#000080" />
   <text x="356" y="109" class="meta">Lua</text>
-  <circle class="lang-dot" cx="16" cy="127" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="127" fill="#C1F12E" />
   <text x="26" y="131" class="meta">Batchfile</text>
-  <text x="16" y="154" class="meta">⭐ 0 star(s)</text>
+  <text x="484" y="154" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>

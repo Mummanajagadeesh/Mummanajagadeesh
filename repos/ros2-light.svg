@@ -14,11 +14,11 @@
   <text x="16" y="55" class="repo-desc">
     <tspan x="16" dy="0">Ros2 setup self-guide</tspan>
   </text>
-  <circle class="lang-dot" cx="16" cy="83" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="83" fill="#083fa1" />
   <text x="26" y="87" class="meta">Markdown</text>
   <circle class="lang-dot" cx="126" cy="83" fill="#cccccc" />
   <text x="136" y="87" class="meta">Jupyter</text>
   <circle class="lang-dot" cx="236" cy="83" fill="#cccccc" />
   <text x="246" y="87" class="meta">Notebook</text>
-  <text x="16" y="110" class="meta">⭐ 1 star(s)</text>
+  <text x="484" y="110" text-anchor="end" class="meta">⭐ 1 star(s)</text>
 </svg>

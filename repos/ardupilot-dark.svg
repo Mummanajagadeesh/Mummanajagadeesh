@@ -15,67 +15,67 @@
     <tspan x="16" dy="0">ArduPlane, ArduCopter, ArduRover, ArduSub</tspan>
     <tspan x="16" dy="18">source</tspan>
   </text>
-  <circle class="lang-dot" cx="16" cy="101" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="101" fill="#f34b7d" />
   <text x="26" y="105" class="meta">C++</text>
   <circle class="lang-dot" cx="126" cy="101" fill="#3572A5" />
   <text x="136" y="105" class="meta">Python</text>
-  <circle class="lang-dot" cx="236" cy="101" fill="#cccccc" />
+  <circle class="lang-dot" cx="236" cy="101" fill="#555555" />
   <text x="246" y="105" class="meta">C</text>
-  <circle class="lang-dot" cx="346" cy="101" fill="#cccccc" />
+  <circle class="lang-dot" cx="346" cy="101" fill="#438eff" />
   <text x="356" y="105" class="meta">Objective-C</text>
-  <circle class="lang-dot" cx="16" cy="123" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="123" fill="#000080" />
   <text x="26" y="127" class="meta">Lua</text>
   <circle class="lang-dot" cx="126" cy="123" fill="#e34c26" />
   <text x="136" y="127" class="meta">HTML</text>
-  <circle class="lang-dot" cx="236" cy="123" fill="#cccccc" />
+  <circle class="lang-dot" cx="236" cy="123" fill="#e16737" />
   <text x="246" y="127" class="meta">MATLAB</text>
-  <circle class="lang-dot" cx="346" cy="123" fill="#cccccc" />
+  <circle class="lang-dot" cx="346" cy="123" fill="#89e051" />
   <text x="356" y="127" class="meta">Shell</text>
-  <circle class="lang-dot" cx="16" cy="145" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="145" fill="#427819" />
   <text x="26" y="149" class="meta">Makefile</text>
   <circle class="lang-dot" cx="126" cy="145" fill="#cccccc" />
   <text x="136" y="149" class="meta">Linker</text>
   <circle class="lang-dot" cx="236" cy="145" fill="#cccccc" />
   <text x="246" y="149" class="meta">Script</text>
-  <circle class="lang-dot" cx="346" cy="145" fill="#cccccc" />
+  <circle class="lang-dot" cx="346" cy="145" fill="#00bce4" />
   <text x="356" y="149" class="meta">BitBake</text>
-  <circle class="lang-dot" cx="16" cy="167" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="167" fill="#DA3434" />
   <text x="26" y="171" class="meta">CMake</text>
-  <circle class="lang-dot" cx="126" cy="167" fill="#cccccc" />
+  <circle class="lang-dot" cx="126" cy="167" fill="#f1e05a" />
   <text x="136" y="171" class="meta">JavaScript</text>
   <circle class="lang-dot" cx="236" cy="167" fill="#cccccc" />
   <text x="246" y="171" class="meta">OpenEdge</text>
   <circle class="lang-dot" cx="346" cy="167" fill="#cccccc" />
   <text x="356" y="171" class="meta">ABL</text>
-  <circle class="lang-dot" cx="16" cy="189" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="189" fill="#C1F12E" />
   <text x="26" y="193" class="meta">Batchfile</text>
   <circle class="lang-dot" cx="126" cy="189" fill="#cccccc" />
   <text x="136" y="193" class="meta">Jupyter</text>
   <circle class="lang-dot" cx="236" cy="189" fill="#cccccc" />
   <text x="246" y="193" class="meta">Notebook</text>
-  <circle class="lang-dot" cx="346" cy="189" fill="#cccccc" />
+  <circle class="lang-dot" cx="346" cy="189" fill="#6E4C13" />
   <text x="356" y="193" class="meta">Assembly</text>
   <circle class="lang-dot" cx="16" cy="211" fill="#cccccc" />
   <text x="26" y="215" class="meta">NASL</text>
-  <circle class="lang-dot" cx="126" cy="211" fill="#cccccc" />
+  <circle class="lang-dot" cx="126" cy="211" fill="#A97BFF" />
   <text x="136" y="215" class="meta">Kotlin</text>
-  <circle class="lang-dot" cx="236" cy="211" fill="#cccccc" />
+  <circle class="lang-dot" cx="236" cy="211" fill="#663399" />
   <text x="246" y="215" class="meta">CSS</text>
-  <circle class="lang-dot" cx="346" cy="211" fill="#cccccc" />
+  <circle class="lang-dot" cx="346" cy="211" fill="#1d2c4e" />
   <text x="356" y="215" class="meta">Nasal</text>
   <circle class="lang-dot" cx="16" cy="233" fill="#ecdebe" />
   <text x="26" y="237" class="meta">Roff</text>
-  <circle class="lang-dot" cx="126" cy="233" fill="#cccccc" />
+  <circle class="lang-dot" cx="126" cy="233" fill="#a52a22" />
   <text x="136" y="237" class="meta">Jinja</text>
-  <circle class="lang-dot" cx="236" cy="233" fill="#cccccc" />
+  <circle class="lang-dot" cx="236" cy="233" fill="#012456" />
   <text x="246" y="237" class="meta">PowerShell</text>
-  <circle class="lang-dot" cx="346" cy="233" fill="#cccccc" />
+  <circle class="lang-dot" cx="346" cy="233" fill="#384d54" />
   <text x="356" y="237" class="meta">Dockerfile</text>
-  <circle class="lang-dot" cx="16" cy="255" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="255" fill="#f0a9f0" />
   <text x="26" y="259" class="meta">Gnuplot</text>
   <circle class="lang-dot" cx="126" cy="255" fill="#cccccc" />
   <text x="136" y="259" class="meta">Emacs</text>
   <circle class="lang-dot" cx="236" cy="255" fill="#cccccc" />
   <text x="246" y="259" class="meta">Lisp</text>
-  <text x="16" y="282" class="meta">⭐ 0 star(s)</text>
+  <text x="484" y="282" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>

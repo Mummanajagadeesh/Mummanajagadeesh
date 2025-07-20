@@ -16,5 +16,5 @@
   <text x="16" y="55" class="repo-desc">
     <tspan x="16" dy="0">digital twin of r2d2 droid</tspan>
   </text>
-  <text x="16" y="88" class="meta">⭐ 1 star(s)</text>
+  <text x="484" y="88" text-anchor="end" class="meta">⭐ 1 star(s)</text>
 </svg>

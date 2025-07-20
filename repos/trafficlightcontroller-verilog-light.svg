@@ -17,7 +17,7 @@
     <tspan x="16" dy="0">Verilog implementation of Traffic Light</tspan>
     <tspan x="16" dy="18">Controller using Finite State Machines</tspan>
   </text>
-  <circle class="lang-dot" cx="16" cy="101" fill="#f1e05a" />
+  <circle class="lang-dot" cx="16" cy="101" fill="#b2b7f8" />
   <text x="26" y="105" class="meta">Verilog</text>
-  <text x="16" y="128" class="meta">⭐ 1 star(s)</text>
+  <text x="484" y="128" text-anchor="end" class="meta">⭐ 1 star(s)</text>
 </svg>

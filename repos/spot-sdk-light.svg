@@ -16,11 +16,11 @@
   </text>
   <circle class="lang-dot" cx="16" cy="83" fill="#3572A5" />
   <text x="26" y="87" class="meta">Python</text>
-  <circle class="lang-dot" cx="126" cy="83" fill="#cccccc" />
+  <circle class="lang-dot" cx="126" cy="83" fill="#384d54" />
   <text x="136" y="87" class="meta">Dockerfile</text>
-  <circle class="lang-dot" cx="236" cy="83" fill="#cccccc" />
+  <circle class="lang-dot" cx="236" cy="83" fill="#89e051" />
   <text x="246" y="87" class="meta">Shell</text>
-  <circle class="lang-dot" cx="346" cy="83" fill="#cccccc" />
+  <circle class="lang-dot" cx="346" cy="83" fill="#5686a5" />
   <text x="356" y="87" class="meta">GLSL</text>
-  <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
+  <text x="484" y="110" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>

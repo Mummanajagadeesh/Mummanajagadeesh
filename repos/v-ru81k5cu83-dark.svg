@@ -17,21 +17,21 @@
     <tspan x="16" dy="0">Virtual Rubik's Cube Simulator using</tspan>
     <tspan x="16" dy="18">Kociemba Solver</tspan>
   </text>
-  <circle class="lang-dot" cx="16" cy="101" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="101" fill="#178600" />
   <text x="26" y="105" class="meta">C#</text>
-  <circle class="lang-dot" cx="126" cy="101" fill="#cccccc" />
+  <circle class="lang-dot" cx="126" cy="101" fill="#9400ff" />
   <text x="136" y="105" class="meta">ASP.NET</text>
-  <circle class="lang-dot" cx="236" cy="101" fill="#cccccc" />
+  <circle class="lang-dot" cx="236" cy="101" fill="#f34b7d" />
   <text x="246" y="105" class="meta">C++</text>
-  <circle class="lang-dot" cx="346" cy="101" fill="#cccccc" />
+  <circle class="lang-dot" cx="346" cy="101" fill="#0000cc" />
   <text x="356" y="105" class="meta">GAP</text>
-  <circle class="lang-dot" cx="16" cy="123" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="123" fill="#6866fb" />
   <text x="26" y="127" class="meta">Objective-C++</text>
-  <circle class="lang-dot" cx="126" cy="123" fill="#cccccc" />
+  <circle class="lang-dot" cx="126" cy="123" fill="#222c37" />
   <text x="136" y="127" class="meta">ShaderLab</text>
-  <circle class="lang-dot" cx="236" cy="123" fill="#cccccc" />
+  <circle class="lang-dot" cx="236" cy="123" fill="#aace60" />
   <text x="246" y="127" class="meta">HLSL</text>
-  <circle class="lang-dot" cx="346" cy="123" fill="#cccccc" />
+  <circle class="lang-dot" cx="346" cy="123" fill="#DA3434" />
   <text x="356" y="127" class="meta">CMake</text>
-  <text x="16" y="150" class="meta">⭐ 1 star(s)</text>
+  <text x="484" y="150" text-anchor="end" class="meta">⭐ 1 star(s)</text>
 </svg>

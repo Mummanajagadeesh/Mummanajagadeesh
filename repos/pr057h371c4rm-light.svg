@@ -19,7 +19,7 @@
     <tspan x="16" dy="18">of human tendons to enable realistic finger</tspan>
     <tspan x="16" dy="18">motion.</tspan>
   </text>
-  <circle class="lang-dot" cx="16" cy="137" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="137" fill="#f34b7d" />
   <text x="26" y="141" class="meta">C++</text>
-  <text x="16" y="164" class="meta">⭐ 1 star(s)</text>
+  <text x="484" y="164" text-anchor="end" class="meta">⭐ 1 star(s)</text>
 </svg>

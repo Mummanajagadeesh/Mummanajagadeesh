@@ -18,13 +18,13 @@
     <tspan x="16" dy="18">It detects objects using computer vision,</tspan>
     <tspan x="16" dy="18">avoids obstacles, and navigates autonomously.</tspan>
   </text>
-  <circle class="lang-dot" cx="16" cy="155" fill="#cccccc" />
+  <circle class="lang-dot" cx="16" cy="155" fill="#f34b7d" />
   <text x="26" y="159" class="meta">C++</text>
   <circle class="lang-dot" cx="126" cy="155" fill="#3572A5" />
   <text x="136" y="159" class="meta">Python</text>
-  <circle class="lang-dot" cx="236" cy="155" fill="#cccccc" />
+  <circle class="lang-dot" cx="236" cy="155" fill="#427819" />
   <text x="246" y="159" class="meta">Makefile</text>
   <circle class="lang-dot" cx="346" cy="155" fill="#e34c26" />
   <text x="356" y="159" class="meta">HTML</text>
-  <text x="16" y="182" class="meta">⭐ 2 star(s)</text>
+  <text x="484" y="182" text-anchor="end" class="meta">⭐ 2 star(s)</text>
 </svg>
