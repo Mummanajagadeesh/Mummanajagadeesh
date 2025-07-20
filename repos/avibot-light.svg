@@ -1,4 +1,4 @@
-<svg width="500" height="140" viewBox="0 0 500 140" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="118" viewBox="0 0 500 118" xmlns="http://www.w3.org/2000/svg">
   <style>
     .card-bg { fill: #fff; stroke: #1f6feb; stroke-width: 1; }
     .repo-name { font: bold 16px sans-serif; fill: #0969da; cursor: pointer; }
@@ -7,12 +7,12 @@
     .badge { font: 11px sans-serif; fill: #57606a; }
     .lang-dot { r: 5; }
   </style>
-  <rect class="card-bg" x="0" y="0" width="500" height="140" rx="12" ry="12" />
+  <rect class="card-bg" x="0" y="0" width="500" height="118" rx="12" ry="12" />
   <a href="https://github.com/Mummanajagadeesh/avibot" target="_blank">
     <text x="16" y="30" class="repo-name">avibot</text>
   </a>
   <text x="16" y="55" class="repo-desc">
     <tspan x="16" dy="0">No description provided</tspan>
   </text>
-  <text x="16" y="111" class="meta">⭐ 0 star(s)</text>
+  <text x="16" y="88" class="meta">⭐ 0 star(s)</text>
 </svg>
