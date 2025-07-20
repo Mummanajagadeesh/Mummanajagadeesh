@@ -14,15 +14,11 @@
   <rect x="100" y="16" rx="4" ry="4" width="65" height="18" fill="#1f6feb1a" stroke="#388bfd" />
   <text x="108" y="29" class="badge">Private</text>
   <text x="16" y="55" class="repo-desc">Image processing using Verilog </text>
-  <circle class="lang-dot" cx="16" cy="80" fill="#f1e05a" />
-  <text x="26" y="84" class="meta">Verilog</text>
-  <circle class="lang-dot" cx="91" cy="80" fill="#3572A5" />
-  <text x="101" y="84" class="meta">Python</text>
-  <circle class="lang-dot" cx="166" cy="80" fill="#ecdebe" />
-  <text x="176" y="84" class="meta">Roff</text>
-  <circle class="lang-dot" cx="241" cy="80" fill="#e34c26" />
-  <text x="251" y="84" class="meta">HTML</text>
-  <circle class="lang-dot" cx="316" cy="80" fill="#b2b7f8" />
-  <text x="326" y="84" class="meta">V</text>
+  <circle class="lang-dot" cx="16" cy="80" fill="#cccccc" />
+  <text x="26" y="84" class="meta">message</text>
+  <circle class="lang-dot" cx="91" cy="80" fill="#cccccc" />
+  <text x="101" y="84" class="meta">documentation_url</text>
+  <circle class="lang-dot" cx="166" cy="80" fill="#cccccc" />
+  <text x="176" y="84" class="meta">status</text>
   <text x="16" y="110" class="meta">⭐ 1 star(s)</text>
 </svg>

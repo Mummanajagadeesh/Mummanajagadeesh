@@ -13,14 +13,8 @@
   </a>
   <text x="16" y="55" class="repo-desc">ROS2 Workspace Jazzy (Ubuntu 24.04 Noble)</text>
   <circle class="lang-dot" cx="16" cy="80" fill="#cccccc" />
-  <text x="26" y="84" class="meta">C++</text>
+  <text x="26" y="84" class="meta">message</text>
   <circle class="lang-dot" cx="91" cy="80" fill="#cccccc" />
-  <text x="101" y="84" class="meta">C</text>
-  <circle class="lang-dot" cx="166" cy="80" fill="#3572A5" />
-  <text x="176" y="84" class="meta">Python</text>
-  <circle class="lang-dot" cx="241" cy="80" fill="#cccccc" />
-  <text x="251" y="84" class="meta">PowerShell</text>
-  <circle class="lang-dot" cx="316" cy="80" fill="#cccccc" />
-  <text x="326" y="84" class="meta">TypeScript</text>
+  <text x="101" y="84" class="meta">documentation_url</text>
   <text x="16" y="110" class="meta">⭐ 1 star(s)</text>
 </svg>
