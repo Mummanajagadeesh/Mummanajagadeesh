@@ -201,7 +201,8 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 - **Automated model `inference` and `performance metric` evaluation via Tcl/Perl scripts (executing Python and Icarus Verilog commands). Additionally, a real-time Tkinter GUI was created for test user input.**
 
-- **Currently working on real-life applications including `label detection`, `document scanning`, `stereo depth map generation`, and neural network inference for MNIST/EMNIST datasets.**
+- **Currently working on object detection using shallow CNNs on the `Pascal VOC` dataset.**
+
 
 </details>
 
