@@ -3,7 +3,7 @@ name: Update README with Repo Cards
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 12 * * *"  # Runs every day at 12:00 UTC
+    - cron: "0 12 * * *"  # Runs daily at 12:00 UTC
 
 jobs:
   update-readme:
@@ -13,54 +13,56 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: sudo apt-get install -y jq
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install jq and base64
+        run: sudo apt-get install jq -y
 
       - name: Fetch repository metadata
         env:
           GH_TOKEN: ${{ secrets.PRIVATE_GH_TOKEN }}
         run: |
-          QUERY='{"query":"query { user(login: \"Mummanajagadeesh\") { repository(name: \"ImProVe\") { name description isPrivate stargazers { totalCount } forkCount primaryLanguage { name color } } } }"}'
+          QUERY='{"query":"query { user(login: \"Mummanajagadeesh\") { repository(name: \"ImProVe\") { name description stargazers { totalCount } } } }"}'
           RESPONSE=$(curl -s -H "Authorization: bearer $GH_TOKEN" -H "Content-Type: application/json" -X POST -d "$QUERY" https://api.github.com/graphql)
           echo "$RESPONSE" > repo.json
 
-      - name: Generate SVG card
+      - name: Generate SVG repo card and markdown
         run: |
           NAME=$(jq -r '.data.user.repository.name' repo.json)
           DESC=$(jq -r '.data.user.repository.description' repo.json)
           STARS=$(jq -r '.data.user.repository.stargazers.totalCount' repo.json)
-          FORKS=$(jq -r '.data.user.repository.forkCount' repo.json)
-          LANG=$(jq -r '.data.user.repository.primaryLanguage.name // "Unspecified"' repo.json)
-          LANGCOLOR=$(jq -r '.data.user.repository.primaryLanguage.color // "#ccc"' repo.json)
 
-          cat <<EOF > repo-card.svg
-<svg width="400" height="140" viewBox="0 0 400 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          # Basic SVG
+          cat <<EOF > card.svg
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .header { font: bold 16px 'Segoe UI', sans-serif; fill: #0366d6; }
-    .desc { font: normal 13px 'Segoe UI', sans-serif; fill: #333; }
-    .stats { font: normal 12px 'Segoe UI', sans-serif; fill: #555; }
-    .lang-dot { r: 6; }
+    .title { font: bold 18px sans-serif; fill: #0366d6; }
+    .desc { font: 14px sans-serif; fill: #333; }
+    .stars { font: 12px sans-serif; fill: #555; }
+    .bg { fill: #f9f9f9; stroke: #e1e4e8; stroke-width: 1; }
   </style>
-  <rect x="0" y="0" width="100%" height="100%" rx="10" fill="#f9f9f9" stroke="#e1e4e8"/>
-  <text x="20" y="30" class="header">$NAME</text>
-  <text x="20" y="55" class="desc">${DESC:-No description provided}</text>
-  <circle cx="25" cy="95" r="6" fill="$LANGCOLOR" />
-  <text x="40" y="100" class="stats">$LANG</text>
-  <text x="150" y="100" class="stats">⭐ $STARS</text>
-  <text x="230" y="100" class="stats">🍴 $FORKS</text>
+  <rect class="bg" x="0" y="0" width="400" height="120" rx="10"/>
+  <text x="20" y="35" class="title">$NAME</text>
+  <text x="20" y="60" class="desc">$DESC</text>
+  <text x="20" y="85" class="stars">⭐ $STARS stars</text>
 </svg>
 EOF
 
-      - name: Insert SVG into README
-        run: |
+          # Encode SVG to base64 for inline embedding
+          ENCODED=$(base64 -w 0 card.svg)
+
+          # Write to markdown block
           echo "<!--START:REPO_CARDS-->" > insert.txt
           echo "" >> insert.txt
-          echo '<p align="center">' >> insert.txt
-          echo '<img src="repo-card.svg" alt="Repo Card" />' >> insert.txt
-          echo '</p>' >> insert.txt
+          echo "<img src=\"data:image/svg+xml;base64,$ENCODED\" alt=\"$NAME repo card\" />" >> insert.txt
           echo "" >> insert.txt
           echo "<!--END:REPO_CARDS-->" >> insert.txt
 
+      - name: Update README.md
+        run: |
           awk '/<!--START:REPO_CARDS-->/ {print; system("tail -n +2 insert.txt | head -n -1"); found=1; next}
                /<!--END:REPO_CARDS-->/ {found=0}
                !found {print}' README.md > README.tmp
@@ -70,6 +72,6 @@ EOF
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add README.md repo-card.svg
-          git commit -m "Update README with generated repo card" || echo "No changes to commit"
+          git add README.md
+          git commit -m "Update README with repo card" || echo "No changes to commit"
           git push
