@@ -1,4 +1,4 @@
-# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-07-20 16:06:43 IST -->
+# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-07-20 15:59:57 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -163,12 +163,12 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 <a href="https://github.com/Mummanajagadeesh/ImProVe#gh-light-mode-only">
   <img src="./repos/improve-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
 </a>
-
+<br>
 <!-- Dark Mode Repo Card -->
 <a href="https://github.com/Mummanajagadeesh/ImProVe#gh-dark-mode-only">
   <img src="./repos/improve-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
 </a>
-
+<br>
 <a href="https://github.com/Mummanajagadeesh/NeVer#gh-light-mode-only">
   <img src="./repos/never-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
 </a>
@@ -177,6 +177,18 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 <a href="https://github.com/Mummanajagadeesh/NeVer#gh-dark-mode-only">
   <img src="./repos/never-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
 </a>
+
+<br>
+
+<a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-light-mode-only">
+  <img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+</a>
+
+<!-- Dark Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-dark-mode-only">
+  <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+</a>
+
 
 <br>
 
@@ -311,6 +323,8 @@ Designed and simulated semiconductor structures (N-resistor, PN diode, NMOS) usi
 <a href="https://github.com/Mummanajagadeesh/RU83C#gh-dark-mode-only">
   <img src="./repos/ru83c-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
 </a>
+
+<br>
 
 <!-- Light Mode Repo Card -->
 <a href="https://github.com/Mummanajagadeesh/V-RU81K5CU83#gh-light-mode-only">
