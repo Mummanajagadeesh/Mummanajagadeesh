@@ -1,35 +1,8 @@
-name: Update README with Repo Cards
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 12 * * *"  # Daily at 12:00 UTC
-
-jobs:
-  update-readme:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Install jq
-        run: sudo apt-get install jq -y
-
-      - name: Fetch all public repositories
-        env:
-          GH_TOKEN: ${{ secrets.PRIVATE_GH_TOKEN }}
-        run: |
-          curl -s -H "Authorization: Bearer $GH_TOKEN" \
-            "https://api.github.com/users/Mummanajagadeesh/repos?per_page=100&type=public" > all_repos.json
-
       - name: Generate and update selected repo cards
         run: |
+          cat <<'EOF' > update-cards.sh
+          #!/bin/bash
+          set -e
           mkdir -p repos
 
           get_color() {
@@ -93,7 +66,7 @@ jobs:
 
           for row in $(jq -r '.[] | @base64' all_repos.json); do
             _jq() {
-              echo "${row}" | base64 --decode | jq -r "${1}"
+              echo "$row" | base64 --decode | jq -r "$1"
             }
 
             NAME=$(_jq '.name')
@@ -109,7 +82,7 @@ jobs:
               generate_svg "$NAME" "$DESC" "$PRIVATE" "$STARS" "$LANGS" "repos/${NAME,,}-light.svg" "#fff" "#1f6feb" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da"
               generate_svg "$NAME" "$DESC" "$PRIVATE" "$STARS" "$LANGS" "repos/${NAME,,}-dark.svg" "#0d1117" "#1f6feb" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd"
 
-              CONTENT=$(cat <<EOF
+              cat <<MARK > __block.txt
               <!--START-REPO-CARD:$NAME-->
               <a href="https://github.com/Mummanajagadeesh#gh-light-mode-only">
                 <img src="./repos/${NAME,,}-light.svg#gh-light-mode-only" alt="$NAME (light mode)" />
@@ -118,18 +91,16 @@ jobs:
                 <img src="./repos/${NAME,,}-dark.svg#gh-dark-mode-only" alt="$NAME (dark mode)" />
               </a>
               <!--END-REPO-CARD:$NAME-->
-              EOF
-              )
+              MARK
 
-              sed -i -E "/<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/c\\
-$CONTENT" README.md
+              sed -i -e "/<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/{
+                /<!--START-REPO-CARD:$NAME-->/r __block.txt
+                /<!--START-REPO-CARD:$NAME-->/,/<!--END-REPO-CARD:$NAME-->/d
+              }" README.md
+
+              rm -f __block.txt
             fi
           done
+EOF
 
-      - name: Commit and push changes
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add README.md repos/
-          git commit -m "Update README with selected repo cards" || echo "No changes to commit"
-          git push
+          bash update-cards.sh
