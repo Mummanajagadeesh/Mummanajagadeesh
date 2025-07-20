@@ -2,6 +2,9 @@
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
+<!--START:REPO_CARDS-->
+<!--END:REPO_CARDS-->
+
 <p align="left">
   <a href="https://mummanajagadeesh.github.io/" target="_blank">
       <img src="https://img.shields.io/badge/Portfolio-2E8B57?style=flat-square&logo=Google-chrome&logoColor=white" alt="Portfolio"/>
