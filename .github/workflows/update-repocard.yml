@@ -31,16 +31,19 @@ jobs:
             -X POST -d "$QUERY" https://api.github.com/graphql)
           echo "$RESPONSE" > repo.json
 
-      - name: Generate SVG repo card and markdown
+      - name: Generate SVG card and markdown
         run: |
           NAME=$(jq -r '.data.user.repository.name' repo.json)
           DESC=$(jq -r '.data.user.repository.description' repo.json)
           STARS=$(jq -r '.data.user.repository.stargazers.totalCount' repo.json)
 
-          # Escape description if null
+          # Default fallback for empty description
           if [ "$DESC" = "null" ]; then DESC="No description provided"; fi
 
-          # Write SVG
+          # Create repos/ directory
+          mkdir -p repos
+
+          # Save SVG to repos/
           printf '%s\n' \
           '<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">' \
           '  <style>' \
@@ -53,15 +56,12 @@ jobs:
           "  <text x=\"20\" y=\"35\" class=\"title\">$NAME</text>" \
           "  <text x=\"20\" y=\"60\" class=\"desc\">$DESC</text>" \
           "  <text x=\"20\" y=\"85\" class=\"stars\">⭐ $STARS stars</text>" \
-          '</svg>' > card.svg
+          '</svg>' > repos/improve.svg
 
-          # Convert to base64
-          ENCODED=$(base64 -w 0 card.svg)
-
-          # Create insert block
+          # Create the markdown insertion block
           echo "<!--START:REPO_CARDS-->" > insert.txt
           echo "" >> insert.txt
-          echo "<img src=\"data:image/svg+xml;base64,$ENCODED\" alt=\"$NAME repo card\" />" >> insert.txt
+          echo "<img src=\"./repos/improve.svg\" alt=\"$NAME repo card\" />" >> insert.txt
           echo "" >> insert.txt
           echo "<!--END:REPO_CARDS-->" >> insert.txt
 
@@ -76,6 +76,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add README.md
+          git add README.md repos/improve.svg
           git commit -m "Update README with repo card" || echo "No changes to commit"
           git push
