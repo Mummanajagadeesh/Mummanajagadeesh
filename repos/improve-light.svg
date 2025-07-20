@@ -1,0 +1,12 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 18px sans-serif; fill: #0366d6; }
+    .desc { font: 14px sans-serif; fill: #333; }
+    .stars { font: 12px sans-serif; fill: #555; }
+    .bg { fill: #f9f9f9; stroke: #e1e4e8; stroke-width: 1; }
+  </style>
+  <rect class="bg" x="0" y="0" width="400" height="120" rx="10"/>
+  <text x="20" y="35" class="title">ImProVe</text>
+  <text x="20" y="60" class="desc">Image processing using Verilog </text>
+  <text x="20" y="85" class="stars">⭐ 1 stars</text>
+</svg>
