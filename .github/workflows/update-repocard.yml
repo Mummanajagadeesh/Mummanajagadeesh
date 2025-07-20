@@ -59,14 +59,19 @@ jobs:
             BADGE_FILL=$8
             BADGE_STROKE=$9
           
-            # Wrap the description every 45 characters
+            # === 1. Description wrapping ===
             DESC_LINES=$(echo "$DESC" | fold -s -w 45)
-          
-            # Count description lines
             DESC_LINE_COUNT=$(echo "$DESC_LINES" | wc -l)
           
-            # Calculate base height: 140 + 18px for every extra desc line beyond 1
-            HEIGHT=$((140 + (DESC_LINE_COUNT - 1) * 18))
+            # === 2. Count language rows (4 per row) ===
+            LANG_COUNT=$(echo "$LANGS" | wc -w)
+            LANG_ROWS=$(( (LANG_COUNT + 3) / 4 ))  # Ceiling division
+          
+            # === 3. Calculate SVG height dynamically ===
+            BASE_HEIGHT=140
+            DESC_HEIGHT=$(( (DESC_LINE_COUNT - 1) * 18 ))     # 18px per extra line
+            LANG_HEIGHT=$(( (LANG_ROWS - 1) * 22 ))           # 22px per extra lang row
+            HEIGHT=$((BASE_HEIGHT + DESC_HEIGHT + LANG_HEIGHT))
           
             echo "<svg width=\"500\" height=\"$HEIGHT\" viewBox=\"0 0 500 $HEIGHT\" xmlns=\"http://www.w3.org/2000/svg\">" > $FILE
             echo "  <style>" >> $FILE
@@ -87,7 +92,7 @@ jobs:
               echo "  <text x=\"428\" y=\"29\" class=\"badge\">Private</text>" >> $FILE
             fi
           
-            # Wrapped Description using <tspan>
+            # === 4. Multiline Description ===
             echo "  <text x=\"16\" y=\"55\" class=\"repo-desc\">" >> $FILE
             LINE_Y=0
             while read -r LINE; do
@@ -96,18 +101,16 @@ jobs:
             done <<< "$DESC_LINES"
             echo "  </text>" >> $FILE
           
-            # Adjust y-position after description
-            LANG_Y=$((55 + DESC_LINE_COUNT * 18 + 10))
-            STAR_Y=$((LANG_Y + 28))
-          
-            # Wrapped Languages (max 4 per row)
+            # === 5. Multiline Languages ===
+            LANG_START_Y=$((55 + DESC_LINE_COUNT * 18 + 10))
             X=16
             COUNT=0
             ROW=0
+          
             for LANG in $LANGS; do
               COLOR=$(get_color "$LANG")
               CX=$X
-              CY=$((LANG_Y + ROW * 22))
+              CY=$((LANG_START_Y + ROW * 22))
               TX=$((CX + 10))
               TY=$((CY + 4))
           
@@ -116,7 +119,6 @@ jobs:
           
               X=$((X + 110))
               COUNT=$((COUNT + 1))
-          
               if [ $COUNT -eq 4 ]; then
                 X=16
                 ROW=$((ROW + 1))
@@ -124,9 +126,11 @@ jobs:
               fi
             done
           
+            STAR_Y=$((LANG_START_Y + LANG_ROWS * 22 + 5))
             echo "  <text x=\"16\" y=\"$STAR_Y\" class=\"meta\">⭐ $STARS star(s)</text>" >> $FILE
             echo "</svg>" >> $FILE
           }
+          
 
 
           for row in $(jq -r '.[] | @base64' all_repos.json); do
