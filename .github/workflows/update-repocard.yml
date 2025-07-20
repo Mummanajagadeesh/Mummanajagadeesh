@@ -99,8 +99,8 @@ jobs:
             echo "</svg>" >> $FILE
           }
 
-          generate_svg light repos/improve-light.svg "#fff" "#d0d7de" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da"
-          generate_svg dark repos/improve-dark.svg "#0d1117" "#30363d" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd"
+          generate_svg light repos/improve-light.svg "#fff" "#1f6feb" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da"
+          generate_svg dark repos/improve-dark.svg "#0d1117" "#1f6feb" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd"
 
           echo "<!--START:REPO_CARDS-->" > insert.txt
           echo "" >> insert.txt
