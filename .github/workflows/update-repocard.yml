@@ -31,19 +31,17 @@ jobs:
             -X POST -d "$QUERY" https://api.github.com/graphql)
           echo "$RESPONSE" > repo.json
 
-      - name: Generate SVG card and markdown
+      - name: Generate light and dark SVGs + insert block
         run: |
           NAME=$(jq -r '.data.user.repository.name' repo.json)
           DESC=$(jq -r '.data.user.repository.description' repo.json)
           STARS=$(jq -r '.data.user.repository.stargazers.totalCount' repo.json)
 
-          # Default fallback for empty description
           if [ "$DESC" = "null" ]; then DESC="No description provided"; fi
 
-          # Create repos/ directory
           mkdir -p repos
 
-          # Save SVG to repos/
+          # LIGHT MODE SVG
           printf '%s\n' \
           '<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">' \
           '  <style>' \
@@ -56,12 +54,37 @@ jobs:
           "  <text x=\"20\" y=\"35\" class=\"title\">$NAME</text>" \
           "  <text x=\"20\" y=\"60\" class=\"desc\">$DESC</text>" \
           "  <text x=\"20\" y=\"85\" class=\"stars\">⭐ $STARS stars</text>" \
-          '</svg>' > repos/improve.svg
+          '</svg>' > repos/improve-light.svg
 
-          # Create the markdown insertion block
+          # DARK MODE SVG
+          printf '%s\n' \
+          '<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">' \
+          '  <style>' \
+          '    .title { font: bold 18px sans-serif; fill: #58a6ff; }' \
+          '    .desc { font: 14px sans-serif; fill: #c9d1d9; }' \
+          '    .stars { font: 12px sans-serif; fill: #8b949e; }' \
+          '    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; }' \
+          '  </style>' \
+          '  <rect class="bg" x="0" y="0" width="400" height="120" rx="10"/>' \
+          "  <text x=\"20\" y=\"35\" class=\"title\">$NAME</text>" \
+          "  <text x=\"20\" y=\"60\" class=\"desc\">$DESC</text>" \
+          "  <text x=\"20\" y=\"85\" class=\"stars\">⭐ $STARS stars</text>" \
+          '</svg>' > repos/improve-dark.svg
+
+          # Insert markdown block with both modes
           echo "<!--START:REPO_CARDS-->" > insert.txt
           echo "" >> insert.txt
-          echo "<img src=\"./repos/improve.svg\" alt=\"$NAME repo card\" />" >> insert.txt
+          echo "<p align=\"center\">" >> insert.txt
+          echo "  <a href=\"https://github.com/Mummanajagadeesh#gh-light-mode-only\">" >> insert.txt
+          echo "    <img src=\"./repos/improve-light.svg#gh-light-mode-only\" alt=\"$NAME (light mode)\" />" >> insert.txt
+          echo "  </a>" >> insert.txt
+          echo "</p>" >> insert.txt
+          echo "" >> insert.txt
+          echo "<p align=\"center\">" >> insert.txt
+          echo "  <a href=\"https://github.com/Mummanajagadeesh#gh-dark-mode-only\">" >> insert.txt
+          echo "    <img src=\"./repos/improve-dark.svg#gh-dark-mode-only\" alt=\"$NAME (dark mode)\" />" >> insert.txt
+          echo "  </a>" >> insert.txt
+          echo "</p>" >> insert.txt
           echo "" >> insert.txt
           echo "<!--END:REPO_CARDS-->" >> insert.txt
 
@@ -76,6 +99,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add README.md repos/improve.svg
-          git commit -m "Update README with repo card" || echo "No changes to commit"
+          git add README.md repos/improve-light.svg repos/improve-dark.svg
+          git commit -m "Update README with light/dark repo cards" || echo "No changes to commit"
           git push
