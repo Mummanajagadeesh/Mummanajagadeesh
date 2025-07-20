@@ -1,20 +1,7 @@
-# Olá, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-07-20 15:38:58 IST -->
+# Hello, world! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-07-20 15:18:17 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
-
-<!--START-REPO-CARD:ImProVe-->
-<a href="https://github.com/Mummanajagadeesh#gh-light-mode-only">
-  <img src="./repos/improve-light.svg#gh-light-mode-only" alt="ImProVe (light mode)" />
-</a>
-<a href="https://github.com/Mummanajagadeesh#gh-dark-mode-only">
-  <img src="./repos/improve-dark.svg#gh-dark-mode-only" alt="ImProVe (dark mode)" />
-</a>
-<!--END-REPO-CARD:ImProVe-->
-
-
-<!--START-REPO-CARD:NeVeR-->
-<!--END-REPO-CARD:NeVeR-->
 
 
 <p align="left">
@@ -170,7 +157,27 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
     <a href="https://mummanajagadeesh.github.io/projects/improve/subprojects" target="_blank">Link</a>
   </strong>
 </summary>
-  
+
+<br><br>
+<!-- Light Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/ImProVe#gh-light-mode-only">
+  <img src="./repos/improve-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+</a>
+
+<!-- Dark Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/ImProVe#gh-dark-mode-only">
+  <img src="./repos/improve-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/NeVer#gh-light-mode-only">
+  <img src="./repos/never-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+</a>
+
+<!-- Dark Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/NeVer#gh-dark-mode-only">
+  <img src="./repos/never-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+</a>
+
 <br>
 
 **Duration:** Individual, Ongoing  
@@ -194,7 +201,19 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
   </strong>  
 </summary>  
 
-<br>  
+<br><br>
+<!-- Light Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-light-mode-only">
+  <img src="./repos/isro_ros2-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+</a>
+
+<!-- Dark Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-dark-mode-only">
+  <img src="./repos/isro_ros2-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+</a>
+<br>
+
+<br>
 
 **Duration:** Team-based (ISRO RIG), Ongoing
 **Tools:** Jetson Nano | Pixhawk | RealSense D435i | ESP32 (ESP‑Now) | VINS‑Fusion | ROS2
@@ -215,6 +234,18 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
   </strong>
 </summary>
   
+<br><br>
+<!-- Light Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/RoSee#gh-light-mode-only">
+  <img src="./repos/rose-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+</a>
+
+<!-- Dark Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/Rose#gh-dark-mode-only">
+  <img src="./repos/rose-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+</a>
+<br>
+
 <br>
 
 
@@ -241,6 +272,18 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
   </strong>
 </summary>
   
+<br><br>
+<!-- Light Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS#gh-light-mode-only">
+  <img src="./repos/tcad-projects-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+</a>
+
+<!-- Dark Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS#gh-dark-mode-only">
+  <img src="./repos/tcad-projects-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+</a>
+<br>
+
 <br>
 
 Designed and simulated semiconductor structures (N-resistor, PN diode, NMOS) using Sentaurus TCAD; explored effects of doping, geometry, and physical models through process setup, simulation scripting, and visual analysis of internal device behavior
@@ -256,8 +299,30 @@ Designed and simulated semiconductor structures (N-resistor, PN diode, NMOS) usi
     <a href="https://mummanajagadeesh.github.io/projects/rubec/" target="_blank">Link</a>
   </strong>
 </summary>
-  
+
+
+<br><br>
+<!-- Light Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/RUBEC#gh-light-mode-only">
+  <img src="./repos/ru83c-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+</a>
+
+<!-- Dark Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/RU83C#gh-dark-mode-only">
+  <img src="./repos/ru83c-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+</a>
+
+<!-- Light Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/V-RU81K5CU83#gh-light-mode-only">
+  <img src="./repos/v-ru81k5cu83-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+</a>
+
+<!-- Dark Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/V-RU81K5CU83#gh-dark-mode-only">
+  <img src="./repos/v-ru81k5cu83-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+</a>
 <br>
+
 
 
 A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with precision using Kociemba’s two-phase algorithm for optimal move sequences
