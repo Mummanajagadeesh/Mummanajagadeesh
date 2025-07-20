@@ -35,17 +35,11 @@ jobs:
           mkdir -p repos
           echo "<!--START:REPO_CARDS-->" > insert.txt
 
+          # Download GitHub language colors
+          curl -sL "https://raw.githubusercontent.com/ozh/github-colors/master/colors.json" -o colors.json
+
           get_color() {
-            case "$1" in
-              Verilog) echo "#f1e05a" ;;
-              Python) echo "#3572A5" ;;
-              Roff) echo "#ecdebe" ;;
-              HTML) echo "#e34c26" ;;
-              V) echo "#b2b7f8" ;;
-              "TL-Verilog") echo "#33cc99" ;;
-              "SystemVerilog") echo "#DA70D6" ;;
-              *) echo "#cccccc" ;;
-            esac
+            jq -r --arg lang "$1" '.[$lang].color // "#cccccc"' colors.json
           }
 
           generate_svg() {
@@ -58,21 +52,16 @@ jobs:
             META_COLOR=$7
             BADGE_FILL=$8
             BADGE_STROKE=$9
-          
-            # === 1. Description wrapping ===
+
             DESC_LINES=$(echo "$DESC" | fold -s -w 45)
             DESC_LINE_COUNT=$(echo "$DESC_LINES" | wc -l)
-          
-            # === 2. Count language rows (4 per row) ===
             LANG_COUNT=$(echo "$LANGS" | wc -w)
-            LANG_ROWS=$(( (LANG_COUNT + 3) / 4 ))  # Ceiling division
-          
-            # === 3. Calculate SVG height dynamically ===
+            LANG_ROWS=$(( (LANG_COUNT + 3) / 4 ))
             BASE_HEIGHT=140
-            DESC_HEIGHT=$(( (DESC_LINE_COUNT - 1) * 18 ))     # 18px per extra line
-            LANG_HEIGHT=$(( (LANG_ROWS - 1) * 22 ))           # 22px per extra lang row
+            DESC_HEIGHT=$(( (DESC_LINE_COUNT - 1) * 18 ))
+            LANG_HEIGHT=$(( (LANG_ROWS - 1) * 22 ))
             HEIGHT=$((BASE_HEIGHT + DESC_HEIGHT + LANG_HEIGHT))
-          
+
             echo "<svg width=\"500\" height=\"$HEIGHT\" viewBox=\"0 0 500 $HEIGHT\" xmlns=\"http://www.w3.org/2000/svg\">" > $FILE
             echo "  <style>" >> $FILE
             echo "    .card-bg { fill: $BG_COLOR; stroke: $BORDER_COLOR; stroke-width: 1; }" >> $FILE
@@ -86,13 +75,12 @@ jobs:
             echo "  <a href=\"https://github.com/Mummanajagadeesh/$NAME\" target=\"_blank\">" >> $FILE
             echo "    <text x=\"16\" y=\"30\" class=\"repo-name\">$NAME</text>" >> $FILE
             echo "  </a>" >> $FILE
-          
+
             if [ "$PRIVATE" = "true" ]; then
               echo "  <rect x=\"420\" y=\"16\" rx=\"4\" ry=\"4\" width=\"65\" height=\"18\" fill=\"$BADGE_FILL\" stroke=\"$BADGE_STROKE\" />" >> $FILE
               echo "  <text x=\"428\" y=\"29\" class=\"badge\">Private</text>" >> $FILE
             fi
-          
-            # === 4. Multiline Description ===
+
             echo "  <text x=\"16\" y=\"55\" class=\"repo-desc\">" >> $FILE
             LINE_Y=0
             while read -r LINE; do
@@ -100,23 +88,22 @@ jobs:
               LINE_Y=18
             done <<< "$DESC_LINES"
             echo "  </text>" >> $FILE
-          
-            # === 5. Multiline Languages ===
+
             LANG_START_Y=$((55 + DESC_LINE_COUNT * 18 + 10))
             X=16
             COUNT=0
             ROW=0
-          
+
             for LANG in $LANGS; do
               COLOR=$(get_color "$LANG")
               CX=$X
               CY=$((LANG_START_Y + ROW * 22))
               TX=$((CX + 10))
               TY=$((CY + 4))
-          
+
               echo "  <circle class=\"lang-dot\" cx=\"$CX\" cy=\"$CY\" fill=\"$COLOR\" />" >> $FILE
               echo "  <text x=\"$TX\" y=\"$TY\" class=\"meta\">$LANG</text>" >> $FILE
-          
+
               X=$((X + 110))
               COUNT=$((COUNT + 1))
               if [ $COUNT -eq 4 ]; then
@@ -125,13 +112,11 @@ jobs:
                 COUNT=0
               fi
             done
-          
+
             STAR_Y=$((LANG_START_Y + LANG_ROWS * 22 + 5))
-            echo "  <text x=\"16\" y=\"$STAR_Y\" class=\"meta\">⭐ $STARS star(s)</text>" >> $FILE
+            echo "  <text x=\"484\" y=\"$STAR_Y\" text-anchor=\"end\" class=\"meta\">⭐ $STARS star(s)</text>" >> $FILE
             echo "</svg>" >> $FILE
           }
-          
-
 
           for row in $(jq -r '.[] | @base64' all_repos.json); do
             _jq() {
@@ -142,7 +127,6 @@ jobs:
             DESC=$(_jq '.description')
             PRIVATE=$(_jq '.private')
             STARS=$(_jq '.stargazers_count')
-
             [ "$DESC" = "null" ] && DESC="No description provided"
 
             LANGS=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
