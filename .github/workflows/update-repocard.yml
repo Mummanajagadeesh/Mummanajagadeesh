@@ -23,7 +23,7 @@ jobs:
 
       - name: Fetch repository metadata
         env:
-          GH_TOKEN: ${{ secrets.PVT_TOKEN }}
+          GH_TOKEN: ${{ secrets.PRIVATE_GH_TOKEN }}
         run: |
           QUERY='{"query":"query { user(login: \"Mummanajagadeesh\") { repository(name: \"ImProVe\") { name description isPrivate stargazers { totalCount } } } }"}'
           RESPONSE=$(curl -s -H "Authorization: bearer $GH_TOKEN" -H "Content-Type: application/json" -X POST -d "$QUERY" https://api.github.com/graphql)
