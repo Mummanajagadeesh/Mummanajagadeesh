@@ -1,4 +1,4 @@
-<svg width="500" height="140" viewBox="0 0 500 140" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="194" viewBox="0 0 500 194" xmlns="http://www.w3.org/2000/svg">
   <style>
     .card-bg { fill: #fff; stroke: #1f6feb; stroke-width: 1; }
     .repo-name { font: bold 16px sans-serif; fill: #0969da; cursor: pointer; }
@@ -7,12 +7,17 @@
     .badge { font: 11px sans-serif; fill: #57606a; }
     .lang-dot { r: 5; }
   </style>
-  <rect class="card-bg" x="0" y="0" width="500" height="140" rx="12" ry="12" />
+  <rect class="card-bg" x="0" y="0" width="500" height="194" rx="12" ry="12" />
   <a href="https://github.com/Mummanajagadeesh/cosmOS" target="_blank">
     <text x="16" y="30" class="repo-name">cosmOS</text>
   </a>
   <rect x="420" y="16" rx="4" ry="4" width="65" height="18" fill="#ddf4ff" stroke="#0969da" />
   <text x="428" y="29" class="badge">Private</text>
-  <text x="16" y="55" class="repo-desc">"Custom OS with Machine level Operational Set" ; a low-level, custom-built operating system developed entirely in Assembly, as part of a personal learning project</text>
-  <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">"Custom OS with Machine level Operational</tspan>
+    <tspan x="16" dy="18">Set" ; a low-level, custom-built operating</tspan>
+    <tspan x="16" dy="18">system developed entirely in Assembly, as</tspan>
+    <tspan x="16" dy="18">part of a personal learning project</tspan>
+  </text>
+  <text x="16" y="165" class="meta">⭐ 0 star(s)</text>
 </svg>

@@ -11,46 +11,48 @@
   <a href="https://github.com/Mummanajagadeesh/webots" target="_blank">
     <text x="16" y="30" class="repo-name">webots</text>
   </a>
-  <text x="16" y="55" class="repo-desc">Webots Robot Simulator</text>
-  <circle class="lang-dot" cx="16" cy="80" fill="#cccccc" />
-  <text x="26" y="84" class="meta">C++</text>
-  <circle class="lang-dot" cx="91" cy="80" fill="#cccccc" />
-  <text x="101" y="84" class="meta">C</text>
-  <circle class="lang-dot" cx="166" cy="80" fill="#cccccc" />
-  <text x="176" y="84" class="meta">JavaScript</text>
-  <circle class="lang-dot" cx="241" cy="80" fill="#3572A5" />
-  <text x="251" y="84" class="meta">Python</text>
-  <circle class="lang-dot" cx="316" cy="80" fill="#cccccc" />
-  <text x="326" y="84" class="meta">Makefile</text>
-  <circle class="lang-dot" cx="391" cy="80" fill="#cccccc" />
-  <text x="401" y="84" class="meta">GLSL</text>
-  <circle class="lang-dot" cx="466" cy="80" fill="#e34c26" />
-  <text x="476" y="84" class="meta">HTML</text>
-  <circle class="lang-dot" cx="541" cy="80" fill="#cccccc" />
-  <text x="551" y="84" class="meta">MATLAB</text>
-  <circle class="lang-dot" cx="616" cy="80" fill="#cccccc" />
-  <text x="626" y="84" class="meta">CSS</text>
-  <circle class="lang-dot" cx="691" cy="80" fill="#cccccc" />
-  <text x="701" y="84" class="meta">SWIG</text>
-  <circle class="lang-dot" cx="766" cy="80" fill="#cccccc" />
-  <text x="776" y="84" class="meta">Shell</text>
-  <circle class="lang-dot" cx="841" cy="80" fill="#cccccc" />
-  <text x="851" y="84" class="meta">Java</text>
-  <circle class="lang-dot" cx="916" cy="80" fill="#cccccc" />
-  <text x="926" y="84" class="meta">Lua</text>
-  <circle class="lang-dot" cx="991" cy="80" fill="#cccccc" />
-  <text x="1001" y="84" class="meta">Assembly</text>
-  <circle class="lang-dot" cx="1066" cy="80" fill="#cccccc" />
-  <text x="1076" y="84" class="meta">PHP</text>
-  <circle class="lang-dot" cx="1141" cy="80" fill="#cccccc" />
-  <text x="1151" y="84" class="meta">Pawn</text>
-  <circle class="lang-dot" cx="1216" cy="80" fill="#cccccc" />
-  <text x="1226" y="84" class="meta">M4</text>
-  <circle class="lang-dot" cx="1291" cy="80" fill="#cccccc" />
-  <text x="1301" y="84" class="meta">Batchfile</text>
-  <circle class="lang-dot" cx="1366" cy="80" fill="#cccccc" />
-  <text x="1376" y="84" class="meta">Dockerfile</text>
-  <circle class="lang-dot" cx="1441" cy="80" fill="#cccccc" />
-  <text x="1451" y="84" class="meta">M</text>
-  <text x="16" y="110" class="meta">⭐ 1 star(s)</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">Webots Robot Simulator</tspan>
+  </text>
+  <circle class="lang-dot" cx="16" cy="83" fill="#cccccc" />
+  <text x="26" y="87" class="meta">C++</text>
+  <circle class="lang-dot" cx="126" cy="83" fill="#cccccc" />
+  <text x="136" y="87" class="meta">C</text>
+  <circle class="lang-dot" cx="236" cy="83" fill="#cccccc" />
+  <text x="246" y="87" class="meta">JavaScript</text>
+  <circle class="lang-dot" cx="346" cy="83" fill="#3572A5" />
+  <text x="356" y="87" class="meta">Python</text>
+  <circle class="lang-dot" cx="16" cy="105" fill="#cccccc" />
+  <text x="26" y="109" class="meta">Makefile</text>
+  <circle class="lang-dot" cx="126" cy="105" fill="#cccccc" />
+  <text x="136" y="109" class="meta">GLSL</text>
+  <circle class="lang-dot" cx="236" cy="105" fill="#e34c26" />
+  <text x="246" y="109" class="meta">HTML</text>
+  <circle class="lang-dot" cx="346" cy="105" fill="#cccccc" />
+  <text x="356" y="109" class="meta">MATLAB</text>
+  <circle class="lang-dot" cx="16" cy="127" fill="#cccccc" />
+  <text x="26" y="131" class="meta">CSS</text>
+  <circle class="lang-dot" cx="126" cy="127" fill="#cccccc" />
+  <text x="136" y="131" class="meta">SWIG</text>
+  <circle class="lang-dot" cx="236" cy="127" fill="#cccccc" />
+  <text x="246" y="131" class="meta">Shell</text>
+  <circle class="lang-dot" cx="346" cy="127" fill="#cccccc" />
+  <text x="356" y="131" class="meta">Java</text>
+  <circle class="lang-dot" cx="16" cy="149" fill="#cccccc" />
+  <text x="26" y="153" class="meta">Lua</text>
+  <circle class="lang-dot" cx="126" cy="149" fill="#cccccc" />
+  <text x="136" y="153" class="meta">Assembly</text>
+  <circle class="lang-dot" cx="236" cy="149" fill="#cccccc" />
+  <text x="246" y="153" class="meta">PHP</text>
+  <circle class="lang-dot" cx="346" cy="149" fill="#cccccc" />
+  <text x="356" y="153" class="meta">Pawn</text>
+  <circle class="lang-dot" cx="16" cy="171" fill="#cccccc" />
+  <text x="26" y="175" class="meta">M4</text>
+  <circle class="lang-dot" cx="126" cy="171" fill="#cccccc" />
+  <text x="136" y="175" class="meta">Batchfile</text>
+  <circle class="lang-dot" cx="236" cy="171" fill="#cccccc" />
+  <text x="246" y="175" class="meta">Dockerfile</text>
+  <circle class="lang-dot" cx="346" cy="171" fill="#cccccc" />
+  <text x="356" y="175" class="meta">M</text>
+  <text x="16" y="111" class="meta">⭐ 1 star(s)</text>
 </svg>

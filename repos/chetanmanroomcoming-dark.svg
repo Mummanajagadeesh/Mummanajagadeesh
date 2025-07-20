@@ -13,8 +13,10 @@
   </a>
   <rect x="420" y="16" rx="4" ry="4" width="65" height="18" fill="#1f6feb1a" stroke="#388bfd" />
   <text x="428" y="29" class="badge">Private</text>
-  <text x="16" y="55" class="repo-desc">No description provided</text>
-  <circle class="lang-dot" cx="16" cy="80" fill="#e34c26" />
-  <text x="26" y="84" class="meta">HTML</text>
-  <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">No description provided</tspan>
+  </text>
+  <circle class="lang-dot" cx="16" cy="83" fill="#e34c26" />
+  <text x="26" y="87" class="meta">HTML</text>
+  <text x="16" y="111" class="meta">⭐ 0 star(s)</text>
 </svg>

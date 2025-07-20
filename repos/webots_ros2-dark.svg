@@ -11,24 +11,26 @@
   <a href="https://github.com/Mummanajagadeesh/webots_ros2" target="_blank">
     <text x="16" y="30" class="repo-name">webots_ros2</text>
   </a>
-  <text x="16" y="55" class="repo-desc">Webots ROS 2 packages</text>
-  <circle class="lang-dot" cx="16" cy="80" fill="#cccccc" />
-  <text x="26" y="84" class="meta">C</text>
-  <circle class="lang-dot" cx="91" cy="80" fill="#3572A5" />
-  <text x="101" y="84" class="meta">Python</text>
-  <circle class="lang-dot" cx="166" cy="80" fill="#cccccc" />
-  <text x="176" y="84" class="meta">C++</text>
-  <circle class="lang-dot" cx="241" cy="80" fill="#cccccc" />
-  <text x="251" y="84" class="meta">SWIG</text>
-  <circle class="lang-dot" cx="316" cy="80" fill="#cccccc" />
-  <text x="326" y="84" class="meta">Makefile</text>
-  <circle class="lang-dot" cx="391" cy="80" fill="#cccccc" />
-  <text x="401" y="84" class="meta">CMake</text>
-  <circle class="lang-dot" cx="466" cy="80" fill="#cccccc" />
-  <text x="476" y="84" class="meta">Shell</text>
-  <circle class="lang-dot" cx="541" cy="80" fill="#cccccc" />
-  <text x="551" y="84" class="meta">Lua</text>
-  <circle class="lang-dot" cx="616" cy="80" fill="#cccccc" />
-  <text x="626" y="84" class="meta">Batchfile</text>
-  <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">Webots ROS 2 packages</tspan>
+  </text>
+  <circle class="lang-dot" cx="16" cy="83" fill="#cccccc" />
+  <text x="26" y="87" class="meta">C</text>
+  <circle class="lang-dot" cx="126" cy="83" fill="#3572A5" />
+  <text x="136" y="87" class="meta">Python</text>
+  <circle class="lang-dot" cx="236" cy="83" fill="#cccccc" />
+  <text x="246" y="87" class="meta">C++</text>
+  <circle class="lang-dot" cx="346" cy="83" fill="#cccccc" />
+  <text x="356" y="87" class="meta">SWIG</text>
+  <circle class="lang-dot" cx="16" cy="105" fill="#cccccc" />
+  <text x="26" y="109" class="meta">Makefile</text>
+  <circle class="lang-dot" cx="126" cy="105" fill="#cccccc" />
+  <text x="136" y="109" class="meta">CMake</text>
+  <circle class="lang-dot" cx="236" cy="105" fill="#cccccc" />
+  <text x="246" y="109" class="meta">Shell</text>
+  <circle class="lang-dot" cx="346" cy="105" fill="#cccccc" />
+  <text x="356" y="109" class="meta">Lua</text>
+  <circle class="lang-dot" cx="16" cy="127" fill="#cccccc" />
+  <text x="26" y="131" class="meta">Batchfile</text>
+  <text x="16" y="111" class="meta">⭐ 0 star(s)</text>
 </svg>

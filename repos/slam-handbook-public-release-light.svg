@@ -11,6 +11,8 @@
   <a href="https://github.com/Mummanajagadeesh/slam-handbook-public-release" target="_blank">
     <text x="16" y="30" class="repo-name">slam-handbook-public-release</text>
   </a>
-  <text x="16" y="55" class="repo-desc">Release repo for our SLAM Handbook</text>
-  <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">Release repo for our SLAM Handbook</tspan>
+  </text>
+  <text x="16" y="111" class="meta">⭐ 0 star(s)</text>
 </svg>

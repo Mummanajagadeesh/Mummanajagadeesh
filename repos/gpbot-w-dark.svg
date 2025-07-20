@@ -1,4 +1,4 @@
-<svg width="500" height="140" viewBox="0 0 500 140" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="212" viewBox="0 0 500 212" xmlns="http://www.w3.org/2000/svg">
   <style>
     .card-bg { fill: #0d1117; stroke: #1f6feb; stroke-width: 1; }
     .repo-name { font: bold 16px sans-serif; fill: #58a6ff; cursor: pointer; }
@@ -7,18 +7,24 @@
     .badge { font: 11px sans-serif; fill: #8b949e; }
     .lang-dot { r: 5; }
   </style>
-  <rect class="card-bg" x="0" y="0" width="500" height="140" rx="12" ry="12" />
+  <rect class="card-bg" x="0" y="0" width="500" height="212" rx="12" ry="12" />
   <a href="https://github.com/Mummanajagadeesh/gpbot-w" target="_blank">
     <text x="16" y="30" class="repo-name">gpbot-w</text>
   </a>
-  <text x="16" y="55" class="repo-desc">This 4-wheeled robot is equipped with GPS, IMU, LiDAR, Distance Sensors, and a 2-DOF camera (using linear and rotary actuators). It detects objects using computer vision, avoids obstacles, and navigates autonomously.</text>
-  <circle class="lang-dot" cx="16" cy="80" fill="#cccccc" />
-  <text x="26" y="84" class="meta">C++</text>
-  <circle class="lang-dot" cx="91" cy="80" fill="#3572A5" />
-  <text x="101" y="84" class="meta">Python</text>
-  <circle class="lang-dot" cx="166" cy="80" fill="#cccccc" />
-  <text x="176" y="84" class="meta">Makefile</text>
-  <circle class="lang-dot" cx="241" cy="80" fill="#e34c26" />
-  <text x="251" y="84" class="meta">HTML</text>
-  <text x="16" y="110" class="meta">⭐ 2 star(s)</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">This 4-wheeled robot is equipped with GPS,</tspan>
+    <tspan x="16" dy="18">IMU, LiDAR, Distance Sensors, and a 2-DOF</tspan>
+    <tspan x="16" dy="18">camera (using linear and rotary actuators).</tspan>
+    <tspan x="16" dy="18">It detects objects using computer vision,</tspan>
+    <tspan x="16" dy="18">avoids obstacles, and navigates autonomously.</tspan>
+  </text>
+  <circle class="lang-dot" cx="16" cy="155" fill="#cccccc" />
+  <text x="26" y="159" class="meta">C++</text>
+  <circle class="lang-dot" cx="126" cy="155" fill="#3572A5" />
+  <text x="136" y="159" class="meta">Python</text>
+  <circle class="lang-dot" cx="236" cy="155" fill="#cccccc" />
+  <text x="246" y="159" class="meta">Makefile</text>
+  <circle class="lang-dot" cx="346" cy="155" fill="#e34c26" />
+  <text x="356" y="159" class="meta">HTML</text>
+  <text x="16" y="183" class="meta">⭐ 2 star(s)</text>
 </svg>

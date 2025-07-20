@@ -11,6 +11,8 @@
   <a href="https://github.com/Mummanajagadeesh/bah-2024-isro" target="_blank">
     <text x="16" y="30" class="repo-name">bah-2024-isro</text>
   </a>
-  <text x="16" y="55" class="repo-desc">Bharatiya Antariksh Hackathon 2024</text>
-  <text x="16" y="110" class="meta">⭐ 1 star(s)</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">Bharatiya Antariksh Hackathon 2024</tspan>
+  </text>
+  <text x="16" y="111" class="meta">⭐ 1 star(s)</text>
 </svg>

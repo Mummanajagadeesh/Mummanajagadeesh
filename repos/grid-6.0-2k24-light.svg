@@ -11,6 +11,8 @@
   <a href="https://github.com/Mummanajagadeesh/GRiD-6.0-2k24" target="_blank">
     <text x="16" y="30" class="repo-name">GRiD-6.0-2k24</text>
   </a>
-  <text x="16" y="55" class="repo-desc">Flipkart GRiD 6.0 - Robotics Challenge</text>
-  <text x="16" y="110" class="meta">⭐ 1 star(s)</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">Flipkart GRiD 6.0 - Robotics Challenge</tspan>
+  </text>
+  <text x="16" y="111" class="meta">⭐ 1 star(s)</text>
 </svg>

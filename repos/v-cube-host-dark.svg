@@ -1,4 +1,4 @@
-<svg width="500" height="140" viewBox="0 0 500 140" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="194" viewBox="0 0 500 194" xmlns="http://www.w3.org/2000/svg">
   <style>
     .card-bg { fill: #0d1117; stroke: #1f6feb; stroke-width: 1; }
     .repo-name { font: bold 16px sans-serif; fill: #58a6ff; cursor: pointer; }
@@ -7,16 +7,21 @@
     .badge { font: 11px sans-serif; fill: #8b949e; }
     .lang-dot { r: 5; }
   </style>
-  <rect class="card-bg" x="0" y="0" width="500" height="140" rx="12" ry="12" />
+  <rect class="card-bg" x="0" y="0" width="500" height="194" rx="12" ry="12" />
   <a href="https://github.com/Mummanajagadeesh/v-cube-host" target="_blank">
     <text x="16" y="30" class="repo-name">v-cube-host</text>
   </a>
   <rect x="420" y="16" rx="4" ry="4" width="65" height="18" fill="#1f6feb1a" stroke="#388bfd" />
   <text x="428" y="29" class="badge">Private</text>
-  <text x="16" y="55" class="repo-desc"> Repository for hosting the V-RU81K5CU83 project. This repository serves a WebGL-based app via GitHub Pages, acting as a lightweight web server.</text>
-  <circle class="lang-dot" cx="16" cy="80" fill="#e34c26" />
-  <text x="26" y="84" class="meta">HTML</text>
-  <circle class="lang-dot" cx="91" cy="80" fill="#cccccc" />
-  <text x="101" y="84" class="meta">CSS</text>
-  <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">Repository for hosting the V-RU81K5CU83</tspan>
+    <tspan x="16" dy="18">project. This repository serves a</tspan>
+    <tspan x="16" dy="18">WebGL-based app via GitHub Pages, acting as</tspan>
+    <tspan x="16" dy="18">a lightweight web server.</tspan>
+  </text>
+  <circle class="lang-dot" cx="16" cy="137" fill="#e34c26" />
+  <text x="26" y="141" class="meta">HTML</text>
+  <circle class="lang-dot" cx="126" cy="137" fill="#cccccc" />
+  <text x="136" y="141" class="meta">CSS</text>
+  <text x="16" y="165" class="meta">⭐ 0 star(s)</text>
 </svg>

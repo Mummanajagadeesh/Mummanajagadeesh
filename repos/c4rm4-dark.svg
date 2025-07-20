@@ -1,4 +1,4 @@
-<svg width="500" height="140" viewBox="0 0 500 140" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="194" viewBox="0 0 500 194" xmlns="http://www.w3.org/2000/svg">
   <style>
     .card-bg { fill: #0d1117; stroke: #1f6feb; stroke-width: 1; }
     .repo-name { font: bold 16px sans-serif; fill: #58a6ff; cursor: pointer; }
@@ -7,12 +7,17 @@
     .badge { font: 11px sans-serif; fill: #8b949e; }
     .lang-dot { r: 5; }
   </style>
-  <rect class="card-bg" x="0" y="0" width="500" height="140" rx="12" ry="12" />
+  <rect class="card-bg" x="0" y="0" width="500" height="194" rx="12" ry="12" />
   <a href="https://github.com/Mummanajagadeesh/C4RM4" target="_blank">
     <text x="16" y="30" class="repo-name">C4RM4</text>
   </a>
   <rect x="420" y="16" rx="4" ry="4" width="65" height="18" fill="#1f6feb1a" stroke="#388bfd" />
   <text x="428" y="29" class="badge">Private</text>
-  <text x="16" y="55" class="repo-desc">Basic humanoid-like robot implementation featuring motion control, sensor integration, and ROS2 compatibility for simulation and real-world applications</text>
-  <text x="16" y="110" class="meta">⭐ 1 star(s)</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">Basic humanoid-like robot implementation</tspan>
+    <tspan x="16" dy="18">featuring motion control, sensor</tspan>
+    <tspan x="16" dy="18">integration, and ROS2 compatibility for</tspan>
+    <tspan x="16" dy="18">simulation and real-world applications</tspan>
+  </text>
+  <text x="16" y="165" class="meta">⭐ 1 star(s)</text>
 </svg>

@@ -13,6 +13,8 @@
   </a>
   <rect x="420" y="16" rx="4" ry="4" width="65" height="18" fill="#ddf4ff" stroke="#0969da" />
   <text x="428" y="29" class="badge">Private</text>
-  <text x="16" y="55" class="repo-desc">No description provided</text>
-  <text x="16" y="110" class="meta">⭐ 0 star(s)</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">No description provided</tspan>
+  </text>
+  <text x="16" y="111" class="meta">⭐ 0 star(s)</text>
 </svg>
