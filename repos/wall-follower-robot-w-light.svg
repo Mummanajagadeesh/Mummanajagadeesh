@@ -1,0 +1,22 @@
+<svg width="500" height="140" viewBox="0 0 500 140" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card-bg { fill: #fff; stroke: #1f6feb; stroke-width: 1; }
+    .repo-name { font: bold 16px sans-serif; fill: #0969da; cursor: pointer; }
+    .repo-desc { font: 14px sans-serif; fill: #57606a; }
+    .meta { font: 12px sans-serif; fill: #57606a; }
+    .badge { font: 11px sans-serif; fill: #57606a; }
+    .lang-dot { r: 5; }
+  </style>
+  <rect class="card-bg" x="0" y="0" width="500" height="140" rx="12" ry="12" />
+  <a href="https://github.com/Mummanajagadeesh/wall-follower-robot-w" target="_blank">
+    <text x="16" y="30" class="repo-name">wall-follower-robot-w</text>
+  </a>
+  <text x="16" y="55" class="repo-desc">The wall-following robot travels along walls in a maze. It uses basic sensors to detect the distance to the wall and adjusts its path to stay close. The robot explores all possible paths to find its destination without relying on algorithms, simply following the wall as it moves</text>
+  <circle class="lang-dot" cx="16" cy="80" fill="#3572A5" />
+  <text x="26" y="84" class="meta">Python</text>
+  <circle class="lang-dot" cx="91" cy="80" fill="#cccccc" />
+  <text x="101" y="84" class="meta">CSS</text>
+  <circle class="lang-dot" cx="166" cy="80" fill="#e34c26" />
+  <text x="176" y="84" class="meta">HTML</text>
+  <text x="16" y="110" class="meta">⭐ 1 star(s)</text>
+</svg>
