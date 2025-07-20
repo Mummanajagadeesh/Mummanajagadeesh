@@ -21,12 +21,13 @@ jobs:
       - name: Install jq
         run: sudo apt-get install jq -y
 
-      - name: Fetch all public repositories
+      - name: Fetch all repositories (public + private)
         env:
           GH_TOKEN: ${{ secrets.PRIVATE_GH_TOKEN }}
         run: |
           curl -s -H "Authorization: Bearer $GH_TOKEN" \
-            "https://api.github.com/users/Mummanajagadeesh/repos?per_page=100&type=public" > all_repos.json
+            "https://api.github.com/user/repos?per_page=100&affiliation=owner" > all_repos.json
+
 
       - name: Generate repo cards
         run: |
