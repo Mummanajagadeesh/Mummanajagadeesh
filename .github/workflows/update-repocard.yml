@@ -28,6 +28,9 @@ jobs:
           curl -s -H "Authorization: Bearer $GH_TOKEN" \
             "https://api.github.com/user/repos?per_page=100&affiliation=owner" > all_repos.json
 
+          # Extract avatar_url from first repo's owner (assumes all repos are yours)
+          jq -r '.[0].owner.avatar_url' all_repos.json > avatar_url.txt
+
       - name: Generate repo cards
         env:
           GH_TOKEN: ${{ secrets.PRIVATE_GH_TOKEN }}
@@ -52,6 +55,7 @@ jobs:
             META_COLOR=$7
             BADGE_FILL=$8
             BADGE_STROKE=$9
+            AVATAR_URL=${10}
 
             DESC_LINES=$(echo "$DESC" | fold -s -w 45)
             DESC_LINE_COUNT=$(echo "$DESC_LINES" | wc -l)
@@ -71,9 +75,18 @@ jobs:
             echo "    .badge { font: 11px sans-serif; fill: $META_COLOR; }" >> $FILE
             echo "    .lang-dot { r: 5; }" >> $FILE
             echo "  </style>" >> $FILE
+
+            echo "  <defs>" >> $FILE
+            echo "    <clipPath id=\"avatarClip\">" >> $FILE
+            echo "      <circle cx=\"26\" cy=\"22\" r=\"10\" />" >> $FILE
+            echo "    </clipPath>" >> $FILE
+            echo "  </defs>" >> $FILE
+
             echo "  <rect class=\"card-bg\" x=\"0\" y=\"0\" width=\"500\" height=\"$HEIGHT\" rx=\"12\" ry=\"12\" />" >> $FILE
+            echo "  <image href=\"$AVATAR_URL\" x=\"16\" y=\"12\" width=\"20\" height=\"20\" clip-path=\"url(#avatarClip)\" />" >> $FILE
+
             echo "  <a href=\"https://github.com/Mummanajagadeesh/$NAME\" target=\"_blank\">" >> $FILE
-            echo "    <text x=\"16\" y=\"30\" class=\"repo-name\">$NAME</text>" >> $FILE
+            echo "    <text x=\"44\" y=\"30\" class=\"repo-name\">$NAME</text>" >> $FILE
             echo "  </a>" >> $FILE
 
             if [ "$PRIVATE" = "true" ]; then
@@ -121,6 +134,8 @@ jobs:
             echo "</svg>" >> $FILE
           }
 
+          AVATAR_URL=$(cat avatar_url.txt)
+
           for row in $(jq -r '.[] | @base64' all_repos.json); do
             _jq() {
               echo "$row" | base64 --decode | jq -r "$1"
@@ -135,8 +150,8 @@ jobs:
             LANGS=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
               "https://api.github.com/repos/Mummanajagadeesh/$NAME/languages" | jq -r 'keys_unsorted[]')
 
-            generate_svg light "repos/${NAME,,}-light.svg" "#fff" "#1f6feb" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da"
-            generate_svg dark "repos/${NAME,,}-dark.svg" "#0d1117" "#1f6feb" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd"
+            generate_svg light "repos/${NAME,,}-light.svg" "#fff" "#1f6feb" "#0969da" "#57606a" "#57606a" "#ddf4ff" "#0969da" "$AVATAR_URL"
+            generate_svg dark "repos/${NAME,,}-dark.svg" "#0d1117" "#1f6feb" "#58a6ff" "#8b949e" "#8b949e" "#1f6feb1a" "#388bfd" "$AVATAR_URL"
 
             echo "" >> insert.txt
             echo "<a href=\"https://github.com/Mummanajagadeesh#gh-light-mode-only\">" >> insert.txt
