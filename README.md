@@ -201,7 +201,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 - **Automated model `inference` and `performance metric` evaluation via Tcl/Perl scripts (executing Python and Icarus Verilog commands). Additionally, a real-time Tkinter GUI was created for test user input.**
 
-- **Currently working on object detection using shallow CNNs on the `Pascal VOC` dataset.**
+- **Currently working on Object Detection using Shallow CNNs on the `Pascal VOC` dataset.**
 
 
 </details>
@@ -340,7 +340,7 @@ Designed and simulated semiconductor structures (N-resistor, PN diode, NMOS) usi
 
 
 
-A vision-powered, algorithm-driven robot that solves the Rubik’s Cube with precision using Kociemba’s two-phase algorithm for optimal move sequences
+A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with precision using Kociemba’s two-phase algorithm for optimal move sequences, developed in Unity3D with C# scripting
 
 </details>
 
