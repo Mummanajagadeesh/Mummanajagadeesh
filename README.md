@@ -1,4 +1,4 @@
-# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-07-21 22:57:13 IST -->
+# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-07-21 22:30:37 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -157,7 +157,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 </summary>
 <br>
   
-Nickname: **NeVer ImProVe**
+Tagline: **NeVer ImProVe & NeVer MOVe**
 
 
 <br><br>
@@ -184,6 +184,9 @@ Nickname: **NeVer ImProVe**
 
 <br>
 
+<p><strong>MOVe</strong> – Math Ops in VErilog</p>
+
+
 <!-- CORDIC Algorithm Verilog Repo -->
 <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-light-mode-only">
   <img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only" alt="CORDIC Algorithm GitHub repository card in light mode: Trigonometric and root functions" />
@@ -191,9 +194,13 @@ Nickname: **NeVer ImProVe**
 <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-dark-mode-only">
   <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only" alt="CORDIC Algorithm GitHub repository card in dark mode: Trigonometric and root functions" />
 </a>
-<p><strong>CORDIC Algorithm (Verilog)</strong> – Implements Coordinate Rotation Digital Computer (CORDIC) algorithms in Verilog for efficient hardware-based calculation of sine, cosine, tangent, square root, magnitude, and more.</p>
+
+- 
+  <p><strong>CORDIC Algorithm (Verilog)</strong> – Implements Coordinate Rotation Digital Computer (CORDIC) algorithms in Verilog for efficient hardware-based calculation of sine, cosine, tangent, square root, magnitude, and more.</p>
 
 <br>
+
+
 
 <!-- Systolic Array Matrix Multiplication Repo -->
 <a href="https://github.com/Mummanajagadeesh/systolic-array-matrix-multiplication#gh-light-mode-only">
@@ -202,7 +209,10 @@ Nickname: **NeVer ImProVe**
 <a href="https://github.com/Mummanajagadeesh/systolic-array-matrix-multiplication#gh-dark-mode-only">
   <img src="./repos/systolic-array-matrix-multiplication-dark.svg#gh-dark-mode-only" alt="Systolic Array Matrix Multiplication GitHub repository card in dark mode: Hardware-optimized matrix multiplication" />
 </a>
-<p><strong>Systolic Array Matrix Multiplication</strong> – Verilog implementation of matrix multiplication using systolic arrays to enable parallel computation and hardware-level performance optimization.</p>
+
+-   
+   <p><strong>Systolic Array Matrix Multiplication</strong> – Verilog implementation of matrix multiplication using systolic arrays to enable parallel computation and hardware-level performance optimization.</p>
+  <br>
 
 <br>
 
