@@ -157,7 +157,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 </summary>
 <br>
   
-Tagline: **NeVer ImProVe & NeVer MOVe**
+> **NeVer ImProVe & NeVer MOVe ¯\\\_(ツ)_/¯**
 
 
 <br><br>
