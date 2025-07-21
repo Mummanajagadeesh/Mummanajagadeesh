@@ -1,4 +1,4 @@
-# Olá, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-07-21 15:50:22 IST -->
+# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-07-21 15:26:39 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -157,49 +157,51 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 </summary>
 
 <br><br>
-<!-- Light Mode Repo Card -->
+
+<!-- ImProVe Repo -->
 <a href="https://github.com/Mummanajagadeesh/ImProVe#gh-light-mode-only">
-  <img src="./repos/improve-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+  <img src="./repos/improve-light.svg#gh-light-mode-only" alt="ImProVe GitHub repository card in light mode: Image processing algorithms" />
 </a>
-<br>
-<!-- Dark Mode Repo Card -->
 <a href="https://github.com/Mummanajagadeesh/ImProVe#gh-dark-mode-only">
-  <img src="./repos/improve-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+  <img src="./repos/improve-dark.svg#gh-dark-mode-only" alt="ImProVe GitHub repository card in dark mode: Image processing algorithms" />
 </a>
+<p><strong>ImProVe</strong> – A collection of image processing algorithms implemented in Verilog, including geometric transformations, color space conversions, and other foundational operations.</p>
+
 <br>
+
+<!-- NeVer Repo -->
 <a href="https://github.com/Mummanajagadeesh/NeVer#gh-light-mode-only">
-  <img src="./repos/never-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+  <img src="./repos/never-light.svg#gh-light-mode-only" alt="NeVer GitHub repository card in light mode: Verilog-based neural network" />
 </a>
-
-<!-- Dark Mode Repo Card -->
 <a href="https://github.com/Mummanajagadeesh/NeVer#gh-dark-mode-only">
-  <img src="./repos/never-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+  <img src="./repos/never-dark.svg#gh-dark-mode-only" alt="NeVer GitHub repository card in dark mode: Verilog-based neural network" />
 </a>
+<p><strong>NeVer</strong> – A hardware-implemented multi-layer perceptron (MLP) neural network in Verilog for character recognition using EMNIST and MNIST datasets.</p>
 
 <br>
 
+<!-- CORDIC Algorithm Verilog Repo -->
 <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-light-mode-only">
-  <img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+  <img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only" alt="CORDIC Algorithm GitHub repository card in light mode: Trigonometric and root functions" />
 </a>
-
-<!-- Dark Mode Repo Card -->
 <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-dark-mode-only">
-  <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+  <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only" alt="CORDIC Algorithm GitHub repository card in dark mode: Trigonometric and root functions" />
 </a>
+<p><strong>CORDIC Algorithm (Verilog)</strong> – Implements Coordinate Rotation Digital Computer (CORDIC) algorithms in Verilog for efficient hardware-based calculation of sine, cosine, tangent, square root, magnitude, and more.</p>
 
 <br>
 
+<!-- Systolic Array Matrix Multiplication Repo -->
 <a href="https://github.com/Mummanajagadeesh/systolic-array-matrix-multiplication#gh-light-mode-only">
-  <img src="./repos/systolic-array-matrix-multiplication-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+  <img src="./repos/systolic-array-matrix-multiplication-light.svg#gh-light-mode-only" alt="Systolic Array Matrix Multiplication GitHub repository card in light mode: Hardware-optimized matrix multiplication" />
 </a>
-
-<!-- Dark Mode Repo Card -->
 <a href="https://github.com/Mummanajagadeesh/systolic-array-matrix-multiplication#gh-dark-mode-only">
-  <img src="./repos/systolic-array-matrix-multiplication-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+  <img src="./repos/systolic-array-matrix-multiplication-dark.svg#gh-dark-mode-only" alt="Systolic Array Matrix Multiplication GitHub repository card in dark mode: Hardware-optimized matrix multiplication" />
 </a>
-
+<p><strong>Systolic Array Matrix Multiplication</strong> – Verilog implementation of matrix multiplication using systolic arrays to enable parallel computation and hardware-level performance optimization.</p>
 
 <br>
+
 
 **Duration:** Individual, Ongoing  
 **Tools:** Verilog (Icarus Verilog, Xilinx Vivado) | Python (OpenCV, NumPy, Tkinter) | Scripting (TCL, Perl)
