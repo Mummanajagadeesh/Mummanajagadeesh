@@ -187,6 +187,17 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
   <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
 </a>
 
+<br>
+
+<a href="https://github.com/Mummanajagadeesh/systolic-array-matrix-multiplication#gh-light-mode-only">
+  <img src="./repos/systolic-array-matrix-multiplication-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+</a>
+
+<!-- Dark Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/systolic-array-matrix-multiplication#gh-dark-mode-only">
+  <img src="./repos/systolic-array-matrix-multiplication-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+</a>
+
 
 <br>
 
