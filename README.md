@@ -157,8 +157,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 </summary>
 <br>
   
-> **NeVer ImProVe — just MOVe on  ¯\\\_(ツ)_/¯**
-
+> **NeVer ImProVe-d — just MOVe-d on  ¯\\\_(ツ)_/¯**
 
 <br><br>
 
