@@ -242,7 +242,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 - **Automated model `inference` and `performance metric` evaluation via Tcl/Perl scripts (executing Python and Icarus Verilog commands). Additionally, a real-time Tkinter GUI was created for test user input.**
 
-- **Currently working on Object Detection using Shallow CNNs on the `Pascal VOC` dataset.**
+- **Currently working on Object Detection using Optimised CNNs on the `CIFAR-10` dataset.**
 
 
 </details>
