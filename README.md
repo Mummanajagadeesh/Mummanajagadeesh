@@ -238,7 +238,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 - **Designed `image processing algorithms` (e.g., edge detection, geometric & color transforms, noise reduction) in Verilog, utilizing `hardware optimized math` techniques to maximize computational efficiency. These algorithms were fine-tuned for `low-latency` preprocessing in embedded vision SoCs.**
 
-- **Implemented a `64-bit 3-layer perceptron` (`MLP 784-256-128-62`) for Extended-MNIST Character Recognition (`62 classes, ∼124k samples`) using an FSM-controlled neural network in Verilog. This implementation achieved `>90% training accuracy` (`>75% simulation accuracy`) with `~1.5s inference latency` (in simulation). A full end-to-end preprocessing and inference workflow was developed.**
+- **Implemented a `64-bit 3-layer perceptron` (`MLP 784-256-128-62`, `~242k params`) for Extended-MNIST Character Recognition (`62 classes, ∼124k samples`) using an FSM-controlled neural network in Verilog. This implementation achieved `>90% training accuracy` (`>75% simulation accuracy`) with `~1.5s inference latency` (in simulation). A full end-to-end preprocessing and inference workflow was developed.**
 
 - **Automated model `inference` and `performance metric` evaluation via Tcl/Perl scripts (executing Python and Icarus Verilog commands). Additionally, a real-time Tkinter GUI was created for test user input.**
 
