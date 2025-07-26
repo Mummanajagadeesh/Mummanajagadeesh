@@ -322,6 +322,38 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 <details>
 <summary>
   <strong>
+    I2C & SPI Protocol FSMs in Verilog | 
+        <a href="https://mummanajagadeesh.github.io/protocols/" target="_blank">Link</a>
+  </strong>
+</summary>
+  
+<br><br>
+<a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-light-mode-only">
+  <img src="./repos/spi-protocol-verilog-light.svg#gh-light-mode-only" alt="SPI Protocol in Verilog (light mode)" />
+</a>
+<a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-light-mode-only">
+  <img src="./repos/i2c-protocol-verilog-light.svg#gh-light-mode-only" alt="I2C Protocol in Verilog (light mode)" />
+</a>
+
+<!-- Dark Mode Repo Cards -->
+<a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-dark-mode-only">
+  <img src="./repos/spi-protocol-verilog-dark.svg#gh-dark-mode-only" alt="SPI Protocol in Verilog (dark mode)" />
+</a>
+<a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-dark-mode-only">
+  <img src="./repos/i2c-protocol-verilog-dark.svg#gh-dark-mode-only" alt="I2C Protocol in Verilog (dark mode)" />
+</a>
+<br>
+
+<br>
+
+Designed I2C with a single-master, multi-slave configuration supporting clock stretching and configurable delays; SPI supports modes 0–3 via CPOL/CPHA, performs single 8-bit full-duplex transfers, and allows clock frequency scaling through a divider
+
+</details>
+
+
+<details>
+<summary>
+  <strong>
     Device Modeling using Sentaurus TCAD | 
         <a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS/" target="_blank">Link</a>
   </strong>
