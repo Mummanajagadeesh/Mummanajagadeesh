@@ -1,4 +1,4 @@
-<svg width="500" height="136" viewBox="0 0 500 136" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="158" viewBox="0 0 500 158" xmlns="http://www.w3.org/2000/svg">
   <style>
     .card-bg { fill: #fff; stroke: #1f6feb; stroke-width: 1; }
     .repo-name { font: bold 16px sans-serif; fill: #0969da; cursor: pointer; text-decoration: underline; }
@@ -7,7 +7,7 @@
     .badge { font: 11px sans-serif; fill: #57606a; }
     .lang-dot { r: 5; }
   </style>
-  <rect class="card-bg" x="0" y="0" width="500" height="136" rx="12" ry="12" />
+  <rect class="card-bg" x="0" y="0" width="500" height="158" rx="12" ry="12" />
   <a href="https://github.com/Mummanajagadeesh/alternate-numerical-notations-for-riscv" target="_blank">
     <text x="16" y="30" class="repo-name">alternate-numerical-notations-for-riscv</text>
   </a>
@@ -17,5 +17,7 @@
     <tspan x="16" dy="0">Posit number system: An alternative to IEEE</tspan>
     <tspan x="16" dy="18">754 for efficient arithmetic</tspan>
   </text>
-  <text x="484" y="106" text-anchor="end" class="meta">⭐ 0 star(s)</text>
+  <circle class="lang-dot" cx="16" cy="101" fill="#3572A5" />
+  <text x="26" y="105" class="meta">Python</text>
+  <text x="484" y="128" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>
