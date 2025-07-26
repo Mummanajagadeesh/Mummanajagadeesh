@@ -1,4 +1,4 @@
-# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-07-26 18:58:24 IST -->
+# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-07-26 18:55:17 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -220,12 +220,23 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
   </tr>
 </table>
 
+<!-- Light Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/alternate-numerical-notations-for-riscv#gh-light-mode-only">
+  <img src="./repos/alternate-numerical-notations-for-riscv-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+</a>
+
+<!-- Dark Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/alternate-numerical-notations-for-riscv#gh-dark-mode-only">
+  <img src="./repos/alternate-numerical-notations-for-riscv-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+</a>
+<br>
+
 <!-- Descriptions as bullet points -->
 <br>
 
 <ul>
   <li>
-    <p><strong>CORDIC Algorithm (Verilog)</strong> – Implements Coordinate Rotation Digital Computer (CORDIC) algorithms in Verilog for efficient hardware-based calculation of sine, cosine, tangent, square root, magnitude, and more.</p>
+    <p><strong>CORDIC Algorithm</strong> – Implements Coordinate Rotation Digital Computer (CORDIC) algorithms in Verilog for efficient hardware-based calculation of sine, cosine, tangent, square root, magnitude, and more.</p>
   </li>
   <li>
     <p><strong>Systolic Array Matrix Multiplication</strong> – Verilog implementation of matrix multiplication using systolic arrays to enable parallel computation and hardware-level performance optimization.</p>
@@ -297,7 +308,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
   
 <br><br>
 <!-- Light Mode Repo Card -->
-<a href="https://github.com/Mummanajagadeesh/RoSee#gh-light-mode-only">
+<a href="https://github.com/Mummanajagadeesh/RoSe#gh-light-mode-only">
   <img src="./repos/rose-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
 </a>
 
