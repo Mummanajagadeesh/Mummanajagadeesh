@@ -157,7 +157,9 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 </summary>
 <br>
   
-> **NeVer ImProVe-d — just MOVe-d on  ¯\\\_(ツ)_/¯**
+<!-- **NeVer ImProVe-d — just MOVe-d on  ¯\\\_(ツ)_/¯**-->
+
+> **I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯**
 
 <!-- **I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯** -->
 
@@ -345,20 +347,27 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 </summary>
   
 <br><br>
-<a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-light-mode-only">
-  <img src="./repos/spi-protocol-verilog-light.svg#gh-light-mode-only" alt="SPI Protocol in Verilog (light mode)" />
-</a>
-<a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-light-mode-only">
-  <img src="./repos/i2c-protocol-verilog-light.svg#gh-light-mode-only" alt="I2C Protocol in Verilog (light mode)" />
-</a>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-light-mode-only">
+        <img src="./repos/spi-protocol-verilog-light.svg#gh-light-mode-only" alt="SPI Protocol in Verilog (light mode)" />
+      </a>
+      <a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-dark-mode-only">
+        <img src="./repos/spi-protocol-verilog-dark.svg#gh-dark-mode-only" alt="SPI Protocol in Verilog (dark mode)" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-light-mode-only">
+        <img src="./repos/i2c-protocol-verilog-light.svg#gh-light-mode-only" alt="I2C Protocol in Verilog (light mode)" />
+      </a>
+      <a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-dark-mode-only">
+        <img src="./repos/i2c-protocol-verilog-dark.svg#gh-dark-mode-only" alt="I2C Protocol in Verilog (dark mode)" />
+      </a>
+    </td>
+  </tr>
+</table>
 
-<!-- Dark Mode Repo Cards -->
-<a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-dark-mode-only">
-  <img src="./repos/spi-protocol-verilog-dark.svg#gh-dark-mode-only" alt="SPI Protocol in Verilog (dark mode)" />
-</a>
-<a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-dark-mode-only">
-  <img src="./repos/i2c-protocol-verilog-dark.svg#gh-dark-mode-only" alt="I2C Protocol in Verilog (dark mode)" />
-</a>
 <br>
 
 <br>
