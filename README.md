@@ -251,6 +251,19 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
   </li>
 </ul>
 
+<br>
+
+<p><strong>Hardware Utilities</strong> – Supporting Verilog Modules</p>
+
+<ul>
+  <li>
+    <p><strong>RAM1KB</strong> – A 1KB (1024 x 8-bit) memory module in Verilog with write-once locking for even addresses. Includes a randomized testbench.</p>
+  </li>
+  <li>
+    <p><strong>FIFO Buffer</strong> – Not started. Planned as a synchronous FIFO with fixed depth, single clock domain, and standard full/empty flag logic.</p>
+  </li>
+</ul>
+
 
 <br>
 
