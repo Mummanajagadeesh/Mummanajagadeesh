@@ -253,7 +253,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 <br>
 
-<p><strong>Hardware Utilities</strong> – Supporting Verilog Modules</p>
+<p><strong>Storage and Buffer Modules</strong></p>
 
 <ul>
   <li>
