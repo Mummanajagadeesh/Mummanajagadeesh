@@ -241,7 +241,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
     <p><strong>CORDIC Algorithm</strong> – Implements Coordinate Rotation Digital Computer (CORDIC) algorithms in Verilog for efficient hardware-based calculation of sine, cosine, tangent, square root, magnitude, and more.</p>
   </li>
   <li>
-    <p><strong>Systolic Array Matrix Multiplication</strong> – Verilog implementation of matrix multiplication using systolic arrays to enable parallel computation and hardware-level performance optimization.</p>
+    <p><strong>Systolic Array Matrix Multiplication</strong> – Verilog implementation of matrix multiplication using systolic arrays to enable parallel computation and hardware-level performance optimization. Each processing element leverages a Multiply-Accumulate (MAC) unit for core operations.</p>
   </li>
   <li>
     <p><strong>Multiply-Accumulate Unit</strong> – The MAC unit uses Booth’s algorithm for efficient signed multiplication and a Kogge-Stone adder for fast, parallel addition. Booth reduces operation count by encoding the multiplier, while Kogge-Stone ensures low-latency summation through parallel carry computation. Together, they enable compute-heavy multiply-accumulate operations in a compact and optimized form.</p>
