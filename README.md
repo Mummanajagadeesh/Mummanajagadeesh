@@ -244,7 +244,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
     <p><strong>Systolic Array Matrix Multiplication</strong> – Verilog implementation of matrix multiplication using systolic arrays to enable parallel computation and hardware-level performance optimization.</p>
   </li>
     <li>
-    <p><strong>Posit Arithmetic (Python)</strong> – Implemented Posit number system as an alternative to IEEE 754 for numerical computations — to make it more efficient.</p>
+    <p><strong>Posit Arithmetic (Python)</strong> – Looking into implementing the Posit number system as an alternative to IEEE 754 for numerical computations.</p>
   </li>
 </ul>
 
