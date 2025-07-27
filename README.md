@@ -247,7 +247,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
     <p><strong>Multiply-Accumulate Unit</strong> – The MAC unit uses Booth’s algorithm for efficient signed multiplication and a Kogge-Stone adder for fast, parallel addition. Booth reduces operation count by encoding the multiplier, while Kogge-Stone ensures low-latency summation through parallel carry computation. Together, they enable compute-heavy multiply-accumulate operations in a compact and optimized form.</p>
   </li>
   <li>
-    <p><strong>Posit Arithmetic (Python)</strong> – Looking into implementing the Posit number system as an alternative to IEEE 754 for numerical computations.</p>
+    <p><strong>Posit Arithmetic (Python)</strong> – Currently using fixed-point arithmetic; considering Posit as an alternative to IEEE 754 for better precision and dynamic range. Still working through the trade-off.</p>
   </li>
 </ul>
 
