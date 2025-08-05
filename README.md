@@ -244,7 +244,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
     <p><strong>Systolic Array Matrix Multiplication</strong> – Verilog implementation of matrix multiplication using systolic arrays to enable parallel computation and hardware-level performance optimization. Each processing element leverages a Multiply-Accumulate (MAC) unit for core operations.</p>
   </li>
   <li>
-    <p><strong>Multiply-Accumulate Unit</strong> – The MAC unit uses Booth’s algorithm for efficient signed multiplication and a Kogge-Stone adder for fast, parallel addition. Booth reduces operation count by encoding the multiplier, while Kogge-Stone ensures low-latency summation through parallel carry computation. Together, they enable compute-heavy multiply-accumulate operations in a compact and optimized form.</p>
+    <p><strong>Multiply-Accumulate Unit</strong> – Multiply-Accumulate Unit – Uses Booth’s algorithm and a Kogge-Stone adder for efficient signed multiplication and fast parallel addition; other approaches like MBE and CSA are also being explored to boost speed.</p>
   </li>
   <li>
     <p><strong>Posit Arithmetic (Python)</strong> – Currently using fixed-point arithmetic; considering Posit as an alternative to IEEE 754 for better precision and dynamic range. Still working through the trade-off.</p>
