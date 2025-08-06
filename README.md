@@ -1,4 +1,4 @@
-# Bonjour le monde! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-08-06 17:26:38 IST -->
+# ¡Hola, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-08-06 17:18:49 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -161,6 +161,9 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 > **" I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯ "**
 
+
+A modular hardware-accelerated toolkit built entirely in Verilog using only open-source tools, featuring image processing algorithms, fixed-point arithmetic modules, and a fully implemented neural network for character recognition. Built for efficient, low-latency computation in embedded vision systems, with simulation automation and a real-time GUI interface
+
 <!-- **I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯** -->
 
 
@@ -266,9 +269,10 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 <br>
 
+**Current Project Overview**
 
 **Duration:** Individual, Ongoing  
-**Tools:** Verilog (Icarus Verilog, Xilinx Vivado) | Python (OpenCV, NumPy, Tkinter) | Scripting (TCL, Perl)
+**Tools:** Verilog (Icarus Verilog) | Python (OpenCV, NumPy, Tkinter) | Scripting (TCL, Perl)
 
 - **Designed `image processing algorithms` (e.g., edge detection, geometric & color transforms, noise reduction) in Verilog, utilizing `hardware optimized math` techniques to maximize computational efficiency. These algorithms were fine-tuned for `low-latency` preprocessing in embedded vision SoCs.**
 
@@ -303,6 +307,8 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 <br>
 
 <br>
+
+An autonomous aerial system designed for reliable navigation and landing in environments without GPS, using onboard visual-inertial mapping, real-time obstacle awareness, and wireless telemetry
 
 **Duration:** Team-based (ISRO RIG), Ongoing
 **Tools:** Jetson Nano | Pixhawk | RealSense D435i | ESP32 (ESP‑Now) | VINS‑Fusion | ROS2
