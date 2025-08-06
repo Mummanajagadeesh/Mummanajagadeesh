@@ -1,4 +1,4 @@
-# Bonjour le monde! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-08-06 16:28:58 IST -->
+# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-08-06 16:16:07 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -244,7 +244,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
     <p><strong>Systolic Array Matrix Multiplication</strong> – Verilog implementation of matrix multiplication using systolic arrays to enable parallel computation and hardware-level performance optimization. Each processing element leverages a Multiply-Accumulate (MAC) unit for core operations.</p>
   </li>
   <li>
-    <p><strong>Multiply-Accumulate Unit</strong> – Multiply-Accumulate Unit – Uses Booth’s algorithm and a Kogge-Stone adder for efficient signed multiplication and fast parallel addition; other approaches like MBE and CSA are also being explored to boost speed.</p>
+    <p><strong>Multiply-Accumulate Unit</strong> – Uses Booth’s algorithm and a Kogge-Stone adder for efficient signed multiplication and fast parallel addition; other approaches like MBE and CSA are also being explored to boost speed.</p>
   </li>
   <li>
     <p><strong>Posit Arithmetic (Python)</strong> – Currently using fixed-point arithmetic; considering Posit as an alternative to IEEE 754 for better precision and dynamic range. Still working through the trade-off.</p>
@@ -257,8 +257,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 <ul>
   <li>
-    <p><strong>RAM1KB</strong> – A 1KB (1024 x 8-bit) memory module in Verilog with write-once locking for even addresses. Includes a randomized testbench.</p>
-  </li>
+    <p><strong>RAM1KB</strong> – A 1KB (1024 x 8-bit) memory module in Verilog with write-once locking for even addresses. Includes a randomized testbench. Also forms the base for a <strong>ROM3KB</strong> variant to store 32×32 RGB CIFAR-10 image data.</p>
   <li>
     <p><strong>FIFO Buffer</strong> – Not started. Planned as a synchronous FIFO with fixed depth, single clock domain, and standard full/empty flag logic.</p>
   </li>
