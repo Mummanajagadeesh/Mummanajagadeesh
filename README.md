@@ -280,7 +280,7 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
 
 - **Automated model `inference` and `performance metric` evaluation via Tcl/Perl scripts (executing Python and Icarus Verilog commands). Additionally, a real-time Tkinter GUI was created for test user input.**
 
-- **Now working on a lightweight CNN accelerator for `image classification` on `CIFAR-10`, focusing on hardware-friendly design, with the current version using `IEEE 754` floating-point arithmetic**
+- **Now working on a lightweight CNN accelerator for `image classification` on `CIFAR-10`, focusing on hardware-friendly design, with the current version using `IEEE 754` floating-point arithmetic (~83% accuracy)**
 
 
 
