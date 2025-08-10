@@ -161,8 +161,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 
 > **" I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯ "**
 
-
-A modular hardware-accelerated toolkit built entirely in Verilog using only open-source tools, featuring image processing algorithms, fixed-point arithmetic modules, and a fully implemented neural network for character recognition. Built for efficient, low-latency computation in embedded vision systems, with simulation automation and a real-time GUI interface
+A modular hardware-accelerated toolkit built entirely in Verilog using only open-source tools, featuring image processing algorithms, fixed-point arithmetic modules, an MLP for (E)MNIST, and a sequential CNN for CIFAR-10. Designed for efficient, low-latency computation in embedded vision systems, with simulation automation and a real-time GUI interface
 
 <!-- **I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯** -->
 
