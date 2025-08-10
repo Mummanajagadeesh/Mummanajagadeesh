@@ -195,7 +195,7 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
 
 <p><strong>ImProVe</strong> – IMage PROcessing using VErilog: A collection of image processing algorithms implemented in Verilog, including geometric transformations, color space conversions, and other foundational operations.</p>
 
-<p><strong>NeVer</strong> – NEural NEtwork on VERilog: A hardware-implemented multi-layer perceptron (MLP) neural network in Verilog for character recognition using EMNIST and MNIST datasets.</p>
+<p><strong>NeVer</strong> – NEural NEtwork on VERilog: A hardware-implemented MLP in Verilog for character recognition on (E)MNIST, alongside a lightweight CNN for CIFAR-10 image classification</p>
 
 <br>
 
