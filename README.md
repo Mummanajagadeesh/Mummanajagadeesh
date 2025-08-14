@@ -1,4 +1,4 @@
-# Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-08-15 00:00:06 IST -->
+# Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-08-14 23:57:42 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -279,7 +279,7 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
 
 - **Automated model `inference` and `performance metric` evaluation via Tcl/Perl scripts (executing Python and Icarus Verilog commands). Additionally, a real-time Tkinter GUI was created for test user input.**
 
-- **Developed a `lightweight CNN [Conv2D×2 + MaxPool]×3 → GAP → Dense(10)` for `CIFAR-10 Image Classification (32x32RGB)` using both `IEEE 754` floating-point and `Q1.31` and `Q1.15` fixed-point arithmetic, achieving 84% accuracy in both implementations (FP~84%|Q31~84%|Q15~84%)**
+- **Developed a `lightweight CNN [Conv2D×2 + MaxPool]×3 → GAP → Dense(10)` for `CIFAR-10 Image Classification (32x32RGB)` using both `IEEE 754` floating-point and `Q1.31` and `Q1.15` fixed-point arithmetic, achieving 84% accuracy in both implementations (FP \~84% | Q31 \~84% | Q15 \~84%)**
 
 - **Currently working on `Object Detection` using `shallow CNNs` on the `Pascal VOC dataset`**
 
