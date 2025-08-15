@@ -279,7 +279,7 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
 
 - **Automated model `inference` and `performance metric` evaluation via Tcl/Perl scripts (executing Python and Icarus Verilog commands). Additionally, a real-time Tkinter GUI was created for test user input.**
 
-- **Developed a `lightweight CNN [Conv2D×2 + MaxPool]×3 → GAP → Dense(10)` for `CIFAR-10 Image Classification (32x32RGB)` using both `IEEE 754` floating-point and `Q1.31`, `Q1.15` and `Q1.7` fixed-point arithmetic, achieving 84% accuracy in both implementations (Py \~85% | FP \~84% | Q31 \~84% | Q15 \~84% | Q7 \~82%)**
+* **Developed a `lightweight CNN [Conv2D×2 + MaxPool]×3 → GAP → Dense(10)` for `CIFAR-10 Image Classification (32x32RGB)` using both `IEEE 754` floating-point and `Q1.31`, `Q1.15`, `Q1.7`, and `Q1.3` fixed-point arithmetic, achieving 84% accuracy in both implementations (Py \~85% | FP \~84% | Q31 \~84% | Q15 \~84% | Q7 \~82% | Q3 \~65%)**
 
 - **Currently working on `Object Detection` using `shallow CNNs` on the `Pascal VOC dataset`**
 
