@@ -1,0 +1,34 @@
+<svg width="500" height="234" viewBox="0 0 500 234" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card-bg { fill: #0d1117; stroke: #1f6feb; stroke-width: 1; }
+    .repo-name { font: bold 16px sans-serif; fill: #58a6ff; cursor: pointer; text-decoration: underline; }
+    .repo-desc { font: 14px sans-serif; fill: #8b949e; }
+    .meta { font: 12px sans-serif; fill: #8b949e; }
+    .badge { font: 11px sans-serif; fill: #8b949e; }
+    .lang-dot { r: 5; }
+  </style>
+  <rect class="card-bg" x="0" y="0" width="500" height="234" rx="12" ry="12" />
+  <a href="https://github.com/Mummanajagadeesh/RIGWEB" target="_blank">
+    <text x="16" y="30" class="repo-name">RIGWEB</text>
+  </a>
+  <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#1f6feb1a" stroke="#388bfd" />
+  <text x="438" y="29" class="badge">Public</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">Adritian - High performance Hugo Theme for</tspan>
+    <tspan x="16" dy="18">Personal Websites. With job experience,</tspan>
+    <tspan x="16" dy="18">portfolio, dark/light theme, blog,</tspan>
+    <tspan x="16" dy="18">multi-language and best frontend practices</tspan>
+    <tspan x="16" dy="18">out of the box.</tspan>
+  </text>
+  <circle class="lang-dot" cx="16" cy="155" fill="#e34c26" />
+  <text x="26" y="159" class="meta">HTML</text>
+  <circle class="lang-dot" cx="126" cy="155" fill="#c6538c" />
+  <text x="136" y="159" class="meta">SCSS</text>
+  <circle class="lang-dot" cx="236" cy="155" fill="#3178c6" />
+  <text x="246" y="159" class="meta">TypeScript</text>
+  <circle class="lang-dot" cx="346" cy="155" fill="#f1e05a" />
+  <text x="356" y="159" class="meta">JavaScript</text>
+  <circle class="lang-dot" cx="16" cy="177" fill="#663399" />
+  <text x="26" y="181" class="meta">CSS</text>
+  <text x="484" y="204" text-anchor="end" class="meta">⭐ 0 star(s)</text>
+</svg>

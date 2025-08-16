@@ -8,8 +8,8 @@
     .lang-dot { r: 5; }
   </style>
   <rect class="card-bg" x="0" y="0" width="500" height="118" rx="12" ry="12" />
-  <a href="https://github.com/Mummanajagadeesh/ViSiON" target="_blank">
-    <text x="16" y="30" class="repo-name">ViSiON</text>
+  <a href="https://github.com/Mummanajagadeesh/RIGNITC" target="_blank">
+    <text x="16" y="30" class="repo-name">RIGNITC</text>
   </a>
   <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#1f6feb1a" stroke="#388bfd" />
   <text x="438" y="29" class="badge">Public</text>
