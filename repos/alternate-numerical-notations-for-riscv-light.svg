@@ -11,8 +11,8 @@
   <a href="https://github.com/Mummanajagadeesh/alternate-numerical-notations-for-riscv" target="_blank">
     <text x="16" y="30" class="repo-name">alternate-numerical-notations-for-riscv</text>
   </a>
-  <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#ddf4ff" stroke="#0969da" />
-  <text x="438" y="29" class="badge">Public</text>
+  <rect x="420" y="16" rx="4" ry="4" width="65" height="18" fill="#ddf4ff" stroke="#0969da" />
+  <text x="428" y="29" class="badge">Private</text>
   <text x="16" y="55" class="repo-desc">
     <tspan x="16" dy="0">Posit number system: An alternative to IEEE</tspan>
     <tspan x="16" dy="18">754 for efficient arithmetic</tspan>
