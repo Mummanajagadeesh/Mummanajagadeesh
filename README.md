@@ -173,18 +173,18 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
   <tr>
     <td align="center">
       <a href="https://github.com/Mummanajagadeesh/ImProVe#gh-light-mode-only">
-        <img src="./repos/improve-light.svg#gh-light-mode-only" alt="ImProVe GitHub repository card in light mode: Image processing algorithms" />
+        <img src="./repos/improve-light.svg#gh-light-mode-only" alt="Image processing algorithms" />
       </a>
       <a href="https://github.com/Mummanajagadeesh/ImProVe#gh-dark-mode-only">
-        <img src="./repos/improve-dark.svg#gh-dark-mode-only" alt="ImProVe GitHub repository card in dark mode: Image processing algorithms" />
+        <img src="./repos/improve-dark.svg#gh-dark-mode-only" alt="Image processing algorithms" />
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/Mummanajagadeesh/NeVer#gh-light-mode-only">
-        <img src="./repos/never-light.svg#gh-light-mode-only" alt="NeVer GitHub repository card in light mode: Verilog-based neural network" />
+        <img src="./repos/never-light.svg#gh-light-mode-only" alt="NEural NEtwork on VERilog | MLP for (E)MNIST | CNN for CIFAR10" />
       </a>
       <a href="https://github.com/Mummanajagadeesh/NeVer#gh-dark-mode-only">
-        <img src="./repos/never-dark.svg#gh-dark-mode-only" alt="NeVer GitHub repository card in dark mode: Verilog-based neural network" />
+        <img src="./repos/never-dark.svg#gh-dark-mode-only" alt="NEural NEtwork on VERilog | MLP for (E)MNIST | CNN for CIFAR10" />
       </a>
     </td>
   </tr>
@@ -207,18 +207,18 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
   <tr>
     <td align="center">
       <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-light-mode-only">
-        <img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only" alt="CORDIC Algorithm GitHub repository card in light mode: Trigonometric and root functions" />
+        <img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only" alt="Verilog-based implementation of the CORDIC algorithm for efficient estimation of mathematical functions" />
       </a>
       <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-dark-mode-only">
-        <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only" alt="CORDIC Algorithm GitHub repository card in dark mode: Trigonometric and root functions" />
+        <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only" alt="Verilog-based implementation of the CORDIC algorithm for efficient estimation of mathematical functions" />
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/Mummanajagadeesh/systolic-array-matrix-multiplication#gh-light-mode-only">
-        <img src="./repos/systolic-array-matrix-multiplication-light.svg#gh-light-mode-only" alt="Systolic Array Matrix Multiplication GitHub repository card in light mode: Hardware-optimized matrix multiplication" />
+        <img src="./repos/systolic-array-matrix-multiplication-light.svg#gh-light-mode-only" alt="Systolic array of MAC PEs with Booth multipliers and carry-save adders, supporting both GEMM and 3×3 CNN convolutions for hardware-accelerated deep learning and linear algebra" />
       </a>
       <a href="https://github.com/Mummanajagadeesh/systolic-array-matrix-multiplication#gh-dark-mode-only">
-        <img src="./repos/systolic-array-matrix-multiplication-dark.svg#gh-dark-mode-only" alt="Systolic Array Matrix Multiplication GitHub repository card in dark mode: Hardware-optimized matrix multiplication" />
+        <img src="./repos/systolic-array-matrix-multiplication-dark.svg#gh-dark-mode-only" alt="Systolic array of MAC PEs with Booth multipliers and carry-save adders, supporting both GEMM and 3×3 CNN convolutions for hardware-accelerated deep learning and linear algebra" />
       </a>
     </td>
   </tr>
@@ -226,12 +226,12 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
 
 <!-- Light Mode Repo Card -->
 <a href="https://github.com/Mummanajagadeesh/alternate-numerical-notations-for-riscv#gh-light-mode-only">
-  <img src="./repos/alternate-numerical-notations-for-riscv-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+  <img src="./repos/alternate-numerical-notations-for-riscv-light.svg#gh-light-mode-only" alt="Posit number system: An alternative to IEEE 754 for efficient arithmetic" />
 </a>
 
 <!-- Dark Mode Repo Card -->
 <a href="https://github.com/Mummanajagadeesh/alternate-numerical-notations-for-riscv#gh-dark-mode-only">
-  <img src="./repos/alternate-numerical-notations-for-riscv-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+  <img src="./repos/alternate-numerical-notations-for-riscv-dark.svg#gh-dark-mode-only" alt="Posit number system: An alternative to IEEE 754 for efficient arithmetic" />
 </a>
 <br>
 
