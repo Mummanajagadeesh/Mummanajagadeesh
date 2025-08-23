@@ -1,4 +1,4 @@
-# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-08-23 15:04:15 IST -->
+# ¡Hola, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-08-23 14:53:30 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -165,8 +165,25 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
 
 <!-- **I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯** -->
 
+<br> <br>
+
+<p align="center">
+  
+<a href="https://github.com/Mummanajagadeesh/ViSiON#gh-light-mode-only">
+  <img src="./repos/vision-light.svg#gh-light-mode-only" alt="Verilog for Image processing and Simulation-based Inference Of Neural Networks" />
+</a>
+<a href="https://github.com/Mummanajagadeesh/ViSiON#gh-dark-mode-only">
+  <img src="./repos/vision-dark.svg#gh-dark-mode-only" alt="Verilog for Image processing and Simulation-based Inference Of Neural Networks" />
+</a>
+</p>
+<p align="center"><strong>ViSiON</strong> – <em>V</em>erilog for <em>I</em>mage Processing and <em>S</em>imulation-based <em>I</em>nference <em>O</em>f <em>N</em>eural Networks</p>
+<p align="center">This repo includes all related projects as submodules in one place</p>
+
+
 
 <br><br>
+
+---
 
 <!-- Image Cards Table -->
 <table>
@@ -193,13 +210,13 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
 <!-- Descriptions below -->
 <br>
 
-<p><strong>ImProVe</strong> – IMage PROcessing using VErilog: A collection of image processing algorithms implemented in Verilog, including geometric transformations, color space conversions, and other foundational operations.</p>
+<p><strong>ImProVe</strong> – <em>IM</em>age <em>PRO</em>cessing using <em>VE</em>rilog: A collection of image processing algorithms implemented in Verilog, including geometric transformations, color space conversions, and other foundational operations.</p>
 
-<p><strong>NeVer</strong> – NEural NEtwork on VERilog: A hardware-implemented MLP in Verilog for character recognition on (E)MNIST, alongside a lightweight CNN for CIFAR-10 image classification</p>
+<p><strong>NeVer</strong> – <em>NE</em>ural <em>NE</em>twork on <em>VER</em>ilog: A hardware-implemented MLP in Verilog for character recognition on (E)MNIST, alongside a lightweight CNN for CIFAR-10 image classification</p>
 
 <br>
 
-<p><strong>MOVe</strong> – Math Ops in VErilog</p>
+<p><strong>MOVe</strong> – <em>M</em>ath <em>O</em>ps in <em>VE</em>rilog</p>
 
 
 <!-- Image Cards Table -->
