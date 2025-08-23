@@ -151,7 +151,7 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 <details>
 <summary>
   <strong>
-    Verilog HDL Toolkit for Image Processing and Classification |
+    Verilog HDL Toolkit for Image Processing and Neural Network Acceleration |
     <a href="https://mummanajagadeesh.github.io/projects/improve/subprojects" target="_blank">Link</a>
   </strong>
 </summary>
