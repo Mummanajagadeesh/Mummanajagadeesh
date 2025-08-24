@@ -176,7 +176,7 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
   <img src="./repos/vision-dark.svg#gh-dark-mode-only" alt="Verilog for Image processing and Simulation-based Inference Of Neural Networks" />
 </a>
 </p>
-<p align="center"><strong>ViSiON</strong> – <em>V</em>erilog for <em>I</em>mage Processing and <em>S</em>imulation-based <em>I</em>nference <em>O</em>f <em>N</em>eural Networks</p>
+<p align="center"><strong>ViSiON</strong> – <strong><em>V</em></strong>erilog for <strong><em>I</em></strong>mage Processing and <strong><em>S</em></strong>imulation-based <strong><em>I</em></strong>nference <strong><em>O</em></strong>f <strong><em>N</em></strong>eural Networks</p>
 <p align="center">This repo includes all related projects as submodules in one place</p>
 
 
@@ -210,13 +210,13 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
 <!-- Descriptions below -->
 <br>
 
-<p><strong>ImProVe</strong> – <em>IM</em>age <em>PRO</em>cessing using <em>VE</em>rilog: A collection of image processing algorithms implemented in Verilog, including geometric transformations, color space conversions, and other foundational operations.</p>
+<p><strong>ImProVe</strong> – <strong><em>IM</em></strong>age <strong><em>PRO</em></strong>cessing using <strong><em>VE</em></strong>rilog: A collection of image processing algorithms implemented in Verilog, including geometric transformations, color space conversions, and other foundational operations.</p>
 
-<p><strong>NeVer</strong> – <em>NE</em>ural <em>NE</em>twork on <em>VER</em>ilog: A hardware-implemented MLP in Verilog for character recognition on (E)MNIST, alongside a lightweight CNN for CIFAR-10 image classification</p>
+<p><strong>NeVer</strong> – <strong><em>NE</em></strong>ural <strong><em>NE</em></strong>twork on <strong><em>VER</em></strong>ilog: A hardware-implemented MLP in Verilog for character recognition on (E)MNIST, alongside a lightweight CNN for CIFAR-10 image classification</p>
 
 <br>
 
-<p><strong>MOVe</strong> – <em>M</em>ath <em>O</em>ps in <em>VE</em>rilog</p>
+<p><strong>MOVe</strong> – <strong><em>M</em></strong>ath <strong><em>O</em></strong>ps in <strong><em>VE</em></strong>rilog</p>
 
 
 <!-- Image Cards Table -->
