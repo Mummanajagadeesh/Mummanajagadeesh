@@ -119,6 +119,15 @@
   <li><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGo0bDB3azFlMTF0ZTI2ZGMyMXNja3ZnaG9pZ2Z1MXc5ZWljM2xqbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3ohc19SFUdIJ0YQcLe/giphy.webp" width="20px"> Fun fact: I'm Batman</li>
 </ul>
 
+
+<div align="center">
+  <picture>
+    <source srcset="dist/github-snake-dark.svg" media="(prefers-color-scheme: dark)">
+    <img src="dist/github-snake.svg" alt="GitHub Snake">
+  </picture>
+</div>
+
+
 <!--$ git pull life --verbose
 Fetching latest life updates...
 error: merge conflict in /mental/health
@@ -640,10 +649,7 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
 
 
 
-<picture>
-  <source srcset="dist/github-snake-dark.svg" media="(prefers-color-scheme: dark)">
-  <img src="dist/github-snake.svg" alt="GitHub Snake">
-</picture>
+
 
 
 <!--Feel free to reach out if you have any questions or if you'd like to collaborate on a project. I'm always open to learning and trying out new things!
