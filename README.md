@@ -639,6 +639,13 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
 </p>
 
 
+
+<picture>
+  <source srcset="dist/github-snake-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="dist/github-snake.svg" alt="GitHub Snake">
+</picture>
+
+
 <!--Feel free to reach out if you have any questions or if you'd like to collaborate on a project. I'm always open to learning and trying out new things!
 
 # ありがとう
