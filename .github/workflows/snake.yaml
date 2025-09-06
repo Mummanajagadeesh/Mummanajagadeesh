@@ -27,8 +27,10 @@ jobs:
             dist/ocean.gif?color_snake=orange&color_dots=%23bfd6f6,%238dbdff,%2364a1f4,%234b91f1,%233c7dd9
           debug: true
 
-      - name: Upload artifacts (optional)
-        uses: actions/upload-artifact@v4
-        with:
-          name: github-snake-images
-          path: dist/
+      - name: Commit and push generated images
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          git commit -m "Update GitHub snake images" || echo "No changes to commit"
+          git push
