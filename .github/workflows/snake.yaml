@@ -28,7 +28,7 @@ jobs:
           debug: true
 
       - name: Upload artifacts (optional)
-        uses: actions/upload-artifact@v3
+        uses: github/upload-artifact@v1
         with:
           name: github-snake-images
           path: dist/
