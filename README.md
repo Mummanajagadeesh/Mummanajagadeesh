@@ -65,7 +65,7 @@
 
 
 <p>
-  <img src="https://mummanajagadeesh.github.io/RIGNITC/assets/images/main/1.png" width="400px" align="right">
+  <img src="assets/main.gif" width="250px" align="right">
 </p>
 
 <ul>
@@ -95,8 +95,7 @@
 
 # `$ cat ~/about_me.txt`
 
-Hey, I'm Jagadeesh—a Robotics, AI & VLSI hardware enthusiast passionate about building at the intersection of digital logic and intelligent systems.  
-I enjoy bringing algorithms to silicon, exploring digital design and hardware acceleration for machine learning and image processing, and collaborating with like-minded innovators.
+Hey, I'm Jagadeesh—a Robotics, AI & VLSI hardware enthusiast passionate about building at the intersection of digital logic and intelligent systems. I enjoy bringing algorithms to silicon, exploring digital design and hardware acceleration for machine learning and image processing, and collaborating with like-minded innovators.
 
 MY Key Interests:
 - VLSI Design: Analog Circuits & Digital Design
@@ -452,7 +451,7 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
 
 <br><br>
 
-# `$ env | grep TECH`
+# `$ env | grep STACK`
 
 <p align="center">
   <!-- Programming Languages -->
