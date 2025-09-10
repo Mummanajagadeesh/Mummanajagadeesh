@@ -87,7 +87,9 @@
 # `$ cat ~/about_me.txt`
 
 Hey, I'm Jagadeesh — I work across VLSI design, robotics, and AI hardware. I’m particularly interested in digital and analog VLSI, hardware acceleration for machine learning and image processing, and the practical side of taking designs from code to silicon. Alongside this, I enjoy programming embedded systems, working with microcontrollers, and building robotics applications. I also enjoy collaborating in competitions, open-source projects, and hands-on hardware/software design challenges.
+
 MY Key Interests:
+
 - VLSI Design: Analog Circuits & Digital Design
 - Neural Networks & Image Processing in HW/SW
 - Embedded Programming (C, C++, Python)
@@ -97,6 +99,28 @@ MY Key Interests:
   
 Feel free to check out my projects [**`here`**](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
 
+<!--<pre>
+  
+Hey, I'm Jagadeesh — I work across VLSI design, robotics, and AI hardware.
+I’m particularly interested in digital and analog VLSI, hardware acceleration for machine learning and image processing,
+and the practical side of taking designs from code to silicon.
+Alongside this, I enjoy programming embedded systems, working with microcontrollers, and building robotics applications.
+I also enjoy collaborating in competitions, open-source projects, and hands-on hardware/software design challenges.
+
+  
+MY Key Interests:                                                           What I Do:
+- VLSI Design: Analog & Digital                                             - I’m a student (yes, I copy assignments)  
+- Neural Nets & Image Processing                                            - But serious with projects & builds 
+- Embedded Programming (C, C++, Python)                                     - Do a bit of digital & analog design on the side
+- Microcontrollers & Electronics                                            - Train models sometimes   
+- Computer Vision, Sensor Fusion                                            - Member of RIGNITC (we make robots)
+- Robotics, Path Planning & Navigation                                      - Show up at hw comps (sw depends on mood)
+
+  
+Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), 
+and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
+  
+</pre>-->
 
 <br><br>
 
