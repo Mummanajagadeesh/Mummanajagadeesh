@@ -62,12 +62,12 @@
 
 <ul>
   <li>VLSI, Robotics & AI Enthusiast</li>
-  <li>Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong><code>BLOG</code></strong></a></li>
+  <li>Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong><code>BLOG :)</code></strong></a></li>
   <li>I'm currently working on few hardware-focused projects</li>
   <li>Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC"><strong><code>RIGNITC</code></strong></a></li>
   <li>Pursuing <em>Electronics and Communication Engg</em></li>
   <li>From <em>National Institute of Technology Calicut</em></li>
-  <li>How to reach me: <a href="https://mummanajagadeesh.github.io/contact"><strong><code>Carrier Pigeons</code></strong></a></li>
+  <li>How to reach me: <a href="https://mummanajagadeesh.github.io/contact"><strong><code>Carrier Pigeons :P</code></strong></a></li>
   <li>Pronouns: he/him</li>
   <li>Hobbies: Speedcubing, Movies, Blogging</li>
   <li>Fun fact: I'm Batman</li>
@@ -86,7 +86,7 @@
 
 # `$ cat ~/about_me.txt`
 
-Hey, I'm Jagadeesh—a Robotics, AI & VLSI hardware enthusiast passionate about building at the intersection of digital logic and intelligent systems. I enjoy bringing algorithms to silicon, exploring digital design and hardware acceleration for machine learning and image processing, and collaborating with like-minded innovators.
+Hey, I'm Jagadeesh — I work across VLSI design, robotics, and AI hardware. I’m particularly interested in digital and analog VLSI, hardware acceleration for machine learning and image processing, and the practical side of taking designs from code to silicon. Alongside this, I enjoy programming embedded systems, working with microcontrollers, and building robotics applications. I also enjoy collaborating in competitions, open-source projects, and hands-on hardware/software design challenges.
 
 MY Key Interests:
 - VLSI Design: Analog Circuits & Digital Design
@@ -96,7 +96,7 @@ MY Key Interests:
 - Computer Vision, Sensor Fusion
 - Robotics, AMR Path Planning & Navigation
   
-Feel free to check out my projects [`here`](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
+Feel free to check out my projects [**`here`**](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
 
 
 <br><br>
