@@ -1,4 +1,4 @@
-# ¡Hola, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 00:14:46 IST -->
+# Hello, world! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 00:10:07 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -87,7 +87,6 @@
 # `$ cat ~/about_me.txt`
 
 Hey, I'm Jagadeesh — I work across VLSI design, robotics, and AI hardware. I’m particularly interested in digital and analog VLSI, hardware acceleration for machine learning and image processing, and the practical side of taking designs from code to silicon. Alongside this, I enjoy programming embedded systems, working with microcontrollers, and building robotics applications. I also enjoy collaborating in competitions, open-source projects, and hands-on hardware/software design challenges.
-
 MY Key Interests:
 - VLSI Design: Analog Circuits & Digital Design
 - Neural Networks & Image Processing in HW/SW
