@@ -1,5 +1,4 @@
 # Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 00:01:31 IST -->
-# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-10 18:55:06 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -52,13 +51,6 @@
 </p>
 
 
-
-
-<!--<h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Monaco&size=35&color=FF0000&center=true&vCenter=true&width=1000&height=120&duration=4000&lines=$+git+pull+life+--verbose;Fetching+latest+life+updates...;error:+merge+conflict+in+/mental/health;error:+insufficient+memory+to+process+workload;warning:+uncommitted+stress+found;Aborting...;Output:+%22404'd%22&repeat=false" />
-</h1>-->
-
-
 <h1 align="left">
   <img src="https://readme-typing-svg.herokuapp.com/?font=Monaco&size=30&color=4078C0&width=650&height=100&duration=4500&lines=$+whoami;>+just_another_student;$+echo+%22future+plans%22;>+Take+AIs+Job+:P;$+ping+reality;>+Request+timed+out;$+ls+/life;>+Nothing+interesting+yet;$+cat+motivation.txt;>+motivation.txt:+empty;$+top+-n+1;>+CPU:+99%25+brain+usage;$+git+commit+-m+%22life_changes%22;>+nothing+to+commit,+working+tree+clean;$+./run_robot.sh;>+Battery+not+included;$+sudo+rm+-rf+/stress;>+Permission+denied" />
 </h1>
@@ -80,7 +72,6 @@
   <li>Hobbies: Speedcubing, Movies, Blogging</li>
   <li>Fun fact: I'm Batman</li>
 </ul>
-
 
 
 <div align="center">
@@ -124,13 +115,9 @@ Feel free to check out my projects [`here`](https://mummanajagadeesh.github.io/p
 </summary>
 <br>
   
-<!-- **NeVer ImProVe-d — just MOVe-d on  ¯\\\_(ツ)_/¯**-->
-
 > **" I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯ "**
 
 A modular hardware-accelerated toolkit built entirely in Verilog using only open-source tools, featuring image processing algorithms, fixed-point arithmetic modules, an MLP for (E)MNIST, and a sequential CNN for CIFAR-10. Designed for efficient, low-latency computation in embedded vision systems, with simulation automation and a real-time GUI interface
-
-<!-- **I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯** -->
 
 <br><br>
 
@@ -508,95 +495,6 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
   <img src="https://skillicons.dev/icons?i=unity" alt="Unity" width="48" height="48"/>
 </p>
 
-
-<!--<p align="left">
-  <a href="https://www.python.org" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Python-red.svg?logo=PYTHON_MJ97" alt="Python"/>
-  </a>
-  <a href="https://www.cprogramming.com/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/C-grey.svg?logo=C_MJ97" alt="C Programming"/>
-  </a>
-  <a href="https://www.w3schools.com/cpp/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/C++-blueviolet.svg?logo=CPP_MJ97" alt="C++"/>
-  </a>
-  <a href="https://www.java.com" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Java-white.svg?logo=JAVA_MJ97" alt="Java"/>
-  </a>
-  <a href="https://git-scm.com/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Git-black.svg?logo=GIT_MJ97" alt="Git"/>
-  </a>
-  <a href="https://www.linux.org/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Linux-black.svg?logo=TUX_MJ97" alt="Linux"/>
-  </a>
-  <a href="https://ubuntu.com/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Ubuntu-blue.svg?logo=UBUNTU_MJ97" alt="Ubuntu"/>
-  </a>
-  <a href="https://www.mathworks.com/products/matlab.html" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/MATLAB-yellow.svg?logo=MATLAB_MJ97" alt="MATLAB"/>
-  </a>
-  <a href="https://www.mathworks.com/products/simulink.html" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Simulink-blue.svg?logo=SIMULINK_MJ97" alt="Simulink"/>
-  </a>
-  <a href="https://thingspeak.com/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/ThingSpeak-blue.svg?logo=THINGSPEAK_MJ97" alt="ThingSpeak"/>
-  </a>
-  <a href="https://wokwi.com/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Wokwi-green.svg?logo=WOKWI_MJ97" alt="Wokwi"/>
-  </a>
-  <a href="https://www.arduino.cc/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Arduino-teal.svg?logo=ARDUINO_MJ97" alt="Arduino"/>
-  </a>
-  <a href="https://www.raspberrypi.org/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/RaspberryPi-darkgreen.svg?logo=RASP_MJ97" alt="Raspberry Pi"/>
-  </a>
-  <a href="https://espressif.com/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/ESP32-darkblue.svg?logo=ESP_MJ97" alt="ESP32"/>
-  </a>
-  <a href="https://www.ros.org/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/ROS2-purple.svg?logo=ROS2_MJ97" alt="ROS2"/>
-  </a>
-  <a href="https://cyberbotics.com/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Webots-lightblue.svg?logo=WEBOTS_MJ97" alt="Webots"/>
-  </a>
-  <a href="http://gazebosim.org/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Gazebo-grey.svg?logo=GAZEBO_MJ97" alt="Gazebo"/>
-  </a>
-  <a href="https://www.coppeliarobotics.com/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/CoppeliaSim-pink.svg?logo=VREP_MJ97" alt="CoppeliaSim"/>
-  </a>
-  <a href="https://opencv.org/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/OpenCV-green.svg?logo=OPENCV_MJ97" alt="OpenCV"/>
-  </a>
-  <a href="https://numpy.org/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/NumPy-blue.svg?logo=NUMPY_MJ97" alt="NumPy"/>
-  </a>
-  <a href="https://matplotlib.org/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Matplotlib-purple.svg?logo=MATPLOTLIB_MJ97" alt="Matplotlib"/>
-  </a>
-  <a href="https://pandas.pydata.org/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Pandas-white.svg?logo=PANDAS_MJ97" alt="Pandas"/>
-  </a>
-  <a href="https://www.autodesk.com/products/fusion-360/overview" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Fusion360-blue.svg?logo=FUSION360_MJ97" alt="Fusion 360"/>
-  </a>
-  <a href="https://www.solidworks.com/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/SolidWorks-white.svg?logo=SW_MJ97" alt="SolidWorks"/>
-  </a>
-  <a href="https://www.blender.org/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Blender-black.svg?logo=BLENDER_MJ97" alt="Blender"/>
-  </a>
-  <a href="https://unity.com/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Unity-white.svg?logo=UNITY_MJ97" alt="Unity"/>
-  </a>
-  <a href="https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado.html" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Vivado-purple.svg?logo=VIVADO_MJ97" alt="Vivado"/>
-  </a>
-  <a href="https://bleyer.org/icarus/" target="_blank">
-    <img height="30" src="https://custom-icon-badges.demolab.com/badge/Icarus-vermilion.svg?logo=ICARUS_MJ97" alt="Icarus Verilog"/>
-  </a>
-</p>-->
-
-
 <br><br>
 
 # `$ git stats --all`
@@ -617,13 +515,6 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
   </a>
 </p>
 
-
-
-<!--[![Activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true)](https://github.com/Mummanajagadeesh/github-readme-activity-graph)-->
-<!--![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true)-->
-<!--![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true)
-![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true)-->
-
 <!-- Light Mode -->
 <a href="https://github.com/Mummanajagadeesh#gh-light-mode-only">
   <p align="center">
@@ -642,9 +533,6 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
   </p>
 </a>
 
-
-<!--![Quote](https://github-readme-quotes-bay.vercel.app/quote?theme=dark?quotesUrl=https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/414cabe06e68275172913e1e4468c60819de8972/assets/quotes.json)
-![Quote](https://github-readme-quotes-bay.vercel.app/quote?theme=dark&quotesUrl=https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/414cabe06e68275172913e1e4468c60819de8972/assets/quotes.json)-->
 
 # `$ sudo wisdom`
 
