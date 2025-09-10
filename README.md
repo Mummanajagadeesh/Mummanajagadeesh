@@ -1,4 +1,4 @@
-# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 01:24:44 IST -->
+# Bonjour le monde! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 01:16:42 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -52,12 +52,16 @@
 
 
 <h1 align="left">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Monaco&size=30&color=4078C0&width=650&height=100&duration=4500&lines=$+whoami;>+just_another_student;$+echo+%22future+plans%22;>+Take+AI's+Job+:P;$+ping+reality;>+Request+timed+out;$+ls+/life;>+Nothing+interesting+yet;$+cat+motivation.txt;>+motivation.txt+->+empty;$+top+-n+1;>+CPU:+99%25+brain+usage;$+git+commit+-m+%22life_changes%22;>+nothing+to+commit,+working+tree+clean;$+./run_robot.sh;>+Battery+not+included;$+sudo+rm+-rf+/stress;>+Permission+denied" />
+  <img 
+    src="https://readme-typing-svg.herokuapp.com/?font=Monaco&size=30&color=4078C0&width=650&height=100&duration=4500&lines=$+whoami;>+just_another_student;$+echo+%22future+plans%22;>+Take+AI's+Job+:P;$+ping+reality;>+Request+timed+out;$+ls+/life;>+Nothing+interesting+yet;$+cat+motivation.txt;>+motivation.txt+->+empty;$+top+-n+1;>+CPU:+99%25+brain+usage;$+git+commit+-m+%22life_changes%22;>+nothing+to+commit,+working+tree+clean;$+./run_robot.sh;>+Battery+not+included;$+sudo+rm+-rf+/stress;>+Permission+denied" 
+    alt="$ whoami -> just_another_student; echo 'future plans' -> Take AI's Job :P; ping reality -> Request timed out; ls /life -> Nothing interesting yet; cat motivation.txt -> motivation.txt -> empty; top -n 1 -> CPU: 99% brain usage; git commit -m 'life_changes' -> nothing to commit, working tree clean; ./run_robot.sh -> Battery not included; sudo rm -rf /stress -> Permission denied" 
+  />
 </h1>
 
 
+
 <p>
-  <img src="assets/main.gif" width="250px" align="right">
+  <img src="assets/main.gif" width="250px" align="right" alt="robot ASCII art GIF" />
 </p>
 
 <ul>
@@ -77,9 +81,10 @@
 <div align="center">
   <picture>
     <source srcset="dist/github-snake-dark.svg" media="(prefers-color-scheme: dark)">
-    <img src="dist/github-snake.svg" alt="GitHub Snake">
+    <img src="dist/github-snake.svg" alt="GitHub Snake game eating contributions chart" />
   </picture>
 </div>
+
 
 
 <br><br>
