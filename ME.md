@@ -4,48 +4,52 @@
 
 <p align="left">
   <a href="https://mummanajagadeesh.github.io/" target="_blank">
-      <img src="https://img.shields.io/badge/Portfolio-2E8B57?style=flat-square&logo=Google-chrome&logoColor=white" alt="Portfolio"/>
+      <img src="assets/bwicons/site.svg" alt="Portfolio" width="30" height="30"/>
   </a>
   <a href="https://mummanajagadeesh.github.io/blog/all" target="_blank">
-      <img src="https://img.shields.io/badge/BLOG-000000?style=flat-square&logo=Google-chrome&logoColor=white" alt="Portfolio"/>
+      <img src="assets/bwicons/blog.svg" alt="Blog" width="30" height="30"/>
   </a>
   <a href="https://www.linkedin.com/in/jagadeeesh-mummana" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin" alt="LinkedIn"/>
+    <img src="assets/bwicons/linkedin.svg" alt="LinkedIn" width="30" height="30"/>
   </a>
   <a href="https://www.instagram.com/jagadeesh__97__" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/>
+    <img src="assets/bwicons/instagram.svg" alt="Instagram" width="30" height="30"/>
   </a>
   <a href="https://discord.com/users/864753029030215690" target="_blank">
-    <img src="https://img.shields.io/badge/Discord-7289DA?style=flat-square&logo=discord&logoColor=white" alt="Discord"/>
+    <img src="assets/bwicons/discord.svg" alt="Discord" width="30" height="30"/>
   </a>
   <a href="https://github.com/Mummanajagadeesh" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-black?style=flat-square&logo=github" alt="GitHub"/>
+    <img src="assets/bwicons/github.svg" alt="GitHub" width="30" height="30"/>
   </a>
   <a href="mailto:mummanajagadeesh97@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
+    <img src="assets/bwicons/mail.svg" alt="Email" width="30" height="30"/>
   </a>
-<!--   <a href="https://www.facebook.com/MJagadeesh97/" target="_blank">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook"/>
+  <a href="https://www.facebook.com/MJagadeesh97/" target="_blank">
+    <img src="assets/bwicons/facebook.svg" alt="Facebook" width="30" height="30"/>
   </a>
   <a href="https://x.com/M_JAGADEESH97" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-000000?style=flat-square&logo=x&logoColor=white" alt="X"/>
-  </a> -->
+    <img src="assets/bwicons/twitter-x.svg" alt="X" width="30" height="30"/>
+  </a>
+  <a href="https://www.reddit.com/user/Large-Raisin-5912/" target="_blank">
+    <img src="assets/bwicons/reddit.svg" alt="Reddit" width="30" height="30"/>
+  </a>
+  <a href="https://jagadeesh-mummana.vercel.app/" target="_blank">
+    <img src="assets/bwicons/site.svg" alt="Old Site" width="30" height="30"/>
+  </a>
+  <a href="https://www.youtube.com/@M_J_9_7" target="_blank">
+    <img src="assets/bwicons/youtube.svg" alt="YouTube" width="30" height="30"/>
+  </a>
+  <a href="https://events.cubelelo.com/profile/24CLMUM001" target="_blank">
+    <img src="assets/bwicons/cube.svg" alt="Cube" width="30" height="30"/>
+  </a>
+  <a href="https://www.duolingo.com/profile/jagadeesh97" target="_blank">
+    <img src="assets/bwicons/duolingo.svg" alt="Duolingo" width="30" height="30"/>
+  </a>
+  <a href="https://games.app.goo.gl/p1bNrgGSnMbK4hte9" target="_blank">
+    <img src="assets/bwicons/playgames.svg" alt="Google Play Games" width="30" height="30"/>
+  </a>
 </p>
 
-<p align="left">
-  <a href="https://www.youtube.com/@M_J_9_7" target="_blank">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube"/>
-  </a>
-  <a href="https://events.cubelelo.com/profile/24CLMUM001">
-    <img src="https://m.media-amazon.com/images/S/aplus-media/sc/80b77cfa-c498-46e8-844c-3768a698d63a.__CR0,0,600,180_PT0_SX600_V1___.png" alt="CLID" width="70"/>
-  </a>
-  <a href="https://www.duolingo.com/profile/jagadeesh97">
-    <img src="https://media.tenor.com/z168S__FUKcAAAAi/duolingo.gif" alt="Duolingo" width="40"/>
-  </a>
-  <a href="https://games.app.goo.gl/p1bNrgGSnMbK4hte9">
-    <img src="https://www.svgrepo.com/show/303545/google-play-games-logo.svg" alt="Google Play" width="24"/>
-  </a>
-</p>
 
 
 
@@ -60,7 +64,7 @@
 
 
 <p>
-  <img src="https://i.pinimg.com/originals/3d/17/f4/3d17f46d3ea30dc0b94a9ff4a4d1a380.gif" width="400px" align="right">
+  <img src="https://mummanajagadeesh.github.io/RIGNITC/assets/images/main/1.png" width="400px" align="right">
 </p>
 
 <ul>
@@ -86,16 +90,9 @@
 </div>
 
 
-<!--$ git pull life --verbose
-Fetching latest life updates...
-error: merge conflict in /mental/health
-error: insufficient memory to process workload
-warning: uncommitted stress found
-Aborting...
-Output: "Fckdup"-->
 <br><br>
 
-# <img src="https://i.pinimg.com/originals/88/c0/8e/88c08e0221a17ea11b0e59341d2c0b7c.gif" width="40px"> About ME
+# `$ cat ~/about_me.txt`
 
 Hey <img src="https://raw.githubusercontent.com/umenzi/umenzi/main/wave.gif" width="17px">, I'm Jagadeesh—a Robotics, AI & VLSI hardware enthusiast passionate about building at the intersection of digital logic and intelligent systems.  
 I enjoy bringing algorithms to silicon, exploring digital design and hardware acceleration for machine learning and image processing, and collaborating with like-minded innovators.
@@ -110,7 +107,10 @@ MY Key Interests:
   
 Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
 
-## <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDZyazBneGIxemh6OHBtdXVxb3JtcmhubzRxY2Jyc3hxNXhwZHhuaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/qXp82ZL3eZbbTUrLyy/giphy.gif"  width="20px"> Featured Projects | [All Projects](https://mummanajagadeesh.github.io/projects/)
+
+<br><br>
+
+# `$ ls ~/projects --filter=feat` | [`All Projects`](https://mummanajagadeesh.github.io/projects/)
 
 <em>(Click sections below to expand)</em>
 
@@ -132,7 +132,7 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
 
 <!-- **I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯** -->
 
-<br> <br>
+<br><br>
 
 <p align="center">
   
@@ -451,7 +451,7 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
 
 <br><br>
 
-# <img src="https://cdn.pixabay.com/animation/2023/05/16/19/08/19-08-28-374_512.gif" width="40px"> Tools and Technologies
+# `$ env | grep TOOLS`
 
 <p align="left">
   <a href="https://www.python.org" target="_blank">
@@ -540,7 +540,10 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
   </a>
 </p>
 
-# <img src="https://ugokawaii.com/wp-content/uploads/2022/08/increase.gif" width="40px"> GitHub Stats</h1>
+
+<br><br>
+
+# `$ git stats --all`
 
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
 ![Total repos](https://github-readme-stats-mummanajagadeesh.vercel.app/api/total-repos)
@@ -586,7 +589,7 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
 <!--![Quote](https://github-readme-quotes-bay.vercel.app/quote?theme=radical?quotesUrl=https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/414cabe06e68275172913e1e4468c60819de8972/assets/quotes.json)
 ![Quote](https://github-readme-quotes-bay.vercel.app/quote?theme=radical&quotesUrl=https://github.com/Mummanajagadeesh/Mummanajagadeesh/blob/414cabe06e68275172913e1e4468c60819de8972/assets/quotes.json)-->
 
-### <img src="https://i.pinimg.com/originals/7d/44/8f/7d448f92a799d52054a8c261fb903a98.gif" width="30px"> RndmQuoteGen()
+# `$ sudo wisdom`
 
 <!-- Light Mode Quote -->
 <p align="center">
