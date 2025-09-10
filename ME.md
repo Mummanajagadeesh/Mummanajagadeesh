@@ -451,9 +451,11 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
 
 <br><br>
 
-# `$ env | grep TOOLS`
+# `$ env | grep TECH`
 
-<p align="left">
+<img src="https://skillicons.dev/icons?i=python,c,cpp,java,git,docker,linux,debian,ubuntu,mint,windows,bash,powershell,matlab,perl,arduino,raspberrypi,ros,opencv,tensorflow,pytorch,vim,vscode,latex,md,blender,unity" />
+
+<!--<p align="left">
   <a href="https://www.python.org" target="_blank">
     <img height="30" src="https://custom-icon-badges.demolab.com/badge/Python-red.svg?logo=PYTHON_MJ97" alt="Python"/>
   </a>
@@ -538,7 +540,7 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
   <a href="https://bleyer.org/icarus/" target="_blank">
     <img height="30" src="https://custom-icon-badges.demolab.com/badge/Icarus-vermilion.svg?logo=ICARUS_MJ97" alt="Icarus Verilog"/>
   </a>
-</p>
+</p>-->
 
 
 <br><br>
