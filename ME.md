@@ -69,12 +69,12 @@
 
 <ul>
   <li>VLSI, Robotics & AI Enthusiast</li>
-  <li>Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>BLOG</strong></a></li>
+  <li>Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong><code>BLOG</code></strong></a></li>
   <li>I'm currently working on few hardware-focused projects</li>
-  <li>Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a></li>
+  <li>Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC"><strong><code>RIGNITC</code></strong></a></li>
   <li>Pursuing <em>Electronics and Communication Engg</em></li>
   <li>From <em>National Institute of Technology Calicut</em></li>
-  <li>How to reach me: <a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons</strong></a></li>
+  <li>How to reach me: <a href="https://mummanajagadeesh.github.io/contact"><strong><code>Carrier Pigeons</code></strong></a></li>
   <li>Pronouns: he/him</li>
   <li>Hobbies: Speedcubing, Movies, Blogging</li>
   <li>Fun fact: I'm Batman</li>
@@ -105,7 +105,7 @@ MY Key Interests:
 - Computer Vision, Sensor Fusion
 - Robotics, AMR Path Planning & Navigation
   
-Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
+Feel free to check out my projects [`here`](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
 
 
 <br><br>
@@ -552,14 +552,15 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
 <p align="center">
   <!-- Light mode trophy -->
   <a href="https://github.com/ryo-ma/github-profile-trophy#gh-light-mode-only">
-    <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true#gh-light-mode-only" alt="mummanajagadeesh trophies (light)" />
+    <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-light-mode-only" alt="mummanajagadeesh trophies (light)" />
   </a>
 
   <!-- Dark mode trophy -->
   <a href="https://github.com/ryo-ma/github-profile-trophy#gh-dark-mode-only">
-    <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true#gh-dark-mode-only" alt="mummanajagadeesh trophies (dark)" />
+    <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-dark-mode-only" alt="mummanajagadeesh trophies (dark)" />
   </a>
 </p>
+
 
 
 <!--[![Activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true)](https://github.com/Mummanajagadeesh/github-readme-activity-graph)-->
