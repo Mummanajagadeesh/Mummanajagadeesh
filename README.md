@@ -1,4 +1,4 @@
-# Olá, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 11:41:46 IST -->
+# Bonjour le monde! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 11:38:42 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -61,7 +61,7 @@
 
 
 <p>
-  <img src="assets/main.gif" height="250px" align="right" alt="Robot Arm ASCII art GIF" />
+<!--   <img src="assets/main.gif" height="250px" align="right" alt="Robot Arm ASCII art GIF" /> -->
   <img src="assets/rickroll.gif" height="250px" align="right" alt="RickRoll ASCII art GIF" />
 </p>
 
@@ -588,3 +588,4 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
     <img src="https://github-readme-quotes-bay.vercel.app/quote?quoteCategory=motivational&theme=dark#gh-dark-mode-only" alt="Motivational Quote (dark)" />
   </a>
 </p>
+
