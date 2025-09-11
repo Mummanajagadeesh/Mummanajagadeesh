@@ -1,4 +1,4 @@
-# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 11:57:58 IST -->
+# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 11:50:57 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -66,17 +66,18 @@
 </p>
 
 
-<ul>
-  <li><code>Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a></code></li>
-  <li><code>Building a HW accelerator arch for IMG CLASSIF</code></li>
-  <li><code>Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a></code></li>
-  <li><code>Pursuing <em>Electronics and Communication Engg</em></code></li>
-  <li><code>From <em>National Institute of Technology Calicut</em></code></li>
-  <li><code>How to reach me: <a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a></code></li>
-  <li><code>Pronouns: he/him</code></li>
-  <li><code>Hobbies: Speedcubing, Movies, Blogging</code></li>
-  <li><code>Fun fact: I'm Batman</code></li>
-</ul>
+
+<code>> FOCUS:                   Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a></code><br>
+<code>> CURRENTLY:               Building a HW accelerator arch for IMG CLASSIF</code><br>
+<code>> CLUB:                    Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a></code><br>
+<code>> MAJOR:                   <em>Electronics and Communication Engg</em></code><br>
+<code>> COLLEGE:                 <em>National Institute of Technology Calicut</em></code><br>
+<code>> HOW_TO_REACH_ME:         <a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a></code><br>
+<code>> PRONOUNS:                he/him</code><br>
+<code>> HOBBIES:                 Speedcubing, Movies, Blogging</code><br>
+<code>> FUN_FACT:                I'm Batman</code><br>
+
+
 
 
 
