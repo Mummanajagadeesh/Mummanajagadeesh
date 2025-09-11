@@ -61,21 +61,21 @@
 
 
 <p>
-  <img src="assets/main.gif" width="250px" align="right" alt="robot ASCII art GIF" />
+  <img src="assets/main.gif" width="220px" align="right" alt="robot ASCII art GIF" />
 </p>
 
-<ul>
-  <li>VLSI, Robotics & AI Enthusiast</li>
-  <li>Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong><code>BLOG :)</code></strong></a></li>
-  <li>I'm currently working on few hardware-focused projects</li>
-  <li>Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC"><strong><code>RIGNITC</code></strong></a></li>
-  <li>Pursuing <em>Electronics and Communication Engg</em></li>
-  <li>From <em>National Institute of Technology Calicut</em></li>
-  <li>How to reach me: <a href="https://mummanajagadeesh.github.io/contact"><strong><code>Carrier Pigeons :P</code></strong></a></li>
-  <li>Pronouns: he/him</li>
-  <li>Hobbies: Speedcubing, Movies, Blogging</li>
-  <li>Fun fact: I'm Batman</li>
-</ul>
+<pre>
+- VLSI, Robotics & AI Enthusiast
+- Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong><code>blog</code></strong></a>
+- I'm currently working on few hardware-focused projects
+- Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC"><strong><code>RIGNITC</code></strong></a>
+- Pursuing <em>Electronics and Communication Engg</em>
+- From <em>National Institute of Technology Calicut</em>
+- How to reach me: <a href="https://mummanajagadeesh.github.io/contact"><strong><code>Carrier Pigeons :P</code></strong></a>
+- Pronouns: he/him
+- Hobbies: Speedcubing, Movies, Blogging
+- Fun fact: I'm Batman
+</pre>
 
 
 <div align="center">
