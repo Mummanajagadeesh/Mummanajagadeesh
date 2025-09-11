@@ -1,4 +1,4 @@
-# Olá, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 11:19:58 IST -->
+# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 11:11:51 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -61,7 +61,7 @@
 
 
 <p>
-  <img src="assets/main.gif" width="220px" align="right" alt="robot ASCII art GIF" />
+  <img src="assets/rickroll.gif" width="220px" align="right" alt="robot ASCII art GIF" />
 </p>
 
 <pre>
