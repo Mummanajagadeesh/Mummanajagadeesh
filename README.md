@@ -68,10 +68,10 @@
 
 <ul>
   <li><code>Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all">blog</a></code></li>
-  <li><code>I'm currently working on few hardware-focused projects</code></li>
+  <li><code>Building a HW accelerator arch for IMG CLASSIF</code></li>
   <li><code>Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC">RIGNITC</a></code></li>
-  <li><code>Pursuing Electronics and Communication Engg</code></li>
-  <li><code>From National Institute of Technology Calicut</code></li>
+  <li><code>Pursuing <em>Electronics and Communication Engg</em></code></li>
+  <li><code>From <em>National Institute of Technology Calicut</em></code></li>
   <li><code>How to reach me: <a href="https://mummanajagadeesh.github.io/contact">Carrier Pigeons :P</a></code></li>
   <li><code>Pronouns: he/him</code></li>
   <li><code>Hobbies: Speedcubing, Movies, Blogging</code></li>
