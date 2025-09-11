@@ -1,4 +1,4 @@
-# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 11:32:42 IST -->
+# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-11 11:11:51 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -64,18 +64,21 @@
   <img src="assets/rickroll.gif" width="220px" align="right" alt="robot ASCII art GIF" />
 </p>
 
-<pre>
-- VLSI, Robotics & AI Enthusiast
-- Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong><code>blog</code></strong></a>
-- I'm currently working on few hardware-focused projects
-- Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC"><strong><code>RIGNITC</code></strong></a>
-- Pursuing <em>Electronics and Communication Engg</em>
-- From <em>National Institute of Technology Calicut</em>
-- How to reach me: <a href="https://mummanajagadeesh.github.io/contact"><strong><code>Carrier Pigeons :P</code></strong></a>
-- Pronouns: he/him
-- Hobbies: Speedcubing, Movies, Blogging
-- Fun fact: I'm Batman
-</pre>
+
+<ul>
+  <li><code>Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all">blog</a></code></li>
+  <li><code>I'm currently working on few hardware-focused projects</code></li>
+  <li><code>Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC">RIGNITC</a></code></li>
+  <li><code>Pursuing Electronics and Communication Engg</code></li>
+  <li><code>From National Institute of Technology Calicut</code></li>
+  <li><code>How to reach me: <a href="https://mummanajagadeesh.github.io/contact">Carrier Pigeons :P</a></code></li>
+  <li><code>Pronouns: he/him</code></li>
+  <li><code>Hobbies: Speedcubing, Movies, Blogging</code></li>
+  <li><code>Fun fact: I'm Batman</code></li>
+</ul>
+
+
+
 
 
 <div align="center">
