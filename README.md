@@ -67,12 +67,12 @@
 
 
 <ul>
-  <li><code>Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all">blog</a></code></li>
+  <li><code>Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a></code></li>
   <li><code>Building a HW accelerator arch for IMG CLASSIF</code></li>
-  <li><code>Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC">RIGNITC</a></code></li>
+  <li><code>Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a></code></li>
   <li><code>Pursuing <em>Electronics and Communication Engg</em></code></li>
   <li><code>From <em>National Institute of Technology Calicut</em></code></li>
-  <li><code>How to reach me: <a href="https://mummanajagadeesh.github.io/contact">Carrier Pigeons :P</a></code></li>
+  <li><code>How to reach me: <a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a></code></li>
   <li><code>Pronouns: he/him</code></li>
   <li><code>Hobbies: Speedcubing, Movies, Blogging</code></li>
   <li><code>Fun fact: I'm Batman</code></li>
