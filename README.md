@@ -69,7 +69,7 @@
 
 <code>> FOCUS:                   Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a></code><br>
 <code>> CURRENTLY:               Building a HW accelerator arch for IMG CLASSIF</code><br>
-<code>> CLUB:                    Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a></code><br>
+<code>> CLUB:                    Rigging robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a></code><br>
 <code>> MAJOR:                   <em>Electronics and Communication Engg</em></code><br>
 <code>> COLLEGE:                 <em>National Institute of Technology Calicut</em></code><br>
 <code>> CONTACT:                 <a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a></code><br>
