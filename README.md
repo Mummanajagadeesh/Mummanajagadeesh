@@ -61,7 +61,8 @@
 
 
 <p>
-  <img src="assets/rickroll.gif" width="220px" align="right" alt="robot ASCII art GIF" />
+  <img src="assets/main.gif" height="250px" align="right" alt="Robot Arm ASCII art GIF" />
+  <img src="assets/rickroll.gif" height="250px" align="right" alt="RickRoll ASCII art GIF" />
 </p>
 
 
