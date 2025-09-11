@@ -72,7 +72,7 @@
 <code>> CLUB:                    Rigging robots at <a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a></code><br>
 <code>> MAJOR:                   <em>Electronics and Communication Engg</em></code><br>
 <code>> COLLEGE:                 <em>National Institute of Technology Calicut</em></code><br>
-<code>> HOW_TO_REACH_ME:         <a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a></code><br>
+<code>> CONTACT:                 <a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a></code><br>
 <code>> PRONOUNS:                he/him</code><br>
 <code>> HOBBIES:                 Speedcubing, Movies, Blogging</code><br>
 <code>> FUN_FACT:                I'm Batman</code><br>
