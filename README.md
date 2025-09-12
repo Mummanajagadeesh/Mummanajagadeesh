@@ -75,7 +75,7 @@
 <code>   CONTACT:                 "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>"</code><br>
 <code>   PRONOUNS:                "he/him"</code><br>
 <code>   HOBBIES:                 ["Speedcubing", "Movies", "Blogging"]</code><br>
-<code>   FUN_FACT:                "I'm Batman"</code><br>
+<code>   FUNFACT:                 "I'm Batman"</code><br>
 
 
 <!--<code>module about_me;</code><br>
