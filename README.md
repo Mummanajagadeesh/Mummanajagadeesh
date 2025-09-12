@@ -24,12 +24,12 @@
   <a href="mailto:mummanajagadeesh97@gmail.com" target="_blank">
     <img src="assets/bwicons/mail.svg" alt="Email" width="30" height="30"/>
   </a>
-  <a href="https://www.facebook.com/MJagadeesh97/" target="_blank">
+<!--   <a href="https://www.facebook.com/MJagadeesh97/" target="_blank">
     <img src="assets/bwicons/facebook.svg" alt="Facebook" width="30" height="30"/>
   </a>
   <a href="https://x.com/M_JAGADEESH97" target="_blank">
     <img src="assets/bwicons/twitter-x.svg" alt="X" width="30" height="30"/>
-  </a>
+  </a> -->
   <a href="https://www.reddit.com/user/Large-Raisin-5912/" target="_blank">
     <img src="assets/bwicons/reddit.svg" alt="Reddit" width="30" height="30"/>
   </a>
