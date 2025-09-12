@@ -76,6 +76,8 @@
 <code>   PRONOUNS:                "he/him"</code><br>
 <code>   HOBBIES:                 ["Speedcubing", "Movies", "Blogging"]</code><br>
 <code>   FUNFACT:                 "I'm Batman"</code><br>
+<code>   WHATIF:                  "If I eat myself, do I become twice as big or disappear?"</code><br>
+
 
 
 <!--<code>module about_me;</code><br>
