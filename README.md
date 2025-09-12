@@ -99,7 +99,7 @@
 <div align="center">
   <picture>
     <source srcset="dist/github-snake-dark.svg" media="(prefers-color-scheme: dark)">
-    <img src="dist/github-snake.svg" alt="GitHub Snake game eating contributions chart" />
+    <img src="dist/github-snake.svg" alt="GitHub Snake Game: snake eating contributions on green chart" />
   </picture>
 </div>
 
