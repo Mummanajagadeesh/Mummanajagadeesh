@@ -1,4 +1,4 @@
-# ¡Hola, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-15 21:20:14 IST -->
+# Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-15 21:07:39 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -582,6 +582,7 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
   <img src="assets/tools/yosys.png" alt="Yosys" width="48" height="48"/>
   <img src="assets/tools/openroad.png" alt="OpenROAD" width="48" height="48"/>
   <img src="assets/tools/skywater.png" alt="Skywater PDK" width="48" height="48"/>
+  <img src="assets/tools/tcad.png" alt="Sentaurus TCAD" width="48" height="48"/>
   <img src="assets/tools/tcltk.png" alt="Tcl/Tk" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=perl" alt="Perl" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=bash" alt="Bash" width="48" height="48"/>
@@ -590,6 +591,7 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
   <img src="https://skillicons.dev/icons?i=matlab" alt="MATLAB" width="48" height="48"/>
   <img src="assets/tools/ltspice.png" alt="LTSpice" width="48" height="48"/>
   <img src="assets/tools/ngspice.png" alt="NGSpice" width="48" height="48"/>
+  <img src="assets/tools/qucs.png" alt="QUCS" width="48" height="48"/>
   <img src="assets/tools/proteus.png" alt="Proteus" width="48" height="48"/>
   <img src="assets/tools/simulink.png" alt="Simulink" width="48" height="48"/>
   <img src="assets/tools/klayout.png" alt="KLayout" width="48" height="48"/>
@@ -604,6 +606,8 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
   <!-- Robotics / Simulation -->
   <img src="https://skillicons.dev/icons?i=ros" alt="ROS" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=opencv" alt="OpenCV" width="48" height="48"/>
+  <img src="assets/tools/yolo.png" alt="YOLO" width="48" height="48"/>
+  <img src="assets/tools/mission-planner.png" alt="Mission Planner" width="48" height="48"/>
   <img src="assets/tools/webots.png" alt="Webots" width="48" height="48"/>
   <img src="assets/tools/gazebo.png" alt="Gazebo" width="48" height="48"/>
   <img src="assets/tools/vrep.png" alt="V-REP" width="48" height="48"/>
