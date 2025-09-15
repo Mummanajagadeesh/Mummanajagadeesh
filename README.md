@@ -189,7 +189,7 @@
 
 # `$ cat ~/about_me.txt`
 
-Hey, I'm Jagadeesh — I work across VLSI design, robotics, and AI hardware. I’m particularly interested in digital and analog VLSI, hardware acceleration for machine learning and image processing, and the practical side of taking designs from code to silicon. Alongside this, I enjoy programming embedded systems, working with microcontrollers, and building robotics applications. I also enjoy collaborating in competitions, open-source projects, and hands-on hardware/software design challenges.
+Hey, I'm Jagadeesh — I work across VLSI design, robotics, and AI hardware. My work spans digital/analog design, circuit-level implementation, and low-level arch. optimization {for ML workloads}, with a focus on PPA trade-offs. I also work with embedded systems, MCUs, and SBCs, applying them in robotics and prototyping. Beyond that, I take part in comps, open-source projects, and hardware/software co-design challenges.
 
 MY Key Interests:
 
