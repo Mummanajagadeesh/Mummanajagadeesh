@@ -1,54 +1,134 @@
-# Hallo Welt! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-15 17:21:59 IST -->
+# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-15 17:21:28 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
 <p align="left">
-  <a href="https://mummanajagadeesh.github.io/" target="_blank">
-      <img src="assets/bwicons/site.svg" alt="Portfolio" width="30" height="30"/>
+  <!-- Portfolio -->
+  <a href="https://mummanajagadeesh.github.io/#gh-light-mode-only">
+    <img src="assets/bwicons/bsite.svg#gh-light-mode-only" alt="Portfolio" width="30" height="30"/>
   </a>
-  <a href="https://mummanajagadeesh.github.io/blog/all" target="_blank">
-      <img src="assets/bwicons/blog.svg" alt="Blog" width="30" height="30"/>
+  <a href="https://mummanajagadeesh.github.io/#gh-dark-mode-only">
+    <img src="assets/bwicons/site.svg#gh-dark-mode-only" alt="Portfolio" width="30" height="30"/>
   </a>
-  <a href="https://www.linkedin.com/in/jagadeeesh-mummana" target="_blank">
-    <img src="assets/bwicons/linkedin.svg" alt="LinkedIn" width="30" height="30"/>
+
+  <!-- Blog -->
+  <a href="https://mummanajagadeesh.github.io/blog/all#gh-light-mode-only">
+    <img src="assets/bwicons/bblog.svg#gh-light-mode-only" alt="Blog" width="30" height="30"/>
   </a>
-  <a href="https://www.instagram.com/jagadeesh__97__" target="_blank">
-    <img src="assets/bwicons/instagram.svg" alt="Instagram" width="30" height="30"/>
+  <a href="https://mummanajagadeesh.github.io/blog/all#gh-dark-mode-only">
+    <img src="assets/bwicons/blog.svg#gh-dark-mode-only" alt="Blog" width="30" height="30"/>
   </a>
-  <a href="https://discord.com/users/864753029030215690" target="_blank">
-    <img src="assets/bwicons/discord.svg" alt="Discord" width="30" height="30"/>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/jagadeeesh-mummana#gh-light-mode-only">
+    <img src="assets/bwicons/blinkedin.svg#gh-light-mode-only" alt="LinkedIn" width="30" height="30"/>
   </a>
-  <a href="https://github.com/Mummanajagadeesh" target="_blank">
-    <img src="assets/bwicons/github.svg" alt="GitHub" width="30" height="30"/>
+  <a href="https://www.linkedin.com/in/jagadeeesh-mummana#gh-dark-mode-only">
+    <img src="assets/bwicons/linkedin.svg#gh-dark-mode-only" alt="LinkedIn" width="30" height="30"/>
   </a>
-  <a href="mailto:mummanajagadeesh97@gmail.com" target="_blank">
-    <img src="assets/bwicons/mail.svg" alt="Email" width="30" height="30"/>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/jagadeesh__97__#gh-light-mode-only">
+    <img src="assets/bwicons/binstagram.svg#gh-light-mode-only" alt="Instagram" width="30" height="30"/>
   </a>
-<!--   <a href="https://www.facebook.com/MJagadeesh97/" target="_blank">
-    <img src="assets/bwicons/facebook.svg" alt="Facebook" width="30" height="30"/>
+  <a href="https://www.instagram.com/jagadeesh__97__#gh-dark-mode-only">
+    <img src="assets/bwicons/instagram.svg#gh-dark-mode-only" alt="Instagram" width="30" height="30"/>
   </a>
-  <a href="https://x.com/M_JAGADEESH97" target="_blank">
-    <img src="assets/bwicons/twitter-x.svg" alt="X" width="30" height="30"/>
-  </a> -->
-  <a href="https://www.reddit.com/user/Large-Raisin-5912/" target="_blank">
-    <img src="assets/bwicons/reddit.svg" alt="Reddit" width="30" height="30"/>
+
+  <!-- Discord -->
+  <a href="https://discord.com/users/864753029030215690#gh-light-mode-only">
+    <img src="assets/bwicons/bdiscord.svg#gh-light-mode-only" alt="Discord" width="30" height="30"/>
   </a>
-  <a href="https://jagadeesh-mummana.vercel.app/" target="_blank">
-    <img src="assets/bwicons/site.svg" alt="Old Site" width="30" height="30"/>
+  <a href="https://discord.com/users/864753029030215690#gh-dark-mode-only">
+    <img src="assets/bwicons/discord.svg#gh-dark-mode-only" alt="Discord" width="30" height="30"/>
   </a>
-  <a href="https://www.youtube.com/@M_J_9_7" target="_blank">
-    <img src="assets/bwicons/youtube.svg" alt="YouTube" width="30" height="30"/>
+
+  <!-- GitHub -->
+  <a href="https://github.com/Mummanajagadeesh#gh-light-mode-only">
+    <img src="assets/bwicons/bgithub.svg#gh-light-mode-only" alt="GitHub" width="30" height="30"/>
   </a>
-  <a href="https://events.cubelelo.com/profile/24CLMUM001" target="_blank">
-    <img src="assets/bwicons/cube.svg" alt="Cube" width="30" height="30"/>
+  <a href="https://github.com/Mummanajagadeesh#gh-dark-mode-only">
+    <img src="assets/bwicons/github.svg#gh-dark-mode-only" alt="GitHub" width="30" height="30"/>
   </a>
-  <a href="https://www.duolingo.com/profile/jagadeesh97" target="_blank">
-    <img src="assets/bwicons/duolingo.svg" alt="Duolingo" width="30" height="30"/>
+
+  <!-- Email -->
+  <a href="mailto:mummanajagadeesh97@gmail.com#gh-light-mode-only">
+    <img src="assets/bwicons/bmail.svg#gh-light-mode-only" alt="Email" width="30" height="30"/>
   </a>
-  <a href="https://games.app.goo.gl/p1bNrgGSnMbK4hte9" target="_blank">
-    <img src="assets/bwicons/playgames.svg" alt="Google Play Games" width="30" height="30"/>
+  <a href="mailto:mummanajagadeesh97@gmail.com#gh-dark-mode-only">
+    <img src="assets/bwicons/mail.svg#gh-dark-mode-only" alt="Email" width="30" height="30"/>
+  </a>
+
+  <!-- Facebook -->
+  <!--
+  <a href="https://www.facebook.com/MJagadeesh97/#gh-light-mode-only">
+    <img src="assets/bwicons/bfacebook.svg#gh-light-mode-only" alt="Facebook" width="30" height="30"/>
+  </a>
+  <a href="https://www.facebook.com/MJagadeesh97/#gh-dark-mode-only">
+    <img src="assets/bwicons/facebook.svg#gh-dark-mode-only" alt="Facebook" width="30" height="30"/>
+  </a>
+  -->
+
+  <!-- X (Twitter) -->
+  <!--
+  <a href="https://x.com/M_JAGADEESH97#gh-light-mode-only">
+    <img src="assets/bwicons/btwitter-x.svg#gh-light-mode-only" alt="X" width="30" height="30"/>
+  </a>
+  <a href="https://x.com/M_JAGADEESH97#gh-dark-mode-only">
+    <img src="assets/bwicons/twitter-x.svg#gh-dark-mode-only" alt="X" width="30" height="30"/>
+  </a>
+  -->
+
+
+  <!-- Reddit -->
+  <a href="https://www.reddit.com/user/Large-Raisin-5912/#gh-light-mode-only">
+    <img src="assets/bwicons/breddit.svg#gh-light-mode-only" alt="Reddit" width="30" height="30"/>
+  </a>
+  <a href="https://www.reddit.com/user/Large-Raisin-5912/#gh-dark-mode-only">
+    <img src="assets/bwicons/reddit.svg#gh-dark-mode-only" alt="Reddit" width="30" height="30"/>
+  </a>
+
+  <!-- Old Site -->
+  <a href="https://jagadeesh-mummana.vercel.app/#gh-light-mode-only">
+    <img src="assets/bwicons/bsite.svg#gh-light-mode-only" alt="Old Site" width="30" height="30"/>
+  </a>
+  <a href="https://jagadeesh-mummana.vercel.app/#gh-dark-mode-only">
+    <img src="assets/bwicons/site.svg#gh-dark-mode-only" alt="Old Site" width="30" height="30"/>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://www.youtube.com/@M_J_9_7#gh-light-mode-only">
+    <img src="assets/bwicons/byoutube.svg#gh-light-mode-only" alt="YouTube" width="30" height="30"/>
+  </a>
+  <a href="https://www.youtube.com/@M_J_9_7#gh-dark-mode-only">
+    <img src="assets/bwicons/youtube.svg#gh-dark-mode-only" alt="YouTube" width="30" height="30"/>
+  </a>
+
+  <!-- Cube -->
+  <a href="https://events.cubelelo.com/profile/24CLMUM001#gh-light-mode-only">
+    <img src="assets/bwicons/cube.svg#gh-light-mode-only" alt="Cube" width="30" height="30"/>
+  </a>
+  <a href="https://events.cubelelo.com/profile/24CLMUM001#gh-dark-mode-only">
+    <img src="assets/bwicons/cube.svg#gh-dark-mode-only" alt="Cube" width="30" height="30"/>
+  </a>
+
+  <!-- Duolingo -->
+  <a href="https://www.duolingo.com/profile/jagadeesh97#gh-light-mode-only">
+    <img src="assets/bwicons/bduolingo.svg#gh-light-mode-only" alt="Duolingo" width="30" height="30"/>
+  </a>
+  <a href="https://www.duolingo.com/profile/jagadeesh97#gh-dark-mode-only">
+    <img src="assets/bwicons/duolingo.svg#gh-dark-mode-only" alt="Duolingo" width="30" height="30"/>
+  </a>
+
+  <!-- Play Games -->
+  <a href="https://games.app.goo.gl/p1bNrgGSnMbK4hte9#gh-light-mode-only">
+    <img src="assets/bwicons/bplaygames.svg#gh-light-mode-only" alt="Google Play Games" width="30" height="30"/>
+  </a>
+  <a href="https://games.app.goo.gl/p1bNrgGSnMbK4hte9#gh-dark-mode-only">
+    <img src="assets/bwicons/playgames.svg#gh-dark-mode-only" alt="Google Play Games" width="30" height="30"/>
   </a>
 </p>
+
 
 
 <h1 align="left">
