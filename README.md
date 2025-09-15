@@ -147,16 +147,16 @@
 
 
 <code>$ less ~/workspace/profile/config.yaml</code><br><br>
-<code>  FOCUS:               "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"</code><br>
-<code>  CURRENTLY:           "Building a HW accelerator arch for IMG CLASSIF"</code><br>
-<code>  CLUB:                "Rigging robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>"</code><br>
-<code>  MAJOR:               "<em>Electronics and Communication Engg</em>"</code><br>
-<code>  COLLEGE:             "<em>National Institute of Technology Calicut</em>"</code><br>
-<code>  CONTACT:             "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>"</code><br>
-<code>  PRONOUNS:            "he/him"</code><br>
-<code>  HOBBIES:             ["Speedcubing", "Movies", "Blogging"]</code><br>
-<code>  FUNFACT:             "I'm Batman"</code><br>
-<code>  SECRET:              "I pay the moon to follow me around"</code><br>
+<code>  FOCUS:               "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    </code><br>
+<code>  CURRENTLY:           "Building a HW accelerator arch for IMG CLASSIF"         </code><br>
+<code>  CLUB:                "Rigging robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>"                                </code><br>
+<code>  MAJOR:               "<em>Electronics and Communication Engg</em>"                     </code><br>
+<code>  COLLEGE:             "<em>National Institute of Technology Calicut</em>"               </code><br>
+<code>  CONTACT:             "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>"                                     </code><br>
+<code>  PRONOUNS:            "he/him"                                                 </code><br>
+<code>  HOBBIES:             ["Speedcubing", "Movies", "Blogging"]                    </code><br>
+<code>  FUNFACT:             "I'm Batman"                                             </code><br>
+<code>  SECRET:              "I pay the moon to follow me around"                     </code><br>
 <code>  WHATIF:              "If I eat myself, do I become twice as big or disappear?"</code><br>
 
 
