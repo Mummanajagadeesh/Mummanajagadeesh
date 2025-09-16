@@ -196,8 +196,8 @@ Hey, I'm Jagadeesh — I work across VLSI design, robotics, and AI hardware. My 
 MY Key Interests:
 
 - VLSI Design: Analog Circuits & Digital Design
+- Computer Arch and Protocols
 - Neural Networks & Image Processing in HW/SW
-- Embedded Programming (C, C++, Python)
 - Microcontrollers & Electronics
 - Computer Vision, Sensor Fusion
 - Robotics, AMR Path Planning & Navigation
