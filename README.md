@@ -461,7 +461,7 @@ An autonomous aerial system designed for reliable navigation and landing in envi
 <details>
 <summary>
   <strong>
-        Peripheral Serial Communication Protocols in Verilog [I2C/SPI/UART-TX]
+        Peripheral Serial Communication Protocols [I2C/SPI/UART-TX]
         <a href="https://mummanajagadeesh.github.io/protocols/" target="_blank">Link</a>
   </strong>
 </summary>
