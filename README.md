@@ -1,4 +1,4 @@
-# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-20 03:58:14 IST -->
+# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-20 03:38:50 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -461,7 +461,7 @@ An autonomous aerial system designed for reliable navigation and landing in envi
 <details>
 <summary>
   <strong>
-    I2C & SPI Protocol FSMs in Verilog | 
+        Peripheral Serial Communication Protocols in Verilog [ I2C / SPI / UART-TX ]
         <a href="https://mummanajagadeesh.github.io/protocols/" target="_blank">Link</a>
   </strong>
 </summary>
@@ -485,14 +485,23 @@ An autonomous aerial system designed for reliable navigation and landing in envi
         <img src="./repos/i2c-protocol-verilog-dark.svg#gh-dark-mode-only" alt="I2C Protocol in Verilog (dark mode)" />
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/Mummanajagadeesh/uart-tx-soft-core-ip-verilog#gh-light-mode-only">
+        <img src="./repos/uart-tx-soft-core-ip-verilog-light.svg#gh-light-mode-only" alt="UART Soft Core TX IP (light mode)" />
+      </a>
+      <a href="https://github.com/Mummanajagadeesh/uart-tx-soft-core-ip-verilog#gh-dark-mode-only">
+        <img src="./repos/uart-tx-soft-core-ip-verilog-dark.svg#gh-dark-mode-only" alt="UART Soft Core TX IP (dark mode)" />
+      </a>
+    </td>
   </tr>
 </table>
 
-<br>
+<br><br>
 
-<br>
-
-Designed I2C with a single-master, multi-slave configuration supporting clock stretching and configurable delays; SPI supports modes 0–3 via CPOL/CPHA, performs single 8-bit full-duplex transfers, and allows clock frequency scaling through a divider
+Designed and implemented **serial communication protocols in Verilog**:  
+- **I2C**: Single-master, multi-slave with clock stretching & configurable delays.  
+- **SPI**: Supports modes 0–3 via CPOL/CPHA, performs single 8-bit full-duplex transfers, and allows clock frequency scaling.  
+- **UART TX Soft Core IP**: Customizable baud rate, lightweight transmitter module for FPGA/ASIC integration.  
 
 </details>
 
