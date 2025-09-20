@@ -648,7 +648,7 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
 # `$ git stats --all`
 
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh&style=flat-square&color=000000&label=Views&labelColor=ffffff)
-![Total Repos](https://github-readme-stats-mummanajagadeesh.vercel.app/api/total-repos?username=Mummanajagadeesh&theme=transparent&hide_border=true&count_private=true&bg_color=00000000&text_color=ffffff&icon_color=ffffff)
+![Total Repos](https://github-readme-stats-mummanajagadeesh.vercel.app/api/total-repos?username=Mummanajagadeesh&theme=transparent&hide_border=true&count_private=true&bg_color=00000&text_color=ffffff&icon_color=ffffff)
 
 
 <p align="center">
