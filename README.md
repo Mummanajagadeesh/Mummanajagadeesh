@@ -1,4 +1,4 @@
-# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-21 01:51:18 IST -->
+# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-21 01:30:44 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -142,35 +142,35 @@
 
 <p>
 <!--   <img src="assets/main.gif" height="250px" align="right" alt="Robot Arm ASCII art GIF" /> -->
-  <img src="assets/rickroll.gif" height="330px" align="right" alt="RickRoll ASCII art GIF" />
+  <img src="assets/rickroll.gif" height="270px" align="right" alt="RickRoll ASCII art GIF" />
 </p>
 
-<pre>
+
 <code>$ less ~/workspace/profile/config.yaml</code><br><br>
-FOCUS:         "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"           
-CURRENTLY:     "Building a HW ACCELERATOR ARCH for IMG CLASSIF"
-CLUB:          "Rigging Robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>"                       
-MAJOR:         "<em>Electronics and Communication Engg</em>"            
-COLLEGE:       "<em>National Institute of Technology Calicut</em>"      
-CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>"                            
-PRONOUNS:      "he/him"                                        
-HOBBIES:       ["Speedcubing", "Movies", "Blogging"]           
-FUNFACT:       "I'm Batman"                                    
-SECRET:        "I pay the moon to follow me around"            
-WHATIF:        "If I eat myself, do I become twice as big or disappear?"</code><br>
-</pre>
+<code>  FOCUS:         "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    </code><br>
+<code>  CURRENTLY:     "Building a HW ACCELERATOR ARCH for IMG CLASSIF"         </code><br>
+<code>  CLUB:          "Rigging Robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>"                                </code><br>
+<code>  MAJOR:         "<em>Electronics and Communication Engg</em>"                     </code><br>
+<code>  COLLEGE:       "<em>National Institute of Technology Calicut</em>"               </code><br>
+<code>  CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>"                                     </code><br>
+<code>  PRONOUNS:      "he/him"                                                 </code><br>
+<code>  HOBBIES:       ["Speedcubing", "Movies", "Blogging"]                    </code><br>
+<code>  FUNFACT:       "I'm Batman"                                             </code><br>
+<code>  SECRET:        "I pay the moon to follow me around"                     </code><br>
+<code>  WHATIF:        "If I eat myself, do I become twice as big or disappear?"</code><br>
+
 
 <!--<code>module about_me;</code><br>
 
-  parameter FOCUS     = "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>",</code><br>
-            CURRENTLY = "Building a HW accelerator arch for IMG CLASSIF",</code><br>
-            CLUB      = "Rigging robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>",</code><br>
-            MAJOR     = "<em>Electronics and Communication Engg</em>",</code><br>
-            COLLEGE   = "<em>National Institute of Technology Calicut</em>",</code><br>
-            CONTACT   = "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>",</code><br>
-            PRONOUNS  = "he/him",</code><br>
-            HOBBIES   = "Speedcubing, Movies, Blogging",</code><br>
-            FUN_FACT  = "I'm Batman";</code><br>
+<code>    parameter FOCUS     = "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>",</code><br>
+<code>              CURRENTLY = "Building a HW accelerator arch for IMG CLASSIF",</code><br>
+<code>              CLUB      = "Rigging robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>",</code><br>
+<code>              MAJOR     = "<em>Electronics and Communication Engg</em>",</code><br>
+<code>              COLLEGE   = "<em>National Institute of Technology Calicut</em>",</code><br>
+<code>              CONTACT   = "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>",</code><br>
+<code>              PRONOUNS  = "he/him",</code><br>
+<code>              HOBBIES   = "Speedcubing, Movies, Blogging",</code><br>
+<code>              FUN_FACT  = "I'm Batman";</code><br>
 
 <code>endmodule</code><br>-->
 
@@ -697,4 +697,3 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
     <img src="https://github-readme-quotes-bay.vercel.app/quote?quoteCategory=motivational&theme=dark#gh-dark-mode-only" alt="Motivational Quote (dark)" />
   </a>
 </p>
-
