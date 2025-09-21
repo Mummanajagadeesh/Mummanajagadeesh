@@ -1,4 +1,4 @@
-<svg width="500" height="162" viewBox="0 0 500 162" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="180" viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg">
   <style>
     .card-bg { fill: #0d1117; stroke: #1f6feb; stroke-width: 1; }
     .repo-name { font: bold 16px sans-serif; fill: #58a6ff; cursor: pointer; text-decoration: underline; }
@@ -7,30 +7,31 @@
     .badge { font: 11px sans-serif; fill: #8b949e; }
     .lang-dot { r: 5; }
   </style>
-  <rect class="card-bg" x="0" y="0" width="500" height="162" rx="12" ry="12" />
+  <rect class="card-bg" x="0" y="0" width="500" height="180" rx="12" ry="12" />
   <a href="https://github.com/Mummanajagadeesh/8-bit-alu" target="_blank">
     <text x="16" y="30" class="repo-name">8-bit-alu</text>
   </a>
   <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#1f6feb1a" stroke="#388bfd" />
   <text x="438" y="29" class="badge">Public</text>
   <text x="16" y="55" class="repo-desc">
-    <tspan x="16" dy="0">8 bit alu implemented in verilog</tspan>
+    <tspan x="16" dy="0">8-bit ALU implemented in Verilog, designed</tspan>
+    <tspan x="16" dy="18">and verified using Xilinx Vivado</tspan>
   </text>
-  <circle class="lang-dot" cx="16" cy="83" fill="#f1e05a" />
-  <text x="26" y="87" class="meta">JavaScript</text>
-  <circle class="lang-dot" cx="126" cy="83" fill="#89e051" />
-  <text x="136" y="87" class="meta">Shell</text>
-  <circle class="lang-dot" cx="236" cy="83" fill="#e4cc98" />
-  <text x="246" y="87" class="meta">Tcl</text>
-  <circle class="lang-dot" cx="346" cy="83" fill="#555555" />
-  <text x="356" y="87" class="meta">C</text>
-  <circle class="lang-dot" cx="16" cy="105" fill="#b2b7f8" />
-  <text x="26" y="109" class="meta">Verilog</text>
-  <circle class="lang-dot" cx="126" cy="105" fill="#E3F171" />
-  <text x="136" y="109" class="meta">Pascal</text>
-  <circle class="lang-dot" cx="236" cy="105" fill="#C1F12E" />
-  <text x="246" y="109" class="meta">Batchfile</text>
-  <circle class="lang-dot" cx="346" cy="105" fill="#5a6986" />
-  <text x="356" y="109" class="meta">PureBasic</text>
-  <text x="484" y="132" text-anchor="end" class="meta">⭐ 0 star(s)</text>
+  <circle class="lang-dot" cx="16" cy="101" fill="#b2b7f8" />
+  <text x="26" y="105" class="meta">Verilog</text>
+  <circle class="lang-dot" cx="126" cy="101" fill="#e4cc98" />
+  <text x="136" y="105" class="meta">Tcl</text>
+  <circle class="lang-dot" cx="236" cy="101" fill="#f1e05a" />
+  <text x="246" y="105" class="meta">JavaScript</text>
+  <circle class="lang-dot" cx="346" cy="101" fill="#89e051" />
+  <text x="356" y="105" class="meta">Shell</text>
+  <circle class="lang-dot" cx="16" cy="123" fill="#555555" />
+  <text x="26" y="127" class="meta">C</text>
+  <circle class="lang-dot" cx="126" cy="123" fill="#E3F171" />
+  <text x="136" y="127" class="meta">Pascal</text>
+  <circle class="lang-dot" cx="236" cy="123" fill="#C1F12E" />
+  <text x="246" y="127" class="meta">Batchfile</text>
+  <circle class="lang-dot" cx="346" cy="123" fill="#5a6986" />
+  <text x="356" y="127" class="meta">PureBasic</text>
+  <text x="484" y="150" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>

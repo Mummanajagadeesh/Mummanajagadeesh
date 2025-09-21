@@ -14,7 +14,7 @@
   <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#ddf4ff" stroke="#0969da" />
   <text x="438" y="29" class="badge">Public</text>
   <text x="16" y="55" class="repo-desc">
-    <tspan x="16" dy="0">Ros2 setup self-guide</tspan>
+    <tspan x="16" dy="0">Step-by-step self-guide for setting up ROS2</tspan>
   </text>
   <circle class="lang-dot" cx="16" cy="83" fill="#083fa1" />
   <text x="26" y="87" class="meta">Markdown</text>
