@@ -1,4 +1,4 @@
-# Bonjour le monde! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-25 01:46:07 IST -->
+# ¡Hola, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-25 01:45:50 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -189,7 +189,7 @@
 
 # `$ cat ~/about_me.txt`
 
-Hey, I'm Jagadeesh — I work across VLSI design, robotics, and AI hardware. My work spans digital/analog design, circuit-level implementation, and low-level arch, optimization {for ML workloads}. I also work with embedded systems, MCUs, and SBCs, applying them in robotics and prototyping. Beyond that, I take part in comps, open-source projects, and hardware/software co-design challenges.
+Hey, I'm Jagadeesh — I work across VLSI design, robotics, and AI hardware. My work spans digital/analog design, circuit-level implementation, and low-level arch, optimization {for ML workloads}. Currently learning open-source IC design. I also work with embedded systems, MCUs, and SBCs, applying them in robotics and prototyping. Beyond that, I take part in comps, open-source projects, and hardware/software co-design challenges.
 
 <!--, with a focus on PPA trade-offs-->
 
