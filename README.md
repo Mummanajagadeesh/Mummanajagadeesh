@@ -197,7 +197,7 @@ MY Key Interests:
 
 - VLSI Design: Analog Circuits & Digital Design
 - Computer Arch and Protocols
-- Neural Networks & Image Processing in HW/SW
+- Neural Networks Hardware Acceleration
 - Microcontrollers & Electronics
 - Computer Vision, Sensor Fusion
 - Robotics, AMR Path Planning & Navigation
