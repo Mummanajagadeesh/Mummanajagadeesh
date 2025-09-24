@@ -142,7 +142,7 @@
 
 <p>
 <!--   <img src="assets/main.gif" height="250px" align="right" alt="Robot Arm ASCII art GIF" /> -->
-  <img src="assets/rickroll.gif" height="300px" align="right" alt="RickRoll ASCII art GIF" />
+  <img src="assets/rickroll.gif" height="350px" align="right" alt="RickRoll ASCII art GIF" />
 </p>
 
 
