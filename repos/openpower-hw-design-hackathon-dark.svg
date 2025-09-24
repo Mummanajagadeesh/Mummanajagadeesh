@@ -18,7 +18,7 @@
     <tspan x="16" dy="18">Wishbone interface for streaming 32-bit</tspan>
     <tspan x="16" dy="18">signed samples, supporting configurable taps</tspan>
     <tspan x="16" dy="18">and coefficients with pipelined start/done</tspan>
-    <tspan x="16" dy="18">operation.</tspan>
+    <tspan x="16" dy="18">operation [OpenFrame SoC Platform]</tspan>
   </text>
   <circle class="lang-dot" cx="16" cy="155" fill="#b2b7f8" />
   <text x="26" y="159" class="meta">Verilog</text>
