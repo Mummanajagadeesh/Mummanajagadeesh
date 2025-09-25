@@ -1,4 +1,4 @@
-<svg width="500" height="256" viewBox="0 0 500 256" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="306" viewBox="0 0 500 306" xmlns="http://www.w3.org/2000/svg">
   <style>
     .card-bg { fill: #fff; stroke: #1f6feb; stroke-width: 1; }
     .repo-name { font: bold 16px sans-serif; fill: #0969da; cursor: pointer; text-decoration: underline; }
@@ -7,36 +7,38 @@
     .badge { font: 11px sans-serif; fill: #57606a; }
     .lang-dot { r: 5; }
   </style>
-  <rect class="card-bg" x="0" y="0" width="500" height="256" rx="12" ry="12" />
+  <rect class="card-bg" x="0" y="0" width="500" height="306" rx="12" ry="12" />
   <a href="https://github.com/Mummanajagadeesh/OpenPOWER-HW-Design-Hackathon" target="_blank">
     <text x="16" y="30" class="repo-name">OpenPOWER-HW-Design-Hackathon</text>
   </a>
   <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#ddf4ff" stroke="#0969da" />
   <text x="438" y="29" class="badge">Public</text>
   <text x="16" y="55" class="repo-desc">
-    <tspan x="16" dy="0">A parameterizable FIR accelerator with</tspan>
-    <tspan x="16" dy="18">Wishbone interface for streaming 32-bit</tspan>
-    <tspan x="16" dy="18">signed samples, supporting configurable taps</tspan>
-    <tspan x="16" dy="18">and coefficients with pipelined start/done</tspan>
-    <tspan x="16" dy="18">operation [OpenFrame SoC Platform]</tspan>
+    <tspan x="16" dy="0">A hardware FIR accelerator with configurable</tspan>
+    <tspan x="16" dy="18">taps and coefficients, exposing a</tspan>
+    <tspan x="16" dy="18">Wishbone-Lite memory-mapped interface. Input</tspan>
+    <tspan x="16" dy="18">samples are processed via a sequential MAC</tspan>
+    <tspan x="16" dy="18">arch with deterministic latency per output.</tspan>
+    <tspan x="16" dy="18">Supports CPU-controlled start/poll/read</tspan>
+    <tspan x="16" dy="18">operation, suitable for low-area and</tspan>
+    <tspan x="16" dy="18">low-power DSP acceleration in the</tspan>
+    <tspan x="16" dy="18">OpenFrame/Microwatt SoC</tspan>
   </text>
-  <circle class="lang-dot" cx="16" cy="155" fill="#b2b7f8" />
-  <text x="26" y="159" class="meta">Verilog</text>
-  <circle class="lang-dot" cx="126" cy="155" fill="#e4cc98" />
-  <text x="136" y="159" class="meta">Tcl</text>
-  <circle class="lang-dot" cx="236" cy="155" fill="#3572A5" />
-  <text x="246" y="159" class="meta">Python</text>
-  <circle class="lang-dot" cx="346" cy="155" fill="#427819" />
-  <text x="356" y="159" class="meta">Makefile</text>
-  <circle class="lang-dot" cx="16" cy="177" fill="#555555" />
-  <text x="26" y="181" class="meta">C</text>
-  <circle class="lang-dot" cx="126" cy="177" fill="#DAE1C2" />
-  <text x="136" y="181" class="meta">SystemVerilog</text>
-  <circle class="lang-dot" cx="236" cy="177" fill="#6E4C13" />
-  <text x="246" y="181" class="meta">Assembly</text>
-  <circle class="lang-dot" cx="346" cy="177" fill="#cccccc" />
-  <text x="356" y="181" class="meta">Linker</text>
-  <circle class="lang-dot" cx="16" cy="199" fill="#cccccc" />
-  <text x="26" y="203" class="meta">Script</text>
-  <text x="484" y="226" text-anchor="end" class="meta">⭐ 1 star(s)</text>
+  <circle class="lang-dot" cx="16" cy="227" fill="#b2b7f8" />
+  <text x="26" y="231" class="meta">Verilog</text>
+  <circle class="lang-dot" cx="126" cy="227" fill="#e4cc98" />
+  <text x="136" y="231" class="meta">Tcl</text>
+  <circle class="lang-dot" cx="236" cy="227" fill="#3572A5" />
+  <text x="246" y="231" class="meta">Python</text>
+  <circle class="lang-dot" cx="346" cy="227" fill="#427819" />
+  <text x="356" y="231" class="meta">Makefile</text>
+  <circle class="lang-dot" cx="16" cy="249" fill="#555555" />
+  <text x="26" y="253" class="meta">C</text>
+  <circle class="lang-dot" cx="126" cy="249" fill="#6E4C13" />
+  <text x="136" y="253" class="meta">Assembly</text>
+  <circle class="lang-dot" cx="236" cy="249" fill="#cccccc" />
+  <text x="246" y="253" class="meta">Linker</text>
+  <circle class="lang-dot" cx="346" cy="249" fill="#cccccc" />
+  <text x="356" y="253" class="meta">Script</text>
+  <text x="484" y="276" text-anchor="end" class="meta">⭐ 1 star(s)</text>
 </svg>
