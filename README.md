@@ -1,4 +1,4 @@
-# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-26 13:26:14 IST -->
+# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-09-26 13:18:25 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -146,19 +146,22 @@
 </p>
 
 
-<code>$ less ~/workspace/profile/config.yaml</code><br><br>
-<code>  FOCUS:         "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    </code><br>
-<code>  CURRENTLY:     "Building a HW ACCELERATOR ARCH for IMG CLASSIF"         </code><br>
-<code>  CLUB:          "Rigging Robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>"                                </code><br>
-<code>  COMPS:          ["E-YANTRA", "OpenPOWER HW"]                         #RN</code><br>
-<code>  MAJOR:         "<em>Electronics and Communication Engg</em>"                     </code><br>
-<code>  COLLEGE:       "<em>National Institute of Technology Calicut</em>"               </code><br>
-<code>  CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>"                                     </code><br>
-<code>  PRONOUNS:      "he/him"                                                 </code><br>
-<code>  HOBBIES:       ["Speedcubing", "Movies", "Blogging"]                    </code><br>
-<code>  FUNFACT:       "I'm Batman"                                             </code><br>
-<code>  SECRET:        "I pay the moon to follow me around"                     </code><br>
-<code>  WHATIF:        "If I eat myself, do I become twice as big or disappear?"</code><br>
+<code>$ less ~/workspace/profile/config.yaml</code>
+
+<code>
+  FOCUS:         "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    <br>
+  CURRENTLY:     "Building a HW ACCELERATOR ARCH for IMG CLASSIF"         <br>
+  CLUB:          "Rigging Robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>"                                <br>
+  COMPS:          ["E-YANTRA", "OpenPOWER HW"]                         #RN<br>
+  MAJOR:         "<em>Electronics and Communication Engg</em>"                     <br>
+  COLLEGE:       "<em>National Institute of Technology Calicut</em>"               <br>
+  CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>"                                     <br>
+  PRONOUNS:      "he/him"                                                 <br>
+  HOBBIES:       ["Speedcubing", "Movies", "Blogging"]                    <br>
+  FUNFACT:       "I'm Batman"                                             <br>
+  SECRET:        "I pay the moon to follow me around"                     <br>
+  WHATIF:        "If I eat myself, do I become twice as big or disappear?"<br>
+</code>
 
 
 <!--<code>module about_me;</code><br>
