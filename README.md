@@ -152,7 +152,7 @@
   FOCUS:         "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    <br>
   CURRENTLY:     "Building a HW ACCELERATOR ARCH for IMG CLASSIF"         <br>
   CLUB:          "Rigging Robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>"                                <br>
-  COMPS:          ["E-YANTRA", "OpenPOWER HW"]                         #RN<br>
+  COMPS:         ["E-YANTRA", "OpenPOWER HW"]                          #RN<br>
   MAJOR:         "<em>Electronics and Communication Engg</em>"                     <br>
   COLLEGE:       "<em>National Institute of Technology Calicut</em>"               <br>
   CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>"                                     <br>
