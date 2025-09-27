@@ -140,15 +140,12 @@
 
 
 
-<p>
-<!--   <img src="assets/main.gif" height="250px" align="right" alt="Robot Arm ASCII art GIF" /> -->
-  <img src="assets/rickroll.gif" height="320px" align="right" alt="RickRoll ASCII art GIF" />
-</p>
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
 
+<pre><code>$ less ~/workspace/profile/config.yaml
 
-<code>$ less ~/workspace/profile/config.yaml</code>
-
-<code>
   FOCUS:         "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    <br>
   CURRENTLY:     "Building a HW ACCELERATOR ARCH for IMG CLASSIF"         <br>
   CLUB:          "Rigging Robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>"                                <br>
@@ -161,7 +158,16 @@
   FUNFACT:       "I'm Batman"                                             <br>
   SECRET:        "I pay the moon to follow me around"                     <br>
   WHATIF:        "If I eat myself, do I become twice as big or disappear?"<br>
-</code>
+</code></pre>
+
+  </td>
+  <td>
+    <img src="assets/rickroll.gif" height="320px" alt="RickRoll GIF" />
+  </td>
+  </tr>
+</table>
+
+
 
 
 <!--<code>module about_me;</code><br>
