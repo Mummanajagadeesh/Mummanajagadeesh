@@ -333,15 +333,27 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
   </tr>
 </table>
 
-<!-- Light Mode Repo Card -->
-<a href="https://github.com/Mummanajagadeesh/alternate-numerical-notations-for-riscv#gh-light-mode-only">
-  <img src="./repos/alternate-numerical-notations-for-riscv-light.svg#gh-light-mode-only" alt="Posit number system: An alternative to IEEE 754 for efficient arithmetic" />
-</a>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Mummanajagadeesh/hw-multiply-and-accumulate-units-verilog#gh-light-mode-only">
+        <img src="./repos/hw-multiply-and-accumulate-units-verilog-light.svg#gh-light-mode-only" alt="Implements and compares 8-bit multipliers and 16-bit adders in synthesizable Verilog, analyzing their area, timing, and power characteristics in MAC datapath architectures" />
+      </a>
+      <a href="https://github.com/Mummanajagadeesh/hw-multiply-and-accumulate-units-verilog#gh-dark-mode-only">
+        <img src="./repos/hw-multiply-and-accumulate-units-verilog-dark.svg#gh-dark-mode-only" alt="Implements and compares 8-bit multipliers and 16-bit adders in synthesizable Verilog, analyzing their area, timing, and power characteristics in MAC datapath architectures" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Mummanajagadeesh/alternate-numerical-notations-for-riscv#gh-light-mode-only">
+        <img src="./repos/alternate-numerical-notations-for-riscv-light.svg#gh-light-mode-only" alt="Posit number system: An alternative to IEEE 754 for efficient arithmetic" />
+      </a>
+      <a href="https://github.com/Mummanajagadeesh/alternate-numerical-notations-for-riscv#gh-dark-mode-only">
+        <img src="./repos/alternate-numerical-notations-for-riscv-dark.svg#gh-dark-mode-only" alt="Posit number system: An alternative to IEEE 754 for efficient arithmetic" />
+      </a>
+    </td>
+  </tr>
+</table>
 
-<!-- Dark Mode Repo Card -->
-<a href="https://github.com/Mummanajagadeesh/alternate-numerical-notations-for-riscv#gh-dark-mode-only">
-  <img src="./repos/alternate-numerical-notations-for-riscv-dark.svg#gh-dark-mode-only" alt="Posit number system: An alternative to IEEE 754 for efficient arithmetic" />
-</a>
 <br>
 
 <!-- Descriptions as bullet points -->
