@@ -15,7 +15,7 @@
   <text x="438" y="29" class="badge">Public</text>
   <text x="16" y="55" class="repo-desc">
     <tspan x="16" dy="0">Implements and compares 8-bit multipliers</tspan>
-    <tspan x="16" dy="18">and 16-bit adders in synthesizable Verilog,</tspan>
+    <tspan x="16" dy="18">and 8-bit adders in synthesizable Verilog,</tspan>
     <tspan x="16" dy="18">analyzing their area, timing, and power</tspan>
     <tspan x="16" dy="18">characteristics in MAC datapath architectures</tspan>
   </text>
