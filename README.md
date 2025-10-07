@@ -340,7 +340,7 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
         <img src="./repos/hw-multiply-and-accumulate-units-verilog-light.svg#gh-light-mode-only" alt="Implements and compares 8-bit multipliers and 16-bit adders in synthesizable Verilog, analyzing their area, timing, and power characteristics in MAC datapath architectures" />
       </a>
       <a href="https://github.com/Mummanajagadeesh/hw-multiply-and-accumulate-units-verilog#gh-dark-mode-only">
-        <img src="./repos/hw-multiply-and-accumulate-units-verilog-dark.svg#gh-dark-mode-only" alt="Implements and compares 8-bit multipliers and 16-bit adders in synthesizable Verilog, analyzing their area, timing, and power characteristics in MAC datapath architectures" />
+        <img src="./repos/hw-multiply-and-accumulate-units-verilog-dark.svg#gh-dark-mode-only" alt="Implements and compares 8-bit multipliers and 8-bit adders in synthesizable Verilog, analyzing their area, timing, and power characteristics in MAC datapath architectures" />
       </a>
     </td>
     <td align="center">
@@ -367,7 +367,7 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
     <p><strong>Systolic Array Matrix Multiplication</strong> – Verilog implementation of matrix multiplication using systolic arrays to enable parallel computation and hardware-level performance optimization. Each processing element leverages a Multiply-Accumulate (MAC) unit for core operations.</p>
   </li>
   <li>
-    <p><strong>Multiply-Accumulate Unit</strong> – Uses Booth’s algorithm and a Kogge-Stone adder for efficient signed multiplication and fast parallel addition; other approaches like MBE and CSA are also being explored to boost speed.</p>
+    <p><strong>Hardware Multiply-Accumulate Unit</strong> – Implements and compares 8-bit multipliers and 8-bit adders in synthesizable Verilog, analyzing their area, timing, and power characteristics in MAC datapath architectures.</p>
   </li>
   <li>
     <p><strong>Posit Arithmetic (Python)</strong> – Currently using fixed-point arithmetic; considering Posit as an alternative to IEEE 754 for better precision and dynamic range. Still working through the trade-off.</p>
