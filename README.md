@@ -247,7 +247,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 <details>
 <summary>
   <strong>
-    Verilog HDL Toolkit for Image Processing and Neural Network Acceleration |
+    Hardware Accelerators for Image Processing and Neural Network Inference |
     <a href="https://mummanajagadeesh.github.io/projects/improve/subprojects" target="_blank">Link</a>
   </strong>
 </summary>
@@ -255,7 +255,31 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
   
 > **" I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯ "**
 
-A modular hardware-accelerated toolkit built entirely in Verilog using only open-source tools, featuring image processing algorithms, fixed-point arithmetic modules, an MLP for (E)MNIST, and a sequential CNN for CIFAR-10. Designed for efficient, low-latency computation in embedded vision systems, with simulation automation and a real-time GUI interface
+**Current Project Overview**
+
+**Duration:** Individual, Ongoing  
+**Tools:** Verilog (Icarus Verilog, Yosys) | Python (TensorFlow, PyTorch, OpenCV, NumPy, Tkinter) | Scripting (TCL, Perl)
+
+### **8-bit Quantized CNN Hardware Accelerator: Open-source, Modular, & Optimized for Inference**
+
+**[Project Link](https://mummanajagadeesh.github.io/projects/improve/subprojects/)**
+**Duration:** Individual
+**Key Highlights:** *Verilog | Basic Architecture | Digital Electronics*
+
+* Designed a **shallow residual-style CNN** for **CIFAR-10**, achieving **~84% accuracy** (< **1% loss**) with a **52 KB model size** (only ~**17× 3 KB input**). Applied **post-training quantization** variants including **Q1.7 (8-bit signed)**, optimizing **accuracy**, **model size**, and **inference efficiency**.
+* Implemented **synthesizable Verilog modules** (**Testbench Verified**) with **FSM-based control**, **2-cycle handshake**, and **auto-generated ROMs** (14: **weights/biases** & 3 (**RGB**): input). Intermediate values stored in **registers** and computed using **systolic array-based MAC units**.
+* Explored key **image-processing techniques** including **edge detection**, **noise reduction**, **filtering**, and **enhancement**. Implemented **(E)MNIST classification** using **MLP**, achieving **>75% accuracy**. Automated **inference flow** with **TCL/Python scripts** and **manual GUI inputs**.
+
+
+### **High-Speed 3-Stage Pipelined Systolic Array-Based MAC Architectures**
+*Digital Logic Design | Synthesis*
+**Key Highlights:** Compared **6 × 8-bit adders/multipliers** for **systolic-array MACs** using **PPA metrics** (*latency / throughput / area*, **sky130 nm PDK**) and analyzed **trade-offs**.
+
+* Final design uses **Carry-Save Adder (CSA)** and **Modified Booth Encoder (MBE)** multiplier for **3×3 convolution** and **GEMM operations** with **3-stage pipelined systolic arrays**, verified for **0 / same padding modes**.
+* **Pipeline Stages:** **sampling image → truncating & flipping → MAC accumulation**.
+
+
+
 
 <br><br>
 
@@ -389,20 +413,7 @@ A modular hardware-accelerated toolkit built entirely in Verilog using only open
 
 <br>
 
-**Current Project Overview**
 
-**Duration:** Individual, Ongoing  
-**Tools:** Verilog (Icarus Verilog, Yosys) | Python (TensorFlow, PyTorch, OpenCV, NumPy, Tkinter) | Scripting (TCL, Perl)
-
-- **Designed `image processing algorithms` (e.g., edge detection, geometric & color transforms, noise reduction) in Verilog, utilizing `hardware optimized math` techniques to maximize computational efficiency. These algorithms were fine-tuned for `low-latency` preprocessing in embedded vision SoCs.**
-
-- **Implemented a `64-bit 3-layer perceptron` (`MLP 784-256-128-62`, `~242k params`) for Extended-MNIST Character Recognition (`62 classes, ∼124k samples`) using an FSM-controlled neural network in Verilog. This implementation achieved `>90% training accuracy` (`>75% simulation accuracy`) with `~1.5s inference latency` (in simulation). A full end-to-end preprocessing and inference workflow was developed.**
-
-- **Automated model `inference` and `performance metric` evaluation via Tcl/Perl scripts (executing Python and Icarus Verilog commands). Additionally, a real-time Tkinter GUI was created for test user input.**
-
-* **Developed a `lightweight CNN [Conv2D×2 + MaxPool]×3 → GAP → Dense(10)` for `CIFAR-10 Image Classification (32x32RGB)` using both `IEEE 754` floating-point and `Q1.31`, `Q1.15`, `Q1.7`, and `Q1.3` fixed-point arithmetic, achieving 84% accuracy in both implementations _(Py \~85% | FP \~84% | Q31 \~84% | Q15 \~84% | Q7 \~83% | Q3 \~65%)_**
-
-- **Currently working on `Object Detection` using `shallow CNNs` on the `Pascal VOC dataset`**
 
 
 </details>
