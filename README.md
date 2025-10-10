@@ -262,9 +262,8 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 ### **8-bit Quantized CNN Hardware Accelerator: Open-source, Modular, & Optimized for Inference**
 
-**[Project Link](https://mummanajagadeesh.github.io/projects/improve/subprojects/)**
-**Duration:** Individual
-**Key Highlights:** *Verilog | Basic Architecture | Digital Electronics*
+**[Project Link](https://mummanajagadeesh.github.io/projects/improve/subprojects/)** | Individual
+*Verilog | Basic Architecture | Digital Electronics*
 
 * Designed a **shallow residual-style CNN** for **CIFAR-10**, achieving **~84% accuracy** (< **1% loss**) with a **52 KB model size** (only ~**17× 3 KB input**). Applied **post-training quantization** variants including **Q1.7 (8-bit signed)**, optimizing **accuracy**, **model size**, and **inference efficiency**.
 * Implemented **synthesizable Verilog modules** (**Testbench Verified**) with **FSM-based control**, **2-cycle handshake**, and **auto-generated ROMs** (14: **weights/biases** & 3 (**RGB**): input). Intermediate values stored in **registers** and computed using **systolic array-based MAC units**.
@@ -273,8 +272,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 ### **High-Speed 3-Stage Pipelined Systolic Array-Based MAC Architectures**
 *Digital Logic Design | Synthesis*
-**Key Highlights:** Compared **6 × 8-bit adders/multipliers** for **systolic-array MACs** using **PPA metrics** (*latency / throughput / area*, **sky130 nm PDK**) and analyzed **trade-offs**.
-
+* Compared **6 × 8-bit adders/multipliers** for **systolic-array MACs** using **PPA metrics** (*latency / throughput / area*, **sky130 nm PDK**) and analyzed **trade-offs**.
 * Final design uses **Carry-Save Adder (CSA)** and **Modified Booth Encoder (MBE)** multiplier for **3×3 convolution** and **GEMM operations** with **3-stage pipelined systolic arrays**, verified for **0 / same padding modes**.
 * **Pipeline Stages:** **sampling image → truncating & flipping → MAC accumulation**.
 
