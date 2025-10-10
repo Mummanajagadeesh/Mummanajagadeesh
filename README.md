@@ -262,7 +262,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 ### **8-bit Quantized CNN Hardware Accelerator: Open-source, Modular, & Optimized for Inference**
 
-**[Project Link](https://mummanajagadeesh.github.io/projects/improve/subprojects/)** | Individual
+**[Project Link](https://mummanajagadeesh.github.io/projects/improve/subprojects/)**
 *Verilog | Basic Architecture | Digital Electronics*
 
 * Designed a **shallow residual-style CNN** for **CIFAR-10**, achieving **~84% accuracy** (< **1% loss**) with a **52 KB model size** (only ~**17× 3 KB input**). Applied **post-training quantization** variants including **Q1.7 (8-bit signed)**, optimizing **accuracy**, **model size**, and **inference efficiency**.
