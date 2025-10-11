@@ -19,7 +19,9 @@
   </text>
   <circle class="lang-dot" cx="16" cy="101" fill="#e34c26" />
   <text x="26" y="105" class="meta">HTML</text>
-  <circle class="lang-dot" cx="126" cy="101" fill="#f1e05a" />
-  <text x="136" y="105" class="meta">JavaScript</text>
+  <circle class="lang-dot" cx="126" cy="101" fill="#3D6117" />
+  <text x="136" y="105" class="meta">TeX</text>
+  <circle class="lang-dot" cx="236" cy="101" fill="#f1e05a" />
+  <text x="246" y="105" class="meta">JavaScript</text>
   <text x="484" y="128" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>
