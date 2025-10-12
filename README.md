@@ -1,10 +1,10 @@
-# Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-10-12 12:45:27 IST -->
+# ¡Hola, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-10-12 12:27:40 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
 <p align="left">
   <!-- Portfolio -->
-  <a href="https://mummanajagadeesh.github.io/gh-light-mode-only">
+  <a href="https://mummanajagadeesh.github.io/#gh-light-mode-only">
     <img src="assets/bwicons/bsite.svg#gh-light-mode-only" alt="Portfolio" width="30" height="30"/>
   </a>
   <a href="https://mummanajagadeesh.github.io/#gh-dark-mode-only">
