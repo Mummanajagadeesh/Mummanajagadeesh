@@ -4,7 +4,7 @@
 
 <p align="left">
   <!-- Portfolio -->
-  <a href="https://mummanajagadeesh.github.io/#gh-light-mode-only">
+  <a href="https://mummanajagadeesh.github.io/gh-light-mode-only">
     <img src="assets/bwicons/bsite.svg#gh-light-mode-only" alt="Portfolio" width="30" height="30"/>
   </a>
   <a href="https://mummanajagadeesh.github.io/#gh-dark-mode-only">
