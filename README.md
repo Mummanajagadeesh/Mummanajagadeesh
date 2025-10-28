@@ -1,4 +1,4 @@
-# Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-10-28 21:17:20 IST -->
+# Bonjour le monde! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-10-28 21:16:06 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -314,6 +314,11 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 <br><br>
 
+<details>
+  <summary>
+  Repositories 
+  </summary>
+
 <p align="center">
   
 <a href="https://github.com/Mummanajagadeesh/ViSiON#gh-light-mode-only">
@@ -441,6 +446,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
   </li>
 </ul>
 
+</details>
 
 <br>
 
