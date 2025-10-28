@@ -258,7 +258,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 **Current Project Overview**
 
 **Duration:** Individual, Ongoing  
-**Tools:** Verilog (Icarus Verilog, Yosys) | Python (TensorFlow, PyTorch, OpenCV, NumPy, Tkinter) | Scripting (TCL, Perl)
+**Tools:** Verilog (Icarus Verilog, Yosys) | Python (TensorFlow, NumPy) | Scripting (TCL, Perl)
 
 ### **8-bit Quantized CNN Hardware Accelerator: Open-source, Modular, & Optimized for Inference**
 
@@ -269,6 +269,19 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 * Implemented **synthesizable Verilog modules** (**Testbench Verified**) with **FSM-based control**, **2-cycle handshake**, and **auto-generated ROMs** (14: **weights/biases** & 3 (**RGB**): input). Intermediate values stored in **registers** and computed using **systolic array-based MAC units**.
 * Explored key **image-processing techniques** including **edge detection**, **noise reduction**, **filtering**, and **enhancement**. Implemented **(E)MNIST classification** using **MLP**, achieving **>75% accuracy**. Automated **inference flow** with **TCL/Python scripts** and **manual GUI inputs**.
 
+<details>
+  <summary>
+  Technical Summary
+  </summary>
+
+- Developed an INT8 (Q1.7 fixed-point) CNN hardware accelerator for CIFAR-10 optimized for throughput, resource utilization, and numerical accuracy. Trained 8 CNN architectures on TensorFlow (executed on Google Colab) with identical data pipelines (augmentation, normalization, Vanilla Adam optimizer, categorical cross-entropy, LR scheduling) to perform architecture-level design-space exploration. Selected 2 optimal networks (one residual-style CNN similar to ResNet) based on accuracy–model-size Pareto analysis. Applied post-training quantization (PTQ) for Q1.31, Q1.5, Q1.7, and Q1.3 fixed-point formats; Q1.7 (8-bit signed) yielded <1% accuracy degradation. Final model: 52 KB (≈17–18× 3 KB RGB input) with ~84% CIFAR-10 top-1 accuracy.
+
+- Implemented synthesizable Verilog RTL with hierarchical modularity and full testbench verification. Control path realized via FSM-based sequencer with clock-synchronous operation, 2-cycle ready/valid handshake, and deterministic timing closure. Datapath implemented as a 3-stage pipelined systolic-array convolution core utilizing custom MAC units composed of 8-bit signed carry-save adders (CSA) and 8-bit signed modified Booth-encoded (MBE) multipliers. Intermediate activations stored in register banks for single-cycle data reuse. Integrated 14 auto-generated ROMs (weights/biases) and 3 ROMs (RGB inputs).
+
+- Automated end-to-end flow using TCL/Python for quantized model export, coefficient packing, ROM generation, synthesis, and simulation. Validated bit-accurate output correlation between TensorFlow floating-point and RTL fixed-point inference. Additional modules include image-processing blocks (edge detection, denoising, filtering, enhancement) and (E)MNIST classification via MLP (>75% accuracy) for architectural scalability testing. Fully modular, open-source, synthesizable RTL design intended for ASIC/FPGA acceleration
+
+
+</details>
 
 ### **High-Speed 3-Stage Pipelined Systolic Array-Based MAC Architectures**
 *Digital Logic Design | Synthesis*
@@ -276,7 +289,27 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 * Final design uses **Carry-Save Adder (CSA)** and **Modified Booth Encoder (MBE)** multiplier for **3×3 convolution** and **GEMM operations** with **3-stage pipelined systolic arrays**, verified for **0 / same padding modes**.
 * **Pipeline Stages:** **sampling image → truncating & flipping → MAC accumulation**.
 
+<details>
+  <summary>
+  Technical Summary
+  </summary>
+  
+- Benchmarked six 8-bit signed adder/multiplier architectures for systolic-array MACs targeting CNN/GEMM workloads using a fully open-source ASIC flow (Yosys + OpenROAD/OpenLane) on the Google-SkyWater 130nm PDK (Sky130HS PDK). Evaluated PPA (Power, Performance, Area) and [Latency, Throughput, Speed] metrics under a constant synthesis and layout environment, maintaining identical tool configurations, constraints, and floorplan parameters.
 
+- All runs used the same config (FP_CORE_UTIL = 30 %, PL_TARGET_DENSITY = 0.36, 10 ns clock, CTS/LVS/DRC/Antenna enabled)
+
+- Adders:
+  - CSA – 5.07 ns CP, 197 MHz Fmax, 2.52 k µm² core, 0.083 mW (best speed/resource trade-off)
+  - Kogge–Stone – 6.21 ns, 161 MHz, 3.69 k µm² (area-heavy)
+  - RCA – 7.14 ns, 140 MHz, 1.13 k µm², 0.032 mW (most power/area-efficient)
+
+- Multipliers:
+  - MBE – 8.84 ns, 113 MHz, 9.6 k µm², 0.379 mW (best energy/area efficiency = 3.35 × 10³ pJ/op, 8.64 × 10³ ops/s/µm²)
+  - Baugh–Wooley – 8.63 ns, 115.9 MHz (fastest)
+  - Booth (Radix-2) – 12.5 ns, 80 MHz (highest area/power)
+
+- Final MAC integrates an 8-bit signed CSA adder and 8-bit signed MBE multiplier in a 3×3 convolution/GEMM core using a 3-stage pipelined systolic array (sampling → truncation/flipping → MAC accumulation). Verified via RTL testbench and post-synthesis timing across zero/same-padding modes. Automated GDS/DEF generation and PPA reporting for all architectures ensured fully reproducible, environment-consistent results.
+</details>  
 
 
 <br><br>
