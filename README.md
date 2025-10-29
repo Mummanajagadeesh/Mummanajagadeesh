@@ -247,11 +247,13 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 <details>
 <summary>
   <strong>
-    Hardware Accelerators for Image Processing and Neural Network Inference |
+    High-Performance Quantized CNN Hardware Accelerator for Lightweight Inference (Verilog) |
     <a href="https://mummanajagadeesh.github.io/projects/improve/subprojects" target="_blank">Link</a>
   </strong>
 </summary>
 <br>
+
+**Design of High-Performance Q1.7 Fixed-Point Quantized CNN Hardware Accelerator with Microarchitecture Optimization of 3-Stage Pipelined Systolic MAC Arrays for Lightweight Inference**
   
 > **" I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯ "**
 
