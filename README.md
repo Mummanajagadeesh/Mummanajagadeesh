@@ -1,4 +1,4 @@
-# ¡Hola, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-10-31 01:05:33 IST -->
+# Hallo Welt! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-10-31 00:55:51 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -298,9 +298,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
   Technical Summary
   </summary>
   
-- Benchmarked six 8-bit signed adder/multiplier architectures for systolic-array MACs targeting CNN/GEMM workloads using a fully open-source ASIC flow (Yosys + OpenROAD/OpenLane) on the Google-SkyWater 130nm PDK (Sky130HS PDK). Evaluated PPA (Power, Performance, Area) and [Latency, Throughput, Speed] metrics under a constant synthesis and layout environment, maintaining identical tool configurations, constraints, and floorplan parameters.
-
-- All runs used the same config (FP_CORE_UTIL = 30 %, PL_TARGET_DENSITY = 0.36, 10 ns clock, CTS/LVS/DRC/Antenna enabled)
+- Benchmarked six 8-bit signed adder and multiplier architectures for systolic-array MACs targeting CNN/GEMM workloads using a fully open-source ASIC flow (Yosys + OpenROAD/OpenLane) on the Google-SkyWater 130nm PDK (Sky130HS PDK @25°C_1.8V). Evaluated PPA (Power, Performance, Area) and latency/throughput/speed metrics under a constant synthesis and layout environment with fixed constraints and floorplan parameters (FP_CORE_UTIL = 30 %, PL_TARGET_DENSITY = 0.36, 10 ns clock, CTS/LVS/DRC/Antenna enabled)
 
 - Adders:
   - CSA – 5.07 ns CP, 197 MHz Fmax, 2.52 k µm² core, 0.083 mW (best speed/resource trade-off)
@@ -312,7 +310,15 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
   - Baugh–Wooley – 8.63 ns, 115.9 MHz (fastest)
   - Booth (Radix-2) – 12.5 ns, 80 MHz (highest area/power)
 
-- Final MAC integrates an 8-bit signed CSA adder and 8-bit signed MBE multiplier in a 3×3 convolution/GEMM core using a 3-stage pipelined systolic array (sampling → truncation/flipping → MAC accumulation). Verified via RTL testbench and post-synthesis timing across zero/same-padding modes. Automated GDS/DEF generation and PPA reporting for all architectures ensured fully reproducible, environment-consistent results.
+- Final MAC integrates an 8-bit signed CSA adder and 8-bit signed MBE multiplier in a 3×3 convolution/GEMM core using a 3-stage pipelined systolic array (sampling → truncation/flipping → MAC accumulation). Verified via RTL testbench and post-synthesis timing across zero/same-padding modes. Automated GDS/DEF generation and PPA reporting for all architectures ensured fully reproducible, environment-consistent results
+
+- Comparative study (Small Scale Ops @CLK_PERIOD_20_ns) :
+
+  - CSA-MBE pair Systolic Array Conv vs Naïve Conv (3x3 Kernel on 5x5 Image) 
+    - Latency ↓ 66.3% Throughput ↑ 196.6% Speed ↑ 196.6% Area ↓ 67.8% Power ↓ 82.2%
+
+  - Single MAC re-use vs Systolic 4-PE Grid (2x2 matrix multiplication)
+    - Power ↓ 13.4% Energy/op ↓ 11%; with marginal increase in AREA
 </details>  
 
 
