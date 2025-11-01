@@ -1,4 +1,4 @@
-# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-11-01 18:28:36 IST -->
+# Olá, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-11-01 17:55:47 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -472,22 +472,14 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 <details>  
 <summary>  
   <strong>  
-    ANAV for Martian Surface Exploration (ISRO IRoC‑U 2025) |  
+    ANAV for Martian Surface Exploration/ GNSS-denied environments (ISRO IRoC‑U 2025) |  
     <a href="https://mummanajagadeesh.github.io/projects/isro-anav/" target="_blank">Link</a>  
   </strong>  
 </summary>  
 
-<br><br>
-<!-- Light Mode Repo Card -->
-<a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-light-mode-only">
-  <img src="./repos/isro_ros2-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
-</a>
 
-<!-- Dark Mode Repo Card -->
-<a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-dark-mode-only">
-  <img src="./repos/isro_ros2-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
-</a>
-<br>
+
+
 
 <br>
 
@@ -501,6 +493,21 @@ An autonomous aerial system designed for reliable navigation and landing in envi
 * **Calibrated ESCs and implemented `embedded power distribution` via BEC module to ensure stable regulation for compute/sensing; integrated barometer and external optical flow sensor with Pixhawk for redundancy in low-texture or drifting conditions.**
 
 * **Fused stereo-IMU data from `Intel RealSense D435i` using `VINS-Fusion` on `ROS2`, achieving `<5cm drift` over \~5m; transmitted real-time telemetry using ESP32 modules (`ESP‑Now`); autonomously landed on `obstacle-free 1.5×1.5m` zones with `<15° slopes`.**
+
+<details>
+  <summary><b>Repositories</b></summary>
+
+<a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-light-mode-only">
+  <img src="./repos/isro_ros2-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+</a>
+
+<!-- Dark Mode Repo Card -->
+<a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-dark-mode-only">
+  <img src="./repos/isro_ros2-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+</a>
+
+
+</details>
 
 </details>
 
