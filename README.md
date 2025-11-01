@@ -312,13 +312,17 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 - Final MAC integrates an 8-bit signed CSA adder and 8-bit signed MBE multiplier in a 3×3 convolution/GEMM core using a 3-stage pipelined systolic array (sampling → truncation/flipping → MAC accumulation). Verified via RTL testbench and post-synthesis timing across zero/same-padding modes. Automated GDS/DEF generation and PPA reporting for all architectures ensured fully reproducible, environment-consistent results
 
-- Comparative study (Small Scale Ops @CLK_PERIOD_20_ns) :
+- Comparative study (Small Scale Ops) :
 
-  - CSA-MBE pair Systolic Array Conv vs Naïve Conv (3x3 Kernel on 5x5 Image) 
+  - CSA-MBE pair Systolic Array Conv vs Naïve Conv (3x3 Kernel on 5x5 Image @CLK_PERIOD_20_ns) 
     - Latency ↓ 66.3% Throughput ↑ 196.6% Speed ↑ 196.6% Area ↓ 67.8% Power ↓ 82.2%
 
   - Single MAC re-use vs Systolic 4-PE Grid (2x2 matrix multiplication)
-    - Power ↓ 13.4% Energy/op ↓ 11%; with marginal increase in AREA
+    - Latency ↓ 0.9% Throughput ≈ same Speed ≈ same Area ≈ same Power ↓ 15% Energy/op ↓ 14.6%
+      
+  - Single MAC re-use vs Systolic 9-PE Grid (3x3 matrix multiplication)
+    - Latency ↓ 1% Throughput ≈ same Speed ≈ same Area ≈ same Power ↓ 44.6% Energy/op ↓ 44%
+
 </details>  
 
 
