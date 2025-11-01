@@ -507,25 +507,36 @@ An autonomous aerial system designed for reliable navigation and landing in envi
 <details>
 <summary>
   <strong>
-    RV32I RTL CPU DESIGN |
+    Single-Cycle RV32I RISC-V CPU in Verilog and TL-Verilog |
     <a href="https://mummanajagadeesh.github.io/projects/rose" target="_blank">Link</a>
   </strong>
 </summary>
+
+<br>
+
+Designed a 32-bit single-cycle RV32I core in Verilog with 32×32 regfile and modular datapath (ALU, controller, imm-gen, instr/data memories,
+PC); supports all 38 base instructions (I/S/B/U/J/R) with full load/store (LB/LBU/LH/LHU/LW, SB/SH/SW), byte/halfword RMW, and
+correct sign/zero extension; validated via self-checking ModelSim TB, synthesized on Quartus Prime & core also implemented in TL-Verilog
   
-<br><br>
-<!-- Light Mode Repo Card -->
-<a href="https://github.com/Mummanajagadeesh/RoSe#gh-light-mode-only">
-  <img src="./repos/rose-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
-</a>
-
-<!-- Dark Mode Repo Card -->
-<a href="https://github.com/Mummanajagadeesh/Rose#gh-dark-mode-only">
-  <img src="./repos/rose-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
-</a>
 <br>
 
-<br>
+<details>
+  <summary><b>Repositories</b></summary>
 
+  <!-- Light Mode Repo Card -->
+  <a href="https://github.com/Mummanajagadeesh/RoSe#gh-light-mode-only">
+    <img src="./repos/rose-light.svg#gh-light-mode-only" alt="RoSe Repo Card (light)" />
+  </a>
+
+  <!-- Dark Mode Repo Card -->
+  <a href="https://github.com/Mummanajagadeesh/RoSe#gh-dark-mode-only">
+    <img src="./repos/rose-dark.svg#gh-dark-mode-only" alt="RoSe Repo Card (dark)" />
+  </a>
+
+</details>
+
+
+<br>
 
 **Duration:** Individual, Ongoing  
 **Tools:** Verilog (Icarus Verilog) | TL-Verilog (Makerchip) 
