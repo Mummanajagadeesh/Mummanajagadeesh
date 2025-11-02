@@ -155,7 +155,7 @@
   CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>"                                     <br>
   PRONOUNS:      "he/him"                                                 <br>
   HOBBIES:       ["Speedcubing", "Movies", "Blogging"]                    <br>
-  FUNFACT:       "I'm Batman, budget edition"                             <br>
+  FUNFACT:       "I'm Batman.... budget edition"                          <br>
   SECRET:        "I pay the moon to follow me around"                     <br>
   WHATIF:        "If I eat myself, do I become twice as big or disappear?"<br>
 </code></pre>
