@@ -147,7 +147,7 @@
 <pre><code>$ less ~/workspace/profile/config.yaml
 
   FOCUS:         "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    <br>
-  CURRENTLY:     "Building a HW ACCELERATOR ARCH for IMG CLASSIF"         <br>
+  CURRENTLY:     "Building a HW ACCEL ARCH for IMG CLASSIF, it sees ghosts"         <br>
   CLUB:          "Rigging Robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>"                                <br>
   COMPS:         ["E-YANTRA MB", "OpenPOWER HW"]                          #RN<br>
   MAJOR:         "<em>Electronics and Communication Engg</em>"                     <br>
