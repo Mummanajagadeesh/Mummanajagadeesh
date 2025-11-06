@@ -298,7 +298,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
   Technical Summary
   </summary>
   
-- Benchmarked six 8-bit signed adder and multiplier architectures for systolic-array MACs targeting CNN/GEMM workloads using a fully open-source ASIC flow (Yosys + OpenROAD/OpenLane) on the Google-SkyWater 130nm PDK (Sky130HS PDK @25°C_1.8V). Evaluated PPA (Power, Performance, Area) and latency/throughput/speed metrics under a constant synthesis and layout environment with fixed constraints and floorplan parameters (FP_CORE_UTIL = 30 %, PL_TARGET_DENSITY = 0.36, 10 ns clock, CTS/LVS/DRC/Antenna enabled)
+- Benchmarked six 8-bit signed adder and multiplier architectures for systolic-array MACs targeting CNN/GEMM workloads using a fully open-source ASIC flow (Yosys + OpenROAD/OpenLane) on the Google-SkyWater 130nm PDK (Sky130HS PDK @25°C_1.8V). Evaluated PPA (Power, Performance, Area) and latency/throughput/area metrics under a constant synthesis and layout environment with fixed constraints and floorplan parameters (FP_CORE_UTIL = 30 %, PL_TARGET_DENSITY = 0.36, 10 ns clock, CTS/LVS/DRC/Antenna enabled)
 
 - Adders:
   - CSA – 5.07 ns CP, 197 MHz Fmax, 2.52 k µm² core, 0.083 mW (best speed/resource trade-off)
