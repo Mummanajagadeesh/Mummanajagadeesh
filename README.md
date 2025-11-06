@@ -771,7 +771,7 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
   <p align="center">
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-light-mode-only" alt="Stats (light)" width="32%">
     <img src="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-light-mode-only" alt="Streak (light)" width="32%">
-    <img src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=default&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=8&include_all_commits=true&cache_seconds=1#gh-light-mode-only" alt="Top Languages (light)" width="32%">
+    <img src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=default&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&cache_seconds=1#gh-light-mode-only" alt="Top Languages (light)" width="32%">
   </p>
 </a>
 
@@ -780,7 +780,7 @@ A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with prec
   <p align="center">
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Stats (dark)" width="32%">
     <img src="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Streak (dark)" width="32%">
-    <img src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=dark&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=8&include_all_commits=true&cache_seconds=1#gh-dark-mode-only" alt="Top Languages (dark)" width="32%">
+    <img src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=dark&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&cache_seconds=1#gh-dark-mode-only" alt="Top Languages (dark)" width="32%">
   </p>
 </a>
 
