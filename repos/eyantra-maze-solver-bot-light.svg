@@ -19,10 +19,10 @@
   </text>
   <circle class="lang-dot" cx="16" cy="101" fill="#b2b7f8" />
   <text x="26" y="105" class="meta">Verilog</text>
-  <circle class="lang-dot" cx="126" cy="101" fill="#6E4C13" />
-  <text x="136" y="105" class="meta">Assembly</text>
-  <circle class="lang-dot" cx="236" cy="101" fill="#1a5f91" />
-  <text x="246" y="105" class="meta">Stata</text>
+  <circle class="lang-dot" cx="126" cy="101" fill="#1a5f91" />
+  <text x="136" y="105" class="meta">Stata</text>
+  <circle class="lang-dot" cx="236" cy="101" fill="#6E4C13" />
+  <text x="246" y="105" class="meta">Assembly</text>
   <circle class="lang-dot" cx="346" cy="101" fill="#e34c26" />
   <text x="356" y="105" class="meta">HTML</text>
   <circle class="lang-dot" cx="16" cy="123" fill="#cccccc" />
