@@ -11,8 +11,8 @@
   <a href="https://github.com/Mummanajagadeesh/risc16-dual-superscalar-core" target="_blank">
     <text x="16" y="30" class="repo-name">risc16-dual-superscalar-core</text>
   </a>
-  <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#1f6feb1a" stroke="#388bfd" />
-  <text x="438" y="29" class="badge">Public</text>
+  <rect x="420" y="16" rx="4" ry="4" width="65" height="18" fill="#1f6feb1a" stroke="#388bfd" />
+  <text x="428" y="29" class="badge">Private</text>
   <text x="16" y="55" class="repo-desc">
     <tspan x="16" dy="0">Dual-Issue In-Order Superscalar 16-bit RISC</tspan>
     <tspan x="16" dy="18">Processor with Multi-Port Memory, 5-Stage</tspan>
