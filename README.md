@@ -1,4 +1,4 @@
-# Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 15:04:47 IST -->
+# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 14:31:47 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -1336,24 +1336,210 @@ Focused on volumetric preprocessing, stable normalization across scanners, and a
   </strong>
 </summary>
 
-<br>
+<br><br>
 
 Built and fine-tuned continuous-action PPO agents on AWS SageMaker for camera-based autonomous racing.  
-Focused on reward shaping, action-space tuning, and stability constraints that reduce off-track transitions and maximize progress per step.  
-Achieved **sub-2-minute lap times**, reaching top global leaderboard positions in 2024.
+Focused on reward shaping, action-space optimization, and stability constraints that reduce off-track drift and maximize progress-per-step.  
+Achieved **sub-2-minute lap times**, reaching top global leaderboard ranks in 2024.
 
-* Trained vision-based policies using AWS’s **clipped PPO (v4)** with a shallow convolutional encoder, continuous steering (±30°) and speed control (0.5–1.0 m/s).  
-* Developed multiple reward structures emphasizing **centerline adherence**, **heading alignment**, **smooth steering**, and **velocity-weighted progress**; incorporated curvature-aware waypoint direction terms.  
-* Used distance-band reward shaping (0.1/0.25/0.5× track-width markers) to stabilize early learning and reduce oscillatory behavior near edges.  
-* Tuned action-space constraints to penalize high-jerk trajectories while allowing high-speed straight-line acceleration.  
-* Leveraged control-theoretic intuitions: steering penalty functions, heading error normalization, and progress-per-step optimization with soft constraints.  
-* Iteratively optimized hyperparameters (entropy coefficient, clipping ratio, GAE decay, advantage normalization) in SageMaker to reduce policy collapse and improve convergence stability.  
-* Validated policies in simulation under track perturbations; used adversarial track curvature sweeps to evaluate robustness.  
-* Final trained agent consistently completed laps **below 2 minutes**, outperforming baselines and ranking globally.
+* Trained end-to-end vision policies using **clipped PPO (v4)** with a shallow convolutional encoder and continuous steering/speed control.  
+* Designed multiple reward families emphasizing **centerline stability**, **heading agreement**, **curvature-aware waypoint tracking**, and **velocity-weighted progress**.  
+* Used distance-band shaping (0.1/0.25/0.5× track-width thresholds) to stabilize early learning and suppress divergence near edges.  
+* Added steering smoothness constraints to reduce high-jerk trajectories while allowing aggressive straight-line acceleration.  
+* Tuned PPO hyperparameters (entropy annealing, clipping ε, GAE λ, advantage normalization) to avoid policy collapse in long-horizon tasks.  
+* Evaluated robustness under simulated perturbations via waypoint jitter, curvature sweeps, and speed-limit randomization.  
+* Final optimized agent consistently produced **<2 min laps**, outperforming default baselines.
 
 <br>
 
-**Tools:** AWS SageMaker • DeepRacer Simulator • Clipped PPO • Continuous Action RL • Policy Gradient Optimization
+**Tools:** AWS SageMaker • DeepRacer Simulator • Clipped PPO • Continuous RL • Policy Gradient Optimization  
+
+<br>
+
+<details>
+  <summary><b>Repositories</b></summary>
+  <br>
+
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/Mummanajagadeesh/aws-deepracer-rl-models#gh-light-mode-only">
+          <img src="./repos/aws-deepracer-rl-models-light.svg#gh-light-mode-only" alt="AWS DeepRacer RL Models Repo (light)" />
+        </a>
+        <a href="https://github.com/Mummanajagadeesh/aws-deepracer-rl-models#gh-dark-mode-only">
+          <img src="./repos/aws-deepracer-rl-models-dark.svg#gh-dark-mode-only" alt="AWS DeepRacer RL Models Repo (dark)" />
+        </a>
+      </td>
+    </tr>
+  </table>
+
+</details>
+
+</details>
+
+
+<details>
+<summary>
+  <strong>
+    Autonomous Multi-Sensor Robot Simulation (GPS/IMU/LiDAR/2-DOF Vision) |
+    <a href="#" target="https://mummanajagadeesh.github.io/projects/gpbot/subprojects/">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A fully simulated 4-wheel autonomous robot equipped with **GPS**, **9-axis IMU**, **2-D LiDAR**, **ultrasonic distance sensors**, and a **2-DOF camera system** (linear + rotary actuation).  
+Implements global-position tracking, local mapping, object detection via camera streams, and reactive obstacle avoidance with minimal control logic.  
+All sensing, actuation, and navigation behaviors are implemented inside the simulation stack.
+
+* 4-wheel ground platform with independent velocity control for smooth turn/translation behavior.  
+* GPS provides global (x,y) estimates; IMU provides orientation & angular velocity; LiDAR provides local ranging for free-space detection.  
+* 2-DOF camera module (linear rail + rotary joint) models active vision for object detection and viewpoint planning.  
+* Distance sensors around the chassis give short-range obstacle feedback for collision-free local motion.  
+* Robot supports simple teleoperation mappings (↑ ↓ ← → for locomotion; W/S/A/D for camera actuation) and autonomous wandering modes.  
+* Designed as a baseline multi-sensor testbed for evaluating classic robotics behaviors without advanced SLAM or learning methods.
+
+---
+
+<details>
+  <summary><b>Repositories</b></summary>
+  <br>
+
+  <table aligh="center">
+    <tr>
+      <td align="center">
+        <a href="https://github.com/Mummanajagadeesh/gpbot-w#gh-light-mode-only">
+          <img src="./repos/gpbot-w-light.svg#gh-light-mode-only" alt="Main Autonomous Robot Simulation Repository (light)" />
+        </a>
+        <a href="https://github.com/Mummanajagadeesh/gptbot-w#gh-dark-mode-only">
+          <img src="./repos/gpbot-w-dark.svg#gh-dark-mode-only" alt="Main Autonomous Robot Simulation Repository (dark)" />
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+<table align="center">
+  <tr>
+
+  <td align="center">
+    <a href="https://github.com/Mummanajagadeesh/differential-drive-robot-w#gh-light-mode-only"><img src="./repos/differential-drive-robot-w-light.svg#gh-light-mode-only" alt="Differential Drive Robot" /></a>
+    <a href="https://github.com/Mummanajagadeesh/differential-drive-robot-w#gh-dark-mode-only"><img src="./repos/differential-drive-robot-w-dark.svg#gh-dark-mode-only" alt="Differential Drive Robot" /></a>
+  </td>
+
+  <td align="center">
+    <a href="https://github.com/Mummanajagadeesh/line-follower-robot-w#gh-light-mode-only"><img src="./repos/line-follower-robot-w-light.svg#gh-light-mode-only" alt="Line Follower Robot" /></a>
+    <a href="https://github.com/Mummanajagadeesh/line-follower-robot-w#gh-dark-mode-only"><img src="./repos/line-follower-robot-w-dark.svg#gh-dark-mode-only" alt="Line Follower Robot" /></a>
+  </td>
+
+  </tr>
+  <tr>
+
+  <td align="center">
+    <a href="https://github.com/Mummanajagadeesh/obstacle-avoidance-robot-w#gh-light-mode-only"><img src="./repos/obstacle-avoidance-robot-w-light.svg#gh-light-mode-only" alt="Obstacle Avoidance Robot" /></a>
+    <a href="https://github.com/Mummanajagadeesh/obstacle-avoidance-robot-w#gh-dark-mode-only"><img src="./repos/obstacle-avoidance-robot-w-dark.svg#gh-dark-mode-only" alt="Obstacle Avoidance Robot" /></a>
+  </td>
+
+  <td align="center">
+    <a href="https://github.com/Mummanajagadeesh/wall-follower-robot-w#gh-light-mode-only"><img src="./repos/wall-follower-robot-w-light.svg#gh-light-mode-only" alt="Wall Follower Robot" /></a>
+    <a href="https://github.com/Mummanajagadeesh/wall-follower-robot-w#gh-dark-mode-only"><img src="./repos/wall-follower-robot-w-dark.svg#gh-dark-mode-only" alt="Wall Follower Robot" /></a>
+  </td>
+
+  </tr>
+</table>
+
+
+</details>
+
+---
+
+<details>
+  <summary><b>Differential-Drive Kinematics & Odometry Robot</b></summary>
+  <br>
+
+A two-wheel system where encoder increments produce linear and angular motion through standard differential-drive relations.
+
+* Wheel displacements follow
+  $$\Delta s_L = r,\Delta\phi_L,\qquad \Delta s_R = r,\Delta\phi_R,$$
+  with $r = 0.025,\text{m}$.
+* Linear and rotational increments arise from
+  $$v = \tfrac{\Delta s_L + \Delta s_R}{2},\qquad \omega = \tfrac{\Delta s_R - \Delta s_L}{b},$$
+  where $b = 0.09,\text{m}$.
+* Pose $(x,y,\theta)$ updates through
+  $$x' = x + v\cos\theta,\qquad y' = y + v\sin\theta,\qquad \theta' = \theta + \omega.$$
+* Encoder drift directly affects integration of $(\Delta x,\Delta y,\Delta\theta)$, giving the accumulated trajectory purely from wheel motion.
+
+</details>
+
+<details>
+  <summary><b>Line-Follower Robot</b></summary>
+  <br>
+
+A two-sensor contrast system that adjusts wheel velocities according to inequalities between left and right reflectance values.
+
+* Let $I_L$ and $I_R$ denote the two IR readings. Straight motion occurs when
+  $$|I_L - I_R| \approx 0.$$
+* Left steering triggered by
+  $$I_L > I_R,\qquad I_L \in [I_{\min},I_{\max}],$$
+  implemented by reducing or reversing the left wheel.
+* Right steering triggered by
+  $$I_R > I_L,\qquad I_R \in [I_{\min},I_{\max}],$$
+  applied symmetrically to the right wheel.
+* The motion law is a simple state determined by the ordering of sensor values:
+  $$I_L \lessgtr I_R ;\Longrightarrow; \text{turn left/right},\qquad I_L \approx I_R;\Longrightarrow;\text{forward}.$$
+
+</details>
+
+<details>
+  <summary><b>Obstacle-Avoidance Robot</b></summary>
+  <br>
+
+A proximity-based motion rule where wheel speeds depend on whether any sensor exceeds a threshold.
+
+* Six sensors yield values $p_i$. Forward motion holds when
+  $$p_i \le \tau\ \ \forall i,$$
+  for some threshold $\tau$.
+* If any sensor satisfies
+  $$p_j > \tau,$$
+  the left wheel reverses, creating a turning motion away from the detected obstacle.
+* The velocity pair $(v_L,v_R)$ is therefore piecewise:
+  $$(v_L,v_R)=
+  \begin{cases}
+  (v_{\max},,v_{\max}), & \max_i p_i \le \tau,[4pt]
+  (-v_{\max},,v_{\max}), & \max_i p_i > \tau.
+  \end{cases}$$
+* Exploration emerges purely from repeated evaluation of $\max_i p_i$ and switching of wheel direction.
+
+</details>
+
+<details>
+  <summary><b>Wall-Follower Robot</b></summary>
+  <br>
+
+A proximity-driven motion rule based on simple comparisons involving front-facing and left-side sensor values.
+
+* Let $f$ denote the front sensor reading and $\ell$ the left sensor reading (threshold $\tau$).
+  $$\text{front wall: } f>\tau,\qquad \text{left wall: } \ell>\tau.$$
+* Turning in place arises when
+  $$f>\tau,$$
+  implemented as
+  $$(v_L,v_R)=(v_{\max},-v_{\max}).$$
+* Forward motion occurs when
+  $$f\le\tau,\quad \ell>\tau,$$
+  giving
+  $$(v_L,v_R)=(v_{\max},,v_{\max}).$$
+* Right steering occurs when
+  $$f\le\tau,\quad \ell\le\tau,$$
+  with
+  $$(v_L,v_R)=(\tfrac{1}{8}v_{\max},,v_{\max}).$$
+* Position estimates use
+  $$\Delta s = \tfrac{s_L+s_R}{2},\qquad \theta = \tfrac{s_R - s_L}{d},$$
+  $$x' = x + \Delta s\cos\theta,\qquad y' = y + \Delta s\sin\theta,$$
+  allowing detection of when $(x,y)$ enters the target region.
+
+</details>
+
 
 </details>
 
