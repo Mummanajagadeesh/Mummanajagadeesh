@@ -251,7 +251,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 <details>
 <summary>
   <strong>
-    High-Performance Quantized CNN Hardware Accelerator for Lightweight Inference (Verilog) |
+    INT8 Fixed-Point CNN Hardware Accelerator and Image-Processing Suite |
     <a href="https://mummanajagadeesh.github.io/projects/improve/subprojects" target="_blank">Link</a>
   </strong>
 </summary>
