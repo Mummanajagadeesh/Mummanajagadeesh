@@ -244,7 +244,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 <em>(Click sections below to expand)</em>
 
 <details>
-  <summary><b>Digital Design & Compute Architectures</b></summary>
+  <summary><b>Digital Design/Verfication & Compute Architectures</b></summary>
 <br>
 
   
