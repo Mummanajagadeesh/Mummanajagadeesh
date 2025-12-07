@@ -259,7 +259,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 **Design of High-Performance Q1.7 Fixed-Point Quantized CNN Hardware Accelerator with Microarchitecture Optimization of 3-Stage Pipelined Systolic MAC Arrays for Lightweight Inference**
   
-> **" I tried to ImProVe, but NeVer really did - so I MOVe-d on ¯\\\_(ツ)_/¯ "**
+> **" I tried to ImProVe, but NeVer really did - so I MOVe-d on ¯\\\_(ツ)_/¯ "**<br>
 > **" ¯\\\_(ツ)_/¯ Read the above in RTL mode to decode the other 2/4 "**
 
 **Current Project Overview**
