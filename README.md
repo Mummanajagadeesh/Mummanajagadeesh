@@ -911,6 +911,61 @@ Explored how **doping profiles, junction depths, geometry parameters, and physic
 
 </details>
 
+<details>
+<summary>
+  <strong>
+    CMOS Inverter Design & Layout Simulation |
+    <a href="https://github.com/Mummanajagadeesh/cmos-inverter" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A complete CMOS inverter implementation built using **Magic VLSI (SCMOS)** for physical layout and **ngspice** for extracted-device simulation.  
+Covers device construction rules under the SCMOS process, physical layout of PMOS/NMOS devices, contact/tap structures, parasitic-aware extraction, and transient analysis of inverter switching characteristics.
+
+The layout follows the SCMOS ruleset:
+
+* PMOS implemented inside an **n-well** using p-diffusion; body tied to the well tap (VDD).  
+* NMOS implemented directly in the **p-substrate** using n-diffusion; body tied to substrate tap (GND).  
+* Poly crossing active regions forms the MOS channel; poly, metal1, and contact stack-up follows SCMOS vertical connectivity.  
+* Metal1 routes input/output rails; taps ensure reverse-biased junctions and latch-up prevention.  
+
+Extraction produces a transistor-level `.spice` netlist including geometry-derived parasitics.  
+Transient simulation evaluates:
+
+* Static noise margins and switching point displacement due to device sizing.  
+* Rise/fall asymmetry from mobility difference (μₙ ≫ μₚ).  
+* Output slew vs. load capacitance and PMOS/NMOS drive ratio.  
+* Propagation delays under 1.8 V operation using level-1 MOS models.  
+
+The repository includes the Magic layout (`.mag`), extracted netlists, wrapper files for stimulus, and generated ngspice waveforms.
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+  <br>
+
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/Mummanajagadeesh/cmos-inverter#gh-light-mode-only">
+          <img src="./repos/cmos-inverter-light.svg#gh-light-mode-only" alt="CMOS Inverter Magic + ngspice Layout/Simulation (light)" />
+        </a>
+        <a href="https://github.com/Mummanajagadeesh/cmos-inverter#gh-dark-mode-only">
+          <img src="./repos/cmos-inverter-dark.svg#gh-dark-mode-only" alt="CMOS Inverter Magic + ngspice Layout/Simulation (dark)" />
+        </a>
+      </td>
+    </tr>
+  </table>
+
+</details>
+
+---
+
+</details>
+
 
 <details>
 <summary>
