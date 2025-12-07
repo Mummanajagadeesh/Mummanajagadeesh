@@ -146,18 +146,18 @@
 
 <pre><code>$ less ~/workspace/profile/config.yaml
 
-  FOCUS:         "Always learning - check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    <br>
-  CURRENTLY:     "Building a HW ACCEL ARCH for IMG CLASSIF, it sees ghosts"         <br>
-  CLUB:          "Feeding robots my GPA @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>"                                <br>
-  COMPS:         ["E-YANTRA MB", "OpenPOWER HW"]                          <br>
-  MAJOR:         "<em>Electronics and Communication Engg</em>"                     <br>
-  COLLEGE:       "<em>National Institute of Technology Calicut</em>"               <br>
-  CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>"                                     <br>
+  FOCUS:         "always learning - check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    <br>
+  CURRENTLY:     "building a HW ACCEL ARCH for IMG CLASSIF, it sees ghosts"         <br>
+  CLUB:          "feeding robots my GPA @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>rignitc</strong></a>"                                <br>
+  COMPS:         ["e-yantra MB", "openpower hw"]                          <br>
+  MAJOR:         "<em>electronics nd communication engg</em>"                     <br>
+  COLLEGE:       "<em>national institute of technology calicut</em>"               <br>
+  CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>carrier pigeons :p</strong></a>"                                     <br>
   PRONOUNS:      "he/him"                                                 <br>
-  HOBBIES:       ["Speedcubing", "Movies", "Ghosting"]                    <br>
-  FUNFACT:       "I'm Batman... budget edition"                          <br>
-  SECRET:        "I pay the moon to follow me around"                     <br>
-  WHATIF:        "If I eat myself, do I become twice as big or disappear?"<br>
+  HOBBIES:       ["speedcubing", "movies", "day dreaming"]                    <br>
+  FUNFACT:       "i'm Batman... budget edition"                          <br>
+  SECRET:        "i pay the moon to follow me around"                     <br>
+  WHATIF:        "if i eat myself, do I become twice as big or disappear?"<br>
 </code></pre>
 
   </td>
