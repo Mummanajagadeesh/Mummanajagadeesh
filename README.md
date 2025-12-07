@@ -1,4 +1,4 @@
-# Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 14:21:01 IST -->
+# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 13:47:27 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -243,7 +243,11 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 <em>(Click sections below to expand)</em>
 
+<details>
+  <summary><b>Digital Design & Compute Architectures</b></summary>
+<br>
 
+  
 <details>
 <summary>
   <strong>
@@ -807,7 +811,14 @@ Implemented a collection of **peripheral serial communication interfaces in Veri
 </details>
 
 
+</details>
 
+
+
+<details>
+  <summary><b>Analog Circuits & Device-Level Design</b></summary>
+
+<br> 
 
 <details>
 <summary>
@@ -1051,7 +1062,80 @@ The signal path is fully modular—each block is buffered to avoid inter-stage l
 
 
 
+<details>
+<summary>
+  <strong>
+    Precision PID Controller Design using Operational Amplifiers |
+    <a href="https://mummanajagadeesh.github.io/projects/pid-ctrl" target="_blank">Link</a>
+  </strong>
+</summary>
 
+<br>
+
+An analog PID controller built using high-linearity op-amps (LT1007 / TL082) and RC networks, implemented entirely in continuous time and validated through LTspice.
+The design focuses on stable low-frequency integration, controlled differentiation without noise peaking, and diode-based output limiting for robust transient behavior.
+
+Two complete controller variants were implemented—one minimal, one extended with gain scaling and anti-windup.
+
+**Measured / designed characteristics**
+
+* **Differential stage:** unity-gain differential amplifier with high CMRR for clean error sensing
+* **Integrator:** 10 ms time constant →
+
+  * (K_i \approx 100\ \text{s}^{-1})
+  * (f_c \approx 16\ \text{Hz})
+  * Loop-gain boost ≈ **9.5 dB**
+* **Derivative network:** RC shaping with controlled high-frequency roll-off to prevent noise amplification
+* **Output swing protection:** diode clamps maintaining bounded actuation signal under large transients
+* **Op-amp choices:** LT1007 for low noise and precision; TL082 as a low-cost, wide-bandwidth alternative
+* **Simulation:** full closed-loop Bode, transient, load-step and saturation recovery tests in LTspice
+
+**Second PID variant**
+
+* **10× front-end gain** for small-signal plant feedback
+* **Dual-integrator configuration** for deeper low-frequency suppression
+* **Anti-windup:** diode shunts + soft-limiting network to prevent integrator runaway
+* **Stable recovery** under saturation and high-error conditions
+
+**Design intent**
+
+* preserve linearity and phase margin across low-frequency operation
+* condition derivative action to avoid overshoot due to high-frequency noise
+* offer two architectures: a **clean textbook PID** and a **high-authority PID** with controlled limiting
+
+<br>
+
+<details>
+  <summary><b>Repository</b></summary>
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/PID_CTRL#gh-light-mode-only">
+  <img src="./repos/pid-ctrl-light.svg#gh-light-mode-only"
+       alt="PID Controller Repository Card (light mode)" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/PID_CTRL#gh-dark-mode-only">
+  <img src="./repos/pid-ctrl-dark.svg#gh-dark-mode-only"
+       alt="PID Controller Repository Card (dark mode)" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+
+</details>
+
+<details>
+  <summary><b>Robotics and ML</b></summary>
+
+
+  <br>
+  
 <details>  
 <summary>  
   <strong>  
@@ -1143,9 +1227,6 @@ A sub-2 kg autonomous quadrotor designed for **GNSS-denied navigation**, **visua
 
 </details>
 
----
-
-</details>
 </details>
 
 
@@ -1221,9 +1302,35 @@ The system extracts cube state using calibrated imaging and solves it via a **Ko
 
 </details>
 
+<details>
+<summary>
+  <strong>
+    MRI-Based Alzheimer’s & MCI Classification using 3D CNNs |
+    <a href="#" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+Implemented a full 3D medical-imaging classification pipeline for Alzheimer’s, MCI, and cognitively normal subjects using PyTorch/MONAI.  
+Focused on volumetric preprocessing, stable normalization across scanners, and architecture search over 3D convolutional backbones.
+
+* Designed a unified DICOM/NIfTI preprocessing flow with voxel-size normalization, spatial reorientation, intensity Z-scoring, Nyúl histogram standardization, and optional radiomic-feature augmentation.
+* Built data transforms with 3D affine jitter, elastic deformation, anisotropic scaling, and bias-field augmentation to model scanner variability.
+* Implemented Med3DNet-style 3D CNNs with custom heads: channel-progressive blocks, SE/CBAM attention, depth-scheduled 3D convolutions, and dropout tuned via Bayesian optimization.
+* Used MONAI’s sliding-window inference, smart-cache loading, and mixed Gaussian/Rician noise regularization for stable training on full MRI volumes.
+* Performed Bayesian hyperparameter search over learning rates, kernel schedules, convolution depths, and ensemble configurations.
+* Achieved **>93% accuracy** on held-out structural MRI volumes with strong stability under cross-scanner shifts due to aggressive normalization and augmentation.
+
+<br>
+
+**Tools:** PyTorch • MONAI • NiBabel • 3D CNNs • Bayesian Optimization • Medical Image Preprocessing  
+
+</details>
 
 
-<br><br>
+</details>
+
 
 # `$ env | grep STACK`
 
