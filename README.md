@@ -1,4 +1,4 @@
-# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 12:59:57 IST -->
+# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 11:27:44 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -600,7 +600,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 <details>
 <summary>
   <strong>
-    Fixed-Point CORDIC Trigonometric Soft-Core IP (Synthesizable Verilog) |
+    Fixed-Point CORDIC Trigonometric Soft-Core IP |
     <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog" target="_blank">Link</a>
   </strong>
 </summary>
@@ -899,12 +899,12 @@ Operating-point analysis confirms all MOS devices remain in saturation with expe
 
 <a href="https://github.com/Mummanajagadeesh/2-stage-cmos-opamp#gh-light-mode-only">
   <img src="./repos/2-stage-cmos-opamp-light.svg#gh-light-mode-only"
-       alt="Two-Stage CMOS Op-Amp Repository Card (light mode)" />
+       alt="Two-Stage CMOS Op-Amp Repository Card (light mode) | Design and Analysis of Two-Stage CMOS Op-Amp with Miller Compensation" />
 </a>
 
 <a href="https://github.com/Mummanajagadeesh/2-stage-cmos-opamp#gh-dark-mode-only">
   <img src="./repos/2-stage-cmos-opamp-dark.svg#gh-dark-mode-only"
-       alt="Two-Stage CMOS Op-Amp Repository Card (dark mode)" />
+       alt="Two-Stage CMOS Op-Amp Repository Card (dark mode) | Design and Analysis of Two-Stage CMOS Op-Amp with Miller Compensation" />
 </a>
 
 </p>
@@ -912,6 +912,148 @@ Operating-point analysis confirms all MOS devices remain in saturation with expe
 </details>
 
 </details>
+
+
+
+<details>
+<summary>
+  <strong>
+    5-Stage CMOS Ring-Oscillator VCO |
+    <a href="https://mummanajagadeesh.github.io/projects/vco" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+  
+A 5-stage CMOS inverter ring used as a voltage-controlled delay line, producing oscillation whose frequency scales with the control voltage.
+A 3-stage buffer isolates the oscillator core and restores the internal sine-like waveform into a full-swing CMOS square wave.
+
+The oscillator operates from 0.7–3.0 V control input and shows a monotonic delay reduction with increasing drive strength.
+
+**Measured characteristics**
+
+* **Frequency range:** 0.724–1.93 GHz
+* **Linear KVCO region:** ~2.1 GHz/V for 0.7–1.2 V
+* **Frequency saturation:** begins above ~1.8 V as inverter delay approaches its minimum
+* **Core waveform:** ~0.3–1.7 V swing with rounded edges
+* **Buffered output:** 0–1.8 V square wave, ~50% duty cycle
+* **Startup time:** ~0.5–0.8 ns to reach steady oscillation
+* **Simulation sweep:** confirmed monotonic f–V relation and early compression through parametric input stepping
+
+**Frequency points**
+
+| Vctrl (V) | f (GHz) |
+| --------: | ------- |
+|       0.7 | 0.724   |
+|       0.8 | 1.107   |
+|       1.0 | 1.59    |
+|       1.2 | 1.76    |
+|       1.5 | 1.88    |
+|       2.0 | 1.92    |
+|       2.5 | 1.928   |
+|       3.0 | 1.9298  |
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/ring-oscillator-vco#gh-light-mode-only">
+  <img src="./repos/ring-oscillator-vco-light.svg#gh-light-mode-only"
+       alt="Ring Oscillator VCO Repository Card (light mode) | Design and SPICE simulation of a 5-stage CMOS inverter-based ring VCO with buffered output and multi-GHz tunability" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/ring-oscillator-vco#gh-dark-mode-only">
+  <img src="./repos/ring-oscillator-vco-dark.svg#gh-dark-mode-only"
+       alt="Ring Oscillator VCO Repository Card (dark mode) | Design and SPICE simulation of a 5-stage CMOS inverter-based ring VCO with buffered output and multi-GHz tunability" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+<details>
+<summary>
+  <strong>
+    Analog Function Generator |
+    <a href="https://mummanajagadeesh.github.io/projects/funcgen" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A multi-waveform analog function generator built using discrete op-amp blocks (TL082), passive RC networks, and a CD4051 analog multiplexer.
+The generator produces **sine, square, and triangular outputs** and exposes **continuous control** of amplitude, DC offset, and phase.
+Additional AM/PM blocks and a relaxation-oscillator VCO extend the system for modulation experiments.
+
+The signal path is fully modular—each block is buffered to avoid inter-stage loading errors, enabling predictable behavior across a **1 kHz–500 kHz** operating band.
+
+**Measured characteristics**
+
+* **Waveforms:** sine, square (<200 ns rise/fall), triangle
+* **Frequency range:** ~1 kHz → 500 kHz (Wien-bridge tuned)
+* **Amplitude control:** ±10 V
+* **DC offset range:** ±5 V
+* **Phase control:** 0°–160° (first-order all-pass)
+* **Square-wave performance:** clean CMOS-level transitions, rise/fall < 200 ns
+* **Triangular output:** linear ramps from integrator with controllable slope
+* **Waveform switching:** CD4051 mux with low ON-resistance routing
+* **Hardware validation:** TI ASLK Pro bench + LTspice simulations
+* **Modulation:** AM/PM blocks implemented as additive/multiplicative stages
+* **VCO:** relaxation-oscillator variant providing voltage-to-frequency behavior
+
+**Signal-generation architecture**
+
+* **Wien-bridge core** → low-distortion sine
+* **Schmitt trigger** → rail-to-rail square
+* **Op-amp integrator** → triangular
+* **CD4051 multiplexer** → waveform selection
+* **Offset summer** → adjustable vertical shift
+* **RC all-pass** → continuous phase control
+* **Unity-gain buffers** → isolate every stage and preserve amplitude accuracy
+
+**Representative measurements**
+
+* Sine output distortion minimal across most of the band; clean 1.55 kHz fundamental (LTspice + CRO)
+* Square-wave rise/fall < 200 ns across load conditions
+* Triangle linearity maintained through full amplitude range
+* Phase shift examples captured at 64°, 90°, and ~162° using tuned RC values
+* Offset correctness demonstrated for 0 V, +1 V, –1 V injected shifts
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/ring-oscillator-vco#gh-light-mode-only">
+  <img src="./repos/functiongen-light.svg#gh-light-mode-only"
+       alt="Function Generator Repository Card (light mode) | Basic implementation of a Function Generator that can generate sine, square, and triangular waves with amplitude, phase, and DC shift modulations
+
+" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/ring-oscillator-vco#gh-dark-mode-only">
+  <img src="./repos/functiongen-dark.svg#gh-dark-mode-only"
+       alt="Function Generator Repository Card (dark mode)" | Basic implementation of a Function Generator that can generate sine, square, and triangular waves with amplitude, phase, and DC shift modulations
+
+/>
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+
 
 
 <details>  
