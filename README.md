@@ -1112,12 +1112,12 @@ Two complete controller variants were implemented—one minimal, one extended wi
 <p align="center">
 
 <a href="https://github.com/Mummanajagadeesh/PID_CTRL#gh-light-mode-only">
-  <img src="./repos/pid-ctrl-light.svg#gh-light-mode-only"
+  <img src="./repos/pid_ctrl-light.svg#gh-light-mode-only"
        alt="PID Controller Repository Card (light mode)" />
 </a>
 
 <a href="https://github.com/Mummanajagadeesh/PID_CTRL#gh-dark-mode-only">
-  <img src="./repos/pid-ctrl-dark.svg#gh-dark-mode-only"
+  <img src="./repos/pid_ctrl-dark.svg#gh-dark-mode-only"
        alt="PID Controller Repository Card (dark mode)" />
 </a>
 
