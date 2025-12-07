@@ -1,4 +1,4 @@
-# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 23:23:12 IST -->
+# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 23:07:52 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -260,6 +260,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 **Design of High-Performance Q1.7 Fixed-Point Quantized CNN Hardware Accelerator with Microarchitecture Optimization of 3-Stage Pipelined Systolic MAC Arrays for Lightweight Inference**
   
 > **" I tried to ImProVe, but NeVer really did - so I MOVe-d on ¯\\\_(ツ)_/¯ "**
+<!--> **" ¯\\\_(ツ)_/¯ Read the above in RTL mode to decode the other 2/4 "**
 
 **Current Project Overview**
 
