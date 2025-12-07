@@ -147,15 +147,15 @@
 <pre><code>$ less ~/workspace/profile/config.yaml
 
   FOCUS:         "always learning - check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    <br>
-  CURRENTLY:     "building a HW ACCEL ARCH for IMG CLASSIF, it sees ghosts"         <br>
-  CLUB:          "feeding robots my GPA @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>rignitc</strong></a>"                                <br>
+  CURRENTLY:     "building a `hw accel arch for img classif`, it sees ghosts"         <br>
+  CLUB:          "feeding robots my gpa @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>rignitc</strong></a>"                                <br>
   COMPS:         ["e-yantra MB", "openpower hw"]                          <br>
   MAJOR:         "<em>electronics nd communication engg</em>"                     <br>
   COLLEGE:       "<em>national institute of technology calicut</em>"               <br>
   CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>carrier pigeons :p</strong></a>"                                     <br>
   PRONOUNS:      "he/him"                                                 <br>
   HOBBIES:       ["speedcubing", "movies", "day dreaming"]                    <br>
-  FUNFACT:       "i'm Batman... budget edition"                          <br>
+  FUNFACT:       "i'm batman... budget edition"                          <br>
   SECRET:        "i pay the moon to follow me around"                     <br>
   WHATIF:        "if i eat myself, do I become twice as big or disappear?"<br>
 </code></pre>
