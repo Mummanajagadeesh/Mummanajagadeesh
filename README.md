@@ -1,4 +1,4 @@
-# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 11:58:26 IST -->
+# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 11:27:44 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -271,6 +271,8 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 * Implemented **synthesizable Verilog modules** (**Testbench Verified**) with **FSM-based control**, **2-cycle handshake**, and **auto-generated ROMs** (14: **weights/biases** & 3 (**RGB**): input). Intermediate values stored in **registers** and computed using **systolic array-based MAC units**.
 * Explored key **image-processing techniques** including **edge detection**, **noise reduction**, **filtering**, and **enhancement**. Implemented **(E)MNIST classification** using **MLP**, achieving **>75% accuracy**. Automated **inference flow** with **TCL/Python scripts** and **manual GUI inputs**.
 
+---
+
 <details>
   <summary>
   <b>Technical Summary</b>
@@ -287,11 +289,15 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 </details>
 
+---
+
 ### **High-Speed 3-Stage Pipelined Systolic Array-Based MAC Architectures**
 *Digital Logic Design | Synthesis*
 * Compared **6 × 8-bit adders/multipliers** for **systolic-array MACs** using **PPA metrics** (*latency / throughput / area*, **sky130 nm PDK**) and analyzed **trade-offs**.
 * Final design uses **Carry-Save Adder (CSA)** and **Modified Booth Encoder (MBE)** multiplier for **3×3 convolution** and **GEMM operations** with **3-stage pipelined systolic arrays**, verified for **0 / same padding modes**.
 * **Pipeline Stages:** **sampling image → truncating & flipping → MAC accumulation**.
+
+---
 
 <details>
   <summary>
@@ -324,6 +330,8 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
     - Latency ↓ 1% Throughput ≈ same Speed ≈ same Area ≈ same Power ↓ 44.6% Energy/op ↓ 44%
 
 </details>  
+
+---
 
 <details>
   <summary>
@@ -458,6 +466,9 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 </ul>
 
 </details>
+
+---
+
 </details>
 
 
@@ -512,15 +523,47 @@ A sub-2 kg autonomous quadrotor designed for **GNSS-denied navigation**, **visua
 <details>
   <summary><b>Repositories</b></summary>
 
-<a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-light-mode-only">
-  <img src="./repos/isro_ros2-light.svg#gh-light-mode-only" alt="ANAV ROS2 Repo (light)" />
-</a>
+<br>
 
-<a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-dark-mode-only">
-  <img src="./repos/isro_ros2-dark.svg#gh-dark-mode-only" alt="ANAV ROS2 Repo (dark)" />
-</a>
+<p align="center">
+<b>ANAV – ISRO IRoC-U 2025 Autonomous Drone System</b>
+</p>
+
+<table align="center">
+  <tr>
+    <!-- Repo 1 -->
+    <td align="center">
+      <a href="https://github.com/Mummanajagadeesh/isro-irocu-2k25#gh-light-mode-only">
+        <img src="./repos/isro-irocu-2k25-light.svg#gh-light-mode-only"
+             alt="Repository containing all files related to ISRO IRoC-U 2025 Robotics Challenge (telemetry, simulation, flight data)" />
+      </a>
+      <a href="https://github.com/Mummanajagadeesh/isro-irocu-2k25#gh-dark-mode-only">
+        <img src="./repos/isro-irocu-2k25-dark.svg#gh-dark-mode-only"
+             alt="Repository containing all files related to ISRO IRoC-U 2025 Robotics Challenge (telemetry, simulation, flight data)" />
+      </a>
+    </td>
+
+<!-- Repo 2 -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-light-mode-only">
+    <img src="./repos/isro_ros2-light.svg#gh-light-mode-only"
+         alt="Autonomous Drone for GNSS-Denied Environments – ROS2 setup, VIO, estimation, landing logic" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-dark-mode-only">
+    <img src="./repos/isro_ros2-dark.svg#gh-dark-mode-only"
+         alt="Autonomous Drone for GNSS-Denied Environments – ROS2 setup, VIO, estimation, landing logic" />
+  </a>
+</td>
+
+  </tr>
+</table>
+
+<br>
+
 
 </details>
+
+---
 
 </details>
 </details>
