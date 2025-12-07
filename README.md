@@ -237,7 +237,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
   
 </pre>-->
 
-<br><br>
+<br>
 
 # `$ ls ~/projects --filter=feat` | [`All Projects`](https://mummanajagadeesh.github.io/projects/)
 
