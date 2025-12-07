@@ -1,4 +1,4 @@
-# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 12:26:35 IST -->
+# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 11:27:44 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -695,6 +695,146 @@ A sub-2 kg autonomous quadrotor designed for **GNSS-denied navigation**, **visua
 </details>
 
 </details>
+
+
+
+<details>
+<summary>
+  <strong>
+    Fixed-Point CORDIC Trigonometric Soft-Core IP (Synthesizable Verilog) |
+    <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A synthesizable **CORDIC-based trigonometric IP** supporting **sin, cos, and tan** evaluation using a parameterized fixed-point rotation core.
+Includes standalone wrappers, arctan lookup ROM, and a verification environment with angle sweeps and floating-point correlation.
+
+---
+
+### **CORDIC Trigonometric Soft IP — Parametric Fixed-Point Core + Wrapper Functions**
+
+**Duration:** Individual  
+**Tools:** Verilog | Icarus Verilog | FuseSoC
+
+* Implemented a **fully synthesizable fixed-point CORDIC core** (iterative rotation mode) supporting configurable datapath width, iteration count, and shift-add update logic.
+* Created **sin, cos, tan wrappers** around the base CORDIC core, each applying pre-scaled initial vectors to cancel CORDIC gain and produce Q-format outputs (Q1.15 for sin/cos, Q3.28 for tan).
+* Integrated a **precomputed 16-entry atan(2⁻ᵢ)** ROM table using signed 32-bit constants in Q3.29 format for angle accumulator updates.
+* Designed the core using **shift-add micro-rotations only** (no multipliers), enabling low-resource FPGA use and ASIC DSP embedding.
+* Verification testbench sweeps angles from **−1.5 to +1.5 rad** in 0.1 increments, comparing fixed-point outputs with double-precision math.  
+  - **Max error:** sin ≈ 3.9×10⁻⁵, cos ≈ 4.5×10⁻⁵  
+  - **RMS error:** sin ≈ 2.0×10⁻⁵, cos ≈ 2.8×10⁻⁵  
+  - tan diverges as expected near ±π/2 (max ≈ 6.10).
+* Supports **FuseSoC** integration for one-command builds and simulation.
+
+---
+
+<details>
+  <summary><b>Technical Summary</b></summary>
+
+  <br>
+
+* The CORDIC soft IP implements a **parameterizable micro-rotation datapath** for evaluating trigonometric functions in fixed-point arithmetic without multipliers. The core iteratively updates `(x, y, z)` using shift-add operations. Each iteration performs signed right shifts by `i`, conditional selection of the rotation direction `dᵢ`, and index-based subtraction of pre-stored arctangent constants. The update system follows:
+
+$$
+\begin{aligned}
+x_{i+1} &= x_i - d_i (y_i \gg i)\\
+y_{i+1} &= y_i + d_i (x_i \gg i)\\
+z_{i+1} &= z_i - d_i \,\arctan(2^{-i})
+\end{aligned}
+$$
+
+with the rotation direction:
+
+$$
+d_i =
+\begin{cases}
++1 & \text{if } z_i \ge 0\\
+-1 & \text{if } z_i < 0
+\end{cases}
+$$
+
+This ensures monotonic convergence of `zᵢ → 0` and stable rotation of the state vector toward the target angle. Each update executes in a single cycle, enabling fully sequential CORDIC convergence with predictable iteration count and timing.
+
+* Internal representation uses **32-bit signed fixed-point** for all datapath state registers (`x`, `y`, `z`). The datapath supports `WIDTH = 32` as a default configuration, and can be scaled depending on the desired error tolerance. The wrappers apply deterministic truncation/saturation to standardized output formats:
+
+  * **sin/cos outputs:** 16-bit Q1.15  
+  * **tan output:** 32-bit Q3.28  
+
+  This separates internal precision from output formatting and ensures **≤ 4×10⁻⁵ error** for sine and cosine over the tested range.
+
+* The **arctangent ROM** is a 16-entry lookup table storing:
+
+$$
+\arctan(2^{-i}) \text{ encoded in Q3.29}
+$$
+
+for `i = 0 … 15`. Each entry is stored as a **signed 32-bit constant**, with values ranging from **421,657,428** down to **16,384**, corresponding to the diminishing influence of higher-order micro-rotations.
+
+* Since CORDIC inherently scales the vector by:
+
+$$
+K_N = \prod_{i=0}^{N-1} \sqrt{1 + 2^{-2i}},
+$$
+
+the implementation applies **pre-scaled initial values**:
+
+$$
+x_0 = \frac{1}{K_N}, \qquad y_0 = 0, \qquad z_0 = \theta_{\text{input}}
+$$
+
+This eliminates post-normalization hardware entirely.
+
+* The IP provides **three functional wrappers** (`cordic_sin`, `cordic_cos`, `cordic_tan`) that map angle inputs directly to outputs:
+
+  * **sin:** final `y_N`  
+  * **cos:** final `x_N`  
+  * **tan:** extended-precision ratio in Q3.28  
+
+  These wrappers isolate users from internal formatting and allow integration into ALUs, DSP paths, and math accelerators without glue logic.
+
+* The verification environment sweeps **31 angle points** from **−1.5 rad to +1.5 rad** in increments of `0.1` and measures absolute error relative to IEEE-754:
+
+  * **sin max error:** ≈ 3.9×10⁻⁵  
+  * **cos max error:** ≈ 4.5×10⁻⁵  
+  * **tan max error:** ≈ 6.10 (divergence near ±π/2)  
+  * **RMS:** sin ≈ 2×10⁻⁵, cos ≈ 2.8×10⁻⁵, tan ≈ 1.11  
+
+  The core demonstrates stable convergence, correct quadrant behavior, and deterministic timing.
+
+* The IP is packaged as a **soft RTL component** with FuseSoC metadata (`.core`), enabling:
+
+  * automatic dependency resolution  
+  * one-command simulation via Icarus Verilog  
+  * portable SoC integration  
+  * dedicated wrappers, ROM, constants, and testbench directories  
+
+</details>
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-light-mode-only">
+  <img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only"
+       alt="CORDIC Algorithm Verilog Implementation — Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-dark-mode-only">
+  <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only"
+       alt="CORDIC Algorithm Verilog Implementation — Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
 
 
 
