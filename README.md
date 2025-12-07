@@ -1,4 +1,4 @@
-# Hello, world! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 12:01:01 IST -->
+# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 11:27:44 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -261,6 +261,8 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 **Duration:** Individual, Ongoing  
 **Tools:** Verilog (Icarus Verilog, Yosys) | Python (TensorFlow, NumPy) | Scripting (TCL, Perl)
+
+---
 
 ### **8-bit Quantized CNN Hardware Accelerator: Open-source, Modular, & Optimized for Inference**
 
@@ -568,56 +570,133 @@ A sub-2 kg autonomous quadrotor designed for **GNSS-denied navigation**, **visua
 </details>
 </details>
 
-
 <details>
 <summary>
   <strong>
-    Single-Cycle RV32I RISC-V CPU in Verilog and TL-Verilog |
+    RISC-V & MIPS Microarchitectures — SC / MC / Pipelined / Dual-Issue Superscalar |
     <a href="https://mummanajagadeesh.github.io/projects/rose" target="_blank">Link</a>
   </strong>
 </summary>
 
 <br>
 
-Designed a 32-bit single-cycle RV32I core in Verilog with 32×32 regfile and modular datapath (ALU, controller, imm-gen, instr/data memories,
-PC); supports all 38 base instructions (I/S/B/U/J/R) with full load/store (LB/LBU/LH/LHU/LW, SB/SH/SW), byte/halfword RMW, and
-correct sign/zero extension; validated via self-checking ModelSim TB, synthesized on Quartus Prime & core also implemented in TL-Verilog
-  
+---
+
+
+## **RV32I RISC-V Core (TL-Verilog, Single-Cycle Implementation)**
+
+**Tools:** Makerchip | TL-Verilog | Verilator
+
+* Implemented a **RV32I single-stage core** supporting all base integer instructions across I, S, B, U, J, and R formats.
+* Designed a **32×32 register file** with dual-read / single-write ports, enforcing `x0 = 0` invariance.
+* Implemented ALU operations covering arithmetic, logical, shift, and compare paths with correct immediate decode (opcode / funct3 / funct7).
+* Verified via a **test program summing integers 1–9**, completing within **~50 cycles**, updating pass/fail status in `x30` and `x31`.
+* Integrated interactive simulation support via **m4+cpu_viz()**, enabling cycle-accurate register/memory visualization.
+
+---
+
+## **RV32I RISC-V Core (Verilog, Single-Cycle Implementation)**
+
+**Tools:** Verilog | Icarus Verilog | ModelSim | Quartus Prime
+
+* Designed a **32-bit single-cycle RV32I core** with modular datapath: ALU, control, immediate generator, PC logic, instruction & data memories.
+* Implemented **all 38 base instructions** including full load/store support: `LB, LBU, LH, LHU, LW, SB, SH, SW`, with correct zero/sign extension and RMW correctness.
+* Verified correctness using **self-checking ModelSim testbenches** and synthesized the core on **Quartus Prime**.
+
+---
+
+## **MIPS Microarchitectures — SC / MC / 5-Stage Pipeline**
+
+**Tools:** Verilog | Icarus Verilog | ModelSim | GTKWave
+
+* Implemented **three 32-bit MIPS processors**:
+
+  * **Single-Cycle:** CPI = **1.0**, PC increments by **+4** each cycle.
+  * **Multi-Cycle:** Instruction class cycle counts:
+
+    * R-type: **4 cycles**
+    * I-type arithmetic: **4 cycles**
+    * Load: **5 cycles**
+    * Store: **4 cycles**
+    * Branch: **3 cycles**
+    * Jump: **3 cycles**
+      → Benchmark CPI ≈ **4.1**
+  * **Pipeline (IF–ID–EX–MEM–WB):** forwarding, hazard detection, 1-cycle load-use stall, 1-cycle taken-branch flush.
+    → Benchmark CPI ≈ **1.1–1.2**
+
+* Executed Harris & Harris benchmark (18 instructions). Correctly wrote **0x00000007** to memory addresses **0x50** and **0x54**.
+
+* Included **self-checking benches**, `.mem` loading infrastructure, full waveforms, and verification logs.
+
+---
+
+## **Dual-Issue 16-bit RISC Superscalar Processor (In-Order)**
+
+**Tools:** Verilog | Icarus Verilog | GTKWave
+
+* Implemented a **two-wide in-order superscalar processor** with parallel IF–ID–EX–MEM–WB lanes and independent pipeline registers per lane.
+* Instruction fetch returns **32 bits = 2×16-bit instructions**; dependency checks suppress lane-1 when hazards exist.
+* Register file: **4 read ports + 2 write ports**, with `r0=0` hardwired.
+* Hazard handling: RAW/WAW detection, load-use stall insertion, inter-lane dependency checks, branch squashing.
+* Memory system: multi-port (three-port ARAM) enabling simultaneous instruction fetch + data access.
+* Verified using program that sums **1–10** → final register value **r1 = 0x0037 (55)** with correct inter-lane suppression due to true dependencies.
+
+---
+
 <br>
 
 <details>
   <summary><b>Repositories</b></summary>
 
-  <!-- Light Mode Repo Card -->
-  <a href="https://github.com/Mummanajagadeesh/RoSe#gh-light-mode-only">
-    <img src="./repos/rose-light.svg#gh-light-mode-only" alt="RoSe Repo Card (light)" />
-  </a>
-
-  <!-- Dark Mode Repo Card -->
-  <a href="https://github.com/Mummanajagadeesh/RoSe#gh-dark-mode-only">
-    <img src="./repos/rose-dark.svg#gh-dark-mode-only" alt="RoSe Repo Card (dark)" />
-  </a>
-
-</details>
-
-
-
 <br>
 
-**Duration:** Individual, Ongoing  
-**Tools:** Verilog (Icarus Verilog) | TL-Verilog (Makerchip) 
+<table align="center">
+  <tr>
 
-- **Implemented a fully synthesizable RV32I RISC-V core** in TL-Verilog with a single-stage pipeline, supporting all base integer instructions and immediate formats (I, S, B, U, J).
+<!-- Repo 1 -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/mips-risc-microarchitectures#gh-light-mode-only">
+    <img src="./repos/mips-risc-microarchitectures-light.svg#gh-light-mode-only"
+         alt="MIPS-RISC-Microarchitectures: Single-cycle, multi-cycle, and pipelined CPU implementations with verification and CPI benchmarking" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/mips-risc-microarchitectures#gh-dark-mode-only">
+    <img src="./repos/mips-risc-microarchitectures-dark.svg#gh-dark-mode-only"
+         alt="MIPS-RISC-Microarchitectures: Single-cycle, multi-cycle, and pipelined CPU implementations with verification and CPI benchmarking" />
+  </a>
+</td>
 
-- **Developed a test program summing integers 1 to 9**, verified correct ALU operations, branching, and control flow within 50 simulation cycles, with pass/fail status stored in registers `x30` and `x31`.
+<!-- Repo 2 -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/risc16-dual-superscalar-core#gh-light-mode-only">
+    <img src="./repos/risc16-dual-superscalar-core-light.svg#gh-light-mode-only"
+         alt="16-bit Dual-Issue Superscalar RISC Processor: Two-lane in-order pipeline, forwarding, hazard detection, multi-port memory" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/risc16-dual-superscalar-core#gh-dark-mode-only">
+    <img src="./repos/risc16-dual-superscalar-core-dark.svg#gh-dark-mode-only"
+         alt="16-bit Dual-Issue Superscalar RISC Processor: Two-lane in-order pipeline, forwarding, hazard detection, multi-port memory" />
+  </a>
+</td>
 
-- **Designed a 32-register file with dual-read and single-write ports**, enforcing write-disable on register `x0`, and integrated instruction decode logic handling opcode, funct3, and funct7 fields.
+<!-- Repo 3 -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/rose#gh-light-mode-only">
+    <img src="./repos/rose-light.svg#gh-light-mode-only"
+         alt="RoSe RV32I Processor: TL-Verilog and Verilog RISC-V single-cycle CPU implementations" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/rose#gh-dark-mode-only">
+    <img src="./repos/rose-dark.svg#gh-dark-mode-only"
+         alt="RoSe RV32I Processor: TL-Verilog and Verilog RISC-V single-cycle CPU implementations" />
+  </a>
+</td>
 
-- **Implemented comprehensive ALU supporting arithmetic, logic, shifts, and comparisons**, with immediate extraction and flexible program counter update logic including branch and jump target calculation.
-
-- **Enabled simulation and debugging via Makerchip integration** using `m4+cpu_viz()`, with waveform visualization and automated test validation through register monitoring.
+  </tr>
+</table>
 
 </details>
+
+</details>
+
+
 
 <details>
 <summary>
