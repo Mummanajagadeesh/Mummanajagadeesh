@@ -273,7 +273,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 <details>
   <summary>
-  Technical Summary
+  <b>Technical Summary</b>
   </summary>
 
 - Designed a fully synthesizable INT8 CNN accelerator (Q1.7 PTQ) for CIFAR-10, optimized for throughput, latency determinism, and precision efficiency. Implemented a 2-cycle ready/valid handshake for all inter-module transactions and FSM-based control sequencing for deterministic pipeline timing. Trained 8 CNNs (TensorFlow, identical augmentation & LR scheduling w/ vanilla Adam optimizer) and performed architecture-level DSE via Pareto analysis, selecting 2 optimal variants including a ResNet-style residual CNN.
@@ -295,7 +295,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 <details>
   <summary>
-  Technical Summary
+  <b>Technical Summary</b>
   </summary>
   
 - Benchmarked six 8-bit signed adder and multiplier architectures for systolic-array MACs targeting CNN/GEMM workloads using a fully open-source ASIC flow (Yosys + OpenROAD/OpenLane) on the Google-SkyWater 130nm PDK (Sky130HS PDK @25°C_1.8V). Evaluated PPA (Power, Performance, Area) and latency/throughput/area metrics under a constant synthesis and layout environment with fixed constraints and floorplan parameters (FP_CORE_UTIL = 30 %, PL_TARGET_DENSITY = 0.36, 10 ns clock, CTS/LVS/DRC/Antenna enabled)
@@ -325,12 +325,9 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 </details>  
 
-
-<br><br>
-
 <details>
   <summary>
-  Repositories 
+  <b>Repositories</b>
   </summary>
 
 <p align="center">
@@ -461,55 +458,73 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 </ul>
 
 </details>
-
-<br>
-
-
-
-
 </details>
+
 
 <details>  
 <summary>  
   <strong>  
-    ANAV for Martian Surface Exploration/ GNSS-denied environments (ISRO IRoC‑U 2025) |  
+    ANAV for Martian Surface Exploration / GNSS-Denied Environments (ISRO IRoC-U 2025) |  
     <a href="https://mummanajagadeesh.github.io/projects/isro-anav/" target="_blank">Link</a>  
   </strong>  
 </summary>  
 
-
-
-
-
 <br>
 
-An autonomous aerial system designed for reliable navigation and landing in environments without GPS, using onboard visual-inertial mapping, real-time obstacle awareness, and wireless telemetry
+A sub-2 kg autonomous quadrotor designed for **GNSS-denied navigation**, **visual–inertial localization**, **mapping**, and **safe-zone landing**, using onboard compute, stereo sensing, and redundant measurement sources.
 
-**Duration:** Team-based (ISRO RIG), Ongoing
-**Tools:** Jetson Nano | Pixhawk | RealSense D435i | ESP32 (ESP‑Now) | VINS‑Fusion | ROS2
+**Duration:** Team-Based (ISRO RIG), Ongoing <br>
+**Tools:** Jetson Nano | Pixhawk 4 | RealSense D435i | ESP32 (ESP-Now) | ORB-SLAM3 | VINS-Fusion | ROS2
 
-* **Built a `<2kg autonomous quadrotor>` for `GNSS-denied environments`, capable of `real-time mapping`, `navigation`, and `safe-zone detection` with zero manual intervention; Jetson Nano was used for onboard compute and Pixhawk handled flight control.**
+---
 
-* **Calibrated ESCs and implemented `embedded power distribution` via BEC module to ensure stable regulation for compute/sensing; integrated barometer and external optical flow sensor with Pixhawk for redundancy in low-texture or drifting conditions.**
+### **Autonomous Quadrotor for GPS-Denied Operation**
 
-* **Fused stereo-IMU data from `Intel RealSense D435i` using `VINS-Fusion` on `ROS2`, achieving `<5cm drift` over \~5m; transmitted real-time telemetry using ESP32 modules (`ESP‑Now`); autonomously landed on `obstacle-free 1.5×1.5m` zones with `<15° slopes`.**
+* Built a **<2 kg quadrotor** integrating **Jetson Nano** for onboard processing and **Pixhawk 4** for attitude/stability, targeting GNSS-denied missions requiring drift-constrained localization and controlled landing.
+* Completed ESC calibration, thrust-balancing, and **regulated 5 V / 3 A power distribution** using BEC modules for stable sensor/compute operation under load variations.
+* Integrated **barometer**, **optical flow**, and **stereo-IMU** sensing for multi-source position estimation with fallbacks against low-texture drift.
+* Fused **RealSense D435i** stereo + IMU using **VINS-Fusion (ROS2)** and evaluated against **ORB-SLAM3**, achieving **<5 cm drift over ~5 m** trajectories in indoor GNSS-denied tests.
+* Implemented **ESP-Now** telemetry using ESP32 modules with ~500 m LOS range for transmitting state, estimation residuals, and system health.
+* Verified **autonomous landing** on **1.5 m × 1.5 m** clear regions and tolerances up to **~15° surface inclination**.
+* Simulated Mars-like flight (~0.38 g gravity, no-GPS) in **Webots**, validating drift behavior, landing accuracy, sensing degradation, and control limits.
+
+---
+
+<details>
+  <summary><b>Technical Summary</b></summary>
+
+* Integrated **Jetson Nano** with **Pixhawk 4** for onboard computation and flight handling, with calibrated ESCs and thrust mapping ensuring stable lift and attitude control for a <2 kg platform. Power regulation used a **5 V / 3 A BEC**, isolating sensor/compute loads from motor-induced voltage drops.
+
+* Performed extrinsic and intrinsic calibration for the **RealSense D435i** (stereo + IMU) and aligned timestamps between Jetson and Pixhawk sources. Evaluated VIO accuracy using **VINS-Fusion** and **ORB-SLAM3**, testing sensitivity to feature density, motion blur, low-texture floors, and illumination. Achieved **<5 cm drift** over **~5 m** sequences with optimized IMU noise parameters and RANSAC thresholds.
+
+* Connected **barometer, optical-flow, and external sensors** to Pixhawk over I2C/UART. Configured EKF2 to combine IMU, barometer, and flow when stereo data deteriorates. Implemented consistency checks between VIO and Pixhawk position estimates; deviations above a fixed threshold (~8–10 cm) trigger reliance on flow + barometer only.
+
+* Implemented long-range **ESP-Now telemetry** between two ESP32 modules. Achieved ~500 m line-of-sight operation and <15 ms median latency. Data included estimated position, VIO confidence, EKF residuals, battery, and attitude.
+
+* Developed a method for **landing region selection** using disparity maps and IMU tilt. Evaluated a 1.5 m × 1.5 m safe area requirement; system rejected regions with irregular height profiles or slopes >15°. Confirmed consistent landings on textured and partially textured surfaces.
+
+* Conducted GNSS-denied simulations in **Webots**, setting gravity to **0.38 g** to approximate Martian conditions. Assessed altitude holding, drift accumulation, and safe-area approach across multiple terrains. Logged estimator drift, thrust reserve, and landing dispersion to validate repeatability under constrained sensing.
+
+</details>
+
+---
 
 <details>
   <summary><b>Repositories</b></summary>
 
 <a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-light-mode-only">
-  <img src="./repos/isro_ros2-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+  <img src="./repos/isro_ros2-light.svg#gh-light-mode-only" alt="ANAV ROS2 Repo (light)" />
 </a>
 
-<!-- Dark Mode Repo Card -->
 <a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-dark-mode-only">
-  <img src="./repos/isro_ros2-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+  <img src="./repos/isro_ros2-dark.svg#gh-dark-mode-only" alt="ANAV ROS2 Repo (dark)" />
 </a>
 
-
 </details>
 
 </details>
+</details>
+
 
 <details>
 <summary>
@@ -541,6 +556,7 @@ correct sign/zero extension; validated via self-checking ModelSim TB, synthesize
   </a>
 
 </details>
+
 
 
 <br>
