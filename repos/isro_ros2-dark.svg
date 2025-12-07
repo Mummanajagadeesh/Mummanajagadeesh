@@ -14,7 +14,7 @@
   <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#1f6feb1a" stroke="#388bfd" />
   <text x="438" y="29" class="badge">Public</text>
   <text x="16" y="55" class="repo-desc">
-    <tspan x="16" dy="0">No description provided</tspan>
+    <tspan x="16" dy="0">Autonomous Drone for GNSS Denied Environments</tspan>
   </text>
   <circle class="lang-dot" cx="16" cy="83" fill="#f34b7d" />
   <text x="26" y="87" class="meta">C++</text>
