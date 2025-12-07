@@ -1717,7 +1717,6 @@ A proximity-driven motion rule based on simple comparisons involving front-facin
 
 </details>
 
-<br>
 
 # `$ git stats --all`
 
