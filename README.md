@@ -1647,7 +1647,7 @@ A proximity-driven motion rule based on simple comparisons involving front-facin
 </details>
 
 
-# `$ env | grep STACK`
+# `$ env --familiar | grep STACK`
 
 <p align="center">
   <!-- Programming Languages -->
