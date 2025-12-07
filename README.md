@@ -1,4 +1,4 @@
-# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 13:09:50 IST -->
+# Bonjour le monde! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 13:09:01 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -980,7 +980,7 @@ The oscillator operates from 0.7–3.0 V control input and shows a monotonic del
 <details>
 <summary>
   <strong>
-    Analog Function Generator |
+    Analog Function Generator with Adjustable Amplitude/Offset/Phase |
     <a href="https://mummanajagadeesh.github.io/projects/funcgen" target="_blank">Link</a>
   </strong>
 </summary>
@@ -1033,18 +1033,14 @@ The signal path is fully modular—each block is buffered to avoid inter-stage l
 
 <p align="center">
 
-<a href="https://github.com/Mummanajagadeesh/ring-oscillator-vco#gh-light-mode-only">
-  <img src="./repos/functiongen-light.svg#gh-light-mode-only"
-       alt="Function Generator Repository Card (light mode) | Basic implementation of a Function Generator that can generate sine, square, and triangular waves with amplitude, phase, and DC shift modulations
-
-" />
+<a href="https://github.com/Mummanajagadeesh/function-generator#gh-light-mode-only">
+  <img src="./repos/function-generator-light.svg#gh-light-mode-only"
+       alt="Function Generator Repository Card (light mode) | Basic implementation of a Function Generator that can generate sine, square, and triangular waves with amplitude, phase, and DC shift modulations" />
 </a>
 
-<a href="https://github.com/Mummanajagadeesh/ring-oscillator-vco#gh-dark-mode-only">
-  <img src="./repos/functiongen-dark.svg#gh-dark-mode-only"
-       alt="Function Generator Repository Card (dark mode)" | Basic implementation of a Function Generator that can generate sine, square, and triangular waves with amplitude, phase, and DC shift modulations
-
-/>
+<a href="https://github.com/Mummanajagadeesh/function-generator#gh-dark-mode-only">
+  <img src="./repos/function-generator-dark.svg#gh-dark-mode-only"
+       alt="Function Generator Repository Card (dark mode)" | Basic implementation of a Function Generator that can generate sine, square, and triangular waves with amplitude, phase, and DC shift modulations"/>
 </a>
 
 </p>
