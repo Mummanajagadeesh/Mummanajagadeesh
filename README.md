@@ -1647,7 +1647,8 @@ A proximity-driven motion rule based on simple comparisons involving front-facin
 </details>
 
 
-# `$ env --familiar | grep STACK`
+<details>
+  <summary><h1><code>$ env --familiar | grep STACK</code></h1></summary>
 
 <p align="center">
   <!-- Programming Languages -->
@@ -1714,8 +1715,9 @@ A proximity-driven motion rule based on simple comparisons involving front-facin
   <img src="https://skillicons.dev/icons?i=unity" alt="Unity" width="48" height="48"/>
 </p>
 
+</details>
 
-<br><br>
+<br>
 
 # `$ git stats --all`
 
