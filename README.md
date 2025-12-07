@@ -914,7 +914,7 @@ Explored how **doping profiles, junction depths, geometry parameters, and physic
 <details>
 <summary>
   <strong>
-    CMOS Inverter Design & Layout Simulation |
+    CMOS Inverter Layout (Magic VLSI) & Ngspice Simulation |
     <a href="https://github.com/Mummanajagadeesh/cmos-inverter" target="_blank">Link</a>
   </strong>
 </summary>
