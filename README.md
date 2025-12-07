@@ -1328,6 +1328,35 @@ Focused on volumetric preprocessing, stable normalization across scanners, and a
 
 </details>
 
+<details>
+<summary>
+  <strong>
+    PPO-Based Reinforcement Learning for Autonomous Racing on AWS DeepRacer |
+    <a href="#" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+Built and fine-tuned continuous-action PPO agents on AWS SageMaker for camera-based autonomous racing.  
+Focused on reward shaping, action-space tuning, and stability constraints that reduce off-track transitions and maximize progress per step.  
+Achieved **sub-2-minute lap times**, reaching top global leaderboard positions in 2024.
+
+* Trained vision-based policies using AWS’s **clipped PPO (v4)** with a shallow convolutional encoder, continuous steering (±30°) and speed control (0.5–1.0 m/s).  
+* Developed multiple reward structures emphasizing **centerline adherence**, **heading alignment**, **smooth steering**, and **velocity-weighted progress**; incorporated curvature-aware waypoint direction terms.  
+* Used distance-band reward shaping (0.1/0.25/0.5× track-width markers) to stabilize early learning and reduce oscillatory behavior near edges.  
+* Tuned action-space constraints to penalize high-jerk trajectories while allowing high-speed straight-line acceleration.  
+* Leveraged control-theoretic intuitions: steering penalty functions, heading error normalization, and progress-per-step optimization with soft constraints.  
+* Iteratively optimized hyperparameters (entropy coefficient, clipping ratio, GAE decay, advantage normalization) in SageMaker to reduce policy collapse and improve convergence stability.  
+* Validated policies in simulation under track perturbations; used adversarial track curvature sweeps to evaluate robustness.  
+* Final trained agent consistently completed laps **below 2 minutes**, outperforming baselines and ranking globally.
+
+<br>
+
+**Tools:** AWS SageMaker • DeepRacer Simulator • Clipped PPO • Continuous Action RL • Policy Gradient Optimization
+
+</details>
+
 
 </details>
 
