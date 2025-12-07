@@ -1,4 +1,4 @@
-# Bonjour le monde! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 12:46:07 IST -->
+# Kamusta, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-07 11:27:44 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -146,7 +146,7 @@
 
 <pre><code>$ less ~/workspace/profile/config.yaml
 
-  FOCUS:         "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    <br>
+  FOCUS:         "Always learning - check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    <br>
   CURRENTLY:     "Building a HW ACCEL ARCH for IMG CLASSIF, it sees ghosts"         <br>
   CLUB:          "Feeding robots my GPA @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>"                                <br>
   COMPS:         ["E-YANTRA MB", "OpenPOWER HW"]                          <br>
@@ -172,7 +172,7 @@
 
 <!--<code>module about_me;</code><br>
 
-<code>    parameter FOCUS     = "Always learning — check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>",</code><br>
+<code>    parameter FOCUS     = "Always learning - check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>",</code><br>
 <code>              CURRENTLY = "Building a HW accelerator arch for IMG CLASSIF",</code><br>
 <code>              CLUB      = "Rigging robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>",</code><br>
 <code>              MAJOR     = "<em>Electronics and Communication Engg</em>",</code><br>
@@ -199,7 +199,7 @@
 
 # `$ cat ~/about_me.txt`
 
-Hey, I'm Jagadeesh — I work across VLSI design, robotics, and AI hardware. My work spans digital/analog design, circuit-level implementation, and low-level arch, optimization {for ML workloads}. Currently learning open-source IC design. I also work with embedded systems, MCUs, and SBCs, applying them in robotics and prototyping. Beyond that, I take part in comps, open-source projects, and hardware/software co-design challenges.
+Hey, I'm Jagadeesh - I work across VLSI design, robotics, and AI hardware. My work spans digital/analog design, circuit-level implementation, and low-level arch, optimization {for ML workloads}. Currently learning open-source IC design. I also work with embedded systems, MCUs, and SBCs, applying them in robotics and prototyping. Beyond that, I take part in comps, open-source projects, and hardware/software co-design challenges.
 
 <!--, with a focus on PPA trade-offs-->
 
@@ -216,7 +216,7 @@ Feel free to check out my projects [**`here`**](https://mummanajagadeesh.github.
 
 <!--<pre>
   
-Hey, I'm Jagadeesh — I work across VLSI design, robotics, and AI hardware.
+Hey, I'm Jagadeesh - I work across VLSI design, robotics, and AI hardware.
 I’m particularly interested in digital and analog VLSI, hardware acceleration for machine learning and image processing,
 and the practical side of taking designs from code to silicon.
 Alongside this, I enjoy programming embedded systems, working with microcontrollers, and building robotics applications.
@@ -255,7 +255,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 **Design of High-Performance Q1.7 Fixed-Point Quantized CNN Hardware Accelerator with Microarchitecture Optimization of 3-Stage Pipelined Systolic MAC Arrays for Lightweight Inference**
   
-> **" I tried to ImProVe, but NeVer really did — so I MOVe-d on ¯\\\_(ツ)_/¯ "**
+> **" I tried to ImProVe, but NeVer really did - so I MOVe-d on ¯\\\_(ツ)_/¯ "**
 
 **Current Project Overview**
 
@@ -473,114 +473,13 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 </details>
 
-
-<details>  
-<summary>  
-  <strong>  
-    ANAV for Martian Surface Exploration / GNSS-Denied Environments (ISRO IRoC-U 2025) |  
-    <a href="https://mummanajagadeesh.github.io/projects/isro-anav/" target="_blank">Link</a>  
-  </strong>  
-</summary>  
-
-<br>
-
-A sub-2 kg autonomous quadrotor designed for **GNSS-denied navigation**, **visual–inertial localization**, **mapping**, and **safe-zone landing**, using onboard compute, stereo sensing, and redundant measurement sources.
-
-**Duration:** Team-Based (ISRO RIG), Ongoing <br>
-**Tools:** Jetson Nano | Pixhawk 4 | RealSense D435i | ESP32 (ESP-Now) | ORB-SLAM3 | VINS-Fusion | ROS2
-
----
-
-### **Autonomous Quadrotor for GPS-Denied Operation**
-
-* Built a **<2 kg quadrotor** integrating **Jetson Nano** for onboard processing and **Pixhawk 4** for attitude/stability, targeting GNSS-denied missions requiring drift-constrained localization and controlled landing.
-* Completed ESC calibration, thrust-balancing, and **regulated 5 V / 3 A power distribution** using BEC modules for stable sensor/compute operation under load variations.
-* Integrated **barometer**, **optical flow**, and **stereo-IMU** sensing for multi-source position estimation with fallbacks against low-texture drift.
-* Fused **RealSense D435i** stereo + IMU using **VINS-Fusion (ROS2)** and evaluated against **ORB-SLAM3**, achieving **<5 cm drift over ~5 m** trajectories in indoor GNSS-denied tests.
-* Implemented **ESP-Now** telemetry using ESP32 modules with ~500 m LOS range for transmitting state, estimation residuals, and system health.
-* Verified **autonomous landing** on **1.5 m × 1.5 m** clear regions and tolerances up to **~15° surface inclination**.
-* Simulated Mars-like flight (~0.38 g gravity, no-GPS) in **Webots**, validating drift behavior, landing accuracy, sensing degradation, and control limits.
-
----
-
-<details>
-  <summary><b>Technical Summary</b></summary>
-
-* Integrated **Jetson Nano** with **Pixhawk 4** for onboard computation and flight handling, with calibrated ESCs and thrust mapping ensuring stable lift and attitude control for a <2 kg platform. Power regulation used a **5 V / 3 A BEC**, isolating sensor/compute loads from motor-induced voltage drops.
-
-* Performed extrinsic and intrinsic calibration for the **RealSense D435i** (stereo + IMU) and aligned timestamps between Jetson and Pixhawk sources. Evaluated VIO accuracy using **VINS-Fusion** and **ORB-SLAM3**, testing sensitivity to feature density, motion blur, low-texture floors, and illumination. Achieved **<5 cm drift** over **~5 m** sequences with optimized IMU noise parameters and RANSAC thresholds.
-
-* Connected **barometer, optical-flow, and external sensors** to Pixhawk over I2C/UART. Configured EKF2 to combine IMU, barometer, and flow when stereo data deteriorates. Implemented consistency checks between VIO and Pixhawk position estimates; deviations above a fixed threshold (~8–10 cm) trigger reliance on flow + barometer only.
-
-* Implemented long-range **ESP-Now telemetry** between two ESP32 modules. Achieved ~500 m line-of-sight operation and <15 ms median latency. Data included estimated position, VIO confidence, EKF residuals, battery, and attitude.
-
-* Developed a method for **landing region selection** using disparity maps and IMU tilt. Evaluated a 1.5 m × 1.5 m safe area requirement; system rejected regions with irregular height profiles or slopes >15°. Confirmed consistent landings on textured and partially textured surfaces.
-
-* Conducted GNSS-denied simulations in **Webots**, setting gravity to **0.38 g** to approximate Martian conditions. Assessed altitude holding, drift accumulation, and safe-area approach across multiple terrains. Logged estimator drift, thrust reserve, and landing dispersion to validate repeatability under constrained sensing.
-
-</details>
-
----
-
-<details>
-  <summary><b>Repositories</b></summary>
-
-<br>
-
-<p align="center">
-<b>ANAV – ISRO IRoC-U 2025 Autonomous Drone System</b>
-</p>
-
-<table align="center">
-  <tr>
-    <!-- Repo 1 -->
-    <td align="center">
-      <a href="https://github.com/Mummanajagadeesh/isro-irocu-2k25#gh-light-mode-only">
-        <img src="./repos/isro-irocu-2k25-light.svg#gh-light-mode-only"
-             alt="Repository containing all files related to ISRO IRoC-U 2025 Robotics Challenge (telemetry, simulation, flight data)" />
-      </a>
-      <a href="https://github.com/Mummanajagadeesh/isro-irocu-2k25#gh-dark-mode-only">
-        <img src="./repos/isro-irocu-2k25-dark.svg#gh-dark-mode-only"
-             alt="Repository containing all files related to ISRO IRoC-U 2025 Robotics Challenge (telemetry, simulation, flight data)" />
-      </a>
-    </td>
-
-<!-- Repo 2 -->
-<td align="center">
-  <a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-light-mode-only">
-    <img src="./repos/isro_ros2-light.svg#gh-light-mode-only"
-         alt="Autonomous Drone for GNSS-Denied Environments – ROS2 setup, VIO, estimation, landing logic" />
-  </a>
-  <a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-dark-mode-only">
-    <img src="./repos/isro_ros2-dark.svg#gh-dark-mode-only"
-         alt="Autonomous Drone for GNSS-Denied Environments – ROS2 setup, VIO, estimation, landing logic" />
-  </a>
-</td>
-
-  </tr>
-</table>
-
-<br>
-
-
-</details>
-
----
-
-</details>
-</details>
-
 <details>
 <summary>
   <strong>
-    RISC-V & MIPS Microarchitectures — SC / MC / Pipelined / Dual-Issue Superscalar |
+    RISC-V & MIPS Microarchitectures - SC / MC / Pipelined / Dual-Issue Superscalar |
     <a href="https://mummanajagadeesh.github.io/projects/rose" target="_blank">Link</a>
   </strong>
 </summary>
-
-<br>
-
----
 
 
 ## **RV32I RISC-V Core (TL-Verilog, Single-Cycle Implementation)**
@@ -605,7 +504,7 @@ A sub-2 kg autonomous quadrotor designed for **GNSS-denied navigation**, **visua
 
 ---
 
-## **MIPS Microarchitectures — SC / MC / 5-Stage Pipeline**
+## **MIPS Microarchitectures - SC / MC / 5-Stage Pipeline**
 
 **Tools:** Verilog | Icarus Verilog | ModelSim | GTKWave
 
@@ -713,7 +612,7 @@ Includes standalone wrappers, arctan lookup ROM, and a verification environment 
 
 ---
 
-### **CORDIC Trigonometric Soft IP — Parametric Fixed-Point Core + Wrapper Functions**
+### **CORDIC Trigonometric Soft IP - Parametric Fixed-Point Core + Wrapper Functions**
 
 **Duration:** Individual  
 **Tools:** Verilog | Icarus Verilog | FuseSoC
@@ -821,12 +720,12 @@ This eliminates post-normalization hardware entirely.
 
 <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-light-mode-only">
   <img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only"
-       alt="CORDIC Algorithm Verilog Implementation — Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
+       alt="CORDIC Algorithm Verilog Implementation - Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
 </a>
 
 <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-dark-mode-only">
   <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only"
-       alt="CORDIC Algorithm Verilog Implementation — Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
+       alt="CORDIC Algorithm Verilog Implementation - Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
 </a>
 
 </p>
@@ -836,122 +735,355 @@ This eliminates post-normalization hardware entirely.
 </details>
 
 
-
-
 <details>
 <summary>
   <strong>
-        Peripheral Serial Communication Protocols [I2C/SPI/UART-TX]
-        <a href="https://mummanajagadeesh.github.io/protocols/" target="_blank">Link</a>
+    Peripheral Serial Communication Protocols - I2C / SPI / UART-TX  
+    <a href="https://mummanajagadeesh.github.io/protocols/" target="_blank">Link</a>
   </strong>
 </summary>
-  
-<br><br>
-<table>
+
+<br>
+
+Implemented a collection of **peripheral serial communication interfaces in Verilog**, focusing on synthesizable, parameterizable controllers suitable for FPGA/ASIC integration. Each protocol includes a cleanly modularized interface, configurable timing parameters, and testbench-driven validation with waveform inspection.
+
+* **I2C Master Controller** – Implements a single-master, multi-slave I²C bus supporting standard-mode timings, programmable SCL low/high periods, ACK/NACK handling, and **clock stretching** detection. Features deterministic START/STOP generation, byte-wise transfers, and address+data framing logic.
+
+* **SPI Master (Modes 0–3)** – Supports **CPOL/CPHA mode selection**, 8-bit full-duplex transfers, configurable SCLK division, selectable slave-select behavior, and MSB-first shifting. Designed with a compact FSM and separate TX/RX shift registers for predictable cycle behavior.
+
+* **UART TX Soft-Core IP** – Lightweight serial transmitter with **baud-rate generator**, start/stop framing, data-valid gating, and FIFO-less single-byte serialization. Fully synthesizable and intended as a drop-in peripheral for SoCs, teaching cores, or FPGA peripheral sets.
+
+<br>
+
+<details>
+  <summary><b>Repositories</b></summary>
+
+<br>
+
+<table align="center">
   <tr>
-    <td align="center">
-      <a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-light-mode-only">
-        <img src="./repos/spi-protocol-verilog-light.svg#gh-light-mode-only" alt="SPI Protocol in Verilog (light mode)" />
-      </a>
-      <a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-dark-mode-only">
-        <img src="./repos/spi-protocol-verilog-dark.svg#gh-dark-mode-only" alt="SPI Protocol in Verilog (dark mode)" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-light-mode-only">
-        <img src="./repos/i2c-protocol-verilog-light.svg#gh-light-mode-only" alt="I2C Protocol in Verilog (light mode)" />
-      </a>
-      <a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-dark-mode-only">
-        <img src="./repos/i2c-protocol-verilog-dark.svg#gh-dark-mode-only" alt="I2C Protocol in Verilog (dark mode)" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Mummanajagadeesh/uart-tx-soft-core-ip-verilog#gh-light-mode-only">
-        <img src="./repos/uart-tx-soft-core-ip-verilog-light.svg#gh-light-mode-only" alt="UART Soft Core TX IP (light mode)" />
-      </a>
-      <a href="https://github.com/Mummanajagadeesh/uart-tx-soft-core-ip-verilog#gh-dark-mode-only">
-        <img src="./repos/uart-tx-soft-core-ip-verilog-dark.svg#gh-dark-mode-only" alt="UART Soft Core TX IP (dark mode)" />
-      </a>
-    </td>
+
+<!-- SPI -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-light-mode-only">
+    <img src="./repos/spi-protocol-verilog-light.svg#gh-light-mode-only"
+         alt="SPI Protocol Verilog Implementation: CPOL/CPHA modes, full-duplex 8-bit transfers" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-dark-mode-only">
+    <img src="./repos/spi-protocol-verilog-dark.svg#gh-dark-mode-only"
+         alt="SPI Protocol Verilog Implementation: CPOL/CPHA modes, full-duplex 8-bit transfers" />
+  </a>
+</td>
+
+<!-- I2C -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-light-mode-only">
+    <img src="./repos/i2c-protocol-verilog-light.svg#gh-light-mode-only"
+         alt="I2C Protocol Verilog Implementation: Single-master controller with clock stretching" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-dark-mode-only">
+    <img src="./repos/i2c-protocol-verilog-dark.svg#gh-dark-mode-only"
+         alt="I2C Protocol Verilog Implementation: Single-master controller with clock stretching" />
+  </a>
+</td>
+
+<!-- UART TX -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/uart-tx-soft-core-ip-verilog#gh-light-mode-only">
+    <img src="./repos/uart-tx-soft-core-ip-verilog-light.svg#gh-light-mode-only"
+         alt="UART TX Soft-Core IP: Parameterized baud generator and 8-bit transmitter" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/uart-tx-soft-core-ip-verilog#gh-dark-mode-only">
+    <img src="./repos/uart-tx-soft-core-ip-verilog-dark.svg#gh-dark-mode-only"
+         alt="UART TX Soft-Core IP: Parameterized baud generator and 8-bit transmitter" />
+  </a>
+</td>
+
   </tr>
 </table>
 
-<br><br>
-
-Designed and implemented **serial communication protocols in Verilog**:  
-- **I2C**: Single-master, multi-slave with clock stretching & configurable delays.  
-- **SPI**: Supports modes 0–3 via CPOL/CPHA, performs single 8-bit full-duplex transfers, and allows clock frequency scaling.  
-- **UART TX Soft Core IP**: Customizable baud rate, lightweight transmitter module for FPGA/ASIC integration.  
+</details>
 
 </details>
+
+
 
 
 <details>
 <summary>
   <strong>
-    Device Modeling using Sentaurus TCAD | 
-        <a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS/" target="_blank">Link</a>
+    Device Modeling using Sentaurus TCAD |
+    <a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS/" target="_blank">Link</a>
   </strong>
 </summary>
-  
-<br><br>
-<!-- Light Mode Repo Card -->
+
+<br>
+
+Performed **semiconductor device modeling** using Synopsys Sentaurus for foundational structures including **N-type resistors, PN diodes, and NMOS transistors**.
+Explored how **doping profiles, junction depths, geometry parameters, and physical models** impact device characteristics through calibrated simulations and scripted workflows.
+
+### Overview
+
+* Built **parameterized device structures** (concentration profiles, implant energies, lateral/vertical dimensions) using Sentaurus Structure Editor and process definition files.
+* Configured **Sentaurus Device** with transport and recombination models (SRH, Auger, mobility models, incomplete ionization where relevant) to study semiconductor behavior under applied bias.
+* Automated simulation runs in **Sentaurus Workbench** using command-based `.cmd` and `.des` scripts for sweeping doping levels, voltages, and geometry parameters.
+* Analyzed simulation output with **Sentaurus Visual/Inspect**, examining **electrostatic potential maps**, **electron/hole concentration distributions**, **electric field intensity**, and **I–V characteristics**.
+* Extracted device metrics such as diode **forward/reverse characteristics**, NMOS **transfer/output curves**, threshold behavior, and resistance scaling for the N-type resistor.
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+
+<br>
+
+<p align="center">
+
 <a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS#gh-light-mode-only">
-  <img src="./repos/tcad-projects-light.svg#gh-light-mode-only" alt="ImProVe Repo Card (light)" />
+  <img src="./repos/tcad-projects-light.svg#gh-light-mode-only"
+       alt="TCAD Projects — Sentaurus device modeling for N-resistor, PN diode, NMOS with doping/geometry parameterization" />
 </a>
 
-<!-- Dark Mode Repo Card -->
 <a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS#gh-dark-mode-only">
-  <img src="./repos/tcad-projects-dark.svg#gh-dark-mode-only" alt="ImProVe Repo Card (dark)" />
+  <img src="./repos/tcad-projects-dark.svg#gh-dark-mode-only"
+       alt="TCAD Projects — Sentaurus device modeling for N-resistor, PN diode, NMOS with doping/geometry parameterization" />
 </a>
-<br>
 
-<br>
-
-Designed and simulated semiconductor structures (N-resistor, PN diode, NMOS) using Sentaurus TCAD; explored effects of doping, geometry, and physical models through process setup, simulation scripting, and visual analysis of internal device behavior
+</p>
 
 </details>
 
+</details>
 
 
 <details>
 <summary>
   <strong>
-    RU83C – Rubik’S Cube Solving Robot |
+    Two-Stage CMOS Operational Amplifier with Miller Compensation |
+    <a href="https://github.com/Mummanajagadeesh/2-stage-cmos-opamp" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A two-stage CMOS op-amp designed in **TSMC 180 nm**, using an **NMOS differential input pair with PMOS current-mirror load**, followed by a **common-source second stage**.
+Frequency compensation is implemented using a **Miller capacitor** between the first-stage output and the second-stage output node, producing dominant-pole behavior and stable unity-gain operation.
+
+Device dimensions were set from closed-form analog constraints:
+* Slew-rate requirement → tail bias current and overdrive allocation
+* GBW requirement → input-pair transconductance and C<sub>C</sub> relationship
+* ICMR bounds → saturation margins for the differential pair and tail device
+* Output swing → overdrive and saturation limits for the second stage
+* Pole-splitting → ratio gₘ₆/C<sub>C</sub> and non-dominant pole placement
+
+Simulation results:
+* **Open-loop gain:** ~53.1 dB
+* **Unity-gain bandwidth:** ~4.35 MHz
+* **Dominant pole:** ~9.6 kHz
+* **Phase margin:** ~60° with Miller compensation
+* **Slew rate:** ~10 V/µs from I<sub>bias</sub>/C<sub>C</sub>
+* **Output swing:** ~0.14 V to ~1.03 V (linear region, no distortion at 1 kHz)
+* **CMRR:** ~32 dB
+* **PSRR:** +64.6 dB / –80.8 dB
+* **Power consumption:** ~1 mW with ±2.5 V rails
+
+Operating-point analysis confirms all MOS devices remain in saturation with expected overdrive values, and both transient and AC characteristics match analytical pole/zero predictions for a Miller-compensated two-stage topology.
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/2-stage-cmos-opamp#gh-light-mode-only">
+  <img src="./repos/2-stage-cmos-opamp-light.svg#gh-light-mode-only"
+       alt="Two-Stage CMOS Op-Amp Repository Card (light mode)" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/2-stage-cmos-opamp#gh-dark-mode-only">
+  <img src="./repos/2-stage-cmos-opamp-dark.svg#gh-dark-mode-only"
+       alt="Two-Stage CMOS Op-Amp Repository Card (dark mode)" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+
+<details>  
+<summary>  
+  <strong>  
+    ANAV for Martian Surface Exploration / GNSS-Denied Environments (ISRO IRoC-U 2025) |  
+    <a href="https://mummanajagadeesh.github.io/projects/isro-anav/" target="_blank">Link</a>  
+  </strong>  
+</summary>  
+
+<br>
+
+A sub-2 kg autonomous quadrotor designed for **GNSS-denied navigation**, **visual–inertial localization**, **mapping**, and **safe-zone landing**, using onboard compute, stereo sensing, and redundant measurement sources.
+
+**Duration:** Team-Based (ISRO RIG), Ongoing <br>
+**Tools:** Jetson Nano | Pixhawk 4 | RealSense D435i | ESP32 (ESP-Now) | ORB-SLAM3 | VINS-Fusion | ROS2
+
+---
+
+### **Autonomous Quadrotor for GPS-Denied Operation**
+
+* Built a **<2 kg quadrotor** integrating **Jetson Nano** for onboard processing and **Pixhawk 4** for attitude/stability, targeting GNSS-denied missions requiring drift-constrained localization and controlled landing.
+* Completed ESC calibration, thrust-balancing, and **regulated 5 V / 3 A power distribution** using BEC modules for stable sensor/compute operation under load variations.
+* Integrated **barometer**, **optical flow**, and **stereo-IMU** sensing for multi-source position estimation with fallbacks against low-texture drift.
+* Fused **RealSense D435i** stereo + IMU using **VINS-Fusion (ROS2)** and evaluated against **ORB-SLAM3**, achieving **<5 cm drift over ~5 m** trajectories in indoor GNSS-denied tests.
+* Implemented **ESP-Now** telemetry using ESP32 modules with ~500 m LOS range for transmitting state, estimation residuals, and system health.
+* Verified **autonomous landing** on **1.5 m × 1.5 m** clear regions and tolerances up to **~15° surface inclination**.
+* Simulated Mars-like flight (~0.38 g gravity, no-GPS) in **Webots**, validating drift behavior, landing accuracy, sensing degradation, and control limits.
+
+---
+
+<details>
+  <summary><b>Technical Summary</b></summary>
+
+* Integrated **Jetson Nano** with **Pixhawk 4** for onboard computation and flight handling, with calibrated ESCs and thrust mapping ensuring stable lift and attitude control for a <2 kg platform. Power regulation used a **5 V / 3 A BEC**, isolating sensor/compute loads from motor-induced voltage drops.
+
+* Performed extrinsic and intrinsic calibration for the **RealSense D435i** (stereo + IMU) and aligned timestamps between Jetson and Pixhawk sources. Evaluated VIO accuracy using **VINS-Fusion** and **ORB-SLAM3**, testing sensitivity to feature density, motion blur, low-texture floors, and illumination. Achieved **<5 cm drift** over **~5 m** sequences with optimized IMU noise parameters and RANSAC thresholds.
+
+* Connected **barometer, optical-flow, and external sensors** to Pixhawk over I2C/UART. Configured EKF2 to combine IMU, barometer, and flow when stereo data deteriorates. Implemented consistency checks between VIO and Pixhawk position estimates; deviations above a fixed threshold (~8–10 cm) trigger reliance on flow + barometer only.
+
+* Implemented long-range **ESP-Now telemetry** between two ESP32 modules. Achieved ~500 m line-of-sight operation and <15 ms median latency. Data included estimated position, VIO confidence, EKF residuals, battery, and attitude.
+
+* Developed a method for **landing region selection** using disparity maps and IMU tilt. Evaluated a 1.5 m × 1.5 m safe area requirement; system rejected regions with irregular height profiles or slopes >15°. Confirmed consistent landings on textured and partially textured surfaces.
+
+* Conducted GNSS-denied simulations in **Webots**, setting gravity to **0.38 g** to approximate Martian conditions. Assessed altitude holding, drift accumulation, and safe-area approach across multiple terrains. Logged estimator drift, thrust reserve, and landing dispersion to validate repeatability under constrained sensing.
+
+</details>
+
+---
+
+<details>
+  <summary><b>Repositories</b></summary>
+
+<br>
+
+<p align="center">
+<b>ANAV – ISRO IRoC-U 2025 Autonomous Drone System</b>
+</p>
+
+<table align="center">
+  <tr>
+    <!-- Repo 1 -->
+    <td align="center">
+      <a href="https://github.com/Mummanajagadeesh/isro-irocu-2k25#gh-light-mode-only">
+        <img src="./repos/isro-irocu-2k25-light.svg#gh-light-mode-only"
+             alt="Repository containing all files related to ISRO IRoC-U 2025 Robotics Challenge (telemetry, simulation, flight data)" />
+      </a>
+      <a href="https://github.com/Mummanajagadeesh/isro-irocu-2k25#gh-dark-mode-only">
+        <img src="./repos/isro-irocu-2k25-dark.svg#gh-dark-mode-only"
+             alt="Repository containing all files related to ISRO IRoC-U 2025 Robotics Challenge (telemetry, simulation, flight data)" />
+      </a>
+    </td>
+
+<!-- Repo 2 -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-light-mode-only">
+    <img src="./repos/isro_ros2-light.svg#gh-light-mode-only"
+         alt="Autonomous Drone for GNSS-Denied Environments – ROS2 setup, VIO, estimation, landing logic" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/isro_ros2#gh-dark-mode-only">
+    <img src="./repos/isro_ros2-dark.svg#gh-dark-mode-only"
+         alt="Autonomous Drone for GNSS-Denied Environments – ROS2 setup, VIO, estimation, landing logic" />
+  </a>
+</td>
+
+  </tr>
+</table>
+
+<br>
+
+
+</details>
+
+---
+
+</details>
+</details>
+
+
+<details>
+<summary>
+  <strong>
+    RU83C – Rubik’s Cube Solving Robot |
     <a href="https://mummanajagadeesh.github.io/projects/rubec/" target="_blank">Link</a>
   </strong>
 </summary>
 
+<br>
 
-<br><br>
-<!-- Light Mode Repo Card -->
-<table>
+A computer-vision–driven Rubik’s Cube solver built around **color detection, face reconstruction, and algorithmic solution generation**.
+The system extracts cube state using calibrated imaging and solves it via a **Kociemba two-phase search**, which operates over the full **43,252,003,274,489,856,000 (~4.3×10¹⁹) state space** of a standard 3×3 cube.
+
+
+* **Live Demo:** [Live Demo](https://mummanajagadeesh.github.io/v-cube-host/) - interactive cube visualization and solver interface.
+* **Blog Series (PID – Project in Detail):** [Blog Series](https://mummanajagadeesh.github.io/blog/rubikscubesolver/) - detailed explanation of the color-space math, permutation constraints, cube group theory, and the intuition behind the solving algorithm.
+
+
+### Vision Processing and Cube State Extraction
+
+* Applied **HSV-based color space calibration** for all 6 cube face colors, with tunable saturation/value bounds to compensate for lighting variation.
+* Implemented **geometric filtering and contour selection** to isolate the 3×3 grid, removing noise using morphological smoothing and edge filtering.
+* Performed **perspective correction** and **cell segmentation**, followed by dominant-color assignment using averaged HSV regions.
+* Combined all six captured faces into a **validated cube state string**, ensuring facelet consistency and orientation correctness before solving.
+
+### Solution Generation and Simulation
+
+* Used a Unity-based solver to visualize the cube and validate state permutations, enabling **state replay, intermediate moves, and inspection**.
+* Integrated the **Kociemba algorithm**, generating near-optimal move sequences typically within **18–22 moves** for admissible states.
+* The viewer allows interactive state updates and shows step-wise solution execution.
+
+---
+
+<details>
+  <summary><b>Repositories</b></summary>
+
+<br>
+
+<table align="center">
   <tr>
-    <td align="center">
-      <a href="https://github.com/Mummanajagadeesh/RUBEC#gh-light-mode-only">
-        <img src="./repos/ru83c-light.svg#gh-light-mode-only" alt="RUBEC Repo Card (light)" />
-      </a>
-      <a href="https://github.com/Mummanajagadeesh/RU83C#gh-dark-mode-only">
-        <img src="./repos/ru83c-dark.svg#gh-dark-mode-only" alt="RUBEC Repo Card (dark)" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Mummanajagadeesh/V-RU81K5CU83#gh-light-mode-only">
-        <img src="./repos/v-ru81k5cu83-light.svg#gh-light-mode-only" alt="V-RU81K5CU83 Repo Card (light)" />
-      </a>
-      <a href="https://github.com/Mummanajagadeesh/V-RU81K5CU83#gh-dark-mode-only">
-        <img src="./repos/v-ru81k5cu83-dark.svg#gh-dark-mode-only" alt="V-RU81K5CU83 Repo Card (dark)" />
-      </a>
-    </td>
+
+<!-- RUBEC Hardware + Solver Integration -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/RUBEC#gh-light-mode-only">
+    <img src="./repos/ru83c-light.svg#gh-light-mode-only"
+         alt="RU83C: Rubik's Cube Solving Robot - Vision processing, cube state detection, solver integration" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/RU83C#gh-dark-mode-only">
+    <img src="./repos/ru83c-dark.svg#gh-dark-mode-only"
+         alt="RU83C: Rubik's Cube Solving Robot - Vision processing, cube state detection, solver integration" />
+  </a>
+</td>
+
+<!-- Virtual cube + Unity solver -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/V-RU81K5CU83#gh-light-mode-only">
+    <img src="./repos/v-ru81k5cu83-light.svg#gh-light-mode-only"
+         alt="V-RU81K5CU83: Virtual Cube Visualization and Unity-based Solver" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/V-RU81K5CU83#gh-dark-mode-only">
+    <img src="./repos/v-ru81k5cu83-dark.svg#gh-dark-mode-only"
+         alt="V-RU81K5CU83: Virtual Cube Visualization and Unity-based Solver" />
+  </a>
+</td>
+
   </tr>
 </table>
 
-
-
-
-A vision-guided, algorithm-driven robot that solves the Rubik’s Cube with precision using Kociemba’s two-phase algorithm for optimal move sequences, developed in Unity3D with C# scripting
+</details>
 
 </details>
+
+
 
 <br><br>
 
