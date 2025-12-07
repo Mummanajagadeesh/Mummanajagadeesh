@@ -212,7 +212,7 @@ MY Key Interests:
 - Computer Vision, Sensor Fusion
 - Robotics, AMR Path Planning & Navigation
   
-Feel free to check out my projects [**`here`**](https://mummanajagadeesh.github.io/projects/), and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
+Feel free to check out my projects below, and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
 
 <!--<pre>
   
