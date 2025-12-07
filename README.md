@@ -811,6 +811,51 @@ Implemented a collection of **peripheral serial communication interfaces in Veri
 </details>
 
 
+<details>
+<summary>
+  <strong>
+    Basic Python Tool for ISCAS’85/’89 Benchmark Analysis & Fault-Modeling |
+    <a href="https://github.com/Mummanajagadeesh/ISCAS8X" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A work-in-progress open-source Python package implementing foundational DFT/Fault-modeling utilities for **ISCAS’85** and **ISCAS’89** benchmark circuits.  
+Includes automatic Verilog netlist generation, random testbench creation, serial/parallel fault simulation, fault collapsing, SCOAP metric computation, and initial ATPG experimentation. PODEM implementation is under development.
+
+* Generates structural Verilog (`.v`) files and matching randomized testbenches from ISCAS netlists; injects stuck-at faults using ID-indexed `assign` overrides appended to the generated modules.  
+* Implements **serial fault simulation** and **parallel bit-packed fault simulation**, enabling coverage estimation under random vector sets.  
+* Automated reporting: coverage tables, detected/undetected fault lists, fault dictionaries, and comparison across vector batches.  
+* Supports **fault collapsing** using dominance & equivalence relations; identifies **FFR-based partitions** and reduces fault sets prior to simulation.  
+* Computes **SCOAP controllability (CC0/CC1) and observability (CO)** metrics for every internal node, enabling analysis of circuit hard-to-control or hard-to-observe regions.  
+* Initial ATPG experiments performed using SCOAP-guided heuristics; current PODEM implementation is incomplete due to recursion termination issues being debugged.  
+* Planning to add **scan-chain insertion workflows for ISCAS’89 sequential circuits**, enabling full-scan ATPG comparisons with random simulation.
+
+<br>
+
+<details>
+  <summary><b>Repositories</b></summary>
+  <br>
+
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/Mummanajagadeesh/ISCAS8X#gh-light-mode-only">
+          <img src="./repos/iscas8x-light.svg#gh-light-mode-only" alt="ISCAS8X Benchmark Fault-Tooling Package (light)" />
+        </a>
+        <a href="https://github.com/Mummanajagadeesh/ISCAS8X#gh-dark-mode-only">
+          <img src="./repos/iscas8x-dark.svg#gh-dark-mode-only" alt="ISCAS8X Benchmark Fault-Tooling Package (dark)" />
+        </a>
+      </td>
+    </tr>
+  </table>
+
+</details>
+
+</details>
+
+
 </details>
 
 
