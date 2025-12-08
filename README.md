@@ -1,4 +1,4 @@
-# Bonjour le monde! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-08 23:50:54 IST -->
+# Olá, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-08 23:24:54 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -1349,18 +1349,37 @@ The system extracts cube state using calibrated imaging and solves it via a **Ko
 * **Blog Series (PID – Project in Detail):** [Blog Series](https://mummanajagadeesh.github.io/blog/rubikscubesolver/) - detailed explanation of the color-space math, permutation constraints, cube group theory, and the intuition behind the solving algorithm.
 
 
+A vision-driven Rubik’s Cube solver built around **robust color classification**, **facelet reconstruction**, and **deterministic search for optimal/near-optimal solutions**.
+The system captures all six faces, validates permutation legality, and solves the cube using **Kociemba’s two-phase reduction**, which maps the full **43,252,003,274,489,856,000 (~4.3×10¹⁹)** reachable states into structured subspaces to enable efficient pruning.
+
+* **Live Demo:** [Live Demo](https://mummanajagadeesh.github.io/v-cube-host/) – interactive cube state viewer + solver.
+* **Blog Series (PID – Project in Detail):** [Blog Series](https://mummanajagadeesh.github.io/blog/rubikscubesolver/) – derivations, color-space calibration math, cube group constraints, and solving logic.
+
+---
+
 ### Vision Processing and Cube State Extraction
 
-* Applied **HSV-based color space calibration** for all 6 cube face colors, with tunable saturation/value bounds to compensate for lighting variation.
-* Implemented **geometric filtering and contour selection** to isolate the 3×3 grid, removing noise using morphological smoothing and edge filtering.
-* Performed **perspective correction** and **cell segmentation**, followed by dominant-color assignment using averaged HSV regions.
-* Combined all six captured faces into a **validated cube state string**, ensuring facelet consistency and orientation correctness before solving.
+* Performed **HSV-based per-face calibration** with adjustable saturation/value envelopes to stabilize under variable illumination.
+* Applied **contour filtering** and **grid isolation** after morphological denoising to lock onto a valid 3×3 cell arrangement.
+* Executed **homography-based perspective correction** and grid segmentation, assigning colors by **mean-HSV dominance**.
+* Combined all six captures into a canonical **54-character cube state string**, checked for:
+
+  * valid center-orientation mapping,
+  * edge/corner permutation parity,
+  * orientation sum constraints (edges mod 2, corners mod 3).
+
+---
 
 ### Solution Generation and Simulation
 
-* Used a Unity-based solver to visualize the cube and validate state permutations, enabling **state replay, intermediate moves, and inspection**.
-* Integrated the **Kociemba algorithm**, generating near-optimal move sequences typically within **18–22 moves** for admissible states.
-* The viewer allows interactive state updates and shows step-wise solution execution.
+* Used a Unity visualization environment for **state verification**, **stepwise execution**, and **intermediate-move replay**.
+* Integrated **Kociemba’s two-phase algorithm** with explicit details:
+
+  * **Phase 1:** reduces the cube into the *H subgroup* by constraining **edge orientation (2¹¹ states)**, **corner orientation (3⁷ states)**, and **UD-slice edge placement (12 choose 4)**.
+    Search explores ≈ **≈2.2×10¹⁰** possibilities but prunes aggressively using precomputed coordinate tables.
+  * **Phase 2:** solves from H to the identity using **restricted move set** and coordinated distance tables over ≈ **1×10⁹** admissible states.
+* Typical generated solutions fall in the **18–22 move** range (quarter-turn metric), with occasional optimal-length sequences for favorable states.
+* Viewer supports interactive updates, solution playback, and direct manipulation of state representations.
 
 ---
 
