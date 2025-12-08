@@ -199,7 +199,7 @@
 
 # `$ cat ~/about_me.txt`
 
-Hey, I'm Jagadeesh - I work across VLSI design, robotics, and AI hardware. My work spans digital/analog design, circuit-level implementation, and low-level arch, optimization {for ML workloads}. Currently learning open-source IC design. I also work with embedded systems, MCUs, and SBCs, applying them in robotics and prototyping. Beyond that, I take part in comps, open-source projects, and hardware/software co-design challenges.
+Hey, I'm Jagadeesh - I work across VLSI design, robotics, and AI hardware. My work spans digital/analog design, circuit-level implementation, and low-level arch & optimization. Currently learning open-source IC design. I also work with embedded systems, MCUs, and SBCs, applying them in robotics and prototyping. Beyond that, I take part in comps, open-source projects, and hardware/software co-design challenges.
 
 <!--, with a focus on PPA trade-offs-->
 
