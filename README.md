@@ -1348,13 +1348,6 @@ The system extracts cube state using calibrated imaging and solves it via a **Ko
 * **Live Demo:** [Live Demo](https://mummanajagadeesh.github.io/v-cube-host/) - interactive cube visualization and solver interface.
 * **Blog Series (PID – Project in Detail):** [Blog Series](https://mummanajagadeesh.github.io/blog/rubikscubesolver/) - detailed explanation of the color-space math, permutation constraints, cube group theory, and the intuition behind the solving algorithm.
 
-
-A vision-driven Rubik’s Cube solver built around **robust color classification**, **facelet reconstruction**, and **deterministic search for optimal/near-optimal solutions**.
-The system captures all six faces, validates permutation legality, and solves the cube using **Kociemba’s two-phase reduction**, which maps the full **43,252,003,274,489,856,000 (~4.3×10¹⁹)** reachable states into structured subspaces to enable efficient pruning.
-
-* **Live Demo:** [Live Demo](https://mummanajagadeesh.github.io/v-cube-host/) – interactive cube state viewer + solver.
-* **Blog Series (PID – Project in Detail):** [Blog Series](https://mummanajagadeesh.github.io/blog/rubikscubesolver/) – derivations, color-space calibration math, cube group constraints, and solving logic.
-
 ---
 
 ### Vision Processing and Cube State Extraction
