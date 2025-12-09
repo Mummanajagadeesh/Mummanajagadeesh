@@ -1733,9 +1733,9 @@ A proximity-driven motion rule based on simple comparisons involving front-facin
 
 # `$ git stats --all`
 
-![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh&style=flat-square&color=000000&label=Views&labelColor=ffffff)
-![Total Repos](https://github-readme-stats-mummanajagadeesh.vercel.app/api/total-repos?username=Mummanajagadeesh&theme=transparent&hide_border=true&count_private=true&bg_color=00000&text_color=ffffff&icon_color=ffffff)
-![GitHub User's stars](https://img.shields.io/github/stars/Mummanajagadeesh?affiliations=OWNER&style=for-the-badge&color=yellow)
+[![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh&style=flat-square&color=000000&label=Views&labelColor=ffffff)](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
+[![Total Repos](https://github-readme-stats-mummanajagadeesh.vercel.app/api/total-repos?username=Mummanajagadeesh&theme=transparent&hide_border=true&count_private=true&bg_color=00000&text_color=ffffff&icon_color=ffffff)](https://github.com/Mummanajagadeesh?tab=repositories)
+[![GitHub User's stars](https://img.shields.io/github/stars/Mummanajagadeesh?affiliations=OWNER&style=for-the-badge&color=yellow)](https://github.com/Mummanajagadeesh?tab=stars)
 
 
 <p align="center">
