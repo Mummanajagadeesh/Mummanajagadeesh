@@ -1,4 +1,4 @@
-# ¡Hola, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-09 20:25:29 IST -->
+# Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-09 20:10:43 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -1733,40 +1733,57 @@ A proximity-driven motion rule based on simple comparisons involving front-facin
 
 # `$ git stats --all`
 
-[![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh&style=flat-square&color=000000&label=Views&labelColor=ffffff)](https://komarev.com/ghpvc/?username=Mummanajagadeesh)
-[![Total Repos](https://github-readme-stats-mummanajagadeesh.vercel.app/api/total-repos?username=Mummanajagadeesh&theme=transparent&hide_border=true&count_private=true&bg_color=00000&text_color=ffffff&icon_color=ffffff)](https://github.com/Mummanajagadeesh?tab=repositories)
-[![GitHub User's stars](https://img.shields.io/github/stars/Mummanajagadeesh?affiliations=OWNER&style=for-the-badge&color=yellow)](https://github.com/Mummanajagadeesh?tab=stars)
-
+![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh&style=flat-square&color=000000&label=Views&labelColor=ffffff)
+![Total Repos](https://github-readme-stats-mummanajagadeesh.vercel.app/api/total-repos?username=Mummanajagadeesh&theme=transparent&hide_border=true&count_private=true&bg_color=00000&text_color=ffffff&icon_color=ffffff)
+![GitHub User's stars](https://img.shields.io/github/stars/Mummanajagadeesh?affiliations=OWNER&style=for-the-badge&color=yellow)
 
 <p align="center">
   <!-- Light mode trophy -->
-  <a href="https://github.com/ryo-ma/github-profile-trophy#gh-light-mode-only">
+  <a href="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-light-mode-only">
     <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-light-mode-only" alt="mummanajagadeesh trophies (light)" />
   </a>
 
   <!-- Dark mode trophy -->
-  <a href="https://github.com/ryo-ma/github-profile-trophy#gh-dark-mode-only">
+  <a href="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-dark-mode-only">
     <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-dark-mode-only" alt="mummanajagadeesh trophies (dark)" />
   </a>
 </p>
 
-<!-- Light Mode -->
-<a href="https://github.com/Mummanajagadeesh#gh-light-mode-only">
-  <p align="center">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-light-mode-only" alt="Stats (light)" width="32%">
-    <img src="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-light-mode-only" alt="Streak (light)" width="32%">
-    <img src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=default&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&cache_seconds=1#gh-light-mode-only" alt="Top Languages (light)" width="32%">
-  </p>
-</a>
 
-<!-- Dark Mode -->
-<a href="https://github.com/Mummanajagadeesh#gh-dark-mode-only">
-  <p align="center">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Stats (dark)" width="32%">
-    <img src="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Streak (dark)" width="32%">
-    <img src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=dark&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&cache_seconds=1#gh-dark-mode-only" alt="Top Languages (dark)" width="32%">
-  </p>
-</a>
+<!-- LIGHT MODE -->
+<p align="center">
+
+  <a href="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-light-mode-only">
+    <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-light-mode-only" alt="Stats (light)">
+  </a>
+
+  <a href="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-light-mode-only">
+    <img width="32%" src="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-light-mode-only" alt="Streak (light)">
+  </a>
+
+  <a href="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=default&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&cache_seconds=1#gh-light-mode-only">
+    <img width="32%" src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=default&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&cache_seconds=1#gh-light-mode-only" alt="Top Languages (light)">
+  </a>
+
+</p>
+
+
+<!-- DARK MODE -->
+<p align="center">
+
+  <a href="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-dark-mode-only">
+    <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Stats (dark)">
+  </a>
+
+  <a href="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-dark-mode-only">
+    <img width="32%" src="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Streak (dark)">
+  </a>
+
+  <a href="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=dark&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&cache_seconds=1#gh-dark-mode-only">
+    <img width="32%" src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=dark&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&cache_seconds=1#gh-dark-mode-only" alt="Top Languages (dark)">
+  </a>
+
+</p>
 
 
 # `$ sudo wisdom`
