@@ -890,7 +890,7 @@ The design was **accepted for potential fabrication** during the hackathon revie
 
 ---
 
-### **FIR Accelerator — Sequential Fixed-Point Filtering Unit**
+### **FIR Accelerator - Sequential Fixed-Point Filtering Unit**
 
 **Duration:** Hackathon submission
 **Tools:** Verilog | Icarus Verilog | Microwatt/OpenFrame
@@ -1254,12 +1254,12 @@ Explored how **doping profiles, junction depths, geometry parameters, and physic
 
 <a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS#gh-light-mode-only">
   <img src="./repos/tcad-projects-light.svg#gh-light-mode-only"
-       alt="TCAD Projects — Sentaurus device modeling for N-resistor, PN diode, NMOS with doping/geometry parameterization" />
+       alt="TCAD Projects - Sentaurus device modeling for N-resistor, PN diode, NMOS with doping/geometry parameterization" />
 </a>
 
 <a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS#gh-dark-mode-only">
   <img src="./repos/tcad-projects-dark.svg#gh-dark-mode-only"
-       alt="TCAD Projects — Sentaurus device modeling for N-resistor, PN diode, NMOS with doping/geometry parameterization" />
+       alt="TCAD Projects - Sentaurus device modeling for N-resistor, PN diode, NMOS with doping/geometry parameterization" />
 </a>
 
 </p>
@@ -1459,7 +1459,7 @@ A multi-waveform analog function generator built using discrete op-amp blocks (T
 The generator produces **sine, square, and triangular outputs** and exposes **continuous control** of amplitude, DC offset, and phase.
 Additional AM/PM blocks and a relaxation-oscillator VCO extend the system for modulation experiments.
 
-The signal path is fully modular—each block is buffered to avoid inter-stage loading errors, enabling predictable behavior across a **1 kHz–500 kHz** operating band.
+The signal path is fully modular-each block is buffered to avoid inter-stage loading errors, enabling predictable behavior across a **1 kHz–500 kHz** operating band.
 
 **Measured characteristics**
 
@@ -1532,7 +1532,7 @@ The signal path is fully modular—each block is buffered to avoid inter-stage l
 An analog PID controller built using high-linearity op-amps (LT1007 / TL082) and RC networks, implemented entirely in continuous time and validated through LTspice.
 The design focuses on stable low-frequency integration, controlled differentiation without noise peaking, and diode-based output limiting for robust transient behavior.
 
-Two complete controller variants were implemented—one minimal, one extended with gain scaling and anti-windup.
+Two complete controller variants were implemented-one minimal, one extended with gain scaling and anti-windup.
 
 **Measured / designed characteristics**
 
@@ -2015,7 +2015,7 @@ A proximity-driven motion rule based on simple comparisons involving front-facin
 <details>
 <summary>
   <strong>
-    Robotrix-2k25 — Stereo Vision Based 3D Hoop Control |
+    Robotrix-2k25 - Stereo Vision Based 3D Hoop Control |
     <a href="https://github.com/Mummanajagadeesh/robotrix-2k25" target="_blank">Link</a>
   </strong>
 </summary>
