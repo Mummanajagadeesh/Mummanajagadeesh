@@ -1,4 +1,4 @@
-# Hallo Welt! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-11 01:30:03 IST -->
+# Olá, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-11 01:26:02 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -274,9 +274,21 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 **[Project Link](https://mummanajagadeesh.github.io/projects/improve/subprojects/)**
 *Verilog | Basic Architecture | Digital Electronics*
 
-* Designed a **shallow residual-style CNN** for **CIFAR-10**, achieving **~84% accuracy** (< **1% loss**) with a **52 KB model size** (only ~**17× 3 KB input**). Applied **post-training quantization** variants including **Q1.7 (8-bit signed)**, optimizing **accuracy**, **model size**, and **inference efficiency**.
-* Implemented **synthesizable Verilog modules** (**Testbench Verified**) with **FSM-based control**, **2-cycle handshake**, and **auto-generated ROMs** (14: **weights/biases** & 3 (**RGB**): input). Intermediate values stored in **registers** and computed using **systolic array-based MAC units**.
-* Explored key **image-processing techniques** including **edge detection**, **noise reduction**, **filtering**, and **enhancement**. Implemented **(E)MNIST classification** using **MLP**, achieving **>75% accuracy**. Automated **inference flow** with **TCL/Python scripts** and **manual GUI inputs**.
+
+* Designed a fully synthesizable **shallow Res-CNN** for CIFAR-10, evaluated against eight reference CNNs, and achieved a **Pareto-optimal trade-off** across throughput, latency, and accuracy.
+
+* Implemented **systolic-array processing elements** using 8-bit CSA–MBE MAC units with FSM-driven control logic and a **2-cycle read/valid handshake**.
+  Verified end-to-end datapath behavior through structured testbenches.
+
+* Performed detailed **post-training quantization (PTQ)** and **quantization-aware training (QAT)** studies.
+  Quantizing from Q1.31 to Q1.3 allowed exploration of precision vs. accuracy trends, and a **Q1.7 PTQ model retained ~84% accuracy** (less than 1% drop) while reducing the model memory footprint by **4× (≈52 kB)**.
+
+* Developed automated scripts (TCL + Python) to **generate 14 coefficient ROMs and 3 RGB input ROMs**, enabling seamless hardware ingestion of model parameters and images.
+  Verified **TensorFlow / FP32 ↔ RTL output consistency** and automated full-pipeline inference execution.
+
+* Built a compact **digital image-processing toolkit** (edge detection, denoising, filtering, enhancement) and an **MLP classifier** for (E)MNIST datasets.
+  Achieved **>75% accuracy** with real-time GUI visualization for interactive experimentation.
+
 
 ---
 
@@ -300,9 +312,18 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 
 ### **High-Speed 3-Stage Pipelined Systolic Array-Based MAC Architectures**
 *Digital Logic Design | Synthesis*
-* Compared **6 × 8-bit adders/multipliers** for **systolic-array MACs** using **PPA metrics** (*latency / throughput / area*, **sky130 nm PDK**) and analyzed **trade-offs**.
-* Final design uses **Carry-Save Adder (CSA)** and **Modified Booth Encoder (MBE)** multiplier for **3×3 convolution** and **GEMM operations** with **3-stage pipelined systolic arrays**, verified for **0 / same padding modes**.
-* **Pipeline Stages:** **sampling image → truncating & flipping → MAC accumulation**.
+
+
+* Benchmarked **six different 8-bit signed adder–multiplier architectures** using PPA metrics (latency, throughput, and area) on the Sky130 PDK, and analyzed their architectural trade-offs in the context of low-power convolution workloads.
+
+* Designed a **3-stage pipelined systolic MAC** based on a CSA–MBE multiplier structure, achieving substantial improvements over a naïve conv3 baseline:
+  **66.3% lower delay**, **3.1× higher area efficiency**, and **82.2% lower typical power**.
+
+* Implemented a **2D systolic PE-grid** supporting general convolution and GEMM operations, with verified behavior under zero-padding and same-padding configurations.
+  GEMM optimization reduced power consumption by **44.6%** for matrix dimension (N = 3).
+
+* Integrated a **648-bit scan chain** spanning all pipeline and control registers, enabling full DFT/ATPG support with only **14.5% cell-area overhead**, ensuring manufacturability and high test coverage.
+
 
 ---
 
@@ -335,6 +356,20 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
       
   - Single MAC re-use vs Systolic 9-PE Grid (3x3 matrix multiplication)
     - Latency ↓ 1% Throughput ≈ same Speed ≈ same Area ≈ same Power ↓ 44.6% Energy/op ↓ 44%
+
+### **DFT (Scan Chain) Add-On**
+
+* Integrated a **648-bit full-scan chain** across all pipeline, control, and output registers in the 3×3 systolic MAC/convolution datapath.
+  Every state element is replaced with a single-bit scan DFF (SE/SI/SO), enabling serial load/unload of internal state.
+
+* Flattened register groups (kernel flip buffer, px16/px8 slices, ker8 slices, prod_s2 pipeline, row/col counters, valid pipe, output registers, done flag) into one contiguous chain, ensuring deterministic bit ordering and simple scan stitching.
+
+* Verified scan behavior through shift–capture–shift TB patterns and ensured functional transparency:
+  scan mode (`SE=1`) freezes datapath updates, while normal mode (`SE=0`) preserves original functionality.
+
+* Total overhead from scan insertion is ~14.5% in standard cells, with no change to functional timing or systolic pipeline throughput at the target clock.
+
+
 
 </details>  
 
