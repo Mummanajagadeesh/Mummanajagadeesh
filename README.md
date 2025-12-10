@@ -2012,6 +2012,121 @@ A proximity-driven motion rule based on simple comparisons involving front-facin
 
 </details>
 
+<details>
+<summary>
+  <strong>
+    Robotrix-2k25 — Stereo Vision Based 3D Hoop Control |
+    <a href="https://github.com/Mummanajagadeesh/robotrix-2k25" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A simulation-based control project developed for the Robotrix-2k25 finals.  
+A ball is shot in random directions and with varying forces, and the robot must reposition a 3-axis hoop to intercept it.  
+Ball position cannot be accessed directly; only two stereo cameras mounted on the backboard are available.  
+Ball 3D position is reconstructed via **color segmentation**, **stereo disparity**, and **camera→world transforms**, followed by **3D trajectory prediction** and **PID-driven actuator control**.
+
+---
+
+### **Stereo Vision + 3D Reconstruction + Predictive Control Workflow**
+
+* Detect the ball using HSV color filtering on two synchronized camera frames.  
+* Extract pixel centroids from both sensors and compute disparity $d = x_l - x_r$.  
+* Recover depth using the stereo pinhole model $Z = (fB)/d$.  
+* Reconstruct $(X,Y,Z)$ in camera coordinates and map into world frame using fixed transforms.  
+* Estimate velocity from successive frames and predict future positions using projectile equations.  
+* Command the hoop actuators through 3 PID controllers (X, Y, Z) to align with the predicted intercept point.  
+* Loop at camera frame rate until shot completes.
+
+---
+
+<details>
+  <summary><b>Technical Summary</b></summary>
+
+<br>
+
+Ball detection uses HSV thresholding around the known orange color signature:
+
+$lower\_hsv = (h_{min}, s_{min}, v_{min})$  
+$upper\_hsv = (h_{max}, s_{max}, v_{max})$
+
+Contours and circle fitting yield pixel centers $(x_l,y_l)$ and $(x_r,y_r)$.
+
+Stereo disparity:
+
+$d = x_l - x_r$
+
+Depth recovery:
+
+$Z = \frac{f \cdot B}{d}$
+
+3D coordinates in camera frame:
+
+$X = \frac{(x - c_x) Z}{f}$  
+$Y = \frac{(y - c_y) Z}{f}$
+
+Coordinates are transformed into the world frame:
+
+$P_{world} = R P_{cam} + t$
+
+Relative ball→hoop position:
+
+$P_{rel} = P_{ball} - P_{hoop}$
+
+Velocity estimation (finite differences):
+
+$v_x = (X_2 - X_1)/\Delta t$  
+$v_y = (Y_2 - Y_1)/\Delta t$  
+$v_z = (Z_2 - Z_1)/\Delta t$
+
+Projectile prediction:
+
+$x(t) = v_x t + x_0$  
+$y(t) = v_y t + y_0$  
+$z(t) = v_z t + z_0 - \tfrac{1}{2} g t^2$
+
+The target hoop position is chosen where the predicted trajectory intersects the hoop’s capture volume.
+
+PID control per axis:
+
+$u(t) = K_p e(t) + K_i \int e(t) dt + K_d \frac{de(t)}{dt}$
+
+Errors:
+
+$e_x = x_{target} - x_{hoop}$  
+$e_y = y_{target} - y_{hoop}$  
+$e_z = z_{target} - z_{hoop}$
+
+Each PID output drives its respective sliding joint through velocity commands.
+
+</details>
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/robotrix-2k25#gh-light-mode-only">
+  <img src="./repos/robotrix-2k25-light.svg#gh-light-mode-only"
+       alt="robotrix-2k25 repository card (light)" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/robotrix-2k25#gh-dark-mode-only">
+  <img src="./repos/robotrix-2k25-dark.svg#gh-dark-mode-only"
+       alt="robotrix-2k25 repository card (dark)" />
+</a>
+
+</p>
+
+</details>
+
+---
+
+</details>
+
 
 </details>
 
