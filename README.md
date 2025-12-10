@@ -967,6 +967,83 @@ to avoid intermediate overflow before the final saturation step. No dynamic scal
 
 
 
+<details>
+<summary>
+  <strong>
+    ASIC RTL2GDS Flow Projects |
+    <a href="https://github.com/Mummanajagadeesh/inverter-rtl-2-gdsii" target="_blank">Link 1</a> |
+    <a href="https://github.com/Mummanajagadeesh/ripple-carry-adder-4bit" target="_blank">Link 2</a>
+  </strong>
+</summary>
+
+<br>
+
+A collection of beginner-friendly ASIC design experiments where I am still learning the full RTL to GDS flow.
+I automated synthesis steps, generated schematic views, pushed complete flows through OpenLane and OpenROAD, produced layout snapshots, and verified the final GDS outputs.
+Both designs behave as compact test vehicles for understanding physical design stages and polishing my flow setup.
+
+---
+
+### **ASIC RTL2GDS Practice Projects**
+
+**Duration:** Individual
+**Tools:** Yosys | OpenLane | OpenROAD | Magic | KLayout
+
+* Built small RTL blocks and pushed them through end-to-end ASIC flows using Sky130 PDK.
+* Automated synthesis scripts to consistently generate mapped netlists, hierarchy views, and clean schematic diagrams.
+* Drove OpenLane through floorplanning, placement, routing, and signoff runs, adjusting config files and verifying logs as I progressed.
+* Produced DEF and GDS files, inspected them in KLayout and Magic, and validated the generated layouts.
+* Exported final visuals, converted SVGs to PNGs, and organized the repository for easy inspection.
+* Used both projects as training grounds to understand timing reports, flow stages, and PDN setup.
+* Overall goal is learning, improving, and building confidence with complete ASIC implementation flows.
+
+---
+
+<details>
+  <summary><b>Repository Cards</b></summary>
+
+<br>
+
+<table align="center">
+  <tr>
+
+<!-- rca -->
+
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/ripple-carry-adder-4bit#gh-light-mode-only">
+    <img src="./repos/ripple-carry-adder-4bit-light.svg#gh-light-mode-only"
+         alt="Ripple Carry Adder 4-bit" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/ripple-carry-adder-4bit#gh-dark-mode-only">
+    <img src="./repos/ripple-carry-adder-4bit-dark.svg#gh-dark-mode-only"
+         alt="Ripple Carry Adder 4-bit" />
+  </a>
+</td>
+
+<!-- inverter -->
+
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/inverter-rtl-2-gdsii#gh-light-mode-only">
+    <img src="./repos/inverter-rtl-2-gdsii-light.svg#gh-light-mode-only"
+         alt="Inverter RTL2GDS" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/inverter-rtl-2-gdsii#gh-dark-mode-only">
+    <img src="./repos/inverter-rtl-2-gdsii-dark.svg#gh-dark-mode-only"
+         alt="Inverter RTL2GDS" />
+  </a>
+</td>
+
+  </tr>
+</table>
+
+</details>
+
+---
+
+</details>
+
+
+
 
 </details>
 
