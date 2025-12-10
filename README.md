@@ -2128,6 +2128,101 @@ Each PID output drives its respective sliding joint through velocity commands.
 </details>
 
 
+<details>
+<summary>
+  <strong>
+    Smart Vision Grocery Quality & Quantity Analysis - Flipkart GRiD 6.0 |
+    <a href="https://github.com/Mummanajagadeesh/GRiD-6.0-2k24" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+Qualified the **Round-1** of GRiD-6.0
+
+A vision-based system for automated grocery-item quality and quantity assessment.  
+The solution integrates a unified dataset (multiple Roboflow sources aggregated and re-annotated) and a consolidated training run using a CNN-based detector (YOLOv7 backbone). The pipeline evaluates produce freshness, packaging correctness, text/OCR extraction, and item count/brand verification.
+
+---
+
+### **Core Capabilities Implemented**
+
+* Constructed a merged multi-domain dataset (FMCG, produce, OTC, personal care, household items) using Roboflow pipelines; standardized annotations across label types.  
+* Designed a complete *smart vision quality pipeline* following the GRiD specification
+  - High-resolution image acquisition with normalization, light balancing, and noise suppression.  
+  - Preprocessing: brightness/contrast normalization, color correction, background segmentation.  
+  - OCR extraction using contour-guided ROI selection for brand name, pack size, label info, MRP, expiration dates.  
+  - Freshness scoring for fruits/vegetables via color-shift analysis, texture deviation metrics, spoilage cue detection, and geometric deformation checks.  
+  - Classification using deep CNN feature embeddings + auxiliary SVM for edge cases requiring shallow decision boundaries :contentReference[oaicite:1]{index=1}.  
+  - Brand recognition & count estimation using object-level shape/size features, multi-crop inference, and IR-style logical rules (simulated) as required by the event’s Use Case 3.  
+* Implemented text-driven quality/validity validation:  
+  - Extract label text and MRP/expiry-printed data.  
+  - Run OCR confidence filtering and text-normalization passes.  
+* Designed a decision engine cross-checking extracted attributes against the product database (brand, freshness index, label validity, count correctness).  
+* Added a continuous *data logging + feedback loop* as recommended in event guidelines for improving classification reliability over time.  
+* Submitted simulation videos demonstrating:  
+  - OCR output validation  
+  - Freshness detection on vegetables/fruits  
+  - Packaging/label integrity checks  
+  - Count & product-category recognition  
+
+---
+
+<details>
+  <summary><b>Technical Summary</b></summary>
+
+<br>
+
+The system follows the GRiD 6.0 Smart Vision architecture:
+
+**Image Acquisition:**  
+Uniform lighting normalization, noise filtering, and contrast stabilization ensure consistent input quality.
+
+**Preprocessing Pipeline:**  
+Images undergo intensity normalization, edge-aware smoothing, and segmentation to isolate foreground products.  
+This supports text regions, geometric features, and surface attributes required for OCR and quality scoring.
+
+**Feature Extraction:**  
+Text regions are processed using OCR; geometric features (edges, contours, size ratios), color-space transformations, and texture descriptors support defect/freshness detection.  
+Deep CNN embeddings from the trained model are used for brand/category classification, while SVM layers assist with high-similarity items.
+
+**Classification and Decision Rules:**  
+Outputs are checked against a product database for correctness.  
+Freshness of produce uses color variance, texture irregularities, bruise signatures, and abnormal shape metrics.  
+Count estimation uses object-level consistency checks aligned with the event’s “IR-based counting” specification.
+
+**Output & Feedback:**  
+Detected attributes (brand, count, OCR text, expiry date, freshness index) are logged.  
+A feedback loop stores misclassified samples for incremental dataset improvement.
+
+</details>
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/GRiD-6.0-2k24#gh-light-mode-only">
+  <img src="./repos/GRiD-6.0-2k24-light.svg#gh-light-mode-only"
+       alt="GRiD-6.0-2k24 repository card (light)" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/GRiD-6.0-2k24#gh-dark-mode-only">
+  <img src="./repos/GRiD-6.0-2k24-dark.svg#gh-dark-mode-only"
+       alt="GRiD-6.0-2k24 repository card (dark)" />
+</a>
+
+</p>
+
+</details>
+
+---
+
+</details>
+
+
 </details>
 
 
