@@ -857,6 +857,115 @@ Includes automatic Verilog netlist generation, random testbench creation, serial
 </details>
 
 
+
+<details>
+<summary>
+  <strong>
+    FIR Accelerator for Microwatt | OpenPOWER Hardware Hackathon  
+    <a href="https://github.com/Mummanajagadeesh/OpenPOWER-HW-Design-Hackathon" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A parameterizable **FIR filter acceleration block** designed for Microwatt/OpenFrame systems.
+Implements a **sequential multiply accumulate datapath**, programmable coefficients, and a clean **Wishbone-Lite** register interface for CPU control.
+The design was **accepted for potential fabrication** during the hackathon review. The final taped-out submission was not completed due to timing constraints.
+
+---
+
+### **FIR Accelerator — Sequential Fixed-Point Filtering Unit**
+
+**Duration:** Hackathon submission
+**Tools:** Verilog | Icarus Verilog | Microwatt/OpenFrame
+
+* Implements an **N-tap FIR filter** using time-multiplexed fixed-point multiply accumulate updates.
+* Uses a **shift register sample buffer** and a **coefficient register file** loaded by Wishbone writes.
+* Performs one multiply-add per cycle until all taps have been accumulated.
+* Produces a fixed-width output using deterministic saturation or truncation.
+* CPU interacts entirely through a compact **CTRL / STATUS / DATAOUT** register set.
+* Optional FIFO allows input samples to be queued for continuous operation.
+* Designed to be synthesizable for FPGA and Sky130 ASIC flows.
+
+---
+
+<details>
+  <summary><b>Technical Summary</b></summary>
+
+<br>
+
+The FIR accelerator directly implements the discrete-time convolution
+
+$y[n] = \sum_{k=0}^{N-1} h[k] \, x[n-k]$
+
+using a cycle-by-cycle accumulation loop driven by an internal finite-state controller.
+
+### Internal State Representation
+
+Let
+
+* $X_k = x[n-k]$ sample shift register contents  
+* $H_k = h[k]$ coefficient memory entries  
+* $A_i$ accumulator after processing tap $i$
+
+### Sequential MAC Update
+
+Each tap contributes $A_{i+1} = A_i + X_i \cdot H_i$.
+
+At the start of each computation $A_0 = 0$.
+
+### Output Formation
+
+After all $N$ taps have been processed the output is $y[n] = \text{sat}_W(A_N)$, where $\text{sat}_W(\cdot)$ denotes saturation to the configured output bit width $W$.
+
+### Control Semantics
+
+* CPU writes coefficients individually to indexed locations.  
+* CPU writes input sample to the input register or FIFO.  
+* CPU asserts START.  
+* Core performs exactly $N$ MAC iterations.  
+* OUT_VALID is raised when the accumulator completes.  
+* CPU clears START to reset the internal DONE condition.
+
+The number of cycles per output is exactly $N + c$, where $c$ is a small constant FSM overhead.
+
+### Fixed-Point Behavior
+
+Let input samples use format $Q_d$ and coefficients use $Q_c$. The accumulator width satisfies
+
+$A_W \ge d + c + \lceil \log_2 N \rceil$
+
+to avoid intermediate overflow before the final saturation step. No dynamic scaling or normalization is applied; the arithmetic is strictly linear.
+
+</details>
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/OpenPOWER-HW-Design-Hackathon#gh-light-mode-only">
+  <img src="./repos/openpower-hackathon-fir-light.svg#gh-light-mode-only"
+       alt="OpenPOWER FIR Accelerator Hackathon Submission (light)" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/OpenPOWER-HW-Design-Hackathon#gh-dark-mode-only">
+  <img src="./repos/openpower-hackathon-fir-dark.svg#gh-dark-mode-only"
+       alt="OpenPOWER FIR Accelerator Hackathon Submission (dark)" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+
+
+
+
 </details>
 
 
