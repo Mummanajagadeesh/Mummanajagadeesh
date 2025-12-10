@@ -2205,12 +2205,12 @@ A feedback loop stores misclassified samples for incremental dataset improvement
 <p align="center">
 
 <a href="https://github.com/Mummanajagadeesh/GRiD-6.0-2k24#gh-light-mode-only">
-  <img src="./repos/GRiD-6.0-2k24-light.svg#gh-light-mode-only"
+  <img src="./repos/grid-6.0-2k24-light.svg#gh-light-mode-only"
        alt="GRiD-6.0-2k24 repository card (light)" />
 </a>
 
 <a href="https://github.com/Mummanajagadeesh/GRiD-6.0-2k24#gh-dark-mode-only">
-  <img src="./repos/GRiD-6.0-2k24-dark.svg#gh-dark-mode-only"
+  <img src="./repos/grid-6.0-2k24-dark.svg#gh-dark-mode-only"
        alt="GRiD-6.0-2k24 repository card (dark)" />
 </a>
 
