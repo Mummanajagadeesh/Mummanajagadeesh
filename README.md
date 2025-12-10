@@ -2153,7 +2153,7 @@ The solution integrates a unified dataset (multiple Roboflow sources aggregated 
   - Preprocessing: brightness/contrast normalization, color correction, background segmentation.  
   - OCR extraction using contour-guided ROI selection for brand name, pack size, label info, MRP, expiration dates.  
   - Freshness scoring for fruits/vegetables via color-shift analysis, texture deviation metrics, spoilage cue detection, and geometric deformation checks.  
-  - Classification using deep CNN feature embeddings + auxiliary SVM for edge cases requiring shallow decision boundaries :contentReference[oaicite:1]{index=1}.  
+  - Classification using deep CNN feature embeddings + auxiliary SVM for edge cases requiring shallow decision boundaries.  
   - Brand recognition & count estimation using object-level shape/size features, multi-crop inference, and IR-style logical rules (simulated) as required by the event’s Use Case 3.  
 * Implemented text-driven quality/validity validation:  
   - Extract label text and MRP/expiry-printed data.  
