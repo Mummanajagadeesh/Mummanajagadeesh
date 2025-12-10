@@ -1,4 +1,4 @@
-# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-11 01:22:18 IST -->
+# ¡Hola, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-11 01:14:04 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -633,86 +633,67 @@ Includes standalone wrappers, arctan lookup ROM, and a verification environment 
 * Supports **FuseSoC** integration for one-command builds and simulation.
 
 ---
-
 <details>
   <summary><b>Technical Summary</b></summary>
 
-  <br>
+<br>
 
-* The CORDIC soft IP implements a **parameterizable micro-rotation datapath** for evaluating trigonometric functions in fixed-point arithmetic without multipliers. The core iteratively updates `(x, y, z)` using shift-add operations. Each iteration performs signed right shifts by `i`, conditional selection of the rotation direction `dᵢ`, and index-based subtraction of pre-stored arctangent constants. The update system follows:
+The CORDIC soft IP implements a configurable micro-rotation datapath for evaluating trigonometric functions in fixed-point arithmetic using only shift and add operations.  
+Each iteration updates the state $(x_i, y_i, z_i)$ based on the rotation direction $d_i$.
 
-$$
-\begin{aligned}
-x_{i+1} &= x_i - d_i (y_i \gg i)\\
-y_{i+1} &= y_i + d_i (x_i \gg i)\\
-z_{i+1} &= z_i - d_i \,\arctan(2^{-i})
-\end{aligned}
-$$
+The core update equations are:
 
-with the rotation direction:
+$x_{i+1} = x_i - d_i \, (y_i \gg i)$
 
-$$
-d_i =
-\begin{cases}
-+1 & \text{if } z_i \ge 0\\
--1 & \text{if } z_i < 0
-\end{cases}
-$$
+$y_{i+1} = y_i + d_i \, (x_i \gg i)$
 
-This ensures monotonic convergence of `zᵢ → 0` and stable rotation of the state vector toward the target angle. Each update executes in a single cycle, enabling fully sequential CORDIC convergence with predictable iteration count and timing.
+$z_{i+1} = z_i - d_i \, \arctan(2^{-i})$
 
-* Internal representation uses **32-bit signed fixed-point** for all datapath state registers (`x`, `y`, `z`). The datapath supports `WIDTH = 32` as a default configuration, and can be scaled depending on the desired error tolerance. The wrappers apply deterministic truncation/saturation to standardized output formats:
+The rotation direction is defined by:
 
-  * **sin/cos outputs:** 16-bit Q1.15  
-  * **tan output:** 32-bit Q3.28  
+$d_i = +1$ if $z_i \ge 0$  
+$d_i = -1$ if $z_i < 0$
 
-  This separates internal precision from output formatting and ensures **≤ 4×10⁻⁵ error** for sine and cosine over the tested range.
+This produces monotonic convergence of $z_i$ toward zero and rotates the state vector toward the target angle with deterministic iteration count and timing.
 
-* The **arctangent ROM** is a 16-entry lookup table storing:
+The internal datapath uses 32-bit signed fixed-point values for $x$, $y$, and $z$. The wrappers apply standardized output formats:
 
-$$
-\arctan(2^{-i}) \text{ encoded in Q3.29}
-$$
+* sin/cos outputs: Q1.15  
+* tan output: Q3.28  
 
-for `i = 0 … 15`. Each entry is stored as a **signed 32-bit constant**, with values ranging from **421,657,428** down to **16,384**, corresponding to the diminishing influence of higher-order micro-rotations.
+This maintains high internal precision and ensures typical sine/cosine error below $4 \times 10^{-5}$.
 
-* Since CORDIC inherently scales the vector by:
+The implementation includes a 16-entry arctangent ROM storing:
 
-$$
-K_N = \prod_{i=0}^{N-1} \sqrt{1 + 2^{-2i}},
-$$
+$\arctan(2^{-i})$ encoded in Q3.29
 
-the implementation applies **pre-scaled initial values**:
+for $i = 0 \dots 15$. Values range from large initial angles down to small micro-rotations.
 
-$$
-x_0 = \frac{1}{K_N}, \qquad y_0 = 0, \qquad z_0 = \theta_{\text{input}}
-$$
+CORDIC introduces a scale factor
 
-This eliminates post-normalization hardware entirely.
+$K_N = \prod_{i=0}^{N-1} \sqrt{1 + 2^{-2i}}$
 
-* The IP provides **three functional wrappers** (`cordic_sin`, `cordic_cos`, `cordic_tan`) that map angle inputs directly to outputs:
+which is cancelled by choosing pre-scaled starting values:
 
-  * **sin:** final `y_N`  
-  * **cos:** final `x_N`  
-  * **tan:** extended-precision ratio in Q3.28  
+$x_0 = 1 / K_N$  
+$y_0 = 0$  
+$z_0 = \theta_{\text{input}}$
 
-  These wrappers isolate users from internal formatting and allow integration into ALUs, DSP paths, and math accelerators without glue logic.
+The core exposes three wrapper modules providing:
 
-* The verification environment sweeps **31 angle points** from **−1.5 rad to +1.5 rad** in increments of `0.1` and measures absolute error relative to IEEE-754:
+* sin: final $y_N$  
+* cos: final $x_N$  
+* tan: extended-precision $(y_N / x_N)$ in Q3.28  
 
-  * **sin max error:** ≈ 3.9×10⁻⁵  
-  * **cos max error:** ≈ 4.5×10⁻⁵  
-  * **tan max error:** ≈ 6.10 (divergence near ±π/2)  
-  * **RMS:** sin ≈ 2×10⁻⁵, cos ≈ 2.8×10⁻⁵, tan ≈ 1.11  
+Verification sweeps 31 angles from −1.5 to +1.5 radians in 0.1 increments.  
+Observed errors:
 
-  The core demonstrates stable convergence, correct quadrant behavior, and deterministic timing.
+* sin max error: $3.9 \times 10^{-5}$  
+* cos max error: $4.5 \times 10^{-5}$  
+* tan diverges near $\pm \pi/2$ as expected  
+* RMS errors: sin ≈ $2 \times 10^{-5}$, cos ≈ $2.8 \times 10^{-5}$  
 
-* The IP is packaged as a **soft RTL component** with FuseSoC metadata (`.core`), enabling:
-
-  * automatic dependency resolution  
-  * one-command simulation via Icarus Verilog  
-  * portable SoC integration  
-  * dedicated wrappers, ROM, constants, and testbench directories  
+The IP is packaged as a portable RTL component with FuseSoC metadata supporting automated builds, simulation, and SoC integration.
 
 </details>
 
@@ -1041,6 +1022,158 @@ Both designs behave as compact test vehicles for understanding physical design s
 ---
 
 </details>
+
+
+
+<details>
+<summary>
+  <strong>
+    SHA256 Core Functional Verification |
+    <a href="https://github.com/Mummanajagadeesh/sha256" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A focused **functional verification environment** built around the open-source SHA256 core from secworks.
+I created a structured suite of **directed**, **random**, **corner-case**, and **negative fail-case** tests, automated through a TCL-driven flow that compiles, runs, checks, and aggregates results.
+The goal was to push the core through a wide coverage surface, verify digest correctness, exercise interface timing, and validate the robustness of the verification infrastructure itself.
+
+---
+
+### **Verification Summary**
+
+**Duration:** Individual
+**Tools:** Verilog | Icarus Verilog | TCL automation
+
+* Implemented a unified verification environment with fully self-checking testbenches.
+* Automated all compilation and simulation using TCL so that every test runs in a single command.
+* Verified correct digest generation for standard, multi-block, random, and corner-case stimuli.
+* Stressed control behavior by injecting malformed sequences, undefined values, and reversed block ordering.
+* Collected per-test logs and a consolidated summary to rapidly detect regressions.
+* Treated testbench infrastructure as a verification target by validating mismatch detection and protocol violation handling.
+
+---
+
+<details>
+  <summary><b>Technical Summary</b></summary>
+
+<br>
+
+The SHA-256 core is verified directly against the mathematical definition of its compression function.  
+Each testbench checks that the DUT produces digests matching the iterative hashing rule
+
+$H^{(0)} = H_{IV}$
+
+and for each message block $M^{(i)}$:
+
+$H^{(i+1)} = \mathcal{F}(H^{(i)}, M^{(i)})$
+
+### Round Computation
+
+Each round computes two temporary values:
+
+$T_1 = h + \Sigma_1(e) + Ch(e,f,g) + K_t + W_t$
+
+$T_2 = \Sigma_0(a) + Maj(a,b,c)$
+
+Then the working registers update as:
+
+$h = g$  
+$g = f$  
+$f = e$  
+$e = d + T_1$  
+$d = c$  
+$c = b$  
+$b = a$  
+$a = T_1 + T_2$
+
+### Message Schedule
+
+For each block the scheduler generates:
+
+$W_t = M_t \quad (t < 16)$  
+
+$W_t = \sigma_1(W_{t-2}) + W_{t-7} + \sigma_0(W_{t-15}) + W_{t-16} \quad (t \ge 16)$
+
+### Verification Focus
+
+The environment validates:
+
+* correct initialization of internal hash state  
+* correct update propagation through all 64 rounds  
+* multi-block chaining behavior for long messages  
+* final digest stability when `digest_valid` asserts  
+* robustness under random, corner-case, and adversarial stimuli  
+
+### TCL Automation
+
+The TCL flow executes a deterministic verification loop:
+
+1. compile all testbenches  
+2. run all simulations  
+3. compare expected vs actual digests  
+4. merge logs into a single summary report  
+
+This provides a repeatable regression pipeline for SHA-256 functional verification.
+
+</details>
+
+
+---
+
+### **Verification Coverage**
+
+* Single-block digest generation for standard vectors
+* Multi-block message chaining and state propagation
+* Randomized 512-bit stimuli to probe broad input space behavior
+* Corner patterns including all-zero, all-one, and alternating data
+* Mode selection behavior across supported operational modes
+* Protocol timing correctness for control signals
+* Intentional failure injection to test mismatch handling and robustness
+
+---
+
+### **Automation Workflow**
+
+The TCL flow executes the entire suite:
+
+```tcl
+compile all tbs
+run all tests
+collect logs
+summarize results
+```
+
+This produces structured outputs with test names, expected vs actual digests, and overall regression status.
+
+---
+
+<details>
+  <summary><b>Repository Card</b></summary>
+
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/sha256#gh-light-mode-only">
+  <img src="./repos/sha256-light.svg#gh-light-mode-only"
+       alt="sha256 verification repository" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/sha256#gh-dark-mode-only">
+  <img src="./repos/sha256-dark.svg#gh-dark-mode-only"
+       alt="sha256 verification repository" />
+</a>
+
+</p>
+
+</details>
+
+---
+
+</details>
+
 
 
 
