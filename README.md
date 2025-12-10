@@ -1,4 +1,4 @@
-# ¡Hola, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-11 01:04:39 IST -->
+# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-11 01:03:10 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -947,18 +947,20 @@ to avoid intermediate overflow before the final saturation step. No dynamic scal
 <p align="center">
 
 <a href="https://github.com/Mummanajagadeesh/OpenPOWER-HW-Design-Hackathon#gh-light-mode-only">
-  <img src="./repos/openpower-hackathon-fir-light.svg#gh-light-mode-only"
+  <img src="./repos/openpower-hw-design-hackathon-light.svg#gh-light-mode-only"
        alt="OpenPOWER FIR Accelerator Hackathon Submission (light)" />
 </a>
 
 <a href="https://github.com/Mummanajagadeesh/OpenPOWER-HW-Design-Hackathon#gh-dark-mode-only">
-  <img src="./repos/openpower-hackathon-fir-dark.svg#gh-dark-mode-only"
+  <img src="./repos/openpower-hw-design-hackathon-dark.svg#gh-dark-mode-only"
        alt="OpenPOWER FIR Accelerator Hackathon Submission (dark)" />
 </a>
 
 </p>
 
 </details>
+
+---
 
 </details>
 
