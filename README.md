@@ -149,7 +149,7 @@
   FOCUS:         "always learning - check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"<br>
   KNOWS:         "anything bw sand nd the thing thinking alongside us now"<br>
   ASKME:         "stuff i actually know, or stuff ill google for u"
-  CURRENTLY:     "building a `hw accel arch for img classif`, it can sǝǝ jc"<br>
+  CURRENTLY:     "building a `hw accel arch for img classif`, it can sǝǝ john cena"<br>
   CLUB:          "feeding robots my gpa @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>rignitc</strong></a>"<br>
   COMPS:         ["e-yantra MB", "openpower hw"]<br>
   MAJOR:         "<em>electronics nd communication engg</em>"<br>
