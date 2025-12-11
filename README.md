@@ -147,7 +147,7 @@
 <pre><code>$ less ~/workspace/profile/config.yaml
 
   FOCUS:         "always learning - check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"                    <br>
-  ASKME:         "anything between sand and whatever does my thinking now" <br>
+  ASKME:         "anything bw sand nd the thing thinking alongside us now" <br>
   CURRENTLY:     "building a `hw accel arch for img classif`, it sees ghosts"         <br>
   CLUB:          "feeding robots my gpa @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>rignitc</strong></a>"                                <br>
   COMPS:         ["e-yantra MB", "openpower hw"]                          <br>
