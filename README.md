@@ -2228,7 +2228,7 @@ A feedback loop stores misclassified samples for incremental dataset improvement
 
 
 <details>
-  <summary><h1><code>$ env --familiar | grep STACK</code></h1></summary>
+  <summary><h1><code>$ env --familiar | grep TOOLS</code></h1></summary>
 
 <p align="center">
   <!-- Programming Languages -->
