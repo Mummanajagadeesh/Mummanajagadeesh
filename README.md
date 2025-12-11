@@ -156,7 +156,7 @@
   COLLEGE:       "<em>national institute of technology calicut</em>"<br>
   CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>carrier pigeons :p</strong></a>"<br>
   HOBBIES:       ["speedcubing", "movies", "day dreaming"]<br>
-  FUNFACT:       "i'm batman... budget edition"<br>
+  FUNFACT:       "i'm discount batman"<br>
   SECRET:        "i pay the moon to follow me around"<br>
   WHATIF:        "if i eat myself, do I become twice as big or disappear?"<br>
 </code></pre>
