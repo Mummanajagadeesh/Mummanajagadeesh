@@ -146,7 +146,7 @@
 
 <pre><code>$ less ~/workspace/profile/config.yaml
 
-  FOCUS:         "learning so fast my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a> can’t keep up"<br>
+  FOCUS:         "learning so slow my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a> can’t keep up"<br>
   KNOWS:         "anything bw sand nd the entity thinking back at us rn"<br>
   ASKME:         "stuff i know, or stuff i can google before u blink"<br>
   BUILDING:      "<em>hw accel arch for img classif<em>; it can sǝǝ john cena"<br>
