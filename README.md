@@ -1,4 +1,4 @@
-# Hallo Welt! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-12 02:09:11 IST -->
+# Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-12 01:52:01 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -243,6 +243,379 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 # `$ ls ~/projects --filter=feat` | [`All Projects`](https://mummanajagadeesh.github.io/projects/)
 
 <em>(Click sections below to expand)</em>
+
+
+
+
+<details>
+  <summary><b>Analog Circuits & Device-Level Design</b></summary>
+
+<br> 
+
+<details>
+<summary>
+  <strong>
+    Device Modeling using Sentaurus TCAD |
+    <a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS/" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+Performed **semiconductor device modeling** using Synopsys Sentaurus for foundational structures including **N-type resistors, PN diodes, and NMOS transistors**.
+Explored how **doping profiles, junction depths, geometry parameters, and physical models** impact device characteristics through calibrated simulations and scripted workflows.
+
+### Overview
+
+* Built **parameterized device structures** (concentration profiles, implant energies, lateral/vertical dimensions) using Sentaurus Structure Editor and process definition files.
+* Configured **Sentaurus Device** with transport and recombination models (SRH, Auger, mobility models, incomplete ionization where relevant) to study semiconductor behavior under applied bias.
+* Automated simulation runs in **Sentaurus Workbench** using command-based `.cmd` and `.des` scripts for sweeping doping levels, voltages, and geometry parameters.
+* Analyzed simulation output with **Sentaurus Visual/Inspect**, examining **electrostatic potential maps**, **electron/hole concentration distributions**, **electric field intensity**, and **I–V characteristics**.
+* Extracted device metrics such as diode **forward/reverse characteristics**, NMOS **transfer/output curves**, threshold behavior, and resistance scaling for the N-type resistor.
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS#gh-light-mode-only">
+  <img src="./repos/tcad-projects-light.svg#gh-light-mode-only"
+       alt="TCAD Projects - Sentaurus device modeling for N-resistor, PN diode, NMOS with doping/geometry parameterization" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS#gh-dark-mode-only">
+  <img src="./repos/tcad-projects-dark.svg#gh-dark-mode-only"
+       alt="TCAD Projects - Sentaurus device modeling for N-resistor, PN diode, NMOS with doping/geometry parameterization" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+<details>
+<summary>
+  <strong>
+    CMOS Inverter Layout (Magic VLSI) & Ngspice Simulation |
+    <a href="https://github.com/Mummanajagadeesh/cmos-inverter" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A complete CMOS inverter implementation built using **Magic VLSI (SCMOS)** for physical layout and **ngspice** for extracted-device simulation.  
+Covers device construction rules under the SCMOS process, physical layout of PMOS/NMOS devices, contact/tap structures, parasitic-aware extraction, and transient analysis of inverter switching characteristics.
+
+The layout follows the SCMOS ruleset:
+
+* PMOS implemented inside an **n-well** using p-diffusion; body tied to the well tap (VDD).  
+* NMOS implemented directly in the **p-substrate** using n-diffusion; body tied to substrate tap (GND).  
+* Poly crossing active regions forms the MOS channel; poly, metal1, and contact stack-up follows SCMOS vertical connectivity.  
+* Metal1 routes input/output rails; taps ensure reverse-biased junctions and latch-up prevention.  
+
+Extraction produces a transistor-level `.spice` netlist including geometry-derived parasitics.  
+Transient simulation evaluates:
+
+* Static noise margins and switching point displacement due to device sizing.  
+* Rise/fall asymmetry from mobility difference (μₙ ≫ μₚ).  
+* Output slew vs. load capacitance and PMOS/NMOS drive ratio.  
+* Propagation delays under 1.8 V operation using level-1 MOS models.  
+
+The repository includes the Magic layout (`.mag`), extracted netlists, wrapper files for stimulus, and generated ngspice waveforms.
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+  <br>
+
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/Mummanajagadeesh/cmos-inverter#gh-light-mode-only">
+          <img src="./repos/cmos-inverter-light.svg#gh-light-mode-only" alt="CMOS Inverter Magic + ngspice Layout/Simulation (light)" />
+        </a>
+        <a href="https://github.com/Mummanajagadeesh/cmos-inverter#gh-dark-mode-only">
+          <img src="./repos/cmos-inverter-dark.svg#gh-dark-mode-only" alt="CMOS Inverter Magic + ngspice Layout/Simulation (dark)" />
+        </a>
+      </td>
+    </tr>
+  </table>
+
+</details>
+
+---
+
+</details>
+
+
+<details>
+<summary>
+  <strong>
+    Two-Stage CMOS Operational Amplifier with Miller Compensation |
+    <a href="https://github.com/Mummanajagadeesh/2-stage-cmos-opamp" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A two-stage CMOS op-amp designed in **TSMC 180 nm**, using an **NMOS differential input pair with PMOS current-mirror load**, followed by a **common-source second stage**.
+Frequency compensation is implemented using a **Miller capacitor** between the first-stage output and the second-stage output node, producing dominant-pole behavior and stable unity-gain operation.
+
+Device dimensions were set from closed-form analog constraints:
+* Slew-rate requirement → tail bias current and overdrive allocation
+* GBW requirement → input-pair transconductance and C<sub>C</sub> relationship
+* ICMR bounds → saturation margins for the differential pair and tail device
+* Output swing → overdrive and saturation limits for the second stage
+* Pole-splitting → ratio gₘ₆/C<sub>C</sub> and non-dominant pole placement
+
+Simulation results:
+* **Open-loop gain:** ~53.1 dB
+* **Unity-gain bandwidth:** ~4.35 MHz
+* **Dominant pole:** ~9.6 kHz
+* **Phase margin:** ~60° with Miller compensation
+* **Slew rate:** ~10 V/µs from I<sub>bias</sub>/C<sub>C</sub>
+* **Output swing:** ~0.14 V to ~1.03 V (linear region, no distortion at 1 kHz)
+* **CMRR:** ~32 dB
+* **PSRR:** +64.6 dB / –80.8 dB
+* **Power consumption:** ~1 mW with ±2.5 V rails
+
+Operating-point analysis confirms all MOS devices remain in saturation with expected overdrive values, and both transient and AC characteristics match analytical pole/zero predictions for a Miller-compensated two-stage topology.
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/2-stage-cmos-opamp#gh-light-mode-only">
+  <img src="./repos/2-stage-cmos-opamp-light.svg#gh-light-mode-only"
+       alt="Two-Stage CMOS Op-Amp Repository Card (light mode) | Design and Analysis of Two-Stage CMOS Op-Amp with Miller Compensation" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/2-stage-cmos-opamp#gh-dark-mode-only">
+  <img src="./repos/2-stage-cmos-opamp-dark.svg#gh-dark-mode-only"
+       alt="Two-Stage CMOS Op-Amp Repository Card (dark mode) | Design and Analysis of Two-Stage CMOS Op-Amp with Miller Compensation" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+
+
+<details>
+<summary>
+  <strong>
+    5-Stage CMOS Ring-Oscillator VCO |
+    <a href="https://mummanajagadeesh.github.io/projects/vco" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+  
+A 5-stage CMOS inverter ring used as a voltage-controlled delay line, producing oscillation whose frequency scales with the control voltage.
+A 3-stage buffer isolates the oscillator core and restores the internal sine-like waveform into a full-swing CMOS square wave.
+
+The oscillator operates from 0.7–3.0 V control input and shows a monotonic delay reduction with increasing drive strength.
+
+**Measured characteristics**
+
+* **Frequency range:** 0.724–1.93 GHz
+* **Linear KVCO region:** ~2.1 GHz/V for 0.7–1.2 V
+* **Frequency saturation:** begins above ~1.8 V as inverter delay approaches its minimum
+* **Core waveform:** ~0.3–1.7 V swing with rounded edges
+* **Buffered output:** 0–1.8 V square wave, ~50% duty cycle
+* **Startup time:** ~0.5–0.8 ns to reach steady oscillation
+* **Simulation sweep:** confirmed monotonic f–V relation and early compression through parametric input stepping
+
+**Frequency points**
+
+| Vctrl (V) | f (GHz) |
+| --------: | ------- |
+|       0.7 | 0.724   |
+|       0.8 | 1.107   |
+|       1.0 | 1.59    |
+|       1.2 | 1.76    |
+|       1.5 | 1.88    |
+|       2.0 | 1.92    |
+|       2.5 | 1.928   |
+|       3.0 | 1.9298  |
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/ring-oscillator-vco#gh-light-mode-only">
+  <img src="./repos/ring-oscillator-vco-light.svg#gh-light-mode-only"
+       alt="Ring Oscillator VCO Repository Card (light mode) | Design and SPICE simulation of a 5-stage CMOS inverter-based ring VCO with buffered output and multi-GHz tunability" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/ring-oscillator-vco#gh-dark-mode-only">
+  <img src="./repos/ring-oscillator-vco-dark.svg#gh-dark-mode-only"
+       alt="Ring Oscillator VCO Repository Card (dark mode) | Design and SPICE simulation of a 5-stage CMOS inverter-based ring VCO with buffered output and multi-GHz tunability" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+<details>
+<summary>
+  <strong>
+    Analog Function Generator with Adjustable Amplitude/Offset/Phase |
+    <a href="https://mummanajagadeesh.github.io/projects/funcgen" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A multi-waveform analog function generator built using discrete op-amp blocks (TL082), passive RC networks, and a CD4051 analog multiplexer.
+The generator produces **sine, square, and triangular outputs** and exposes **continuous control** of amplitude, DC offset, and phase.
+Additional AM/PM blocks and a relaxation-oscillator VCO extend the system for modulation experiments.
+
+The signal path is fully modular-each block is buffered to avoid inter-stage loading errors, enabling predictable behavior across a **1 kHz–500 kHz** operating band.
+
+**Measured characteristics**
+
+* **Waveforms:** sine, square (<200 ns rise/fall), triangle
+* **Frequency range:** ~1 kHz → 500 kHz (Wien-bridge tuned)
+* **Amplitude control:** ±10 V
+* **DC offset range:** ±5 V
+* **Phase control:** 0°–160° (first-order all-pass)
+* **Square-wave performance:** clean CMOS-level transitions, rise/fall < 200 ns
+* **Triangular output:** linear ramps from integrator with controllable slope
+* **Waveform switching:** CD4051 mux with low ON-resistance routing
+* **Hardware validation:** TI ASLK Pro bench + LTspice simulations
+* **Modulation:** AM/PM blocks implemented as additive/multiplicative stages
+* **VCO:** relaxation-oscillator variant providing voltage-to-frequency behavior
+
+**Signal-generation architecture**
+
+* **Wien-bridge core** → low-distortion sine
+* **Schmitt trigger** → rail-to-rail square
+* **Op-amp integrator** → triangular
+* **CD4051 multiplexer** → waveform selection
+* **Offset summer** → adjustable vertical shift
+* **RC all-pass** → continuous phase control
+* **Unity-gain buffers** → isolate every stage and preserve amplitude accuracy
+
+**Representative measurements**
+
+* Sine output distortion minimal across most of the band; clean 1.55 kHz fundamental (LTspice + CRO)
+* Square-wave rise/fall < 200 ns across load conditions
+* Triangle linearity maintained through full amplitude range
+* Phase shift examples captured at 64°, 90°, and ~162° using tuned RC values
+* Offset correctness demonstrated for 0 V, +1 V, –1 V injected shifts
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/function-generator#gh-light-mode-only">
+  <img src="./repos/function-generator-light.svg#gh-light-mode-only"
+       alt="Function Generator Repository Card (light mode) | Basic implementation of a Function Generator that can generate sine, square, and triangular waves with amplitude, phase, and DC shift modulations" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/function-generator#gh-dark-mode-only">
+  <img src="./repos/function-generator-dark.svg#gh-dark-mode-only"
+       alt="Function Generator Repository Card (dark mode)" | Basic implementation of a Function Generator that can generate sine, square, and triangular waves with amplitude, phase, and DC shift modulations"/>
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+
+
+<details>
+<summary>
+  <strong>
+    Precision PID Controller Design using Operational Amplifiers |
+    <a href="https://mummanajagadeesh.github.io/projects/pid-ctrl" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+An analog PID controller built using high-linearity op-amps (LT1007 / TL082) and RC networks, implemented entirely in continuous time and validated through LTspice.
+The design focuses on stable low-frequency integration, controlled differentiation without noise peaking, and diode-based output limiting for robust transient behavior.
+
+Two complete controller variants were implemented-one minimal, one extended with gain scaling and anti-windup.
+
+**Measured / designed characteristics**
+
+* **Differential stage:** unity-gain differential amplifier with high CMRR for clean error sensing
+* **Integrator:** 10 ms time constant →
+
+  * (K_i \approx 100\ \text{s}^{-1})
+  * (f_c \approx 16\ \text{Hz})
+  * Loop-gain boost ≈ **9.5 dB**
+* **Derivative network:** RC shaping with controlled high-frequency roll-off to prevent noise amplification
+* **Output swing protection:** diode clamps maintaining bounded actuation signal under large transients
+* **Op-amp choices:** LT1007 for low noise and precision; TL082 as a low-cost, wide-bandwidth alternative
+* **Simulation:** full closed-loop Bode, transient, load-step and saturation recovery tests in LTspice
+
+**Second PID variant**
+
+* **10× front-end gain** for small-signal plant feedback
+* **Dual-integrator configuration** for deeper low-frequency suppression
+* **Anti-windup:** diode shunts + soft-limiting network to prevent integrator runaway
+* **Stable recovery** under saturation and high-error conditions
+
+**Design intent**
+
+* preserve linearity and phase margin across low-frequency operation
+* condition derivative action to avoid overshoot due to high-frequency noise
+* offer two architectures: a **clean textbook PID** and a **high-authority PID** with controlled limiting
+
+<br>
+
+<details>
+  <summary><b>Repository</b></summary>
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/PID_CTRL#gh-light-mode-only">
+  <img src="./repos/pid_ctrl-light.svg#gh-light-mode-only"
+       alt="PID Controller Repository Card (light mode)" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/PID_CTRL#gh-dark-mode-only">
+  <img src="./repos/pid_ctrl-dark.svg#gh-dark-mode-only"
+       alt="PID Controller Repository Card (dark mode)" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+
+</details>
 
 <details>
   <summary><b>Digital Design/Verfication & Compute Architectures</b></summary>
@@ -1216,377 +1589,6 @@ This produces structured outputs with test names, expected vs actual digests, an
 
 </details>
 
-
-
-<details>
-  <summary><b>Analog Circuits & Device-Level Design</b></summary>
-
-<br> 
-
-<details>
-<summary>
-  <strong>
-    Device Modeling using Sentaurus TCAD |
-    <a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS/" target="_blank">Link</a>
-  </strong>
-</summary>
-
-<br>
-
-Performed **semiconductor device modeling** using Synopsys Sentaurus for foundational structures including **N-type resistors, PN diodes, and NMOS transistors**.
-Explored how **doping profiles, junction depths, geometry parameters, and physical models** impact device characteristics through calibrated simulations and scripted workflows.
-
-### Overview
-
-* Built **parameterized device structures** (concentration profiles, implant energies, lateral/vertical dimensions) using Sentaurus Structure Editor and process definition files.
-* Configured **Sentaurus Device** with transport and recombination models (SRH, Auger, mobility models, incomplete ionization where relevant) to study semiconductor behavior under applied bias.
-* Automated simulation runs in **Sentaurus Workbench** using command-based `.cmd` and `.des` scripts for sweeping doping levels, voltages, and geometry parameters.
-* Analyzed simulation output with **Sentaurus Visual/Inspect**, examining **electrostatic potential maps**, **electron/hole concentration distributions**, **electric field intensity**, and **I–V characteristics**.
-* Extracted device metrics such as diode **forward/reverse characteristics**, NMOS **transfer/output curves**, threshold behavior, and resistance scaling for the N-type resistor.
-
----
-
-<details>
-  <summary><b>Repository</b></summary>
-
-<br>
-
-<p align="center">
-
-<a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS#gh-light-mode-only">
-  <img src="./repos/tcad-projects-light.svg#gh-light-mode-only"
-       alt="TCAD Projects - Sentaurus device modeling for N-resistor, PN diode, NMOS with doping/geometry parameterization" />
-</a>
-
-<a href="https://github.com/Mummanajagadeesh/TCAD-PROJECTS#gh-dark-mode-only">
-  <img src="./repos/tcad-projects-dark.svg#gh-dark-mode-only"
-       alt="TCAD Projects - Sentaurus device modeling for N-resistor, PN diode, NMOS with doping/geometry parameterization" />
-</a>
-
-</p>
-
-</details>
-
-</details>
-
-<details>
-<summary>
-  <strong>
-    CMOS Inverter Layout (Magic VLSI) & Ngspice Simulation |
-    <a href="https://github.com/Mummanajagadeesh/cmos-inverter" target="_blank">Link</a>
-  </strong>
-</summary>
-
-<br>
-
-A complete CMOS inverter implementation built using **Magic VLSI (SCMOS)** for physical layout and **ngspice** for extracted-device simulation.  
-Covers device construction rules under the SCMOS process, physical layout of PMOS/NMOS devices, contact/tap structures, parasitic-aware extraction, and transient analysis of inverter switching characteristics.
-
-The layout follows the SCMOS ruleset:
-
-* PMOS implemented inside an **n-well** using p-diffusion; body tied to the well tap (VDD).  
-* NMOS implemented directly in the **p-substrate** using n-diffusion; body tied to substrate tap (GND).  
-* Poly crossing active regions forms the MOS channel; poly, metal1, and contact stack-up follows SCMOS vertical connectivity.  
-* Metal1 routes input/output rails; taps ensure reverse-biased junctions and latch-up prevention.  
-
-Extraction produces a transistor-level `.spice` netlist including geometry-derived parasitics.  
-Transient simulation evaluates:
-
-* Static noise margins and switching point displacement due to device sizing.  
-* Rise/fall asymmetry from mobility difference (μₙ ≫ μₚ).  
-* Output slew vs. load capacitance and PMOS/NMOS drive ratio.  
-* Propagation delays under 1.8 V operation using level-1 MOS models.  
-
-The repository includes the Magic layout (`.mag`), extracted netlists, wrapper files for stimulus, and generated ngspice waveforms.
-
----
-
-<details>
-  <summary><b>Repository</b></summary>
-  <br>
-
-  <table>
-    <tr>
-      <td align="center">
-        <a href="https://github.com/Mummanajagadeesh/cmos-inverter#gh-light-mode-only">
-          <img src="./repos/cmos-inverter-light.svg#gh-light-mode-only" alt="CMOS Inverter Magic + ngspice Layout/Simulation (light)" />
-        </a>
-        <a href="https://github.com/Mummanajagadeesh/cmos-inverter#gh-dark-mode-only">
-          <img src="./repos/cmos-inverter-dark.svg#gh-dark-mode-only" alt="CMOS Inverter Magic + ngspice Layout/Simulation (dark)" />
-        </a>
-      </td>
-    </tr>
-  </table>
-
-</details>
-
----
-
-</details>
-
-
-<details>
-<summary>
-  <strong>
-    Two-Stage CMOS Operational Amplifier with Miller Compensation |
-    <a href="https://github.com/Mummanajagadeesh/2-stage-cmos-opamp" target="_blank">Link</a>
-  </strong>
-</summary>
-
-<br>
-
-A two-stage CMOS op-amp designed in **TSMC 180 nm**, using an **NMOS differential input pair with PMOS current-mirror load**, followed by a **common-source second stage**.
-Frequency compensation is implemented using a **Miller capacitor** between the first-stage output and the second-stage output node, producing dominant-pole behavior and stable unity-gain operation.
-
-Device dimensions were set from closed-form analog constraints:
-* Slew-rate requirement → tail bias current and overdrive allocation
-* GBW requirement → input-pair transconductance and C<sub>C</sub> relationship
-* ICMR bounds → saturation margins for the differential pair and tail device
-* Output swing → overdrive and saturation limits for the second stage
-* Pole-splitting → ratio gₘ₆/C<sub>C</sub> and non-dominant pole placement
-
-Simulation results:
-* **Open-loop gain:** ~53.1 dB
-* **Unity-gain bandwidth:** ~4.35 MHz
-* **Dominant pole:** ~9.6 kHz
-* **Phase margin:** ~60° with Miller compensation
-* **Slew rate:** ~10 V/µs from I<sub>bias</sub>/C<sub>C</sub>
-* **Output swing:** ~0.14 V to ~1.03 V (linear region, no distortion at 1 kHz)
-* **CMRR:** ~32 dB
-* **PSRR:** +64.6 dB / –80.8 dB
-* **Power consumption:** ~1 mW with ±2.5 V rails
-
-Operating-point analysis confirms all MOS devices remain in saturation with expected overdrive values, and both transient and AC characteristics match analytical pole/zero predictions for a Miller-compensated two-stage topology.
-
----
-
-<details>
-  <summary><b>Repository</b></summary>
-<br>
-
-<p align="center">
-
-<a href="https://github.com/Mummanajagadeesh/2-stage-cmos-opamp#gh-light-mode-only">
-  <img src="./repos/2-stage-cmos-opamp-light.svg#gh-light-mode-only"
-       alt="Two-Stage CMOS Op-Amp Repository Card (light mode) | Design and Analysis of Two-Stage CMOS Op-Amp with Miller Compensation" />
-</a>
-
-<a href="https://github.com/Mummanajagadeesh/2-stage-cmos-opamp#gh-dark-mode-only">
-  <img src="./repos/2-stage-cmos-opamp-dark.svg#gh-dark-mode-only"
-       alt="Two-Stage CMOS Op-Amp Repository Card (dark mode) | Design and Analysis of Two-Stage CMOS Op-Amp with Miller Compensation" />
-</a>
-
-</p>
-
-</details>
-
-</details>
-
-
-
-<details>
-<summary>
-  <strong>
-    5-Stage CMOS Ring-Oscillator VCO |
-    <a href="https://mummanajagadeesh.github.io/projects/vco" target="_blank">Link</a>
-  </strong>
-</summary>
-
-<br>
-  
-A 5-stage CMOS inverter ring used as a voltage-controlled delay line, producing oscillation whose frequency scales with the control voltage.
-A 3-stage buffer isolates the oscillator core and restores the internal sine-like waveform into a full-swing CMOS square wave.
-
-The oscillator operates from 0.7–3.0 V control input and shows a monotonic delay reduction with increasing drive strength.
-
-**Measured characteristics**
-
-* **Frequency range:** 0.724–1.93 GHz
-* **Linear KVCO region:** ~2.1 GHz/V for 0.7–1.2 V
-* **Frequency saturation:** begins above ~1.8 V as inverter delay approaches its minimum
-* **Core waveform:** ~0.3–1.7 V swing with rounded edges
-* **Buffered output:** 0–1.8 V square wave, ~50% duty cycle
-* **Startup time:** ~0.5–0.8 ns to reach steady oscillation
-* **Simulation sweep:** confirmed monotonic f–V relation and early compression through parametric input stepping
-
-**Frequency points**
-
-| Vctrl (V) | f (GHz) |
-| --------: | ------- |
-|       0.7 | 0.724   |
-|       0.8 | 1.107   |
-|       1.0 | 1.59    |
-|       1.2 | 1.76    |
-|       1.5 | 1.88    |
-|       2.0 | 1.92    |
-|       2.5 | 1.928   |
-|       3.0 | 1.9298  |
-
----
-
-<details>
-  <summary><b>Repository</b></summary>
-<br>
-
-<p align="center">
-
-<a href="https://github.com/Mummanajagadeesh/ring-oscillator-vco#gh-light-mode-only">
-  <img src="./repos/ring-oscillator-vco-light.svg#gh-light-mode-only"
-       alt="Ring Oscillator VCO Repository Card (light mode) | Design and SPICE simulation of a 5-stage CMOS inverter-based ring VCO with buffered output and multi-GHz tunability" />
-</a>
-
-<a href="https://github.com/Mummanajagadeesh/ring-oscillator-vco#gh-dark-mode-only">
-  <img src="./repos/ring-oscillator-vco-dark.svg#gh-dark-mode-only"
-       alt="Ring Oscillator VCO Repository Card (dark mode) | Design and SPICE simulation of a 5-stage CMOS inverter-based ring VCO with buffered output and multi-GHz tunability" />
-</a>
-
-</p>
-
-</details>
-
-</details>
-
-<details>
-<summary>
-  <strong>
-    Analog Function Generator with Adjustable Amplitude/Offset/Phase |
-    <a href="https://mummanajagadeesh.github.io/projects/funcgen" target="_blank">Link</a>
-  </strong>
-</summary>
-
-<br>
-
-A multi-waveform analog function generator built using discrete op-amp blocks (TL082), passive RC networks, and a CD4051 analog multiplexer.
-The generator produces **sine, square, and triangular outputs** and exposes **continuous control** of amplitude, DC offset, and phase.
-Additional AM/PM blocks and a relaxation-oscillator VCO extend the system for modulation experiments.
-
-The signal path is fully modular-each block is buffered to avoid inter-stage loading errors, enabling predictable behavior across a **1 kHz–500 kHz** operating band.
-
-**Measured characteristics**
-
-* **Waveforms:** sine, square (<200 ns rise/fall), triangle
-* **Frequency range:** ~1 kHz → 500 kHz (Wien-bridge tuned)
-* **Amplitude control:** ±10 V
-* **DC offset range:** ±5 V
-* **Phase control:** 0°–160° (first-order all-pass)
-* **Square-wave performance:** clean CMOS-level transitions, rise/fall < 200 ns
-* **Triangular output:** linear ramps from integrator with controllable slope
-* **Waveform switching:** CD4051 mux with low ON-resistance routing
-* **Hardware validation:** TI ASLK Pro bench + LTspice simulations
-* **Modulation:** AM/PM blocks implemented as additive/multiplicative stages
-* **VCO:** relaxation-oscillator variant providing voltage-to-frequency behavior
-
-**Signal-generation architecture**
-
-* **Wien-bridge core** → low-distortion sine
-* **Schmitt trigger** → rail-to-rail square
-* **Op-amp integrator** → triangular
-* **CD4051 multiplexer** → waveform selection
-* **Offset summer** → adjustable vertical shift
-* **RC all-pass** → continuous phase control
-* **Unity-gain buffers** → isolate every stage and preserve amplitude accuracy
-
-**Representative measurements**
-
-* Sine output distortion minimal across most of the band; clean 1.55 kHz fundamental (LTspice + CRO)
-* Square-wave rise/fall < 200 ns across load conditions
-* Triangle linearity maintained through full amplitude range
-* Phase shift examples captured at 64°, 90°, and ~162° using tuned RC values
-* Offset correctness demonstrated for 0 V, +1 V, –1 V injected shifts
-
----
-
-<details>
-  <summary><b>Repository</b></summary>
-<br>
-
-<p align="center">
-
-<a href="https://github.com/Mummanajagadeesh/function-generator#gh-light-mode-only">
-  <img src="./repos/function-generator-light.svg#gh-light-mode-only"
-       alt="Function Generator Repository Card (light mode) | Basic implementation of a Function Generator that can generate sine, square, and triangular waves with amplitude, phase, and DC shift modulations" />
-</a>
-
-<a href="https://github.com/Mummanajagadeesh/function-generator#gh-dark-mode-only">
-  <img src="./repos/function-generator-dark.svg#gh-dark-mode-only"
-       alt="Function Generator Repository Card (dark mode)" | Basic implementation of a Function Generator that can generate sine, square, and triangular waves with amplitude, phase, and DC shift modulations"/>
-</a>
-
-</p>
-
-</details>
-
-</details>
-
-
-
-<details>
-<summary>
-  <strong>
-    Precision PID Controller Design using Operational Amplifiers |
-    <a href="https://mummanajagadeesh.github.io/projects/pid-ctrl" target="_blank">Link</a>
-  </strong>
-</summary>
-
-<br>
-
-An analog PID controller built using high-linearity op-amps (LT1007 / TL082) and RC networks, implemented entirely in continuous time and validated through LTspice.
-The design focuses on stable low-frequency integration, controlled differentiation without noise peaking, and diode-based output limiting for robust transient behavior.
-
-Two complete controller variants were implemented-one minimal, one extended with gain scaling and anti-windup.
-
-**Measured / designed characteristics**
-
-* **Differential stage:** unity-gain differential amplifier with high CMRR for clean error sensing
-* **Integrator:** 10 ms time constant →
-
-  * (K_i \approx 100\ \text{s}^{-1})
-  * (f_c \approx 16\ \text{Hz})
-  * Loop-gain boost ≈ **9.5 dB**
-* **Derivative network:** RC shaping with controlled high-frequency roll-off to prevent noise amplification
-* **Output swing protection:** diode clamps maintaining bounded actuation signal under large transients
-* **Op-amp choices:** LT1007 for low noise and precision; TL082 as a low-cost, wide-bandwidth alternative
-* **Simulation:** full closed-loop Bode, transient, load-step and saturation recovery tests in LTspice
-
-**Second PID variant**
-
-* **10× front-end gain** for small-signal plant feedback
-* **Dual-integrator configuration** for deeper low-frequency suppression
-* **Anti-windup:** diode shunts + soft-limiting network to prevent integrator runaway
-* **Stable recovery** under saturation and high-error conditions
-
-**Design intent**
-
-* preserve linearity and phase margin across low-frequency operation
-* condition derivative action to avoid overshoot due to high-frequency noise
-* offer two architectures: a **clean textbook PID** and a **high-authority PID** with controlled limiting
-
-<br>
-
-<details>
-  <summary><b>Repository</b></summary>
-<br>
-
-<p align="center">
-
-<a href="https://github.com/Mummanajagadeesh/PID_CTRL#gh-light-mode-only">
-  <img src="./repos/pid_ctrl-light.svg#gh-light-mode-only"
-       alt="PID Controller Repository Card (light mode)" />
-</a>
-
-<a href="https://github.com/Mummanajagadeesh/PID_CTRL#gh-dark-mode-only">
-  <img src="./repos/pid_ctrl-dark.svg#gh-dark-mode-only"
-       alt="PID Controller Repository Card (dark mode)" />
-</a>
-
-</p>
-
-</details>
-
-</details>
-
-
-</details>
 
 <details>
   <summary><b>Robotics and ML</b></summary>
