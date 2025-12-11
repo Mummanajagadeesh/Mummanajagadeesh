@@ -148,7 +148,7 @@
 
   FOCUS:         "always learning - check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>"<br>
   KNOWS:         "anything bw sand nd the thing thinking alongside us now"<br>
-  ASKME:         "stuff I actually know, or stuff I’ll google for u"
+  ASKME:         "stuff i actually know, or stuff I’ll google for u"
   CURRENTLY:     "building a `hw accel arch for img classif`, it sees ghosts"<br>
   CLUB:          "feeding robots my gpa @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>rignitc</strong></a>"<br>
   COMPS:         ["e-yantra MB", "openpower hw"]<br>
