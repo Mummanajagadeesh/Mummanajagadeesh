@@ -154,7 +154,6 @@
   MAJOR:         "<em>electronics nd communication engg</em>"                     <br>
   COLLEGE:       "<em>national institute of technology calicut</em>"               <br>
   CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>carrier pigeons :p</strong></a>"                                     <br>
-  PRONOUNS:      "he/him"                                                 <br>
   HOBBIES:       ["speedcubing", "movies", "day dreaming"]                    <br>
   FUNFACT:       "i'm batman... budget edition"                          <br>
   SECRET:        "i pay the moon to follow me around"                     <br>
