@@ -147,15 +147,15 @@
 <pre><code>$ less ~/workspace/profile/config.yaml
 
   FOCUS:         "learning so fast my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a> can’t keep up"<br>
-  KNOWS:         "anything bw sand nd the thing thinking alongside us now"<br>
-  ASKME:         "stuff i actually know, or stuff i can google for u"<br>
+  KNOWS:         "anything bw sand nd the entity thinking back at us rn"<br>
+  ASKME:         "stuff i know, or stuff i can google before u blink"<br>
   BUILDING:      "<em>hw accel arch for img classif<em>; it can sǝǝ john cena"<br>
   CLUB:          "feeding robots my gpa @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>rignitc</strong></a>"<br>
   COMPS:         ["e-yantra MB", "openpower hw"]<br>
   MAJOR:         "<em>electronics nd communication engg</em>"<br>
   COLLEGE:       "<em>national institute of technology calicut</em>"<br>
   CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>carrier pigeons :p</strong></a>"<br>
-  HOBBIES:       ["speedcubing", "movies", "day dreaming"]<br>
+  HOBBIES:       ["speedcubing", "movies", "4k day dreaming"]<br>
   FUNFACT:       "i'm discount batman"<br>
   SECRET:        "i pay the moon to follow me around"<br>
   WHATIF:        "if i eat myself, do I become twice as big or disappear?"<br>
