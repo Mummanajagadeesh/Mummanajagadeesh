@@ -163,7 +163,7 @@
 
   </td>
   <td>
-    <img src="assets/rickroll.gif" height="320px" alt="RickRoll GIF" />
+    <img src="assets/rickroll.gif" height="350px" alt="RickRoll GIF" />
   </td>
   </tr>
 </table>
