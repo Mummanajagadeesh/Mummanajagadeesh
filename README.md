@@ -262,6 +262,9 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 <br>
 
 **Design of High-Performance Q1.7 Fixed-Point Quantized CNN Hardware Accelerator with Microarchitecture Optimization of 3-Stage Pipelined Systolic MAC Arrays for Lightweight Inference**
+
+A fully synthesizable INT8 CNN accelerator for CIFAR-10, built around a 3-stage pipelined systolic-array MAC microarchitecture optimized from a 6-design PPA benchmark.
+Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol, ROM automation, FP32↔RTL accuracy checks, and a hardware image-processing suite
   
 > **" I tried to ImProVe, but NeVer really did - so I MOVe-d on ¯\\\_(ツ)_/¯ "**<br>
 > **" ¯\\\_(ツ)_/¯ Read the above in RTL mode to decode the other 2/4 "**
