@@ -14,7 +14,7 @@
   <rect x="420" y="16" rx="4" ry="4" width="65" height="18" fill="#ddf4ff" stroke="#0969da" />
   <text x="428" y="29" class="badge">Private</text>
   <text x="16" y="55" class="repo-desc">
-    <tspan x="16" dy="0">No description provided</tspan>
+    <tspan x="16" dy="0">Py3 ATPG/DFT Tool</tspan>
   </text>
   <circle class="lang-dot" cx="16" cy="83" fill="#b2b7f8" />
   <text x="26" y="87" class="meta">Verilog</text>
