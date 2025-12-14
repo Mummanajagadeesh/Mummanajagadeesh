@@ -1,4 +1,4 @@
-# Olá, mundo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-14 16:58:52 IST -->
+# Bonjour le monde! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-14 16:45:51 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -2312,16 +2312,15 @@ A feedback loop stores misclassified samples for incremental dataset improvement
 
 <p align="center">
   <!-- Light mode trophy -->
-  <a href="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-light-mode-only">
-    <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-light-mode-only" alt="mummanajagadeesh trophies (light)" />
+  <a href="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-light-mode-only">
+    <img src="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-light-mode-only" alt="mummanajagadeesh trophies (light)" />
   </a>
 
   <!-- Dark mode trophy -->
-  <a href="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-dark-mode-only">
-    <img src="https://github-profile-trophy.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-dark-mode-only" alt="mummanajagadeesh trophies (dark)" />
+  <a href="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-dark-mode-only">
+    <img src="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-dark-mode-only" alt="mummanajagadeesh trophies (dark)" />
   </a>
 </p>
-
 
 <!-- LIGHT MODE -->
 <p align="center">
