@@ -1,4 +1,4 @@
-# Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-15 21:34:58 IST -->
+# Ciao mondo! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-15 21:21:49 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -267,7 +267,9 @@ A fully synthesizable INT8 CNN accelerator for CIFAR-10, built around a 3-stage 
 Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol, ROM automation, FP32↔RTL accuracy checks, and a hardware image-processing suite
   
 > **" I tried to ImProVe, but NeVer really did - so I MOVe-d on ¯\\\_(ツ)_/¯ "**<br>
-<!--> **" ¯\\\_(ツ)_/¯ Read the above in RTL mode to decode the other 2/4 "**
+<!--
+> **" ¯\\\_(ツ)_/¯ Read the above in RTL mode to decode the other 2/4 "**
+-->
 
 **Current Project Overview**
 
