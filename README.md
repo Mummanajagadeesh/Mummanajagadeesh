@@ -2294,10 +2294,11 @@ A feedback loop stores misclassified samples for incremental dataset improvement
   <img src="https://skillicons.dev/icons?i=git" alt="Git" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=docker" alt="Docker" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=linux" alt="Linux" width="48" height="48"/>
-  <img src="https://skillicons.dev/icons?i=debian" alt="Debian" width="48" height="48"/>
+<!--  <img src="https://skillicons.dev/icons?i=debian" alt="Debian" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=ubuntu" alt="Ubuntu" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=mint" alt="Linux Mint" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=windows" alt="Windows" width="48" height="48"/>
+-->
   <img src="https://skillicons.dev/icons?i=powershell" alt="PowerShell" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=blender" alt="Blender" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=unity" alt="Unity" width="48" height="48"/>
