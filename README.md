@@ -1,4 +1,4 @@
-# Hello, world! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-19 20:54:24 IST -->
+# Xin chào, thế giới! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-19 20:28:36 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -150,7 +150,7 @@
   KNOWS:         "anything bw sand nd the entity thinking back at us rn"<br>
   ASKME:         "stuff i know, or stuff i can google before u blink"<br>
   BUILDING:      "<em>hw accel arch for img classif<em>; it can sǝǝ john cena"<br>
-  CLUB:          "feeding robots my gpa @<a href="rignitc.com"><strong>rignitc</strong></a>"<br>
+  CLUB:          "feeding robots my gpa @<a href="https://rignitc.com"><strong>rignitc</strong></a>"<br>
   COMPS:         ["e-yantra MB", "openpower hw"]<br>
   MAJOR:         "<em>electronics nd communication engg</em>"<br>
   COLLEGE:       "<em>national institute of technology calicut</em>"<br>
