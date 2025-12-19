@@ -150,7 +150,7 @@
   KNOWS:         "anything bw sand nd the entity thinking back at us rn"<br>
   ASKME:         "stuff i know, or stuff i can google before u blink"<br>
   BUILDING:      "<em>hw accel arch for img classif<em>; it can sǝǝ john cena"<br>
-  CLUB:          "feeding robots my gpa @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>rignitc</strong></a>"<br>
+  CLUB:          "feeding robots my gpa @<a href="rignitc.com"><strong>rignitc</strong></a>"<br>
   COMPS:         ["e-yantra MB", "openpower hw"]<br>
   MAJOR:         "<em>electronics nd communication engg</em>"<br>
   COLLEGE:       "<em>national institute of technology calicut</em>"<br>
