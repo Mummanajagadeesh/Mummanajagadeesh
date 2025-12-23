@@ -2317,7 +2317,7 @@ A feedback loop stores misclassified samples for incremental dataset improvement
 
 # `$ git stats --all`
 
-![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh&style=flat-square&color=000000&label=Views&labelColor=ffffff)
+![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh&style=flat-square&color=4CC71E&label=Views&labelColor=ffffff)
 ![Total Repos](https://github-readme-stats-mummanajagadeesh.vercel.app/api/total-repos?username=Mummanajagadeesh&theme=transparent&hide_border=true&count_private=true&bg_color=00000&text_color=ffffff&icon_color=ffffff)
 <!--![GitHub User's stars](https://img.shields.io/github/stars/Mummanajagadeesh?affiliations=OWNER&style=for-the-badge&color=yellow)
 
