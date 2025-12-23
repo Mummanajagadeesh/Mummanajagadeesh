@@ -1,4 +1,4 @@
-# 안녕하세요, 세계! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-23 17:56:58 IST -->
+# สวัสดีโลก! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-23 17:54:18 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -200,14 +200,13 @@
 
 # `$ cat ~/about_me.txt`
 
-Hey, I'm Jagadeesh<br>
+<pre>
 
-I work mainly on digital/analog hw design, across RTL, ckt-lvl design, & basic hw arch<br>
-Currently learning open-source IC design flows & using them to build/test small hw blocks<br>
-I also work with MCU/SBCs in basic system design, for robotics and prototyping<br>
-Beyond that, I take part in comps, open-source projects, and hw/sw co-design challenges
-
-<!--, with a focus on PPA trade-offs-->
+Hey, I'm Jagadeesh
+  I work mainly on digital/analog hw design, across RTL, ckt-lvl design, & basic hw arch
+  Currently learning open-source IC design flows & using them to build/test small hw blocks
+  I also work with MCU/SBCs in basic system design, for robotics & prototyping
+  Beyond that, I take part in comps, open-source projects, & hw/sw co-design challenges
 
 MY Key Interests:
 
@@ -217,7 +216,11 @@ MY Key Interests:
 - Hardware Architecture and Microarchitecture
 - Robotics and Computer Vision
   
-Feel free to check out my projects below, and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
+Feel free to check out my projects below, 
+  and if you’re interested in collaborating or discussing hardware, AI, or robotics, 
+  let’s connect!
+
+</pre>
 
 <!--<pre>
   
