@@ -1,4 +1,4 @@
-# ສະບາຍດີໂລກ! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-23 23:34:25 IST -->
+# 안녕하세요, 세계! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-23 23:33:44 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -233,9 +233,9 @@
 <pre>
 Hey, I'm Jagadeesh
 
-I work mainly on digital/analog hw design, 
-Currently learning open-source IC flows, 
-I also work with MCU/SBCs in basic system design, 
+I work mainly on digital/analog hw design: RTL, ckt-lvl & basic arch
+Learning open-source IC flows; building/testing small HW blocks
+I also work with MCU/SBCs in basic sys-design for robotics & prototyping
 Active in comps, open-source, hw/sw co-design challenges
 
 MY Key Interests:     
@@ -247,7 +247,7 @@ MY Key Interests:
  - Robotics and Computer Vision
 
 Feel free to check out my projects below, 
-├─and if you’re interested in collaborating
+├─and if you’re interested in collaborating or discussing hw/ML/robotics, 
 └─let’s connect!
 </pre>
 
