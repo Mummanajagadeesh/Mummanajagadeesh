@@ -2339,15 +2339,15 @@ A feedback loop stores misclassified samples for incremental dataset improvement
 <p align="center">
 
   <a href="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-light-mode-only">
-    <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-light-mode-only" alt="Stats (light)">
+    <img width="27%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-light-mode-only" alt="Stats (light)">
   </a>
 
   <a href="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-light-mode-only">
-    <img width="32%" src="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-light-mode-only" alt="Streak (light)">
+    <img width="40%" src="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=default&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-light-mode-only" alt="Streak (light)">
   </a>
 
   <a href="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=default&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&Cache-Control=no-cache&cache_seconds=1#gh-light-mode-only">
-    <img width="32%" src="assets/top-langs-light.svg" alt="Top Languages (light)">
+    <img width="22%" src="assets/top-langs-light.svg" alt="Top Languages (light)">
   </a>
 
 </p>
@@ -2357,15 +2357,15 @@ A feedback loop stores misclassified samples for incremental dataset improvement
 <p align="center">
 
   <a href="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-dark-mode-only">
-    <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Stats (dark)">
+    <img width="27%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Stats (dark)">
   </a>
 
   <a href="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-dark-mode-only">
-    <img width="32%" src="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Streak (dark)">
+    <img width="40%" src="https://github-readme-streak-stats-eight.vercel.app/?user=Mummanajagadeesh&theme=dark&count_private=true&include_all_commits=true&hide_border=true&Cache-Control=no-cache#gh-dark-mode-only" alt="Streak (dark)">
   </a>
 
   <a href="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=dark&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&Cache-Control=no-cache&cache_seconds=1#gh-dark-mode-only">
-    <img width="32%" src="assets/top-langs.svg" alt="Top Languages (dark)">
+    <img width="22%" src="assets/top-langs.svg" alt="Top Languages (dark)">
   </a>
 
 </p>
