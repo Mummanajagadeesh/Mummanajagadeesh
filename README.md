@@ -233,7 +233,7 @@
 <pre>
 Hey, I'm Jagadeesh
 
-I work mainly on digital/analog hw design, across RTL, ckt-lvl & basic hw arch
+I work mainly on digital/analog hw design, across RTL, ckt-lvl & basic arch
 Currently learning open-source IC flows, building/testing small hw blocks
 I also work with MCU/SBCs in basic system design, for robotics & prototyping
 Active in comps, open-source, hw/sw co-design challenges
