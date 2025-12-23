@@ -1,4 +1,4 @@
-# வணக்கம் உலகம்! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-23 21:45:05 IST -->
+# 你好，世界！This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-23 21:23:55 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -202,23 +202,28 @@
 
 <pre>
 
-Hey, I'm Jagadeesh
-  I work mainly on digital/analog hw design, across RTL, ckt-lvl design, & basic hw arch
-  Currently learning open-source IC design flows & using them to build/test small hw blocks
-  I also work with MCU/SBCs in basic system design, for robotics & prototyping
-  Beyond that, I take part in comps, open-source projects, & hw/sw co-design challenges
 
-MY Key Interests:
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿    Hey, I'm Jagadeesh
+⣿⠩⡆⠐⣹⣿⣿⣿⣿⠋⠀⢀⡀⠀⠀⠀⠀⠀⠉⠙⢿⣿⣿⣿⣿⣿⢸     I work mainly on digital/analog hw design, across RTL, ckt-lvl design, & basic hw arch
+⣿⣶⡔⠷⠝⣿⣿⣛⠁⠭⢭⡻⣿⣆⢀⠟⠁⠀⠀⠀⠀⢻⣿⣿⣿⣿      Currently learning open-source IC design flows & using them to build/test small hw blocks
+⣿⠟⣣⣶⣿⣿⣿⠁⣴⣶⡄⠹⣽⣿⠋⠠⢔⣾⡇⠀⠀⠀⢿⣿⣿⣿      I also work with MCU/SBCs in basic system design, for robotics & prototyping
+⡟⣾⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⠁⣴⣦⡀⢁⣿⣶⣤⠀⢸⣿⣿⣿      Beyond that, I take part in comps, open-source projects, & hw/sw co-design challenges
+⡇⣿⣿⣿⡿⣛⣛⠿⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⣿⡟⠀⢸⣿⣿⣿
+⣿⢹⣿⢧⣾⣿⣿⣿⡜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⢀⡸⢿⣿⣿       MY Key Interests:
+⣿⣷⣝⠞⢿⣿⣿⣿⢣⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣧⢿⣿
+⣿⣿⣿⢰⣤⡉⣉⠾⠿⠿⠿⠿⠿⣿⣿⣿⣿⣿⠟⣿⣿⣿⣿⠏⣾⣿        - Analog and Digital Circuit Design
+⣿⣿⣿⢸⣿⣿⣩⠺⣶⣝⣛⣛⣛⣯⢤⣶⡰⢖⣴⣝⣛⢛⣫⣾⣿⣿        - RTL Verification, Debugging, and Validation
+⣿⣿⢧⣿⣿⣿⣟⣀⣿⣿⣿⣿⣿⣿⡇⢿⣿⣯⡻⣿⣿⣏⢿⣿⣿⣿        - Compute and Signal Processing Systems
+⣿⣿⣼⣿⣿⣿⡃⣼⣿⣿⣿⣿⣿⣿⣇⠸⣿⣿⣷⡉⡻⣿⣷⣝⢿⣿        - Hardware Architecture and Microarchitecture
+⣿⣿⡻⣿⣿⡯⢹⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⣿⣿⣇⣿⣯⡛⡥⣶⡎        - Robotics and Computer Vision
+⣿⣿⣿⣾⠉⡳⡌⠿⢿⣿⣿⣟⣻⣿⡿⣸⣿⣿⣿⠿⣎⣿⣷⣦⣭⣾
+⣿⣿⣿⣧⡚⡳⢤⣞⣻⣿⡿⣛⢯⣭⣃⠩⣭⣤⣆⣾⣿⣿⣿⣿⣿⣿      Feel free to check out my projects below, 
+⣿⣿⣿⣏⠔⢛⣂⣠⣽⢋⣾⣿⣧⣻⣷⣭⣳⣭⡟⣿⣿⣿⣿⣿⣿⣿          and if you’re interested in collaborating or discussing hardware, AI, or robotics, 
+⣿⣿⣿⣿⣿⣎⢛⡿⢟⣼⣿⣿⣿⣷⡽⣿⡿⠿⢧⣿⣿⣿⣿⣿⣿⣿          let’s connect!
+⣿⣿⣿⣿⣿⣿⡼⣿⢸⣿⣿⣿⣿⣿⣿⣇⢶⡏⢿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⡿⠟⣋⢴⣶⡟⣿⣿⣿⣿⣿⣿⣿⠨⠁⠐⠌⢻⣿⣿⣿⣿⣿
+⣿⣿⣿⣔⣚⣿⣿⣯⣵⣿⣿⣿⣿⣿⣿⣿⣷⣥⣄⣠⣼⣿⣿⣿⣿⣿
 
-- Analog and Digital Circuit Design
-- RTL Verification, Debugging, and Validation
-- Compute and Signal Processing Systems
-- Hardware Architecture and Microarchitecture
-- Robotics and Computer Vision
-  
-Feel free to check out my projects below, 
-  and if you’re interested in collaborating or discussing hardware, AI, or robotics, 
-  let’s connect!
 </pre>
 <!--<pre>
   
