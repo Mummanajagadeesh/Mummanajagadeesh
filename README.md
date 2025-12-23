@@ -1,4 +1,4 @@
-# हॅलो वर्ल्ड! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-23 16:33:36 IST -->
+# ନମସ୍କାର ବିଶ୍ୱ! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-23 16:30:56 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -2337,7 +2337,7 @@ A feedback loop stores misclassified samples for incremental dataset improvement
   </a>
 
   <a href="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=default&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&Cache-Control=no-cache&cache_seconds=1#gh-light-mode-only">
-    <img width="32%" src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=default&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&Cache-Control=no-cache&cache_seconds=1#gh-light-mode-only" alt="Top Languages (light)">
+    <img width="32%" src="assets/top-langs-light.svg" alt="Top Languages (light)">
   </a>
 
 </p>
@@ -2355,7 +2355,7 @@ A feedback loop stores misclassified samples for incremental dataset improvement
   </a>
 
   <a href="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=dark&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&Cache-Control=no-cache&cache_seconds=1#gh-dark-mode-only">
-    <img width="32%" src="https://github-readme-stats-mummanajagadeesh.vercel.app/api/top-langs/?username=Mummanajagadeesh&theme=dark&show_icons=true&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c%23,tex,css,asp.net,scss,javascript,prolog,powershell,typescript,m4,roff,batchfile,gap,markdown,makefile&langs_count=10&include_all_commits=true&Cache-Control=no-cache&cache_seconds=1#gh-dark-mode-only" alt="Top Languages (dark)">
+    <img width="32%" src="assets/top-langs.svg" alt="Top Languages (dark)">
   </a>
 
 </p>
