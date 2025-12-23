@@ -2270,8 +2270,8 @@ A feedback loop stores misclassified samples for incremental dataset improvement
   <!-- SPICE / Analog Simulation -->
   <img src="https://skillicons.dev/icons?i=matlab" alt="MATLAB" width="48" height="48"/>
   <img src="assets/tools/ltspice.png" alt="LTSpice" width="48" height="48"/>
-  <img src="assets/tools/ngspice.png" alt="NGSpice" width="48" height="48"/>
   <img src="assets/tools/qucs.png" alt="QUCS" width="48" height="48"/>
+  <img src="assets/tools/ngspice.png" alt="NGSpice" width="48" height="48"/>
   <img src="assets/tools/proteus.png" alt="Proteus" width="48" height="48"/>
   <img src="assets/tools/simulink.png" alt="Simulink" width="48" height="48"/>
   <img src="assets/tools/klayout.png" alt="KLayout" width="48" height="48"/>
