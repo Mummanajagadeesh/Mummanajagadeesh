@@ -2248,7 +2248,6 @@ A feedback loop stores misclassified samples for incremental dataset improvement
 
   <br>
 
-<p align="center">
   <!-- Programming Languages -->
   <img src="https://skillicons.dev/icons?i=python" alt="Python" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=c" alt="C" width="48" height="48"/>
@@ -2312,7 +2311,6 @@ A feedback loop stores misclassified samples for incremental dataset improvement
   <img src="https://skillicons.dev/icons?i=powershell" alt="PowerShell" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=blender" alt="Blender" width="48" height="48"/>
   <img src="https://skillicons.dev/icons?i=unity" alt="Unity" width="48" height="48"/>
-</p>
 
 </details>
 
