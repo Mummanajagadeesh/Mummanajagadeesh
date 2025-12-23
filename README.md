@@ -212,9 +212,9 @@ Beyond that, I take part in comps, open-source projects, and hw/sw co-design cha
 MY Key Interests:
 
 - Analog and Digital Circuit Design
+- RTL Verification, Debugging, and Validation
 - Compute and Signal Processing Systems
 - Hardware Architecture and Microarchitecture
-- RTL Verification, Debugging, and Validation
 - Robotics and Computer Vision
   
 Feel free to check out my projects below, and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
