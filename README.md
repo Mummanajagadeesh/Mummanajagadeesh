@@ -1602,7 +1602,7 @@ Two complete controller variants were implemented-one minimal, one extended with
 
 
 <details>
-  <summary><b>Robotics and Applied ML</b></summary>
+  <summary><b>Robotics and Applied ML (Secondary)</b></summary>
 
 
   <br>
