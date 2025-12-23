@@ -2253,7 +2253,7 @@ A feedback loop stores misclassified samples for incremental dataset improvement
   <img src="https://skillicons.dev/icons?i=java" alt="Java" width="48" height="48"/>
 
   <!-- Digital Design / HDL / EDA -->
-  <img src="assets/tools/verilog.png" alt="Verilog" width="48" height="48"/>
+  <img src="assets/tools/verilog.png" alt="Verilog/SystemVerilog" width="48" height="48"/>
   <img src="assets/tools/icarus.png" alt="Icarus Verilog" width="48" height="48"/>
   <img src="assets/tools/vivado.png" alt="Vivado" width="48" height="48"/>
   <img src="assets/tools/yosys.png" alt="Yosys" width="48" height="48"/>
