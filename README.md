@@ -147,15 +147,15 @@
 <pre><strong>$ less ~/workspace/profile/config.yaml</strong>
 
   <strong>FOCUS:</strong>         "learning so slow my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a> can’t keep up"
-  <strong>KNOWS:</strong>          "anything bw sand nd the entity thinking back at us rn"
-  <strong>ASKME:</strong>          "stuff i know, or stuff i can google before u blink"
-  <strong>BUILDING:</strong>       "<em>hw accel arch for img classif<em>; it can sǝǝ john cena</em>"
-  <strong>CLUB:</strong>           "feeding robots my gpa @<a href="https://rignitc.com"><strong>rignitc</strong></a>"
-  <strong>COMPS:</strong>          ["e-yantra MB", "openpower hw"]
-  <strong>MAJOR:</strong>          "<em>electronics nd communication engg</em>"
-  <strong>COLLEGE:</strong>        "<em>national institute of technology calicut</em>"
-  <strong>CONTACT:</strong>        "<a href="https://mummanajagadeesh.github.io/contact"><strong>carrier pigeons :p</strong></a>"
-  <strong>HOBBIES:</strong>        ["speedcubing", "movies", "4k day dreaming"]
+  <strong>KNOWS:</strong>         "anything bw sand nd the entity thinking back at us rn"
+  <strong>ASKME:</strong>         "stuff i know, or stuff i can google before u blink"
+  <strong>BUILDING:</strong>      "<em>hw accel arch for img classif<em>; it can sǝǝ john cena</em>"
+  <strong>CLUB:</strong>          "feeding robots my gpa @<a href="https://rignitc.com"><strong>rignitc</strong></a>"
+  <strong>COMPS:</strong>         ["e-yantra MB", "openpower hw"]
+  <strong>MAJOR:</strong>         "<em>electronics nd communication engg</em>"
+  <strong>COLLEGE:</strong>       "<em>national institute of technology calicut</em>"
+  <strong>CONTACT:</strong>       "<a href="https://mummanajagadeesh.github.io/contact"><strong>carrier pigeons :p</strong></a>"
+  <strong>HOBBIES:</strong>       ["speedcubing", "movies", "4k day dreaming"]
   <strong>FUNFACT:</strong>       "i'm discount batman"
   <strong>SECRET:</strong>        "i pay the moon to follow me around"
   <strong>WHATIF:</strong>        "if i eat myself, do I become twice as big or disappear?"
