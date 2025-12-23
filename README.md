@@ -1,4 +1,4 @@
-# 안녕하세요, 세계! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-23 22:29:28 IST -->
+# হ্যালো বিশ্ব! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-23 22:26:30 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -144,21 +144,21 @@
   <tr>
     <td>
 
-<pre>$ less ~/workspace/profile/config.yaml
+<pre><strong>$ less ~/workspace/profile/config.yaml</strong>
 
-  FOCUS:         "learning so slow my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a> can’t keep up"
-  KNOWS:         "anything bw sand nd the entity thinking back at us rn"
-  ASKME:         "stuff i know, or stuff i can google before u blink"
-  BUILDING:      "<em>hw accel arch for img classif<em>; it can sǝǝ john cena"
-  CLUB:          "feeding robots my gpa @<a href="https://rignitc.com"><strong>rignitc</strong></a>"
-  COMPS:         ["e-yantra MB", "openpower hw"]
-  MAJOR:         "<em>electronics nd communication engg</em>"
-  COLLEGE:       "<em>national institute of technology calicut</em>"
-  CONTACT:       "<a href="https://mummanajagadeesh.github.io/contact"><strong>carrier pigeons :p</strong></a>"
-  HOBBIES:       ["speedcubing", "movies", "4k day dreaming"]
-  FUNFACT:       "i'm discount batman"
-  SECRET:        "i pay the moon to follow me around"
-  WHATIF:        "if i eat myself, do I become twice as big or disappear?"
+  <strong>FOCUS:</strong>         "learning so slow my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a> can’t keep up"
+  <strong>KNOWS:</strong>          "anything bw sand nd the entity thinking back at us rn"
+  <strong>ASKME:</strong>          "stuff i know, or stuff i can google before u blink"
+  <strong>BUILDING:</strong>       "<em>hw accel arch for img classif<em>; it can sǝǝ john cena"
+  <strong>CLUB:</strong>           "feeding robots my gpa @<a href="https://rignitc.com"><strong>rignitc</strong></a>"
+  <strong>COMPS:</strong>          ["e-yantra MB", "openpower hw"]
+  <strong>MAJOR:</strong>          "<em>electronics nd communication engg</em>"
+  <strong>COLLEGE:</strong>        "<em>national institute of technology calicut</em>"
+  <strong>CONTACT:</strong>        "<a href="https://mummanajagadeesh.github.io/contact"><strong>carrier pigeons :p</strong></a>"
+  <strong>HOBBIES:</strong>        ["speedcubing", "movies", "4k day dreaming"]
+  <strong>FUNFACT:</strong>       "i'm discount batman"
+  <strong>SECRET:</strong>        "i pay the moon to follow me around"
+  <strong>WHATIF:</strong>        "if i eat myself, do I become twice as big or disappear?"
 </pre>
 
   </td>
