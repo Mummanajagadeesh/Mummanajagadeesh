@@ -219,9 +219,7 @@ MY Key Interests:
 Feel free to check out my projects below, 
   and if you’re interested in collaborating or discussing hardware, AI, or robotics, 
   let’s connect!
-
 </pre>
-
 <!--<pre>
   
 Hey, I'm Jagadeesh - I work across VLSI design, robotics, and AI hardware.
@@ -244,8 +242,6 @@ Feel free to check out my projects [here](https://mummanajagadeesh.github.io/pro
 and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
   
 </pre>-->
-
-<br>
 
 # `$ ls ~/projects --filter=feat` | [`All Projects`](https://mummanajagadeesh.github.io/projects/)
 
