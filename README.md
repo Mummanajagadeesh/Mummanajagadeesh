@@ -5,10 +5,10 @@
 <p align="left">
   <!-- Portfolio -->
   <a href="https://mummanajagadeesh.github.io/#gh-light-mode-only">
-    <img src="assets/bwicons/bsite.svg#gh-light-mode-only" alt="Portfolio" width="30" height="30"/>
+    <img src="assets/bwicons/bsite.svg#gh-light-mode-only" alt="Portfolio-Site" width="30" height="30"/>
   </a>
   <a href="https://mummanajagadeesh.github.io/#gh-dark-mode-only">
-    <img src="assets/bwicons/site.svg#gh-dark-mode-only" alt="Portfolio" width="30" height="30"/>
+    <img src="assets/bwicons/site.svg#gh-dark-mode-only" alt="Portfolio-Site" width="30" height="30"/>
   </a>
 
   <!-- Blog -->
@@ -90,26 +90,26 @@
 
   <!-- Old Site -->
   <a href="https://jagadeesh-mummana.vercel.app/#gh-light-mode-only">
-    <img src="assets/bwicons/bsite.svg#gh-light-mode-only" alt="Old Site" width="30" height="30"/>
+    <img src="assets/bwicons/bsite.svg#gh-light-mode-only" alt="Old-Site" width="30" height="30"/>
   </a>
   <a href="https://jagadeesh-mummana.vercel.app/#gh-dark-mode-only">
-    <img src="assets/bwicons/site.svg#gh-dark-mode-only" alt="Old Site" width="30" height="30"/>
+    <img src="assets/bwicons/site.svg#gh-dark-mode-only" alt="Old-Site" width="30" height="30"/>
   </a>
 
   <!-- YouTube -->
   <a href="https://www.youtube.com/@M_J_9_7#gh-light-mode-only">
-    <img src="assets/bwicons/byoutube.svg#gh-light-mode-only" alt="YouTube" width="30" height="30"/>
+    <img src="assets/bwicons/byoutube.svg#gh-light-mode-only" alt="YouTube-Channel" width="30" height="30"/>
   </a>
   <a href="https://www.youtube.com/@M_J_9_7#gh-dark-mode-only">
-    <img src="assets/bwicons/youtube.svg#gh-dark-mode-only" alt="YouTube" width="30" height="30"/>
+    <img src="assets/bwicons/youtube.svg#gh-dark-mode-only" alt="YouTube-Channel" width="30" height="30"/>
   </a>
 
   <!-- Cube -->
   <a href="https://events.cubelelo.com/profile/24CLMUM001#gh-light-mode-only">
-    <img src="assets/bwicons/cube.svg#gh-light-mode-only" alt="Cube" width="30" height="30"/>
+    <img src="assets/bwicons/cube.svg#gh-light-mode-only" alt="Cubelelo-Speedcubing-Profile" width="30" height="30"/>
   </a>
   <a href="https://events.cubelelo.com/profile/24CLMUM001#gh-dark-mode-only">
-    <img src="assets/bwicons/cube.svg#gh-dark-mode-only" alt="Cube" width="30" height="30"/>
+    <img src="assets/bwicons/cube.svg#gh-dark-mode-only" alt="Cubelelo-Speedcubing-Profile" width="30" height="30"/>
   </a>
 
   <!-- Duolingo -->
