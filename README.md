@@ -212,8 +212,8 @@
 ⣿⣿⣿⢰⣤⡉⣉⠾⠿⠿⠿⠿⠿⣿⣿⣿⣿⣿⠟⣿⣿⣿⣿⠏⣾⣿     - Analog and Digital Circuit Design
 ⣿⣿⣿⢸⣿⣿⣩⠺⣶⣝⣛⣛⣛⣯⢤⣶⡰⢖⣴⣝⣛⢛⣫⣾⣿⣿     - RTL Verification, Debugging, and Validation
 ⣿⣿⢧⣿⣿⣿⣟⣀⣿⣿⣿⣿⣿⣿⡇⢿⣿⣯⡻⣿⣿⣏⢿⣿⣿⣿     - Compute and Signal Processing Systems
-⣿⣿⣼⣿⣿⣿⡃⣼⣿⣿⣿⣿⣿⣿⣇⠸⣿⣿⣷⡉⡻⣿⣷⣝⢿⣿     - Hardware Architecture and Microarchitecture
-⣿⣿⡻⣿⣿⡯⢹⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⣿⣿⣇⣿⣯⡛⡥⣶⡎     - Amplifiers, Oscillators, and Control
+⣿⣿⣼⣿⣿⣿⡃⣼⣿⣿⣿⣿⣿⣿⣇⠸⣿⣿⣷⡉⡻⣿⣷⣝⢿⣿     - Amplifiers, Oscillators, and Control
+⣿⣿⡻⣿⣿⡯⢹⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⣿⣿⣇⣿⣯⡛⡥⣶⡎     - Hardware Architecture and Microarchitecture
 ⣿⣿⣿⣾⠉⡳⡌⠿⢿⣿⣿⣟⣻⣿⡿⣸⣿⣿⣿⠿⣎⣿⣷⣦⣭⣾     - Robotics and Computer Vision
 ⣿⣿⣿⣧⡚⡳⢤⣞⣻⣿⡿⣛⢯⣭⣃⠩⣭⣤⣆⣾⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣏⠔⢛⣂⣠⣽⢋⣾⣿⣧⣻⣷⣭⣳⣭⡟⣿⣿⣿⣿⣿⣿⣿  Feel free to check out my projects below, 
