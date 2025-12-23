@@ -200,7 +200,12 @@
 
 # `$ cat ~/about_me.txt`
 
-Hey, I'm Jagadeesh - I work across VLSI design, robotics, and AI hardware. My work spans digital/analog design, circuit-level implementation, and low-level arch & optimization. Currently learning open-source IC design. I also work with embedded systems, MCUs, and SBCs, applying them in robotics and prototyping. Beyond that, I take part in comps, open-source projects, and hardware/software co-design challenges.
+Hey, I'm Jagadeesh<br>
+
+I work mainly on digital/analog hw design, across RTL, ckt-lvl design, & basic hw arch<br>
+Currently learning open-source IC design flows & using them to build/test small hw blocks<br>
+I also work with MCU/SBCs in basic system design, for robotics and prototyping<br>
+Beyond that, I take part in comps, open-source projects, and hw/sw co-design challenges
 
 <!--, with a focus on PPA trade-offs-->
 
@@ -210,7 +215,7 @@ MY Key Interests:
 - Compute and Signal Processing Systems
 - Hardware Architecture and Microarchitecture
 - RTL Verification, Debugging, and Validation
-- Robotics and Applied ML
+- Robotics and Computer Vision
   
 Feel free to check out my projects below, and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
 
@@ -1596,7 +1601,7 @@ Two complete controller variants were implemented-one minimal, one extended with
 
 
 <details>
-  <summary><b>Robotics and ML</b></summary>
+  <summary><b>Robotics and Applied ML</b></summary>
 
 
   <br>
