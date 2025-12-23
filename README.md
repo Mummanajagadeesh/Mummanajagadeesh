@@ -2241,9 +2241,12 @@ A feedback loop stores misclassified samples for incremental dataset improvement
 
 </details>
 
+# `$ env --familiar | grep TOOLS`
 
 <details>
-  <summary><h1><code>$ env --familiar | grep TOOLS</code></h1></summary>
+  <summary>Tools I’m familiar with and actively use</summary>
+
+  <br>
 
 <p align="center">
   <!-- Programming Languages -->
