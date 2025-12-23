@@ -202,10 +202,10 @@
 
 <pre>
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿ Hey, I'm Jagadeesh
-⣿⠩⡆⠐⣹⣿⣿⣿⣿⠋⠀⢀⡀⠀⠀⠀⠀⠀⠉⠙⢿⣿⣿⣿⣿⣿⢸   I work mainly on digital/analog hw design, across RTL, ckt-lvl design & basic hw arch
-⣿⣶⡔⠷⠝⣿⣿⣛⠁⠭⢭⡻⣿⣆⢀⠟⠁⠀⠀⠀⠀⢻⣿⣿⣿⣿    Learning open-source IC design flows & using them to build/test small hw blocks
-⣿⠟⣣⣶⣿⣿⣿⠁⣴⣶⡄⠹⣽⣿⠋⠠⢔⣾⡇⠀⠀⠀⢿⣿⣿⣿    I also work with MCU/SBCs in basic system design, for robotics & prototyping
-⡟⣾⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⠁⣴⣦⡀⢁⣿⣶⣤⠀⢸⣿⣿⣿    Beyond that, I take part in comps, open-source projects, & hw/sw co-design challenges
+⣿⠩⡆⠐⣹⣿⣿⣿⣿⠋⠀⢀⡀⠀⠀⠀⠀⠀⠉⠙⢿⣿⣿⣿⣿⣿⢸  ├─I work mainly on digital/analog hw design, across RTL, ckt-lvl design & basic hw arch
+⣿⣶⡔⠷⠝⣿⣿⣛⠁⠭⢭⡻⣿⣆⢀⠟⠁⠀⠀⠀⠀⢻⣿⣿⣿⣿   ├─Learning open-source IC design flows & using them to build/test small hw blocks
+⣿⠟⣣⣶⣿⣿⣿⠁⣴⣶⡄⠹⣽⣿⠋⠠⢔⣾⡇⠀⠀⠀⢿⣿⣿⣿   ├─I also work with MCU/SBCs in basic system design, for robotics & prototyping
+⡟⣾⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⠁⣴⣦⡀⢁⣿⣶⣤⠀⢸⣿⣿⣿   └─Beyond that, I take part in comps, open-source projects, & hw/sw co-design challenges
 ⡇⣿⣿⣿⡿⣛⣛⠿⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⣿⡟⠀⢸⣿⣿⣿
 ⣿⢹⣿⢧⣾⣿⣿⣿⡜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⢀⡸⢿⣿⣿  MY Key Interests:
 ⣿⣷⣝⠞⢿⣿⣿⣿⢣⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣧⢿⣿
@@ -213,12 +213,12 @@
 ⣿⣿⣿⢸⣿⣿⣩⠺⣶⣝⣛⣛⣛⣯⢤⣶⡰⢖⣴⣝⣛⢛⣫⣾⣿⣿     - RTL Verification, Debugging, and Validation
 ⣿⣿⢧⣿⣿⣿⣟⣀⣿⣿⣿⣿⣿⣿⡇⢿⣿⣯⡻⣿⣿⣏⢿⣿⣿⣿     - Compute and Signal Processing Systems
 ⣿⣿⣼⣿⣿⣿⡃⣼⣿⣿⣿⣿⣿⣿⣇⠸⣿⣿⣷⡉⡻⣿⣷⣝⢿⣿     - Hardware Architecture and Microarchitecture
-⣿⣿⡻⣿⣿⡯⢹⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⣿⣿⣇⣿⣯⡛⡥⣶⡎     - Robotics and Computer Vision
-⣿⣿⣿⣾⠉⡳⡌⠿⢿⣿⣿⣟⣻⣿⡿⣸⣿⣿⣿⠿⣎⣿⣷⣦⣭⣾
-⣿⣿⣿⣧⡚⡳⢤⣞⣻⣿⡿⣛⢯⣭⣃⠩⣭⣤⣆⣾⣿⣿⣿⣿⣿⣿  Feel free to check out my projects below, 
-⣿⣿⣿⣏⠔⢛⣂⣠⣽⢋⣾⣿⣧⣻⣷⣭⣳⣭⡟⣿⣿⣿⣿⣿⣿⣿  ├─and if you’re interested in collaborating or discussing hardware, AI, or robotics, 
-⣿⣿⣿⣿⣿⣎⢛⡿⢟⣼⣿⣿⣿⣷⡽⣿⡿⠿⢧⣿⣿⣿⣿⣿⣿⣿  └─let’s connect!
-⣿⣿⣿⣿⣿⣿⡼⣿⢸⣿⣿⣿⣿⣿⣿⣇⢶⡏⢿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⡻⣿⣿⡯⢹⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⣿⣿⣇⣿⣯⡛⡥⣶⡎     - Amplifiers, Oscillators, and Control
+⣿⣿⣿⣾⠉⡳⡌⠿⢿⣿⣿⣟⣻⣿⡿⣸⣿⣿⣿⠿⣎⣿⣷⣦⣭⣾     - Robotics and Computer Vision
+⣿⣿⣿⣧⡚⡳⢤⣞⣻⣿⡿⣛⢯⣭⣃⠩⣭⣤⣆⣾⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣏⠔⢛⣂⣠⣽⢋⣾⣿⣧⣻⣷⣭⣳⣭⡟⣿⣿⣿⣿⣿⣿⣿  Feel free to check out my projects below, 
+⣿⣿⣿⣿⣿⣎⢛⡿⢟⣼⣿⣿⣿⣷⡽⣿⡿⠿⢧⣿⣿⣿⣿⣿⣿⣿  ├─and if you’re interested in collaborating or discussing hardware, AI, or robotics, 
+⣿⣿⣿⣿⣿⣿⡼⣿⢸⣿⣿⣿⣿⣿⣿⣇⢶⡏⢿⣿⣿⣿⣿⣿⣿⣿  └─let’s connect!
 ⣿⣿⣿⡿⠟⣋⢴⣶⡟⣿⣿⣿⣿⣿⣿⣿⠨⠁⠐⠌⢻⣿⣿⣿⣿⣿
 ⣿⣿⣿⣔⣚⣿⣿⣯⣵⣿⣿⣿⣿⣿⣿⣿⣷⣥⣄⣠⣼⣿⣿⣿⣿⣿
 </pre>
