@@ -202,7 +202,7 @@
 
 <table width="100%">
 <tr>
-<td width="10%" valign="top">
+<td>
 
 <pre>
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
@@ -228,7 +228,7 @@
 </pre>
 
 </td>
-<td width="90%" valign="top">
+<td>
 
 <pre>
 Hey, I'm Jagadeesh
