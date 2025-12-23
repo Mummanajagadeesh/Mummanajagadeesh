@@ -1,4 +1,4 @@
-# გამარჯობა მსოფლიო! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-24 05:11:43 IST -->
+# ሰላም ዓለም! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-24 04:59:45 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -921,6 +921,43 @@ Includes automatic Verilog netlist generation, random testbench creation, serial
 
 </details>
 
+
+<details>
+<summary>
+  <strong>
+    Predictive ML-EDA Framework for Early Routability & Timing Sign-off |
+    <a href="https://github.com/Mummanajagadeesh/ml-eda-tools" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+WORK IN PROGRESS 
+
+A predictive EDA tool that integrates OpenDB to parse physical netlists, mapping Logic Depth and Pin Density onto a spatial grid to forecast post-route congestion. By utilizing Graph Attention Networks (GAT), it identifies routing hotspots and DRC violations immediately after placement, slashing the iteration loop by bypassing long-duration routing runs.
+
+<br>
+
+<details>
+  <summary><b>Repositories</b></summary>
+  <br>
+
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/Mummanajagadeesh/ml-eda-toolsgh-light-mode-only">
+          <img src="./repos/ml-eda-tools-light.svg#gh-light-mode-only" alt="Collection of ML based EDA tools (light)" />
+        </a>
+        <a href="https://github.com/Mummanajagadeesh/ml-eda-tools#gh-dark-mode-only">
+          <img src="./repos/ml-eda-tools-dark.svg#gh-dark-mode-only" alt="Collection of ML based EDA tools (dark)" />
+        </a>
+      </td>
+    </tr>
+  </table>
+
+</details>
+
+</details>
 
 
 <details>
