@@ -200,9 +200,9 @@
 
 # `$ cat ~/about_me.txt`
 
-<table>
+<table width="100%">
 <tr>
-<td valign="top">
+<td width="10%" valign="top">
 
 <pre>
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
@@ -228,7 +228,7 @@
 </pre>
 
 </td>
-<td valign="top">
+<td width="90%" valign="top">
 
 <pre>
 Hey, I'm Jagadeesh
@@ -247,13 +247,15 @@ MY Key Interests:
  - Robotics and Computer Vision
 
 Feel free to check out my projects below, 
-├─and if you’re interested in collaborating or discussing hardware, AI, or robotics, 
+├─and if you’re interested in collaborating or discussing hw/ML/robotics, 
 └─let’s connect!
 </pre>
 
 </td>
 </tr>
 </table>
+
+
 
 <!--<pre>
   
