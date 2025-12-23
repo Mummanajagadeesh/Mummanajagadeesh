@@ -18,11 +18,7 @@
     <tspan x="16" dy="18">custom repo cards and stats for private</tspan>
     <tspan x="16" dy="18">repos, including a dynamic greeting line</tspan>
   </text>
-  <circle class="lang-dot" cx="16" cy="119" fill="#083fa1" />
-  <text x="26" y="123" class="meta">Markdown</text>
-  <circle class="lang-dot" cx="126" cy="119" fill="#cb171e" />
-  <text x="136" y="123" class="meta">YAML</text>
-  <circle class="lang-dot" cx="236" cy="119" fill="#3572A5" />
-  <text x="246" y="123" class="meta">Python</text>
+  <circle class="lang-dot" cx="16" cy="119" fill="#3572A5" />
+  <text x="26" y="123" class="meta">Python</text>
   <text x="484" y="146" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>
