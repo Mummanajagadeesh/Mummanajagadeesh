@@ -233,9 +233,9 @@
 <pre>
 Hey, I'm Jagadeesh
 
-I work mainly on digital/analog hw design, across RTL, ckt-lvl & basic arch
-Currently learning open-source IC flows, building/testing small hw blocks
-I also work with MCU/SBCs in basic system design, for robotics & prototyping
+I work mainly on digital/analog hw design, 
+Currently learning open-source IC flows, 
+I also work with MCU/SBCs in basic system design, 
 Active in comps, open-source, hw/sw co-design challenges
 
 MY Key Interests:     
@@ -247,7 +247,7 @@ MY Key Interests:
  - Robotics and Computer Vision
 
 Feel free to check out my projects below, 
-├─and if you’re interested in collaborating or discussing hw/ML/robotics, 
+├─and if you’re interested in collaborating
 └─let’s connect!
 </pre>
 
