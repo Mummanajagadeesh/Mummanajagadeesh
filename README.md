@@ -200,28 +200,61 @@
 
 # `$ cat ~/about_me.txt`
 
+<table>
+<tr>
+<td valign="top">
+
 <pre>
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
-⣿⠩⡆⠐⣹⣿⣿⣿⣿⠋⠀⢀⡀⠀⠀⠀⠀⠀⠉⠙⢿⣿⣿⣿⣿⣿   Hey, I'm Jagadeesh
+⣿⠩⡆⠐⣹⣿⣿⣿⣿⠋⠀⢀⡀⠀⠀⠀⠀⠀⠉⠙⢿⣿⣿⣿⣿⣿
 ⣿⣶⡔⠷⠝⣿⣿⣛⠁⠭⢭⡻⣿⣆⢀⠟⠁⠀⠀⠀⠀⢻⣿⣿⣿⣿
-⣿⠟⣣⣶⣿⣿⣿⠁⣴⣶⡄⠹⣽⣿⠋⠠⢔⣾⡇⠀⠀⠀⢿⣿⣿⣿    I work mainly on digital/analog hw design, across RTL, ckt-lvl & basic hw arch
-⡟⣾⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⠁⣴⣦⡀⢁⣿⣶⣤⠀⢸⣿⣿⣿    Currently learning open-source IC flows, building/testing small hw blocks
-⡇⣿⣿⣿⡿⣛⣛⠿⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⣿⡟⠀⢸⣿⣿⣿    I also work with MCU/SBCs in basic system design, for robotics & prototyping
-⣿⢹⣿⢧⣾⣿⣿⣿⡜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⢀⡸⢿⣿⣿    Active in comps, open-source, hw/sw co-design challenges
+⣿⠟⣣⣶⣿⣿⣿⠁⣴⣶⡄⠹⣽⣿⠋⠠⢔⣾⡇⠀⠀⠀⢿⣿⣿⣿
+⡟⣾⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⠁⣴⣦⡀⢁⣿⣶⣤⠀⢸⣿⣿⣿
+⡇⣿⣿⣿⡿⣛⣛⠿⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⣿⡟⠀⢸⣿⣿⣿
+⣿⢹⣿⢧⣾⣿⣿⣿⡜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⢀⡸⢿⣿⣿
 ⣿⣷⣝⠞⢿⣿⣿⣿⢣⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣧⢿⣿
-⣿⣿⣿⢰⣤⡉⣉⠾⠿⠿⠿⠿⠿⣿⣿⣿⣿⣿⠟⣿⣿⣿⣿⠏⣾⣿  MY Key Interests:     
-⣿⣿⣿⢸⣿⣿⣩⠺⣶⣝⣛⣛⣛⣯⢤⣶⡰⢖⣴⣝⣛⢛⣫⣾⣿⣿     - Analog and Digital Circuit Design
-⣿⣿⢧⣿⣿⣿⣟⣀⣿⣿⣿⣿⣿⣿⡇⢿⣿⣯⡻⣿⣿⣏⢿⣿⣿⣿     - RTL Verification, Debugging, and Validation
-⣿⣿⣼⣿⣿⣿⡃⣼⣿⣿⣿⣿⣿⣿⣇⠸⣿⣿⣷⡉⡻⣿⣷⣝⢿⣿     - Compute and Signal Processing Systems
-⣿⣿⡻⣿⣿⡯⢹⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⣿⣿⣇⣿⣯⡛⡥⣶⡎     - Amplifiers, Oscillators, and Control
-⣿⣿⣿⣾⠉⡳⡌⠿⢿⣿⣿⣟⣻⣿⡿⣸⣿⣿⣿⠿⣎⣿⣷⣦⣭⣾     - Hardware Architecture and Microarchitecture
-⣿⣿⣿⣧⡚⡳⢤⣞⣻⣿⡿⣛⢯⣭⣃⠩⣭⣤⣆⣾⣿⣿⣿⣿⣿⣿     - Robotics and Computer Vision
+⣿⣿⣿⢰⣤⡉⣉⠾⠿⠿⠿⠿⠿⣿⣿⣿⣿⣿⠟⣿⣿⣿⣿⠏⣾⣿
+⣿⣿⣿⢸⣿⣿⣩⠺⣶⣝⣛⣛⣛⣯⢤⣶⡰⢖⣴⣝⣛⢛⣫⣾⣿⣿
+⣿⣿⢧⣿⣿⣿⣟⣀⣿⣿⣿⣿⣿⣿⡇⢿⣿⣯⡻⣿⣿⣏⢿⣿⣿⣿
+⣿⣿⣼⣿⣿⣿⡃⣼⣿⣿⣿⣿⣿⣿⣇⠸⣿⣿⣷⡉⡻⣿⣷⣝⢿⣿
+⣿⣿⡻⣿⣿⡯⢹⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⣿⣿⣇⣿⣯⡛⡥⣶⡎
+⣿⣿⣿⣾⠉⡳⡌⠿⢿⣿⣿⣟⣻⣿⡿⣸⣿⣿⣿⠿⣎⣿⣷⣦⣭⣾
+⣿⣿⣿⣧⡚⡳⢤⣞⣻⣿⡿⣛⢯⣭⣃⠩⣭⣤⣆⣾⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣏⠔⢛⣂⣠⣽⢋⣾⣿⣧⣻⣷⣭⣳⣭⡟⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣎⢛⡿⢟⣼⣿⣿⣿⣷⡽⣿⡿⠿⢧⣿⣿⣿⣿⣿⣿⣿  Feel free to check out my projects below, 
-⣿⣿⣿⣿⣿⣿⡼⣿⢸⣿⣿⣿⣿⣿⣿⣇⢶⡏⢿⣿⣿⣿⣿⣿⣿⣿  ├─and if you’re interested in collaborating or discussing hardware, AI, or robotics, 
-⣿⣿⣿⡿⠟⣋⢴⣶⡟⣿⣿⣿⣿⣿⣿⣿⠨⠁⠐⠌⢻⣿⣿⣿⣿⣿  └─let’s connect!
+⣿⣿⣿⣿⣿⣎⢛⡿⢟⣼⣿⣿⣿⣷⡽⣿⡿⠿⢧⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⡼⣿⢸⣿⣿⣿⣿⣿⣿⣇⢶⡏⢿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⡿⠟⣋⢴⣶⡟⣿⣿⣿⣿⣿⣿⣿⠨⠁⠐⠌⢻⣿⣿⣿⣿⣿
 ⣿⣿⣿⣔⣚⣿⣿⣯⣵⣿⣿⣿⣿⣿⣿⣿⣷⣥⣄⣠⣼⣿⣿⣿⣿⣿
 </pre>
+
+</td>
+<td valign="top">
+
+<pre>
+Hey, I'm Jagadeesh
+
+I work mainly on digital/analog hw design, across RTL, ckt-lvl & basic hw arch
+Currently learning open-source IC flows, building/testing small hw blocks
+I also work with MCU/SBCs in basic system design, for robotics & prototyping
+Active in comps, open-source, hw/sw co-design challenges
+
+MY Key Interests:     
+ - Analog and Digital Circuit Design
+ - RTL Verification, Debugging, and Validation
+ - Compute and Signal Processing Systems
+ - Amplifiers, Oscillators, and Control
+ - Hardware Architecture and Microarchitecture
+ - Robotics and Computer Vision
+
+Feel free to check out my projects below, 
+├─and if you’re interested in collaborating or discussing hardware, AI, or robotics, 
+└─let’s connect!
+</pre>
+
+</td>
+</tr>
+</table>
+
 <!--<pre>
   
 Hey, I'm Jagadeesh - I work across VLSI design, robotics, and AI hardware.
