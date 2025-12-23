@@ -1,0 +1,24 @@
+name: Full-year calendar
+
+on:
+  schedule:
+    # Runs every day at midnight UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate full-year isocalendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.isocalendar.fullyear.svg
+
+          token: ${{ secrets.PRIVATE_GH_TOKEN }}
+
+          base: ""
+
+          plugin_isocalendar: yes
+
+          plugin_isocalendar_duration: full-year
