@@ -2321,17 +2321,45 @@ A feedback loop stores misclassified samples for incremental dataset improvement
 ![Total Repos](https://github-readme-stats-mummanajagadeesh.vercel.app/api/total-repos?username=Mummanajagadeesh&theme=transparent&hide_border=true&count_private=true&bg_color=00000&text_color=ffffff&icon_color=ffffff)
 ![GitHub User's stars](https://img.shields.io/github/stars/Mummanajagadeesh?affiliations=OWNER&style=for-the-badge&color=yellow)
 
+<!-- LIGHT MODE -->
 <p align="center">
-  <!-- Light mode trophy -->
-  <a href="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-light-mode-only">
-    <img src="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-light-mode-only" alt="mummanajagadeesh trophies (light)" />
-  </a>
 
-  <!-- Dark mode trophy -->
-  <a href="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-dark-mode-only">
-    <img src="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-dark-mode-only" alt="mummanajagadeesh trophies (dark)" />
-  </a>
+  <a href="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=flat&no-frame=true&no-bg=true#gh-light-mode-only">
+    <img
+      src="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=flat&no-frame=true&no-bg=true#gh-light-mode-only"
+      width="57%"
+      alt="GitHub trophies (light)"
+    >
+  </a><!--
+  --><img
+    src="./metrics.plugin.isocalendar.fullyear.svg#gh-light-mode-only"
+    width="38%"
+    alt="Full-year contribution calendar (light)"
+  >
+
 </p>
+
+
+
+<!-- DARK MODE -->
+<p align="center">
+
+  <a href="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-dark-mode-only">
+    <img
+      src="https://github-profile-trophy-mummanajagadeesh.vercel.app/?username=mummanajagadeesh&hide_border=true&column=5&row=2&theme=dark&no-frame=true&no-bg=true#gh-dark-mode-only"
+      width="52%"
+      alt="GitHub trophies (dark)"
+    >
+  </a><!--
+  --><img
+    src="./metrics.plugin.isocalendar.fullyear.svg#gh-dark-mode-only"
+    width="40%"
+    alt="Full-year contribution calendar (dark)"
+  >
+
+</p>
+
+
 
 <!-- LIGHT MODE -->
 <p align="center">
