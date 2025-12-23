@@ -202,10 +202,10 @@
 
 <pre>
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿ Hey, I'm Jagadeesh
-⣿⠩⡆⠐⣹⣿⣿⣿⣿⠋⠀⢀⡀⠀⠀⠀⠀⠀⠉⠙⢿⣿⣿⣿⣿⣿⢸ ├─I work mainly on digital/analog hw design, across RTL, ckt-lvl design & basic hw arch
-⣿⣶⡔⠷⠝⣿⣿⣛⠁⠭⢭⡻⣿⣆⢀⠟⠁⠀⠀⠀⠀⢻⣿⣿⣿⣿  ├─Learning open-source IC design flows & using them to build/test small hw blocks
-⣿⠟⣣⣶⣿⣿⣿⠁⣴⣶⡄⠹⣽⣿⠋⠠⢔⣾⡇⠀⠀⠀⢿⣿⣿⣿  └─I also work with MCU/SBCs in basic system design, for robotics & prototyping
-⡟⣾⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⠁⣴⣦⡀⢁⣿⣶⣤⠀⢸⣿⣿⣿  Beyond that, I take part in comps, open-source projects, & hw/sw co-design challenges
+⣿⠩⡆⠐⣹⣿⣿⣿⣿⠋⠀⢀⡀⠀⠀⠀⠀⠀⠉⠙⢿⣿⣿⣿⣿⣿⢸   I work mainly on digital/analog hw design, across RTL, ckt-lvl design & basic hw arch
+⣿⣶⡔⠷⠝⣿⣿⣛⠁⠭⢭⡻⣿⣆⢀⠟⠁⠀⠀⠀⠀⢻⣿⣿⣿⣿    Learning open-source IC design flows & using them to build/test small hw blocks
+⣿⠟⣣⣶⣿⣿⣿⠁⣴⣶⡄⠹⣽⣿⠋⠠⢔⣾⡇⠀⠀⠀⢿⣿⣿⣿    I also work with MCU/SBCs in basic system design, for robotics & prototyping
+⡟⣾⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⠁⣴⣦⡀⢁⣿⣶⣤⠀⢸⣿⣿⣿    Beyond that, I take part in comps, open-source projects, & hw/sw co-design challenges
 ⡇⣿⣿⣿⡿⣛⣛⠿⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⣿⡟⠀⢸⣿⣿⣿
 ⣿⢹⣿⢧⣾⣿⣿⣿⡜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⢀⡸⢿⣿⣿  MY Key Interests:
 ⣿⣷⣝⠞⢿⣿⣿⣿⢣⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣧⢿⣿
