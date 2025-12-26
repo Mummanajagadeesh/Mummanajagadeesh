@@ -1,9 +1,8 @@
 name: Update Greeting
 
 on:
-  push:
   schedule:
-    - cron: "*/5 * * * *"  # Every 5 minutes
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -14,33 +13,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout profile repo
         uses: actions/checkout@v3
+
+      - name: Checkout private script repo
+        uses: actions/checkout@v3
+        with:
+          repository: Mummanajagadeesh/multi-ling
+          token: ${{ secrets.PRIVATE_GH_TOKEN }}
+          path: multi-ling
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
-
-      - name: Log current time
-        run: date
+          python-version: "3.x"
 
       - name: Run update_readme.py
-        run: python update_readme.py
+        run: python multi-ling/update_readme.py
 
       - name: Commit and push if README changed
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          
-          git add README.md
-          git diff --cached --quiet && echo "No changes to commit." && exit 0
-          git commit -m "Update greeting language [skip ci]"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Pull remote changes and rebase before pushing
-          git pull --rebase --autostash origin main
-          
+          git add README.md
+          git diff --cached --quiet && echo "No changes" && exit 0
+
+          git commit -m "chore: rotate greeting 🌍"
+          git pull --rebase
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
