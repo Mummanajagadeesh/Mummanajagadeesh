@@ -11,8 +11,8 @@
   <a href="https://github.com/Mummanajagadeesh/RIGNITCt" target="_blank">
     <text x="16" y="30" class="repo-name">RIGNITCt</text>
   </a>
-  <rect x="420" y="16" rx="4" ry="4" width="65" height="18" fill="#ddf4ff" stroke="#0969da" />
-  <text x="428" y="29" class="badge">Private</text>
+  <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#ddf4ff" stroke="#0969da" />
+  <text x="438" y="29" class="badge">Public</text>
   <text x="16" y="55" class="repo-desc">
     <tspan x="16" dy="0">No description provided</tspan>
   </text>
