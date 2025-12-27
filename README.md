@@ -1,4 +1,4 @@
-# 你好，世界！This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-27 14:48:32 IST -->
+# வணக்கம் உலகம்! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2025-12-27 14:47:32 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -148,8 +148,7 @@
 <pre><strong>$ less ~/workspace/profile/config.yaml</strong>
 
   <strong>FOCUS:</strong>         "learning so slow my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a> can’t keep up"
-  <strong>KNOWS:</strong>         "anything bw sand nd the entity thinking back at us rn"
-  <!-- <strong>ASKME:</strong>         "stuff i know, or stuff i can google before u blink" -->
+  <strong>KNOWS:</strong>         "anything bw sand nd the entity thinking back at us rn"<!-- <strong>ASKME:</strong>         "stuff i know, or stuff i can google before u blink" -->
   <strong>BUILDING:</strong>      "<em>hw accel arch for img classif<em>; it can sǝǝ john cena</em>"
   <strong>CLUB:</strong>          "feeding robots my gpa @<a href="https://rignitc.com"><strong>rignitc</strong></a>"
   <strong>COMPS:</strong>         ["e-yantra MB", "openpower hw"]
