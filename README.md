@@ -247,7 +247,7 @@ MY Key Interests:
  - Robotics and Computer Vision
 
 Feel free to check out my projects below, 
-├─and if you’re interested in collaborating or discussing hw/ML/robotics, 
+├─nd if you’re interested in collaborating/discussing HW/ML/robotics, 
 └─let’s connect!
 </pre>
 
