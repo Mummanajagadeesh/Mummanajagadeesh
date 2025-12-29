@@ -20,12 +20,12 @@
   <text x="26" y="87" class="meta">Verilog</text>
   <circle class="lang-dot" cx="126" cy="83" fill="#e4cc98" />
   <text x="136" y="87" class="meta">Tcl</text>
-  <circle class="lang-dot" cx="236" cy="83" fill="#6E4C13" />
-  <text x="246" y="87" class="meta">Assembly</text>
-  <circle class="lang-dot" cx="346" cy="83" fill="#555555" />
-  <text x="356" y="87" class="meta">C</text>
-  <circle class="lang-dot" cx="16" cy="105" fill="#3572A5" />
-  <text x="26" y="109" class="meta">Python</text>
+  <circle class="lang-dot" cx="236" cy="83" fill="#3572A5" />
+  <text x="246" y="87" class="meta">Python</text>
+  <circle class="lang-dot" cx="346" cy="83" fill="#6E4C13" />
+  <text x="356" y="87" class="meta">Assembly</text>
+  <circle class="lang-dot" cx="16" cy="105" fill="#555555" />
+  <text x="26" y="109" class="meta">C</text>
   <circle class="lang-dot" cx="126" cy="105" fill="#427819" />
   <text x="136" y="109" class="meta">Makefile</text>
   <circle class="lang-dot" cx="236" cy="105" fill="#89e051" />
