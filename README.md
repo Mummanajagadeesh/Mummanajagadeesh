@@ -198,87 +198,6 @@
 
 <br><br>
 
-# `$ cat ~/about_me.txt`
-
-<table width="100%">
-<tr>
-<td>
-
-<pre>
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
-⣿⠩⡆⠐⣹⣿⣿⣿⣿⠋⠀⢀⡀⠀⠀⠀⠀⠀⠉⠙⢿⣿⣿⣿⣿⣿
-⣿⣶⡔⠷⠝⣿⣿⣛⠁⠭⢭⡻⣿⣆⢀⠟⠁⠀⠀⠀⠀⢻⣿⣿⣿⣿
-⣿⠟⣣⣶⣿⣿⣿⠁⣴⣶⡄⠹⣽⣿⠋⠠⢔⣾⡇⠀⠀⠀⢿⣿⣿⣿
-⡟⣾⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⠁⣴⣦⡀⢁⣿⣶⣤⠀⢸⣿⣿⣿
-⡇⣿⣿⣿⡿⣛⣛⠿⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⣿⡟⠀⢸⣿⣿⣿
-⣿⢹⣿⢧⣾⣿⣿⣿⡜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⢀⡸⢿⣿⣿
-⣿⣷⣝⠞⢿⣿⣿⣿⢣⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣧⢿⣿
-⣿⣿⣿⢰⣤⡉⣉⠾⠿⠿⠿⠿⠿⣿⣿⣿⣿⣿⠟⣿⣿⣿⣿⠏⣾⣿
-⣿⣿⣿⢸⣿⣿⣩⠺⣶⣝⣛⣛⣛⣯⢤⣶⡰⢖⣴⣝⣛⢛⣫⣾⣿⣿
-⣿⣿⢧⣿⣿⣿⣟⣀⣿⣿⣿⣿⣿⣿⡇⢿⣿⣯⡻⣿⣿⣏⢿⣿⣿⣿
-⣿⣿⣼⣿⣿⣿⡃⣼⣿⣿⣿⣿⣿⣿⣇⠸⣿⣿⣷⡉⡻⣿⣷⣝⢿⣿
-⣿⣿⡻⣿⣿⡯⢹⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⣿⣿⣇⣿⣯⡛⡥⣶⡎
-⣿⣿⣿⣾⠉⡳⡌⠿⢿⣿⣿⣟⣻⣿⡿⣸⣿⣿⣿⠿⣎⣿⣷⣦⣭⣾
-⣿⣿⣿⣧⡚⡳⢤⣞⣻⣿⡿⣛⢯⣭⣃⠩⣭⣤⣆⣾⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣏⠔⢛⣂⣠⣽⢋⣾⣿⣧⣻⣷⣭⣳⣭⡟⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣎⢛⡿⢟⣼⣿⣿⣿⣷⡽⣿⡿⠿⢧⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⡼⣿⢸⣿⣿⣿⣿⣿⣿⣇⢶⡏⢿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⡿⠟⣋⢴⣶⡟⣿⣿⣿⣿⣿⣿⣿⠨⠁⠐⠌⢻⣿⣿⣿⣿⣿
-⣿⣿⣿⣔⣚⣿⣿⣯⣵⣿⣿⣿⣿⣿⣿⣿⣷⣥⣄⣠⣼⣿⣿⣿⣿⣿
-</pre>
-
-</td>
-<td>
-
-<pre>
-Hey, I'm Jagadeesh
-
-I work mainly on digital/analog hw design: RTL, ckt-lvl & basic arch
-Learning open-source IC flows; building/testing small HW blocks
-I also work with MCU/SBCs in basic sys-design for robotics/rototyping
-Active in comps, open-source, hw/sw co-design challenges
-
-MY Key Interests:     
- - Analog and Digital Circuit Design
- - RTL Verification, Debugging, and Validation
- - Compute and Signal Processing Systems
- - Amplifiers, Oscillators, and Control
- - Hardware Architecture and Microarchitecture
- - Robotics and Computer Vision
-
-Feel free to check out my projects below, 
-├─nd if you’re interested in collaborating/discussing HW/ML/robotics, 
-└─let’s connect!
-</pre>
-
-</td>
-</tr>
-</table>
-
-
-
-<!--<pre>
-  
-Hey, I'm Jagadeesh - I work across VLSI design, robotics, and AI hardware.
-I’m particularly interested in digital and analog VLSI, hardware acceleration for machine learning and image processing,
-and the practical side of taking designs from code to silicon.
-Alongside this, I enjoy programming embedded systems, working with microcontrollers, and building robotics applications.
-I also enjoy collaborating in competitions, open-source projects, and hands-on hardware/software design challenges.
-
-  
-MY Key Interests:                                                           What I Do:
-- VLSI Design: Analog & Digital                                             - I’m a student (yes, I copy assignments)  
-- Neural Nets & Image Processing                                            - But serious with projects & builds 
-- Embedded Programming (C, C++, Python)                                     - Do a bit of digital & analog design on the side
-- Microcontrollers & Electronics                                            - Train models sometimes   
-- Computer Vision, Sensor Fusion                                            - Member of RIGNITC (we make robots)
-- Robotics, Path Planning & Navigation                                      - Show up at hw comps (sw depends on mood)
-
-  
-Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), 
-and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
-  
-</pre>-->
 
 # `$ ls ~/projects --filter=feat` | [`All Projects`](https://mummanajagadeesh.github.io/projects/)
 
@@ -569,6 +488,7 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
     <a href="https://mummanajagadeesh.github.io/projects/rose" target="_blank">Link</a>
   </strong>
 </summary>
+
 
 
 ## **RV32I RISC-V Core (TL-Verilog, Single-Cycle Implementation)**
@@ -2310,6 +2230,91 @@ A feedback loop stores misclassified samples for incremental dataset improvement
 
 
 </details>
+
+<br><br>
+
+
+# `$ cat ~/about_me.txt`
+
+<table width="100%">
+<tr>
+<td>
+
+<pre>
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+⣿⠩⡆⠐⣹⣿⣿⣿⣿⠋⠀⢀⡀⠀⠀⠀⠀⠀⠉⠙⢿⣿⣿⣿⣿⣿
+⣿⣶⡔⠷⠝⣿⣿⣛⠁⠭⢭⡻⣿⣆⢀⠟⠁⠀⠀⠀⠀⢻⣿⣿⣿⣿
+⣿⠟⣣⣶⣿⣿⣿⠁⣴⣶⡄⠹⣽⣿⠋⠠⢔⣾⡇⠀⠀⠀⢿⣿⣿⣿
+⡟⣾⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⠁⣴⣦⡀⢁⣿⣶⣤⠀⢸⣿⣿⣿
+⡇⣿⣿⣿⡿⣛⣛⠿⣿⣿⣿⣿⣿⣄⠙⠛⢁⣼⣿⣿⡟⠀⢸⣿⣿⣿
+⣿⢹⣿⢧⣾⣿⣿⣿⡜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⢀⡸⢿⣿⣿
+⣿⣷⣝⠞⢿⣿⣿⣿⢣⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣧⢿⣿
+⣿⣿⣿⢰⣤⡉⣉⠾⠿⠿⠿⠿⠿⣿⣿⣿⣿⣿⠟⣿⣿⣿⣿⠏⣾⣿
+⣿⣿⣿⢸⣿⣿⣩⠺⣶⣝⣛⣛⣛⣯⢤⣶⡰⢖⣴⣝⣛⢛⣫⣾⣿⣿
+⣿⣿⢧⣿⣿⣿⣟⣀⣿⣿⣿⣿⣿⣿⡇⢿⣿⣯⡻⣿⣿⣏⢿⣿⣿⣿
+⣿⣿⣼⣿⣿⣿⡃⣼⣿⣿⣿⣿⣿⣿⣇⠸⣿⣿⣷⡉⡻⣿⣷⣝⢿⣿
+⣿⣿⡻⣿⣿⡯⢹⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⣿⣿⣇⣿⣯⡛⡥⣶⡎
+⣿⣿⣿⣾⠉⡳⡌⠿⢿⣿⣿⣟⣻⣿⡿⣸⣿⣿⣿⠿⣎⣿⣷⣦⣭⣾
+⣿⣿⣿⣧⡚⡳⢤⣞⣻⣿⡿⣛⢯⣭⣃⠩⣭⣤⣆⣾⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣏⠔⢛⣂⣠⣽⢋⣾⣿⣧⣻⣷⣭⣳⣭⡟⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣎⢛⡿⢟⣼⣿⣿⣿⣷⡽⣿⡿⠿⢧⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⡼⣿⢸⣿⣿⣿⣿⣿⣿⣇⢶⡏⢿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⡿⠟⣋⢴⣶⡟⣿⣿⣿⣿⣿⣿⣿⠨⠁⠐⠌⢻⣿⣿⣿⣿⣿
+⣿⣿⣿⣔⣚⣿⣿⣯⣵⣿⣿⣿⣿⣿⣿⣿⣷⣥⣄⣠⣼⣿⣿⣿⣿⣿
+</pre>
+
+</td>
+<td>
+
+<pre>
+Hey, I'm Jagadeesh
+
+I work mainly on digital/analog hw design: RTL, ckt-lvl & basic arch
+Learning open-source IC flows; building/testing small HW blocks
+I also work with MCU/SBCs in basic sys-design for robotics/rototyping
+Active in comps, open-source, hw/sw co-design challenges
+
+MY Key Interests:     
+ - Analog and Digital Circuit Design
+ - RTL Verification, Debugging, and Validation
+ - Compute and Signal Processing Systems
+ - Amplifiers, Oscillators, and Control
+ - Hardware Architecture and Microarchitecture
+ - Robotics and Computer Vision
+
+Feel free to check out my projects below, 
+├─nd if you’re interested in collaborating/discussing HW/ML/robotics, 
+└─let’s connect!
+</pre>
+
+</td>
+</tr>
+</table>
+
+
+
+<!--<pre>
+  
+Hey, I'm Jagadeesh - I work across VLSI design, robotics, and AI hardware.
+I’m particularly interested in digital and analog VLSI, hardware acceleration for machine learning and image processing,
+and the practical side of taking designs from code to silicon.
+Alongside this, I enjoy programming embedded systems, working with microcontrollers, and building robotics applications.
+I also enjoy collaborating in competitions, open-source projects, and hands-on hardware/software design challenges.
+
+  
+MY Key Interests:                                                           What I Do:
+- VLSI Design: Analog & Digital                                             - I’m a student (yes, I copy assignments)  
+- Neural Nets & Image Processing                                            - But serious with projects & builds 
+- Embedded Programming (C, C++, Python)                                     - Do a bit of digital & analog design on the side
+- Microcontrollers & Electronics                                            - Train models sometimes   
+- Computer Vision, Sensor Fusion                                            - Member of RIGNITC (we make robots)
+- Robotics, Path Planning & Navigation                                      - Show up at hw comps (sw depends on mood)
+
+  
+Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), 
+and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
+  
+</pre>-->
 
 # `$ env --familiar | grep TOOLS`
 
