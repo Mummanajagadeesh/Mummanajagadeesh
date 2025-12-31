@@ -199,7 +199,7 @@
 <br><br>
 
 
-# `$ ls ~/projects --filter=feat`
+# `$ ls ~/projects -filter=feat`
 
 <em>(Click sections below to expand)</em>
 
