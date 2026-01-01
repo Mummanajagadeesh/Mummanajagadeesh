@@ -1297,7 +1297,30 @@ Transient simulation evaluates:
 * Static noise margins and switching point displacement due to device sizing.  
 * Rise/fall asymmetry from mobility difference (μₙ ≫ μₚ).  
 * Output slew vs. load capacitance and PMOS/NMOS drive ratio.  
-* Propagation delays under 1.8 V operation using level-1 MOS models.  
+* Propagation delays under 1.8 V operation using level-1 MOS models.
+
+DC Analysis Results
+
+| Parameter                 | Value          |
+| ------------------------- | -------------- |
+| VOH (Output High Voltage) | 1.800001 V     |
+| VOL (Output Low Voltage)  | 1.885403e-08 V |
+| VM (Switching Threshold)  | 0.9502793 V    |
+| Temperature               | 27 °C          |
+| Number of Data Rows       | 1801           |
+
+Transient Analysis Results
+
+| Parameter               | Value         | Unit |
+| ----------------------- | ------------- | ---- |
+| TPHL (High → Low Delay) | 2.823489e-10  | s    |
+| TPLH (Low → High Delay) | 2.160067e-10  | s    |
+| Rise Time (trise)       | 5.010355e-10  | s    |
+| Fall Time (tfall)       | 5.307928e-10  | s    |
+| Average Current (iavg)  | -1.395092e-06 | A    |
+| Average Power (pavg)    | 2.51117e-06   | W    |
+| Temperature             | 27            | °C   |
+
 
 The repository includes the Magic layout (`.mag`), extracted netlists, wrapper files for stimulus, and generated ngspice waveforms.
 
