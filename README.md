@@ -764,6 +764,63 @@ The IP is packaged as a portable RTL component with FuseSoC metadata supporting 
 </details>
 
 
+
+<details>
+<summary>
+  <strong>
+    AHB–APB Bridge with Self-Checking Verification |
+    <a href="https://github.com/Mummanajagadeesh/ahb2apb" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A **parameterizable AHB-Lite to APB bridge** implemented in **SystemVerilog**, with a **self-checking verification environment**.
+The design translates AHB transactions into APB protocol sequences using FSM-based control and supports both **single** and **burst** transfers.
+
+---
+
+### **AHB–APB Bridge – RTL Design & Verification**
+
+**Tools:** SystemVerilog | Icarus Verilog | GTKWave
+
+* Designed a **configurable AHB-Lite → APB bridge** supporting **single and burst read/write** transactions.
+* Implemented **FSM-based control logic** handling address/data latching, write buffering, read-data return, and burst sequencing.
+* Supports **pipelined and non-pipelined AHB accesses**, with correct handling of transaction type and transfer continuation.
+* Built a **self-checking SystemVerilog testbench** with compile-time macro selection for:
+
+  * single read
+  * single write
+  * burst read
+  * burst write
+* Integrated **assertion-based data validation**, protocol correctness checks, and automatic PASS/FAIL reporting.
+* Verified functionality using **Icarus Verilog**, with per-test **VCD waveform generation** for debug and inspection.
+
+<details>
+  <summary><b>Repository</b></summary>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/ahb2apb#gh-light-mode-only">
+  <img src="./repos/ahb2apb-light.svg#gh-light-mode-only"
+       alt="SystemVerilog Implementation of AHB to APB Protocol" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/ahb2apb#gh-dark-mode-only">
+  <img src="./repos/ahb2apb-dark.svg#gh-dark-mode-only"
+       alt="SystemVerilog Implementation of AHB to APB Protocol" />
+</a>
+
+</p>
+
+</details>
+
+
+</details>
+
+
+
+
 <details>
 <summary>
   <strong>
