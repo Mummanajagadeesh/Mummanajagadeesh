@@ -517,6 +517,9 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
 
 **Tools:** Verilog | Icarus Verilog | ModelSim | GTKWave
 
+> RISC-V and MIPS each have three designs and use their own benchmark programs, which are common across all 3 designs
+
+
 * Implemented **three 32-bit MIPS processors**:
 
   * **Single-Cycle:** CPI = **1.0**, PC increments by **+4** each cycle.
@@ -535,6 +538,32 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
 * Executed Harris & Harris benchmark (18 instructions). Correctly wrote **0x00000007** to memory addresses **0x50** and **0x54**.
 
 * Included **self-checking benches**, `.mem` loading infrastructure, full waveforms, and verification logs.
+
+## Comparision Table RISCV 
+
+| Metric          | SC   | MC   | Pipeline |
+| --------------- | ---- | ---- | -------- |
+| Instructions    | 13   | 13   | 13       |
+| Cycles          | 13   | 50   | 21       |
+| CPI             | 1.00 | 3.85 | 1.62     |
+| IPC             | 1.00 | 0.26 | 0.62     |
+| Stall cycles    | 0    | 0    | 2        |
+| Flush cycles    | 0    | 0    | 2        |
+| Overhead cycles | 0    | 37   | 8        |
+
+
+## Comparison Table MIPS
+
+
+| Metric          | SC   | MC    | Pipeline |
+| --------------- | ---- | ----- | -------- |
+| Instructions    | 18   | 18    | 18       |
+| Cycles          | 18   | 70    | ≈50      |
+| CPI             | 1.00 | 3.89  | ≈2.78    |
+| IPC             | 1.00 | 0.257 | ≈0.36    |
+| Stall cycles    | 0    | 0     | N/A      |
+| Flush cycles    | 0    | 0     | N/A      |
+| Overhead cycles | 0    | 52    | ≈32      |
 
 ---
 
