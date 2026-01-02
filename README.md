@@ -539,10 +539,14 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
 
 * Included **self-checking benches**, `.mem` loading infrastructure, full waveforms, and verification logs.
 
-## Comparision Table RISCV 
+<table>
+<tr>
+<td valign="top">
+
+### Comparison Table RISCV
 
 | Metric          | SC   | MC   | Pipeline |
-| --------------- | ---- | ---- | -------- |
+|-----------------|------|------|----------|
 | Instructions    | 13   | 13   | 13       |
 | Cycles          | 13   | 50   | 21       |
 | CPI             | 1.00 | 3.85 | 1.62     |
@@ -551,12 +555,13 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
 | Flush cycles    | 0    | 0    | 2        |
 | Overhead cycles | 0    | 37   | 8        |
 
+</td>
+<td valign="top">
 
-## Comparison Table MIPS
-
+### Comparison Table MIPS
 
 | Metric          | SC   | MC    | Pipeline |
-| --------------- | ---- | ----- | -------- |
+|-----------------|------|-------|----------|
 | Instructions    | 18   | 18    | 18       |
 | Cycles          | 18   | 70    | ≈50      |
 | CPI             | 1.00 | 3.89  | ≈2.78    |
@@ -564,6 +569,11 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
 | Stall cycles    | 0    | 0     | N/A      |
 | Flush cycles    | 0    | 0     | N/A      |
 | Overhead cycles | 0    | 52    | ≈32      |
+
+</td>
+</tr>
+</table>
+
 
 ---
 
