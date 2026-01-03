@@ -1744,12 +1744,12 @@ The repository includes LTspice schematics, simulation directives, waveform data
 <p align="center">
 
 <a href="https://github.com/Mummanajagadeesh/bandgap-reference#gh-light-mode-only">
-  <img src="./repos/cmos-bandgap-reference-light.svg#gh-light-mode-only"
+  <img src="./repos/bandgap-reference-light.svg#gh-light-mode-only"
        alt="CMOS Bandgap Reference Repository Card (light mode) | DC, Temperature, Line Regulation, and Monte Carlo Analysis" />
 </a>
 
 <a href="https://github.com/Mummanajagadeesh/bandgap-reference#gh-dark-mode-only">
-  <img src="./repos/cmos-bandgap-reference-dark.svg#gh-dark-mode-only"
+  <img src="./repos/bandgap-reference-dark.svg#gh-dark-mode-only"
        alt="CMOS Bandgap Reference Repository Card (dark mode) | DC, Temperature, Line Regulation, and Monte Carlo Analysis" />
 </a>
 
