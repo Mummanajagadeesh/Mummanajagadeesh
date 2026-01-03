@@ -1731,7 +1731,7 @@ The work validates temperature compensation, line regulation, startup behavior, 
 * **Standard deviation (σ):** 4.60 mV  
 * **Peak-to-peak spread:** ~25 mV (≈ 3800 ppm)
 
-The results indicate that **reference accuracy is dominated by passive matching**, consistent with an **untrimmed academic CMOS bandgap** implementation. No curvature correction or trimming was applied.
+The results indicate that **reference accuracy is dominated by passive matching**, consistent with an **untrimmed CMOS bandgap** implementation. No curvature correction or trimming was applied.
 
 The repository includes LTspice schematics, simulation directives, waveform data, and Monte Carlo result plots.
 
