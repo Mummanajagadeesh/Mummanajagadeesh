@@ -1,4 +1,4 @@
-# สวัสดีโลก! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-01-03 11:10:52 IST -->
+# ሰላም ዓለም! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-01-03 10:49:01 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -1631,6 +1631,126 @@ The signal path is fully modular-each block is buffered to avoid inter-stage loa
 <a href="https://github.com/Mummanajagadeesh/function-generator#gh-dark-mode-only">
   <img src="./repos/function-generator-dark.svg#gh-dark-mode-only"
        alt="Function Generator Repository Card (dark mode)" | Basic implementation of a Function Generator that can generate sine, square, and triangular waves with amplitude, phase, and DC shift modulations"/>
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+
+<details>
+<summary>
+  <strong>
+    Audio Power Amplifiers (Class A, B, AB) |
+    <a href="https://github.com/Mummanajagadeesh/audio-amplifiers" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+Design, analysis, and LTspice simulation of **audio power amplifier classes**, combining **analytical power calculations**, **circuit-level simulation**, and **audio-domain validation**.
+Digital audio signals are preprocessed using **FFmpeg** and injected directly into LTspice for waveform-accurate listening tests.
+
+### Scope
+
+* **Class B & Class AB push-pull power amplifiers**
+  * Complementary BJT output stage under ±20 V supply
+  * Analytical evaluation of **input power, output power, and efficiency**
+  * Demonstrates crossover distortion and diode-biased reduction
+* **Class A, B, AB audio amplifiers (LTspice)**
+  * DC operating-point, AC, and transient analysis
+  * **FFmpeg-based MP3 → WAV conversion** for PWL/audio voltage sources
+  * Exported output WAV files for subjective audio comparison
+
+### Key Results
+
+* **Class B efficiency:** ~67% (severe crossover distortion)
+* **Class AB efficiency:** ~69% with significantly reduced distortion
+* **Class A:** lowest distortion, highest power dissipation
+* **Class AB:** best overall efficiency–audio quality tradeoff
+
+The repository includes LTspice schematics, FFmpeg preprocessing workflow, analytical calculations, and simulation/audio outputs.
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/audio-amplifiers#gh-light-mode-only">
+  <img src="./repos/audio-amplifiers-light.svg#gh-light-mode-only"
+       alt="Audio Amplifiers Repository Card (light mode) | Class A, B, and AB Audio Power Amplifier Design and Simulation" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/audio-amplifiers#gh-dark-mode-only">
+  <img src="./repos/audio-amplifiers-dark.svg#gh-dark-mode-only"
+       alt="Audio Amplifiers Repository Card (dark mode) | Class A, B, and AB Audio Power Amplifier Design and Simulation" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+
+<details>
+<summary>
+  <strong>
+    CMOS Bandgap Reference (DC, Temp, Line, Monte Carlo) |
+    <a href="https://github.com/Mummanajagadeesh/bandgap-reference" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+LTspice simulation and characterization of a **CMOS bandgap reference** implemented in an **OSU 180 nm CMOS process**, with emphasis on **Monte Carlo mismatch analysis** alongside functional verification.
+The work validates temperature compensation, line regulation, startup behavior, and statistical variation of Vref.
+
+### Scope
+
+* **Functional verification**
+  * DC operating point and transient startup
+  * PTAT / CTAT cancellation across temperature
+  * Vref stability vs temperature (−40 °C to 140 °C)
+  * Line regulation under supply sweep (2 V–4 V)
+  * Zero-current equilibrium and startup necessity
+* **Monte Carlo mismatch analysis**
+  * Statistical Vref variation due to resistor mismatch
+  * Operating-point–based evaluation at nominal conditions
+
+### Monte Carlo Results (100 Runs)
+
+* **Mean Vref:** 1.20892 V  
+* **Minimum Vref:** 1.19687 V  
+* **Maximum Vref:** 1.22191 V  
+* **Standard deviation (σ):** 4.60 mV  
+* **Peak-to-peak spread:** ~25 mV (≈ 3800 ppm)
+
+The results indicate that **reference accuracy is dominated by passive matching**, consistent with an **untrimmed academic CMOS bandgap** implementation. No curvature correction or trimming was applied.
+
+The repository includes LTspice schematics, simulation directives, waveform data, and Monte Carlo result plots.
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+<br>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/bandgap-reference#gh-light-mode-only">
+  <img src="./repos/cmos-bandgap-reference-light.svg#gh-light-mode-only"
+       alt="CMOS Bandgap Reference Repository Card (light mode) | DC, Temperature, Line Regulation, and Monte Carlo Analysis" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/bandgap-reference#gh-dark-mode-only">
+  <img src="./repos/cmos-bandgap-reference-dark.svg#gh-dark-mode-only"
+       alt="CMOS Bandgap Reference Repository Card (dark mode) | DC, Temperature, Line Regulation, and Monte Carlo Analysis" />
 </a>
 
 </p>
