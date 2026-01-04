@@ -893,6 +893,119 @@ Implemented a collection of **peripheral serial communication interfaces in Veri
 </details>
 
 
+
+
+<details>
+<summary>
+  <strong>
+    Pipelined ALU with Scan-Chain Integration |
+    <a href="https://github.com/Mummanajagadeesh/ALU" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A small arithmetic and comparison unit used to **quantitatively study the effects of pipelining and scan-chain insertion** on area and timing.
+The project compares three RTL variants using **Yosys** (area / cell metrics) and **OpenSTA** (setup/hold timing), with identical logic functionality across all designs.
+
+---
+
+### **Design Variants**
+
+* **Non-pipelined** – Fully combinational datapath
+* **Pipelined** – Four pipeline stages with register boundaries
+* **Scan-pipelined** – Same pipeline depth, all registers replaced with scan-enabled FFs
+
+All variants implement identical arithmetic and comparison logic; only register and scan structures differ.
+
+---
+
+### **Synthesis & Area Results (Yosys)**
+
+| Metric          | Non-Pipe | Pipe   | Scan-Pipe |
+| --------------- | -------- | ------ | --------- |
+| Total cells     | 37       | 50     | 89        |
+| Flip-flops      | 0        | 13     | 13        |
+| Chip area (µm²) | 538.66   | 891.91 | 1162.04   |
+
+**Area overhead**
+
+* Pipelining: **+65.6%**
+* Scan (on top of pipelining): **+30.3%**
+* Baseline → scan-pipelined: **+116%**
+
+Scan insertion adds ~**3 logic gates per flip-flop**, visible as increased NAND/OR cell counts.
+
+---
+
+### **Timing Results (OpenSTA, baseline constraints)**
+
+| Metric              | Non-Pipe | Pipe | Scan-Pipe |
+| ------------------- | -------- | ---- | --------- |
+| Critical delay (ns) | 1.67     | 0.99 | 1.14      |
+| Slack (ns)          | 0.33     | 0.88 | 0.74      |
+| fmax (MHz)          | 598      | 1010 | 877       |
+
+* Pipelining reduces critical path by **40.7%**
+* fmax improves by **~1.7×**
+* Scan adds **~150 ps** to register-to-register paths (**~13% fmax loss**)
+
+Hold timing is clean in all variants; scan logic increases minimum delay and improves hold margin.
+
+---
+
+### **Pessimistic STA (Interface-Aware Constraints)**
+
+Constraints added:
+
+* 50 ps clock uncertainty
+* 1.0 ns input/output delays
+* Non-zero input slew
+
+| Design    | Critical Path      | Arrival (ns) | Slack (ns) |
+| --------- | ------------------ | ------------ | ---------- |
+| Non-pipe  | Input → Output     | 2.83         | −1.88      |
+| Pipe      | Input → Stage-1 FF | 1.54         | +0.27      |
+| Scan-pipe | Input → Scan FF    | 1.69         | +0.14      |
+
+* Non-pipelined design fails timing under realistic constraints
+* Pipelining absorbs interface delay
+* Scan reduces slack by **~48%**, with no change in pipeline depth
+
+---
+
+### **Key Takeaways**
+
+* Pipelining trades **~66% area** for **~70% frequency improvement**
+* Scan insertion adds **~30% area** and **~150 ps delay**
+* Timing impact of scan is localized to register data paths
+* Yosys cell-level changes directly correlate with STA results
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/ALU#gh-light-mode-only">
+  <img src="./repos/alu-light.svg#gh-light-mode-only"
+       alt="Pipelined ALU with Scan Chain (light)" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/ALU#gh-dark-mode-only">
+  <img src="./repos/alu-dark.svg#gh-dark-mode-only"
+       alt="Pipelined ALU with Scan Chain (dark)" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+
+
 <details>
 <summary>
   <strong>
