@@ -207,7 +207,7 @@
 </details>
 
 <details>
-  <summary><b>Digital Design/Verfication & Compute Architectures</b></summary>
+  <summary><b>Digital/Physical Design/Verfication & Compute Architectures</b></summary>
 <br>
 
   
