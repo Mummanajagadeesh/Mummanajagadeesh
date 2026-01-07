@@ -1,4 +1,4 @@
-# สวัสดีโลก! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-01-07 23:41:19 IST -->
+# สวัสดีโลก! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-01-07 23:27:19 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -893,8 +893,6 @@ Implemented a collection of **peripheral serial communication interfaces in Veri
 </details>
 
 
-
-
 <details>
 <summary>
   <strong>
@@ -905,8 +903,8 @@ Implemented a collection of **peripheral serial communication interfaces in Veri
 
 <br>
 
-A small arithmetic and comparison unit used to **quantitatively study the effects of pipelining and scan-chain insertion** on area and timing.
-The project compares three RTL variants using **Yosys** (area / cell metrics) and **OpenSTA** (setup/hold timing), with identical logic functionality across all designs.
+A small arithmetic and comparison unit used to **quantitatively study the effects of pipelining, scan-chain insertion, and physical design constraints** on area, timing, routing, clocking, and power.
+The project compares RTL-only variants using **Yosys** and **OpenSTA**, and extends the scan-pipelined design through **full RTL-to-GDS physical design** using **OpenLane (Sky130)**.
 
 ---
 
@@ -916,7 +914,7 @@ The project compares three RTL variants using **Yosys** (area / cell metrics) an
 * **Pipelined** – Four pipeline stages with register boundaries
 * **Scan-pipelined** – Same pipeline depth, all registers replaced with scan-enabled FFs
 
-All variants implement identical arithmetic and comparison logic; only register and scan structures differ.
+All variants implement identical arithmetic and comparison logic; only register, scan, and physical constraints differ.
 
 ---
 
@@ -974,12 +972,73 @@ Constraints added:
 
 ---
 
-### **Key Takeaways**
+## **Physical Design Evolution (RTL → GDS, OpenLane / Sky130)**
+
+The **scan-pipelined variant** was progressively stressed and optimized through **ten controlled PD experiments (E1–E10)**.
+Each experiment modified **one dominant physical knob**, while maintaining a **4.0 ns clock** and clean signoff unless explicitly stated.
+
+---
+
+### **E1–E10 PD Experiment Summary**
+
+| Exp     | Primary Change                           | Quantitative Outcome                                   |
+| ------- | ---------------------------------------- | ------------------------------------------------------ |
+| **E1**  | Scan baseline, 60% util, CTS skew 0.1 ns | Post-CTS WNS **+1.27 ns**, total power **~8.99e-04 W** |
+| **E2**  | Scan removed (control)                   | Cells **82 → 52**, synth WNS **+2.22 ns**              |
+| **E3**  | CTS skew tightened to 0.05 ns            | Timing unchanged, power **~2× increase**               |
+| **E4**  | FP_CORE_UTIL = 80%                       | Wirelength **26601 → 26771**, WNS ~**1.9 ns**          |
+| **E5**  | Dual scan chains                         | Clock latency **0.68 → 0.63 ns**, power **1.03e-03 W** |
+| **E6**  | PL_TARGET_DENSITY = 0.85                 | GPL WNS **1.61 → 1.48 ns**, DPL recovered              |
+| **E7**  | Channelized floorplan                    | Clock net **~745 → ~788 µm**, −70 ps slack             |
+| **E8**  | Worst-case IO pin placement              | Clock net **~1525 µm (≈2×)**                           |
+| **E9**  | Pin-architecture fix (clock isolated)    | Clock net **~703 µm (−54%)**                           |
+| **E10** | PDN tightening (IR stress)               | Total power **+21%**, switching **+58%**               |
+
+---
+
+### **Routing Geometry Across PD Stages**
+
+| Metric                | E6    | E7   | E8       | E9      | E10   |
+| --------------------- | ----- | ---- | -------- | ------- | ----- |
+| Clock net length (µm) | ~745  | ~788 | **1525** | **703** | ~703  |
+| Longest net (µm)      | ~1075 | ~875 | ~1235    | ~1168   | ~1168 |
+| scan_out length (µm)  | ~128  | ~329 | ~258     | ~205    | ~205  |
+
+---
+
+### **Timing Closure (Post-Route / Signoff)**
+
+| Metric         | E6    | E7    | E8    | E9    | E10    |
+| -------------- | ----- | ----- | ----- | ----- | ------ |
+| Setup WNS (ns) | ~1.45 | ~1.38 | ↓     | ~1.12 | Closed |
+| Hold WNS (ns)  | ~0.22 | ~0.22 | ~0.22 | ~0.36 | Closed |
+| TNS / WNS      | 0 / 0 | 0 / 0 | 0 / 0 | 0 / 0 | 0 / 0  |
+
+---
+
+### **Power Impact (Signoff, RCX)**
+
+| Metric              | E9       | E10                            |
+| ------------------- | -------- | ------------------------------ |
+| Total power (W)     | 7.48e-04 | **9.06e-04**                   |
+| Switching power (W) | 2.69e-04 | **4.25e-04**                   |
+| Power delta         | —        | **+21% total, +58% switching** |
+
+CTS-stage power remained unchanged; PDN stress manifested only at signoff.
+
+---
+
+### **Extended Key Takeaways (RTL + PD)**
 
 * Pipelining trades **~66% area** for **~70% frequency improvement**
-* Scan insertion adds **~30% area** and **~150 ps delay**
-* Timing impact of scan is localized to register data paths
-* Yosys cell-level changes directly correlate with STA results
+* Scan insertion adds **~30% area** and **~150 ps** register delay
+* CTS skew tightening impacts **power**, not timing
+* Utilization and density ineffective below **~10% real placement density**
+* Dual scan reduces clock latency but increases routing power
+* Floorplan topology affects routing more than timing
+* IO pin placement can cause **>2× clock routing inflation**
+* Geometry-aware pin fixes recover **>50% clock routing**
+* PDN tightening increases signoff switching power by **~58%** with timing intact
 
 ---
 
