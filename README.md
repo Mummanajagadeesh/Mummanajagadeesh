@@ -643,256 +643,6 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
 
 </details>
 
-
-
-<details>
-<summary>
-  <strong>
-    Fixed-Point CORDIC Trigonometric Soft-Core IP |
-    <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog" target="_blank">Link</a>
-  </strong>
-</summary>
-
-<br>
-
-A synthesizable **CORDIC-based trigonometric IP** supporting **sin, cos, and tan** evaluation using a parameterized fixed-point rotation core.
-Includes standalone wrappers, arctan lookup ROM, and a verification environment with angle sweeps and floating-point correlation.
-
----
-
-### **CORDIC Trigonometric Soft IP - Parametric Fixed-Point Core + Wrapper Functions**
-
-**Duration:** Individual  
-**Tools:** Verilog | Icarus Verilog | FuseSoC
-
-* Implemented a **fully synthesizable fixed-point CORDIC core** (iterative rotation mode) supporting configurable datapath width, iteration count, and shift-add update logic.
-* Created **sin, cos, tan wrappers** around the base CORDIC core, each applying pre-scaled initial vectors to cancel CORDIC gain and produce Q-format outputs (Q1.15 for sin/cos, Q3.28 for tan).
-* Integrated a **precomputed 16-entry atan(2⁻ᵢ)** ROM table using signed 32-bit constants in Q3.29 format for angle accumulator updates.
-* Designed the core using **shift-add micro-rotations only** (no multipliers), enabling low-resource FPGA use and ASIC DSP embedding.
-* Verification testbench sweeps angles from **−1.5 to +1.5 rad** in 0.1 increments, comparing fixed-point outputs with double-precision math.  
-  - **Max error:** sin ≈ 3.9×10⁻⁵, cos ≈ 4.5×10⁻⁵  
-  - **RMS error:** sin ≈ 2.0×10⁻⁵, cos ≈ 2.8×10⁻⁵  
-  - tan diverges as expected near ±π/2 (max ≈ 6.10).
-* Supports **FuseSoC** integration for one-command builds and simulation.
-
----
-<details>
-  <summary><b>Technical Summary</b></summary>
-
-<br>
-
-The CORDIC soft IP implements a configurable micro-rotation datapath for evaluating trigonometric functions in fixed-point arithmetic using only shift and add operations.  
-Each iteration updates the state $(x_i, y_i, z_i)$ based on the rotation direction $d_i$.
-
-The core update equations are:
-
-$x_{i+1} = x_i - d_i \, (y_i \gg i)$
-
-$y_{i+1} = y_i + d_i \, (x_i \gg i)$
-
-$z_{i+1} = z_i - d_i \, \arctan(2^{-i})$
-
-The rotation direction is defined by:
-
-$d_i = +1$ if $z_i \ge 0$  
-$d_i = -1$ if $z_i < 0$
-
-This produces monotonic convergence of $z_i$ toward zero and rotates the state vector toward the target angle with deterministic iteration count and timing.
-
-The internal datapath uses 32-bit signed fixed-point values for $x$, $y$, and $z$. The wrappers apply standardized output formats:
-
-* sin/cos outputs: Q1.15  
-* tan output: Q3.28  
-
-This maintains high internal precision and ensures typical sine/cosine error below $4 \times 10^{-5}$.
-
-The implementation includes a 16-entry arctangent ROM storing:
-
-$\arctan(2^{-i})$ encoded in Q3.29
-
-for $i = 0 \dots 15$. Values range from large initial angles down to small micro-rotations.
-
-CORDIC introduces a scale factor
-
-$K_N = \prod_{i=0}^{N-1} \sqrt{1 + 2^{-2i}}$
-
-which is cancelled by choosing pre-scaled starting values:
-
-$x_0 = 1 / K_N$  
-$y_0 = 0$  
-$z_0 = \theta_{\text{input}}$
-
-The core exposes three wrapper modules providing:
-
-* sin: final $y_N$  
-* cos: final $x_N$  
-* tan: extended-precision $(y_N / x_N)$ in Q3.28  
-
-Verification sweeps 31 angles from −1.5 to +1.5 radians in 0.1 increments.  
-Observed errors:
-
-* sin max error: $3.9 \times 10^{-5}$  
-* cos max error: $4.5 \times 10^{-5}$  
-* tan diverges near $\pm \pi/2$ as expected  
-* RMS errors: sin ≈ $2 \times 10^{-5}$, cos ≈ $2.8 \times 10^{-5}$  
-
-The IP is packaged as a portable RTL component with FuseSoC metadata supporting automated builds, simulation, and SoC integration.
-
-</details>
-
----
-
-<details>
-  <summary><b>Repository</b></summary>
-
-<p align="center">
-
-<a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-light-mode-only">
-  <img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only"
-       alt="CORDIC Algorithm Verilog Implementation - Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
-</a>
-
-<a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-dark-mode-only">
-  <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only"
-       alt="CORDIC Algorithm Verilog Implementation - Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
-</a>
-
-</p>
-
-</details>
-
-</details>
-
-
-
-<details>
-<summary>
-  <strong>
-    AHB–APB Bridge with Self-Checking Verification |
-    <a href="https://github.com/Mummanajagadeesh/ahb2apb" target="_blank">Link</a>
-  </strong>
-</summary>
-
-<br>
-
-A **parameterizable AHB-Lite to APB bridge** implemented in **SystemVerilog**, with a **self-checking verification environment**.
-The design translates AHB transactions into APB protocol sequences using FSM-based control and supports both **single** and **burst** transfers.
-
----
-
-### **AHB–APB Bridge – RTL Design & Verification**
-
-**Tools:** SystemVerilog | Icarus Verilog | GTKWave
-
-* Designed a **configurable AHB-Lite → APB bridge** supporting **single and burst read/write** transactions.
-* Implemented **FSM-based control logic** handling address/data latching, write buffering, read-data return, and burst sequencing.
-* Supports **pipelined and non-pipelined AHB accesses**, with correct handling of transaction type and transfer continuation.
-* Built a **self-checking SystemVerilog testbench** with compile-time macro selection for:
-
-  * single read
-  * single write
-  * burst read
-  * burst write
-* Integrated **assertion-based data validation**, protocol correctness checks, and automatic PASS/FAIL reporting.
-* Verified functionality using **Icarus Verilog**, with per-test **VCD waveform generation** for debug and inspection.
-
-<details>
-  <summary><b>Repository</b></summary>
-
-<p align="center">
-
-<a href="https://github.com/Mummanajagadeesh/ahb2apb#gh-light-mode-only">
-  <img src="./repos/ahb2apb-light.svg#gh-light-mode-only"
-       alt="SystemVerilog Implementation of AHB to APB Protocol" />
-</a>
-
-<a href="https://github.com/Mummanajagadeesh/ahb2apb#gh-dark-mode-only">
-  <img src="./repos/ahb2apb-dark.svg#gh-dark-mode-only"
-       alt="SystemVerilog Implementation of AHB to APB Protocol" />
-</a>
-
-</p>
-
-</details>
-
-
-</details>
-
-
-
-
-<details>
-<summary>
-  <strong>
-    Peripheral Serial Communication Protocols - I2C / SPI / UART-TX  
-    <a href="https://mummanajagadeesh.github.io/protocols/" target="_blank">Link</a>
-  </strong>
-</summary>
-
-<br>
-
-Implemented a collection of **peripheral serial communication interfaces in Verilog**, focusing on synthesizable, parameterizable controllers suitable for FPGA/ASIC integration. Each protocol includes a cleanly modularized interface, configurable timing parameters, and testbench-driven validation with waveform inspection.
-
-* **I2C Master Controller** – Implements a single-master, multi-slave I²C bus supporting standard-mode timings, programmable SCL low/high periods, ACK/NACK handling, and **clock stretching** detection. Features deterministic START/STOP generation, byte-wise transfers, and address+data framing logic.
-
-* **SPI Master (Modes 0–3)** – Supports **CPOL/CPHA mode selection**, 8-bit full-duplex transfers, configurable SCLK division, selectable slave-select behavior, and MSB-first shifting. Designed with a compact FSM and separate TX/RX shift registers for predictable cycle behavior.
-
-* **UART TX Soft-Core IP** – Lightweight serial transmitter with **baud-rate generator**, start/stop framing, data-valid gating, and FIFO-less single-byte serialization. Fully synthesizable and intended as a drop-in peripheral for SoCs, teaching cores, or FPGA peripheral sets.
-
-<br>
-
-<details>
-  <summary><b>Repositories</b></summary>
-
-<br>
-
-<table align="center">
-  <tr>
-
-<!-- SPI -->
-<td align="center">
-  <a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-light-mode-only">
-    <img src="./repos/spi-protocol-verilog-light.svg#gh-light-mode-only"
-         alt="SPI Protocol Verilog Implementation: CPOL/CPHA modes, full-duplex 8-bit transfers" />
-  </a>
-  <a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-dark-mode-only">
-    <img src="./repos/spi-protocol-verilog-dark.svg#gh-dark-mode-only"
-         alt="SPI Protocol Verilog Implementation: CPOL/CPHA modes, full-duplex 8-bit transfers" />
-  </a>
-</td>
-
-<!-- I2C -->
-<td align="center">
-  <a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-light-mode-only">
-    <img src="./repos/i2c-protocol-verilog-light.svg#gh-light-mode-only"
-         alt="I2C Protocol Verilog Implementation: Single-master controller with clock stretching" />
-  </a>
-  <a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-dark-mode-only">
-    <img src="./repos/i2c-protocol-verilog-dark.svg#gh-dark-mode-only"
-         alt="I2C Protocol Verilog Implementation: Single-master controller with clock stretching" />
-  </a>
-</td>
-
-<!-- UART TX -->
-<td align="center">
-  <a href="https://github.com/Mummanajagadeesh/uart-tx-soft-core-ip-verilog#gh-light-mode-only">
-    <img src="./repos/uart-tx-soft-core-ip-verilog-light.svg#gh-light-mode-only"
-         alt="UART TX Soft-Core IP: Parameterized baud generator and 8-bit transmitter" />
-  </a>
-  <a href="https://github.com/Mummanajagadeesh/uart-tx-soft-core-ip-verilog#gh-dark-mode-only">
-    <img src="./repos/uart-tx-soft-core-ip-verilog-dark.svg#gh-dark-mode-only"
-         alt="UART TX Soft-Core IP: Parameterized baud generator and 8-bit transmitter" />
-  </a>
-</td>
-
-  </tr>
-</table>
-
-</details>
-
-</details>
-
-
 <details>
 <summary>
   <strong>
@@ -1063,6 +813,254 @@ CTS-stage power remained unchanged; PDN stress manifested only at signoff.
 
 </details>
 
+
+<details>
+<summary>
+  <strong>
+    AHB–APB Bridge with Self-Checking Verification |
+    <a href="https://github.com/Mummanajagadeesh/ahb2apb" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A **parameterizable AHB-Lite to APB bridge** implemented in **SystemVerilog**, with a **self-checking verification environment**.
+The design translates AHB transactions into APB protocol sequences using FSM-based control and supports both **single** and **burst** transfers.
+
+---
+
+### **AHB–APB Bridge – RTL Design & Verification**
+
+**Tools:** SystemVerilog | Icarus Verilog | GTKWave
+
+* Designed a **configurable AHB-Lite → APB bridge** supporting **single and burst read/write** transactions.
+* Implemented **FSM-based control logic** handling address/data latching, write buffering, read-data return, and burst sequencing.
+* Supports **pipelined and non-pipelined AHB accesses**, with correct handling of transaction type and transfer continuation.
+* Built a **self-checking SystemVerilog testbench** with compile-time macro selection for:
+
+  * single read
+  * single write
+  * burst read
+  * burst write
+* Integrated **assertion-based data validation**, protocol correctness checks, and automatic PASS/FAIL reporting.
+* Verified functionality using **Icarus Verilog**, with per-test **VCD waveform generation** for debug and inspection.
+
+<details>
+  <summary><b>Repository</b></summary>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/ahb2apb#gh-light-mode-only">
+  <img src="./repos/ahb2apb-light.svg#gh-light-mode-only"
+       alt="SystemVerilog Implementation of AHB to APB Protocol" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/ahb2apb#gh-dark-mode-only">
+  <img src="./repos/ahb2apb-dark.svg#gh-dark-mode-only"
+       alt="SystemVerilog Implementation of AHB to APB Protocol" />
+</a>
+
+</p>
+
+</details>
+
+
+</details>
+
+
+<details>
+<summary>
+  <strong>
+    Fixed-Point CORDIC Trigonometric Soft-Core IP |
+    <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+A synthesizable **CORDIC-based trigonometric IP** supporting **sin, cos, and tan** evaluation using a parameterized fixed-point rotation core.
+Includes standalone wrappers, arctan lookup ROM, and a verification environment with angle sweeps and floating-point correlation.
+
+---
+
+### **CORDIC Trigonometric Soft IP - Parametric Fixed-Point Core + Wrapper Functions**
+
+**Duration:** Individual  
+**Tools:** Verilog | Icarus Verilog | FuseSoC
+
+* Implemented a **fully synthesizable fixed-point CORDIC core** (iterative rotation mode) supporting configurable datapath width, iteration count, and shift-add update logic.
+* Created **sin, cos, tan wrappers** around the base CORDIC core, each applying pre-scaled initial vectors to cancel CORDIC gain and produce Q-format outputs (Q1.15 for sin/cos, Q3.28 for tan).
+* Integrated a **precomputed 16-entry atan(2⁻ᵢ)** ROM table using signed 32-bit constants in Q3.29 format for angle accumulator updates.
+* Designed the core using **shift-add micro-rotations only** (no multipliers), enabling low-resource FPGA use and ASIC DSP embedding.
+* Verification testbench sweeps angles from **−1.5 to +1.5 rad** in 0.1 increments, comparing fixed-point outputs with double-precision math.  
+  - **Max error:** sin ≈ 3.9×10⁻⁵, cos ≈ 4.5×10⁻⁵  
+  - **RMS error:** sin ≈ 2.0×10⁻⁵, cos ≈ 2.8×10⁻⁵  
+  - tan diverges as expected near ±π/2 (max ≈ 6.10).
+* Supports **FuseSoC** integration for one-command builds and simulation.
+
+---
+<details>
+  <summary><b>Technical Summary</b></summary>
+
+<br>
+
+The CORDIC soft IP implements a configurable micro-rotation datapath for evaluating trigonometric functions in fixed-point arithmetic using only shift and add operations.  
+Each iteration updates the state $(x_i, y_i, z_i)$ based on the rotation direction $d_i$.
+
+The core update equations are:
+
+$x_{i+1} = x_i - d_i \, (y_i \gg i)$
+
+$y_{i+1} = y_i + d_i \, (x_i \gg i)$
+
+$z_{i+1} = z_i - d_i \, \arctan(2^{-i})$
+
+The rotation direction is defined by:
+
+$d_i = +1$ if $z_i \ge 0$  
+$d_i = -1$ if $z_i < 0$
+
+This produces monotonic convergence of $z_i$ toward zero and rotates the state vector toward the target angle with deterministic iteration count and timing.
+
+The internal datapath uses 32-bit signed fixed-point values for $x$, $y$, and $z$. The wrappers apply standardized output formats:
+
+* sin/cos outputs: Q1.15  
+* tan output: Q3.28  
+
+This maintains high internal precision and ensures typical sine/cosine error below $4 \times 10^{-5}$.
+
+The implementation includes a 16-entry arctangent ROM storing:
+
+$\arctan(2^{-i})$ encoded in Q3.29
+
+for $i = 0 \dots 15$. Values range from large initial angles down to small micro-rotations.
+
+CORDIC introduces a scale factor
+
+$K_N = \prod_{i=0}^{N-1} \sqrt{1 + 2^{-2i}}$
+
+which is cancelled by choosing pre-scaled starting values:
+
+$x_0 = 1 / K_N$  
+$y_0 = 0$  
+$z_0 = \theta_{\text{input}}$
+
+The core exposes three wrapper modules providing:
+
+* sin: final $y_N$  
+* cos: final $x_N$  
+* tan: extended-precision $(y_N / x_N)$ in Q3.28  
+
+Verification sweeps 31 angles from −1.5 to +1.5 radians in 0.1 increments.  
+Observed errors:
+
+* sin max error: $3.9 \times 10^{-5}$  
+* cos max error: $4.5 \times 10^{-5}$  
+* tan diverges near $\pm \pi/2$ as expected  
+* RMS errors: sin ≈ $2 \times 10^{-5}$, cos ≈ $2.8 \times 10^{-5}$  
+
+The IP is packaged as a portable RTL component with FuseSoC metadata supporting automated builds, simulation, and SoC integration.
+
+</details>
+
+---
+
+<details>
+  <summary><b>Repository</b></summary>
+
+<p align="center">
+
+<a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-light-mode-only">
+  <img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only"
+       alt="CORDIC Algorithm Verilog Implementation - Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
+</a>
+
+<a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-dark-mode-only">
+  <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only"
+       alt="CORDIC Algorithm Verilog Implementation - Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
+</a>
+
+</p>
+
+</details>
+
+</details>
+
+
+
+
+
+
+<details>
+<summary>
+  <strong>
+    Peripheral Serial Communication Protocols - I2C / SPI / UART-TX  
+    <a href="https://mummanajagadeesh.github.io/protocols/" target="_blank">Link</a>
+  </strong>
+</summary>
+
+<br>
+
+Implemented a collection of **peripheral serial communication interfaces in Verilog**, focusing on synthesizable, parameterizable controllers suitable for FPGA/ASIC integration. Each protocol includes a cleanly modularized interface, configurable timing parameters, and testbench-driven validation with waveform inspection.
+
+* **I2C Master Controller** – Implements a single-master, multi-slave I²C bus supporting standard-mode timings, programmable SCL low/high periods, ACK/NACK handling, and **clock stretching** detection. Features deterministic START/STOP generation, byte-wise transfers, and address+data framing logic.
+
+* **SPI Master (Modes 0–3)** – Supports **CPOL/CPHA mode selection**, 8-bit full-duplex transfers, configurable SCLK division, selectable slave-select behavior, and MSB-first shifting. Designed with a compact FSM and separate TX/RX shift registers for predictable cycle behavior.
+
+* **UART TX Soft-Core IP** – Lightweight serial transmitter with **baud-rate generator**, start/stop framing, data-valid gating, and FIFO-less single-byte serialization. Fully synthesizable and intended as a drop-in peripheral for SoCs, teaching cores, or FPGA peripheral sets.
+
+<br>
+
+<details>
+  <summary><b>Repositories</b></summary>
+
+<br>
+
+<table align="center">
+  <tr>
+
+<!-- SPI -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-light-mode-only">
+    <img src="./repos/spi-protocol-verilog-light.svg#gh-light-mode-only"
+         alt="SPI Protocol Verilog Implementation: CPOL/CPHA modes, full-duplex 8-bit transfers" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/SPI-protocol-verilog#gh-dark-mode-only">
+    <img src="./repos/spi-protocol-verilog-dark.svg#gh-dark-mode-only"
+         alt="SPI Protocol Verilog Implementation: CPOL/CPHA modes, full-duplex 8-bit transfers" />
+  </a>
+</td>
+
+<!-- I2C -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-light-mode-only">
+    <img src="./repos/i2c-protocol-verilog-light.svg#gh-light-mode-only"
+         alt="I2C Protocol Verilog Implementation: Single-master controller with clock stretching" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/I2C-protocol-verilog#gh-dark-mode-only">
+    <img src="./repos/i2c-protocol-verilog-dark.svg#gh-dark-mode-only"
+         alt="I2C Protocol Verilog Implementation: Single-master controller with clock stretching" />
+  </a>
+</td>
+
+<!-- UART TX -->
+<td align="center">
+  <a href="https://github.com/Mummanajagadeesh/uart-tx-soft-core-ip-verilog#gh-light-mode-only">
+    <img src="./repos/uart-tx-soft-core-ip-verilog-light.svg#gh-light-mode-only"
+         alt="UART TX Soft-Core IP: Parameterized baud generator and 8-bit transmitter" />
+  </a>
+  <a href="https://github.com/Mummanajagadeesh/uart-tx-soft-core-ip-verilog#gh-dark-mode-only">
+    <img src="./repos/uart-tx-soft-core-ip-verilog-dark.svg#gh-dark-mode-only"
+         alt="UART TX Soft-Core IP: Parameterized baud generator and 8-bit transmitter" />
+  </a>
+</td>
+
+  </tr>
+</table>
+
+</details>
+
+</details>
 
 
 <details>
