@@ -20,5 +20,9 @@
   <text x="26" y="87" class="meta">Verilog</text>
   <circle class="lang-dot" cx="126" cy="83" fill="#e4cc98" />
   <text x="136" y="87" class="meta">Tcl</text>
+  <circle class="lang-dot" cx="236" cy="83" fill="#89e051" />
+  <text x="246" y="87" class="meta">Shell</text>
+  <circle class="lang-dot" cx="346" cy="83" fill="#cccccc" />
+  <text x="356" y="87" class="meta">GDB</text>
   <text x="484" y="110" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>
