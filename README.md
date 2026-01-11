@@ -2701,9 +2701,9 @@ MY Key Interests:
  - Hardware Architecture and Microarchitecture
  - Robotics and Computer Vision
 
-Feel free to check out my projects below, 
+Feel free to check out my projects above, 
 ├─nd if you’re interested in collaborating/discussing HW/ML/robotics, 
-└─let’s connect!
+└─let’s connect :)
 </pre>
 
 </td>
