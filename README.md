@@ -215,7 +215,7 @@
 <summary>
   <strong>
     INT8 Fixed-Point CNN Hardware Accelerator and Image-Processing Suite |
-    <a href="https://mummanajagadeesh.github.io/projects/improve/subprojects" target="_blank">Link</a>
+    <a href="https://mummanajagadeesh.github.io/projects/vision/subprojects" target="_blank">Link</a>
   </strong>
 </summary>
 <br>
@@ -239,7 +239,7 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
 
 ### **8-bit Quantized CNN Hardware Accelerator: Open-source, Modular, & Optimized for Inference**
 
-**[Project Link](https://mummanajagadeesh.github.io/projects/improve/subprojects/)**
+**[Project Link](https://mummanajagadeesh.github.io/projects/vision/subprojects/)**
 *Verilog | Basic Architecture | Digital Electronics*
 
 
