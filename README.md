@@ -871,113 +871,159 @@ The design translates AHB transactions into APB protocol sequences using FSM-bas
 <details>
 <summary>
   <strong>
-    Fixed-Point CORDIC Trigonometric Soft-Core IP |
+    Design & Formal Verification of Parameterizable Fixed-Point CORDIC IP |
     <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog" target="_blank">Link</a>
   </strong>
 </summary>
 
 <br>
 
-A synthesizable **CORDIC-based trigonometric IP** supporting **sin, cos, and tan** evaluation using a parameterized fixed-point rotation core.
-Includes standalone wrappers, arctan lookup ROM, and a verification environment with angle sweeps and floating-point correlation.
+A fully synthesizable, **parameterizable fixed-point CORDIC soft IP** supporting **rotation and vectoring modes**, with dedicated wrappers for trigonometric and vector operations.  
+The project emphasizes **formal verification of control, protocol, and mathematical structure**, complemented by simulation-based accuracy characterization and parameter sensitivity analysis.
 
 ---
 
-### **CORDIC Trigonometric Soft IP - Parametric Fixed-Point Core + Wrapper Functions**
+### **Project Overview**
 
 **Duration:** Individual  
-**Tools:** Verilog | Icarus Verilog | FuseSoC
-
-* Implemented a **fully synthesizable fixed-point CORDIC core** (iterative rotation mode) supporting configurable datapath width, iteration count, and shift-add update logic.
-* Created **sin, cos, tan wrappers** around the base CORDIC core, each applying pre-scaled initial vectors to cancel CORDIC gain and produce Q-format outputs (Q1.15 for sin/cos, Q3.28 for tan).
-* Integrated a **precomputed 16-entry atan(2⁻ᵢ)** ROM table using signed 32-bit constants in Q3.29 format for angle accumulator updates.
-* Designed the core using **shift-add micro-rotations only** (no multipliers), enabling low-resource FPGA use and ASIC DSP embedding.
-* Verification testbench sweeps angles from **−1.5 to +1.5 rad** in 0.1 increments, comparing fixed-point outputs with double-precision math.  
-  - **Max error:** sin ≈ 3.9×10⁻⁵, cos ≈ 4.5×10⁻⁵  
-  - **RMS error:** sin ≈ 2.0×10⁻⁵, cos ≈ 2.8×10⁻⁵  
-  - tan diverges as expected near ±π/2 (max ≈ 6.10).
-* Supports **FuseSoC** integration for one-command builds and simulation.
+**Tools:** Verilog | SystemVerilog Assertions (SVA) | SymbiYosys (Yices2) | Icarus Verilog | Python | FuseSoC
 
 ---
+
+### **CORDIC IP – Architecture & Capabilities**
+
+* Implemented a **shift–add CORDIC core** supporting both **rotation mode** (`sin`, `cos`, `tan`) and **vectoring mode** (`magnitude`, `atan2`), with fully parameterized internal width, iteration count, angle precision, and output scaling.
+
+* Designed a **single iterative datapath** with deterministic latency (`ITER + 1` cycles), clean `start / busy / valid` handshake, and explicit preconditioning for vectoring mode to ensure quadrant correctness.
+
+* Built standalone **wrapper modules** (`cordic_sine`, `cordic_cos`, `cordic_tan`, `cordic_mag`, `cordic_atan2`) that apply:
+  - gain compensation
+  - output truncation / scaling
+  - format conversion  
+  while preserving a uniform control interface.
+
+* Auto-generated **arctangent ROM tables and parameter headers** using Python, enabling reproducible sweeps across width, iteration depth, angle resolution, and output formats.
+
+* Packaged the core and wrappers using **FuseSoC**, with documented configuration sensitivity, accuracy trends, and known numerical failure regions.
+
+---
+
+### **Accuracy Characterization & Parameter Sensitivity**
+
+* **Rotation mode (sin/cos)** converges exponentially with iteration count until limited by fixed-point quantization.  
+  With `WIDTH = 32`, `ITER = 16`, and 30-bit angle precision:
+  - **RMS error:** ≈ **3.9 × 10⁻⁵**
+  - **Max error:** ≈ **7 × 10⁻⁵**
+
+* **Vectoring mode (magnitude)** achieves similar convergence behavior:
+  - **RMS magnitude error:** ≈ **2.6 × 10⁻⁵** at `WIDTH = 32`, `ITER = 16`
+
+* **Tangent and atan2** outputs are **numerically stable but inherently ill-conditioned**:
+  - Errors dominated by `1 / cos(x)` near ±π/2 (tan)
+  - Phase ambiguity and singularity near `(x,y) → (0,0)` (atan2)
+  - Accuracy does not meaningfully improve beyond modest iteration counts
+
+* Identified and documented **deterministic failure regions**:
+  - underscaled outputs → amplitude collapse
+  - overscaled internal widths → catastrophic numerical failure
+  - mismatched output shifts → sign inversion and clipping
+
+---
+
 <details>
-  <summary><b>Technical Summary</b></summary>
+<summary><b>Technical Summary</b></summary>
 
 <br>
 
-The CORDIC soft IP implements a configurable micro-rotation datapath for evaluating trigonometric functions in fixed-point arithmetic using only shift and add operations.  
-Each iteration updates the state $(x_i, y_i, z_i)$ based on the rotation direction $d_i$.
+The CORDIC core implements an **iterative micro-rotation algorithm** using only shifts and additions.  
+Internal state updates follow the standard recurrence:
 
-The core update equations are:
+- **Rotation mode**
 
-$x_{i+1} = x_i - d_i \, (y_i \gg i)$
+$x_{i+1} = x_i - d_i , (y_i \gg i)$
 
-$y_{i+1} = y_i + d_i \, (x_i \gg i)$
+$y_{i+1} = y_i + d_i , (x_i \gg i)$
 
-$z_{i+1} = z_i - d_i \, \arctan(2^{-i})$
+$z_{i+1} = z_i - d_i , \arctan(2^{-i})$
 
-The rotation direction is defined by:
+$d_i = +1 \text{ if } z_i \ge 0$
 
-$d_i = +1$ if $z_i \ge 0$  
-$d_i = -1$ if $z_i < 0$
+$d_i = -1 \text{ if } z_i < 0$
 
-This produces monotonic convergence of $z_i$ toward zero and rotates the state vector toward the target angle with deterministic iteration count and timing.
 
-The internal datapath uses 32-bit signed fixed-point values for $x$, $y$, and $z$. The wrappers apply standardized output formats:
+- **Vectoring mode**
 
-* sin/cos outputs: Q1.15  
-* tan output: Q3.28  
+$x_{i+1} = x_i + d_i , (y_i \gg i)$
 
-This maintains high internal precision and ensures typical sine/cosine error below $4 \times 10^{-5}$.
+$y_{i+1} = y_i - d_i , (x_i \gg i)$
 
-The implementation includes a 16-entry arctangent ROM storing:
+$z_{i+1} = z_i + d_i , \arctan(2^{-i})$
 
-$\arctan(2^{-i})$ encoded in Q3.29
+$d_i = +1 \text{ if } y_i \ge 0$
 
-for $i = 0 \dots 15$. Values range from large initial angles down to small micro-rotations.
+$d_i = -1 \text{ if } y_i < 0$
 
-CORDIC introduces a scale factor
 
-$K_N = \prod_{i=0}^{N-1} \sqrt{1 + 2^{-2i}}$
+The datapath is fully parameterized by:
+- internal width (`WIDTH`)
+- iteration depth (`ITER`)
+- angle fractional bits
+- output width and scaling shifts
 
-which is cancelled by choosing pre-scaled starting values:
+### **Wrappers & Scaling Semantics**
 
-$x_0 = 1 / K_N$  
-$y_0 = 0$  
-$z_0 = \theta_{\text{input}}$
+Wrappers initialize the core with **gain-compensated vectors** and extract results via deterministic right shifts:
 
-The core exposes three wrapper modules providing:
+- `sin / cos`: final `y / x` outputs
+- `tan`: extended-precision ratio output
+- `mag`: final `x` magnitude
+- `atan2`: accumulated angle output
 
-* sin: final $y_N$  
-* cos: final $x_N$  
-* tan: extended-precision $(y_N / x_N)$ in Q3.28  
+Correct scaling is **mandatory**; mismatched shifts reproducibly cause saturation, amplitude loss, or numerical collapse.
 
-Verification sweeps 31 angles from −1.5 to +1.5 radians in 0.1 increments.  
-Observed errors:
+### **Formal Verification Strategy**
 
-* sin max error: $3.9 \times 10^{-5}$  
-* cos max error: $4.5 \times 10^{-5}$  
-* tan diverges near $\pm \pi/2$ as expected  
-* RMS errors: sin ≈ $2 \times 10^{-5}$, cos ≈ $2.8 \times 10^{-5}$  
+Formal verification focuses on **structural correctness**, not numerical accuracy.
 
-The IP is packaged as a portable RTL component with FuseSoC metadata supporting automated builds, simulation, and SoC integration.
+**Common properties (all modules):**
+- single-cycle `start` and `valid`
+- no overlapping transactions
+- bounded progress (`≤ ITER + 1` cycles)
+- deadlock-free operation
+- input stability while `busy`
+- output range safety
+
+**Rotation mode assertions:**
+- odd/even symmetry (`sin(-x)`, `cos(-x)`)
+- local monotonicity near zero
+- sign consistency across sin/cos/tan
+
+**Vectoring mode assertions:**
+- magnitude symmetry across quadrants
+- correct zero-vector handling
+- atan2 odd symmetry and π-rotation consistency
+
+All properties are written in **purely parametric SVA**, proven using **SymbiYosys + Yices2**, and scale automatically with configuration.
+
+Numerical accuracy is intentionally validated via **simulation and reference comparison**, not formal proof.
 
 </details>
 
 ---
 
 <details>
-  <summary><b>Repository</b></summary>
+<summary><b>Repository</b></summary>
 
 <p align="center">
 
 <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-light-mode-only">
-  <img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only"
-       alt="CORDIC Algorithm Verilog Implementation - Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
+<img src="./repos/cordic-algorithm-verilog-light.svg#gh-light-mode-only"
+     alt="CORDIC Algorithm Verilog Implementation (light)" />
 </a>
 
 <a href="https://github.com/Mummanajagadeesh/cordic-algorithm-verilog#gh-dark-mode-only">
-  <img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only"
-       alt="CORDIC Algorithm Verilog Implementation - Fixed-point soft IP core for sin/cos/tan with wrappers and verification" />
+<img src="./repos/cordic-algorithm-verilog-dark.svg#gh-dark-mode-only"
+     alt="CORDIC Algorithm Verilog Implementation (dark)" />
 </a>
 
 </p>
@@ -985,7 +1031,6 @@ The IP is packaged as a portable RTL component with FuseSoC metadata supporting 
 </details>
 
 </details>
-
 
 
 
