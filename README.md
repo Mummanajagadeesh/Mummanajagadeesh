@@ -1,4 +1,4 @@
-# ሰላም ዓለም! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-01-14 21:48:53 IST -->
+# ନମସ୍କାର ବିଶ୍ୱ! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-01-14 21:29:40 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -2783,7 +2783,7 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 # `$ env --familiar | grep TOOLS`
 
 <details>
-  <summary>Tools I’m familiar with and actively use</summary>
+  <summary>Tools I’m familiar with and use</summary>
 
   <br>
 
@@ -2794,11 +2794,20 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
   <img src="https://skillicons.dev/icons?i=java" alt="Java" width="48" height="48"/>
 
   <!-- Digital Design / HDL / EDA -->
-  <img src="assets/tools/verilog.png" alt="Verilog/SystemVerilog" width="48" height="48"/>
+  <img src="assets/tools/verilog.png" alt="Verilog" width="48" height="48"/>
+  <img src="assets/tools/sv.png" alt="System Verilog" width="48" height="48"/>
   <img src="assets/tools/icarus.png" alt="Icarus Verilog" width="48" height="48"/>
+  <img src="assets/tools/verilator.png" alt="Verilator" width="48" height="48"/>
   <img src="assets/tools/vivado.png" alt="Vivado" width="48" height="48"/>
+  <img src="assets/tools/modelsim.png" alt="ModelSim" width="48" height="48"/>
+  <img src="assets/tools/quartus.png" alt="Quartus" width="48" height="48"/>
   <img src="assets/tools/yosys.png" alt="Yosys" width="48" height="48"/>
+  <img src="assets/tools/symbiyosys.png" alt="SymbiYosys" width="48" height="48"/>
+  <img src="assets/tools/yices2.png" alt="Yices2" width="48" height="48"/>
+  <img src="assets/tools/panda.png" alt="Bambu HLS" width="48" height="48"/>
   <img src="assets/tools/openroad.png" alt="OpenROAD" width="48" height="48"/>
+  <img src="assets/tools/magic.png" alt="Magic VLSI" width="48" height="48"/>
+  <img src="assets/tools/electric.png" alt="Electric VLSI" width="48" height="48"/>
   <img src="assets/tools/skywater.png" alt="Skywater PDK" width="48" height="48"/>
   <img src="assets/tools/tcad.png" alt="Sentaurus TCAD" width="48" height="48"/>
   <img src="assets/tools/tcltk.png" alt="Tcl/Tk" width="48" height="48"/>
