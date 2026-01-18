@@ -1,4 +1,4 @@
-# 你好，世界！This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-01-18 16:50:12 IST -->
+# Witaj świecie! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-01-18 16:29:25 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -889,46 +889,176 @@ The project emphasizes **formal verification of control, protocol, and mathemati
 **Tools:** Verilog | SystemVerilog Assertions (SVA) | SymbiYosys (Yices2) | Icarus Verilog | Python | FuseSoC
 
 ---
-
 ### **CORDIC IP – Architecture & Capabilities**
 
-* Implemented a **shift–add CORDIC core** supporting both **rotation mode** (`sin`, `cos`, `tan`) and **vectoring mode** (`magnitude`, `atan2`), with fully parameterized internal width, iteration count, angle precision, and output scaling.
+* Implemented a **shift–add CORDIC core** supporting **6 operating modes**, covering  
+  **2 algorithms × 3 coordinate systems**:
 
-* Designed a **single iterative datapath** with deterministic latency (`ITER + 1` cycles), clean `start / busy / valid` handshake, and explicit preconditioning for vectoring mode to ensure quadrant correctness.
+  **Algorithms**
+  - **Rotation mode** – forward function evaluation  
+  - **Vectoring mode** – inverse / reduction operations  
 
-* Built standalone **wrapper modules** (`cordic_sine`, `cordic_cos`, `cordic_tan`, `cordic_mag`, `cordic_atan2`) that apply:
-  - gain compensation
-  - output truncation / scaling
+  **Architectures**
+  - **Linear**
+  - **Circular**
+  - **Hyperbolic**
+
+  This enables the following functional coverage:
+  - Circular: `sin`, `cos`, `tan`, `atan2`, magnitude
+  - Linear: `mult`, `div`
+  - Hyperbolic: `sinh`, `cosh`, `tanh`, `exp`, `ln`
+ 
+
+  | **Architecture ↓ / Algorithm →** | **Rotation Mode** (forward)              | **Vectoring Mode** (inverse / reduction) |
+  |----------------------------------|-------------------------------------------|-------------------------------------------|
+  | **Linear**                       | `mult`                                    | `div`                                     |
+  | **Circular**                     | `sin`, `cos`, `tan`                       | `atan2`, `magnitude`                      |
+  | **Hyperbolic**                   | `sinh`, `cosh`, `tanh`, `exp`             | `ln`                                      |
+
+* Designed a **single iterative datapath** reused across all modes, with:
+  - deterministic latency (`ITER + 1` cycles)
+  - clean `start / busy / valid` handshake
+  - mode-selectable update equations
+  - explicit preconditioning for vectoring modes to ensure convergence and sign correctness
+
+* Fully parameterized design:
+  - internal data width
+  - iteration count
+  - angle / argument precision
+  - output scaling and truncation
+  enabling consistent trade-off exploration between accuracy, area, and latency.
+
+* Built standalone **wrapper modules** for common functions that apply:
+  - gain compensation (mode-dependent)
+  - output scaling and truncation
   - format conversion  
-  while preserving a uniform control interface.
+  while preserving a uniform control interface across all operations.
 
-* Auto-generated **arctangent ROM tables and parameter headers** using Python, enabling reproducible sweeps across width, iteration depth, angle resolution, and output formats.
+* Extended functionality beyond trigonometric primitives to include:
+  - `exp`, `ln`
+  - `mult`, `div`
+  - `sinh`, `cosh`, `tanh`  
+  achieving **~1e-5 absolute precision** under typical configurations.
 
-* Packaged the core and wrappers using **FuseSoC**, with documented configuration sensitivity, accuracy trends, and known numerical failure regions.
+* Auto-generated **lookup tables and parameter headers** using Python for:
+  - circular arctangent
+  - hyperbolic atanh
+  - iteration scheduling (including repeated iterations where required)
+  ensuring reproducibility across parameter sweeps.
+
+* Packaged the core and wrappers using **FuseSoC**, with documented:
+  - configuration sensitivity
+  - convergence behavior per mode
+  - known numerical edge cases and failure regions
 
 ---
 
 ### **Accuracy Characterization & Parameter Sensitivity**
 
-* **Rotation mode (sin/cos)** converges exponentially with iteration count until limited by fixed-point quantization.  
+* **Circular rotation mode (sin/cos)** converges exponentially with iteration count until limited by fixed-point quantization.  
   With `WIDTH = 32`, `ITER = 16`, and 30-bit angle precision:
   - **RMS error:** ≈ **3.9 × 10⁻⁵**
   - **Max error:** ≈ **7 × 10⁻⁵**
 
-* **Vectoring mode (magnitude)** achieves similar convergence behavior:
+* **Circular vectoring mode (magnitude)** shows similar convergence:
   - **RMS magnitude error:** ≈ **2.6 × 10⁻⁵** at `WIDTH = 32`, `ITER = 16`
 
-* **Tangent and atan2** outputs are **numerically stable but inherently ill-conditioned**:
-  - Errors dominated by `1 / cos(x)` near ±π/2 (tan)
-  - Phase ambiguity and singularity near `(x,y) → (0,0)` (atan2)
-  - Accuracy does not meaningfully improve beyond modest iteration counts
+* **Linear mode (mult/div)** reaches target precision rapidly:
+  - error dominated by final truncation rather than iteration depth
+  - stable convergence across full dynamic range when properly prescaled
 
-* Identified and documented **deterministic failure regions**:
+* **Hyperbolic mode (exp, sinh, cosh, tanh, ln)**:
+  - requires scheduled repeated iterations for convergence
+  - achieves ~**1e-5** absolute error under typical fixed-point settings
+  - accuracy primarily limited by argument range reduction and output scaling
+
+* **Tangent and atan2** remain **numerically ill-conditioned**:
+  - `tan(x)` error dominated by `1 / cos(x)` near ±π/2
+  - `atan2(y,x)` sensitive near `(x,y) → (0,0)`
+  - accuracy does not improve meaningfully beyond modest iteration counts
+
+* Identified and documented **deterministic numerical failure regions**:
   - underscaled outputs → amplitude collapse
-  - overscaled internal widths → catastrophic numerical failure
-  - mismatched output shifts → sign inversion and clipping
+  - overscaled internal widths → catastrophic numerical instability
+  - incorrect gain compensation → systematic bias
+  - mismatched output shifts → sign inversion or clipping
 
 ---
+
+### **Formal Verification**
+
+* The **core iterative datapath and control logic** have been formally verified:
+  - convergence direction selection
+  - iteration sequencing
+  - handshake correctness
+  - quadrant handling in vectoring modes
+
+* Formal analysis is focused on the **base CORDIC iteration engine and control FSM**.  
+  Extended mathematical functions (linear and hyperbolic modes, transcendental wrappers) are **designed and validated through simulation and numerical analysis**, and are intentionally **out of scope** for formal proof.
+  
+---
+
+## **Drop-IN CORDIC Cores**
+
+| Family | Keywords |
+|------:|----------|
+| **A** | iterative, control, low-area |
+| **B** | feed-forward, streaming, throughput |
+| **C** | SIMD, spatial, vector |
+| **D** | multi-issue, interleaved, shared datapath |
+
+
+
+## **Family A — Control-Oriented / Iterative**
+
+| Core ID | What it is | What it does |
+|------:|------------|--------------|
+| **A1** | Iterative, rolled datapath | Minimum-area baseline core |
+| **A2** | Iterative, unrolled | Reduced latency, no pipelining |
+| **A3** | Iterative + micro-pipeline | Shortened critical path (2-stage) |
+| **A4** | Iterative + deeper micro-pipeline | Higher Fmax (3-stage) |
+
+---
+
+## **Family B — Throughput-Oriented / Feed-Forward**
+
+
+| Core ID | What it is | What it does |
+|------:|------------|--------------|
+| **B1** | Fully unrolled, single-stage | One result per cycle, minimal depth |
+| **B2** | Unrolled, fixed-cut pipeline | Simple 2-stage throughput pipeline |
+| **B3** | Unrolled, balanced pipeline | Evenly distributed 2-stage pipeline |
+| **B4** | Unrolled, deep pipeline | 3-stage, high-frequency design |
+
+---
+
+## **Family C — SIMD / Spatial / Vectorized**
+
+
+| Core ID | What it is | What it does |
+|------:|------------|--------------|
+| **CS** | Scalar unrolled | Single-lane reference |
+| **CR2** | Replicated ×2 | Two parallel lanes |
+| **CR4** | Replicated ×4 | Four parallel lanes |
+| **CSR4** | Replicated ×4 + shared ROM | Area-reduced quad lane |
+| **CVEC4** | Vector-packed SIMD | Packed SIMD datapath |
+| **CVEC5** | Refined SIMD | Shared resources, optimized |
+
+
+---
+
+## **Family D — Multi-Issue / Time-Interleaved**
+
+
+| Core ID | What it is | What it does |
+|------:|------------|--------------|
+| **D2X2S** | 2 issues × 2 lanes | Simple dual-issue core |
+| **D4X2S** | 2 issues × 4 lanes | Higher SIMD width |
+| **D4X2P** | 2 issues × 4 lanes + pipeline | Improved Fmax |
+| **D4X4S** | 4 issues × 4 lanes | High concurrency |
+
+
+
 
 <details>
 <summary><b>Technical Summary</b></summary>
