@@ -1,4 +1,4 @@
-# হ্যালো বিশ্ব! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-01-23 16:30:14 IST -->
+# 你好，世界！This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-01-23 15:45:32 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -213,11 +213,40 @@
   
 <details>
 <summary>
+
   <strong>
     INT8 Fixed-Point CNN Hardware Accelerator and Image-Processing Suite |
     <a href="https://mummanajagadeesh.github.io/projects/vision/subprojects" target="_blank">Link</a>
   </strong>
-</summary>
+</summary><br>
+
+
+  **INT8 Fixed-Point CNN Hardware Accelerator and Image-Processing Suite**<br><br>
+
+  • Designed a synthesizable shallow Res-CNN for CIFAR-10, Pareto-optimal among 8 CNNs for parameter memory, accuracy & FLOPs<br>
+  • Built systolic-array PEs with 8-bit CSA–MBE MACs, FSM-based control, 2-cycle ready/valid handshake, and verified TB operation<br>
+  • Performed PTQ/QAT (Q1.31→Q1.3) analysis; Q1.7 PTQ retained ∼84% accuracy (<1% loss) with 4x smaller (∼52kB) memory footprint<br>
+  • Auto-generated 14 coeff & 3 RGB ROMs via TCL/Py automation; validated TF/FP32–RTL consistency and automated inference execution<br>
+  • Implemented AXI-Stream DIP toolkit (edge, denoise, filter, enhance) with pipelined RTL & FIFO backpressure handling<br>
+  • MLP classifier on (E)MNIST (>75% acc.) with GUI viz; Automated preprocessing & inference with TCL/Perl<br><br>
+
+
+  **3-Stage Pipelined Systolic Array-Based MAC Microarchitecture**<br><br>
+  
+  • Benchmarked six 8-bit signed adders-multipliers via identical RTL2GDS Sky130 flow to isolate arithmetic-level post-route PPA trade-offs<br>
+  • 3-stage pipelined systolic MAC (CSA-MBE), achieving ↓66.3% delay; ↑3.1× area efficiency; ↓82.2% typical power vs naïve conv3 baseline<br>
+  • Used a 2D PE-grid structure for convolution (verified 0/same padding modes) and optimized GEMM (reducing power by 44.6%; N = 3)<br>
+  • Added a 648-bit scan chain across all pipeline/control registers, enabling full DFT/ATPG testability with only +14.5% cell overhead<br>
+
+---
+
+  <details>
+  <summary>
+    <strong>
+    Click here for more details
+  </strong></summary>
+  <br><br>
+
 <br>
 
 **Design of High-Performance Q1.7 Fixed-Point Quantized CNN Hardware Accelerator with Microarchitecture Optimization of 3-Stage Pipelined Systolic MAC Arrays for Lightweight Inference**
@@ -471,11 +500,11 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
   <li>
     <p><strong>RAM1KB</strong> – A 1KB (1024 x 8-bit) memory module in Verilog with write-once locking for even addresses. Includes a randomized testbench. Also forms the base for a <strong>ROM3KB</strong> variant to store 32×32 RGB CIFAR-10 image data.</p>
   <li>
-    <p><strong>FIFO Buffer</strong> – Not started. Planned as a synchronous FIFO with fixed depth, single clock domain, and standard full/empty flag logic.</p>
+    <p><strong>FIFO Buffer</strong> – Synchronous FIFO with param. depth, single clock domain, and standard full/empty flag logic.</p>
   </li>
 </ul>
 
-</details>
+</details></details>
 
 ---
 
@@ -487,8 +516,21 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
     RISC-V & MIPS Microarchitectures - SC / MC / Pipelined / Dual-Issue Superscalar |
     <a href="https://mummanajagadeesh.github.io/projects/rose" target="_blank">Link</a>
   </strong>
-</summary>
+</summary><br>
 
+  • Built a two-wide in-order superscalar RISC processor with parallel IF–ID–EX–MEM–WB lanes and independent pipeline registers per lane<br>
+  • Designed dual 16-bit instruction fetch per cycle with inter-lane dependency checks, hazard suppression, and load-use stall handling<br>
+  • Implemented 4R2W register file, RAW/WAW detection, branch squashing, & multi-port memory for concurrent fetch and data access<br>
+  • Evaluated SC/MC/5-stage pipelined designs via directed programs (assembly with RISCV GCC Toolchain & QEMU reference), analyzing CPI (1/3.8/1.6), cycle counts, and hazard overhead<br>
+
+<br>
+
+---
+
+<details>
+<summary>
+  <strong>Click here for more details</strong>
+</summary>
 
 
 ## **RV32I RISC-V Core (TL-Verilog, Single-Cycle Implementation)**
@@ -641,7 +683,14 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
 
 </details>
 
+---
+
 </details>
+
+---
+
+</details>
+
 
 <details>
 <summary>
@@ -652,6 +701,18 @@ Includes complete quantization workflow (PTQ/QAT), 2-cycle ready/valid protocol,
 </summary>
 
 <br>
+
+  • Designed non-pipelined/pipelined/scan-enabled 4-stage ALU; pipeline FFs replaced with scan FFs for scan-in/capture/scan-out<br>
+  • Gate-level timing analysis in Yosys/OpenSTA (Sky130) with clock uncertainty, I/O delays, & input slew; ∼1.7x fmax gain with pipelining<br>
+  • RTL2GDS flow: scan vs no-scan, single vs dual scan, CTS skew tightening, util/density & floorplan stress; closed timing throughout<br>
+  • Analyzed IO-driven routing effects; worst-case pinning increased clock wire length by >2x despite CTS/placement optimization<br>
+  • Recovered clock routing via pin-arch optimization (>50% clk WL ↓); PDN stress at signoff showed +21% total & +58% switching power<br>
+  
+---
+
+<details>
+<summary>
+<strong>Click here for more details</strong></summary>
 
 A small arithmetic and comparison unit used to **quantitatively study the effects of pipelining, scan-chain insertion, and physical design constraints** on area, timing, routing, clocking, and power.
 The project compares RTL-only variants using **Yosys** and **OpenSTA**, and extends the scan-pipelined design through **full RTL-to-GDS physical design** using **OpenLane (Sky130)**.
@@ -810,6 +871,9 @@ CTS-stage power remained unchanged; PDN stress manifested only at signoff.
 </p>
 
 </details>
+</details>
+
+---
 
 </details>
 
@@ -820,8 +884,25 @@ CTS-stage power remained unchanged; PDN stress manifested only at signoff.
     AHB–APB Bridge with Self-Checking Verification |
     <a href="https://github.com/Mummanajagadeesh/ahb2apb" target="_blank">Link</a>
   </strong>
-</summary>
+</summary><br><br>
 
+
+
+  • Designed a parameterizable AHB-Lite to APB bridge with FSM-based control supporting single & burst read/write transactions<br>
+  • Implemented address/data latching, write buffering, read return, and burst sequencing, handling pipelined and non-pipelined accesses<br>
+  • Built a self-checking SV testbench with macro-controlled test modes (single/burst R/W) and assertion-based data validation<br>
+  • Verified protocol correctness across all transaction types; additionally designed & verified standalone (I2C/SPI/UART) peripheral controllers<br>
+
+<br>
+
+---
+
+<details>
+<summary>
+  <strong>
+    Click here for more details
+  </strong>
+</summary>
 <br>
 
 A **parameterizable AHB-Lite to APB bridge** implemented in **SystemVerilog**, with a **self-checking verification environment**.
@@ -864,6 +945,9 @@ The design translates AHB transactions into APB protocol sequences using FSM-bas
 
 </details>
 
+</details>
+
+---
 
 </details>
 
@@ -877,6 +961,20 @@ The design translates AHB transactions into APB protocol sequences using FSM-bas
 </summary>
 
 <br>
+
+
+• Implemented shift-add datapath with all 6 modes rotation/vectoring (circular/linear/hyperbolic); width/iter/angle frac/output width–shift scaling swept across configs<br>
+• Built trig/mag/atan2/mul/div/exp wrappers; observed ∼e-5 RMS (@32b, 16iter) baseline vs double-precision references<br>
+• Proved handshake, deadlock-free bounded liveness, range safety, symmetry & monotonicity via SystemVerilog assertions (SymbiYosys/Yices2)<br>
+• Auto-generated atan tables & param files via Python; FuseSoC-packaged core with documented sensitivity, error trends & failure regions<br>
+• Built drop-in core variants (pipelined/SIMD/multi-issue); implemented a QAM16 demodulator using the CORDIC core<br>
+
+---
+
+<details>
+<summary>
+  <strong>Click here for more details
+  </strong></summary>
 
 A fully synthesizable, **parameterizable fixed-point CORDIC soft IP** supporting **rotation and vectoring modes**, with dedicated wrappers for trigonometric and vector operations.  
 The project emphasizes **formal verification of control, protocol, and mathematical structure**, complemented by simulation-based accuracy characterization and parameter sensitivity analysis.
@@ -1159,6 +1257,9 @@ Numerical accuracy is intentionally validated via **simulation and reference com
 </p>
 
 </details>
+</details>
+
+---
 
 </details>
 
