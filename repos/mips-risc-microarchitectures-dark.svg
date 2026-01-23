@@ -1,4 +1,4 @@
-<svg width="500" height="176" viewBox="0 0 500 176" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="198" viewBox="0 0 500 198" xmlns="http://www.w3.org/2000/svg">
   <style>
     .card-bg { fill: #0d1117; stroke: #1f6feb; stroke-width: 1; }
     .repo-name { font: bold 16px sans-serif; fill: #58a6ff; cursor: pointer; text-decoration: underline; }
@@ -7,7 +7,7 @@
     .badge { font: 11px sans-serif; fill: #8b949e; }
     .lang-dot { r: 5; }
   </style>
-  <rect class="card-bg" x="0" y="0" width="500" height="176" rx="12" ry="12" />
+  <rect class="card-bg" x="0" y="0" width="500" height="198" rx="12" ry="12" />
   <a href="https://github.com/Mummanajagadeesh/mips-risc-microarchitectures" target="_blank">
     <text x="16" y="30" class="repo-name">mips-risc-microarchitectures</text>
   </a>
@@ -20,5 +20,13 @@
   </text>
   <circle class="lang-dot" cx="16" cy="119" fill="#b2b7f8" />
   <text x="26" y="123" class="meta">Verilog</text>
-  <text x="484" y="146" text-anchor="end" class="meta">⭐ 0 star(s)</text>
+  <circle class="lang-dot" cx="126" cy="119" fill="#6E4C13" />
+  <text x="136" y="123" class="meta">Assembly</text>
+  <circle class="lang-dot" cx="236" cy="119" fill="#555555" />
+  <text x="246" y="123" class="meta">C</text>
+  <circle class="lang-dot" cx="346" cy="119" fill="#cccccc" />
+  <text x="356" y="123" class="meta">Linker</text>
+  <circle class="lang-dot" cx="16" cy="141" fill="#cccccc" />
+  <text x="26" y="145" class="meta">Script</text>
+  <text x="484" y="168" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>
