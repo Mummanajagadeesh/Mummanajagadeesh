@@ -1,0 +1,49 @@
+<svg width="500" height="224" viewBox="0 0 500 224" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card-bg { fill: #fff; stroke: #1f6feb; stroke-width: 1; }
+    .repo-name { font: bold 16px sans-serif; fill: #0969da; cursor: pointer; text-decoration: underline; }
+    .repo-desc { font: 14px sans-serif; fill: #57606a; }
+    .meta { font: 12px sans-serif; fill: #57606a; }
+    .badge { font: 11px sans-serif; fill: #57606a; }
+    .lang-dot { r: 5; }
+  </style>
+  <rect class="card-bg" x="0" y="0" width="500" height="224" rx="12" ry="12" />
+  <a href="https://github.com/Mummanajagadeesh/core-v-verif" target="_blank">
+    <text x="16" y="30" class="repo-name">core-v-verif</text>
+  </a>
+  <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#ddf4ff" stroke="#0969da" />
+  <text x="438" y="29" class="badge">Public</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">Functional verification project for the</tspan>
+    <tspan x="16" dy="18">CORE-V family of RISC-V cores.</tspan>
+  </text>
+  <circle class="lang-dot" cx="16" cy="101" fill="#6E4C13" />
+  <text x="26" y="105" class="meta">Assembly</text>
+  <circle class="lang-dot" cx="126" cy="101" fill="#DAE1C2" />
+  <text x="136" y="105" class="meta">SystemVerilog</text>
+  <circle class="lang-dot" cx="236" cy="101" fill="#555555" />
+  <text x="246" y="105" class="meta">C</text>
+  <circle class="lang-dot" cx="346" cy="101" fill="#3572A5" />
+  <text x="356" y="105" class="meta">Python</text>
+  <circle class="lang-dot" cx="16" cy="123" fill="#427819" />
+  <text x="26" y="127" class="meta">Makefile</text>
+  <circle class="lang-dot" cx="126" cy="123" fill="#cccccc" />
+  <text x="136" y="127" class="meta">Linker</text>
+  <circle class="lang-dot" cx="236" cy="123" fill="#cccccc" />
+  <text x="246" y="127" class="meta">Script</text>
+  <circle class="lang-dot" cx="346" cy="123" fill="#f34b7d" />
+  <text x="356" y="127" class="meta">C++</text>
+  <circle class="lang-dot" cx="16" cy="145" fill="#e4cc98" />
+  <text x="26" y="149" class="meta">Tcl</text>
+  <circle class="lang-dot" cx="126" cy="145" fill="#89e051" />
+  <text x="136" y="149" class="meta">Shell</text>
+  <circle class="lang-dot" cx="236" cy="145" fill="#a52a22" />
+  <text x="246" y="149" class="meta">Jinja</text>
+  <circle class="lang-dot" cx="346" cy="145" fill="#1a5f91" />
+  <text x="356" y="149" class="meta">Stata</text>
+  <circle class="lang-dot" cx="16" cy="167" fill="#341708" />
+  <text x="26" y="171" class="meta">Forth</text>
+  <circle class="lang-dot" cx="126" cy="167" fill="#0298c3" />
+  <text x="136" y="171" class="meta">Perl</text>
+  <text x="484" y="194" text-anchor="end" class="meta">⭐ 0 star(s)</text>
+</svg>
