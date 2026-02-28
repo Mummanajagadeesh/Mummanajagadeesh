@@ -13,10 +13,10 @@
   </a>
 
   <!-- Blog -->
-  <a href="https://mummanajagadeesh.github.io/blog/all#gh-light-mode-only">
+  <a href="https://mummanajagadeesh.github.io/blogs#gh-light-mode-only">
     <img src="assets/bwicons/bblog.svg#gh-light-mode-only" alt="Blog" width="30" height="30"/>
   </a>
-  <a href="https://mummanajagadeesh.github.io/blog/all#gh-dark-mode-only">
+  <a href="https://mummanajagadeesh.github.io/blogs#gh-dark-mode-only">
     <img src="assets/bwicons/blog.svg#gh-dark-mode-only" alt="Blog" width="30" height="30"/>
   </a>
 
@@ -147,7 +147,7 @@
 
 <pre><strong>$ less ~/workspace/profile/config.yaml</strong>
 
-  <strong>FOCUS:</strong>         "learning so slow my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a> can’t keep up"
+  <strong>FOCUS:</strong>         "learning so slow my <a href="https://mummanajagadeesh.github.io/blogs"><strong>blog</strong></a> can’t keep up"
   <strong>KNOWS:</strong>         "anything bw sand nd the entity thinking back at us rn"<!-- <strong>ASKME:</strong>         "stuff i know, or stuff i can google before u blink" -->
   <strong>BUILDING:</strong>      "<em>hw accel arch for img classif<em>; it can sǝǝ john cena</em>"
   <strong>CLUB:</strong>          "feeding robots my gpa @<a href="https://rignitc.com"><strong>rignitc</strong></a>"
@@ -173,7 +173,7 @@
 
 <!--<code>module about_me;</code><br>
 
-<code>    parameter FOCUS     = "Always learning - check out my <a href="https://mummanajagadeesh.github.io/blog/all"><strong>blog</strong></a>",</code><br>
+<code>    parameter FOCUS     = "Always learning - check out my <a href="https://mummanajagadeesh.github.io/blogs"><strong>blog</strong></a>",</code><br>
 <code>              CURRENTLY = "Building a HW accelerator arch for IMG CLASSIF",</code><br>
 <code>              CLUB      = "Rigging robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>",</code><br>
 <code>              MAJOR     = "<em>Electronics and Communication Engg</em>",</code><br>
