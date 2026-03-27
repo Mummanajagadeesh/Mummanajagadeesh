@@ -156,7 +156,7 @@
   <strong>COLLEGE:</strong>       "<em>national institute of technology calicut</em>"
   <strong>CONTACT:</strong>       "<a href="https://mummanajagadeesh.github.io/contact"><strong>carrier pigeons :p</strong></a>"
   <strong>HOBBIES:</strong>       ["speedcubing", "movies", "4k day dreaming"]
-  <strong>FUNFACT:</strong>       "i'm discount batman"
+  <strong>FUNFACT:</strong>       "i'm batman"
   <strong>SECRET:</strong>        "i pay the moon to follow me around"
   <strong>WHATIF:</strong>        "if i eat myself, do I become twice as big or disappear?"
 </pre>
@@ -232,23 +232,29 @@
 <td>
 
 <pre>
-Hey, I'm Jagadeesh
+hey, i'm Jagadeesh
 
-I work mainly on digital/analog hw design: RTL, ckt-lvl & basic arch
-Learning open-source IC flows; building/testing small HW blocks
-I also work with MCU/SBCs in basic sys-design for robotics/rototyping
-Active in comps, open-source, hw/sw co-design challenges
+i work mainly on digital/analog 
+  hw design: RTL, ckt-lvl & basic arch
+learning open-source IC flows; 
+  building/testing small HW blocks
+i also work with MCU/SBCs in basic 
+  sys-design for robotics/rototyping
+active in comps, open-source, 
+  hw/sw co-design challenges
 
-MY Key Interests:     
- - Analog and Digital Circuit Design
- - RTL Verification, Debugging, and Validation
- - Compute and Signal Processing Systems
- - Amplifiers, Oscillators, and Control
- - Hardware Architecture and Microarchitecture
- - Robotics and Computer Vision
+MY key interests:     
+ - analog and digital circuit design
+ - rtl verification, debugging, and validation
+ - compute and signal processing systems
+ - amplifiers, oscillators, and control
+ - hardware architecture and u-arch
+ - robotics and computer vision
 
-Feel free to check out my <a href="https://mummanajagadeesh.github.io/projects/"><strong>Projects</strong></a> above, 
-├─nd if you’re interested in collaborating/discussing HW/ML/robotics, 
+feel free to check out 
+├  my <a href="https://mummanajagadeesh.github.io/projects/"><strong>Projects</strong></a> above, 
+├─nd if you’re interested in 
+├  collaborating/discussing HW/ML/robotics, 
 └─let’s connect :)
 </pre>
 
