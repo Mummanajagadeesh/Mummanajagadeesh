@@ -199,7 +199,7 @@
 <br><br>
 
 
-# `$ cat ~/about_me.txt`
+# `$ whoami -v`
 
 <table width="100%">
 <tr>
