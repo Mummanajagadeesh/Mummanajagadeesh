@@ -290,6 +290,8 @@ and if you’re interested in collaborating or discussing hardware, AI, or robot
 # `$ git stats --all`
 
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh&style=flat-square&color=4CC71E&label=Views&labelColor=ffffff)
+![Followers](https://img.shields.io/github/followers/Mummanajagadeesh?style=flat-square&color=4CC71E&label=Followers&labelColor=555555)
+![GitHub Stars](https://img.shields.io/github/stars/Mummanajagadeesh?style=flat-square&color=4CC71E&label=Stars&labelColor=555555)
 ![Total Repos](https://github-readme-stats-mummanajagadeesh.vercel.app/api/total-repos?username=Mummanajagadeesh&theme=transparent&hide_border=true&count_private=true&bg_color=00000&text_color=ffffff&icon_color=ffffff)
 <!--![GitHub User's stars](https://img.shields.io/github/stars/Mummanajagadeesh?affiliations=OWNER&style=for-the-badge&color=yellow)
 
