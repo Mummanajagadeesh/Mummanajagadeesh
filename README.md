@@ -81,13 +81,13 @@
   -->
 
 
-  <!-- Reddit -->
+  <!-- Reddit 
   <a href="https://www.reddit.com/user/Large-Raisin-5912/#gh-light-mode-only">
     <img src="assets/bwicons/breddit.svg#gh-light-mode-only" alt="Reddit" width="30" height="30"/>
   </a>
   <a href="https://www.reddit.com/user/Large-Raisin-5912/#gh-dark-mode-only">
     <img src="assets/bwicons/reddit.svg#gh-dark-mode-only" alt="Reddit" width="30" height="30"/>
-  </a>
+  </a>-->
 
   <!-- Old Site -->
   <a href="https://jagadeesh-mummana.vercel.app/#gh-light-mode-only">
