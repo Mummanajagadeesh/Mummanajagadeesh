@@ -2,6 +2,7 @@
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
+<!--Says "Hello World in diff languages-->
 
 <p align="left">
   <!-- Portfolio -->
@@ -132,15 +133,6 @@
 
 
 
-<!-- <h1 align="left">
-  <img 
-    src="https://readme-typing-svg.herokuapp.com/?font=Monaco&size=30&color=4078C0&width=650&height=100&duration=4500&lines=$+whoami;>+just_another_student;$+echo+%22future+plans%22;>+Take+AI's+Job+:P;$+ping+reality;>+Request+timed+out;$+ls+/life;>+Nothing+interesting+yet;$+cat+motivation.txt;>+motivation.txt+->+empty;$+top+-n+1;>+CPU:+99%25+brain+usage;$+git+commit+-m+%22life_changes%22;>+nothing+to+commit,+working+tree+clean;$+./run_robot.sh;>+Battery+not+included;$+sudo+rm+-rf+/stress;>+Permission+denied" 
-    alt="$ whoami -> just_another_student; echo 'future plans' -> Take AI's Job :P; ping reality -> Request timed out; ls /life -> Nothing interesting yet; cat motivation.txt -> motivation.txt -> empty; top -n 1 -> CPU: 99% brain usage; git commit -m 'life_changes' -> nothing to commit, working tree clean; ./run_robot.sh -> Battery not included; sudo rm -rf /stress -> Permission denied" 
-  />
-</h1> -->
-
-
-
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td>
@@ -171,21 +163,6 @@
 
 
 
-<!--<code>module about_me;</code><br>
-
-<code>    parameter FOCUS     = "Always learning - check out my <a href="https://mummanajagadeesh.github.io/blogs"><strong>blog</strong></a>",</code><br>
-<code>              CURRENTLY = "Building a HW accelerator arch for IMG CLASSIF",</code><br>
-<code>              CLUB      = "Rigging robots @<a href="https://mummanajagadeesh.github.io/RIGNITC"><strong>RIGNITC</strong></a>",</code><br>
-<code>              MAJOR     = "<em>Electronics and Communication Engg</em>",</code><br>
-<code>              COLLEGE   = "<em>National Institute of Technology Calicut</em>",</code><br>
-<code>              CONTACT   = "<a href="https://mummanajagadeesh.github.io/contact"><strong>Carrier Pigeons :P</strong></a>",</code><br>
-<code>              PRONOUNS  = "he/him",</code><br>
-<code>              HOBBIES   = "Speedcubing, Movies, Blogging",</code><br>
-<code>              FUN_FACT  = "I'm Batman";</code><br>
-
-<code>endmodule</code><br>-->
-
-
 
 <div align="center">
   <picture>
@@ -200,6 +177,8 @@
 
 
 # `$ whoami -v`
+
+<!-- Shinchan -->
 
 <table width="100%">
 <tr>
@@ -262,30 +241,6 @@ feel free to check out
 </tr>
 </table>
 
-
-
-<!--<pre>
-  
-Hey, I'm Jagadeesh - I work across VLSI design, robotics, and AI hardware.
-I’m particularly interested in digital and analog VLSI, hardware acceleration for machine learning and image processing,
-and the practical side of taking designs from code to silicon.
-Alongside this, I enjoy programming embedded systems, working with microcontrollers, and building robotics applications.
-I also enjoy collaborating in competitions, open-source projects, and hands-on hardware/software design challenges.
-
-  
-MY Key Interests:                                                           What I Do:
-- VLSI Design: Analog & Digital                                             - I’m a student (yes, I copy assignments)  
-- Neural Nets & Image Processing                                            - But serious with projects & builds 
-- Embedded Programming (C, C++, Python)                                     - Do a bit of digital & analog design on the side
-- Microcontrollers & Electronics                                            - Train models sometimes   
-- Computer Vision, Sensor Fusion                                            - Member of RIGNITC (we make robots)
-- Robotics, Path Planning & Navigation                                      - Show up at hw comps (sw depends on mood)
-
-  
-Feel free to check out my projects [here](https://mummanajagadeesh.github.io/projects/), 
-and if you’re interested in collaborating or discussing hardware, AI, or robotics, let’s connect!
-  
-</pre>-->
 
 # `$ git stats --all`
 
