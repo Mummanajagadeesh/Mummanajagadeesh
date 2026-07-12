@@ -16,7 +16,7 @@
   <text x="16" y="55" class="repo-desc">
     <tspan x="16" dy="0">A simple automation framework to generate</tspan>
     <tspan x="16" dy="18">FPGA fabric-aware hardware/RTL for PRSG-BIST</tspan>
-    <tspan x="16" dy="18">structures  [LFSR, RG, HRG, CA]</tspan>
+    <tspan x="16" dy="18">structures  [LFSR, RG, HLFSR, HRG, CA]</tspan>
   </text>
   <circle class="lang-dot" cx="16" cy="119" fill="#ccce35" />
   <text x="26" y="123" class="meta">E</text>
