@@ -1,4 +1,4 @@
-# Привет, мир! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-07-27 11:40:03 IST -->
+# ਹੈਲੋ ਦੁਨਿਆ! This is [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-07-27 10:22:26 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -143,9 +143,7 @@
 
 <details>
 <summary>
-
-# `$ whoami -v`
-
+<h1><code>$ whoami -v</code></h1>
 </summary>
 
 <!-- Shinchan -->
@@ -214,10 +212,10 @@ feel free to check out
 </details>
 <details>
 <summary>
-
-# `$ git stats --all`
-
+<h1><code>$ git stats --all</code></h1>
 </summary>
+
+<br>
 
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh&style=flat-square&color=4CC71E&label=Views&labelColor=ffffff)
 ![Followers](https://img.shields.io/github/followers/Mummanajagadeesh?style=flat-square&color=4CC71E&label=Followers&labelColor=555555)
