@@ -61,35 +61,6 @@
     <img src="assets/bwicons/mail.svg#gh-dark-mode-only" alt="Email" width="30" height="30"/>
   </a>
 
-  <!-- Facebook -->
-  <!--
-  <a href="https://www.facebook.com/MJagadeesh97/#gh-light-mode-only">
-    <img src="assets/bwicons/bfacebook.svg#gh-light-mode-only" alt="Facebook" width="30" height="30"/>
-  </a>
-  <a href="https://www.facebook.com/MJagadeesh97/#gh-dark-mode-only">
-    <img src="assets/bwicons/facebook.svg#gh-dark-mode-only" alt="Facebook" width="30" height="30"/>
-  </a>
-  -->
-
-  <!-- X (Twitter) -->
-  <!--
-  <a href="https://x.com/M_JAGADEESH97#gh-light-mode-only">
-    <img src="assets/bwicons/btwitter-x.svg#gh-light-mode-only" alt="X" width="30" height="30"/>
-  </a>
-  <a href="https://x.com/M_JAGADEESH97#gh-dark-mode-only">
-    <img src="assets/bwicons/twitter-x.svg#gh-dark-mode-only" alt="X" width="30" height="30"/>
-  </a>
-  -->
-
-
-  <!-- Reddit 
-  <a href="https://www.reddit.com/user/Large-Raisin-5912/#gh-light-mode-only">
-    <img src="assets/bwicons/breddit.svg#gh-light-mode-only" alt="Reddit" width="30" height="30"/>
-  </a>
-  <a href="https://www.reddit.com/user/Large-Raisin-5912/#gh-dark-mode-only">
-    <img src="assets/bwicons/reddit.svg#gh-dark-mode-only" alt="Reddit" width="30" height="30"/>
-  </a>-->
-
   <!-- Old Site -->
   <a href="https://jagadeesh-mummana.vercel.app/#gh-light-mode-only">
     <img src="assets/bwicons/bsite.svg#gh-light-mode-only" alt="Old-Site" width="30" height="30"/>
@@ -162,8 +133,6 @@
 
 
 
-
-
 <div align="center">
   <picture>
     <source srcset="dist/github-snake-dark.svg" media="(prefers-color-scheme: dark)">
@@ -172,11 +141,12 @@
 </div>
 
 
-
-<br><br>
-
+<details>
+<summary>
 
 # `$ whoami -v`
+
+</summary>
 
 <!-- Shinchan -->
 
@@ -241,8 +211,13 @@ feel free to check out
 </tr>
 </table>
 
+</details>
+<details>
+<summary>
 
 # `$ git stats --all`
+
+</summary>
 
 ![GitHub Views](https://komarev.com/ghpvc/?username=Mummanajagadeesh&style=flat-square&color=4CC71E&label=Views&labelColor=ffffff)
 ![Followers](https://img.shields.io/github/followers/Mummanajagadeesh?style=flat-square&color=4CC71E&label=Followers&labelColor=555555)
@@ -325,6 +300,7 @@ feel free to check out
 
 </p>
 
+</details>
 
 # `$ sudo wisdom`
 
@@ -341,5 +317,3 @@ feel free to check out
     <img src="https://github-readme-quotes-bay.vercel.app/quote?quoteCategory=motivational&theme=dark#gh-dark-mode-only" alt="Motivational Quote (dark)" />
   </a>
 </p>
-
-
