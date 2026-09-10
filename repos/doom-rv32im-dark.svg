@@ -32,13 +32,13 @@
   <text x="246" y="109" class="meta">Linker</text>
   <circle class="lang-dot" cx="346" cy="105" fill="#cccccc" />
   <text x="356" y="109" class="meta">Script</text>
-  <circle class="lang-dot" cx="16" cy="127" fill="#6E4C13" />
-  <text x="26" y="131" class="meta">Assembly</text>
-  <circle class="lang-dot" cx="126" cy="127" fill="#4d41b1" />
-  <text x="136" y="131" class="meta">Fortran</text>
-  <circle class="lang-dot" cx="236" cy="127" fill="#cccccc" />
-  <text x="246" y="131" class="meta">Filebench</text>
-  <circle class="lang-dot" cx="346" cy="127" fill="#cccccc" />
-  <text x="356" y="131" class="meta">WML</text>
+  <circle class="lang-dot" cx="16" cy="127" fill="#cccccc" />
+  <text x="26" y="131" class="meta">Filebench</text>
+  <circle class="lang-dot" cx="126" cy="127" fill="#cccccc" />
+  <text x="136" y="131" class="meta">WML</text>
+  <circle class="lang-dot" cx="236" cy="127" fill="#6E4C13" />
+  <text x="246" y="131" class="meta">Assembly</text>
+  <circle class="lang-dot" cx="346" cy="127" fill="#4d41b1" />
+  <text x="356" y="131" class="meta">Fortran</text>
   <text x="484" y="154" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>
