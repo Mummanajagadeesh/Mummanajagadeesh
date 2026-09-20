@@ -18,10 +18,10 @@
   </text>
   <circle class="lang-dot" cx="16" cy="83" fill="#f34b7d" />
   <text x="26" y="87" class="meta">C++</text>
-  <circle class="lang-dot" cx="126" cy="83" fill="#555555" />
-  <text x="136" y="87" class="meta">C</text>
-  <circle class="lang-dot" cx="236" cy="83" fill="#b2b7f8" />
-  <text x="246" y="87" class="meta">Verilog</text>
+  <circle class="lang-dot" cx="126" cy="83" fill="#b2b7f8" />
+  <text x="136" y="87" class="meta">Verilog</text>
+  <circle class="lang-dot" cx="236" cy="83" fill="#555555" />
+  <text x="246" y="87" class="meta">C</text>
   <circle class="lang-dot" cx="346" cy="83" fill="#3572A5" />
   <text x="356" y="87" class="meta">Python</text>
   <circle class="lang-dot" cx="16" cy="105" fill="#427819" />
@@ -34,12 +34,12 @@
   <text x="356" y="109" class="meta">Linker</text>
   <circle class="lang-dot" cx="16" cy="127" fill="#cccccc" />
   <text x="26" y="131" class="meta">Script</text>
-  <circle class="lang-dot" cx="126" cy="127" fill="#6E4C13" />
-  <text x="136" y="131" class="meta">Assembly</text>
+  <circle class="lang-dot" cx="126" cy="127" fill="#cccccc" />
+  <text x="136" y="131" class="meta">Filebench</text>
   <circle class="lang-dot" cx="236" cy="127" fill="#cccccc" />
-  <text x="246" y="131" class="meta">Filebench</text>
-  <circle class="lang-dot" cx="346" cy="127" fill="#cccccc" />
-  <text x="356" y="131" class="meta">WML</text>
+  <text x="246" y="131" class="meta">WML</text>
+  <circle class="lang-dot" cx="346" cy="127" fill="#6E4C13" />
+  <text x="356" y="131" class="meta">Assembly</text>
   <circle class="lang-dot" cx="16" cy="149" fill="#4d41b1" />
   <text x="26" y="153" class="meta">Fortran</text>
   <circle class="lang-dot" cx="126" cy="149" fill="#e4cc98" />
@@ -48,11 +48,13 @@
   <text x="246" y="153" class="meta">Wolfram</text>
   <circle class="lang-dot" cx="346" cy="149" fill="#cccccc" />
   <text x="356" y="153" class="meta">Language</text>
-  <circle class="lang-dot" cx="16" cy="171" fill="#cccccc" />
-  <text x="26" y="175" class="meta">Standard</text>
+  <circle class="lang-dot" cx="16" cy="171" fill="#C1F12E" />
+  <text x="26" y="175" class="meta">Batchfile</text>
   <circle class="lang-dot" cx="126" cy="171" fill="#cccccc" />
-  <text x="136" y="175" class="meta">ML</text>
-  <circle class="lang-dot" cx="236" cy="171" fill="#1e4aec" />
-  <text x="246" y="175" class="meta">Scheme</text>
+  <text x="136" y="175" class="meta">Standard</text>
+  <circle class="lang-dot" cx="236" cy="171" fill="#cccccc" />
+  <text x="246" y="175" class="meta">ML</text>
+  <circle class="lang-dot" cx="346" cy="171" fill="#1e4aec" />
+  <text x="356" y="175" class="meta">Scheme</text>
   <text x="484" y="198" text-anchor="end" class="meta">⭐ 0 star(s)</text>
 </svg>
