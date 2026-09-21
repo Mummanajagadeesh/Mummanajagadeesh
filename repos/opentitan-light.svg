@@ -1,0 +1,70 @@
+<svg width="500" height="272" viewBox="0 0 500 272" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card-bg { fill: #fff; stroke: #1f6feb; stroke-width: 1; }
+    .repo-name { font: bold 16px sans-serif; fill: #0969da; cursor: pointer; text-decoration: underline; }
+    .repo-desc { font: 14px sans-serif; fill: #57606a; }
+    .meta { font: 12px sans-serif; fill: #57606a; }
+    .badge { font: 11px sans-serif; fill: #57606a; }
+    .lang-dot { r: 5; }
+  </style>
+  <rect class="card-bg" x="0" y="0" width="500" height="272" rx="12" ry="12" />
+  <a href="https://github.com/Mummanajagadeesh/opentitan" target="_blank">
+    <text x="16" y="30" class="repo-name">opentitan</text>
+  </a>
+  <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#ddf4ff" stroke="#0969da" />
+  <text x="438" y="29" class="badge">Public</text>
+  <text x="16" y="55" class="repo-desc">
+    <tspan x="16" dy="0">OpenTitan: Open source silicon root of trust</tspan>
+  </text>
+  <circle class="lang-dot" cx="16" cy="83" fill="#DAE1C2" />
+  <text x="26" y="87" class="meta">SystemVerilog</text>
+  <circle class="lang-dot" cx="126" cy="83" fill="#555555" />
+  <text x="136" y="87" class="meta">C</text>
+  <circle class="lang-dot" cx="236" cy="83" fill="#3572A5" />
+  <text x="246" y="87" class="meta">Python</text>
+  <circle class="lang-dot" cx="346" cy="83" fill="#dea584" />
+  <text x="356" y="87" class="meta">Rust</text>
+  <circle class="lang-dot" cx="16" cy="105" fill="#76d275" />
+  <text x="26" y="109" class="meta">Starlark</text>
+  <circle class="lang-dot" cx="126" cy="105" fill="#cccccc" />
+  <text x="136" y="109" class="meta">Emacs</text>
+  <circle class="lang-dot" cx="236" cy="105" fill="#cccccc" />
+  <text x="246" y="109" class="meta">Lisp</text>
+  <circle class="lang-dot" cx="346" cy="105" fill="#f34b7d" />
+  <text x="356" y="109" class="meta">C++</text>
+  <circle class="lang-dot" cx="16" cy="127" fill="#f0c040" />
+  <text x="26" y="131" class="meta">Smarty</text>
+  <circle class="lang-dot" cx="126" cy="127" fill="#6E4C13" />
+  <text x="136" y="131" class="meta">Assembly</text>
+  <circle class="lang-dot" cx="236" cy="127" fill="#e4cc98" />
+  <text x="246" y="131" class="meta">Tcl</text>
+  <circle class="lang-dot" cx="346" cy="127" fill="#89e051" />
+  <text x="356" y="131" class="meta">Shell</text>
+  <circle class="lang-dot" cx="16" cy="149" fill="#e34c26" />
+  <text x="26" y="153" class="meta">HTML</text>
+  <circle class="lang-dot" cx="126" cy="149" fill="#00ADD8" />
+  <text x="136" y="153" class="meta">Go</text>
+  <circle class="lang-dot" cx="236" cy="149" fill="#cccccc" />
+  <text x="246" y="153" class="meta">Template</text>
+  <circle class="lang-dot" cx="346" cy="149" fill="#cccccc" />
+  <text x="356" y="153" class="meta">Linker</text>
+  <circle class="lang-dot" cx="16" cy="171" fill="#cccccc" />
+  <text x="26" y="175" class="meta">Script</text>
+  <circle class="lang-dot" cx="126" cy="171" fill="#663399" />
+  <text x="136" y="175" class="meta">CSS</text>
+  <circle class="lang-dot" cx="236" cy="171" fill="#f7931e" />
+  <text x="246" y="175" class="meta">Handlebars</text>
+  <circle class="lang-dot" cx="346" cy="171" fill="#f1e05a" />
+  <text x="356" y="175" class="meta">JavaScript</text>
+  <circle class="lang-dot" cx="16" cy="193" fill="#427819" />
+  <text x="26" y="197" class="meta">Makefile</text>
+  <circle class="lang-dot" cx="126" cy="193" fill="#b2b7f8" />
+  <text x="136" y="197" class="meta">Verilog</text>
+  <circle class="lang-dot" cx="236" cy="193" fill="#384d54" />
+  <text x="246" y="197" class="meta">Dockerfile</text>
+  <circle class="lang-dot" cx="346" cy="193" fill="#7e7eff" />
+  <text x="356" y="197" class="meta">Nix</text>
+  <circle class="lang-dot" cx="16" cy="215" fill="#1a5f91" />
+  <text x="26" y="219" class="meta">Stata</text>
+  <text x="484" y="242" text-anchor="end" class="meta">⭐ 0 star(s)</text>
+</svg>
