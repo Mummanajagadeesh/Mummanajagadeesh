@@ -111,7 +111,7 @@
 <pre><strong>$ less ~/workspace/profile/config.yaml</strong>
 
   <strong>FOCUS:</strong>      "learning so slow my <a href="https://mummanajagadeesh.github.io/blogs"><strong>blog</strong></a> can’t keep up"
-  <!-- <strong>ASKME:</strong>      "anything bw sand nd the entity thinking back at us rn"<!-- <strong>ASKME:</strong>         "stuff i know, or stuff i can google before u blink" --> -->
+  <!-- <strong>ASKME:</strong>      "anything bw sand nd the entity thinking back at us rn"<!-- <strong>ASKME:</strong>         "stuff i know, or stuff i can google before u blink" -->
   <!-- <strong>BUILDING:</strong>   "<em>hw accel arch for img classif<em>; it can sǝǝ john cena</em>" -->
   <strong>CLUB:</strong>       "feeding robots my gpa @<a href="https://rignitc.com"><strong>rignitc</strong></a>"
   <strong>COMPS:</strong>      ["e-yantra MB", "openpower hw"]
