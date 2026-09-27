@@ -1,4 +1,4 @@
-# ¡Hola, mundo! I'm [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-09-27 15:07:34 IST -->
+# வணக்கம் உலகம்! I'm [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-09-27 15:04:03 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
@@ -110,6 +110,7 @@
     <td>
 
 <pre><strong>$ less ~/workspace/profile/config.yaml</strong>  
+  
   <strong>FOCUS:</strong>      "learning so slow my <a href="https://mummanajagadeesh.github.io/blogs"><strong>blog</strong></a> can’t keep up"
   <strong>BUILDING:</strong>   "<em>hw accel arch for img classif<em>; it can sǝǝ john cena</em>"
   <strong>CLUB:</strong>       "feeding robots my gpa @<a href="https://rignitc.com"><strong>rignitc</strong></a>"
