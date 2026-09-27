@@ -30,10 +30,10 @@
   </a>
 
   <!-- Instagram -->
-  <a href="https://www.instagram.com/jagadeesh__97__#gh-light-mode-only">
+  <a href="https://www.instagram.com/m_j_9_7_/#gh-light-mode-only">
     <img src="assets/bwicons/binstagram.svg#gh-light-mode-only" alt="Instagram" width="30" height="30"/>
   </a>
-  <a href="https://www.instagram.com/jagadeesh__97__#gh-dark-mode-only">
+  <a href="https://www.instagram.com/m_j_9_7_/#gh-dark-mode-only">
     <img src="assets/bwicons/instagram.svg#gh-dark-mode-only" alt="Instagram" width="30" height="30"/>
   </a>
 
@@ -93,13 +93,14 @@
     <img src="assets/bwicons/duolingo.svg#gh-dark-mode-only" alt="Duolingo" width="30" height="30"/>
   </a>
 
-  <!-- Play Games -->
+  <!-- Play Games 
   <a href="https://games.app.goo.gl/p1bNrgGSnMbK4hte9#gh-light-mode-only">
     <img src="assets/bwicons/bplaygames.svg#gh-light-mode-only" alt="Google Play Games" width="30" height="30"/>
   </a>
   <a href="https://games.app.goo.gl/p1bNrgGSnMbK4hte9#gh-dark-mode-only">
     <img src="assets/bwicons/playgames.svg#gh-dark-mode-only" alt="Google Play Games" width="30" height="30"/>
-  </a>
+  </a> 
+   -->
 </p>
 
 
