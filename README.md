@@ -22,10 +22,10 @@
   </a>
 
   <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/jagadeeesh-mummana#gh-light-mode-only">
+  <a href="https://www.linkedin.com/in/jagadeesh-mummana#gh-light-mode-only">
     <img src="assets/bwicons/blinkedin.svg#gh-light-mode-only" alt="LinkedIn" width="30" height="30"/>
   </a>
-  <a href="https://www.linkedin.com/in/jagadeeesh-mummana#gh-dark-mode-only">
+  <a href="https://www.linkedin.com/in/jagadeesh-mummana#gh-dark-mode-only">
     <img src="assets/bwicons/linkedin.svg#gh-dark-mode-only" alt="LinkedIn" width="30" height="30"/>
   </a>
 
