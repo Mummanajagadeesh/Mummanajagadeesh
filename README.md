@@ -1,4 +1,4 @@
-# བཀྲ་ཤིས་བདེ་ལེགས། འཛམ་གླིང་! I'm [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-10-09 11:44:28 IST -->
+# こんにちは、世界！ I'm [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-10-09 18:50:44 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
