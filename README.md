@@ -1,4 +1,4 @@
-# Ciao mondo! I'm [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-10-20 06:09:56 IST -->
+# 안녕하세요, 세계! I'm [Jagadeesh](https://mummanajagadeesh.github.io/). <!-- updated: 2026-10-20 10:46:36 IST -->
 
 <!--# こんにちは、世界！これは [Jagadeesh](https://mummanajagadeesh.github.io/) です。-->
 
