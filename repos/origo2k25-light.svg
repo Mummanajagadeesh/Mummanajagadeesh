@@ -14,9 +14,9 @@
   <rect x="430" y="16" rx="4" ry="4" width="55" height="18" fill="#ddf4ff" stroke="#0969da" />
   <text x="438" y="29" class="badge">Public</text>
   <text x="16" y="55" class="repo-desc">
-    <tspan x="16" dy="0">Virtual handout and website for ORIGO 2025</tspan>
-    <tspan x="16" dy="18">— the annual robotics workshop hosted at</tspan>
-    <tspan x="16" dy="18">NIT Calicut</tspan>
+    <tspan x="16" dy="0">Virtual handout and website for ORIGO 2025 —</tspan>
+    <tspan x="16" dy="18">the annual robotics workshop hosted at NIT</tspan>
+    <tspan x="16" dy="18">Calicut</tspan>
   </text>
   <circle class="lang-dot" cx="16" cy="119" fill="#e34c26" />
   <text x="26" y="123" class="meta">HTML</text>
